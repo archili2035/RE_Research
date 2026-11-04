@@ -24,3 +24,9 @@
 *.key
 # WorkBuddy local workspace state
 .workbuddy/
+# Installed dependencies and one-off local migration artifacts
+**/node_modules/
+/player/app-before-model.js
+/player/index-before-model.html
+/player/integrate-model.cjs
+/player/update-model-notes.cjs

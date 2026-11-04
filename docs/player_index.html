@@ -16,7 +16,7 @@
   </div>
   <div class="header-links">
     <a class="technical-link" href="player/technical.html">技术实现说明 ↗</a>
-    <span class="badge">ch0100 <b>骨架预览 v1</b></span>
+    <span class="badge">ch0100 <b>灰模预览 v2</b></span>
   </div>
 </header>
 <main>
@@ -25,7 +25,7 @@
     <label class="sr" for="search">搜索动作</label>
     <input id="search" placeholder="搜索名称或编号…">
     <div id="clips"></div>
-    <div class="note">来自本机包体的真实 MOT 轨道。<br>尚未加载角色模型、贴图、武器和 IK。</div>
+    <div class="note">来自本机包体的真实 MOT 轨道。<br>已加载身体灰模 · 暂无贴图、武器和 IK。</div>
   </aside>
   <section class="workspace">
     <div class="viewport">
@@ -77,6 +77,15 @@
             <option value="11">Mask11 补偿</option>
           </select>
         </label>
+        <label>显示
+          <select id="displayMode">
+            <option value="model">身体灰模</option>
+            <option value="both">灰模＋骨架</option>
+            <option value="skeleton">骨架</option>
+          </select>
+        </label>
+        <label><input type="checkbox" id="wireframe">线框</label>
+        <label><input type="checkbox" id="bindpose">绑定姿态</label>
         <span id="counts"></span>
       </div>
     </div>
@@ -89,6 +98,9 @@
 <script src="player/motions.js"></script>
 <script src="player/masks.js"></script>
 <script src="player/math.js"></script>
+<script src="player/vendor/three.min.js"></script>
+<script src="player/model.js"></script>
+<script src="player/model-view.js"></script>
 <script src="player/app.js"></script>
 </body>
 </html>
