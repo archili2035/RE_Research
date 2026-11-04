@@ -1,6 +1,6 @@
 # 里昂手枪动画播放器 v1
 
-打开 `dist/index.html` 即可离线使用，无需安装依赖；也可在本目录运行 `node server.cjs`，访问 http://127.0.0.1:8765 。服务器仅监听本机。
+打开仓库根的 `docs/player_index.html` 即可离线使用，无需安装依赖；也可在本目录运行 `node server.cjs`，访问 http://127.0.0.1:8765 。服务器仅监听本机、只提供 `docs/` 下的静态文件。
 
 ## 内容与操作
 
@@ -20,8 +20,8 @@ Add 补偿轨道独立显示，不套用普通动作的假设进行叠加。未�
 ## 数据与验证
 
 - `../scripts/PlayerExport/Program.cs` 与 csproj：基于本地 RE-Engine-Lib 的导出器；读取 phase2 的有效文件清单，按骨骼 hash 匹配轨道。
-- `dist/motions.json` / `motions.js`：14 条动画，69 或 67 个骨骼，每条67个轨道，全部匹配；JS 副本支持 file:// 离线打开。
-- `dist/masks.js`：来源 reports/phase2/handgun_evidence.json 的 Masks。
+- `../docs/player/motions.json` / `motions.js`：14 条动画，69 或 67 个骨骼，每条67个轨道，全部匹配；JS 副本支持 file:// 离线打开。
+- `../docs/player/masks.js`：来源 reports/phase2/handgun_evidence.json 的 Masks。
 - `verify.cjs`：14条动画共854个姿态采样数值有效，全部存在运动；关键帧顺序、四元数插值与旋转检查通过。
 - `browser-check.cjs`：使用本机已有 Playwright/Chromium，覆盖加载、播放推进、暂停、逐帧、搜索、切换、拖动时间轴、视角按钮、补偿提示、非循环结束；无页面 JS 错误。
 - `preview.png`：换弹第72帧浏览器截图，已人工检查。

@@ -4,7 +4,7 @@ RE Engine 资源研究：动画解析（里昂手枪动作骨架播放器）、R
 
 ## 网页播放器
 
-直接打开 `player/dist/index.html`，无需安装依赖或联网。首页的“技术实现说明”链接通向 `player/dist/technical.html`。
+直接打开 `docs/player_index.html`，无需安装依赖或联网。首页的“技术实现说明”链接通向 `docs/player/technical.html`。
 
 也可以执行：
 
@@ -18,7 +18,8 @@ node player/server.cjs
 
 ## 目录
 
-- `player/`：离线网页、动画数据、说明页与验证脚本。
+- `docs/`：发布用站点（`player_index.html` 入口 + `player/` 说明页与资源 + `assets/theme/` 主题）。根目录 `portal.json` 是个人门户的站点契约。
+- `player/`：播放器验证脚本与说明。
 - `scripts/`：资源解析、审计及导出脚本（C# / PowerShell 动画管线；`re9_monsters/` 为 RE9 怪物纹理 Python 脚本）。
 - `reports/`：研究报告、资源索引、样本及解析结果（含 `RE9_levels/` 关卡地图报告、`RE9_monsters/` 怪物图鉴）。
 - `references/`：资源列表及格式参考数据。

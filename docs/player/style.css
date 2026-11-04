@@ -1,0 +1,491 @@
+/*!
+ * RE 动画研究室 · 播放器页局部样式（三层）
+ * 依赖 tokens.css + base.css。品牌表面色一律取令牌，不写死。
+ * 下方 :root 内仅声明「深色视口上的骨骼绘制色」——属本页域专用色，
+ * 由 app.js 的 canvas 绘制与图例共同引用，保证二者一致。
+ */
+
+:root {
+  color-scheme: light;
+
+  /* 视口背景渐变 */
+  --viewport-a: #213642;
+  --viewport-b: #121d25;
+  /* 地面网格 */
+  --grid-major: #35505e;
+  --grid-minor: #293c47;
+  /* 骨骼：左 / 右 / 中轴 */
+  --bone-left: #f5b66b;
+  --bone-right: #73c9f3;
+  --bone-center: #d9e4e9;
+  /* Mask 高亮与压暗、辅助骨、骨骼名 */
+  --bone-mask: #addfce;
+  --bone-dim: #3c505c;
+  --bone-helper: #5c747f;
+  --bone-label: #a2b7c2;
+}
+
+/* ===== 顶栏 ============================================================ */
+header {
+  height: 96px;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--hairline);
+  background: var(--surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: var(--text-micro-ls);
+  text-transform: uppercase;
+  color: var(--ink-tertiary);
+}
+
+header h1 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0;
+  color: var(--ink);
+  margin: 6px 0 0;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.technical-link {
+  font-size: var(--text-small);
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--accent-line);
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: background var(--duration) var(--ease), color var(--duration) var(--ease);
+}
+.technical-link:hover {
+  background: var(--accent-wash);
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  color: var(--ink-tertiary);
+  white-space: nowrap;
+}
+.badge b {
+  margin-left: 14px;
+  font-weight: var(--weight-medium);
+  background: var(--accent-wash);
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+}
+
+/* ===== 布局 ============================================================ */
+main {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  min-height: calc(100vh - 96px);
+}
+
+aside {
+  border-right: 1px solid var(--hairline);
+  background: var(--surface-alt);
+  padding: 24px 16px;
+}
+
+.section {
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  color: var(--ink);
+  margin: 0 9px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section span {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: var(--text-micro-ls);
+  color: var(--ink-tertiary);
+}
+
+#search {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-raised);
+  color: var(--ink);
+  margin-bottom: 15px;
+  font: inherit;
+  font-size: var(--text-small);
+}
+#search::placeholder {
+  color: var(--ink-tertiary);
+}
+#search:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-color: var(--accent);
+}
+
+button,
+select {
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-sm);
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: background var(--duration) var(--ease), border-color var(--duration) var(--ease);
+}
+button:hover {
+  background: var(--surface-alt);
+}
+select {
+  padding: 7px;
+}
+input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+
+/* 动作列表项（由 app.js 动态生成 .clip 按钮） */
+.clip {
+  width: 100%;
+  text-align: left;
+  border: 1px solid transparent;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px 0;
+  padding: 11px 12px;
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+}
+.clip:hover {
+  background: var(--surface-raised);
+}
+.clip small {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  color: var(--ink-tertiary);
+  margin-top: 5px;
+}
+.clip em {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  font-style: normal;
+  color: var(--ink-tertiary);
+}
+.clip.active {
+  background: var(--accent-wash);
+  border-color: var(--accent-line);
+  color: var(--accent);
+}
+.clip.active small,
+.clip.active em {
+  color: var(--accent);
+  opacity: 0.75;
+}
+
+.note {
+  font-size: var(--text-micro);
+  color: var(--ink-tertiary);
+  line-height: 1.9;
+  padding: 18px 9px;
+}
+
+/* ===== 工作区 ========================================================== */
+.workspace {
+  min-width: 0;
+  padding: 22px 26px;
+}
+
+.viewport {
+  position: relative;
+  height: calc(100vh - 340px);
+  min-height: 380px;
+  background: var(--surface-inverse);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+  cursor: grab;
+}
+
+/* 深色视口上的叠加文字一律用 ink-on-inverse + 透明度分层 */
+.overlay {
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  pointer-events: none;
+  color: var(--ink-on-inverse);
+}
+.overlay span {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 1px;
+  color: var(--ink-on-inverse);
+  opacity: 0.7;
+}
+.overlay h2 {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: var(--weight-medium);
+  margin: 7px 0 0;
+  color: var(--ink-on-inverse);
+}
+.overlay div {
+  font-size: var(--text-micro);
+  color: var(--ink-on-inverse);
+  opacity: 0.6;
+}
+
+.viewtools {
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  display: flex;
+  gap: 6px;
+}
+.viewtools button {
+  font-size: var(--text-micro);
+  background: var(--surface-raised);
+  color: var(--ink);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 6px 12px;
+}
+.viewtools button:hover {
+  background: var(--ink-on-inverse);
+}
+
+.legend {
+  position: absolute;
+  left: 24px;
+  bottom: 39px;
+  display: flex;
+  gap: 15px;
+  font-size: var(--text-micro);
+  color: var(--ink-on-inverse);
+}
+.legend .bone-left {
+  color: var(--bone-left);
+}
+.legend .bone-right {
+  color: var(--bone-right);
+}
+.legend .bone-center {
+  color: var(--bone-center);
+}
+
+.hint {
+  position: absolute;
+  left: 24px;
+  bottom: 18px;
+  font-size: var(--text-micro);
+  color: var(--ink-on-inverse);
+  opacity: 0.55;
+}
+
+/* ===== 播放控制 ======================================================== */
+.transport {
+  padding: 18px 0 14px;
+}
+.playrow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: var(--text-small);
+}
+.primary {
+  background: var(--accent);
+  color: var(--ink-on-accent);
+  border-color: var(--accent);
+  min-width: 80px;
+}
+.primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--ink-on-accent);
+}
+output {
+  font-family: var(--font-mono);
+  color: var(--ink-secondary);
+  flex: 1;
+  text-align: center;
+  font-size: var(--text-small);
+}
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-small);
+  color: var(--ink-secondary);
+}
+#timeline {
+  width: 100%;
+  accent-color: var(--accent);
+  margin: 18px 0 12px;
+}
+.options {
+  display: flex;
+  gap: 20px;
+  font-size: var(--text-small);
+  color: var(--ink-secondary);
+  flex-wrap: wrap;
+}
+.options input {
+  accent-color: var(--accent);
+}
+#counts {
+  margin-left: auto;
+  color: var(--ink-tertiary);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+}
+
+/* ===== 底部信息 ======================================================== */
+.details {
+  border-top: 1px solid var(--hairline);
+  padding-top: 16px;
+  display: flex;
+  gap: 30px;
+  color: var(--ink-tertiary);
+  font-size: var(--text-micro);
+  line-height: 1.8;
+}
+.details > div {
+  flex: 1;
+  min-width: 0;
+}
+#source {
+  overflow-wrap: anywhere;
+  margin: 6px 0;
+  max-width: none;
+  color: var(--ink-secondary);
+}
+#warning {
+  max-width: 340px;
+  margin: 0;
+  color: var(--ink-secondary);
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ===== 响应式 ========================================================== */
+@media (min-width: 801px) {
+  aside {
+    height: calc(100vh - 96px);
+    display: flex;
+    flex-direction: column;
+  }
+  #clips {
+    overflow-y: auto;
+    min-height: 0;
+    flex: 1;
+    scrollbar-width: thin;
+  }
+  aside .note {
+    flex-shrink: 0;
+  }
+  .options {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .options select {
+    font-size: var(--text-micro);
+    padding: 3px 6px;
+  }
+  .viewport {
+    height: calc(100vh - 370px);
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 20px;
+  }
+  main {
+    grid-template-columns: 210px 1fr;
+  }
+  .workspace {
+    padding: 14px;
+  }
+  aside {
+    padding: 18px 8px;
+  }
+  .viewtools {
+    top: auto;
+    bottom: 70px;
+  }
+  .options {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .details {
+    display: block;
+  }
+  .playrow {
+    flex-wrap: wrap;
+  }
+  output {
+    min-width: 120px;
+  }
+  .badge b {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  main {
+    display: block;
+  }
+  aside {
+    border-right: 0;
+  }
+  #clips {
+    max-height: 170px;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .note {
+    display: none;
+  }
+  .viewport {
+    min-height: 420px;
+  }
+  .section {
+    margin-bottom: 8px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+}

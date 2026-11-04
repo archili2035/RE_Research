@@ -1,0 +1,278 @@
+/*!
+ * RE 动画研究室 · 技术说明页局部样式（三层）
+ * 依赖 tokens.css + base.css。只处理本页专属结构（导航、流程、说明框），
+ * 排版/表格/代码块/提示的通用样式沿用 base.css。
+ */
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+/* ===== 顶栏 ============================================================ */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  min-height: 72px;
+  padding: 16px 5vw;
+  border-bottom: 1px solid var(--hairline);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brand {
+  text-decoration: none;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-h4);
+}
+.brand span {
+  color: var(--ink-tertiary);
+  font-weight: var(--weight-normal);
+  margin-left: 12px;
+}
+.back {
+  font-size: var(--text-small);
+  white-space: nowrap;
+}
+
+/* ===== 双栏布局 ======================================================== */
+.layout {
+  max-width: var(--width-wide);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 60px;
+  padding: 44px 36px;
+}
+
+nav {
+  position: sticky;
+  top: 104px;
+  align-self: start;
+  max-height: calc(100vh - 130px);
+  overflow: auto;
+}
+nav .eyebrow {
+  margin-bottom: 10px;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--ink-secondary);
+  font-size: var(--text-small);
+  padding: 6px 0;
+}
+nav a:hover {
+  color: var(--accent);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: var(--text-micro-ls);
+  text-transform: uppercase;
+  color: var(--ink-tertiary);
+}
+
+/* ===== 首屏 ============================================================ */
+.hero {
+  padding: 8px 0 44px;
+  border-bottom: 1px solid var(--hairline);
+}
+.hero h1 {
+  font-size: var(--text-h1);
+  line-height: var(--text-h1-lh);
+  letter-spacing: var(--text-h1-ls);
+  margin: 16px 0 22px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+.tags span {
+  font-size: var(--text-micro);
+  border: 1px solid var(--accent-line);
+  color: var(--accent);
+  border-radius: var(--radius-pill);
+  padding: 3px 12px;
+  background: var(--accent-wash);
+}
+
+/* ===== 分节 ============================================================ */
+section {
+  padding: 29px 0 25px;
+  border-bottom: 1px solid var(--hairline);
+  scroll-margin-top: 80px;
+}
+h2 {
+  color: var(--ink);
+  line-height: var(--text-h2-lh);
+}
+h2 small {
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--accent);
+  margin-right: 14px;
+  font-weight: var(--weight-medium);
+}
+h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-h4);
+  color: var(--ink);
+  margin: 25px 0 8px;
+}
+
+code {
+  overflow-wrap: anywhere;
+}
+
+/* ===== 表格 ============================================================ */
+.table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+td:first-child {
+  min-width: 150px;
+  color: var(--ink-secondary);
+}
+
+/* ===== 说明框 ========================================================== */
+.callout {
+  background: var(--accent-wash);
+  border-left: 3px solid var(--accent-line);
+  padding: 16px 20px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: var(--text-small);
+  color: var(--ink);
+  margin: 22px 0;
+}
+.callout p:last-child {
+  margin-bottom: 0;
+}
+.callout strong {
+  color: var(--ink);
+}
+
+/* ===== 数据流图 ======================================================== */
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  background: var(--surface-alt);
+  margin: 24px 0;
+}
+.flow div {
+  text-align: center;
+  padding: 12px 22px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-raised);
+  width: min(100%, 410px);
+  font-size: var(--text-small);
+  color: var(--ink);
+}
+.flow small {
+  display: block;
+  color: var(--ink-tertiary);
+  font-size: var(--text-micro);
+}
+.flow b {
+  color: var(--accent);
+  font-size: 19px;
+  line-height: 1.6;
+  font-weight: var(--weight-medium);
+}
+
+/* ===== 页脚 ============================================================ */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 30px 0;
+  color: var(--ink-tertiary);
+  font-size: var(--text-micro);
+}
+footer span {
+  margin-right: auto;
+}
+
+/* ===== 响应式 ========================================================== */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 28px;
+    padding: 30px 24px;
+  }
+  nav a {
+    font-size: var(--text-micro);
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 14px 18px;
+  }
+  .brand span {
+    display: none;
+  }
+  .layout {
+    display: block;
+    padding: 22px 20px;
+  }
+  nav {
+    position: static;
+    max-height: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 24px;
+  }
+  nav .eyebrow {
+    width: 100%;
+    margin: 0;
+  }
+  nav a {
+    padding: 2px 0;
+  }
+  .hero {
+    padding-bottom: 30px;
+  }
+  .hero h1 {
+    letter-spacing: 0;
+  }
+  h2 {
+    font-size: var(--text-h3);
+  }
+  th,
+  td {
+    padding: 10px;
+  }
+  pre {
+    padding: 14px;
+  }
+  .flow {
+    padding: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
