@@ -1,0 +1,937 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerlightanimationuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 34,
+      "Class": "anim.AnimationUserData",
+      "Userdata": null,
+      "Fields": {
+        "ParamSets": [
+          {
+            "Index": 13,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 11,
+                "Class": "anim.AnimSpineMixer.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 2,
+                      "Class": "anim.AnimSpineMixer.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 1,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 4,
+                        "PrivatePoseBlendRate": [
+                          0.1,
+                          0.2,
+                          0.35,
+                          0.6,
+                          0.6,
+                          0.6,
+                          0.6
+                        ],
+                        "BaseAddBlendRate": [
+                          0,
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0
+                        ],
+                        "HipPosRate": 0,
+                        "ClampMin": 0,
+                        "ClampMax": 1,
+                        "L_HandConstRate": 0
+                      }
+                    },
+                    {
+                      "Index": 4,
+                      "Class": "anim.AnimSpineMixer.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 3,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 4,
+                        "PrivatePoseBlendRate": [
+                          0,
+                          0.2,
+                          0.35,
+                          0.4,
+                          0.4,
+                          0.4,
+                          0.7
+                        ],
+                        "BaseAddBlendRate": [
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "HipPosRate": 0,
+                        "ClampMin": 0,
+                        "ClampMax": 0.8,
+                        "L_HandConstRate": 0
+                      }
+                    },
+                    {
+                      "Index": 6,
+                      "Class": "anim.AnimSpineMixer.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 5,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 4,
+                        "PrivatePoseBlendRate": [
+                          1,
+                          1,
+                          1,
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        "BaseAddBlendRate": [
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "HipPosRate": 0.7,
+                        "ClampMin": 0,
+                        "ClampMax": 1,
+                        "L_HandConstRate": 0
+                      }
+                    },
+                    {
+                      "Index": 8,
+                      "Class": "anim.AnimSpineMixer.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 7,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 4,
+                        "PrivatePoseBlendRate": [
+                          0.1,
+                          0.15,
+                          0.3,
+                          0.1,
+                          0.2,
+                          0.2,
+                          0
+                        ],
+                        "BaseAddBlendRate": [
+                          0,
+                          1,
+                          1,
+                          1,
+                          1,
+                          0.5,
+                          0
+                        ],
+                        "HipPosRate": 0,
+                        "ClampMin": 0.33,
+                        "ClampMax": 1,
+                        "L_HandConstRate": 0.6
+                      }
+                    },
+                    {
+                      "Index": 10,
+                      "Class": "anim.AnimSpineMixer.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 9,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 4,
+                        "PrivatePoseBlendRate": [
+                          0.1,
+                          0.03,
+                          0.03,
+                          0.05,
+                          0.2,
+                          0.2,
+                          0
+                        ],
+                        "BaseAddBlendRate": [
+                          0,
+                          1,
+                          1,
+                          1,
+                          1,
+                          0.5,
+                          0
+                        ],
+                        "HipPosRate": 0,
+                        "ClampMin": 0.33,
+                        "ClampMax": 1,
+                        "L_HandConstRate": 0.5
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false
+                }
+              },
+              "AnimationSetting": {
+                "Index": 12,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "anim.AnimSpineMixer"
+                }
+              }
+            }
+          },
+          {
+            "Index": 18,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 16,
+                "Class": "anim.AnimLightHandIK.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 15,
+                      "Class": "anim.AnimLightHandIK.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 14,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 8
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false,
+                  "SholderLimmitDeg": 40,
+                  "HandLimmitDeg": 25,
+                  "WepLiimitDeg": 10,
+                  "BlendMinLength": 0.3,
+                  "BlendMaxLength": 0.2,
+                  "TargetLerpRate": 0.1,
+                  "LocalOffset": "\u003C0.05, 0, 0\u003E",
+                  "DownOffset": 0
+                }
+              },
+              "AnimationSetting": {
+                "Index": 17,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "anim.AnimLightHandIK"
+                }
+              }
+            }
+          },
+          {
+            "Index": 23,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 21,
+                "Class": "anim.AnimSpineAdder.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 20,
+                      "Class": "anim.AnimSpineAdder.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 19,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 4
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false,
+                  "SpineRate": 0.2,
+                  "L_Arm_ClavicleRate": 0.2,
+                  "R_Arm_ClavicleRate": 0.2
+                }
+              },
+              "AnimationSetting": {
+                "Index": 22,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "anim.AnimSpineAdder"
+                }
+              }
+            }
+          },
+          {
+            "Index": 28,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 26,
+                "Class": "anim.AnimLightHandIKFPS.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 25,
+                      "Class": "anim.AnimLightHandIKFPS.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 24,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 3,
+                        "DisableSpeedRate": 4
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false
+                }
+              },
+              "AnimationSetting": {
+                "Index": 27,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "anim.AnimLightHandIKFPS"
+                }
+              }
+            }
+          },
+          {
+            "Index": 33,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 31,
+                "Class": "anim.AnimLWepRotater.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 30,
+                      "Class": "anim.AnimLWepRotater.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 29,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 10,
+                        "DisableSpeedRate": 10
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false
+                }
+              },
+              "AnimationSetting": {
+                "Index": 32,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "anim.AnimLWepRotater"
+                }
+              }
+            }
+          }
+        ],
+        "SubUserDatas": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "anim.AnimSpineMixer.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 4,
+        "PrivatePoseBlendRate": [
+          0.1,
+          0.2,
+          0.35,
+          0.6,
+          0.6,
+          0.6,
+          0.6
+        ],
+        "BaseAddBlendRate": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "HipPosRate": 0,
+        "ClampMin": 0,
+        "ClampMax": 1,
+        "L_HandConstRate": 0
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1699390205
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "anim.AnimSpineMixer.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 3,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 4,
+        "PrivatePoseBlendRate": [
+          0,
+          0.2,
+          0.35,
+          0.4,
+          0.4,
+          0.4,
+          0.7
+        ],
+        "BaseAddBlendRate": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "HipPosRate": 0,
+        "ClampMin": 0,
+        "ClampMax": 0.8,
+        "L_HandConstRate": 0
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3389212796
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "anim.AnimSpineMixer.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 4,
+        "PrivatePoseBlendRate": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "BaseAddBlendRate": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "HipPosRate": 0.7,
+        "ClampMin": 0,
+        "ClampMax": 1,
+        "L_HandConstRate": 0
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1399039675
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "anim.AnimSpineMixer.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 7,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 4,
+        "PrivatePoseBlendRate": [
+          0.1,
+          0.15,
+          0.3,
+          0.1,
+          0.2,
+          0.2,
+          0
+        ],
+        "BaseAddBlendRate": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0.5,
+          0
+        ],
+        "HipPosRate": 0,
+        "ClampMin": 0.33,
+        "ClampMax": 1,
+        "L_HandConstRate": 0.6
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3179521818
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "anim.AnimSpineMixer.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 9,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 4,
+        "PrivatePoseBlendRate": [
+          0.1,
+          0.03,
+          0.03,
+          0.05,
+          0.2,
+          0.2,
+          0
+        ],
+        "BaseAddBlendRate": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0.5,
+          0
+        ],
+        "HipPosRate": 0,
+        "ClampMin": 0.33,
+        "ClampMax": 1,
+        "L_HandConstRate": 0.5
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "anim.AnimSpineMixer.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 2,
+            "Class": "anim.AnimSpineMixer.SubParam"
+          },
+          {
+            "Ref": 4,
+            "Class": "anim.AnimSpineMixer.SubParam"
+          },
+          {
+            "Ref": 6,
+            "Class": "anim.AnimSpineMixer.SubParam"
+          },
+          {
+            "Ref": 8,
+            "Class": "anim.AnimSpineMixer.SubParam"
+          },
+          {
+            "Ref": 10,
+            "Class": "anim.AnimSpineMixer.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "anim.AnimSpineMixer"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 11,
+          "Class": "anim.AnimSpineMixer.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 12,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "anim.AnimLightHandIK.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 14,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 8
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "anim.AnimLightHandIK.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 15,
+            "Class": "anim.AnimLightHandIK.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false,
+        "SholderLimmitDeg": 40,
+        "HandLimmitDeg": 25,
+        "WepLiimitDeg": 10,
+        "BlendMinLength": 0.3,
+        "BlendMaxLength": 0.2,
+        "TargetLerpRate": 0.1,
+        "LocalOffset": "\u003C0.05, 0, 0\u003E",
+        "DownOffset": 0
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "anim.AnimLightHandIK"
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 16,
+          "Class": "anim.AnimLightHandIK.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 17,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "anim.AnimSpineAdder.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 19,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 4
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "anim.AnimSpineAdder.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 20,
+            "Class": "anim.AnimSpineAdder.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false,
+        "SpineRate": 0.2,
+        "L_Arm_ClavicleRate": 0.2,
+        "R_Arm_ClavicleRate": 0.2
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "anim.AnimSpineAdder"
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 21,
+          "Class": "anim.AnimSpineAdder.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 22,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "anim.AnimLightHandIKFPS.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 24,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 3,
+        "DisableSpeedRate": 4
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "anim.AnimLightHandIKFPS.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 25,
+            "Class": "anim.AnimLightHandIKFPS.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "anim.AnimLightHandIKFPS"
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 26,
+          "Class": "anim.AnimLightHandIKFPS.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 27,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "anim.AnimLWepRotater.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 29,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 10,
+        "DisableSpeedRate": 10
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "anim.AnimLWepRotater.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 30,
+            "Class": "anim.AnimLWepRotater.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "anim.AnimLWepRotater"
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 31,
+          "Class": "anim.AnimLWepRotater.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 32,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "anim.AnimationUserData",
+      "Userdata": null,
+      "Fields": {
+        "ParamSets": [
+          {
+            "Ref": 13,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 18,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 23,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 28,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 33,
+            "Class": "anim.AnimationUserData.ParamSet"
+          }
+        ],
+        "SubUserDatas": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/animdelayhand/rightarm/playeranimdelayhanddata_rightarmspecification.user.3",
+  "Objects": [
+    {
+      "Index": 7,
+      "Class": "app.AnimDelayHandData_ArmSpecification",
+      "Userdata": null,
+      "Fields": {
+        "_DataTables": [
+          {
+            "Index": 1,
+            "Class": "app.AnimDelayHandData_DataTable",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_BareHands_R.user",
+            "Fields": {}
+          },
+          {
+            "Index": 2,
+            "Class": "app.AnimDelayHandData_DataTable",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_Handgun_R.user",
+            "Fields": {}
+          },
+          {
+            "Index": 3,
+            "Class": "app.AnimDelayHandData_DataTable",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_LongGun_R.user",
+            "Fields": {}
+          },
+          {
+            "Index": 4,
+            "Class": "app.AnimDelayHandData_DataTable",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_Knife_R.user",
+            "Fields": {}
+          },
+          {
+            "Index": 5,
+            "Class": "app.AnimDelayHandData_DataTable",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_Axe_R.user",
+            "Fields": {}
+          },
+          {
+            "Index": 6,
+            "Class": "app.AnimDelayHandData_DataTable",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_Throwing_R.user",
+            "Fields": {}
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_BareHands_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_Handgun_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_LongGun_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_Knife_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 5,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_Axe_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 6,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/PlayerAnimDelayHandData_DataTable_Throwing_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 7,
+      "Class": "app.AnimDelayHandData_ArmSpecification",
+      "Userdata": null,
+      "Fields": {
+        "_DataTables": [
+          {
+            "Ref": 1,
+            "Class": "app.AnimDelayHandData_DataTable"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.AnimDelayHandData_DataTable"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.AnimDelayHandData_DataTable"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.AnimDelayHandData_DataTable"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.AnimDelayHandData_DataTable"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.AnimDelayHandData_DataTable"
+          }
+        ]
+      }
+    }
+  ]
+}

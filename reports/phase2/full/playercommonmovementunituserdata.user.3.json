@@ -1,0 +1,589 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playercommonmovementunituserdata.user.3",
+  "Objects": [
+    {
+      "Index": 26,
+      "Class": "app.MovementUnitControlUserData",
+      "Userdata": null,
+      "Fields": {
+        "_UnitArray": [
+          {
+            "Index": 4,
+            "Class": "app.MovementUnitControl.Unit",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3705329191
+                }
+              },
+              "_DistanceParam": {
+                "Index": 2,
+                "Class": "app.MovementUnitControl.DistanceParam",
+                "Userdata": null,
+                "Fields": {
+                  "_ForwardDistance": 0.2,
+                  "_LeftDistance": 0.2,
+                  "_RightDistance": 0.2,
+                  "_BackDistance": 0.2
+                }
+              },
+              "_FirstAdjustmentStartFrame": 30,
+              "_FirstAdjustmentDistanceRate": 0.75,
+              "_FirstAdjustmentSpeedRate": 1,
+              "_ConditionParam": {
+                "Index": 3,
+                "Class": "app.MovementUnitControl.ConditionParam",
+                "Userdata": null,
+                "Fields": {
+                  "_Params": []
+                }
+              }
+            }
+          },
+          {
+            "Index": 21,
+            "Class": "app.MovementUnitControl.Unit",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": {
+                "Index": 5,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1535894296
+                }
+              },
+              "_DistanceParam": {
+                "Index": 6,
+                "Class": "app.MovementUnitControl.DistanceParam",
+                "Userdata": null,
+                "Fields": {
+                  "_ForwardDistance": 0.3,
+                  "_LeftDistance": 0.2,
+                  "_RightDistance": 0.2,
+                  "_BackDistance": 0.2
+                }
+              },
+              "_FirstAdjustmentStartFrame": 0,
+              "_FirstAdjustmentDistanceRate": 0.5,
+              "_FirstAdjustmentSpeedRate": 1,
+              "_ConditionParam": {
+                "Index": 20,
+                "Class": "app.MovementUnitControl.ConditionParam",
+                "Userdata": null,
+                "Fields": {
+                  "_Params": [
+                    {
+                      "Index": 7,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_StrafeFrontStartR",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 8,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_StrafeBackStartR",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 9,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_StrafeFrontStartL",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 10,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_StrafeBackStartL",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 11,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_CrouchStrafeFrontStart",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 12,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_CrouchStrafeBackStart",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 13,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_VigilanceStart",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 14,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_StrafeGazeStart",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 15,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_CrouchStrafeGazeStart",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 16,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_StrafeFrontTurnStartL",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 17,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_StrafeBackTurnStartL",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 18,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_StrafeFrontTurnStartR",
+                        "_AdjustmentFrame": 50
+                      }
+                    },
+                    {
+                      "Index": 19,
+                      "Class": "app.MovementUnitControl.ConditionParam.Param",
+                      "Userdata": null,
+                      "Fields": {
+                        "_TramNodeName": "Common_Strafe_StrafeBackTurnStartR",
+                        "_AdjustmentFrame": 50
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "Index": 25,
+            "Class": "app.MovementUnitControl.Unit",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": {
+                "Index": 22,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1951397746
+                }
+              },
+              "_DistanceParam": {
+                "Index": 23,
+                "Class": "app.MovementUnitControl.DistanceParam",
+                "Userdata": null,
+                "Fields": {
+                  "_ForwardDistance": 0.2,
+                  "_LeftDistance": 0.2,
+                  "_RightDistance": 0.2,
+                  "_BackDistance": 0.2
+                }
+              },
+              "_FirstAdjustmentStartFrame": 10,
+              "_FirstAdjustmentDistanceRate": 0.75,
+              "_FirstAdjustmentSpeedRate": 1,
+              "_ConditionParam": {
+                "Index": 24,
+                "Class": "app.MovementUnitControl.ConditionParam",
+                "Userdata": null,
+                "Fields": {
+                  "_Params": []
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3705329191
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.MovementUnitControl.DistanceParam",
+      "Userdata": null,
+      "Fields": {
+        "_ForwardDistance": 0.2,
+        "_LeftDistance": 0.2,
+        "_RightDistance": 0.2,
+        "_BackDistance": 0.2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.MovementUnitControl.ConditionParam",
+      "Userdata": null,
+      "Fields": {
+        "_Params": []
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.MovementUnitControl.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_DistanceParam": {
+          "Ref": 2,
+          "Class": "app.MovementUnitControl.DistanceParam"
+        },
+        "_FirstAdjustmentStartFrame": 30,
+        "_FirstAdjustmentDistanceRate": 0.75,
+        "_FirstAdjustmentSpeedRate": 1,
+        "_ConditionParam": {
+          "Ref": 3,
+          "Class": "app.MovementUnitControl.ConditionParam"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1535894296
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.MovementUnitControl.DistanceParam",
+      "Userdata": null,
+      "Fields": {
+        "_ForwardDistance": 0.3,
+        "_LeftDistance": 0.2,
+        "_RightDistance": 0.2,
+        "_BackDistance": 0.2
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontStartR",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackStartR",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontStartL",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackStartL",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeFrontStart",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeBackStart",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_VigilanceStart",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeGazeStart",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeGazeStart",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontTurnStartL",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackTurnStartL",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontTurnStartR",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.MovementUnitControl.ConditionParam.Param",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackTurnStartR",
+        "_AdjustmentFrame": 50
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.MovementUnitControl.ConditionParam",
+      "Userdata": null,
+      "Fields": {
+        "_Params": [
+          {
+            "Ref": 7,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 16,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.MovementUnitControl.ConditionParam.Param"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.MovementUnitControl.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        },
+        "_DistanceParam": {
+          "Ref": 6,
+          "Class": "app.MovementUnitControl.DistanceParam"
+        },
+        "_FirstAdjustmentStartFrame": 0,
+        "_FirstAdjustmentDistanceRate": 0.5,
+        "_FirstAdjustmentSpeedRate": 1,
+        "_ConditionParam": {
+          "Ref": 20,
+          "Class": "app.MovementUnitControl.ConditionParam"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1951397746
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.MovementUnitControl.DistanceParam",
+      "Userdata": null,
+      "Fields": {
+        "_ForwardDistance": 0.2,
+        "_LeftDistance": 0.2,
+        "_RightDistance": 0.2,
+        "_BackDistance": 0.2
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.MovementUnitControl.ConditionParam",
+      "Userdata": null,
+      "Fields": {
+        "_Params": []
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.MovementUnitControl.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": {
+          "Ref": 22,
+          "Class": "app.NameHash"
+        },
+        "_DistanceParam": {
+          "Ref": 23,
+          "Class": "app.MovementUnitControl.DistanceParam"
+        },
+        "_FirstAdjustmentStartFrame": 10,
+        "_FirstAdjustmentDistanceRate": 0.75,
+        "_FirstAdjustmentSpeedRate": 1,
+        "_ConditionParam": {
+          "Ref": 24,
+          "Class": "app.MovementUnitControl.ConditionParam"
+        }
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.MovementUnitControlUserData",
+      "Userdata": null,
+      "Fields": {
+        "_UnitArray": [
+          {
+            "Ref": 4,
+            "Class": "app.MovementUnitControl.Unit"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.MovementUnitControl.Unit"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.MovementUnitControl.Unit"
+          }
+        ]
+      }
+    }
+  ]
+}

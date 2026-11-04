@@ -1,0 +1,2848 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100commonmessagetriggertable_interactive_zombie_part10.user.3",
+  "Objects": [
+    {
+      "Index": 142,
+      "Class": "app.PlayerMessageTriggerTable",
+      "Userdata": null,
+      "Fields": {
+        "_Settings": [
+          {
+            "Index": 22,
+            "Class": "app.PlayerMessageTriggerSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MessageEventRequests": [
+                {
+                  "Index": 10,
+                  "Class": "app.PlayerMessageEventRequest",
+                  "Userdata": null,
+                  "Fields": {
+                    "_EventID": {
+                      "Index": 1,
+                      "Class": "app.PlayerMessageEventID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "Battle_ShootEnemy"
+                      }
+                    },
+                    "_Arg": {
+                      "Index": 9,
+                      "Class": "app.PlayerMessageEventRequestArg_Battle_ShootEnemy",
+                      "Userdata": null,
+                      "Fields": {
+                        "_PositionParam": {
+                          "Ref": 2,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+                        },
+                        "_AngleParam": {
+                          "Ref": 3,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+                        },
+                        "_IsSelectEnemy": true,
+                        "_EnemyKindIDs": [
+                          {
+                            "Ref": 4,
+                            "Class": "app.CharacterKindID"
+                          },
+                          {
+                            "Ref": 5,
+                            "Class": "app.CharacterKindID"
+                          },
+                          {
+                            "Ref": 6,
+                            "Class": "app.CharacterKindID"
+                          },
+                          {
+                            "Ref": 7,
+                            "Class": "app.CharacterKindID"
+                          },
+                          {
+                            "Ref": 8,
+                            "Class": "app.CharacterKindID"
+                          }
+                        ],
+                        "_IsSelectParts": false,
+                        "_DamageParts": [],
+                        "_IsCheckMorph": false,
+                        "_IsEnableOnMorph": true
+                      }
+                    }
+                  }
+                }
+              ],
+              "_Priority": 4,
+              "_TriggerCheckDuration": 0,
+              "_ExecuteDuration": 0,
+              "_DelayExecuteCondition": {
+                "Index": 11,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_IsSetExecutedCount": false,
+              "_CompareType": 4,
+              "_ExecutedCheckCount": 1,
+              "_TriggerCountCheckParam": {
+                "Index": 12,
+                "Class": "app.CountCheckParam",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": false,
+                  "_CompareType": 4,
+                  "_CheckCount": 1
+                }
+              },
+              "_Condition": {
+                "Index": 19,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 15,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 13,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 14,
+                          "Class": "app.PlayerComplexConditionParam_LastAttackGameObject"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 18,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 16,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 17,
+                          "Class": "app.PlayerComplexConditionParam_BattleState"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_RequestType": 1,
+              "_ConversationID": {
+                "Index": 20,
+                "Class": "app.ConversationID",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Invalid"
+                }
+              },
+              "_CommonMessageTableDefinition": {
+                "Index": 21,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 4020337396
+                }
+              }
+            }
+          },
+          {
+            "Index": 39,
+            "Class": "app.PlayerMessageTriggerSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MessageEventRequests": [
+                {
+                  "Index": 33,
+                  "Class": "app.PlayerMessageEventRequest",
+                  "Userdata": null,
+                  "Fields": {
+                    "_EventID": {
+                      "Index": 23,
+                      "Class": "app.PlayerMessageEventID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "Battle_AttackedAtVeryCloseRange"
+                      }
+                    },
+                    "_Arg": {
+                      "Index": 32,
+                      "Class": "app.PlayerMessageEventRequestArg_Battle_AttackedAtVeryCloseRange",
+                      "Userdata": null,
+                      "Fields": {
+                        "_PositionParam": {
+                          "Ref": 24,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+                        },
+                        "_AngleParam": {
+                          "Ref": 25,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+                        },
+                        "_CharacterKindParam": {
+                          "Ref": 31,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_CharacterKind"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "_Priority": 6,
+              "_TriggerCheckDuration": 0.5,
+              "_ExecuteDuration": 0,
+              "_DelayExecuteCondition": {
+                "Index": 34,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_IsSetExecutedCount": false,
+              "_CompareType": 4,
+              "_ExecutedCheckCount": 1,
+              "_TriggerCountCheckParam": {
+                "Index": 35,
+                "Class": "app.CountCheckParam",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": false,
+                  "_CompareType": 4,
+                  "_CheckCount": 1
+                }
+              },
+              "_Condition": {
+                "Index": 36,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_RequestType": 1,
+              "_ConversationID": {
+                "Index": 37,
+                "Class": "app.ConversationID",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Invalid"
+                }
+              },
+              "_CommonMessageTableDefinition": {
+                "Index": 38,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1279492313
+                }
+              }
+            }
+          },
+          {
+            "Index": 56,
+            "Class": "app.PlayerMessageTriggerSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MessageEventRequests": [
+                {
+                  "Index": 50,
+                  "Class": "app.PlayerMessageEventRequest",
+                  "Userdata": null,
+                  "Fields": {
+                    "_EventID": {
+                      "Index": 40,
+                      "Class": "app.PlayerMessageEventID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "Battle_AttackedAtCloseRange"
+                      }
+                    },
+                    "_Arg": {
+                      "Index": 49,
+                      "Class": "app.PlayerMessageEventRequestArg_Battle_AttackedAtCloseRange",
+                      "Userdata": null,
+                      "Fields": {
+                        "_PositionParam": {
+                          "Ref": 41,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+                        },
+                        "_AngleParam": {
+                          "Ref": 42,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+                        },
+                        "_CharacterKindParam": {
+                          "Ref": 48,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_CharacterKind"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "_Priority": 5,
+              "_TriggerCheckDuration": 0.3,
+              "_ExecuteDuration": 0.2,
+              "_DelayExecuteCondition": {
+                "Index": 51,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_IsSetExecutedCount": false,
+              "_CompareType": 4,
+              "_ExecutedCheckCount": 1,
+              "_TriggerCountCheckParam": {
+                "Index": 52,
+                "Class": "app.CountCheckParam",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": false,
+                  "_CompareType": 4,
+                  "_CheckCount": 1
+                }
+              },
+              "_Condition": {
+                "Index": 53,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_RequestType": 1,
+              "_ConversationID": {
+                "Index": 54,
+                "Class": "app.ConversationID",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Invalid"
+                }
+              },
+              "_CommonMessageTableDefinition": {
+                "Index": 55,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 347126061
+                }
+              }
+            }
+          },
+          {
+            "Index": 81,
+            "Class": "app.PlayerMessageTriggerSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MessageEventRequests": [
+                {
+                  "Index": 66,
+                  "Class": "app.PlayerMessageEventRequest",
+                  "Userdata": null,
+                  "Fields": {
+                    "_EventID": {
+                      "Index": 57,
+                      "Class": "app.PlayerMessageEventID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "Battle_KillEnemy"
+                      }
+                    },
+                    "_Arg": {
+                      "Index": 65,
+                      "Class": "app.PlayerMessageEventRequestArg_Battle_KillEnemy",
+                      "Userdata": null,
+                      "Fields": {
+                        "_PositionParam": {
+                          "Ref": 58,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+                        },
+                        "_AngleParam": {
+                          "Ref": 59,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+                        },
+                        "_IsSelectEnemy": true,
+                        "_EnemyKindIDs": [
+                          {
+                            "Ref": 60,
+                            "Class": "app.CharacterKindID"
+                          },
+                          {
+                            "Ref": 61,
+                            "Class": "app.CharacterKindID"
+                          },
+                          {
+                            "Ref": 62,
+                            "Class": "app.CharacterKindID"
+                          },
+                          {
+                            "Ref": 63,
+                            "Class": "app.CharacterKindID"
+                          },
+                          {
+                            "Ref": 64,
+                            "Class": "app.CharacterKindID"
+                          }
+                        ],
+                        "_IsSelectParts": false,
+                        "_DamageParts": [],
+                        "_IsCheckMorph": false,
+                        "_IsEnableOnMorph": true
+                      }
+                    }
+                  }
+                }
+              ],
+              "_Priority": 6,
+              "_TriggerCheckDuration": 2.5,
+              "_ExecuteDuration": 1,
+              "_DelayExecuteCondition": {
+                "Index": 67,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_IsSetExecutedCount": false,
+              "_CompareType": 4,
+              "_ExecutedCheckCount": 1,
+              "_TriggerCountCheckParam": {
+                "Index": 68,
+                "Class": "app.CountCheckParam",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": false,
+                  "_CompareType": 4,
+                  "_CheckCount": 1
+                }
+              },
+              "_Condition": {
+                "Index": 78,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 77,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 69,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 76,
+                          "Class": "app.PlayerComplexConditionParam_Composite"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_RequestType": 1,
+              "_ConversationID": {
+                "Index": 79,
+                "Class": "app.ConversationID",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Invalid"
+                }
+              },
+              "_CommonMessageTableDefinition": {
+                "Index": 80,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 669302483
+                }
+              }
+            }
+          },
+          {
+            "Index": 87,
+            "Class": "app.PlayerMessageTriggerSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MessageEventRequests": [],
+              "_Priority": 5,
+              "_TriggerCheckDuration": 0,
+              "_ExecuteDuration": 0,
+              "_DelayExecuteCondition": {
+                "Index": 82,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_IsSetExecutedCount": false,
+              "_CompareType": 4,
+              "_ExecutedCheckCount": 1,
+              "_TriggerCountCheckParam": {
+                "Index": 83,
+                "Class": "app.CountCheckParam",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": false,
+                  "_CompareType": 4,
+                  "_CheckCount": 1
+                }
+              },
+              "_Condition": {
+                "Index": 84,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_RequestType": 1,
+              "_ConversationID": {
+                "Index": 85,
+                "Class": "app.ConversationID",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Invalid"
+                }
+              },
+              "_CommonMessageTableDefinition": {
+                "Index": 86,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3624267300
+                }
+              }
+            }
+          },
+          {
+            "Index": 104,
+            "Class": "app.PlayerMessageTriggerSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MessageEventRequests": [
+                {
+                  "Index": 98,
+                  "Class": "app.PlayerMessageEventRequest",
+                  "Userdata": null,
+                  "Fields": {
+                    "_EventID": {
+                      "Index": 88,
+                      "Class": "app.PlayerMessageEventID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "Battle_FoundByEnemy"
+                      }
+                    },
+                    "_Arg": {
+                      "Index": 97,
+                      "Class": "app.PlayerMessageEventRequestArg_Battle_FoundByEnemy",
+                      "Userdata": null,
+                      "Fields": {
+                        "_PositionParam": {
+                          "Ref": 89,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+                        },
+                        "_AngleParam": {
+                          "Ref": 90,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+                        },
+                        "_CharacterKindParam": {
+                          "Ref": 96,
+                          "Class": "app.PlayerMessageEventRequestCheckParam_CharacterKind"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "_Priority": 5,
+              "_TriggerCheckDuration": 0,
+              "_ExecuteDuration": 0.5,
+              "_DelayExecuteCondition": {
+                "Index": 99,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_IsSetExecutedCount": false,
+              "_CompareType": 4,
+              "_ExecutedCheckCount": 1,
+              "_TriggerCountCheckParam": {
+                "Index": 100,
+                "Class": "app.CountCheckParam",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": false,
+                  "_CompareType": 4,
+                  "_CheckCount": 1
+                }
+              },
+              "_Condition": {
+                "Index": 101,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_RequestType": 1,
+              "_ConversationID": {
+                "Index": 102,
+                "Class": "app.ConversationID",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Invalid"
+                }
+              },
+              "_CommonMessageTableDefinition": {
+                "Index": 103,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1749457579
+                }
+              }
+            }
+          },
+          {
+            "Index": 119,
+            "Class": "app.PlayerMessageTriggerSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MessageEventRequests": [
+                {
+                  "Index": 107,
+                  "Class": "app.PlayerMessageEventRequest",
+                  "Userdata": null,
+                  "Fields": {
+                    "_EventID": {
+                      "Index": 105,
+                      "Class": "app.PlayerMessageEventID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "Battle_CookZombieFindAround"
+                      }
+                    },
+                    "_Arg": {
+                      "Index": 106,
+                      "Class": "app.PlayerMessageEventRequestArg_Empty",
+                      "Userdata": null,
+                      "Fields": {}
+                    }
+                  }
+                }
+              ],
+              "_Priority": 5,
+              "_TriggerCheckDuration": 0,
+              "_ExecuteDuration": 0,
+              "_DelayExecuteCondition": {
+                "Index": 108,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_IsSetExecutedCount": true,
+              "_CompareType": 4,
+              "_ExecutedCheckCount": 2,
+              "_TriggerCountCheckParam": {
+                "Index": 109,
+                "Class": "app.CountCheckParam",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": false,
+                  "_CompareType": 4,
+                  "_CheckCount": 1
+                }
+              },
+              "_Condition": {
+                "Index": 116,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 112,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 110,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 111,
+                          "Class": "app.PlayerComplexConditionParam_TagControl"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 115,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 113,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 114,
+                          "Class": "app.PlayerComplexConditionParam_Occupy"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_RequestType": 1,
+              "_ConversationID": {
+                "Index": 117,
+                "Class": "app.ConversationID",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Invalid"
+                }
+              },
+              "_CommonMessageTableDefinition": {
+                "Index": 118,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1835703847
+                }
+              }
+            }
+          },
+          {
+            "Index": 130,
+            "Class": "app.PlayerMessageTriggerSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MessageEventRequests": [
+                {
+                  "Index": 124,
+                  "Class": "app.PlayerMessageEventRequest",
+                  "Userdata": null,
+                  "Fields": {
+                    "_EventID": {
+                      "Index": 120,
+                      "Class": "app.PlayerMessageEventID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "Battle_TransitionAction"
+                      }
+                    },
+                    "_Arg": {
+                      "Index": 123,
+                      "Class": "app.PlayerMessageEventRequestArg_Battle_TransitionAction",
+                      "Userdata": null,
+                      "Fields": {
+                        "_IsCheckPrevAction": false,
+                        "_PrevAction": {
+                          "Ref": 121,
+                          "Class": "app.NameHash"
+                        },
+                        "_IsCheckNextAction": true,
+                        "_NextAction": {
+                          "Ref": 122,
+                          "Class": "app.NameHash"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "_Priority": 5,
+              "_TriggerCheckDuration": 0,
+              "_ExecuteDuration": 0,
+              "_DelayExecuteCondition": {
+                "Index": 125,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_IsSetExecutedCount": false,
+              "_CompareType": 4,
+              "_ExecutedCheckCount": 1,
+              "_TriggerCountCheckParam": {
+                "Index": 126,
+                "Class": "app.CountCheckParam",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": false,
+                  "_CompareType": 4,
+                  "_CheckCount": 1
+                }
+              },
+              "_Condition": {
+                "Index": 127,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_RequestType": 1,
+              "_ConversationID": {
+                "Index": 128,
+                "Class": "app.ConversationID",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Invalid"
+                }
+              },
+              "_CommonMessageTableDefinition": {
+                "Index": 129,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2859058844
+                }
+              }
+            }
+          },
+          {
+            "Index": 141,
+            "Class": "app.PlayerMessageTriggerSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MessageEventRequests": [
+                {
+                  "Index": 135,
+                  "Class": "app.PlayerMessageEventRequest",
+                  "Userdata": null,
+                  "Fields": {
+                    "_EventID": {
+                      "Index": 131,
+                      "Class": "app.PlayerMessageEventID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "Battle_TransitionAction"
+                      }
+                    },
+                    "_Arg": {
+                      "Index": 134,
+                      "Class": "app.PlayerMessageEventRequestArg_Battle_TransitionAction",
+                      "Userdata": null,
+                      "Fields": {
+                        "_IsCheckPrevAction": false,
+                        "_PrevAction": {
+                          "Ref": 132,
+                          "Class": "app.NameHash"
+                        },
+                        "_IsCheckNextAction": true,
+                        "_NextAction": {
+                          "Ref": 133,
+                          "Class": "app.NameHash"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "_Priority": 5,
+              "_TriggerCheckDuration": 0,
+              "_ExecuteDuration": 0,
+              "_DelayExecuteCondition": {
+                "Index": 136,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_IsSetExecutedCount": false,
+              "_CompareType": 4,
+              "_ExecutedCheckCount": 1,
+              "_TriggerCountCheckParam": {
+                "Index": 137,
+                "Class": "app.CountCheckParam",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": false,
+                  "_CompareType": 4,
+                  "_CheckCount": 1
+                }
+              },
+              "_Condition": {
+                "Index": 138,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_RequestType": 1,
+              "_ConversationID": {
+                "Index": 139,
+                "Class": "app.ConversationID",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Invalid"
+                }
+              },
+              "_CommonMessageTableDefinition": {
+                "Index": 140,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1142011497
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Battle_ShootEnemy"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Position",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckDistance": false,
+        "_CompareType": 5,
+        "_Distance": 0,
+        "_IsCheckCamera": true,
+        "_JudgeType": 0,
+        "_Offset": "\u003C0, 1.5, 0\u003E",
+        "_IsCheckObstcle": false,
+        "_ObstcleOffset": "\u003C0, 1.5, 0\u003E"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Angle",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckAngle": true,
+        "_AngleRangeDeg": "Range(-120, 240)"
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B000"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B001"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B007"
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B004"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B005"
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerMessageEventRequestArg_Battle_ShootEnemy",
+      "Userdata": null,
+      "Fields": {
+        "_PositionParam": {
+          "Ref": 2,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+        },
+        "_AngleParam": {
+          "Ref": 3,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+        },
+        "_IsSelectEnemy": true,
+        "_EnemyKindIDs": [
+          {
+            "Ref": 4,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.CharacterKindID"
+          }
+        ],
+        "_IsSelectParts": false,
+        "_DamageParts": [],
+        "_IsCheckMorph": false,
+        "_IsEnableOnMorph": true
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 1,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 9,
+          "Class": "app.PlayerMessageEventRequestArg_Battle_ShootEnemy"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.CountCheckParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_CompareType": 4,
+        "_CheckCount": 1
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "LastAttackGameObject"
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerComplexConditionParam_LastAttackGameObject",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckDistance": true,
+        "_CheckDistance": 5,
+        "_CompareType": 5
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 13,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 14,
+          "Class": "app.PlayerComplexConditionParam_LastAttackGameObject"
+        }
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattleState"
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerComplexConditionParam_BattleState",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsEnableOnBattleState": true,
+        "_IsEnableStateCheck": true,
+        "_CheckState": 1
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 16,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 17,
+          "Class": "app.PlayerComplexConditionParam_BattleState"
+        }
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 15,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4020337396
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.PlayerMessageTriggerSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MessageEventRequests": [
+          {
+            "Ref": 10,
+            "Class": "app.PlayerMessageEventRequest"
+          }
+        ],
+        "_Priority": 4,
+        "_TriggerCheckDuration": 0,
+        "_ExecuteDuration": 0,
+        "_DelayExecuteCondition": {
+          "Ref": 11,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsSetExecutedCount": false,
+        "_CompareType": 4,
+        "_ExecutedCheckCount": 1,
+        "_TriggerCountCheckParam": {
+          "Ref": 12,
+          "Class": "app.CountCheckParam"
+        },
+        "_Condition": {
+          "Ref": 19,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_RequestType": 1,
+        "_ConversationID": {
+          "Ref": 20,
+          "Class": "app.ConversationID"
+        },
+        "_CommonMessageTableDefinition": {
+          "Ref": 21,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Battle_AttackedAtVeryCloseRange"
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Position",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckDistance": false,
+        "_CompareType": 5,
+        "_Distance": 0,
+        "_IsCheckCamera": true,
+        "_JudgeType": 0,
+        "_Offset": "\u003C0, 1.5, 0\u003E",
+        "_IsCheckObstcle": false,
+        "_ObstcleOffset": "\u003C0, 1.5, 0\u003E"
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Angle",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckAngle": false,
+        "_AngleRangeDeg": "Range(-120, 240)"
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B000"
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B001"
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B007"
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B004"
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B005"
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.PlayerMessageEventRequestCheckParam_CharacterKind",
+      "Userdata": null,
+      "Fields": {
+        "_IsSelectEnemy": true,
+        "_EnemyKindIDs": [
+          {
+            "Ref": 26,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 28,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.CharacterKindID"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.PlayerMessageEventRequestArg_Battle_AttackedAtVeryCloseRange",
+      "Userdata": null,
+      "Fields": {
+        "_PositionParam": {
+          "Ref": 24,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+        },
+        "_AngleParam": {
+          "Ref": 25,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+        },
+        "_CharacterKindParam": {
+          "Ref": 31,
+          "Class": "app.PlayerMessageEventRequestCheckParam_CharacterKind"
+        }
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 23,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 32,
+          "Class": "app.PlayerMessageEventRequestArg_Battle_AttackedAtVeryCloseRange"
+        }
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.CountCheckParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_CompareType": 4,
+        "_CheckCount": 1
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1279492313
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.PlayerMessageTriggerSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MessageEventRequests": [
+          {
+            "Ref": 33,
+            "Class": "app.PlayerMessageEventRequest"
+          }
+        ],
+        "_Priority": 6,
+        "_TriggerCheckDuration": 0.5,
+        "_ExecuteDuration": 0,
+        "_DelayExecuteCondition": {
+          "Ref": 34,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsSetExecutedCount": false,
+        "_CompareType": 4,
+        "_ExecutedCheckCount": 1,
+        "_TriggerCountCheckParam": {
+          "Ref": 35,
+          "Class": "app.CountCheckParam"
+        },
+        "_Condition": {
+          "Ref": 36,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_RequestType": 1,
+        "_ConversationID": {
+          "Ref": 37,
+          "Class": "app.ConversationID"
+        },
+        "_CommonMessageTableDefinition": {
+          "Ref": 38,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Battle_AttackedAtCloseRange"
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Position",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckDistance": false,
+        "_CompareType": 5,
+        "_Distance": 0,
+        "_IsCheckCamera": true,
+        "_JudgeType": 0,
+        "_Offset": "\u003C0, 1.5, 0\u003E",
+        "_IsCheckObstcle": false,
+        "_ObstcleOffset": "\u003C0, 1.5, 0\u003E"
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Angle",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckAngle": false,
+        "_AngleRangeDeg": "Range(-120, 240)"
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B000"
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B001"
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B007"
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B004"
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B005"
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.PlayerMessageEventRequestCheckParam_CharacterKind",
+      "Userdata": null,
+      "Fields": {
+        "_IsSelectEnemy": true,
+        "_EnemyKindIDs": [
+          {
+            "Ref": 43,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 44,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 45,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 46,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 47,
+            "Class": "app.CharacterKindID"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.PlayerMessageEventRequestArg_Battle_AttackedAtCloseRange",
+      "Userdata": null,
+      "Fields": {
+        "_PositionParam": {
+          "Ref": 41,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+        },
+        "_AngleParam": {
+          "Ref": 42,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+        },
+        "_CharacterKindParam": {
+          "Ref": 48,
+          "Class": "app.PlayerMessageEventRequestCheckParam_CharacterKind"
+        }
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 40,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 49,
+          "Class": "app.PlayerMessageEventRequestArg_Battle_AttackedAtCloseRange"
+        }
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.CountCheckParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_CompareType": 4,
+        "_CheckCount": 1
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 347126061
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.PlayerMessageTriggerSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MessageEventRequests": [
+          {
+            "Ref": 50,
+            "Class": "app.PlayerMessageEventRequest"
+          }
+        ],
+        "_Priority": 5,
+        "_TriggerCheckDuration": 0.3,
+        "_ExecuteDuration": 0.2,
+        "_DelayExecuteCondition": {
+          "Ref": 51,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsSetExecutedCount": false,
+        "_CompareType": 4,
+        "_ExecutedCheckCount": 1,
+        "_TriggerCountCheckParam": {
+          "Ref": 52,
+          "Class": "app.CountCheckParam"
+        },
+        "_Condition": {
+          "Ref": 53,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_RequestType": 1,
+        "_ConversationID": {
+          "Ref": 54,
+          "Class": "app.ConversationID"
+        },
+        "_CommonMessageTableDefinition": {
+          "Ref": 55,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Battle_KillEnemy"
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Position",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckDistance": false,
+        "_CompareType": 5,
+        "_Distance": 0,
+        "_IsCheckCamera": true,
+        "_JudgeType": 0,
+        "_Offset": "\u003C0, 1.5, 0\u003E",
+        "_IsCheckObstcle": false,
+        "_ObstcleOffset": "\u003C0, 1.5, 0\u003E"
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Angle",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckAngle": false,
+        "_AngleRangeDeg": "Range(-120, 240)"
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B000"
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B001"
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B007"
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B004"
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B005"
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.PlayerMessageEventRequestArg_Battle_KillEnemy",
+      "Userdata": null,
+      "Fields": {
+        "_PositionParam": {
+          "Ref": 58,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+        },
+        "_AngleParam": {
+          "Ref": 59,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+        },
+        "_IsSelectEnemy": true,
+        "_EnemyKindIDs": [
+          {
+            "Ref": 60,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 61,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 62,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 63,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 64,
+            "Class": "app.CharacterKindID"
+          }
+        ],
+        "_IsSelectParts": false,
+        "_DamageParts": [],
+        "_IsCheckMorph": false,
+        "_IsEnableOnMorph": true
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 57,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 65,
+          "Class": "app.PlayerMessageEventRequestArg_Battle_KillEnemy"
+        }
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.CountCheckParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_CompareType": 4,
+        "_CheckCount": 1
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Composite"
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattleState"
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.PlayerComplexConditionParam_BattleState",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsEnableOnBattleState": true,
+        "_IsEnableStateCheck": true,
+        "_CheckState": 2
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 70,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 71,
+          "Class": "app.PlayerComplexConditionParam_BattleState"
+        }
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattleState"
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.PlayerComplexConditionParam_BattleState",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsEnableOnBattleState": true,
+        "_IsEnableStateCheck": true,
+        "_CheckState": 0
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 73,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 74,
+          "Class": "app.PlayerComplexConditionParam_BattleState"
+        }
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.PlayerComplexConditionParam_Composite",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 72,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 75,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 69,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 76,
+          "Class": "app.PlayerComplexConditionParam_Composite"
+        }
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 77,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 669302483
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.PlayerMessageTriggerSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MessageEventRequests": [
+          {
+            "Ref": 66,
+            "Class": "app.PlayerMessageEventRequest"
+          }
+        ],
+        "_Priority": 6,
+        "_TriggerCheckDuration": 2.5,
+        "_ExecuteDuration": 1,
+        "_DelayExecuteCondition": {
+          "Ref": 67,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsSetExecutedCount": false,
+        "_CompareType": 4,
+        "_ExecutedCheckCount": 1,
+        "_TriggerCountCheckParam": {
+          "Ref": 68,
+          "Class": "app.CountCheckParam"
+        },
+        "_Condition": {
+          "Ref": 78,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_RequestType": 1,
+        "_ConversationID": {
+          "Ref": 79,
+          "Class": "app.ConversationID"
+        },
+        "_CommonMessageTableDefinition": {
+          "Ref": 80,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.CountCheckParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_CompareType": 4,
+        "_CheckCount": 1
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3624267300
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.PlayerMessageTriggerSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MessageEventRequests": [],
+        "_Priority": 5,
+        "_TriggerCheckDuration": 0,
+        "_ExecuteDuration": 0,
+        "_DelayExecuteCondition": {
+          "Ref": 82,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsSetExecutedCount": false,
+        "_CompareType": 4,
+        "_ExecutedCheckCount": 1,
+        "_TriggerCountCheckParam": {
+          "Ref": 83,
+          "Class": "app.CountCheckParam"
+        },
+        "_Condition": {
+          "Ref": 84,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_RequestType": 1,
+        "_ConversationID": {
+          "Ref": 85,
+          "Class": "app.ConversationID"
+        },
+        "_CommonMessageTableDefinition": {
+          "Ref": 86,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Battle_FoundByEnemy"
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Position",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckDistance": true,
+        "_CompareType": 5,
+        "_Distance": 20,
+        "_IsCheckCamera": true,
+        "_JudgeType": 0,
+        "_Offset": "\u003C0, 1.5, 0\u003E",
+        "_IsCheckObstcle": false,
+        "_ObstcleOffset": "\u003C0, 1.5, 0\u003E"
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.PlayerMessageEventRequestCheckParam_Angle",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckAngle": false,
+        "_AngleRangeDeg": "Range(-120, 240)"
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B000"
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B001"
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B007"
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B004"
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B005"
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.PlayerMessageEventRequestCheckParam_CharacterKind",
+      "Userdata": null,
+      "Fields": {
+        "_IsSelectEnemy": true,
+        "_EnemyKindIDs": [
+          {
+            "Ref": 91,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 92,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 93,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 94,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 95,
+            "Class": "app.CharacterKindID"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.PlayerMessageEventRequestArg_Battle_FoundByEnemy",
+      "Userdata": null,
+      "Fields": {
+        "_PositionParam": {
+          "Ref": 89,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Position"
+        },
+        "_AngleParam": {
+          "Ref": 90,
+          "Class": "app.PlayerMessageEventRequestCheckParam_Angle"
+        },
+        "_CharacterKindParam": {
+          "Ref": 96,
+          "Class": "app.PlayerMessageEventRequestCheckParam_CharacterKind"
+        }
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 88,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 97,
+          "Class": "app.PlayerMessageEventRequestArg_Battle_FoundByEnemy"
+        }
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.CountCheckParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_CompareType": 4,
+        "_CheckCount": 1
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1749457579
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.PlayerMessageTriggerSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MessageEventRequests": [
+          {
+            "Ref": 98,
+            "Class": "app.PlayerMessageEventRequest"
+          }
+        ],
+        "_Priority": 5,
+        "_TriggerCheckDuration": 0,
+        "_ExecuteDuration": 0.5,
+        "_DelayExecuteCondition": {
+          "Ref": 99,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsSetExecutedCount": false,
+        "_CompareType": 4,
+        "_ExecutedCheckCount": 1,
+        "_TriggerCountCheckParam": {
+          "Ref": 100,
+          "Class": "app.CountCheckParam"
+        },
+        "_Condition": {
+          "Ref": 101,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_RequestType": 1,
+        "_ConversationID": {
+          "Ref": 102,
+          "Class": "app.ConversationID"
+        },
+        "_CommonMessageTableDefinition": {
+          "Ref": 103,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Battle_CookZombieFindAround"
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.PlayerMessageEventRequestArg_Empty",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 107,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 105,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 106,
+          "Class": "app.PlayerMessageEventRequestArg_Empty"
+        }
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.CountCheckParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_CompareType": 4,
+        "_CheckCount": 1
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "TagControl"
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.PlayerComplexConditionParam_TagControl",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_TagName": "PlayerMessageEventRequestArg_Battle_CookZombieFindAround"
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 110,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 111,
+          "Class": "app.PlayerComplexConditionParam_TagControl"
+        }
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Occupy"
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.PlayerComplexConditionParam_Occupy",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsOccupy": true,
+        "_IsCheckOccupyPurpose": true,
+        "_OccupyPurposes": [
+          11
+        ]
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 113,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 114,
+          "Class": "app.PlayerComplexConditionParam_Occupy"
+        }
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 112,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 115,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1835703847
+      }
+    },
+    {
+      "Index": 119,
+      "Class": "app.PlayerMessageTriggerSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MessageEventRequests": [
+          {
+            "Ref": 107,
+            "Class": "app.PlayerMessageEventRequest"
+          }
+        ],
+        "_Priority": 5,
+        "_TriggerCheckDuration": 0,
+        "_ExecuteDuration": 0,
+        "_DelayExecuteCondition": {
+          "Ref": 108,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsSetExecutedCount": true,
+        "_CompareType": 4,
+        "_ExecutedCheckCount": 2,
+        "_TriggerCountCheckParam": {
+          "Ref": 109,
+          "Class": "app.CountCheckParam"
+        },
+        "_Condition": {
+          "Ref": 116,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_RequestType": 1,
+        "_ConversationID": {
+          "Ref": 117,
+          "Class": "app.ConversationID"
+        },
+        "_CommonMessageTableDefinition": {
+          "Ref": 118,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Battle_TransitionAction"
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 122,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 783444518
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "app.PlayerMessageEventRequestArg_Battle_TransitionAction",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckPrevAction": false,
+        "_PrevAction": {
+          "Ref": 121,
+          "Class": "app.NameHash"
+        },
+        "_IsCheckNextAction": true,
+        "_NextAction": {
+          "Ref": 122,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 120,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 123,
+          "Class": "app.PlayerMessageEventRequestArg_Battle_TransitionAction"
+        }
+      }
+    },
+    {
+      "Index": 125,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "app.CountCheckParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_CompareType": 4,
+        "_CheckCount": 1
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 128,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2859058844
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "app.PlayerMessageTriggerSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MessageEventRequests": [
+          {
+            "Ref": 124,
+            "Class": "app.PlayerMessageEventRequest"
+          }
+        ],
+        "_Priority": 5,
+        "_TriggerCheckDuration": 0,
+        "_ExecuteDuration": 0,
+        "_DelayExecuteCondition": {
+          "Ref": 125,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsSetExecutedCount": false,
+        "_CompareType": 4,
+        "_ExecutedCheckCount": 1,
+        "_TriggerCountCheckParam": {
+          "Ref": 126,
+          "Class": "app.CountCheckParam"
+        },
+        "_Condition": {
+          "Ref": 127,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_RequestType": 1,
+        "_ConversationID": {
+          "Ref": 128,
+          "Class": "app.ConversationID"
+        },
+        "_CommonMessageTableDefinition": {
+          "Ref": 129,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 131,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Battle_TransitionAction"
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 133,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 523200810
+      }
+    },
+    {
+      "Index": 134,
+      "Class": "app.PlayerMessageEventRequestArg_Battle_TransitionAction",
+      "Userdata": null,
+      "Fields": {
+        "_IsCheckPrevAction": false,
+        "_PrevAction": {
+          "Ref": 132,
+          "Class": "app.NameHash"
+        },
+        "_IsCheckNextAction": true,
+        "_NextAction": {
+          "Ref": 133,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 131,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 134,
+          "Class": "app.PlayerMessageEventRequestArg_Battle_TransitionAction"
+        }
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 137,
+      "Class": "app.CountCheckParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_CompareType": 4,
+        "_CheckCount": 1
+      }
+    },
+    {
+      "Index": 138,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 139,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 140,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1142011497
+      }
+    },
+    {
+      "Index": 141,
+      "Class": "app.PlayerMessageTriggerSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MessageEventRequests": [
+          {
+            "Ref": 135,
+            "Class": "app.PlayerMessageEventRequest"
+          }
+        ],
+        "_Priority": 5,
+        "_TriggerCheckDuration": 0,
+        "_ExecuteDuration": 0,
+        "_DelayExecuteCondition": {
+          "Ref": 136,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsSetExecutedCount": false,
+        "_CompareType": 4,
+        "_ExecutedCheckCount": 1,
+        "_TriggerCountCheckParam": {
+          "Ref": 137,
+          "Class": "app.CountCheckParam"
+        },
+        "_Condition": {
+          "Ref": 138,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_RequestType": 1,
+        "_ConversationID": {
+          "Ref": 139,
+          "Class": "app.ConversationID"
+        },
+        "_CommonMessageTableDefinition": {
+          "Ref": 140,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 142,
+      "Class": "app.PlayerMessageTriggerTable",
+      "Userdata": null,
+      "Fields": {
+        "_Settings": [
+          {
+            "Ref": 22,
+            "Class": "app.PlayerMessageTriggerSetting"
+          },
+          {
+            "Ref": 39,
+            "Class": "app.PlayerMessageTriggerSetting"
+          },
+          {
+            "Ref": 56,
+            "Class": "app.PlayerMessageTriggerSetting"
+          },
+          {
+            "Ref": 81,
+            "Class": "app.PlayerMessageTriggerSetting"
+          },
+          {
+            "Ref": 87,
+            "Class": "app.PlayerMessageTriggerSetting"
+          },
+          {
+            "Ref": 104,
+            "Class": "app.PlayerMessageTriggerSetting"
+          },
+          {
+            "Ref": 119,
+            "Class": "app.PlayerMessageTriggerSetting"
+          },
+          {
+            "Ref": 130,
+            "Class": "app.PlayerMessageTriggerSetting"
+          },
+          {
+            "Ref": 141,
+            "Class": "app.PlayerMessageTriggerSetting"
+          }
+        ]
+      }
+    }
+  ]
+}

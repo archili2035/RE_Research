@@ -1,0 +1,273 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100subadjustparamuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 13,
+      "Class": "app.SubAdjustParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_UnitType": 1,
+        "_SubAdjustParams": [
+          {
+            "Index": 2,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 139421919
+                }
+              },
+              "_Offset": "\u003C0, 0, 0\u003E"
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 3,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1948795948
+                }
+              },
+              "_Offset": "\u003C-0.1, 0, 0.15\u003E"
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 5,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1781756747
+                }
+              },
+              "_Offset": "\u003C0.15, 0, 0.05\u003E"
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 7,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 306835331
+                }
+              },
+              "_Offset": "\u003C-0.15, 0, 0.05\u003E"
+            }
+          },
+          {
+            "Index": 10,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 9,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 686659078
+                }
+              },
+              "_Offset": "\u003C-0.15, 0, 0.1\u003E"
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 11,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3238054313
+                }
+              },
+              "_Offset": "\u003C0, 0, 0.57\u003E"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 139421919
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_Offset": "\u003C0, 0, 0\u003E"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1948795948
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 3,
+          "Class": "app.NameHash"
+        },
+        "_Offset": "\u003C-0.1, 0, 0.15\u003E"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1781756747
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        },
+        "_Offset": "\u003C0.15, 0, 0.05\u003E"
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 306835331
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 7,
+          "Class": "app.NameHash"
+        },
+        "_Offset": "\u003C-0.15, 0, 0.05\u003E"
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 686659078
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 9,
+          "Class": "app.NameHash"
+        },
+        "_Offset": "\u003C-0.15, 0, 0.1\u003E"
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3238054313
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.SubAdjustParamUserData.SubAdjustParam",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 11,
+          "Class": "app.NameHash"
+        },
+        "_Offset": "\u003C0, 0, 0.57\u003E"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.SubAdjustParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_UnitType": 1,
+        "_SubAdjustParams": [
+          {
+            "Ref": 2,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.SubAdjustParamUserData.SubAdjustParam"
+          }
+        ]
+      }
+    }
+  ]
+}

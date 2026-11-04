@@ -1,0 +1,129 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000interactivemessageuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 5,
+      "Class": "app.CharacterInteractiveMessageUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnableSelection": true,
+        "_SelectionSetting": {
+          "Index": 4,
+          "Class": "app.CharacterInteractiveMessageSelectionSetting",
+          "Userdata": null,
+          "Fields": {
+            "_SelectInterval": 1,
+            "_SelectCoolTime": 0,
+            "_ExcludeSettings": [
+              {
+                "Index": 3,
+                "Class": "app.CharacterInteractiveMessageSelectionSetting.ExcludeSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_CharacterKinds": [
+                    {
+                      "Index": 1,
+                      "Class": "app.CharacterKindID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "cp_B000"
+                      }
+                    },
+                    {
+                      "Index": 2,
+                      "Class": "app.CharacterKindID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "cp_B001"
+                      }
+                    }
+                  ],
+                  "_IsCheckAction": true,
+                  "_ExcludeActionCategories": [
+                    6
+                  ],
+                  "_ExcludeActions": []
+                }
+              }
+            ]
+          }
+        },
+        "_Settings": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B000"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_B001"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.CharacterInteractiveMessageSelectionSetting.ExcludeSetting",
+      "Userdata": null,
+      "Fields": {
+        "_CharacterKinds": [
+          {
+            "Ref": 1,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.CharacterKindID"
+          }
+        ],
+        "_IsCheckAction": true,
+        "_ExcludeActionCategories": [
+          6
+        ],
+        "_ExcludeActions": []
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.CharacterInteractiveMessageSelectionSetting",
+      "Userdata": null,
+      "Fields": {
+        "_SelectInterval": 1,
+        "_SelectCoolTime": 0,
+        "_ExcludeSettings": [
+          {
+            "Ref": 3,
+            "Class": "app.CharacterInteractiveMessageSelectionSetting.ExcludeSetting"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.CharacterInteractiveMessageUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnableSelection": true,
+        "_SelectionSetting": {
+          "Ref": 4,
+          "Class": "app.CharacterInteractiveMessageSelectionSetting"
+        },
+        "_Settings": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerhairchainmovesetting.user.3",
+  "Objects": [
+    {
+      "Index": 1,
+      "Class": "app.CharacterChainMoveController.CharacterChainMoveSettingData",
+      "Userdata": null,
+      "Fields": {
+        "_SpeedChangeRateThreshold": 0.1,
+        "_IgnoreSpeedChangeThreshold": 0.08,
+        "_DirChangeThreshold": 0.9,
+        "_ChainBlendControlEnableSpeed": 4,
+        "_ChainBlendControlDisableSpeed": 3,
+        "_ChainBlendControlStartTime": 0,
+        "_ChainBlendControlRate": 0.4,
+        "_ChainGroupSettingArray": [],
+        "_ForceSettingArray": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CharacterChainMoveController.CharacterChainMoveSettingData",
+      "Userdata": null,
+      "Fields": {
+        "_SpeedChangeRateThreshold": 0.1,
+        "_IgnoreSpeedChangeThreshold": 0.08,
+        "_DirChangeThreshold": 0.9,
+        "_ChainBlendControlEnableSpeed": 4,
+        "_ChainBlendControlDisableSpeed": 3,
+        "_ChainBlendControlStartTime": 0,
+        "_ChainBlendControlRate": 0.4,
+        "_ChainGroupSettingArray": [],
+        "_ForceSettingArray": []
+      }
+    }
+  ]
+}

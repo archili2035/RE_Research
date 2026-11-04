@@ -1,0 +1,415 @@
+{
+  "Path": "natives/stm/animation/ch/ch01/ch0100/motbank/motiondata/ch0100_handgun00m/ch0100_handgun00m_8725_light_reset.user.3",
+  "Objects": [
+    {
+      "Index": 13,
+      "Class": "app.tram.TramFragmentData",
+      "Userdata": null,
+      "Fields": {
+        "FragmentList": [
+          {
+            "Index": 2,
+            "Class": "app.tram.TramFragment",
+            "Userdata": null,
+            "Fields": {
+              "Frame": 1,
+              "Data": {
+                "Index": 1,
+                "Class": "app.tram.TramData",
+                "Userdata": null,
+                "Fields": {
+                  "Data": [
+                    0.24207556,
+                    0.039480284,
+                    0.26066375,
+                    -0.21301043,
+                    0.03462138,
+                    -0.2885428,
+                    0.002052784,
+                    0.0039446354,
+                    -0.001090765,
+                    0.0027036667,
+                    0.08804929
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.tram.TramFragment",
+            "Userdata": null,
+            "Fields": {
+              "Frame": 5,
+              "Data": {
+                "Index": 3,
+                "Class": "app.tram.TramData",
+                "Userdata": null,
+                "Fields": {
+                  "Data": [
+                    0.24258476,
+                    0.039661594,
+                    0.26122916,
+                    -0.21266343,
+                    0.034141436,
+                    -0.28845116,
+                    0.0076067448,
+                    0.00757277,
+                    0.0070363283,
+                    0.00087976456,
+                    0.092412315
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.tram.TramFragment",
+            "Userdata": null,
+            "Fields": {
+              "Frame": 9,
+              "Data": {
+                "Index": 5,
+                "Class": "app.tram.TramData",
+                "Userdata": null,
+                "Fields": {
+                  "Data": [
+                    0.24307531,
+                    0.038867027,
+                    0.26164028,
+                    -0.21214691,
+                    0.03388752,
+                    -0.2885139,
+                    0.007787347,
+                    0.004967451,
+                    0.0073465705,
+                    -0.0021135807,
+                    0.08130783
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.tram.TramFragment",
+            "Userdata": null,
+            "Fields": {
+              "Frame": 13,
+              "Data": {
+                "Index": 7,
+                "Class": "app.tram.TramData",
+                "Userdata": null,
+                "Fields": {
+                  "Data": [
+                    0.24344182,
+                    0.038186744,
+                    0.26180425,
+                    -0.21176365,
+                    0.033948883,
+                    -0.28880063,
+                    0.0046804547,
+                    0.0015896559,
+                    0.004502535,
+                    -0.005069375,
+                    0.09084592
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "Index": 10,
+            "Class": "app.tram.TramFragment",
+            "Userdata": null,
+            "Fields": {
+              "Frame": 17,
+              "Data": {
+                "Index": 9,
+                "Class": "app.tram.TramData",
+                "Userdata": null,
+                "Fields": {
+                  "Data": [
+                    0.24371783,
+                    0.03824053,
+                    0.2617725,
+                    -0.21158043,
+                    0.034374222,
+                    -0.2892064,
+                    0.0034743547,
+                    -0.002092123,
+                    0.002231598,
+                    -0.008692145,
+                    0.11430399
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.tram.TramFragment",
+            "Userdata": null,
+            "Fields": {
+              "Frame": 21,
+              "Data": {
+                "Index": 11,
+                "Class": "app.tram.TramData",
+                "Userdata": null,
+                "Fields": {
+                  "Data": [
+                    0.2437555,
+                    0.037900016,
+                    0.26145604,
+                    -0.21149914,
+                    0.034404337,
+                    -0.28958812,
+                    -0.00059098005,
+                    -0.0053590536,
+                    0.0005543232,
+                    -0.0005829334,
+                    0.14363283
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.tram.TramData",
+      "Userdata": null,
+      "Fields": {
+        "Data": [
+          0.24207556,
+          0.039480284,
+          0.26066375,
+          -0.21301043,
+          0.03462138,
+          -0.2885428,
+          0.002052784,
+          0.0039446354,
+          -0.001090765,
+          0.0027036667,
+          0.08804929
+        ]
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.tram.TramFragment",
+      "Userdata": null,
+      "Fields": {
+        "Frame": 1,
+        "Data": {
+          "Ref": 1,
+          "Class": "app.tram.TramData"
+        }
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.tram.TramData",
+      "Userdata": null,
+      "Fields": {
+        "Data": [
+          0.24258476,
+          0.039661594,
+          0.26122916,
+          -0.21266343,
+          0.034141436,
+          -0.28845116,
+          0.0076067448,
+          0.00757277,
+          0.0070363283,
+          0.00087976456,
+          0.092412315
+        ]
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.tram.TramFragment",
+      "Userdata": null,
+      "Fields": {
+        "Frame": 5,
+        "Data": {
+          "Ref": 3,
+          "Class": "app.tram.TramData"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.tram.TramData",
+      "Userdata": null,
+      "Fields": {
+        "Data": [
+          0.24307531,
+          0.038867027,
+          0.26164028,
+          -0.21214691,
+          0.03388752,
+          -0.2885139,
+          0.007787347,
+          0.004967451,
+          0.0073465705,
+          -0.0021135807,
+          0.08130783
+        ]
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.tram.TramFragment",
+      "Userdata": null,
+      "Fields": {
+        "Frame": 9,
+        "Data": {
+          "Ref": 5,
+          "Class": "app.tram.TramData"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.tram.TramData",
+      "Userdata": null,
+      "Fields": {
+        "Data": [
+          0.24344182,
+          0.038186744,
+          0.26180425,
+          -0.21176365,
+          0.033948883,
+          -0.28880063,
+          0.0046804547,
+          0.0015896559,
+          0.004502535,
+          -0.005069375,
+          0.09084592
+        ]
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.tram.TramFragment",
+      "Userdata": null,
+      "Fields": {
+        "Frame": 13,
+        "Data": {
+          "Ref": 7,
+          "Class": "app.tram.TramData"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.tram.TramData",
+      "Userdata": null,
+      "Fields": {
+        "Data": [
+          0.24371783,
+          0.03824053,
+          0.2617725,
+          -0.21158043,
+          0.034374222,
+          -0.2892064,
+          0.0034743547,
+          -0.002092123,
+          0.002231598,
+          -0.008692145,
+          0.11430399
+        ]
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.tram.TramFragment",
+      "Userdata": null,
+      "Fields": {
+        "Frame": 17,
+        "Data": {
+          "Ref": 9,
+          "Class": "app.tram.TramData"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.tram.TramData",
+      "Userdata": null,
+      "Fields": {
+        "Data": [
+          0.2437555,
+          0.037900016,
+          0.26145604,
+          -0.21149914,
+          0.034404337,
+          -0.28958812,
+          -0.00059098005,
+          -0.0053590536,
+          0.0005543232,
+          -0.0005829334,
+          0.14363283
+        ]
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.tram.TramFragment",
+      "Userdata": null,
+      "Fields": {
+        "Frame": 21,
+        "Data": {
+          "Ref": 11,
+          "Class": "app.tram.TramData"
+        }
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.tram.TramFragmentData",
+      "Userdata": null,
+      "Fields": {
+        "FragmentList": [
+          {
+            "Ref": 2,
+            "Class": "app.tram.TramFragment"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.tram.TramFragment"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.tram.TramFragment"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.tram.TramFragment"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.tram.TramFragment"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.tram.TramFragment"
+          }
+        ]
+      }
+    }
+  ]
+}

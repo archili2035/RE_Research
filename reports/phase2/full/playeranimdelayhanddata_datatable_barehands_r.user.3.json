@@ -1,0 +1,153 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/animdelayhand/rightarm/datatable/playeranimdelayhanddata_datatable_barehands_r.user.3",
+  "Objects": [
+    {
+      "Index": 7,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Index": 5,
+          "Class": "app.PlayerComplexCondition",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_ConditionType": 0,
+            "_ConditionUnits": [
+              {
+                "Index": 4,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 1,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "WeaponEquipment"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 3,
+                    "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_WeaponCategories": [],
+                      "_WeaponIDs": [
+                        {
+                          "Ref": 2,
+                          "Class": "app.WeaponID"
+                        }
+                      ],
+                      "_AttachmentUnits": []
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_Additional": [],
+        "_Collection": {
+          "Index": 6,
+          "Class": "app.AnimDelayHandData_DataCollection",
+          "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/BareHands/PlayerAnimDelayHandDataCollection_BareHands_R.user",
+          "Fields": {}
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [],
+        "_WeaponIDs": [
+          {
+            "Ref": 2,
+            "Class": "app.WeaponID"
+          }
+        ],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 3,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 4,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/BareHands/PlayerAnimDelayHandDataCollection_BareHands_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 7,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Ref": 5,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Additional": [],
+        "_Collection": {
+          "Ref": 6,
+          "Class": "app.AnimDelayHandData_DataCollection"
+        }
+      }
+    }
+  ]
+}

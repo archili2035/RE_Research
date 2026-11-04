@@ -1,0 +1,5505 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/subtype/tps/motionfsm/tpsleftupper.motfsm2.45",
+  "Nodes": [
+    {
+      "ID": "0 (0)",
+      "Name": "root",
+      "FullName": "root",
+      "Parent": null,
+      "Actions": [],
+      "Selector": {
+        "Index": 1,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "UseBaseLayer",
+          "TargetID": "1936531262 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightAction",
+          "TargetID": "3078997879 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightEnd",
+          "TargetID": "1422101596 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "ItemGet",
+          "TargetID": "253383768 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "ItemGetEnd",
+          "TargetID": "4212375857 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "UniqueLightAction",
+          "TargetID": "2444091732 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HoldUnPackLight",
+          "TargetID": "2141148667 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "\u30A2\u30A4\u30C6\u30E0\u53D6\u5F97\u7D42\u308F\u308A\u30E2\u30FC\u30B7\u30E7\u30F3\u304C\u3042\u308B\uFF1F",
+          "TargetID": "278682819 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Occupied",
+          "TargetID": "3497456277 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "AfterDamage",
+          "TargetID": "1909978552 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "BodyLightSwitch",
+          "TargetID": "3909752200 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "UseBaseLayer",
+          "TargetID": "1936531262 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "1936531262 (0)",
+      "Name": "UseBaseLayer",
+      "FullName": "UseBaseLayer",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 1,
+          "Class": "app.CharacterBehaviorTreeAction_SetEmptyMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1298880213
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "BodyLightSwitch",
+          "TargetID": "3909752200 (0)",
+          "Condition": {
+            "Index": 1,
+            "Class": "app.PlayerBehaviorTreeCondition_IsSwitchFlashLightRL",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3048400830,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "IsBodyLight": true
+            }
+          },
+          "transitionMapID": 500190561,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3078997879 (0)",
+      "Name": "LightAction",
+      "FullName": "LightAction",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 2,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2265999660,
+            "JointMaskID": 1000
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 2,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "LightWait",
+          "TargetID": "1685605136 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Reaction",
+          "TargetID": "3192766456 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightEmote",
+          "TargetID": "286569308 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "KeepHoldArm",
+          "TargetID": "1320865380 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "KeepHold",
+          "TargetID": "1561463735 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightDoor",
+          "TargetID": "853854800 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightHoldArmLoop",
+          "TargetID": "3806348337 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightHoldHandEnd",
+          "TargetID": "1739165600 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightHoldHandStart",
+          "TargetID": "4231884255 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightHoldHandLoop",
+          "TargetID": "3277905455 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "OccupiedLight",
+          "TargetID": "201717260 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "FreeHandHold",
+          "TargetID": "956196692 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "new state 9FC0E43C",
+          "TargetID": "2680218684 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "ItemGetLight",
+          "TargetID": "3626341428 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightHandLoop",
+          "TargetID": "1960522698 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HoldEnd",
+          "TargetID": "3448530177 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Hold",
+          "TargetID": "3727494501 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightStart",
+          "TargetID": "165539321 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightUp",
+          "TargetID": "3851254081 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "new state 9FC0E43C",
+          "TargetID": "2680218684 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "1422101596 (0)",
+      "Name": "LightEnd",
+      "FullName": "LightEnd",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 3,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2795989436,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 8750,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 4,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2300572567,
+            "JointMaskID": 1000
+          }
+        },
+        {
+          "Index": 5,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1224074359,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": true
+          }
+        },
+        {
+          "Index": 6,
+          "Class": "app.PlayerBehaviorTreeAction_PlayMotionLightEntity",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3440684678,
+            "_MotionID": 8040,
+            "_UniqueMotoinMode": false
+          }
+        },
+        {
+          "Index": 7,
+          "Class": "app.PlayerBehaviorTreeAction_SyncOtherLayerLocalBankType",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4219437349,
+            "_TargetLayerNo": 0,
+            "CheckLightEndOnly": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "UseBaseLayer",
+          "TargetID": "1936531262 (0)",
+          "Condition": {
+            "Index": 2,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 618292686,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2232564161,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "253383768 (0)",
+      "Name": "ItemGet",
+      "FullName": "ItemGet",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 8,
+          "Class": "app.PlayerBehaviorTreeAction_UpdateItemGetAction2",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2569947469,
+            "HasLight": false,
+            "AddMode": false,
+            "SimpleMode": false,
+            "IkParamIndex": -1,
+            "JointMaskID": 1000
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "\u30A2\u30A4\u30C6\u30E0\u53D6\u5F97\u7D42\u308F\u308A\u30E2\u30FC\u30B7\u30E7\u30F3\u304C\u3042\u308B\uFF1F",
+          "TargetID": "278682819 (0)",
+          "Condition": {
+            "Index": 1,
+            "Class": "via.behaviortree.nodework.ConditionNodeWorkEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3902256191,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 633901668,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "ItemGet",
+          "TargetID": "253383768 (0)",
+          "Condition": {
+            "Index": 3,
+            "Class": "app.PlayerBehaviorTreeCondition_CheckItemGet",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1073837223,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 3902779978,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "4212375857 (0)",
+      "Name": "ItemGetEnd",
+      "FullName": "ItemGetEnd",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 9,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": false,
+            "ID": 2699889906,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 1340,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 10,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 101187042,
+            "JointMaskID": 100
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "UseBaseLayer",
+          "TargetID": "1936531262 (0)",
+          "Condition": {
+            "Index": 4,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1720314401,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 297161033,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "ItemGet",
+          "TargetID": "253383768 (0)",
+          "Condition": {
+            "Index": 5,
+            "Class": "app.PlayerBehaviorTreeCondition_CheckItemGet",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1604057069,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2322250385,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "2444091732 (0)",
+      "Name": "UniqueLightAction",
+      "FullName": "UniqueLightAction",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 11,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1207653131,
+            "JointMaskID": 1000
+          }
+        },
+        {
+          "Index": 12,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2622905235,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": true
+          }
+        },
+        {
+          "Index": 13,
+          "Class": "app.PlayerBehaviorTreeAction_SyncLowerLayerMotionAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3291461723,
+            "LightActionMode": true
+          }
+        },
+        {
+          "Index": 14,
+          "Class": "app.PlayerBehaviorTreeAction_PlayMotionLightEntity",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1714337808,
+            "_MotionID": 0,
+            "_UniqueMotoinMode": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2141148667 (0)",
+      "Name": "HoldUnPackLight",
+      "FullName": "HoldUnPackLight",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 15,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3473520668,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 310,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 16,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 801944761,
+            "JointMaskID": 1000
+          }
+        },
+        {
+          "Index": 17,
+          "Class": "app.PlayerBehaviorTreeAction_PlayMotionLightEntity",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2529101477,
+            "_MotionID": 8040,
+            "_UniqueMotoinMode": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "UseBaseLayer",
+          "TargetID": "1936531262 (0)",
+          "Condition": {
+            "Index": 6,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 469638756,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 123437594,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "278682819 (0)",
+      "Name": "\u30A2\u30A4\u30C6\u30E0\u53D6\u5F97\u7D42\u308F\u308A\u30E2\u30FC\u30B7\u30E7\u30F3\u304C\u3042\u308B\uFF1F",
+      "FullName": "\u30A2\u30A4\u30C6\u30E0\u53D6\u5F97\u7D42\u308F\u308A\u30E2\u30FC\u30B7\u30E7\u30F3\u304C\u3042\u308B\uFF1F",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "ItemGetEnd",
+          "TargetID": "4212375857 (0)",
+          "Condition": {
+            "Index": 7,
+            "Class": "app.PlayerBehaviorTreeCondition_CheckItemGetEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1655904628,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2131333648,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "UseBaseLayer",
+          "TargetID": "1936531262 (0)",
+          "Condition": null,
+          "transitionMapID": 1798226519,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3497456277 (0)",
+      "Name": "Occupied",
+      "FullName": "Occupied",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 18,
+          "Class": "app.PlayerBehaviorTreeAction_LeftUpperOccupiedAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 657265004,
+            "OffLight": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "1909978552 (0)",
+      "Name": "AfterDamage",
+      "FullName": "AfterDamage",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 19,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3450615045,
+            "JointMaskID": 1000
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 3,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "AfterDamageLoop",
+          "TargetID": "2670892199 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "AfterDamageEnd",
+          "TargetID": "2354300479 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "End",
+          "TargetID": "1104945063 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "End",
+          "TargetID": "1888623080 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "AfterDamageLoop",
+          "TargetID": "2670892199 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "UseBaseLayer",
+          "TargetID": "1936531262 (0)",
+          "Condition": {
+            "Index": 2,
+            "Class": "via.behaviortree.nodework.ConditionUnderLayerEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1061394242,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 765899418,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3909752200 (0)",
+      "Name": "BodyLightSwitch",
+      "FullName": "BodyLightSwitch",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 20,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 735197179,
+            "JointMaskID": 1000
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "UseBaseLayer",
+          "TargetID": "1936531262 (0)",
+          "Condition": {
+            "Index": 8,
+            "Class": "app.PlayerBehaviorTreeCondition_AbortSwitchFlashLightRL",
+            "Userdata": null,
+            "Fields": {
+              "ID": 4203304612,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "IsBodyLight": true
+            }
+          },
+          "transitionMapID": 3340677751,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "2195883349 (0)",
+      "Name": "LightLoop",
+      "FullName": "LightLoop",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 22,
+          "Class": "anim.AnimSettingAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2626352025,
+            "Type": "anim.AnimSpineMixer",
+            "Enable": true,
+            "HighPriority": false,
+            "SubParamIndex": -1,
+            "SubParamNameHash": {
+              "Index": 21,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2180083513
+              }
+            },
+            "IsSameParam": false
+          }
+        },
+        {
+          "Index": 23,
+          "Class": "app.PlayerBehaviorTreeAction_PlayMotionLightEntity",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1803664361,
+            "_MotionID": 8050,
+            "_UniqueMotoinMode": false
+          }
+        },
+        {
+          "Index": 24,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1199130443,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": true
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 4,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "Idle",
+          "TargetID": "2126376442 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "Idle",
+          "TargetID": "2126376442 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "165539321 (0)",
+      "Name": "LightStart",
+      "FullName": "LightStart",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 25,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 852981562,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 8700,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 27,
+          "Class": "anim.AnimSettingAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1727495317,
+            "Type": "anim.AnimSpineMixer",
+            "Enable": true,
+            "HighPriority": false,
+            "SubParamIndex": -1,
+            "SubParamNameHash": {
+              "Index": 26,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2180083513
+              }
+            },
+            "IsSameParam": false
+          }
+        },
+        {
+          "Index": 28,
+          "Class": "app.PlayerBehaviorTreeAction_PlayMotionLightEntity",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2248263058,
+            "_MotionID": 8030,
+            "_UniqueMotoinMode": false
+          }
+        },
+        {
+          "Index": 29,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3285596438,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": true
+          }
+        },
+        {
+          "Index": 30,
+          "Class": "app.PlayerBehaviorTreeAction_SyncOtherLayerLocalBankType",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2951034579,
+            "_TargetLayerNo": 0,
+            "CheckLightEndOnly": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": {
+            "Index": 9,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1055586935,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1730390848,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3727494501 (0)",
+      "Name": "Hold",
+      "FullName": "Hold",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 31,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 90208953,
+            "JointMaskID": 6
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 5,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "HoldStart",
+          "TargetID": "606202442 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HoldLoop",
+          "TargetID": "1343704578 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HoldPackLight",
+          "TargetID": "2050103931 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HoldStartShoot",
+          "TargetID": "2377274242 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "HoldStart",
+          "TargetID": "606202442 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "3448530177 (0)",
+      "Name": "HoldEnd",
+      "FullName": "HoldEnd",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 32,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2351206116,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": false
+          }
+        },
+        {
+          "Index": 34,
+          "Class": "anim.AnimSettingAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3373629752,
+            "Type": "anim.AnimSpineMixer",
+            "Enable": true,
+            "HighPriority": false,
+            "SubParamIndex": -1,
+            "SubParamNameHash": {
+              "Index": 33,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2180083513
+              }
+            },
+            "IsSameParam": false
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 6,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "Short",
+          "TargetID": "2427285403 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "IsShort",
+          "TargetID": "2685788423 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Normal",
+          "TargetID": "3733601388 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "IsShort",
+          "TargetID": "2685788423 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": {
+            "Index": 10,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1518747507,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1717085791,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 291,
+            "startFrame": 20,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1960522698 (0)",
+      "Name": "LightHandLoop",
+      "FullName": "LightHandLoop",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 35,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3637457146,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 6102,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 36,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4082592893,
+            "JointMaskID": 6
+          }
+        },
+        {
+          "Index": 38,
+          "Class": "anim.AnimSettingAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 851729205,
+            "Type": "anim.AnimSpineMixer",
+            "Enable": false,
+            "HighPriority": false,
+            "SubParamIndex": -1,
+            "SubParamNameHash": {
+              "Index": 37,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2180083513
+              }
+            },
+            "IsSameParam": false
+          }
+        },
+        {
+          "Index": 39,
+          "Class": "app.PlayerBehaviorTreeAction_PlayMotionLightEntity",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 177943246,
+            "_MotionID": 8050,
+            "_UniqueMotoinMode": false
+          }
+        },
+        {
+          "Index": 40,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2312217206,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "3626341428 (0)",
+      "Name": "ItemGetLight",
+      "FullName": "ItemGetLight",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 41,
+          "Class": "app.PlayerBehaviorTreeAction_UpdateItemGetAction2",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 716087614,
+            "HasLight": true,
+            "AddMode": false,
+            "SimpleMode": false,
+            "IkParamIndex": -1,
+            "JointMaskID": 1000
+          }
+        },
+        {
+          "Index": 42,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2066072592,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": {
+            "Index": 3,
+            "Class": "via.behaviortree.nodework.ConditionNodeWorkEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 606884447,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2002468607,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "ItemGetLight",
+          "TargetID": "3626341428 (0)",
+          "Condition": {
+            "Index": 11,
+            "Class": "app.PlayerBehaviorTreeCondition_CheckItemGet",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3685675808,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2592959305,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "2680218684 (0)",
+      "Name": "new state 9FC0E43C",
+      "FullName": "new state 9FC0E43C",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": {
+            "Index": 12,
+            "Class": "app.PlayerBehaviorTreeCondition_FlashLightFast",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3546706706,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2832598702,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "LightStart",
+          "TargetID": "165539321 (0)",
+          "Condition": null,
+          "transitionMapID": 3088799997,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "956196692 (0)",
+      "Name": "FreeHandHold",
+      "FullName": "FreeHandHold",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 43,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3918150878,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 162,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 44,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2529797963,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "201717260 (0)",
+      "Name": "OccupiedLight",
+      "FullName": "OccupiedLight",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 45,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3348555298,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": true
+          }
+        },
+        {
+          "Index": 46,
+          "Class": "app.PlayerBehaviorTreeAction_LeftUpperOccupiedAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4125648953,
+            "OffLight": false
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 7,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "OccupiedJackMotLight",
+          "TargetID": "2339701200 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "OccupiedHandLight",
+          "TargetID": "2878133984 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "OccupiedArmLight",
+          "TargetID": "2664228787 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "OccupiedBodyLight",
+          "TargetID": "3791579961 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "OccupiedJackMotLight",
+          "TargetID": "2339701200 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "3277905455 (0)",
+      "Name": "LightHoldHandLoop",
+      "FullName": "LightHoldHandLoop",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 47,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2045418296,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 309,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 48,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": false,
+            "ID": 1239408781,
+            "JointMaskID": 6
+          }
+        },
+        {
+          "Index": 49,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3358577133,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "4231884255 (0)",
+      "Name": "LightHoldHandStart",
+      "FullName": "LightHoldHandStart",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 50,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2695837571,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 301,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 51,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2883377495,
+            "JointMaskID": 6
+          }
+        },
+        {
+          "Index": 52,
+          "Class": "app.PlayerBehaviorTreeAction_PlayMotionLightEntity",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1706882479,
+            "_MotionID": 8030,
+            "_UniqueMotoinMode": false
+          }
+        },
+        {
+          "Index": 53,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 590979523,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "LightHoldHandLoop",
+          "TargetID": "3277905455 (0)",
+          "Condition": {
+            "Index": 13,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3373730773,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 534538893,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1739165600 (0)",
+      "Name": "LightHoldHandEnd",
+      "FullName": "LightHoldHandEnd",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 54,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4247923683,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 302,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 55,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1093287743,
+            "JointMaskID": 6
+          }
+        },
+        {
+          "Index": 56,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1288531569,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": {
+            "Index": 14,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 4213270871,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2600926707,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3806348337 (0)",
+      "Name": "LightHoldArmLoop",
+      "FullName": "LightHoldArmLoop",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 57,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2157114864,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 300,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 58,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2169147687,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "853854800 (0)",
+      "Name": "LightDoor",
+      "FullName": "LightDoor",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 59,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1548867358,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": true
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 8,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "new state F75B3D18",
+          "TargetID": "4149951768 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "GeneralM_8601_Physical_open_F_loop - \u30B3\u30D4\u30FC(1)",
+          "TargetID": "2375799026 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "GeneralM_8602_Physical_open_F_end - \u30B3\u30D4\u30FC(1)",
+          "TargetID": "3256297195 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "new state E284ED8C",
+          "TargetID": "1553536123 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "new state E284ED8C - \u30B3\u30D4\u30FC(2)",
+          "TargetID": "3135929069 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "GeneralM_8602_Physical_open_F_end - \u30B3\u30D4\u30FC(1) - \u30B3\u30D4\u30FC(2)",
+          "TargetID": "1059915231 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "GeneralM_8601_Physical_open_F_loop - \u30B3\u30D4\u30FC(1) - \u30B3\u30D4\u30FC(2)",
+          "TargetID": "1624494008 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "new state F75B3D18",
+          "TargetID": "4149951768 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": {
+            "Index": 4,
+            "Class": "via.behaviortree.nodework.ConditionNodeWorkEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2200855026,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 240111457,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1561463735 (0)",
+      "Name": "KeepHold",
+      "FullName": "KeepHold",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 60,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2196294950,
+            "JointMaskID": 6
+          }
+        },
+        {
+          "Index": 61,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2371828122,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": true
+          }
+        },
+        {
+          "Index": 62,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3632665636,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 300,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 64,
+          "Class": "anim.AnimSettingAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1179570089,
+            "Type": "anim.AnimLHandAdjustIK",
+            "Enable": true,
+            "HighPriority": false,
+            "SubParamIndex": -1,
+            "SubParamNameHash": {
+              "Index": 63,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2180083513
+              }
+            },
+            "IsSameParam": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "1320865380 (0)",
+      "Name": "KeepHoldArm",
+      "FullName": "KeepHoldArm",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 65,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3887136111,
+            "JointMaskID": 1000
+          }
+        },
+        {
+          "Index": 66,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1321680103,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": true
+          }
+        },
+        {
+          "Index": 67,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3320394300,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 300,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "286569308 (0)",
+      "Name": "LightEmote",
+      "FullName": "LightEmote",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 68,
+          "Class": "app.PlayerBehaviorTreeAction_PlayEmoteMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3743145148
+          }
+        },
+        {
+          "Index": 69,
+          "Class": "app.PlayEmoteEquipGunMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 888903351,
+            "_BankID": -1,
+            "MotionID": -1,
+            "STRUCT__InterpolationFrame__HasValue": false,
+            "STRUCT__InterpolationFrame__Value": 0
+          }
+        },
+        {
+          "Index": 70,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3305003011,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": {
+            "Index": 15,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3267775636,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 800954864,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3192766456 (0)",
+      "Name": "Reaction",
+      "FullName": "Reaction",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 71,
+          "Class": "app.PlayerBehaviorTreeAction_ClearReactionSetting",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 775808577
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 9,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "Empty",
+          "TargetID": "4133989551 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Default",
+          "TargetID": "3082926305 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Default_LeftHand",
+          "TargetID": "1694107172 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "EndForEndReaction",
+          "TargetID": "2322945140 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "EndForActionFailed",
+          "TargetID": "2676736455 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "Empty",
+          "TargetID": "4133989551 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": {
+            "Index": 5,
+            "Class": "via.behaviortree.nodework.ConditionUnderLayerEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1034585571,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 412306168,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3851254081 (0)",
+      "Name": "LightUp",
+      "FullName": "LightUp",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 72,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 945065750,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 8725,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 73,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3076095748,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": false
+          }
+        },
+        {
+          "Index": 74,
+          "Class": "app.PlayerLeftHandNotifyAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3115910857
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "LightLoop",
+          "TargetID": "2195883349 (0)",
+          "Condition": {
+            "Index": 16,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2739042561,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2332829038,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1685605136 (0)",
+      "Name": "LightWait",
+      "FullName": "LightWait",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 75,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4215821641,
+            "IsShowLightMeshAction": false,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": false
+          }
+        },
+        {
+          "Index": 76,
+          "Class": "app.CharacterBehaviorTreeAction_SetEmptyMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1421981266
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "LightStart",
+          "TargetID": "165539321 (0)",
+          "Condition": {
+            "Index": 17,
+            "Class": "app.PlayerBehaviorTreeCondition_IsLightWaitEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 884924092,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1701912358,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "606202442 (0)",
+      "Name": "HoldStart",
+      "FullName": "HoldStart",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 77,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 332858058,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": false
+          }
+        },
+        {
+          "Index": 78,
+          "Class": "app.PlayerBehaviorTreeAction_ClearMotionNextNormalizedTime",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1513785579,
+            "_SetTiming": 1
+          }
+        },
+        {
+          "Index": 80,
+          "Class": "anim.AnimSettingAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1114408980,
+            "Type": "anim.AnimLWepRotater",
+            "Enable": true,
+            "HighPriority": false,
+            "SubParamIndex": -1,
+            "SubParamNameHash": {
+              "Index": 79,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2180083513
+              }
+            },
+            "IsSameParam": false
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 10,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "Normal",
+          "TargetID": "4062877227 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Short",
+          "TargetID": "1525267556 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "IsShort",
+          "TargetID": "2940504867 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "IsShort",
+          "TargetID": "2940504867 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "HoldLoop",
+          "TargetID": "1343704578 (0)",
+          "Condition": {
+            "Index": 18,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 456086270,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2452659902,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "HoldStartShoot",
+          "TargetID": "2377274242 (0)",
+          "Condition": {
+            "Index": 19,
+            "Class": "app.IsHoldStartShoot",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2417941911,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "IsCheckShotTrigger": true
+            }
+          },
+          "transitionMapID": 1216274712,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1343704578 (0)",
+      "Name": "HoldLoop",
+      "FullName": "HoldLoop",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 81,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3418616087,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": false
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 11,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "IsShort",
+          "TargetID": "3606914980 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Short",
+          "TargetID": "753028114 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Normal",
+          "TargetID": "3840023143 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "IsShort",
+          "TargetID": "3606914980 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2050103931 (0)",
+      "Name": "HoldPackLight",
+      "FullName": "HoldPackLight",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 82,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 881240695,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 308,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 83,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3325628508,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "HoldLoop",
+          "TargetID": "1343704578 (0)",
+          "Condition": {
+            "Index": 20,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 805437757,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2246482218,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "2377274242 (0)",
+      "Name": "HoldStartShoot",
+      "FullName": "HoldStartShoot",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "HoldLoop",
+          "TargetID": "1343704578 (0)",
+          "Condition": null,
+          "transitionMapID": 2026941777,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3840023143 (0)",
+      "Name": "Normal",
+      "FullName": "Normal",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 84,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2775598047,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 300,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "Short",
+          "TargetID": "753028114 (0)",
+          "Condition": {
+            "Index": 21,
+            "Class": "app.PlayerBehaviorTreeCondition_IsLightHoldNearBody",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1605562345,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 3010531248,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 273,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 15,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "753028114 (0)",
+      "Name": "Short",
+      "FullName": "Short",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 85,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 753028114,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 303,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "Normal",
+          "TargetID": "3840023143 (0)",
+          "Condition": {
+            "Index": 22,
+            "Class": "app.PlayerBehaviorTreeCondition_IsLightHoldNearBody",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2729161789,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": false
+            }
+          },
+          "transitionMapID": 3010624446,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 273,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 15,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3606914980 (0)",
+      "Name": "IsShort",
+      "FullName": "IsShort",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "Short",
+          "TargetID": "753028114 (0)",
+          "Condition": {
+            "Index": 23,
+            "Class": "app.PlayerBehaviorTreeCondition_IsLightHoldNearBody",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3297008668,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 115038022,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "Normal",
+          "TargetID": "3840023143 (0)",
+          "Condition": null,
+          "transitionMapID": 4292630757,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "2940504867 (0)",
+      "Name": "IsShort",
+      "FullName": "IsShort",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "Short",
+          "TargetID": "1525267556 (0)",
+          "Condition": {
+            "Index": 24,
+            "Class": "app.PlayerBehaviorTreeCondition_IsApplyGunHoldShort",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3060758443,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 4173456795,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 5,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "Normal",
+          "TargetID": "4062877227 (0)",
+          "Condition": null,
+          "transitionMapID": 3453850010,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 5,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1525267556 (0)",
+      "Name": "Short",
+      "FullName": "Short",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 86,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 195191926,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 304,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 89,
+          "Class": "app.PlayerBehaviorTreeAction_RequestMotionNextNormalizedTime",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4043626295,
+            "_IsReserve": false,
+            "_ReserveHash": {
+              "Index": 87,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2180083513
+              }
+            },
+            "_IsApply": true,
+            "_ApplyHash": {
+              "Index": 88,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 697447884
+              }
+            }
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "4062877227 (0)",
+      "Name": "Normal",
+      "FullName": "Normal",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 90,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2702165431,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 301,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 93,
+          "Class": "app.PlayerBehaviorTreeAction_RequestMotionNextNormalizedTime",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 874347651,
+            "_IsReserve": true,
+            "_ReserveHash": {
+              "Index": 91,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 697447884
+              }
+            },
+            "_IsApply": false,
+            "_ApplyHash": {
+              "Index": 92,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2180083513
+              }
+            }
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "Short",
+          "TargetID": "1525267556 (0)",
+          "Condition": {
+            "Index": 25,
+            "Class": "app.PlayerBehaviorTreeCondition_IsApplyGunHoldShort",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3218677050,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 468028385,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3733601388 (0)",
+      "Name": "Normal",
+      "FullName": "Normal",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 94,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2544776363,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 302,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2685788423 (0)",
+      "Name": "IsShort",
+      "FullName": "IsShort",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "Short",
+          "TargetID": "2427285403 (0)",
+          "Condition": {
+            "Index": 26,
+            "Class": "app.PlayerBehaviorTreeCondition_IsLightHoldNearBody",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3101548382,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1118873506,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "Normal",
+          "TargetID": "3733601388 (0)",
+          "Condition": null,
+          "transitionMapID": 1311153931,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 12,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "2427285403 (0)",
+      "Name": "Short",
+      "FullName": "Short",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 95,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3091615961,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 305,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2339701200 (0)",
+      "Name": "OccupiedJackMotLight",
+      "FullName": "OccupiedJackMotLight",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 96,
+          "Class": "app.PlayerBehaviorTreeAction_CopyJackMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2278828091
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2878133984 (0)",
+      "Name": "OccupiedHandLight",
+      "FullName": "OccupiedHandLight",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 97,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2668782688,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 6102,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 98,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4181359874,
+            "JointMaskID": 6
+          }
+        },
+        {
+          "Index": 99,
+          "Class": "app.PlayerBehaviorTreeAction_PlayMotionLightEntity",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4022807372,
+            "_MotionID": 8050,
+            "_UniqueMotoinMode": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2664228787 (0)",
+      "Name": "OccupiedArmLight",
+      "FullName": "OccupiedArmLight",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 100,
+          "Class": "app.PlayerBehaviorTreeAction_PlayMotionLightEntity",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3672762250,
+            "_MotionID": 8050,
+            "_UniqueMotoinMode": false
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 12,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "Idle",
+          "TargetID": "2126376442 (1)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "Idle",
+          "TargetID": "2126376442 (1)",
+          "Condition": null
+        }
+      ],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "3791579961 (0)",
+      "Name": "OccupiedBodyLight",
+      "FullName": "OccupiedBodyLight",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 101,
+          "Class": "app.CharacterBehaviorTreeAction_SetEmptyMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2140070526
+          }
+        },
+        {
+          "Index": 102,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2645449364,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": false,
+            "IsLightDirAction": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2670892199 (0)",
+      "Name": "AfterDamageLoop",
+      "FullName": "AfterDamageLoop",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 103,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3150040503,
+            "Motion": "",
+            "BankID": 10,
+            "MotionID": 2101,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 104,
+          "Class": "app.PlayerBehaviorTreeAction_PlayerLArmAfterDamageAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 369288060
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "End",
+          "TargetID": "1104945063 (0)",
+          "Condition": {
+            "Index": 6,
+            "Class": "via.behaviortree.nodework.ConditionNodeWorkEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 751130497,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2373915135,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "AfterDamageEnd",
+          "TargetID": "2354300479 (0)",
+          "Condition": {
+            "Index": 27,
+            "Class": "app.PlayerBehaviorTreeCondition_IsLArmAfterDamageLoop",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2061879191,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": false
+            }
+          },
+          "transitionMapID": 2132244497,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "2354300479 (0)",
+      "Name": "AfterDamageEnd",
+      "FullName": "AfterDamageEnd",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 105,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3346369859,
+            "Motion": "",
+            "BankID": 10,
+            "MotionID": 2101,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 106,
+          "Class": "app.PlayerBehaviorTreeAction_PlayerLArmAfterDamageAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 679058164
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "End",
+          "TargetID": "1104945063 (0)",
+          "Condition": {
+            "Index": 7,
+            "Class": "via.behaviortree.nodework.ConditionNodeWorkEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1767247023,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 3713818211,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "End",
+          "TargetID": "1888623080 (0)",
+          "Condition": {
+            "Index": 28,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3458535578,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2841910354,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1104945063 (0)",
+      "Name": "End",
+      "FullName": "End",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "1888623080 (0)",
+      "Name": "End",
+      "FullName": "End",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2126376442 (0)",
+      "Name": "Idle",
+      "FullName": "Idle",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 107,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1282813348,
+            "Motion": "",
+            "BankID": 10,
+            "MotionID": 1000,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 108,
+          "Class": "app.PlayerBehaviorTreeAction_SyncOtherLayerLocalBankType",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3493454339,
+            "_TargetLayerNo": 0,
+            "CheckLightEndOnly": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2126376442 (1)",
+      "Name": "Idle",
+      "FullName": "Idle",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 109,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1282813348,
+            "Motion": "",
+            "BankID": 10,
+            "MotionID": 1000,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 110,
+          "Class": "app.PlayerBehaviorTreeAction_SyncOtherLayerLocalBankType",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3493454339,
+            "_TargetLayerNo": 0,
+            "CheckLightEndOnly": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "4149951768 (0)",
+      "Name": "new state F75B3D18",
+      "FullName": "new state F75B3D18",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "new state E284ED8C - \u30B3\u30D4\u30FC(2)",
+          "TargetID": "3135929069 (0)",
+          "Condition": {
+            "Index": 29,
+            "Class": "app.PlayerBehaviorTreeCondition_MotionFlagCheck",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1499357890,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "CheckPrePlayerState": false,
+              "IsCheckOR": false,
+              "IsCheckJust": false,
+              "_CheckState": 8192
+            }
+          },
+          "transitionMapID": 571042445,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "new state E284ED8C",
+          "TargetID": "1553536123 (0)",
+          "Condition": null,
+          "transitionMapID": 4039046271,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "2375799026 (0)",
+      "Name": "GeneralM_8601_Physical_open_F_loop - \u30B3\u30D4\u30FC(1)",
+      "FullName": "GeneralM_8601_Physical_open_F_loop - \u30B3\u30D4\u30FC(1)",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 111,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2018905286,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 8671,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "GeneralM_8602_Physical_open_F_end - \u30B3\u30D4\u30FC(1)",
+          "TargetID": "3256297195 (0)",
+          "Condition": {
+            "Index": 30,
+            "Class": "app.PlayerBehaviorTreeCondition_IsPushDoorWithHand",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1462860732,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": false
+            }
+          },
+          "transitionMapID": 1156463836,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3256297195 (0)",
+      "Name": "GeneralM_8602_Physical_open_F_end - \u30B3\u30D4\u30FC(1)",
+      "FullName": "GeneralM_8602_Physical_open_F_end - \u30B3\u30D4\u30FC(1)",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 112,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3666054348,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 8672,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 113,
+          "Class": "app.PlayerSubActionEnd",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 873117596,
+            "CheckMotionEnd": true,
+            "_CheckChangeBankType": false,
+            "_CheckMotionExist": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "1553536123 (0)",
+      "Name": "new state E284ED8C",
+      "FullName": "new state E284ED8C",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 114,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3023604105,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 8670,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "GeneralM_8601_Physical_open_F_loop - \u30B3\u30D4\u30FC(1)",
+          "TargetID": "2375799026 (0)",
+          "Condition": {
+            "Index": 31,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1819323387,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2638368073,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3135929069 (0)",
+      "Name": "new state E284ED8C - \u30B3\u30D4\u30FC(2)",
+      "FullName": "new state E284ED8C - \u30B3\u30D4\u30FC(2)",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 115,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 907158316,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 8660,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "GeneralM_8601_Physical_open_F_loop - \u30B3\u30D4\u30FC(1) - \u30B3\u30D4\u30FC(2)",
+          "TargetID": "1624494008 (0)",
+          "Condition": {
+            "Index": 32,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1581697401,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1471408531,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1059915231 (0)",
+      "Name": "GeneralM_8602_Physical_open_F_end - \u30B3\u30D4\u30FC(1) - \u30B3\u30D4\u30FC(2)",
+      "FullName": "GeneralM_8602_Physical_open_F_end - \u30B3\u30D4\u30FC(1) - \u30B3\u30D4\u30FC(2)",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 116,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1837740928,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 8662,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 117,
+          "Class": "app.PlayerSubActionEnd",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 697346564,
+            "CheckMotionEnd": true,
+            "_CheckChangeBankType": false,
+            "_CheckMotionExist": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "1624494008 (0)",
+      "Name": "GeneralM_8601_Physical_open_F_loop - \u30B3\u30D4\u30FC(1) - \u30B3\u30D4\u30FC(2)",
+      "FullName": "GeneralM_8601_Physical_open_F_loop - \u30B3\u30D4\u30FC(1) - \u30B3\u30D4\u30FC(2)",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 118,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 672605613,
+            "Motion": "",
+            "BankID": 0,
+            "MotionID": 8661,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "GeneralM_8602_Physical_open_F_end - \u30B3\u30D4\u30FC(1) - \u30B3\u30D4\u30FC(2)",
+          "TargetID": "1059915231 (0)",
+          "Condition": {
+            "Index": 33,
+            "Class": "app.PlayerBehaviorTreeCondition_IsPushDoorWithHand",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1462860732,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": false
+            }
+          },
+          "transitionMapID": 4288037854,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "4133989551 (0)",
+      "Name": "Empty",
+      "FullName": "Empty",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "3082926305 (0)",
+      "Name": "Default",
+      "FullName": "Default",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 119,
+          "Class": "app.PlayerBehaviorTreeAction_RequestAutoPlayerReaction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 768367180,
+            "_IsSetJointMask": true
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 13,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "NoLightAction",
+          "TargetID": "67518402 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HasLight",
+          "TargetID": "2072033691 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HasLightAction",
+          "TargetID": "2640407450 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "HasLight",
+          "TargetID": "2072033691 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "EndForEndReaction",
+          "TargetID": "2322945140 (0)",
+          "Condition": {
+            "Index": 34,
+            "Class": "app.PlayerBehaviorTreeCondition_IsEndPlayerReaction",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1929128031,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1812192495,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "EndForActionFailed",
+          "TargetID": "2676736455 (0)",
+          "Condition": {
+            "Index": 8,
+            "Class": "via.behaviortree.nodework.ConditionNodeWorkFailed",
+            "Userdata": null,
+            "Fields": {
+              "ID": 605613674,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1973523693,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1694107172 (0)",
+      "Name": "Default_LeftHand",
+      "FullName": "Default_LeftHand",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 120,
+          "Class": "app.PlayerBehaviorTreeAction_RequestAutoPlayerReaction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3262550547,
+            "_IsSetJointMask": true
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 14,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "NoLightAction",
+          "TargetID": "3091459205 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HasLightAction",
+          "TargetID": "3049600757 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HasLight",
+          "TargetID": "170769528 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "HasLight",
+          "TargetID": "170769528 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "EndForEndReaction",
+          "TargetID": "2322945140 (0)",
+          "Condition": {
+            "Index": 35,
+            "Class": "app.PlayerBehaviorTreeCondition_IsEndPlayerReaction",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3610090292,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1995127953,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "EndForActionFailed",
+          "TargetID": "2676736455 (0)",
+          "Condition": {
+            "Index": 9,
+            "Class": "via.behaviortree.nodework.ConditionNodeWorkFailed",
+            "Userdata": null,
+            "Fields": {
+              "ID": 482963292,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 2239780440,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "2322945140 (0)",
+      "Name": "EndForEndReaction",
+      "FullName": "EndForEndReaction",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2676736455 (0)",
+      "Name": "EndForActionFailed",
+      "FullName": "EndForActionFailed",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2640407450 (0)",
+      "Name": "HasLightAction",
+      "FullName": "HasLightAction",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 121,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 436744423,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2072033691 (0)",
+      "Name": "HasLight",
+      "FullName": "HasLight",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "HasLightAction",
+          "TargetID": "2640407450 (0)",
+          "Condition": {
+            "Index": 36,
+            "Class": "app.PlayerBehaviorTreeCondition_IsUseFlashLight",
+            "Userdata": null,
+            "Fields": {
+              "ID": 866381772,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "CheckGunLight": false
+            }
+          },
+          "transitionMapID": 777205737,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "NoLightAction",
+          "TargetID": "67518402 (0)",
+          "Condition": null,
+          "transitionMapID": 3982142287,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "67518402 (0)",
+      "Name": "NoLightAction",
+      "FullName": "NoLightAction",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "170769528 (0)",
+      "Name": "HasLight",
+      "FullName": "HasLight",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "HasLightAction",
+          "TargetID": "3049600757 (0)",
+          "Condition": {
+            "Index": 37,
+            "Class": "app.PlayerBehaviorTreeCondition_IsUseFlashLight",
+            "Userdata": null,
+            "Fields": {
+              "ID": 866381772,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "CheckGunLight": false
+            }
+          },
+          "transitionMapID": 1045394818,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "NoLightAction",
+          "TargetID": "3091459205 (0)",
+          "Condition": null,
+          "transitionMapID": 4251572304,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3049600757 (0)",
+      "Name": "HasLightAction",
+      "FullName": "HasLightAction",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 122,
+          "Class": "app.PlayerBehaviorTreeAction_EquipLightStatusControlAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 986584889,
+            "IsShowLightMeshAction": true,
+            "IsLightNoChangeAction": true,
+            "IsLightDirAction": true
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "3091459205 (0)",
+      "Name": "NoLightAction",
+      "FullName": "NoLightAction",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [],
+      "AllStates": []
+    }
+  ],
+  "Transitions": [
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 289,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 5,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 289,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 17,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 0,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 273,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 12,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 289,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 12,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 17,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 291,
+      "startFrame": 20,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 273,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 15,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 289,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 5,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 289,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 17,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 0,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 273,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 12,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 289,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 12,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 17,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 291,
+      "startFrame": 20,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 273,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 15,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 17,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 17,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 17,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    },
+    {
+      "EndType": 0,
+      "InterpolationMode": 0,
+      "InterpolationCurve": 0,
+      "PrevMoveToEnd": false,
+      "StartType": 0,
+      "ElapsedTimeZero": false,
+      "ContOnLayer": false,
+      "ContOnLayerInterpCurve": 0,
+      "EmptyBits": 0,
+      "id": 0,
+      "data": 0,
+      "exitFrame": 0,
+      "pragmataId": 17,
+      "startFrame": 0,
+      "interpolationFrame": 0,
+      "contOnLayerSpeed": 20,
+      "contOnLayerTimeout": 0,
+      "contOnLayerNo": 0,
+      "contOnLayerJointMaskId": 0
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/defaultplayerattenuaterecoilactionuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 4,
+      "Class": "app.PlayerAttenuateRecoilActionUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Units": [
+          {
+            "Index": 3,
+            "Class": "app.PlayerAttenuateRecoilActionUserData.Unit",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponIDs": [
+                {
+                  "Index": 1,
+                  "Class": "app.WeaponID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "arm0501"
+                  }
+                }
+              ],
+              "_Curve": {
+                "Index": 2,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 1",
+                    "0.9985: 1",
+                    "10: 0.56448245"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 10,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_IsDisableOnADS": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0501"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 1",
+          "0.9985: 1",
+          "10: 0.56448245"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 10,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerAttenuateRecoilActionUserData.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponIDs": [
+          {
+            "Ref": 1,
+            "Class": "app.WeaponID"
+          }
+        ],
+        "_Curve": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        },
+        "_IsDisableOnADS": true
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerAttenuateRecoilActionUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Units": [
+          {
+            "Ref": 3,
+            "Class": "app.PlayerAttenuateRecoilActionUserData.Unit"
+          }
+        ]
+      }
+    }
+  ]
+}

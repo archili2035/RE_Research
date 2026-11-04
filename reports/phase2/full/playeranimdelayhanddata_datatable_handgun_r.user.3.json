@@ -1,0 +1,291 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/animdelayhand/rightarm/datatable/playeranimdelayhanddata_datatable_handgun_r.user.3",
+  "Objects": [
+    {
+      "Index": 15,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Index": 4,
+          "Class": "app.PlayerComplexCondition",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_ConditionType": 0,
+            "_ConditionUnits": [
+              {
+                "Index": 3,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 1,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "WeaponEquipment"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 2,
+                    "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_WeaponCategories": [
+                        1
+                      ],
+                      "_WeaponIDs": [],
+                      "_AttachmentUnits": []
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_Additional": [
+          {
+            "Index": 13,
+            "Class": "app.AnimDelayHandData_DataTable.AdditionalUnit",
+            "Userdata": null,
+            "Fields": {
+              "_DelayHandCondition": {
+                "Index": 11,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 10,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 5,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 9,
+                          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_Collection": {
+                "Index": 12,
+                "Class": "app.AnimDelayHandData_DataCollection",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/Handgun/PlayerAnimDelayHandDataCollection_Arm400_R.user",
+                "Fields": {}
+              }
+            }
+          }
+        ],
+        "_Collection": {
+          "Index": 14,
+          "Class": "app.AnimDelayHandData_DataCollection",
+          "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/Handgun/PlayerAnimDelayHandDataCollection_Handgun_R.user",
+          "Fields": {}
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          1
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 2,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 3,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0400"
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0005"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0505"
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [],
+        "_WeaponIDs": [
+          {
+            "Ref": 6,
+            "Class": "app.WeaponID"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.WeaponID"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.WeaponID"
+          }
+        ],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 5,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 9,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 10,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/Handgun/PlayerAnimDelayHandDataCollection_Arm400_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 13,
+      "Class": "app.AnimDelayHandData_DataTable.AdditionalUnit",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Ref": 11,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Collection": {
+          "Ref": 12,
+          "Class": "app.AnimDelayHandData_DataCollection"
+        }
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/DataTable/Handgun/PlayerAnimDelayHandDataCollection_Handgun_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 15,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Ref": 4,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Additional": [
+          {
+            "Ref": 13,
+            "Class": "app.AnimDelayHandData_DataTable.AdditionalUnit"
+          }
+        ],
+        "_Collection": {
+          "Ref": 14,
+          "Class": "app.AnimDelayHandData_DataCollection"
+        }
+      }
+    }
+  ]
+}

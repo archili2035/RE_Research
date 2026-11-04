@@ -1,0 +1,475 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000reactionmessageuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 25,
+      "Class": "app.PlayerReactionMessageUserData",
+      "Userdata": null,
+      "Fields": {
+        "_MessageSettings": [
+          {
+            "Index": 4,
+            "Class": "app.PlayerReactionMessageSetting",
+            "Userdata": null,
+            "Fields": {
+              "_ReactionSettingID": "1f1d1bc8-f272-4616-802b-2702fbb00d53",
+              "_MessageEventRequest": {
+                "Index": 3,
+                "Class": "app.PlayerMessageEventRequest",
+                "Userdata": null,
+                "Fields": {
+                  "_EventID": {
+                    "Index": 1,
+                    "Class": "app.PlayerMessageEventID",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "Invalid"
+                    }
+                  },
+                  "_Arg": {
+                    "Index": 2,
+                    "Class": "app.PlayerMessageEventRequestArg_Empty",
+                    "Userdata": null,
+                    "Fields": {}
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.PlayerReactionMessageSetting",
+            "Userdata": null,
+            "Fields": {
+              "_ReactionSettingID": "e30ed158-319e-02fd-24d7-79487ef8f1a1",
+              "_MessageEventRequest": {
+                "Index": 7,
+                "Class": "app.PlayerMessageEventRequest",
+                "Userdata": null,
+                "Fields": {
+                  "_EventID": {
+                    "Index": 5,
+                    "Class": "app.PlayerMessageEventID",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "Invalid"
+                    }
+                  },
+                  "_Arg": {
+                    "Index": 6,
+                    "Class": "app.PlayerMessageEventRequestArg_Empty",
+                    "Userdata": null,
+                    "Fields": {}
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.PlayerReactionMessageSetting",
+            "Userdata": null,
+            "Fields": {
+              "_ReactionSettingID": "623c2132-ca48-4af7-aed3-8536d89b4424",
+              "_MessageEventRequest": {
+                "Index": 11,
+                "Class": "app.PlayerMessageEventRequest",
+                "Userdata": null,
+                "Fields": {
+                  "_EventID": {
+                    "Index": 9,
+                    "Class": "app.PlayerMessageEventID",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "Invalid"
+                    }
+                  },
+                  "_Arg": {
+                    "Index": 10,
+                    "Class": "app.PlayerMessageEventRequestArg_Empty",
+                    "Userdata": null,
+                    "Fields": {}
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Index": 16,
+            "Class": "app.PlayerReactionMessageSetting",
+            "Userdata": null,
+            "Fields": {
+              "_ReactionSettingID": "76bae948-0656-08f3-1bda-618c370609ea",
+              "_MessageEventRequest": {
+                "Index": 15,
+                "Class": "app.PlayerMessageEventRequest",
+                "Userdata": null,
+                "Fields": {
+                  "_EventID": {
+                    "Index": 13,
+                    "Class": "app.PlayerMessageEventID",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "Invalid"
+                    }
+                  },
+                  "_Arg": {
+                    "Index": 14,
+                    "Class": "app.PlayerMessageEventRequestArg_Empty",
+                    "Userdata": null,
+                    "Fields": {}
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Index": 20,
+            "Class": "app.PlayerReactionMessageSetting",
+            "Userdata": null,
+            "Fields": {
+              "_ReactionSettingID": "36068699-2bd6-4cf8-9d7b-19b598350981",
+              "_MessageEventRequest": {
+                "Index": 19,
+                "Class": "app.PlayerMessageEventRequest",
+                "Userdata": null,
+                "Fields": {
+                  "_EventID": {
+                    "Index": 17,
+                    "Class": "app.PlayerMessageEventID",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "Invalid"
+                    }
+                  },
+                  "_Arg": {
+                    "Index": 18,
+                    "Class": "app.PlayerMessageEventRequestArg_Empty",
+                    "Userdata": null,
+                    "Fields": {}
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Index": 24,
+            "Class": "app.PlayerReactionMessageSetting",
+            "Userdata": null,
+            "Fields": {
+              "_ReactionSettingID": "b6721c9a-4154-075a-0000-a73b2991a427",
+              "_MessageEventRequest": {
+                "Index": 23,
+                "Class": "app.PlayerMessageEventRequest",
+                "Userdata": null,
+                "Fields": {
+                  "_EventID": {
+                    "Index": 21,
+                    "Class": "app.PlayerMessageEventID",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "Invalid"
+                    }
+                  },
+                  "_Arg": {
+                    "Index": 22,
+                    "Class": "app.PlayerMessageEventRequestArg_Empty",
+                    "Userdata": null,
+                    "Fields": {}
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerMessageEventRequestArg_Empty",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 1,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 2,
+          "Class": "app.PlayerMessageEventRequestArg_Empty"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerReactionMessageSetting",
+      "Userdata": null,
+      "Fields": {
+        "_ReactionSettingID": "1f1d1bc8-f272-4616-802b-2702fbb00d53",
+        "_MessageEventRequest": {
+          "Ref": 3,
+          "Class": "app.PlayerMessageEventRequest"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.PlayerMessageEventRequestArg_Empty",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 5,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 6,
+          "Class": "app.PlayerMessageEventRequestArg_Empty"
+        }
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerReactionMessageSetting",
+      "Userdata": null,
+      "Fields": {
+        "_ReactionSettingID": "e30ed158-319e-02fd-24d7-79487ef8f1a1",
+        "_MessageEventRequest": {
+          "Ref": 7,
+          "Class": "app.PlayerMessageEventRequest"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerMessageEventRequestArg_Empty",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 11,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 9,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 10,
+          "Class": "app.PlayerMessageEventRequestArg_Empty"
+        }
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerReactionMessageSetting",
+      "Userdata": null,
+      "Fields": {
+        "_ReactionSettingID": "623c2132-ca48-4af7-aed3-8536d89b4424",
+        "_MessageEventRequest": {
+          "Ref": 11,
+          "Class": "app.PlayerMessageEventRequest"
+        }
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerMessageEventRequestArg_Empty",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 13,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 14,
+          "Class": "app.PlayerMessageEventRequestArg_Empty"
+        }
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerReactionMessageSetting",
+      "Userdata": null,
+      "Fields": {
+        "_ReactionSettingID": "76bae948-0656-08f3-1bda-618c370609ea",
+        "_MessageEventRequest": {
+          "Ref": 15,
+          "Class": "app.PlayerMessageEventRequest"
+        }
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.PlayerMessageEventRequestArg_Empty",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 19,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 17,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 18,
+          "Class": "app.PlayerMessageEventRequestArg_Empty"
+        }
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerReactionMessageSetting",
+      "Userdata": null,
+      "Fields": {
+        "_ReactionSettingID": "36068699-2bd6-4cf8-9d7b-19b598350981",
+        "_MessageEventRequest": {
+          "Ref": 19,
+          "Class": "app.PlayerMessageEventRequest"
+        }
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerMessageEventID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.PlayerMessageEventRequestArg_Empty",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 23,
+      "Class": "app.PlayerMessageEventRequest",
+      "Userdata": null,
+      "Fields": {
+        "_EventID": {
+          "Ref": 21,
+          "Class": "app.PlayerMessageEventID"
+        },
+        "_Arg": {
+          "Ref": 22,
+          "Class": "app.PlayerMessageEventRequestArg_Empty"
+        }
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerReactionMessageSetting",
+      "Userdata": null,
+      "Fields": {
+        "_ReactionSettingID": "b6721c9a-4154-075a-0000-a73b2991a427",
+        "_MessageEventRequest": {
+          "Ref": 23,
+          "Class": "app.PlayerMessageEventRequest"
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.PlayerReactionMessageUserData",
+      "Userdata": null,
+      "Fields": {
+        "_MessageSettings": [
+          {
+            "Ref": 4,
+            "Class": "app.PlayerReactionMessageSetting"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.PlayerReactionMessageSetting"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.PlayerReactionMessageSetting"
+          },
+          {
+            "Ref": 16,
+            "Class": "app.PlayerReactionMessageSetting"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.PlayerReactionMessageSetting"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.PlayerReactionMessageSetting"
+          }
+        ]
+      }
+    }
+  ]
+}

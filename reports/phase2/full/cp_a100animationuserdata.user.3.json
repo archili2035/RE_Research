@@ -1,0 +1,2026 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100animationuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 115,
+      "Class": "anim.AnimationUserData",
+      "Userdata": null,
+      "Fields": {
+        "ParamSets": [
+          {
+            "Index": 10,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 8,
+                "Class": "app.AnimDynamicFPSUpperRotate.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 2,
+                      "Class": "app.AnimDynamicFPSUpperRotate.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 1,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 8
+                      }
+                    },
+                    {
+                      "Index": 4,
+                      "Class": "app.AnimDynamicFPSUpperRotate.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 3,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 3
+                      }
+                    },
+                    {
+                      "Index": 6,
+                      "Class": "app.AnimDynamicFPSUpperRotate.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 5,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 24
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false,
+                  "_RootData": {
+                    "Index": 7,
+                    "Class": "app.AnimDynamicFPSUpperRotateUserData",
+                    "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100AnimDynamicFPSUpperRotateUserData.user",
+                    "Fields": {}
+                  }
+                }
+              },
+              "AnimationSetting": {
+                "Index": 9,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "app.AnimDynamicFPSUpperRotate"
+                }
+              }
+            }
+          },
+          {
+            "Index": 57,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 55,
+                "Class": "app.AnimDelayHand.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 47,
+                      "Class": "app.AnimDelayHand.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 11,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 2,
+                        "DisableSpeedRate": 8,
+                        "_StableParams": [
+                          {
+                            "Ref": 21,
+                            "Class": "app.AnimDelayHand.StableParam"
+                          },
+                          {
+                            "Ref": 34,
+                            "Class": "app.AnimDelayHand.StableParam"
+                          },
+                          {
+                            "Ref": 44,
+                            "Class": "app.AnimDelayHand.StableParam"
+                          }
+                        ],
+                        "_DefaultRateParam": {
+                          "Ref": 46,
+                          "Class": "app.AnimDelayHand.RateParam"
+                        }
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false,
+                  "_RootData": {
+                    "Index": 48,
+                    "Class": "app.AnimDelayHandUserData",
+                    "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/AnimDelayHand/cp_A100AnimDelayHandUserData.user",
+                    "Fields": {}
+                  },
+                  "_AdditionalUnits": [
+                    {
+                      "Index": 54,
+                      "Class": "app.AnimDelayHand.Param.AdditionalUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Condition": {
+                          "Ref": 52,
+                          "Class": "app.PlayerComplexCondition"
+                        },
+                        "_Data": {
+                          "Ref": 53,
+                          "Class": "app.AnimDelayHandUserData"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "AnimationSetting": {
+                "Index": 56,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "app.AnimDelayHand"
+                }
+              }
+            }
+          },
+          {
+            "Index": 63,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 61,
+                "Class": "app.AnimFootContact.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 59,
+                      "Class": "app.AnimFootContact.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 58,
+                          "Class": "app.NameHash"
+                        }
+                      }
+                    }
+                  ],
+                  "DefaultEnable": true,
+                  "Disable": false,
+                  "UserData": {
+                    "Index": 60,
+                    "Class": "app.character.FootContactUserData",
+                    "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100FootContactData.user",
+                    "Fields": {}
+                  },
+                  "BodyLayerIndex": 0
+                }
+              },
+              "AnimationSetting": {
+                "Index": 62,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "app.AnimFootContact"
+                }
+              }
+            }
+          },
+          {
+            "Index": 68,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 66,
+                "Class": "app.AnimFPSCameraShakeAdjuster.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 65,
+                      "Class": "app.AnimFPSCameraShakeAdjuster.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 64,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 8
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false
+                }
+              },
+              "AnimationSetting": {
+                "Index": 67,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "app.AnimFPSCameraShakeAdjuster"
+                }
+              }
+            }
+          },
+          {
+            "Index": 95,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 93,
+                "Class": "app.AppIkLookAtControllerForBehavior.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 70,
+                      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 69,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 1,
+                        "DisableSpeedRate": 2.5,
+                        "_PostureData": {
+                          "Ref": 0,
+                          "Class": ""
+                        }
+                      }
+                    },
+                    {
+                      "Index": 73,
+                      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 71,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 2.5,
+                        "_PostureData": {
+                          "Ref": 72,
+                          "Class": "app.AppIkLookAtSettingForPostureUserData"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 76,
+                      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 74,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 2.5,
+                        "_PostureData": {
+                          "Ref": 75,
+                          "Class": "app.AppIkLookAtSettingForPostureUserData"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 79,
+                      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 77,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 2.5,
+                        "_PostureData": {
+                          "Ref": 78,
+                          "Class": "app.AppIkLookAtSettingForPostureUserData"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 82,
+                      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 80,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 1,
+                        "DisableSpeedRate": 2.5,
+                        "_PostureData": {
+                          "Ref": 81,
+                          "Class": "app.AppIkLookAtSettingForPostureUserData"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 85,
+                      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 83,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 2.5,
+                        "_PostureData": {
+                          "Ref": 84,
+                          "Class": "app.AppIkLookAtSettingForPostureUserData"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 88,
+                      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 86,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 1,
+                        "DisableSpeedRate": 2.5,
+                        "_PostureData": {
+                          "Ref": 87,
+                          "Class": "app.AppIkLookAtSettingForPostureUserData"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 91,
+                      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 89,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 2.5,
+                        "_PostureData": {
+                          "Ref": 90,
+                          "Class": "app.AppIkLookAtSettingForPostureUserData"
+                        }
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false,
+                  "_BaseSetting": {
+                    "Index": 92,
+                    "Class": "app.AppIkLookAtSettingUserData",
+                    "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/LookAt/cp_A100IkLookAtUserData.user",
+                    "Fields": {}
+                  }
+                }
+              },
+              "AnimationSetting": {
+                "Index": 94,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "app.AppIkLookAtControllerForBehavior"
+                }
+              }
+            }
+          },
+          {
+            "Index": 101,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 99,
+                "Class": "anim.AnimWeaponHoldStanceAdjuster.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 98,
+                      "Class": "anim.AnimWeaponHoldStanceAdjuster.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 96,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 1.5,
+                        "_UserData": {
+                          "Ref": 97,
+                          "Class": "app.WeaponHoldStanceAdjusterUserData"
+                        }
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false
+                }
+              },
+              "AnimationSetting": {
+                "Index": 100,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "anim.AnimWeaponHoldStanceAdjuster"
+                }
+              }
+            }
+          },
+          {
+            "Index": 107,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 105,
+                "Class": "anim.AnimIkGrabBag.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 103,
+                      "Class": "anim.AnimIkGrabBag.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 102,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 8
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false,
+                  "ParentJoint": {
+                    "Index": 104,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3422791998
+                    }
+                  }
+                }
+              },
+              "AnimationSetting": {
+                "Index": 106,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "anim.AnimIkGrabBag"
+                }
+              }
+            }
+          },
+          {
+            "Index": 113,
+            "Class": "anim.AnimationUserData.ParamSet",
+            "Userdata": null,
+            "Fields": {
+              "Param": {
+                "Index": 111,
+                "Class": "anim.AnimVGroundAdjuster.Param",
+                "Userdata": null,
+                "Fields": {
+                  "SubParams": [
+                    {
+                      "Index": 109,
+                      "Class": "anim.AnimVGroundAdjuster.SubParam",
+                      "Userdata": null,
+                      "Fields": {
+                        "SubParamNameHash": {
+                          "Ref": 108,
+                          "Class": "app.NameHash"
+                        },
+                        "EnableSpeedRate": 4,
+                        "DisableSpeedRate": 8
+                      }
+                    }
+                  ],
+                  "DefaultEnable": false,
+                  "Disable": false,
+                  "JointName": {
+                    "Index": 110,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1457984178
+                    }
+                  }
+                }
+              },
+              "AnimationSetting": {
+                "Index": 112,
+                "Class": "anim.AnimationUserData.Setting",
+                "Userdata": null,
+                "Fields": {
+                  "Type": "anim.AnimVGroundAdjuster"
+                }
+              }
+            }
+          }
+        ],
+        "SubUserDatas": [
+          {
+            "Index": 114,
+            "Class": "anim.AnimationUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonAnimationUserData.user",
+            "Fields": {}
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.AnimDynamicFPSUpperRotate.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 8
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2315344949
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.AnimDynamicFPSUpperRotate.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 3,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 3
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2878922317
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.AnimDynamicFPSUpperRotate.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 24
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.AnimDynamicFPSUpperRotateUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100AnimDynamicFPSUpperRotateUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 8,
+      "Class": "app.AnimDynamicFPSUpperRotate.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 2,
+            "Class": "app.AnimDynamicFPSUpperRotate.SubParam"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.AnimDynamicFPSUpperRotate.SubParam"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.AnimDynamicFPSUpperRotate.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false,
+        "_RootData": {
+          "Ref": 7,
+          "Class": "app.AnimDynamicFPSUpperRotateUserData"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "app.AnimDynamicFPSUpperRotate"
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 8,
+          "Class": "app.AnimDynamicFPSUpperRotate.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 9,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 4,
+        "_IsOr": false
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 12,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 13,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "CameraInput"
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerComplexConditionParam_CameraInput",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_InputIntensity": 0.1,
+        "_IsLessThan": true
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 15,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 16,
+          "Class": "app.PlayerComplexConditionParam_CameraInput"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 14,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.AnimDelayHand.RateParam",
+      "Userdata": null,
+      "Fields": {
+        "_StableTimeSec": 1,
+        "_IsSetCurve": true,
+        "_Curve": {
+          "Ref": 19,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.AnimDelayHand.StableParam",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 18,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsApplyLeftHand": false,
+        "_IsApplyRightHand": true,
+        "_InfluenceRate": 0,
+        "_RateParam": {
+          "Ref": 20,
+          "Class": "app.AnimDelayHand.RateParam"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 2,
+        "_IsOr": false
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 22,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 23,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "PlayerDirection"
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.PlayerComplexConditionParam_PlayerDirection",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_DirectionKind": 0,
+        "_CheckValue": "\u003C0, 0, 1\u003E",
+        "_Error": 10,
+        "_IsCheckXZ": true
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 25,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 26,
+          "Class": "app.PlayerComplexConditionParam_PlayerDirection"
+        }
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "CameraInput"
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.PlayerComplexConditionParam_CameraInput",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_InputIntensity": 0.1,
+        "_IsLessThan": true
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 28,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 29,
+          "Class": "app.PlayerComplexConditionParam_CameraInput"
+        }
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 24,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.AnimDelayHand.RateParam",
+      "Userdata": null,
+      "Fields": {
+        "_StableTimeSec": 1,
+        "_IsSetCurve": true,
+        "_Curve": {
+          "Ref": 32,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.AnimDelayHand.StableParam",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 31,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsApplyLeftHand": false,
+        "_IsApplyRightHand": true,
+        "_InfluenceRate": 0,
+        "_RateParam": {
+          "Ref": 33,
+          "Class": "app.AnimDelayHand.RateParam"
+        }
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 1,
+        "_IsOr": false
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 35,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 36,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "CameraInput"
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.PlayerComplexConditionParam_CameraInput",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_InputIntensity": 0.1,
+        "_IsLessThan": true
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 38,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 39,
+          "Class": "app.PlayerComplexConditionParam_CameraInput"
+        }
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 37,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 40,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.AnimDelayHand.RateParam",
+      "Userdata": null,
+      "Fields": {
+        "_StableTimeSec": 2,
+        "_IsSetCurve": true,
+        "_Curve": {
+          "Ref": 42,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.AnimDelayHand.StableParam",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 41,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_IsApplyLeftHand": false,
+        "_IsApplyRightHand": true,
+        "_InfluenceRate": 0,
+        "_RateParam": {
+          "Ref": 43,
+          "Class": "app.AnimDelayHand.RateParam"
+        }
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.AnimDelayHand.RateParam",
+      "Userdata": null,
+      "Fields": {
+        "_StableTimeSec": 0.38,
+        "_IsSetCurve": false,
+        "_Curve": {
+          "Ref": 45,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.AnimDelayHand.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 11,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 2,
+        "DisableSpeedRate": 8,
+        "_StableParams": [
+          {
+            "Ref": 21,
+            "Class": "app.AnimDelayHand.StableParam"
+          },
+          {
+            "Ref": 34,
+            "Class": "app.AnimDelayHand.StableParam"
+          },
+          {
+            "Ref": 44,
+            "Class": "app.AnimDelayHand.StableParam"
+          }
+        ],
+        "_DefaultRateParam": {
+          "Ref": 46,
+          "Class": "app.AnimDelayHand.RateParam"
+        }
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.AnimDelayHandUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/AnimDelayHand/cp_A100AnimDelayHandUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 49,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "TPSFPS"
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.PlayerComplexConditionParam_TPSFPS",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_Kind": 0
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 49,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 50,
+          "Class": "app.PlayerComplexConditionParam_TPSFPS"
+        }
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 51,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.AnimDelayHandUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A0/cp_A000/UserData/AnimDelayHand/cp_A000AnimDelayHandUserData_TPS.user",
+      "Fields": {}
+    },
+    {
+      "Index": 54,
+      "Class": "app.AnimDelayHand.Param.AdditionalUnit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 52,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Data": {
+          "Ref": 53,
+          "Class": "app.AnimDelayHandUserData"
+        }
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.AnimDelayHand.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 47,
+            "Class": "app.AnimDelayHand.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false,
+        "_RootData": {
+          "Ref": 48,
+          "Class": "app.AnimDelayHandUserData"
+        },
+        "_AdditionalUnits": [
+          {
+            "Ref": 54,
+            "Class": "app.AnimDelayHand.Param.AdditionalUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "app.AnimDelayHand"
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 55,
+          "Class": "app.AnimDelayHand.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 56,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.AnimFootContact.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 58,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.character.FootContactUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100FootContactData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 61,
+      "Class": "app.AnimFootContact.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 59,
+            "Class": "app.AnimFootContact.SubParam"
+          }
+        ],
+        "DefaultEnable": true,
+        "Disable": false,
+        "UserData": {
+          "Ref": 60,
+          "Class": "app.character.FootContactUserData"
+        },
+        "BodyLayerIndex": 0
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "app.AnimFootContact"
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 61,
+          "Class": "app.AnimFootContact.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 62,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.AnimFPSCameraShakeAdjuster.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 64,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 8
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.AnimFPSCameraShakeAdjuster.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 65,
+            "Class": "app.AnimFPSCameraShakeAdjuster.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "app.AnimFPSCameraShakeAdjuster"
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 66,
+          "Class": "app.AnimFPSCameraShakeAdjuster.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 67,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 69,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 1,
+        "DisableSpeedRate": 2.5,
+        "_PostureData": {
+          "Ref": 0,
+          "Class": ""
+        }
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2593583382
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.AppIkLookAtSettingForPostureUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/LookAt/cp_A100IkLookAtPosture_Holding.user",
+      "Fields": {}
+    },
+    {
+      "Index": 73,
+      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 71,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 2.5,
+        "_PostureData": {
+          "Ref": 72,
+          "Class": "app.AppIkLookAtSettingForPostureUserData"
+        }
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2111799194
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.AppIkLookAtSettingForPostureUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/LookAt/cp_A100IkLookAtPosture_Walk.user",
+      "Fields": {}
+    },
+    {
+      "Index": 76,
+      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 74,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 2.5,
+        "_PostureData": {
+          "Ref": 75,
+          "Class": "app.AppIkLookAtSettingForPostureUserData"
+        }
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 847302998
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.AppIkLookAtSettingForPostureUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/LookAt/cp_A100IkLookAtPosture_Run.user",
+      "Fields": {}
+    },
+    {
+      "Index": 79,
+      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 77,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 2.5,
+        "_PostureData": {
+          "Ref": 78,
+          "Class": "app.AppIkLookAtSettingForPostureUserData"
+        }
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1699390205
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.AppIkLookAtSettingForPostureUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/LookAt/cp_A100IkLookAtPosture_Crouch.user",
+      "Fields": {}
+    },
+    {
+      "Index": 82,
+      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 80,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 1,
+        "DisableSpeedRate": 2.5,
+        "_PostureData": {
+          "Ref": 81,
+          "Class": "app.AppIkLookAtSettingForPostureUserData"
+        }
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1609400627
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.AppIkLookAtSettingForPostureUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/LookAt/cp_A100IkLookAtPosture_CrouchWalk.user",
+      "Fields": {}
+    },
+    {
+      "Index": 85,
+      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 83,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 2.5,
+        "_PostureData": {
+          "Ref": 84,
+          "Class": "app.AppIkLookAtSettingForPostureUserData"
+        }
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1331633095
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.AppIkLookAtSettingForPostureUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/LookAt/cp_A100IkLookAtPosture_HandLightWalk.user",
+      "Fields": {}
+    },
+    {
+      "Index": 88,
+      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 86,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 1,
+        "DisableSpeedRate": 2.5,
+        "_PostureData": {
+          "Ref": 87,
+          "Class": "app.AppIkLookAtSettingForPostureUserData"
+        }
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4253710839
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.AppIkLookAtSettingForPostureUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/LookAt/cp_A100IkLookAtPosture_Item.user",
+      "Fields": {}
+    },
+    {
+      "Index": 91,
+      "Class": "app.AppIkLookAtControllerForBehavior.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 89,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 2.5,
+        "_PostureData": {
+          "Ref": 90,
+          "Class": "app.AppIkLookAtSettingForPostureUserData"
+        }
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.AppIkLookAtSettingUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/LookAt/cp_A100IkLookAtUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 93,
+      "Class": "app.AppIkLookAtControllerForBehavior.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 70,
+            "Class": "app.AppIkLookAtControllerForBehavior.SubParam"
+          },
+          {
+            "Ref": 73,
+            "Class": "app.AppIkLookAtControllerForBehavior.SubParam"
+          },
+          {
+            "Ref": 76,
+            "Class": "app.AppIkLookAtControllerForBehavior.SubParam"
+          },
+          {
+            "Ref": 79,
+            "Class": "app.AppIkLookAtControllerForBehavior.SubParam"
+          },
+          {
+            "Ref": 82,
+            "Class": "app.AppIkLookAtControllerForBehavior.SubParam"
+          },
+          {
+            "Ref": 85,
+            "Class": "app.AppIkLookAtControllerForBehavior.SubParam"
+          },
+          {
+            "Ref": 88,
+            "Class": "app.AppIkLookAtControllerForBehavior.SubParam"
+          },
+          {
+            "Ref": 91,
+            "Class": "app.AppIkLookAtControllerForBehavior.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false,
+        "_BaseSetting": {
+          "Ref": 92,
+          "Class": "app.AppIkLookAtSettingUserData"
+        }
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "app.AppIkLookAtControllerForBehavior"
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 93,
+          "Class": "app.AppIkLookAtControllerForBehavior.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 94,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.WeaponHoldStanceAdjusterUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerWeaponHold.user",
+      "Fields": {}
+    },
+    {
+      "Index": 98,
+      "Class": "anim.AnimWeaponHoldStanceAdjuster.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 96,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 1.5,
+        "_UserData": {
+          "Ref": 97,
+          "Class": "app.WeaponHoldStanceAdjusterUserData"
+        }
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "anim.AnimWeaponHoldStanceAdjuster.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 98,
+            "Class": "anim.AnimWeaponHoldStanceAdjuster.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "anim.AnimWeaponHoldStanceAdjuster"
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 99,
+          "Class": "anim.AnimWeaponHoldStanceAdjuster.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 100,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "anim.AnimIkGrabBag.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 102,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 8
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3422791998
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "anim.AnimIkGrabBag.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 103,
+            "Class": "anim.AnimIkGrabBag.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false,
+        "ParentJoint": {
+          "Ref": 104,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "anim.AnimIkGrabBag"
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 105,
+          "Class": "anim.AnimIkGrabBag.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 106,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2801360189
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "anim.AnimVGroundAdjuster.SubParam",
+      "Userdata": null,
+      "Fields": {
+        "SubParamNameHash": {
+          "Ref": 108,
+          "Class": "app.NameHash"
+        },
+        "EnableSpeedRate": 4,
+        "DisableSpeedRate": 8
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1457984178
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "anim.AnimVGroundAdjuster.Param",
+      "Userdata": null,
+      "Fields": {
+        "SubParams": [
+          {
+            "Ref": 109,
+            "Class": "anim.AnimVGroundAdjuster.SubParam"
+          }
+        ],
+        "DefaultEnable": false,
+        "Disable": false,
+        "JointName": {
+          "Ref": 110,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "anim.AnimationUserData.Setting",
+      "Userdata": null,
+      "Fields": {
+        "Type": "anim.AnimVGroundAdjuster"
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "anim.AnimationUserData.ParamSet",
+      "Userdata": null,
+      "Fields": {
+        "Param": {
+          "Ref": 111,
+          "Class": "anim.AnimVGroundAdjuster.Param"
+        },
+        "AnimationSetting": {
+          "Ref": 112,
+          "Class": "anim.AnimationUserData.Setting"
+        }
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "anim.AnimationUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonAnimationUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 115,
+      "Class": "anim.AnimationUserData",
+      "Userdata": null,
+      "Fields": {
+        "ParamSets": [
+          {
+            "Ref": 10,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 57,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 63,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 68,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 95,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 101,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 107,
+            "Class": "anim.AnimationUserData.ParamSet"
+          },
+          {
+            "Ref": 113,
+            "Class": "anim.AnimationUserData.ParamSet"
+          }
+        ],
+        "SubUserDatas": [
+          {
+            "Ref": 114,
+            "Class": "anim.AnimationUserData"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,793 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/animdelayhand/playeranimdelayhand_adjustmentunit_run.user.3",
+  "Objects": [
+    {
+      "Index": 32,
+      "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+      "Userdata": null,
+      "Fields": {
+        "_CommonData": {
+          "Index": 3,
+          "Class": "app.AnimDelayHand_AdjustmentWorkCommonData",
+          "Userdata": null,
+          "Fields": {
+            "_InterpolationTimeSec": 0.8,
+            "_Rate": 80,
+            "_MinRate": 0,
+            "_RateDampingParam": {
+              "Index": 1,
+              "Class": "app.DampingParam",
+              "Userdata": null,
+              "Fields": {
+                "_DampingTime": 0.4,
+                "_DampingRate": 0.6
+              }
+            },
+            "_MaxSpringLengthDampingParam": {
+              "Index": 2,
+              "Class": "app.DampingParam",
+              "Userdata": null,
+              "Fields": {
+                "_DampingTime": 0.2,
+                "_DampingRate": 0.2
+              }
+            }
+          }
+        },
+        "_IsEnableLowerArmAdjustment": false,
+        "_LowerArmAdjustment": {
+          "Index": 9,
+          "Class": "app.AnimDelayHand_LowerArmAdjustmentWorkData",
+          "Userdata": null,
+          "Fields": {
+            "_OverrideBasisJointName": "",
+            "_IsEnableDamper": true,
+            "_DamperParam": {
+              "Index": 7,
+              "Class": "app.AnimDelayHand_DamperParam",
+              "Userdata": null,
+              "Fields": {
+                "_AxisXParam": {
+                  "Index": 4,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 0.8,
+                    "_Omega": 15,
+                    "_TimeScale": 1
+                  }
+                },
+                "_AxisYParam": {
+                  "Index": 5,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 0.8,
+                    "_Omega": 15,
+                    "_TimeScale": 1
+                  }
+                },
+                "_AxisZParam": {
+                  "Index": 6,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 0.8,
+                    "_Omega": 15,
+                    "_TimeScale": 1
+                  }
+                }
+              }
+            },
+            "_MaxSpringLength": 0.5,
+            "_IsEnableUnStableParam": false,
+            "_UnstableParam": {
+              "Index": 8,
+              "Class": "app.AnimDelayHand_UnstableParam",
+              "Userdata": null,
+              "Fields": {
+                "_CheckKind": 0,
+                "_DecreasingRate": 80,
+                "_DecreasingRateAfter": 80,
+                "_ToStableTimeSec": 1
+              }
+            },
+            "_AxisDirection": 5,
+            "_LowerArmAimDistance": 1
+          }
+        },
+        "_IsEnableHandDirectionAdjustment": true,
+        "_DirectionAdjustmentData": {
+          "Index": 17,
+          "Class": "app.AnimDelayHand_HandDirectionAdjustmentWorkData",
+          "Userdata": null,
+          "Fields": {
+            "_OverrideBasisJointName": "",
+            "_IsEnableDamper": true,
+            "_DamperParam": {
+              "Index": 13,
+              "Class": "app.AnimDelayHand_DamperParam",
+              "Userdata": null,
+              "Fields": {
+                "_AxisXParam": {
+                  "Index": 10,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 0.45,
+                    "_Omega": 10,
+                    "_TimeScale": 1.8
+                  }
+                },
+                "_AxisYParam": {
+                  "Index": 11,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 0.45,
+                    "_Omega": 10,
+                    "_TimeScale": 1.8
+                  }
+                },
+                "_AxisZParam": {
+                  "Index": 12,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 0.45,
+                    "_Omega": 10,
+                    "_TimeScale": 1.8
+                  }
+                }
+              }
+            },
+            "_MaxSpringLength": 0.5,
+            "_IsEnableUnStableParam": true,
+            "_UnstableParam": {
+              "Index": 14,
+              "Class": "app.AnimDelayHand_UnstableParam",
+              "Userdata": null,
+              "Fields": {
+                "_CheckKind": 0,
+                "_DecreasingRate": 50,
+                "_DecreasingRateAfter": 30,
+                "_ToStableTimeSec": 0.45
+              }
+            },
+            "_HandAimOffset": "\u003C0, 0, 0.5\u003E",
+            "_ForwardAxisDirection": 3,
+            "_IsUseBlendOffset": true,
+            "_BlendOffsetParam": {
+              "Index": 16,
+              "Class": "app.AnimDelayHand_BlendOffsetParam",
+              "Userdata": null,
+              "Fields": {
+                "_CheckKind": 1,
+                "_ForwardOffset": "\u003C0, 0, 0.5\u003E",
+                "_BackOffset": "\u003C0, 0, 0.5\u003E",
+                "_LeftOffset": "\u003C0.05, 0.05, 0.5\u003E",
+                "_RightOffset": "\u003C-0.05, -0.05, 0.5\u003E",
+                "_DampingParam": {
+                  "Index": 15,
+                  "Class": "app.DampingParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_DampingTime": 0.2,
+                    "_DampingRate": 0.8
+                  }
+                }
+              }
+            }
+          }
+        },
+        "_IsEnableHandRollAdjustment": false,
+        "_HandRollAdjustmentData": {
+          "Index": 25,
+          "Class": "app.AnimDelayHand_HandRollAdjustmentWorkData",
+          "Userdata": null,
+          "Fields": {
+            "_OverrideBasisJointName": "",
+            "_IsEnableDamper": true,
+            "_DamperParam": {
+              "Index": 21,
+              "Class": "app.AnimDelayHand_DamperParam",
+              "Userdata": null,
+              "Fields": {
+                "_AxisXParam": {
+                  "Index": 18,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 0.85,
+                    "_Omega": 15,
+                    "_TimeScale": 1
+                  }
+                },
+                "_AxisYParam": {
+                  "Index": 19,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 0.85,
+                    "_Omega": 15,
+                    "_TimeScale": 1
+                  }
+                },
+                "_AxisZParam": {
+                  "Index": 20,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 0.85,
+                    "_Omega": 15,
+                    "_TimeScale": 1
+                  }
+                }
+              }
+            },
+            "_MaxSpringLength": 0.5,
+            "_IsEnableUnStableParam": false,
+            "_UnstableParam": {
+              "Index": 22,
+              "Class": "app.AnimDelayHand_UnstableParam",
+              "Userdata": null,
+              "Fields": {
+                "_CheckKind": 0,
+                "_DecreasingRate": 80,
+                "_DecreasingRateAfter": 80,
+                "_ToStableTimeSec": 1
+              }
+            },
+            "_UpOffset": "\u003C0, 1, 1\u003E",
+            "_IsUseBlendOffset": false,
+            "_BlendOffsetParam": {
+              "Index": 24,
+              "Class": "app.AnimDelayHand_BlendOffsetParam",
+              "Userdata": null,
+              "Fields": {
+                "_CheckKind": 0,
+                "_ForwardOffset": "\u003C0, 0, 0\u003E",
+                "_BackOffset": "\u003C0, 0, 0\u003E",
+                "_LeftOffset": "\u003C0, 0, 0\u003E",
+                "_RightOffset": "\u003C0, 0, 0\u003E",
+                "_DampingParam": {
+                  "Index": 23,
+                  "Class": "app.DampingParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_DampingTime": 0.2,
+                    "_DampingRate": 0.8
+                  }
+                }
+              }
+            },
+            "_RollKind": 1,
+            "_ChangedRollKindInterpolationTimeSec": 0.5
+          }
+        },
+        "_IsEnableHandReticleAdjustment": false,
+        "_HandReticleAdjustmentData": {
+          "Index": 31,
+          "Class": "app.AnimDelayHand_HandReticleAdjustmentWorkData",
+          "Userdata": null,
+          "Fields": {
+            "_OverrideBasisJointName": "",
+            "_IsEnableDamper": true,
+            "_DamperParam": {
+              "Index": 29,
+              "Class": "app.AnimDelayHand_DamperParam",
+              "Userdata": null,
+              "Fields": {
+                "_AxisXParam": {
+                  "Index": 26,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 1,
+                    "_Omega": 10,
+                    "_TimeScale": 1
+                  }
+                },
+                "_AxisYParam": {
+                  "Index": 27,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 1,
+                    "_Omega": 10,
+                    "_TimeScale": 1
+                  }
+                },
+                "_AxisZParam": {
+                  "Index": 28,
+                  "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Damping": 1,
+                    "_Omega": 10,
+                    "_TimeScale": 1
+                  }
+                }
+              }
+            },
+            "_MaxSpringLength": 0.5,
+            "_IsEnableUnStableParam": false,
+            "_UnstableParam": {
+              "Index": 30,
+              "Class": "app.AnimDelayHand_UnstableParam",
+              "Userdata": null,
+              "Fields": {
+                "_CheckKind": 0,
+                "_DecreasingRate": 80,
+                "_DecreasingRateAfter": 80,
+                "_ToStableTimeSec": 1
+              }
+            },
+            "_RecitleDistance": 3,
+            "_DirectionKind": 0
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.4,
+        "_DampingRate": 0.6
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.AnimDelayHand_AdjustmentWorkCommonData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationTimeSec": 0.8,
+        "_Rate": 80,
+        "_MinRate": 0,
+        "_RateDampingParam": {
+          "Ref": 1,
+          "Class": "app.DampingParam"
+        },
+        "_MaxSpringLengthDampingParam": {
+          "Ref": 2,
+          "Class": "app.DampingParam"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 0.8,
+        "_Omega": 15,
+        "_TimeScale": 1
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 0.8,
+        "_Omega": 15,
+        "_TimeScale": 1
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 0.8,
+        "_Omega": 15,
+        "_TimeScale": 1
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.AnimDelayHand_DamperParam",
+      "Userdata": null,
+      "Fields": {
+        "_AxisXParam": {
+          "Ref": 4,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        },
+        "_AxisYParam": {
+          "Ref": 5,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        },
+        "_AxisZParam": {
+          "Ref": 6,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        }
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.AnimDelayHand_UnstableParam",
+      "Userdata": null,
+      "Fields": {
+        "_CheckKind": 0,
+        "_DecreasingRate": 80,
+        "_DecreasingRateAfter": 80,
+        "_ToStableTimeSec": 1
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.AnimDelayHand_LowerArmAdjustmentWorkData",
+      "Userdata": null,
+      "Fields": {
+        "_OverrideBasisJointName": "",
+        "_IsEnableDamper": true,
+        "_DamperParam": {
+          "Ref": 7,
+          "Class": "app.AnimDelayHand_DamperParam"
+        },
+        "_MaxSpringLength": 0.5,
+        "_IsEnableUnStableParam": false,
+        "_UnstableParam": {
+          "Ref": 8,
+          "Class": "app.AnimDelayHand_UnstableParam"
+        },
+        "_AxisDirection": 5,
+        "_LowerArmAimDistance": 1
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 0.45,
+        "_Omega": 10,
+        "_TimeScale": 1.8
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 0.45,
+        "_Omega": 10,
+        "_TimeScale": 1.8
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 0.45,
+        "_Omega": 10,
+        "_TimeScale": 1.8
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.AnimDelayHand_DamperParam",
+      "Userdata": null,
+      "Fields": {
+        "_AxisXParam": {
+          "Ref": 10,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        },
+        "_AxisYParam": {
+          "Ref": 11,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        },
+        "_AxisZParam": {
+          "Ref": 12,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        }
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.AnimDelayHand_UnstableParam",
+      "Userdata": null,
+      "Fields": {
+        "_CheckKind": 0,
+        "_DecreasingRate": 50,
+        "_DecreasingRateAfter": 30,
+        "_ToStableTimeSec": 0.45
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.AnimDelayHand_BlendOffsetParam",
+      "Userdata": null,
+      "Fields": {
+        "_CheckKind": 1,
+        "_ForwardOffset": "\u003C0, 0, 0.5\u003E",
+        "_BackOffset": "\u003C0, 0, 0.5\u003E",
+        "_LeftOffset": "\u003C0.05, 0.05, 0.5\u003E",
+        "_RightOffset": "\u003C-0.05, -0.05, 0.5\u003E",
+        "_DampingParam": {
+          "Ref": 15,
+          "Class": "app.DampingParam"
+        }
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.AnimDelayHand_HandDirectionAdjustmentWorkData",
+      "Userdata": null,
+      "Fields": {
+        "_OverrideBasisJointName": "",
+        "_IsEnableDamper": true,
+        "_DamperParam": {
+          "Ref": 13,
+          "Class": "app.AnimDelayHand_DamperParam"
+        },
+        "_MaxSpringLength": 0.5,
+        "_IsEnableUnStableParam": true,
+        "_UnstableParam": {
+          "Ref": 14,
+          "Class": "app.AnimDelayHand_UnstableParam"
+        },
+        "_HandAimOffset": "\u003C0, 0, 0.5\u003E",
+        "_ForwardAxisDirection": 3,
+        "_IsUseBlendOffset": true,
+        "_BlendOffsetParam": {
+          "Ref": 16,
+          "Class": "app.AnimDelayHand_BlendOffsetParam"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 0.85,
+        "_Omega": 15,
+        "_TimeScale": 1
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 0.85,
+        "_Omega": 15,
+        "_TimeScale": 1
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 0.85,
+        "_Omega": 15,
+        "_TimeScale": 1
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.AnimDelayHand_DamperParam",
+      "Userdata": null,
+      "Fields": {
+        "_AxisXParam": {
+          "Ref": 18,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        },
+        "_AxisYParam": {
+          "Ref": 19,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        },
+        "_AxisZParam": {
+          "Ref": 20,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.AnimDelayHand_UnstableParam",
+      "Userdata": null,
+      "Fields": {
+        "_CheckKind": 0,
+        "_DecreasingRate": 80,
+        "_DecreasingRateAfter": 80,
+        "_ToStableTimeSec": 1
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.AnimDelayHand_BlendOffsetParam",
+      "Userdata": null,
+      "Fields": {
+        "_CheckKind": 0,
+        "_ForwardOffset": "\u003C0, 0, 0\u003E",
+        "_BackOffset": "\u003C0, 0, 0\u003E",
+        "_LeftOffset": "\u003C0, 0, 0\u003E",
+        "_RightOffset": "\u003C0, 0, 0\u003E",
+        "_DampingParam": {
+          "Ref": 23,
+          "Class": "app.DampingParam"
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.AnimDelayHand_HandRollAdjustmentWorkData",
+      "Userdata": null,
+      "Fields": {
+        "_OverrideBasisJointName": "",
+        "_IsEnableDamper": true,
+        "_DamperParam": {
+          "Ref": 21,
+          "Class": "app.AnimDelayHand_DamperParam"
+        },
+        "_MaxSpringLength": 0.5,
+        "_IsEnableUnStableParam": false,
+        "_UnstableParam": {
+          "Ref": 22,
+          "Class": "app.AnimDelayHand_UnstableParam"
+        },
+        "_UpOffset": "\u003C0, 1, 1\u003E",
+        "_IsUseBlendOffset": false,
+        "_BlendOffsetParam": {
+          "Ref": 24,
+          "Class": "app.AnimDelayHand_BlendOffsetParam"
+        },
+        "_RollKind": 1,
+        "_ChangedRollKindInterpolationTimeSec": 0.5
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 1,
+        "_Omega": 10,
+        "_TimeScale": 1
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 1,
+        "_Omega": 10,
+        "_TimeScale": 1
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.AnimDelayHand_DamperParam.AxisParam",
+      "Userdata": null,
+      "Fields": {
+        "_Damping": 1,
+        "_Omega": 10,
+        "_TimeScale": 1
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.AnimDelayHand_DamperParam",
+      "Userdata": null,
+      "Fields": {
+        "_AxisXParam": {
+          "Ref": 26,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        },
+        "_AxisYParam": {
+          "Ref": 27,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        },
+        "_AxisZParam": {
+          "Ref": 28,
+          "Class": "app.AnimDelayHand_DamperParam.AxisParam"
+        }
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.AnimDelayHand_UnstableParam",
+      "Userdata": null,
+      "Fields": {
+        "_CheckKind": 0,
+        "_DecreasingRate": 80,
+        "_DecreasingRateAfter": 80,
+        "_ToStableTimeSec": 1
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.AnimDelayHand_HandReticleAdjustmentWorkData",
+      "Userdata": null,
+      "Fields": {
+        "_OverrideBasisJointName": "",
+        "_IsEnableDamper": true,
+        "_DamperParam": {
+          "Ref": 29,
+          "Class": "app.AnimDelayHand_DamperParam"
+        },
+        "_MaxSpringLength": 0.5,
+        "_IsEnableUnStableParam": false,
+        "_UnstableParam": {
+          "Ref": 30,
+          "Class": "app.AnimDelayHand_UnstableParam"
+        },
+        "_RecitleDistance": 3,
+        "_DirectionKind": 0
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+      "Userdata": null,
+      "Fields": {
+        "_CommonData": {
+          "Ref": 3,
+          "Class": "app.AnimDelayHand_AdjustmentWorkCommonData"
+        },
+        "_IsEnableLowerArmAdjustment": false,
+        "_LowerArmAdjustment": {
+          "Ref": 9,
+          "Class": "app.AnimDelayHand_LowerArmAdjustmentWorkData"
+        },
+        "_IsEnableHandDirectionAdjustment": true,
+        "_DirectionAdjustmentData": {
+          "Ref": 17,
+          "Class": "app.AnimDelayHand_HandDirectionAdjustmentWorkData"
+        },
+        "_IsEnableHandRollAdjustment": false,
+        "_HandRollAdjustmentData": {
+          "Ref": 25,
+          "Class": "app.AnimDelayHand_HandRollAdjustmentWorkData"
+        },
+        "_IsEnableHandReticleAdjustment": false,
+        "_HandReticleAdjustmentData": {
+          "Ref": 31,
+          "Class": "app.AnimDelayHand_HandReticleAdjustmentWorkData"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerslingweaponchainpresetuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 9,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData",
+      "Userdata": null,
+      "Fields": {
+        "_PresetLerpFrame": 20,
+        "_SlingWeaponList": [
+          {
+            "Index": 1,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0103",
+              "_PresetID": 103
+            }
+          },
+          {
+            "Index": 2,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0104",
+              "_PresetID": 104
+            }
+          },
+          {
+            "Index": 3,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0500",
+              "_PresetID": 500
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0501",
+              "_PresetID": 501
+            }
+          },
+          {
+            "Index": 5,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0503",
+              "_PresetID": 503
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0600",
+              "_PresetID": 600
+            }
+          },
+          {
+            "Index": 7,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0601",
+              "_PresetID": 600
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0700",
+              "_PresetID": 700
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0103",
+        "_PresetID": 103
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0104",
+        "_PresetID": 104
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0500",
+        "_PresetID": 500
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0501",
+        "_PresetID": 501
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0503",
+        "_PresetID": 503
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0600",
+        "_PresetID": 600
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0601",
+        "_PresetID": 600
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0700",
+        "_PresetID": 700
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData",
+      "Userdata": null,
+      "Fields": {
+        "_PresetLerpFrame": 20,
+        "_SlingWeaponList": [
+          {
+            "Ref": 1,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.PlayerSlingWeaponChainPresetConfiguration.PlayerSlingWeaponChainPresetUserData.SlingWeaponChainPresetData"
+          }
+        ]
+      }
+    }
+  ]
+}

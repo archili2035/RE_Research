@@ -1,0 +1,95 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/facialconfiguration/cp_a100facialanimationconfiguraiton.user.3",
+  "Objects": [
+    {
+      "Index": 5,
+      "Class": "app.CharacterFacialAnimationConfiguraitonUserData",
+      "Userdata": null,
+      "Fields": {
+        "_FacialTargetGameObjectName": "10",
+        "_RequiredFacialLayerCount": 3,
+        "_MentalStateData": {
+          "Index": 1,
+          "Class": "app.PlayerMentalStateFacialAnimationConfiguration",
+          "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/FacialConfiguration/cp_A100MentalStateFacialAnimationConfiguration.user",
+          "Fields": {}
+        },
+        "_LipSyncData": {
+          "Index": 2,
+          "Class": "app.CharacterLipSyncFacialAnimationConfiguration",
+          "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/FacialConfiguration/cp_A100LipSyncFacialAnimationConfiguration.user",
+          "Fields": {}
+        },
+        "_OnDamageData": {
+          "Index": 3,
+          "Class": "app.CharacterOnDamageFacialAnimationConfiguration",
+          "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/FacialConfiguration/cp_A100OnDamageFacialAnimationConfiguration.user",
+          "Fields": {}
+        },
+        "_OnAttackData": {
+          "Index": 4,
+          "Class": "app.CharacterOnAttackFacialAnimationConfiguration",
+          "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/FacialConfiguration/cp_A100OnAttackFacialAnimationConfiguration.user",
+          "Fields": {}
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerMentalStateFacialAnimationConfiguration",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/FacialConfiguration/cp_A100MentalStateFacialAnimationConfiguration.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.CharacterLipSyncFacialAnimationConfiguration",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/FacialConfiguration/cp_A100LipSyncFacialAnimationConfiguration.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.CharacterOnDamageFacialAnimationConfiguration",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/FacialConfiguration/cp_A100OnDamageFacialAnimationConfiguration.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "app.CharacterOnAttackFacialAnimationConfiguration",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/FacialConfiguration/cp_A100OnAttackFacialAnimationConfiguration.user",
+      "Fields": {}
+    },
+    {
+      "Index": 5,
+      "Class": "app.CharacterFacialAnimationConfiguraitonUserData",
+      "Userdata": null,
+      "Fields": {
+        "_FacialTargetGameObjectName": "10",
+        "_RequiredFacialLayerCount": 3,
+        "_MentalStateData": {
+          "Ref": 1,
+          "Class": "app.PlayerMentalStateFacialAnimationConfiguration"
+        },
+        "_LipSyncData": {
+          "Ref": 2,
+          "Class": "app.CharacterLipSyncFacialAnimationConfiguration"
+        },
+        "_OnDamageData": {
+          "Ref": 3,
+          "Class": "app.CharacterOnDamageFacialAnimationConfiguration"
+        },
+        "_OnAttackData": {
+          "Ref": 4,
+          "Class": "app.CharacterOnAttackFacialAnimationConfiguration"
+        }
+      }
+    }
+  ]
+}

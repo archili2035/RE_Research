@@ -1,0 +1,51 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100individualconfigurationuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 2,
+      "Class": "app.Cp_A1IndividualConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_TempPanicModeConfiguration": {
+          "Index": 1,
+          "Class": "app.TempPanicModeConfiguration",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_IsAutoEscapeCp_B800": true,
+            "_ContinueAutoEscapeTime": 60
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.TempPanicModeConfiguration",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_IsAutoEscapeCp_B800": true,
+        "_ContinueAutoEscapeTime": 60
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.Cp_A1IndividualConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_TempPanicModeConfiguration": {
+          "Ref": 1,
+          "Class": "app.TempPanicModeConfiguration"
+        }
+      }
+    }
+  ]
+}

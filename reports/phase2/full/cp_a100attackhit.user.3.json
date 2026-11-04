@@ -1,0 +1,129 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100attackhit.user.3",
+  "Objects": [
+    {
+      "Index": 7,
+      "Class": "app.AttackHitUserData",
+      "Userdata": null,
+      "Fields": {
+        "_AttackDataList": [],
+        "_HitSlowUserData": {
+          "Index": 1,
+          "Class": "app.HitSlowUserData",
+          "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerHitSlowUserData.user",
+          "Fields": {}
+        },
+        "_AdditionalAttackHitUserData": [
+          {
+            "Index": 2,
+            "Class": "app.AttackHitUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonAttackHit.user",
+            "Fields": {}
+          },
+          {
+            "Index": 3,
+            "Class": "app.AttackHitUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/IndividualAttackHit/Pl_cp_B000AttackHit.user",
+            "Fields": {}
+          },
+          {
+            "Index": 4,
+            "Class": "app.AttackHitUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/IndividualAttackHit/Pl_cp_B800AttackHit.user",
+            "Fields": {}
+          },
+          {
+            "Index": 5,
+            "Class": "app.AttackHitUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/IndividualAttackHit/Pl_cp_C100AttackHit.user",
+            "Fields": {}
+          },
+          {
+            "Index": 6,
+            "Class": "app.AttackHitUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/IndividualAttackHit/PL_cp_C500AttackHit.user",
+            "Fields": {}
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.HitSlowUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerHitSlowUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.AttackHitUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonAttackHit.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.AttackHitUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/IndividualAttackHit/Pl_cp_B000AttackHit.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "app.AttackHitUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/IndividualAttackHit/Pl_cp_B800AttackHit.user",
+      "Fields": {}
+    },
+    {
+      "Index": 5,
+      "Class": "app.AttackHitUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/IndividualAttackHit/Pl_cp_C100AttackHit.user",
+      "Fields": {}
+    },
+    {
+      "Index": 6,
+      "Class": "app.AttackHitUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/IndividualAttackHit/PL_cp_C500AttackHit.user",
+      "Fields": {}
+    },
+    {
+      "Index": 7,
+      "Class": "app.AttackHitUserData",
+      "Userdata": null,
+      "Fields": {
+        "_AttackDataList": [],
+        "_HitSlowUserData": {
+          "Ref": 1,
+          "Class": "app.HitSlowUserData"
+        },
+        "_AdditionalAttackHitUserData": [
+          {
+            "Ref": 2,
+            "Class": "app.AttackHitUserData"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.AttackHitUserData"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.AttackHitUserData"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.AttackHitUserData"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.AttackHitUserData"
+          }
+        ]
+      }
+    }
+  ]
+}

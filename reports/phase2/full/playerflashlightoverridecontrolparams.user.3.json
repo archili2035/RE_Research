@@ -1,0 +1,175 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/flashlight/playerflashlightoverridecontrolparams.user.3",
+  "Objects": [
+    {
+      "Index": 9,
+      "Class": "app.FlashLightOverrideControlDefaultParamsUserData",
+      "Userdata": null,
+      "Fields": {
+        "_ParamArray": [
+          {
+            "Index": 2,
+            "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet",
+            "Userdata": null,
+            "Fields": {
+              "_Param": {
+                "Index": 1,
+                "Class": "app.FlashLightOverrideControlUserData",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/FlashLight/Default_CrimeReserch.user",
+                "Fields": {}
+              },
+              "_Control": 1
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet",
+            "Userdata": null,
+            "Fields": {
+              "_Param": {
+                "Index": 3,
+                "Class": "app.FlashLightOverrideControlUserData",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/FlashLight/Default_SelectKeyItem.user",
+                "Fields": {}
+              },
+              "_Control": 2
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet",
+            "Userdata": null,
+            "Fields": {
+              "_Param": {
+                "Index": 5,
+                "Class": "app.FlashLightOverrideControlUserData",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/FlashLight/Default_UniqueFixCam.user",
+                "Fields": {}
+              },
+              "_Control": 3
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet",
+            "Userdata": null,
+            "Fields": {
+              "_Param": {
+                "Index": 7,
+                "Class": "app.FlashLightOverrideControlUserData",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/FlashLight/Default_DetailSearch.user",
+                "Fields": {}
+              },
+              "_Control": 4
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.FlashLightOverrideControlUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/FlashLight/Default_CrimeReserch.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 1,
+          "Class": "app.FlashLightOverrideControlUserData"
+        },
+        "_Control": 1
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.FlashLightOverrideControlUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/FlashLight/Default_SelectKeyItem.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 3,
+          "Class": "app.FlashLightOverrideControlUserData"
+        },
+        "_Control": 2
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.FlashLightOverrideControlUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/FlashLight/Default_UniqueFixCam.user",
+      "Fields": {}
+    },
+    {
+      "Index": 6,
+      "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 5,
+          "Class": "app.FlashLightOverrideControlUserData"
+        },
+        "_Control": 3
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.FlashLightOverrideControlUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/FlashLight/Default_DetailSearch.user",
+      "Fields": {}
+    },
+    {
+      "Index": 8,
+      "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 7,
+          "Class": "app.FlashLightOverrideControlUserData"
+        },
+        "_Control": 4
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.FlashLightOverrideControlDefaultParamsUserData",
+      "Userdata": null,
+      "Fields": {
+        "_ParamArray": [
+          {
+            "Ref": 2,
+            "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.FlashLightOverrideControlDefaultParamsUserData.DataSet"
+          }
+        ]
+      }
+    }
+  ]
+}

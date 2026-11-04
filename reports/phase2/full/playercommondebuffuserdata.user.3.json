@@ -1,0 +1,57 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playercommondebuffuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 2,
+      "Class": "app.PlayerDebuffUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DataArray": [
+          {
+            "Index": 1,
+            "Class": "app.PlayerDebuffData",
+            "Userdata": null,
+            "Fields": {
+              "_Status": 1,
+              "_Time": 8,
+              "_Restriction": 2,
+              "_AimShakeRate": 20
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerDebuffData",
+      "Userdata": null,
+      "Fields": {
+        "_Status": 1,
+        "_Time": 8,
+        "_Restriction": 2,
+        "_AimShakeRate": 20
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerDebuffUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DataArray": [
+          {
+            "Ref": 1,
+            "Class": "app.PlayerDebuffData"
+          }
+        ]
+      }
+    }
+  ]
+}

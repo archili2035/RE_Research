@@ -1,0 +1,2517 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/commonmessage/cp_a000commonmessagetable.user.3",
+  "Objects": [
+    {
+      "Index": 114,
+      "Class": "app.CommonMessageTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefinitionData": {
+          "Index": 1,
+          "Class": "app.CommonMessageDefinitionData",
+          "Userdata": "GameAssets/Character/CharacterPrefab/cp_A0/cp_A000/UserData/CommonMessage/cp_A000CommonMessageDefinitionData.user",
+          "Fields": {}
+        },
+        "_SettingsData": [
+          {
+            "Index": 13,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 2,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2661855927
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.5,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 3,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1001"
+                  }
+                },
+                {
+                  "Index": 4,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1002"
+                  }
+                },
+                {
+                  "Index": 5,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1003"
+                  }
+                },
+                {
+                  "Index": 6,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1004"
+                  }
+                },
+                {
+                  "Index": 7,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1005"
+                  }
+                },
+                {
+                  "Index": 8,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1006"
+                  }
+                },
+                {
+                  "Index": 9,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1007"
+                  }
+                },
+                {
+                  "Index": 10,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1008"
+                  }
+                },
+                {
+                  "Index": 11,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1009"
+                  }
+                },
+                {
+                  "Index": 12,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1111"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 25,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 14,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1703898710
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.2,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 15,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1101"
+                  }
+                },
+                {
+                  "Index": 16,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1102"
+                  }
+                },
+                {
+                  "Index": 17,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1103"
+                  }
+                },
+                {
+                  "Index": 18,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1104"
+                  }
+                },
+                {
+                  "Index": 19,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1105"
+                  }
+                },
+                {
+                  "Index": 20,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1106"
+                  }
+                },
+                {
+                  "Index": 21,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1107"
+                  }
+                },
+                {
+                  "Index": 22,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1108"
+                  }
+                },
+                {
+                  "Index": 23,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1109"
+                  }
+                },
+                {
+                  "Index": 24,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1110"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 38,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 26,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2338933467
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.5,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 27,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1301"
+                  }
+                },
+                {
+                  "Index": 28,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1302"
+                  }
+                },
+                {
+                  "Index": 29,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1304"
+                  }
+                },
+                {
+                  "Index": 30,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1305"
+                  }
+                },
+                {
+                  "Index": 31,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1311"
+                  }
+                },
+                {
+                  "Index": 32,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1306"
+                  }
+                },
+                {
+                  "Index": 33,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1312"
+                  }
+                },
+                {
+                  "Index": 34,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1307"
+                  }
+                },
+                {
+                  "Index": 35,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1308"
+                  }
+                },
+                {
+                  "Index": 36,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1309"
+                  }
+                },
+                {
+                  "Index": 37,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1310"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 52,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 39,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3901512073
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.2,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 40,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1402"
+                  }
+                },
+                {
+                  "Index": 41,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1403"
+                  }
+                },
+                {
+                  "Index": 42,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1404"
+                  }
+                },
+                {
+                  "Index": 43,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1405"
+                  }
+                },
+                {
+                  "Index": 44,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1406"
+                  }
+                },
+                {
+                  "Index": 45,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1413"
+                  }
+                },
+                {
+                  "Index": 46,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1407"
+                  }
+                },
+                {
+                  "Index": 47,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1408"
+                  }
+                },
+                {
+                  "Index": 48,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1409"
+                  }
+                },
+                {
+                  "Index": 49,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1412"
+                  }
+                },
+                {
+                  "Index": 50,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1410"
+                  }
+                },
+                {
+                  "Index": 51,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1411"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 57,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 53,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2984223120
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.2,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 54,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1801"
+                  }
+                },
+                {
+                  "Index": 55,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1802"
+                  }
+                },
+                {
+                  "Index": 56,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1803"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 62,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 58,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1701549359
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.2,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 59,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_2000"
+                  }
+                },
+                {
+                  "Index": 60,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_2001"
+                  }
+                },
+                {
+                  "Index": 61,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_2002"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 67,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 63,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1710636083
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.5,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 64,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1901"
+                  }
+                },
+                {
+                  "Index": 65,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1902"
+                  }
+                },
+                {
+                  "Index": 66,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1903"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 73,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 68,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1304030039
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.5,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 69,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1701"
+                  }
+                },
+                {
+                  "Index": 70,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1702"
+                  }
+                },
+                {
+                  "Index": 71,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1703"
+                  }
+                },
+                {
+                  "Index": 72,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1704"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 79,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 74,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 503755993
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.2,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 75,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_2201"
+                  }
+                },
+                {
+                  "Index": 76,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_2202"
+                  }
+                },
+                {
+                  "Index": 77,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_2203"
+                  }
+                },
+                {
+                  "Index": 78,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_2204"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 88,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 80,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2527781221
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.5,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 81,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1615"
+                  }
+                },
+                {
+                  "Index": 82,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1616"
+                  }
+                },
+                {
+                  "Index": 83,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1617"
+                  }
+                },
+                {
+                  "Index": 84,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1605"
+                  }
+                },
+                {
+                  "Index": 85,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1607"
+                  }
+                },
+                {
+                  "Index": 86,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1618"
+                  }
+                },
+                {
+                  "Index": 87,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1619"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 96,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 89,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 793562568
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.5,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 90,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1620"
+                  }
+                },
+                {
+                  "Index": 91,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1621"
+                  }
+                },
+                {
+                  "Index": 92,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1622"
+                  }
+                },
+                {
+                  "Index": 93,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1623"
+                  }
+                },
+                {
+                  "Index": 94,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1624"
+                  }
+                },
+                {
+                  "Index": 95,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1704"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 104,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 97,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 515237670
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.5,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 98,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1601"
+                  }
+                },
+                {
+                  "Index": 99,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1602"
+                  }
+                },
+                {
+                  "Index": 100,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1604"
+                  }
+                },
+                {
+                  "Index": 101,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1603"
+                  }
+                },
+                {
+                  "Index": 102,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1611"
+                  }
+                },
+                {
+                  "Index": 103,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1612"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 111,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 105,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1609222414
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.5,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 106,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1613"
+                  }
+                },
+                {
+                  "Index": 107,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1606"
+                  }
+                },
+                {
+                  "Index": 108,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1614"
+                  }
+                },
+                {
+                  "Index": 109,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1608"
+                  }
+                },
+                {
+                  "Index": 110,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "BattlePL_1609"
+                  }
+                }
+              ],
+              "_ShuffleType": 1
+            }
+          },
+          {
+            "Index": 113,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 112,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2540977353
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 0.5,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [],
+              "_ShuffleType": 0
+            }
+          }
+        ],
+        "AdditionalCommonMessageTable": [],
+        "_CoolTime": 0,
+        "_CoolTimeRange": "\u003C0, 30\u003E",
+        "_EnableProhibitRepeatSameConversationID": true
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CommonMessageDefinitionData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A0/cp_A000/UserData/CommonMessage/cp_A000CommonMessageDefinitionData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2661855927
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1001"
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1002"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1003"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1004"
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1005"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1006"
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1007"
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1008"
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1009"
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1111"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 2,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.5,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 3,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1703898710
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1101"
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1102"
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1103"
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1104"
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1105"
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1106"
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1107"
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1108"
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1109"
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1110"
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 14,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.2,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 15,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 16,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 22,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 23,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2338933467
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1301"
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1302"
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1304"
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1305"
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1311"
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1306"
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1312"
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1307"
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1308"
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1309"
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1310"
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 26,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.5,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 27,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 28,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 31,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 32,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 34,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 35,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 36,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 37,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3901512073
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1402"
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1403"
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1404"
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1405"
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1406"
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1413"
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1407"
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1408"
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1409"
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1412"
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1410"
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1411"
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 39,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.2,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 40,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 41,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 42,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 43,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 44,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 45,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 46,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 47,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 48,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 49,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 50,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 51,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2984223120
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1801"
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1802"
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1803"
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 53,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.2,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 54,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 55,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 56,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1701549359
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_2000"
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_2001"
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_2002"
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 58,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.2,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 59,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 60,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 61,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1710636083
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1901"
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1902"
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1903"
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 63,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.5,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 64,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 65,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 66,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1304030039
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1701"
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1702"
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1703"
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1704"
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 68,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.5,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 69,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 70,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 71,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 72,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 503755993
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_2201"
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_2202"
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_2203"
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_2204"
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 74,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.2,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 75,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 76,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 77,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 78,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2527781221
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1615"
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1616"
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1617"
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1605"
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1607"
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1618"
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1619"
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 80,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.5,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 81,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 82,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 83,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 84,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 85,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 86,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 87,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 793562568
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1620"
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1621"
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1622"
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1623"
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1624"
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1704"
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 89,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.5,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 90,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 91,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 92,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 93,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 94,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 95,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 515237670
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1601"
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1602"
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1604"
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1603"
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1611"
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1612"
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 97,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.5,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 98,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 99,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 100,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 101,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 102,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 103,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1609222414
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1613"
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1606"
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1614"
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1608"
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "BattlePL_1609"
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 105,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.5,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 106,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 107,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 108,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 109,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 110,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 1
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2540977353
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 112,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 0.5,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [],
+        "_ShuffleType": 0
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.CommonMessageTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefinitionData": {
+          "Ref": 1,
+          "Class": "app.CommonMessageDefinitionData"
+        },
+        "_SettingsData": [
+          {
+            "Ref": 13,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 38,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 52,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 57,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 62,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 67,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 73,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 79,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 88,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 96,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 104,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 111,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 113,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          }
+        ],
+        "AdditionalCommonMessageTable": [],
+        "_CoolTime": 0,
+        "_CoolTimeRange": "\u003C0, 30\u003E",
+        "_EnableProhibitRepeatSameConversationID": true
+      }
+    }
+  ]
+}

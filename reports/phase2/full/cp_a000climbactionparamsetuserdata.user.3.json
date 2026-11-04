@@ -1,0 +1,671 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000climbactionparamsetuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 21,
+      "Class": "app.ClimbActionParamSetUserData",
+      "Userdata": null,
+      "Fields": {
+        "_ParamArray": [
+          {
+            "Index": 2,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": false,
+              "_MaxHeightPositionFrame": 20,
+              "_ApplyAttainWallEndFrame": 20,
+              "_IsApplyFallPermitFrame": true,
+              "_FallPermitFrame": 25,
+              "_IsUseTreeMotion": false,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 20,
+              "STRUCT__ClimbStartPositionOffset__HasValue": true,
+              "STRUCT__ClimbStartPositionOffset__Value": 0.5,
+              "_IsClimbCharaDirection": true,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": true,
+              "_NameHash": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2994895455
+                }
+              }
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": false,
+              "_MaxHeightPositionFrame": 25,
+              "_ApplyAttainWallEndFrame": 25,
+              "_IsApplyFallPermitFrame": false,
+              "_FallPermitFrame": 46,
+              "_IsUseTreeMotion": false,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 40,
+              "STRUCT__ClimbStartPositionOffset__HasValue": true,
+              "STRUCT__ClimbStartPositionOffset__Value": 0.25,
+              "_IsClimbCharaDirection": true,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": true,
+              "_NameHash": {
+                "Index": 3,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2612019436
+                }
+              }
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": false,
+              "_MaxHeightPositionFrame": 130,
+              "_ApplyAttainWallEndFrame": 160,
+              "_IsApplyFallPermitFrame": false,
+              "_FallPermitFrame": 160,
+              "_IsUseTreeMotion": true,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 160,
+              "STRUCT__ClimbStartPositionOffset__HasValue": true,
+              "STRUCT__ClimbStartPositionOffset__Value": 1.55,
+              "_IsClimbCharaDirection": false,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": false,
+              "_NameHash": {
+                "Index": 5,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1174849718
+                }
+              }
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": false,
+              "_MaxHeightPositionFrame": 160,
+              "_ApplyAttainWallEndFrame": 180,
+              "_IsApplyFallPermitFrame": false,
+              "_FallPermitFrame": 180,
+              "_IsUseTreeMotion": true,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 180,
+              "STRUCT__ClimbStartPositionOffset__HasValue": true,
+              "STRUCT__ClimbStartPositionOffset__Value": 0.95,
+              "_IsClimbCharaDirection": false,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": false,
+              "_NameHash": {
+                "Index": 7,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 691647090
+                }
+              }
+            }
+          },
+          {
+            "Index": 10,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": true,
+              "_MaxHeightPositionFrame": 23,
+              "_ApplyAttainWallEndFrame": 40,
+              "_IsApplyFallPermitFrame": true,
+              "_FallPermitFrame": 61,
+              "_IsUseTreeMotion": false,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 40,
+              "STRUCT__ClimbStartPositionOffset__HasValue": false,
+              "STRUCT__ClimbStartPositionOffset__Value": 0,
+              "_IsClimbCharaDirection": false,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": false,
+              "_NameHash": {
+                "Index": 9,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1395968299
+                }
+              }
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": true,
+              "_MaxHeightPositionFrame": 140,
+              "_ApplyAttainWallEndFrame": 160,
+              "_IsApplyFallPermitFrame": true,
+              "_FallPermitFrame": 190,
+              "_IsUseTreeMotion": true,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 160,
+              "STRUCT__ClimbStartPositionOffset__HasValue": true,
+              "STRUCT__ClimbStartPositionOffset__Value": 1.49,
+              "_IsClimbCharaDirection": false,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": false,
+              "_NameHash": {
+                "Index": 11,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3232562997
+                }
+              }
+            }
+          },
+          {
+            "Index": 14,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": true,
+              "_MaxHeightPositionFrame": 160,
+              "_ApplyAttainWallEndFrame": 180,
+              "_IsApplyFallPermitFrame": true,
+              "_FallPermitFrame": 207,
+              "_IsUseTreeMotion": true,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 180,
+              "STRUCT__ClimbStartPositionOffset__HasValue": true,
+              "STRUCT__ClimbStartPositionOffset__Value": 0.95,
+              "_IsClimbCharaDirection": false,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": false,
+              "_NameHash": {
+                "Index": 13,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1172928754
+                }
+              }
+            }
+          },
+          {
+            "Index": 16,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": true,
+              "_MaxHeightPositionFrame": 95,
+              "_ApplyAttainWallEndFrame": 115,
+              "_IsApplyFallPermitFrame": true,
+              "_FallPermitFrame": 135,
+              "_IsUseTreeMotion": false,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 115,
+              "STRUCT__ClimbStartPositionOffset__HasValue": false,
+              "STRUCT__ClimbStartPositionOffset__Value": 0,
+              "_IsClimbCharaDirection": false,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": false,
+              "_NameHash": {
+                "Index": 15,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1456820937
+                }
+              }
+            }
+          },
+          {
+            "Index": 18,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": true,
+              "_MaxHeightPositionFrame": 21,
+              "_ApplyAttainWallEndFrame": 21,
+              "_IsApplyFallPermitFrame": true,
+              "_FallPermitFrame": 40,
+              "_IsUseTreeMotion": false,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 21,
+              "STRUCT__ClimbStartPositionOffset__HasValue": true,
+              "STRUCT__ClimbStartPositionOffset__Value": 0.5,
+              "_IsClimbCharaDirection": false,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": false,
+              "_NameHash": {
+                "Index": 17,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 677166962
+                }
+              }
+            }
+          },
+          {
+            "Index": 20,
+            "Class": "app.ClimbActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsClimbOver": true,
+              "_MaxHeightPositionFrame": 16,
+              "_ApplyAttainWallEndFrame": 30,
+              "_IsApplyFallPermitFrame": true,
+              "_FallPermitFrame": 89,
+              "_IsUseTreeMotion": false,
+              "_IsApplyEnableMotionFrame": true,
+              "_EnableMotionFrame": 30,
+              "STRUCT__ClimbStartPositionOffset__HasValue": true,
+              "STRUCT__ClimbStartPositionOffset__Value": 0.3,
+              "_IsClimbCharaDirection": false,
+              "_ClimbCharaDirectionRange": "Range(-30, 60)",
+              "_IsAdjustStartPos": false,
+              "_NameHash": {
+                "Index": 19,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1906170835
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2994895455
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": false,
+        "_MaxHeightPositionFrame": 20,
+        "_ApplyAttainWallEndFrame": 20,
+        "_IsApplyFallPermitFrame": true,
+        "_FallPermitFrame": 25,
+        "_IsUseTreeMotion": false,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 20,
+        "STRUCT__ClimbStartPositionOffset__HasValue": true,
+        "STRUCT__ClimbStartPositionOffset__Value": 0.5,
+        "_IsClimbCharaDirection": true,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": true,
+        "_NameHash": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2612019436
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": false,
+        "_MaxHeightPositionFrame": 25,
+        "_ApplyAttainWallEndFrame": 25,
+        "_IsApplyFallPermitFrame": false,
+        "_FallPermitFrame": 46,
+        "_IsUseTreeMotion": false,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 40,
+        "STRUCT__ClimbStartPositionOffset__HasValue": true,
+        "STRUCT__ClimbStartPositionOffset__Value": 0.25,
+        "_IsClimbCharaDirection": true,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": true,
+        "_NameHash": {
+          "Ref": 3,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1174849718
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": false,
+        "_MaxHeightPositionFrame": 130,
+        "_ApplyAttainWallEndFrame": 160,
+        "_IsApplyFallPermitFrame": false,
+        "_FallPermitFrame": 160,
+        "_IsUseTreeMotion": true,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 160,
+        "STRUCT__ClimbStartPositionOffset__HasValue": true,
+        "STRUCT__ClimbStartPositionOffset__Value": 1.55,
+        "_IsClimbCharaDirection": false,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": false,
+        "_NameHash": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 691647090
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": false,
+        "_MaxHeightPositionFrame": 160,
+        "_ApplyAttainWallEndFrame": 180,
+        "_IsApplyFallPermitFrame": false,
+        "_FallPermitFrame": 180,
+        "_IsUseTreeMotion": true,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 180,
+        "STRUCT__ClimbStartPositionOffset__HasValue": true,
+        "STRUCT__ClimbStartPositionOffset__Value": 0.95,
+        "_IsClimbCharaDirection": false,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": false,
+        "_NameHash": {
+          "Ref": 7,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1395968299
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": true,
+        "_MaxHeightPositionFrame": 23,
+        "_ApplyAttainWallEndFrame": 40,
+        "_IsApplyFallPermitFrame": true,
+        "_FallPermitFrame": 61,
+        "_IsUseTreeMotion": false,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 40,
+        "STRUCT__ClimbStartPositionOffset__HasValue": false,
+        "STRUCT__ClimbStartPositionOffset__Value": 0,
+        "_IsClimbCharaDirection": false,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": false,
+        "_NameHash": {
+          "Ref": 9,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3232562997
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": true,
+        "_MaxHeightPositionFrame": 140,
+        "_ApplyAttainWallEndFrame": 160,
+        "_IsApplyFallPermitFrame": true,
+        "_FallPermitFrame": 190,
+        "_IsUseTreeMotion": true,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 160,
+        "STRUCT__ClimbStartPositionOffset__HasValue": true,
+        "STRUCT__ClimbStartPositionOffset__Value": 1.49,
+        "_IsClimbCharaDirection": false,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": false,
+        "_NameHash": {
+          "Ref": 11,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1172928754
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": true,
+        "_MaxHeightPositionFrame": 160,
+        "_ApplyAttainWallEndFrame": 180,
+        "_IsApplyFallPermitFrame": true,
+        "_FallPermitFrame": 207,
+        "_IsUseTreeMotion": true,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 180,
+        "STRUCT__ClimbStartPositionOffset__HasValue": true,
+        "STRUCT__ClimbStartPositionOffset__Value": 0.95,
+        "_IsClimbCharaDirection": false,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": false,
+        "_NameHash": {
+          "Ref": 13,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1456820937
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": true,
+        "_MaxHeightPositionFrame": 95,
+        "_ApplyAttainWallEndFrame": 115,
+        "_IsApplyFallPermitFrame": true,
+        "_FallPermitFrame": 135,
+        "_IsUseTreeMotion": false,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 115,
+        "STRUCT__ClimbStartPositionOffset__HasValue": false,
+        "STRUCT__ClimbStartPositionOffset__Value": 0,
+        "_IsClimbCharaDirection": false,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": false,
+        "_NameHash": {
+          "Ref": 15,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 677166962
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": true,
+        "_MaxHeightPositionFrame": 21,
+        "_ApplyAttainWallEndFrame": 21,
+        "_IsApplyFallPermitFrame": true,
+        "_FallPermitFrame": 40,
+        "_IsUseTreeMotion": false,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 21,
+        "STRUCT__ClimbStartPositionOffset__HasValue": true,
+        "STRUCT__ClimbStartPositionOffset__Value": 0.5,
+        "_IsClimbCharaDirection": false,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": false,
+        "_NameHash": {
+          "Ref": 17,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1906170835
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.ClimbActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbOver": true,
+        "_MaxHeightPositionFrame": 16,
+        "_ApplyAttainWallEndFrame": 30,
+        "_IsApplyFallPermitFrame": true,
+        "_FallPermitFrame": 89,
+        "_IsUseTreeMotion": false,
+        "_IsApplyEnableMotionFrame": true,
+        "_EnableMotionFrame": 30,
+        "STRUCT__ClimbStartPositionOffset__HasValue": true,
+        "STRUCT__ClimbStartPositionOffset__Value": 0.3,
+        "_IsClimbCharaDirection": false,
+        "_ClimbCharaDirectionRange": "Range(-30, 60)",
+        "_IsAdjustStartPos": false,
+        "_NameHash": {
+          "Ref": 19,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.ClimbActionParamSetUserData",
+      "Userdata": null,
+      "Fields": {
+        "_ParamArray": [
+          {
+            "Ref": 2,
+            "Class": "app.ClimbActionParam"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.ClimbActionParam"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.ClimbActionParam"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.ClimbActionParam"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.ClimbActionParam"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.ClimbActionParam"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.ClimbActionParam"
+          },
+          {
+            "Ref": 16,
+            "Class": "app.ClimbActionParam"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.ClimbActionParam"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.ClimbActionParam"
+          }
+        ]
+      }
+    }
+  ]
+}

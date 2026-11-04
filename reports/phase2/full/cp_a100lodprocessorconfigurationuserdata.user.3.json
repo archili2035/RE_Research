@@ -1,0 +1,121 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100lodprocessorconfigurationuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 6,
+      "Class": "app.LODProcessorConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_OperatingCondition": {
+          "Index": 0,
+          "Class": "",
+          "Userdata": null,
+          "Fields": {}
+        },
+        "_ActorSetting": {
+          "Index": 1,
+          "Class": "app.lod.LODProcessActorAsset",
+          "Userdata": "AppSystem/Character/CharacterPrefab/CharacterCommon/LOD/CharacterCommonLODProcessActor.user",
+          "Fields": {}
+        },
+        "_Rules": [
+          {
+            "Index": 2,
+            "Class": "app.lod.LODProcessRuleAsset",
+            "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100CommonLODProcessRule.user",
+            "Fields": {}
+          },
+          {
+            "Index": 3,
+            "Class": "app.lod.LODProcessRuleAsset",
+            "Userdata": "AppSystem/Character/CharacterPrefab/CharacterCommon/LOD/CharacterFacalCommonLODProcessRule.user",
+            "Fields": {}
+          },
+          {
+            "Index": 4,
+            "Class": "app.lod.LODProcessRuleAsset",
+            "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100ClothCommonLODProcessRule.user",
+            "Fields": {}
+          },
+          {
+            "Index": 5,
+            "Class": "app.lod.LODProcessRuleAsset",
+            "Userdata": "AppSystem/Character/CharacterPrefab/CharacterCommon/LOD/CharacterIkLegCommonLODProcessRule.user",
+            "Fields": {}
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.lod.LODProcessActorAsset",
+      "Userdata": "AppSystem/Character/CharacterPrefab/CharacterCommon/LOD/CharacterCommonLODProcessActor.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100CommonLODProcessRule.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": "AppSystem/Character/CharacterPrefab/CharacterCommon/LOD/CharacterFacalCommonLODProcessRule.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100ClothCommonLODProcessRule.user",
+      "Fields": {}
+    },
+    {
+      "Index": 5,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": "AppSystem/Character/CharacterPrefab/CharacterCommon/LOD/CharacterIkLegCommonLODProcessRule.user",
+      "Fields": {}
+    },
+    {
+      "Index": 6,
+      "Class": "app.LODProcessorConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_OperatingCondition": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "_ActorSetting": {
+          "Ref": 1,
+          "Class": "app.lod.LODProcessActorAsset"
+        },
+        "_Rules": [
+          {
+            "Ref": 2,
+            "Class": "app.lod.LODProcessRuleAsset"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.lod.LODProcessRuleAsset"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.lod.LODProcessRuleAsset"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.lod.LODProcessRuleAsset"
+          }
+        ]
+      }
+    }
+  ]
+}

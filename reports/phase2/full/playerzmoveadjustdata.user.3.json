@@ -1,0 +1,447 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerzmoveadjustdata.user.3",
+  "Objects": [
+    {
+      "Index": 17,
+      "Class": "app.MotionZMoveAdjustUserData",
+      "Userdata": null,
+      "Fields": {
+        "_XZMoveAdjustSetList": [
+          {
+            "Index": 2,
+            "Class": "app.ZMoveAdjustSet",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 549579818
+                }
+              },
+              "_StartFrame": 0,
+              "_IsToEndFrame": false,
+              "_EndFrame": 20,
+              "_MaxMoveRate": 2,
+              "_MinMoveRate": 1,
+              "_ZOffset": 0,
+              "_IsUpdateTargetPos": false
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.ZMoveAdjustSet",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 3,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 258956952
+                }
+              },
+              "_StartFrame": 10,
+              "_IsToEndFrame": false,
+              "_EndFrame": 60,
+              "_MaxMoveRate": 2,
+              "_MinMoveRate": 0,
+              "_ZOffset": 1,
+              "_IsUpdateTargetPos": true
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.ZMoveAdjustSet",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 5,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2241496968
+                }
+              },
+              "_StartFrame": 0,
+              "_IsToEndFrame": true,
+              "_EndFrame": 30,
+              "_MaxMoveRate": 2,
+              "_MinMoveRate": 0,
+              "_ZOffset": 1,
+              "_IsUpdateTargetPos": true
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.ZMoveAdjustSet",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 7,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3684028997
+                }
+              },
+              "_StartFrame": 0,
+              "_IsToEndFrame": true,
+              "_EndFrame": 30,
+              "_MaxMoveRate": 2,
+              "_MinMoveRate": 0,
+              "_ZOffset": 1,
+              "_IsUpdateTargetPos": true
+            }
+          },
+          {
+            "Index": 10,
+            "Class": "app.ZMoveAdjustSet",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 9,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2709493746
+                }
+              },
+              "_StartFrame": 0,
+              "_IsToEndFrame": true,
+              "_EndFrame": 30,
+              "_MaxMoveRate": 2,
+              "_MinMoveRate": 0,
+              "_ZOffset": 1,
+              "_IsUpdateTargetPos": true
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.ZMoveAdjustSet",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 11,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2640074757
+                }
+              },
+              "_StartFrame": 0,
+              "_IsToEndFrame": false,
+              "_EndFrame": 30,
+              "_MaxMoveRate": 3,
+              "_MinMoveRate": 0,
+              "_ZOffset": 1,
+              "_IsUpdateTargetPos": true
+            }
+          },
+          {
+            "Index": 14,
+            "Class": "app.ZMoveAdjustSet",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 13,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 742218027
+                }
+              },
+              "_StartFrame": 0,
+              "_IsToEndFrame": false,
+              "_EndFrame": 56,
+              "_MaxMoveRate": 1,
+              "_MinMoveRate": 0,
+              "_ZOffset": 0.5,
+              "_IsUpdateTargetPos": true
+            }
+          },
+          {
+            "Index": 16,
+            "Class": "app.ZMoveAdjustSet",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 15,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2832117184
+                }
+              },
+              "_StartFrame": 0,
+              "_IsToEndFrame": false,
+              "_EndFrame": 40,
+              "_MaxMoveRate": 1,
+              "_MinMoveRate": 0,
+              "_ZOffset": 1,
+              "_IsUpdateTargetPos": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 549579818
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.ZMoveAdjustSet",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_StartFrame": 0,
+        "_IsToEndFrame": false,
+        "_EndFrame": 20,
+        "_MaxMoveRate": 2,
+        "_MinMoveRate": 1,
+        "_ZOffset": 0,
+        "_IsUpdateTargetPos": false
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 258956952
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.ZMoveAdjustSet",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 3,
+          "Class": "app.NameHash"
+        },
+        "_StartFrame": 10,
+        "_IsToEndFrame": false,
+        "_EndFrame": 60,
+        "_MaxMoveRate": 2,
+        "_MinMoveRate": 0,
+        "_ZOffset": 1,
+        "_IsUpdateTargetPos": true
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2241496968
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.ZMoveAdjustSet",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        },
+        "_StartFrame": 0,
+        "_IsToEndFrame": true,
+        "_EndFrame": 30,
+        "_MaxMoveRate": 2,
+        "_MinMoveRate": 0,
+        "_ZOffset": 1,
+        "_IsUpdateTargetPos": true
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3684028997
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.ZMoveAdjustSet",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 7,
+          "Class": "app.NameHash"
+        },
+        "_StartFrame": 0,
+        "_IsToEndFrame": true,
+        "_EndFrame": 30,
+        "_MaxMoveRate": 2,
+        "_MinMoveRate": 0,
+        "_ZOffset": 1,
+        "_IsUpdateTargetPos": true
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2709493746
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.ZMoveAdjustSet",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 9,
+          "Class": "app.NameHash"
+        },
+        "_StartFrame": 0,
+        "_IsToEndFrame": true,
+        "_EndFrame": 30,
+        "_MaxMoveRate": 2,
+        "_MinMoveRate": 0,
+        "_ZOffset": 1,
+        "_IsUpdateTargetPos": true
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2640074757
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.ZMoveAdjustSet",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 11,
+          "Class": "app.NameHash"
+        },
+        "_StartFrame": 0,
+        "_IsToEndFrame": false,
+        "_EndFrame": 30,
+        "_MaxMoveRate": 3,
+        "_MinMoveRate": 0,
+        "_ZOffset": 1,
+        "_IsUpdateTargetPos": true
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 742218027
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.ZMoveAdjustSet",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 13,
+          "Class": "app.NameHash"
+        },
+        "_StartFrame": 0,
+        "_IsToEndFrame": false,
+        "_EndFrame": 56,
+        "_MaxMoveRate": 1,
+        "_MinMoveRate": 0,
+        "_ZOffset": 0.5,
+        "_IsUpdateTargetPos": true
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2832117184
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.ZMoveAdjustSet",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 15,
+          "Class": "app.NameHash"
+        },
+        "_StartFrame": 0,
+        "_IsToEndFrame": false,
+        "_EndFrame": 40,
+        "_MaxMoveRate": 1,
+        "_MinMoveRate": 0,
+        "_ZOffset": 1,
+        "_IsUpdateTargetPos": true
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.MotionZMoveAdjustUserData",
+      "Userdata": null,
+      "Fields": {
+        "_XZMoveAdjustSetList": [
+          {
+            "Ref": 2,
+            "Class": "app.ZMoveAdjustSet"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.ZMoveAdjustSet"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.ZMoveAdjustSet"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.ZMoveAdjustSet"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.ZMoveAdjustSet"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.ZMoveAdjustSet"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.ZMoveAdjustSet"
+          },
+          {
+            "Ref": 16,
+            "Class": "app.ZMoveAdjustSet"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,684 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/animdelayhand/leftarm/datatable/axe/playeranimdelayhanddatacollection_axe_l.user.3",
+  "Objects": [
+    {
+      "Index": 39,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": null,
+      "Fields": {
+        "_Data": [
+          {
+            "Index": 32,
+            "Class": "app.AnimDelayHand_AdjustmentData",
+            "Userdata": null,
+            "Fields": {
+              "_DelayHandCondition": {
+                "Index": 30,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 1,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 3,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 1,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 2,
+                          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 11,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 4,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 10,
+                          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 14,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 12,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 13,
+                          "Class": "app.PlayerComplexConditionParam_Companion"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 17,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 15,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 16,
+                          "Class": "app.PlayerComplexConditionParam_Reaction"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 21,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 18,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 20,
+                          "Class": "app.PlayerComplexConditionParam_ActionTable"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 25,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 22,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 24,
+                          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+                        }
+                      }
+                    },
+                    {
+                      "Index": 29,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 26,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 28,
+                          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_Priority": 1000,
+              "_TransitionKeepTimeSec": 0,
+              "_DelayHandUnitUserData": {
+                "Index": 31,
+                "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/PlayerAnimDelayHand_AdjustmentUnit_NoAdjustment.user",
+                "Fields": {}
+              }
+            }
+          },
+          {
+            "Index": 38,
+            "Class": "app.AnimDelayHand_AdjustmentData",
+            "Userdata": null,
+            "Fields": {
+              "_DelayHandCondition": {
+                "Index": 36,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 1,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 35,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 33,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 34,
+                          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_Priority": 1,
+              "_TransitionKeepTimeSec": 0,
+              "_DelayHandUnitUserData": {
+                "Index": 37,
+                "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/PlayerAnimDelayHand_AdjustmentUnit_AxeL.user",
+                "Fields": {}
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 8136997024,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 2,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2339769225
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 145683637
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2355018870
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3260109019
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 223104098
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 5,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 4,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 10,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Companion"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerComplexConditionParam_Companion",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_CompanionMode": 0
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 12,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 13,
+          "Class": "app.PlayerComplexConditionParam_Companion"
+        }
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Reaction"
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerComplexConditionParam_Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsRuuning": true
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 15,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 16,
+          "Class": "app.PlayerComplexConditionParam_Reaction"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionTable"
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3260109019
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerComplexConditionParam_ActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckCurrentAction": true,
+        "_Actions": [
+          {
+            "Ref": 19,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevAction": false,
+        "_PrevActions": []
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 18,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 20,
+          "Class": "app.PlayerComplexConditionParam_ActionTable"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3905855045
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 23,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 22,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 24,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 307595368
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 27,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 26,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 28,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 3,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/PlayerAnimDelayHand_AdjustmentUnit_NoAdjustment.user",
+      "Fields": {}
+    },
+    {
+      "Index": 32,
+      "Class": "app.AnimDelayHand_AdjustmentData",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Ref": 30,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Priority": 1000,
+        "_TransitionKeepTimeSec": 0,
+        "_DelayHandUnitUserData": {
+          "Ref": 31,
+          "Class": "app.AnimDelayHand_AdjustmentUnitUserData"
+        }
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 65536,
+        "_IsOr": false
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 33,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 34,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 35,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/PlayerAnimDelayHand_AdjustmentUnit_AxeL.user",
+      "Fields": {}
+    },
+    {
+      "Index": 38,
+      "Class": "app.AnimDelayHand_AdjustmentData",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Ref": 36,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Priority": 1,
+        "_TransitionKeepTimeSec": 0,
+        "_DelayHandUnitUserData": {
+          "Ref": 37,
+          "Class": "app.AnimDelayHand_AdjustmentUnitUserData"
+        }
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": null,
+      "Fields": {
+        "_Data": [
+          {
+            "Ref": 32,
+            "Class": "app.AnimDelayHand_AdjustmentData"
+          },
+          {
+            "Ref": 38,
+            "Class": "app.AnimDelayHand_AdjustmentData"
+          }
+        ]
+      }
+    }
+  ]
+}

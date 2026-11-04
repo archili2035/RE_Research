@@ -1,0 +1,67 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerdeadbodyuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 2,
+      "Class": "app.PlayerDeadBodyConfiguration.PlayerDeadBodyUserData",
+      "Userdata": null,
+      "Fields": {
+        "_CliffSetting": {
+          "Index": 1,
+          "Class": "app.PlayerDeadBodyConfiguration.PlayerDeadBodyUserData.CliffSettingInfo",
+          "Userdata": null,
+          "Fields": {
+            "_IsPlaneY": 0.25,
+            "_IsStairDegRange": "Range(0, 39.9)",
+            "_PermitAngleStair": "Range(-5, 185)",
+            "_FrontCheckOffset": "\u003C0, 1, 0.3\u003E",
+            "_FrontCheckLength": 1.3,
+            "_FrontCheckRadius": 0.25,
+            "_NearFootCheckOffset": "\u003C0, 1, 0.2\u003E",
+            "_NearFootCheckLength": 1.5,
+            "_CenterFootCheckLength": 1.8,
+            "_FarFootCheckLength": 2,
+            "_FootCheckIntervalLength": 0.9
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerDeadBodyConfiguration.PlayerDeadBodyUserData.CliffSettingInfo",
+      "Userdata": null,
+      "Fields": {
+        "_IsPlaneY": 0.25,
+        "_IsStairDegRange": "Range(0, 39.9)",
+        "_PermitAngleStair": "Range(-5, 185)",
+        "_FrontCheckOffset": "\u003C0, 1, 0.3\u003E",
+        "_FrontCheckLength": 1.3,
+        "_FrontCheckRadius": 0.25,
+        "_NearFootCheckOffset": "\u003C0, 1, 0.2\u003E",
+        "_NearFootCheckLength": 1.5,
+        "_CenterFootCheckLength": 1.8,
+        "_FarFootCheckLength": 2,
+        "_FootCheckIntervalLength": 0.9
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerDeadBodyConfiguration.PlayerDeadBodyUserData",
+      "Userdata": null,
+      "Fields": {
+        "_CliffSetting": {
+          "Ref": 1,
+          "Class": "app.PlayerDeadBodyConfiguration.PlayerDeadBodyUserData.CliffSettingInfo"
+        }
+      }
+    }
+  ]
+}

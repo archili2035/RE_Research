@@ -1,0 +1,55 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100interactivemessageuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 2,
+      "Class": "app.CharacterInteractiveMessageUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnableSelection": true,
+        "_SelectionSetting": {
+          "Index": 1,
+          "Class": "app.CharacterInteractiveMessageSelectionSetting",
+          "Userdata": null,
+          "Fields": {
+            "_SelectInterval": 1,
+            "_SelectCoolTime": 0,
+            "_ExcludeSettings": []
+          }
+        },
+        "_Settings": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CharacterInteractiveMessageSelectionSetting",
+      "Userdata": null,
+      "Fields": {
+        "_SelectInterval": 1,
+        "_SelectCoolTime": 0,
+        "_ExcludeSettings": []
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CharacterInteractiveMessageUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnableSelection": true,
+        "_SelectionSetting": {
+          "Ref": 1,
+          "Class": "app.CharacterInteractiveMessageSelectionSetting"
+        },
+        "_Settings": []
+      }
+    }
+  ]
+}

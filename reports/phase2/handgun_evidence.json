@@ -1,0 +1,3012 @@
+{
+  "tpsbase": [
+    {
+      "ID": "3296484976 (0)",
+      "Name": "Hold_Loop",
+      "FullName": "Hold_Loop",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 1251,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4132060402,
+            "Motion": "",
+            "BankID": 10,
+            "MotionID": 4,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "Hold_Crouch_Loop",
+          "TargetID": "3185919033 (0)",
+          "Condition": {
+            "Index": 347,
+            "Class": "app.PlayerBehaviorTreeCondition_IsInputCrouch",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3452633241,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 453846046,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 33,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 15,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "Hold_Loop",
+          "TargetID": "3296484976 (0)",
+          "Condition": {
+            "Index": 348,
+            "Class": "app.PlayerBehaviorTreeCondition_CheckReplayHoldIdle",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2001203318,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 4037575491,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 33,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 7,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3872436775 (0)",
+      "Name": "Hold_strafe",
+      "FullName": "Hold_strafe",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 1254,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3872436775,
+            "Motion": "",
+            "BankID": 10,
+            "MotionID": 2,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "Hold_Crouch_strafe",
+          "TargetID": "1685215589 (0)",
+          "Condition": {
+            "Index": 353,
+            "Class": "app.PlayerBehaviorTreeCondition_IsInputCrouch",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2871022995,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 4290337250,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 33,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "Hold_strafe",
+          "TargetID": "3872436775 (0)",
+          "Condition": {
+            "Index": 354,
+            "Class": "app.PlayerBehaviorTreeCondition_CheckReplayStrafe",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2479990807,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 759550923,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 25,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    }
+  ],
+  "tpsbase_hierarchy": [
+    {
+      "Index": 489,
+      "ID": 3296484976,
+      "Ex": 0,
+      "Name": "Hold_Loop",
+      "Parent": 2177388626,
+      "ParentEx": 0,
+      "Actions": [
+        [
+          4132060402
+        ],
+        [
+          0
+        ]
+      ],
+      "Selector": -1,
+      "Offset": 63590,
+      "Attributes": 35
+    },
+    {
+      "Index": 492,
+      "ID": 3872436775,
+      "Ex": 0,
+      "Name": "Hold_strafe",
+      "Parent": 1277082052,
+      "ParentEx": 0,
+      "Actions": [
+        [
+          3872436775
+        ],
+        [
+          0
+        ]
+      ],
+      "Selector": -1,
+      "Offset": 64000,
+      "Attributes": 35
+    }
+  ],
+  "tpsupper": [
+    {
+      "ID": "695556244 (0)",
+      "Name": "Reload",
+      "FullName": "Reload",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 83,
+          "Class": "app.WeaponSubActionEnd",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 4245883793,
+            "EquipCategory": 0,
+            "IsGunEquip": true,
+            "IsMeleeEquip": false,
+            "IsThrowingEquip": false
+          }
+        },
+        {
+          "Index": 84,
+          "Class": "app.PlayerBehaviorTreeAction_CustomMotionSpeedChange",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1935537805,
+            "_CustomType": 1,
+            "_IsUseSequence": false
+          }
+        },
+        {
+          "Index": 86,
+          "Class": "app.TransitionLeftArmMotionFsmNode",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": false,
+            "ID": 205739056,
+            "IsHandLoopNotify": false,
+            "IsSameMotionNotify": false,
+            "IsEmote": false,
+            "NotifyStart": true,
+            "NotifyEnd": true,
+            "NotifyHash": {
+              "Index": 85,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2492591405
+              }
+            },
+            "DisableLWepInterp": false,
+            "HighestStart": false,
+            "CheckReload": false,
+            "RetryNoLocalBankType": false
+          }
+        },
+        {
+          "Index": 87,
+          "Class": "app.PlayerBehaviorTreeAction_EmergencyMotionSpeedChange",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 44767932,
+            "_IsUseSequence": true,
+            "_ApplySpeed": 1
+          }
+        },
+        {
+          "Index": 88,
+          "Class": "app.PlayerBehaviorTreeAction_EnableUpperBodyDangerIdleStart",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3712900983,
+            "_IsTransitionHandDown": false
+          }
+        },
+        {
+          "Index": 89,
+          "Class": "app.Reload",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2484746027
+          }
+        },
+        {
+          "Index": 90,
+          "Class": "app.AutoSetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1027823080,
+            "JointMaskID": 2,
+            "_SetIdleJointMaskID": false,
+            "_IdleJointMaskID": 0,
+            "_IsCrouchMotion": false,
+            "_IsApplyImmediatelyWhenFPS": true
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 37,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "Weapon",
+          "TargetID": "3938075212 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Handgun",
+          "TargetID": "372242562 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Rifle",
+          "TargetID": "2829262897 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Shotgun",
+          "TargetID": "1611798747 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Any",
+          "TargetID": "1544897874 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Machinegun",
+          "TargetID": "937734260 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "Weapon",
+          "TargetID": "3938075212 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [],
+      "AllStates": []
+    },
+    {
+      "ID": "2145220387 (0)",
+      "Name": "Wp0000H_140_Hold_Start_L0",
+      "FullName": "Wp0000H_140_Hold_Start_L0",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 190,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2010016647,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 140,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 191,
+          "Class": "app.SetJointMask",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1224182521,
+            "JointMaskID": 4
+          }
+        },
+        {
+          "Index": 192,
+          "Class": "app.PlayerSubActionEnd",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3020091132,
+            "CheckMotionEnd": true,
+            "_CheckChangeBankType": false,
+            "_CheckMotionExist": false
+          }
+        },
+        {
+          "Index": 193,
+          "Class": "app.PlayerBehaviorTreeAction_ApplyUpperWorldControlByFilter",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1532198603
+          }
+        },
+        {
+          "Index": 194,
+          "Class": "app.PlayerBehaviorTreeAction_SlingSetMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3594642022,
+            "_BankId": 0,
+            "_MotionId": 140,
+            "_CheckVerF": true,
+            "_StopChain": false
+          }
+        },
+        {
+          "Index": 197,
+          "Class": "app.PlayerBehaviorTreeAction_RequestMotionNextNormalizedTime",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 449920237,
+            "_IsReserve": true,
+            "_ReserveHash": {
+              "Index": 195,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 102164990
+              }
+            },
+            "_IsApply": true,
+            "_ApplyHash": {
+              "Index": 196,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 102164990
+              }
+            }
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "HoldStartShoot",
+          "TargetID": "117631962 (0)",
+          "Condition": {
+            "Index": 27,
+            "Class": "app.IsHoldStartShoot",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3532450361,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "IsCheckShotTrigger": true
+            }
+          },
+          "transitionMapID": 4293313373,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 289,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 5,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "ShortHoldMidTime",
+          "TargetID": "4074275138 (0)",
+          "Condition": {
+            "Index": 28,
+            "Class": "app.PlayerBehaviorTreeCondition_IsApplyGunHoldShort",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2730185784,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 3314463795,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 273,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 14,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "322495786 (0)",
+      "Name": "ReloadType",
+      "FullName": "ReloadType",
+      "Parent": null,
+      "Actions": [],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "Once",
+          "TargetID": "2204380174 (0)",
+          "Condition": {
+            "Index": 55,
+            "Class": "app.ReloadType",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3063192848,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "type": 0
+            }
+          },
+          "transitionMapID": 1644705514,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 8,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "EverySingle",
+          "TargetID": "1620189884 (0)",
+          "Condition": {
+            "Index": 56,
+            "Class": "app.ReloadType",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2343042094,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "type": 1
+            }
+          },
+          "transitionMapID": 2432137896,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 8,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "360106824 (0)",
+      "Name": "Handgun00H_1200_Reload",
+      "FullName": "Handgun00H_1200_Reload",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 303,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 360106824,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 1200,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 304,
+          "Class": "app.PlayEquipGunMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 321810084,
+            "_BankID": -1,
+            "MotionID": -1,
+            "STRUCT__InterpolationFrame__HasValue": false,
+            "STRUCT__InterpolationFrame__Value": 0
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "ActionEnd",
+          "TargetID": "620081755 (0)",
+          "Condition": {
+            "Index": 69,
+            "Class": "app.CharacterBehaviorTreeCondition_AppIsMotionEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3765278761,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 3387554344,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 8,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "3487399072 (0)",
+      "Name": "Normal",
+      "FullName": "Normal",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 584,
+          "Class": "app.PlayerBehaviorTreeAction_TrySetMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1020961121,
+            "Motion": "",
+            "BankID": 10,
+            "MotionID": 5000,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "ActionEnd",
+          "TargetID": "605312350 (0)",
+          "Condition": {
+            "Index": 189,
+            "Class": "app.PlayerBehaviorTreeCondition_ActionFlagCheck",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3209841045,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": false,
+              "CheckPrePlayerState": false,
+              "IsCheckOR": true,
+              "IsCheckJust": false,
+              "_CheckState": 65552
+            }
+          },
+          "transitionMapID": 3744349222,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 20,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "Short",
+          "TargetID": "1513380847 (0)",
+          "Condition": {
+            "Index": 190,
+            "Class": "via.behaviortree.ConditionUserVariable",
+            "Userdata": null,
+            "Fields": {
+              "ID": 95910854,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true,
+              "Expression": "301fc2a2-6296-462a-a2ff-b05d076884b6"
+            }
+          },
+          "transitionMapID": 2468094098,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 273,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 15,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    }
+  ],
+  "tpsupper_hierarchy": [
+    {
+      "Index": 37,
+      "ID": 695556244,
+      "Ex": 0,
+      "Name": "Reload",
+      "Parent": 3253628050,
+      "ParentEx": 0,
+      "Actions": [
+        [
+          4245883793,
+          1935537805,
+          205739056,
+          44767932,
+          3712900983,
+          2484746027,
+          1027823080
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "Selector": 36,
+      "Offset": 5586,
+      "Attributes": 35
+    },
+    {
+      "Index": 88,
+      "ID": 2145220387,
+      "Ex": 0,
+      "Name": "Wp0000H_140_Hold_Start_L0",
+      "Parent": 2547751342,
+      "ParentEx": 0,
+      "Actions": [
+        [
+          2010016647,
+          1224182521,
+          3020091132,
+          1532198603,
+          3594642022,
+          449920237
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "Selector": -1,
+      "Offset": 12356,
+      "Attributes": 35
+    },
+    {
+      "Index": 133,
+      "ID": 322495786,
+      "Ex": 0,
+      "Name": "ReloadType",
+      "Parent": 372242562,
+      "ParentEx": 0,
+      "Actions": [
+        [],
+        []
+      ],
+      "Selector": -1,
+      "Offset": 18198,
+      "Attributes": 35
+    },
+    {
+      "Index": 150,
+      "ID": 360106824,
+      "Ex": 0,
+      "Name": "Handgun00H_1200_Reload",
+      "Parent": 2829262897,
+      "ParentEx": 0,
+      "Actions": [
+        [
+          360106824,
+          321810084
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Selector": -1,
+      "Offset": 20364,
+      "Attributes": 35
+    },
+    {
+      "Index": 317,
+      "ID": 3487399072,
+      "Ex": 0,
+      "Name": "Normal",
+      "Parent": 712206886,
+      "ParentEx": 0,
+      "Actions": [
+        [
+          1020961121
+        ],
+        [
+          0
+        ]
+      ],
+      "Selector": -1,
+      "Offset": 41058,
+      "Attributes": 35
+    }
+  ],
+  "tpsadd": [
+    {
+      "ID": "3293163594 (0)",
+      "Name": "Shot",
+      "FullName": "Shot",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 2,
+          "Class": "app.PlayerBehaviorTreeAction_SetWaitRefire",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3109964360
+          }
+        },
+        {
+          "Index": 3,
+          "Class": "app.PlayerBehaviorTreeAction_DisableScopeMode",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 727121161
+          }
+        },
+        {
+          "Index": 4,
+          "Class": "app.PlayerBehaviorTreeAction_CustomMotionSpeedChange",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1526785692,
+            "_CustomType": 1,
+            "_IsUseSequence": true
+          }
+        },
+        {
+          "Index": 13,
+          "Class": "app.PlayerBehaviorTreeAction_TriggerPlayerReactionEvent",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2150477150,
+            "_Units": [
+              {
+                "Index": 8,
+                "Class": "app.PlayerBehaviorTreeAction_TriggerPlayerReactionEvent.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_EventRequest": {
+                    "Index": 7,
+                    "Class": "app.PlayerReactionEventRequest",
+                    "Userdata": null,
+                    "Fields": {
+                      "_EventID": {
+                        "Index": 5,
+                        "Class": "app.PlayerReactionEventID",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Name": "Battle_ShotBefore"
+                        }
+                      },
+                      "_Arg": {
+                        "Index": 6,
+                        "Class": "app.PlayerReactionEventRequestArg_Empty",
+                        "Userdata": null,
+                        "Fields": {}
+                      }
+                    }
+                  },
+                  "_Timing": 0
+                }
+              },
+              {
+                "Index": 12,
+                "Class": "app.PlayerBehaviorTreeAction_TriggerPlayerReactionEvent.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_EventRequest": {
+                    "Index": 11,
+                    "Class": "app.PlayerReactionEventRequest",
+                    "Userdata": null,
+                    "Fields": {
+                      "_EventID": {
+                        "Index": 9,
+                        "Class": "app.PlayerReactionEventID",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Name": "Battle_ShotAfter"
+                        }
+                      },
+                      "_Arg": {
+                        "Index": 10,
+                        "Class": "app.PlayerReactionEventRequestArg_Empty",
+                        "Userdata": null,
+                        "Fields": {}
+                      }
+                    }
+                  },
+                  "_Timing": 1
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Index": 17,
+          "Class": "app.PlayerBehaviorTreeAction_RequestPlayerMessageEvent",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2975221129,
+            "_EventRequest": {
+              "Index": 16,
+              "Class": "app.PlayerMessageEventRequest",
+              "Userdata": null,
+              "Fields": {
+                "_EventID": {
+                  "Index": 14,
+                  "Class": "app.PlayerMessageEventID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "Battle_ShotBefore"
+                  }
+                },
+                "_Arg": {
+                  "Index": 15,
+                  "Class": "app.PlayerMessageEventRequestArg_Empty",
+                  "Userdata": null,
+                  "Fields": {}
+                }
+              }
+            },
+            "_Timing": 0
+          }
+        },
+        {
+          "Index": 18,
+          "Class": "app.PlayerBehaviorTreeAction_SetDotSightViewInfo",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2031755569
+          }
+        },
+        {
+          "Index": 20,
+          "Class": "anim.AnimSettingAction",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1499284034,
+            "Type": "anim.AnimStabilizerIK",
+            "Enable": false,
+            "HighPriority": false,
+            "SubParamIndex": -1,
+            "SubParamNameHash": {
+              "Index": 19,
+              "Class": "app.NameHash",
+              "Userdata": null,
+              "Fields": {
+                "_Hash": 2180083513
+              }
+            },
+            "IsSameParam": true
+          }
+        },
+        {
+          "Index": 21,
+          "Class": "app.PlayerBehaviorTreeAction_GunDisposableAfterUse",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 105439385
+          }
+        },
+        {
+          "Index": 23,
+          "Class": "app.PlayerBehaviorTreeAction_WeaponMotionSpeedChange",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 2707807060,
+            "_IsUseSequence": false,
+            "_ApplySpeed": 1.5,
+            "_WeaponID": {
+              "Index": 22,
+              "Class": "app.WeaponID",
+              "Userdata": null,
+              "Fields": {
+                "_Name": "arm0006"
+              }
+            }
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 3,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "Shotype",
+          "TargetID": "1275388502 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "SemiAuto",
+          "TargetID": "502402705 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "End",
+          "TargetID": "1968128814 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Burst",
+          "TargetID": "3324891159 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HoldEnd",
+          "TargetID": "1039488245 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "CheckGunCounter",
+          "TargetID": "2659026932 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Clear",
+          "TargetID": "3189822761 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "CheckGunCounter",
+          "TargetID": "2659026932 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "Default",
+          "TargetID": "3708210840 (0)",
+          "Condition": {
+            "Index": 1,
+            "Class": "via.behaviortree.nodework.ConditionUnderLayerEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 2181908857,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 3118210052,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 3118210052,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 785,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 12,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "502402705 (0)",
+      "Name": "SemiAuto",
+      "FullName": "SemiAuto",
+      "Parent": null,
+      "Actions": [],
+      "Selector": {
+        "Index": 14,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "Normal",
+          "TargetID": "1269213751 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Start",
+          "TargetID": "3947765461 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "End",
+          "TargetID": "1144400670 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "MG",
+          "TargetID": "801725744 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "FullAuto",
+          "TargetID": "70068562 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "PoisonPump",
+          "TargetID": "1880718996 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "Start",
+          "TargetID": "3947765461 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "End",
+          "TargetID": "1968128814 (0)",
+          "Condition": {
+            "Index": 11,
+            "Class": "via.behaviortree.nodework.ConditionUnderLayerEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 1259637226,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1115559280,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 0,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        },
+        {
+          "Target": "HoldEnd",
+          "TargetID": "1039488245 (0)",
+          "Condition": {
+            "Index": 8,
+            "Class": "app.PlayerBehaviorTreeCondition_IsShotAddEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 4033615741,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1725738526,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 0,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "1269213751 (0)",
+      "Name": "Normal",
+      "FullName": "Normal",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 52,
+          "Class": "app.ShotFire",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 457193685,
+            "_Timing": 0,
+            "_ShotActionEnd": true,
+            "_FakeShot": false,
+            "_IsUserResourceFakeShot": false
+          }
+        },
+        {
+          "Index": 53,
+          "Class": "app.PlayEquipGunMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 1477315922,
+            "_BankID": -1,
+            "MotionID": 5000,
+            "STRUCT__InterpolationFrame__HasValue": false,
+            "STRUCT__InterpolationFrame__Value": 0
+          }
+        }
+      ],
+      "Selector": {
+        "Index": 16,
+        "Class": "via.behaviortree.SelectorFSM",
+        "Userdata": null,
+        "Fields": {
+          "LateSelect": false,
+          "Illegal": false
+        }
+      },
+      "Children": [
+        {
+          "Target": "Handgun00H_1100_Shoot",
+          "TargetID": "827603261 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "check",
+          "TargetID": "2551812823 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "End",
+          "TargetID": "327540310 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Handgun00H_1140_Shoot_L0",
+          "TargetID": "689599836 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HoldType",
+          "TargetID": "2547677330 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "HoldShort",
+          "TargetID": "2791943034 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Hold_LightPack",
+          "TargetID": "1341870093 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Hold_DotSight",
+          "TargetID": "4008892941 (0)",
+          "Condition": null
+        },
+        {
+          "Target": "Handgun00H_1130_Crouch_Shoot",
+          "TargetID": "7422093 (0)",
+          "Condition": null
+        }
+      ],
+      "EntryTransitions": [
+        {
+          "Target": "HoldType",
+          "TargetID": "2547677330 (0)",
+          "Condition": null
+        }
+      ],
+      "States": [
+        {
+          "Target": "End",
+          "TargetID": "1144400670 (0)",
+          "Condition": {
+            "Index": 13,
+            "Class": "via.behaviortree.nodework.ConditionUnderLayerEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3975264390,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 3542431127,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 0,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    },
+    {
+      "ID": "827603261 (0)",
+      "Name": "Handgun00H_1100_Shoot",
+      "FullName": "Handgun00H_1100_Shoot",
+      "Parent": null,
+      "Actions": [
+        {
+          "Index": 59,
+          "Class": "via.motion.Fsm2ActionPlayMotion",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3623689760,
+            "Motion": "",
+            "BankID": 100,
+            "MotionID": 1100,
+            "Speed": 1,
+            "WrapMode": 0,
+            "Mirror": false,
+            "FrameControl": 0,
+            "StopAtEnd": false,
+            "NotResetWhenSameID": false,
+            "PrevMotRefClear": false
+          }
+        },
+        {
+          "Index": 60,
+          "Class": "app.PlayerBehaviorTreeAction_UpdateShootEnd",
+          "Userdata": null,
+          "Fields": {
+            "Enabled": true,
+            "ID": 3245412659
+          }
+        }
+      ],
+      "Selector": null,
+      "Children": [],
+      "EntryTransitions": [],
+      "States": [
+        {
+          "Target": "End",
+          "TargetID": "327540310 (0)",
+          "Condition": {
+            "Index": 17,
+            "Class": "via.behaviortree.nodework.ConditionNodeWorkEnd",
+            "Userdata": null,
+            "Fields": {
+              "ID": 3164468848,
+              "GUID": "00000000-0000-0000-0000-000000000000",
+              "Condition": true
+            }
+          },
+          "transitionMapID": 1306283653,
+          "Transition": {
+            "EndType": 0,
+            "InterpolationMode": 0,
+            "InterpolationCurve": 0,
+            "PrevMoveToEnd": false,
+            "StartType": 0,
+            "ElapsedTimeZero": false,
+            "ContOnLayer": false,
+            "ContOnLayerInterpCurve": 0,
+            "EmptyBits": 0,
+            "id": 0,
+            "data": 0,
+            "exitFrame": 0,
+            "pragmataId": 17,
+            "startFrame": 0,
+            "interpolationFrame": 0,
+            "contOnLayerSpeed": 0,
+            "contOnLayerTimeout": 0,
+            "contOnLayerNo": 0,
+            "contOnLayerJointMaskId": 0
+          },
+          "Events": []
+        }
+      ],
+      "AllStates": []
+    }
+  ],
+  "tpsadd_hierarchy": [
+    {
+      "Index": 2,
+      "ID": 3293163594,
+      "Ex": 0,
+      "Name": "Shot",
+      "Parent": 0,
+      "ParentEx": 0,
+      "Actions": [
+        [
+          3109964360,
+          727121161,
+          1526785692,
+          2150477150,
+          2975221129,
+          2031755569,
+          1499284034,
+          105439385,
+          2707807060
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "Selector": 2,
+      "Offset": 620,
+      "Attributes": 35
+    },
+    {
+      "Index": 18,
+      "ID": 502402705,
+      "Ex": 0,
+      "Name": "SemiAuto",
+      "Parent": 3293163594,
+      "ParentEx": 0,
+      "Actions": [
+        [],
+        []
+      ],
+      "Selector": 13,
+      "Offset": 3260,
+      "Attributes": 35
+    },
+    {
+      "Index": 24,
+      "ID": 1269213751,
+      "Ex": 0,
+      "Name": "Normal",
+      "Parent": 502402705,
+      "ParentEx": 0,
+      "Actions": [
+        [
+          457193685,
+          1477315922
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Selector": 15,
+      "Offset": 4076,
+      "Attributes": 35
+    },
+    {
+      "Index": 30,
+      "ID": 827603261,
+      "Ex": 0,
+      "Name": "Handgun00H_1100_Shoot",
+      "Parent": 1269213751,
+      "ParentEx": 0,
+      "Actions": [
+        [
+          3623689760,
+          3245412659
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Selector": -1,
+      "Offset": 5216,
+      "Attributes": 35
+    }
+  ],
+  "PreAddSetting": [
+    {
+      "Index": 1,
+      "Class": "app.UpperBodyPreAddSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultBankIdOffset": 2000,
+        "_DefaultMotionIdOffset": 0,
+        "_DefaultJointMaskID": 11,
+        "_BankSettings": []
+      }
+    }
+  ],
+  "Configuration": {
+    "Index": 92,
+    "Class": "app.UpperBodyPreAddConfiguration",
+    "Userdata": null,
+    "Fields": {
+      "_IsEnable": true,
+      "_UpperBodyLayerNo": 3,
+      "_PreAddLayerNo": 2,
+      "_Setting": {
+        "Index": 91,
+        "Class": "app.UpperBodyPreAddSettingUserData",
+        "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonPreAddSetting.user",
+        "Fields": {}
+      }
+    }
+  },
+  "IdentityLipSync": {
+    "Index": 94,
+    "Class": "app.LipSyncConfiguration",
+    "Userdata": null,
+    "Fields": {
+      "_IsEnable": true,
+      "_UseAssetTags": "ch0100"
+    }
+  },
+  "Masks": [
+    {
+      "ID": 2,
+      "Joints": [
+        {
+          "Hash": 7616763,
+          "Name": "L_Hand_RingF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 182352682,
+          "Name": "L_Hand_MiddleF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 354485766,
+          "Name": "L_Hand_PinkyF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 571312365,
+          "Name": "L_Hand_Target",
+          "Mask": 3,
+          "Weight": 1
+        },
+        {
+          "Hash": 626968387,
+          "Name": "R_Arm_Hand",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 648946990,
+          "Name": "R_Hand_ThumbF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 682614846,
+          "Name": "R_Hand_PinkyF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 743335199,
+          "Name": "R_Hand_IndexF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 922691651,
+          "Name": "R_Hand_Palm",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 993698584,
+          "Name": "L_Hand_MiddleF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1138773017,
+          "Name": "R_Wep",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1207436687,
+          "Name": "?",
+          "Mask": 3,
+          "Weight": 1
+        },
+        {
+          "Hash": 1215203471,
+          "Name": "L_Wep_Target",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1334173669,
+          "Name": "R_Hand_RingF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1481486727,
+          "Name": "L_Hand_RingF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1518327321,
+          "Name": "L_Wep",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1520394401,
+          "Name": "R_Hand_PinkyF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1595575867,
+          "Name": "R_Hand_PinkyF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1695884819,
+          "Name": "R_Hand_RingF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1731315262,
+          "Name": "L_Hand_PinkyF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1739409282,
+          "Name": "R_Arm_Lower",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1808059485,
+          "Name": "L_Arm_Hand",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1858231711,
+          "Name": "R_Hand_ThumbF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1934579979,
+          "Name": "R_Hand_IndexF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1986581493,
+          "Name": "L_Hand_IndexF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2067623796,
+          "Name": "L_Hand_PinkyF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2417451042,
+          "Name": "L_Hand_ThumbF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2440854512,
+          "Name": "R_Hand_MiddleF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2497293985,
+          "Name": "L_Hand_IndexF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2536893539,
+          "Name": "L_Hand_ThumbF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2597442408,
+          "Name": "L_Hand_ThumbF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2621899760,
+          "Name": "CamAdd_A",
+          "Mask": 3,
+          "Weight": 1
+        },
+        {
+          "Hash": 2817081061,
+          "Name": "R_Hand_Target",
+          "Mask": 3,
+          "Weight": 1
+        },
+        {
+          "Hash": 2881739913,
+          "Name": "R_Arm_Upper",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2934683904,
+          "Name": "R_Hand_ThumbF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2946273487,
+          "Name": "L_Arm_Upper",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3143809854,
+          "Name": "L_Arm_Lower",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3180019144,
+          "Name": "R_Wep_Target",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3276980779,
+          "Name": "Neck_0",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3278430029,
+          "Name": "R_Hand_RingF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3328237619,
+          "Name": "R_Hand_MiddleF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3422791998,
+          "Name": "L_Arm_Clavicle",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3430261757,
+          "Name": "Head_0",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3464899509,
+          "Name": "R_Hand_IndexF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3719180136,
+          "Name": "L_Hand_Palm",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3792206059,
+          "Name": "L_Hand_IndexF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3845981394,
+          "Name": "L_Hand_MiddleF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3946539076,
+          "Name": "Neck_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3974011611,
+          "Name": "R_Arm_Clavicle",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 4051852137,
+          "Name": "L_Hand_RingF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 4264595273,
+          "Name": "R_Hand_MiddleF_3",
+          "Mask": 7,
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "ID": 4,
+      "Joints": [
+        {
+          "Hash": 7616763,
+          "Name": "L_Hand_RingF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 182352682,
+          "Name": "L_Hand_MiddleF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 354485766,
+          "Name": "L_Hand_PinkyF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 571312365,
+          "Name": "L_Hand_Target",
+          "Mask": 3,
+          "Weight": 1
+        },
+        {
+          "Hash": 626968387,
+          "Name": "R_Arm_Hand",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 648946990,
+          "Name": "R_Hand_ThumbF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 682614846,
+          "Name": "R_Hand_PinkyF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 743335199,
+          "Name": "R_Hand_IndexF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 922691651,
+          "Name": "R_Hand_Palm",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 993698584,
+          "Name": "L_Hand_MiddleF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1091167843,
+          "Name": "Spine_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1138773017,
+          "Name": "R_Wep",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1215203471,
+          "Name": "L_Wep_Target",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1334173669,
+          "Name": "R_Hand_RingF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1481486727,
+          "Name": "L_Hand_RingF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1518327321,
+          "Name": "L_Wep",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1520394401,
+          "Name": "R_Hand_PinkyF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1595575867,
+          "Name": "R_Hand_PinkyF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1695884819,
+          "Name": "R_Hand_RingF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1731315262,
+          "Name": "L_Hand_PinkyF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1739409282,
+          "Name": "R_Arm_Lower",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1808059485,
+          "Name": "L_Arm_Hand",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1858231711,
+          "Name": "R_Hand_ThumbF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1934579979,
+          "Name": "R_Hand_IndexF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1951860438,
+          "Name": "Spine_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 1986581493,
+          "Name": "L_Hand_IndexF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2067623796,
+          "Name": "L_Hand_PinkyF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2417451042,
+          "Name": "L_Hand_ThumbF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2440854512,
+          "Name": "R_Hand_MiddleF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2497293985,
+          "Name": "L_Hand_IndexF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2536893539,
+          "Name": "L_Hand_ThumbF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2597442408,
+          "Name": "L_Hand_ThumbF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2621899760,
+          "Name": "CamAdd_A",
+          "Mask": 3,
+          "Weight": 1
+        },
+        {
+          "Hash": 2817081061,
+          "Name": "R_Hand_Target",
+          "Mask": 3,
+          "Weight": 1
+        },
+        {
+          "Hash": 2881739913,
+          "Name": "R_Arm_Upper",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2934683904,
+          "Name": "R_Hand_ThumbF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 2946273487,
+          "Name": "L_Arm_Upper",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3143809854,
+          "Name": "L_Arm_Lower",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3180019144,
+          "Name": "R_Wep_Target",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3276980779,
+          "Name": "Neck_0",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3278430029,
+          "Name": "R_Hand_RingF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3328237619,
+          "Name": "R_Hand_MiddleF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3422791998,
+          "Name": "L_Arm_Clavicle",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3430261757,
+          "Name": "Head_0",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3464899509,
+          "Name": "R_Hand_IndexF_3",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3719180136,
+          "Name": "L_Hand_Palm",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3792206059,
+          "Name": "L_Hand_IndexF_2",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3845981394,
+          "Name": "L_Hand_MiddleF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3946539076,
+          "Name": "Neck_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3974011611,
+          "Name": "R_Arm_Clavicle",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 3992101857,
+          "Name": "Spine_0",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 4051852137,
+          "Name": "L_Hand_RingF_1",
+          "Mask": 7,
+          "Weight": 1
+        },
+        {
+          "Hash": 4264595273,
+          "Name": "R_Hand_MiddleF_3",
+          "Mask": 7,
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "ID": 11,
+      "Joints": [
+        {
+          "Hash": 1091167843,
+          "Name": "Spine_1",
+          "Mask": 2,
+          "Weight": 0.5
+        },
+        {
+          "Hash": 1549972489,
+          "Name": "Hip",
+          "Mask": 3,
+          "Weight": 0.3
+        },
+        {
+          "Hash": 1951860438,
+          "Name": "Spine_2",
+          "Mask": 2,
+          "Weight": 0.5
+        },
+        {
+          "Hash": 3276980779,
+          "Name": "Neck_0",
+          "Mask": 2,
+          "Weight": 0.5
+        },
+        {
+          "Hash": 3430261757,
+          "Name": "Head_0",
+          "Mask": 2,
+          "Weight": 0.5
+        },
+        {
+          "Hash": 3946539076,
+          "Name": "Neck_1",
+          "Mask": 2,
+          "Weight": 0.5
+        },
+        {
+          "Hash": 3992101857,
+          "Name": "Spine_0",
+          "Mask": 2,
+          "Weight": 0.5
+        }
+      ]
+    }
+  ],
+  "Trees": [
+    {
+      "ID": 2,
+      "Switch": 0,
+      "Name": "ch0100_Hold_strafe",
+      "Nodes": [
+        {
+          "Index": 0,
+          "name": "",
+          "Type": "OctSyncBlendNode",
+          "Parameters": [
+            {
+              "name": "RootTransPolarBlend",
+              "type": 0,
+              "hash": 964257277,
+              "Value": true
+            },
+            {
+              "name": "BlendRate",
+              "type": 9,
+              "hash": 2370884634,
+              "Value": 0
+            },
+            {
+              "name": "CircledBlend",
+              "type": 0,
+              "hash": 459737511,
+              "Value": true
+            },
+            {
+              "name": "BlendType",
+              "type": 6,
+              "hash": 4114796164,
+              "Value": 0
+            },
+            {
+              "name": "_SyncBlendNode_357794474",
+              "type": 5,
+              "hash": 357794474,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 1,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 100
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 120
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 100
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 124
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 3,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 100
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 122
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 4,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 100
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 126
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 5,
+          "name": "",
+          "Type": "VariablesNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserVariables/PlayerCommonMotionUserVariables.uvar"
+            }
+          ]
+        },
+        {
+          "Index": 6,
+          "name": "",
+          "Type": "RangeNormalizeNode",
+          "Parameters": [
+            {
+              "name": "InMin",
+              "type": 9,
+              "hash": 2609214554,
+              "Value": 0.2
+            },
+            {
+              "name": "InMax",
+              "type": 9,
+              "hash": 2157531142,
+              "Value": 1
+            },
+            {
+              "name": "ClampMode",
+              "type": 0,
+              "hash": 798910796,
+              "Value": true
+            }
+          ]
+        },
+        {
+          "Index": 7,
+          "name": "",
+          "Type": "PlaySpeedNode",
+          "Parameters": [
+            {
+              "name": "Speed",
+              "type": 9,
+              "hash": 4102950055,
+              "Value": 1
+            }
+          ]
+        },
+        {
+          "Index": 8,
+          "name": "",
+          "Type": "CalculateNode",
+          "Parameters": [
+            {
+              "name": "Operation",
+              "type": 6,
+              "hash": 3248822590,
+              "Value": 2
+            }
+          ]
+        }
+      ],
+      "Links": [
+        {
+          "inputNodeIndex": 0,
+          "inputPinNo": 0,
+          "outputNodeIndex": 2,
+          "outputPinNo": 0,
+          "type": 1,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 0,
+          "inputPinNo": 1,
+          "outputNodeIndex": 4,
+          "outputPinNo": 0,
+          "type": 1,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 0,
+          "inputPinNo": 2,
+          "outputNodeIndex": 1,
+          "outputPinNo": 0,
+          "type": 1,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 0,
+          "inputPinNo": 3,
+          "outputNodeIndex": 3,
+          "outputPinNo": 0,
+          "type": 1,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 7,
+          "inputPinNo": 0,
+          "outputNodeIndex": 0,
+          "outputPinNo": 0,
+          "type": 1,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 0,
+          "inputPinNo": 0,
+          "outputNodeIndex": 5,
+          "outputPinNo": 0,
+          "type": 2,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "49af51d5-634e-48ed-825a-9598bad32cf0"
+        },
+        {
+          "inputNodeIndex": 6,
+          "inputPinNo": 0,
+          "outputNodeIndex": 5,
+          "outputPinNo": 0,
+          "type": 2,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "51493ff7-313b-4376-a175-f2aaf5f4d771"
+        },
+        {
+          "inputNodeIndex": 7,
+          "inputPinNo": 0,
+          "outputNodeIndex": 8,
+          "outputPinNo": 0,
+          "type": 2,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 8,
+          "inputPinNo": 0,
+          "outputNodeIndex": 6,
+          "outputPinNo": 0,
+          "type": 2,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 8,
+          "inputPinNo": 1,
+          "outputNodeIndex": 5,
+          "outputPinNo": 0,
+          "type": 2,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "eed719a9-e541-46f5-ad3c-4d2eadf49a99"
+        }
+      ]
+    },
+    {
+      "ID": 4,
+      "Switch": 0,
+      "Name": "ch0100_Hold_Loop",
+      "Nodes": [
+        {
+          "Index": 0,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 100
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 160
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 1,
+          "name": "",
+          "Type": "OctSyncBlendNode",
+          "Parameters": [
+            {
+              "name": "RootTransPolarBlend",
+              "type": 0,
+              "hash": 964257277,
+              "Value": false
+            },
+            {
+              "name": "BlendRate",
+              "type": 9,
+              "hash": 2370884634,
+              "Value": 0
+            },
+            {
+              "name": "CircledBlend",
+              "type": 0,
+              "hash": 459737511,
+              "Value": false
+            },
+            {
+              "name": "BlendType",
+              "type": 6,
+              "hash": 4114796164,
+              "Value": 0
+            },
+            {
+              "name": "_SyncBlendNode_357794474",
+              "type": 5,
+              "hash": 357794474,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 100
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 167
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 3,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 100
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 165
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 4,
+          "name": "",
+          "Type": "VariablesNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserVariables/PlayerCommonMotionUserVariables.uvar"
+            }
+          ]
+        },
+        {
+          "Index": 5,
+          "name": "",
+          "Type": "PlaySpeedNode",
+          "Parameters": [
+            {
+              "name": "Speed",
+              "type": 9,
+              "hash": 4102950055,
+              "Value": 1
+            }
+          ]
+        }
+      ],
+      "Links": [
+        {
+          "inputNodeIndex": 1,
+          "inputPinNo": 1,
+          "outputNodeIndex": 0,
+          "outputPinNo": 0,
+          "type": 1,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 1,
+          "inputPinNo": 0,
+          "outputNodeIndex": 2,
+          "outputPinNo": 0,
+          "type": 1,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 1,
+          "inputPinNo": 2,
+          "outputNodeIndex": 3,
+          "outputPinNo": 0,
+          "type": 1,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 5,
+          "inputPinNo": 0,
+          "outputNodeIndex": 1,
+          "outputPinNo": 0,
+          "type": 1,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "inputNodeIndex": 1,
+          "inputPinNo": 0,
+          "outputNodeIndex": 4,
+          "outputPinNo": 0,
+          "type": 2,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "8c17bcbc-4db9-47af-b370-0511c81f5e31"
+        },
+        {
+          "inputNodeIndex": 5,
+          "inputPinNo": 0,
+          "outputNodeIndex": 4,
+          "outputPinNo": 0,
+          "type": 2,
+          "inputGuid": "00000000-0000-0000-0000-000000000000",
+          "outputGuid": "87e20a2b-f697-408d-99c5-098debaf46b8"
+        }
+      ]
+    },
+    {
+      "ID": 5000,
+      "Switch": 0,
+      "Name": "ch0100_LowerLayerMotion",
+      "Nodes": [
+        {
+          "Index": 0,
+          "name": "",
+          "Type": "BasePoseNode",
+          "Parameters": [
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 9000
+            }
+          ]
+        }
+      ],
+      "Links": []
+    }
+  ]
+}

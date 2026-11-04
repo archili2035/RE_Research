@@ -1,0 +1,211 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000individualhandadjustsettinguserdata.user.3",
+  "Objects": [
+    {
+      "Index": 7,
+      "Class": "app.IndividualHandAdjustSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_EquipPositionSetArray": [
+          {
+            "Index": 1,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ToSpineOffset": "\u003C0.2, 0, 0.15\u003E",
+              "_ToRootOffset": "\u003C-0.5, 0, 0.05\u003E",
+              "_HipShakeInfluence": "\u003C0, 0.3, 0\u003E",
+              "_RootToSpineOffsetBlendRate": 0.4,
+              "_RHandLocalRotationOffset": "{X:0.0004567113 Y:0.008714577 Z:0.052333925 W:0.9985915}",
+              "_WeaponCategory": 1
+            }
+          },
+          {
+            "Index": 2,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ToSpineOffset": "\u003C-0.25, 0.3, 0\u003E",
+              "_ToRootOffset": "\u003C-0.6, 0.85, -0.4\u003E",
+              "_HipShakeInfluence": "\u003C0, 0.25, 0\u003E",
+              "_RootToSpineOffsetBlendRate": 1,
+              "_RHandLocalRotationOffset": "{X:0 Y:0 Z:0 W:1}",
+              "_WeaponCategory": 0
+            }
+          },
+          {
+            "Index": 3,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ToSpineOffset": "\u003C-0.25, 0.3, 0\u003E",
+              "_ToRootOffset": "\u003C-0.25, 1.35, -0.4\u003E",
+              "_HipShakeInfluence": "\u003C0, 0.7, 0\u003E",
+              "_RootToSpineOffsetBlendRate": 0.58,
+              "_RHandLocalRotationOffset": "{X:0 Y:0 Z:0 W:1}",
+              "_WeaponCategory": 5
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ToSpineOffset": "\u003C0.2, 0.4, 0.25\u003E",
+              "_ToRootOffset": "\u003C-0.2, 0, 0.15\u003E",
+              "_HipShakeInfluence": "\u003C0, 0.3, 0\u003E",
+              "_RootToSpineOffsetBlendRate": 0.4,
+              "_RHandLocalRotationOffset": "{X:0.010528233 Y:0.025503667 Z:0.069502 W:0.9972002}",
+              "_WeaponCategory": 3
+            }
+          },
+          {
+            "Index": 5,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ToSpineOffset": "\u003C0.02, 0.5, 0.05\u003E",
+              "_ToRootOffset": "\u003C-0.2, 0, 0.15\u003E",
+              "_HipShakeInfluence": "\u003C0, 0.3, 0\u003E",
+              "_RootToSpineOffsetBlendRate": 0.4,
+              "_RHandLocalRotationOffset": "{X:0.00022843413 Y:0.026175957 Z:0.008723546 W:0.99961925}",
+              "_WeaponCategory": 2
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ToSpineOffset": "\u003C0.2, 0, 0.35\u003E",
+              "_ToRootOffset": "\u003C-0.33, 0, 0.05\u003E",
+              "_HipShakeInfluence": "\u003C0, 0.3, 0\u003E",
+              "_RootToSpineOffsetBlendRate": 0.4,
+              "_RHandLocalRotationOffset": "{X:0 Y:0 Z:0 W:1}",
+              "_WeaponCategory": 8
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ToSpineOffset": "\u003C0.2, 0, 0.15\u003E",
+        "_ToRootOffset": "\u003C-0.5, 0, 0.05\u003E",
+        "_HipShakeInfluence": "\u003C0, 0.3, 0\u003E",
+        "_RootToSpineOffsetBlendRate": 0.4,
+        "_RHandLocalRotationOffset": "{X:0.0004567113 Y:0.008714577 Z:0.052333925 W:0.9985915}",
+        "_WeaponCategory": 1
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ToSpineOffset": "\u003C-0.25, 0.3, 0\u003E",
+        "_ToRootOffset": "\u003C-0.6, 0.85, -0.4\u003E",
+        "_HipShakeInfluence": "\u003C0, 0.25, 0\u003E",
+        "_RootToSpineOffsetBlendRate": 1,
+        "_RHandLocalRotationOffset": "{X:0 Y:0 Z:0 W:1}",
+        "_WeaponCategory": 0
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ToSpineOffset": "\u003C-0.25, 0.3, 0\u003E",
+        "_ToRootOffset": "\u003C-0.25, 1.35, -0.4\u003E",
+        "_HipShakeInfluence": "\u003C0, 0.7, 0\u003E",
+        "_RootToSpineOffsetBlendRate": 0.58,
+        "_RHandLocalRotationOffset": "{X:0 Y:0 Z:0 W:1}",
+        "_WeaponCategory": 5
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ToSpineOffset": "\u003C0.2, 0.4, 0.25\u003E",
+        "_ToRootOffset": "\u003C-0.2, 0, 0.15\u003E",
+        "_HipShakeInfluence": "\u003C0, 0.3, 0\u003E",
+        "_RootToSpineOffsetBlendRate": 0.4,
+        "_RHandLocalRotationOffset": "{X:0.010528233 Y:0.025503667 Z:0.069502 W:0.9972002}",
+        "_WeaponCategory": 3
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ToSpineOffset": "\u003C0.02, 0.5, 0.05\u003E",
+        "_ToRootOffset": "\u003C-0.2, 0, 0.15\u003E",
+        "_HipShakeInfluence": "\u003C0, 0.3, 0\u003E",
+        "_RootToSpineOffsetBlendRate": 0.4,
+        "_RHandLocalRotationOffset": "{X:0.00022843413 Y:0.026175957 Z:0.008723546 W:0.99961925}",
+        "_WeaponCategory": 2
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ToSpineOffset": "\u003C0.2, 0, 0.35\u003E",
+        "_ToRootOffset": "\u003C-0.33, 0, 0.05\u003E",
+        "_HipShakeInfluence": "\u003C0, 0.3, 0\u003E",
+        "_RootToSpineOffsetBlendRate": 0.4,
+        "_RHandLocalRotationOffset": "{X:0 Y:0 Z:0 W:1}",
+        "_WeaponCategory": 8
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.IndividualHandAdjustSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_EquipPositionSetArray": [
+          {
+            "Ref": 1,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.IndividualHandAdjustSettingUserData.EquipPositionSet"
+          }
+        ]
+      }
+    }
+  ]
+}

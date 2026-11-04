@@ -1,0 +1,335 @@
+{
+  "Name": "PlayerCommonMotionUserVariables",
+  "Variables": [
+    {
+      "Name": "MoveDir",
+      "guid": "49af51d5-634e-48ed-825a-9598bad32cf0",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "PrevMoveDir",
+      "guid": "1183b336-d0a7-4c22-a1e6-9e1a74fe706e",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "TargetMoveDir",
+      "guid": "260fe77a-f035-4b00-9f7f-aa7f729b1615",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "WatchDir",
+      "guid": "6d9aabcb-a722-4cc1-99a5-3eba92eec6c4",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "TargetWatchDir",
+      "guid": "ea7e9560-aaff-4279-bff2-292fff43e449",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "WatchRunFastEndDir",
+      "guid": "9f973a1b-7c47-45b7-8770-21ef2f7c190d",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "MoveIntencity",
+      "guid": "51493ff7-313b-4376-a175-f2aaf5f4d771",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "WheelBlendRate",
+      "guid": "8c17bcbc-4db9-47af-b370-0511c81f5e31",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "WheelSpeed",
+      "guid": "87e20a2b-f697-408d-99c5-098debaf46b8",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "QuickTurnBlendRate",
+      "guid": "dd350894-dc08-4f86-b268-d3ec784c55a5",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "AngleForSlopeDir",
+      "guid": "458c3e67-9f5a-4f48-a1fd-b3249a46b4ae",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "MultiMoveDir",
+      "guid": "6861117d-8ed3-4cdc-8e3f-9a0efde45e34",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "SlopeAngle",
+      "guid": "206a5576-2c6b-4c53-a05f-024b2bea1dff",
+      "type": 11,
+      "Default": "\u003C1, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "MoveForwardDir",
+      "guid": "577b4742-3f4d-48a3-872d-386427c53fe0",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "HoldShortState",
+      "guid": "1e415c1e-ac25-47c8-a8c6-434e44fb138a",
+      "type": 2,
+      "Default": false,
+      "Expression": null
+    },
+    {
+      "Name": "UpperAddMotionVariation",
+      "guid": "33aed51d-800d-4857-afc9-23c853757d28",
+      "type": 8,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "UpperHipRate",
+      "guid": "20b7fb5f-f4e2-4804-afb7-6bdb7e443103",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "ItemGetDirNo",
+      "guid": "c2993fcc-6464-42e3-a770-13bc1480881f",
+      "type": 8,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "HoldStairMoveSpeed",
+      "guid": "eed719a9-e541-46f5-ad3c-4d2eadf49a99",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "HeartRate",
+      "guid": "15b68081-3efa-4eee-b807-134f064ab020",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "MeleeRunAvoidRate",
+      "guid": "bc491418-a69d-4b74-9bc7-db9e2f0b235f",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "CameraYawRatio",
+      "guid": "b8391d70-eda7-43a9-a77f-65411bf927f2",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "CameraYawSpeedRatio",
+      "guid": "e7777474-c809-41a1-8d0d-6d27e4f6e727",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "CameraPitchRatio",
+      "guid": "76efca98-fe2a-4d73-9ee8-79b79594e3d0",
+      "type": 11,
+      "Default": "\u003C0.5, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "ClimbHeight",
+      "guid": "1ff34826-1633-424e-b779-7c71fb3caeeb",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "LightHandBlendRate",
+      "guid": "2a0759a3-50dc-4417-ab7b-6630e1b6d97e",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "HasWeaponCrouchRate",
+      "guid": "ab974e8f-2397-4332-b912-a1b474a3f6f7",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "HasWeaponRunRate",
+      "guid": "567f4be6-5cb2-4c94-9a2e-9f593d34af71",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "MoveDir_A",
+      "guid": "d7217e1a-8902-48fe-89eb-751c5518d106",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "MoveDir_B",
+      "guid": "3375aa09-89f6-475a-bf26-92ea5ec651de",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "SwitchMoveDirState",
+      "guid": "1022bed8-aae3-4d04-b45c-796c6a480466",
+      "type": 2,
+      "Default": false,
+      "Expression": null
+    },
+    {
+      "Name": "MoveForwardDir_A",
+      "guid": "e3cbff91-96fd-4384-84b4-daea2e2f9981",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "MoveForwardDir_B",
+      "guid": "82636e54-6015-431f-8af1-c7ea851e9424",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "RecoilAngleRatio",
+      "guid": "782ac95b-389b-4c38-806f-35cc27e12861",
+      "type": 11,
+      "Default": "\u003C0.5, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "ItemDirXZ",
+      "guid": "6421122d-9458-4a83-88cb-ffd0cdfbdccc",
+      "type": 11,
+      "Default": "\u003C0.5, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "ItemHight",
+      "guid": "ee9c5929-b986-4b87-9a8a-b6e8905870fe",
+      "type": 8,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "DoorTouchRate",
+      "guid": "7dc45d1a-42bc-44fc-a8ed-e1a494de7024",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "DoorPushRate",
+      "guid": "a4932dd4-967b-42b9-aaf8-bfd170fa752e",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "AfterDamageAddMotID",
+      "guid": "b6ce5bb6-6735-45b9-8afd-0f32b910adee",
+      "type": 8,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "AfterDamageAddRate",
+      "guid": "b7caf413-b95c-45cb-a499-9c927e937a03",
+      "type": 11,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "AfterDamageAddLArmMotID",
+      "guid": "18db365b-37ab-4637-99b7-c8e4b27d4a87",
+      "type": 8,
+      "Default": 0,
+      "Expression": null
+    },
+    {
+      "Name": "GrazeHitDir",
+      "guid": "8a606be6-56fc-472f-9d2a-63b52f411d6c",
+      "type": 11,
+      "Default": 0.5,
+      "Expression": null
+    },
+    {
+      "Name": "ThrowGroundWepTargetDir",
+      "guid": "8a5e9956-c444-4d0e-b4bc-38bfaab0bb93",
+      "type": 11,
+      "Default": "\u003C0.5, 0, 1\u003E",
+      "Expression": null
+    },
+    {
+      "Name": "WalkEndDir",
+      "guid": "6bf9f0ee-ee3d-4e79-9cee-e94ca267d9a1",
+      "type": 11,
+      "Default": "\u003C0.5, 0, 1\u003E",
+      "Expression": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "BikeCharacterUserVariables",
+      "Variables": [
+        {
+          "Name": "BikePoseState",
+          "guid": "1d81c436-011b-4011-9f6d-d554c839037c",
+          "type": 8,
+          "Default": 0,
+          "Expression": null
+        },
+        {
+          "Name": "BikeBankRate",
+          "guid": "2a94271e-a78c-441f-ab25-d9d732ea0f69",
+          "type": 11,
+          "Default": "\u003C0, 0, 1\u003E",
+          "Expression": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

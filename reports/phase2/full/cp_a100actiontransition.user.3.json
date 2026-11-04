@@ -1,0 +1,3035 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100actiontransition.user.3",
+  "Objects": [
+    {
+      "Index": 139,
+      "Class": "app.ActionTransitionSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTableList": [
+          {
+            "Index": 1,
+            "Class": "app.ActionTableUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonActionTable.user",
+            "Fields": {}
+          },
+          {
+            "Index": 2,
+            "Class": "app.ActionTableUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerUpperActionTable.user",
+            "Fields": {}
+          },
+          {
+            "Index": 3,
+            "Class": "app.ActionTableUserData",
+            "Userdata": "GameAssets/Character/CharacterPrefab/cp_A0/cp_A000/UserData/cp_A000ActionTable.user",
+            "Fields": {}
+          }
+        ],
+        "PrevActionTransitionSetList": [],
+        "NextActionTransitionSetList": [
+          {
+            "Index": 39,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [
+                {
+                  "Index": 6,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 4,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 10,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 5,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 3905855045
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 9,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 7,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 10,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 8,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 307595368
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 12,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 10,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 7,
+                        "InterpolationCurve": 0,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 11,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2339769225
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 15,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 13,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 15,
+                        "InterpolationCurve": 0,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 14,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1895023948
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 18,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 16,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 13,
+                        "InterpolationCurve": 0,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 17,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 3185449371
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 21,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 19,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 20,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 20,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 776151190
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 24,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 22,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 18,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 23,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 3618580358
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 27,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 25,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 30,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 26,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2214955534
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 30,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 28,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 40,
+                        "InterpolationCurve": 2,
+                        "InterpolationMode": 2
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 29,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 3116597500
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 33,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 31,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 15,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 32,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2355018870
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 36,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 34,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 30,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 35,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 223104098
+                      }
+                    }
+                  }
+                }
+              ],
+              "_ActionNameHash": {
+                "Index": 37,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 4170644924
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 38,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 12,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 45,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [
+                {
+                  "Index": 42,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 40,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 15,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 41,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1842661656
+                      }
+                    }
+                  }
+                }
+              ],
+              "_ActionNameHash": {
+                "Index": 43,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2959876627
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 44,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 0,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 48,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 46,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 307595368
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 47,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 10,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 0,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 51,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 49,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3905855045
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 50,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 5,
+                  "InterpolationCurve": 0,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 60,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [
+                {
+                  "Index": 54,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 52,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 10,
+                        "InterpolationFrame": 10,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 53,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 145683637
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 57,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 55,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 12,
+                        "InterpolationCurve": 1,
+                        "InterpolationMode": 1
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 56,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 4170644924
+                      }
+                    }
+                  }
+                }
+              ],
+              "_ActionNameHash": {
+                "Index": 58,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2339769225
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 59,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 5,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 63,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 61,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 4121300964
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 62,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 66,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 64,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3200122998
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 65,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 7,
+                  "InterpolationCurve": 3,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 69,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 67,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1320427192
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 68,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 3,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 72,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 70,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2860872671
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 71,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 3,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 75,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 73,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1513438667
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 74,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 78,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 76,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 999165571
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 77,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 81,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 79,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3563499366
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 80,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 84,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 82,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 776151190
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 83,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 15,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 87,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 85,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3152234403
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 86,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 90,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 88,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3377168650
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 89,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 93,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 91,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1895023948
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 92,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 96,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 94,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1842661656
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 95,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 20,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 99,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 97,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1432221759
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 98,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 20,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 102,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 100,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3732839807
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 101,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 20,
+                  "InterpolationFrame": 20,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 105,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 103,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3185449371
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 104,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 8,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 108,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 106,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2880481415
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 107,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 8,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 111,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 109,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3076749320
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 110,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 114,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 112,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1998813994
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 113,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 15,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 117,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 115,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2821997428
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 116,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 15,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 120,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 118,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2214955534
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 119,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 5,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 123,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 121,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 386795330
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 122,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 3,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 126,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 124,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3287496405
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 125,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 129,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 127,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2286606079
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 128,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 132,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [],
+              "_ActionNameHash": {
+                "Index": 130,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3881641710
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 131,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 10,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 138,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+            "Userdata": null,
+            "Fields": {
+              "_ActionTransitionList": [
+                {
+                  "Index": 135,
+                  "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+                  "Userdata": null,
+                  "Fields": {
+                    "_TransitionInfo": {
+                      "Index": 133,
+                      "Class": "via.motion.SetMotionTransitionInfo",
+                      "Userdata": null,
+                      "Fields": {
+                        "StartTime": 0,
+                        "InterpolationFrame": 10,
+                        "InterpolationCurve": 3,
+                        "InterpolationMode": 2
+                      }
+                    },
+                    "_ActionNameHash": {
+                      "Index": 134,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 4170644924
+                      }
+                    }
+                  }
+                }
+              ],
+              "_ActionNameHash": {
+                "Index": 136,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3116597500
+                }
+              },
+              "_TransitionInfo": {
+                "Index": 137,
+                "Class": "via.motion.SetMotionTransitionInfo",
+                "Userdata": null,
+                "Fields": {
+                  "StartTime": 0,
+                  "InterpolationFrame": 20,
+                  "InterpolationCurve": 1,
+                  "InterpolationMode": 1
+                }
+              }
+            }
+          }
+        ],
+        "_IsFirstCheckNext": true
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.ActionTableUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonActionTable.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.ActionTableUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerUpperActionTable.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.ActionTableUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A0/cp_A000/UserData/cp_A000ActionTable.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3905855045
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 4,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 307595368
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 7,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 8,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 7,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2339769225
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 10,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 11,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 15,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1895023948
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 13,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 14,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 13,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3185449371
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 16,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 17,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 20,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 776151190
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 19,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 20,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 18,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3618580358
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 22,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 23,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 30,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2214955534
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 25,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 26,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 40,
+        "InterpolationCurve": 2,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3116597500
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 28,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 29,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 15,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2355018870
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 31,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 32,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 30,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 223104098
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 34,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 35,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4170644924
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 12,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [
+          {
+            "Ref": 6,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 36,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          }
+        ],
+        "_ActionNameHash": {
+          "Ref": 37,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 38,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 15,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1842661656
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 40,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 41,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2959876627
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 0,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [
+          {
+            "Ref": 42,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          }
+        ],
+        "_ActionNameHash": {
+          "Ref": 43,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 44,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 307595368
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 10,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 46,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 47,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3905855045
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 5,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 49,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 50,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 10,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 145683637
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 52,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 53,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 12,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4170644924
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 55,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 56,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2339769225
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 5,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [
+          {
+            "Ref": 54,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          },
+          {
+            "Ref": 57,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          }
+        ],
+        "_ActionNameHash": {
+          "Ref": 58,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 59,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4121300964
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 61,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 62,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3200122998
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 7,
+        "InterpolationCurve": 3,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 64,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 65,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1320427192
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 3,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 67,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 68,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2860872671
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 3,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 70,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 71,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1513438667
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 73,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 74,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 999165571
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 76,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 77,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3563499366
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 79,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 80,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 776151190
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 15,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 82,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 83,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3152234403
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 85,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 86,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3377168650
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 88,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 89,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1895023948
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 91,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 92,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1842661656
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 20,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 94,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 95,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1432221759
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 20,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 97,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 98,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3732839807
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 20,
+        "InterpolationFrame": 20,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 100,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 101,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3185449371
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 8,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 103,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 104,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2880481415
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 8,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 106,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 107,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3076749320
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 109,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 110,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1998813994
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 15,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 112,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 113,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2821997428
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 15,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 115,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 116,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2214955534
+      }
+    },
+    {
+      "Index": 119,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 5,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 118,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 119,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 386795330
+      }
+    },
+    {
+      "Index": 122,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 3,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 121,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 122,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3287496405
+      }
+    },
+    {
+      "Index": 125,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 124,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 125,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2286606079
+      }
+    },
+    {
+      "Index": 128,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 127,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 128,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3881641710
+      }
+    },
+    {
+      "Index": 131,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [],
+        "_ActionNameHash": {
+          "Ref": 130,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 131,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 133,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 3,
+        "InterpolationMode": 2
+      }
+    },
+    {
+      "Index": 134,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4170644924
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransition",
+      "Userdata": null,
+      "Fields": {
+        "_TransitionInfo": {
+          "Ref": 133,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_ActionNameHash": {
+          "Ref": 134,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3116597500
+      }
+    },
+    {
+      "Index": 137,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 20,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 138,
+      "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTransitionList": [
+          {
+            "Ref": 135,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransition"
+          }
+        ],
+        "_ActionNameHash": {
+          "Ref": 136,
+          "Class": "app.NameHash"
+        },
+        "_TransitionInfo": {
+          "Ref": 137,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        }
+      }
+    },
+    {
+      "Index": 139,
+      "Class": "app.ActionTransitionSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTableList": [
+          {
+            "Ref": 1,
+            "Class": "app.ActionTableUserData"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.ActionTableUserData"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.ActionTableUserData"
+          }
+        ],
+        "PrevActionTransitionSetList": [],
+        "NextActionTransitionSetList": [
+          {
+            "Ref": 39,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 45,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 48,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 51,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 60,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 63,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 66,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 69,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 72,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 75,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 78,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 81,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 84,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 87,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 90,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 93,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 96,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 99,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 102,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 105,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 108,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 111,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 114,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 117,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 120,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 123,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 126,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 129,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 132,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          },
+          {
+            "Ref": 138,
+            "Class": "app.ActionTransitionSettingUserData.ActionTransitionSet"
+          }
+        ],
+        "_IsFirstCheckNext": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/animdelayhand/leftarm/datatable/playeranimdelayhanddata_datatable_lightandaxe_l.user.3",
+  "Objects": [
+    {
+      "Index": 9,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Index": 7,
+          "Class": "app.PlayerComplexCondition",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_ConditionType": 0,
+            "_ConditionUnits": [
+              {
+                "Index": 3,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 1,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "LightEquipment"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 2,
+                    "Class": "app.PlayerComplexConditionParam_LightEquipment",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_LightType": 0,
+                      "_IsCheckLightState": false,
+                      "_LightStates": [],
+                      "_IsCheckPrevState": false,
+                      "_PrevLightStates": []
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 6,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 4,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "WeaponEquipment"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 5,
+                    "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_WeaponCategories": [
+                        5
+                      ],
+                      "_WeaponIDs": [],
+                      "_AttachmentUnits": []
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_Additional": [],
+        "_Collection": {
+          "Index": 8,
+          "Class": "app.AnimDelayHandData_DataCollection",
+          "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/LeftArm/DataTable/Light/PlayerAnimDelayHandDataCollection_Light_L.user",
+          "Fields": {}
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "LightEquipment"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerComplexConditionParam_LightEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_LightType": 0,
+        "_IsCheckLightState": false,
+        "_LightStates": [],
+        "_IsCheckPrevState": false,
+        "_PrevLightStates": []
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 2,
+          "Class": "app.PlayerComplexConditionParam_LightEquipment"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          5
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 4,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 5,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 3,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/LeftArm/DataTable/Light/PlayerAnimDelayHandDataCollection_Light_L.user",
+      "Fields": {}
+    },
+    {
+      "Index": 9,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Ref": 7,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Additional": [],
+        "_Collection": {
+          "Ref": 8,
+          "Class": "app.AnimDelayHandData_DataCollection"
+        }
+      }
+    }
+  ]
+}

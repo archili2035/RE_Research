@@ -1,0 +1,4707 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000characontrolshapeparam.user.3",
+  "Objects": [
+    {
+      "Index": 175,
+      "Class": "app.CharacterControllerShapeUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": [
+          {
+            "Index": 8,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1699390205
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.1,
+              "_IsSettingRadius": false,
+              "_Radius": 0.4,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 2,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3946539076
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 4,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 5,
+                  "_Curve": {
+                    "Index": 3,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 7,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 5,
+                    "_Curve": {
+                      "Index": 5,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 6,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1106175613
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 13,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 9,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3208231786
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 0.5,
+              "_IsSettingRadius": true,
+              "_Radius": 0.2,
+              "_IsSettingOffset": true,
+              "_OffsetPosition": "\u003C0, 0.5, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 10,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 12,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 10,
+                  "_Curve": {
+                    "Index": 11,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": []
+            }
+          },
+          {
+            "Index": 18,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 14,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 453262490
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1,
+              "_IsSettingRadius": true,
+              "_Radius": 0.1,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 15,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 17,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 10,
+                  "_Curve": {
+                    "Index": 16,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": []
+            }
+          },
+          {
+            "Index": 26,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 19,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3025123060
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.1,
+              "_IsSettingRadius": false,
+              "_Radius": 0.4,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 20,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3946539076
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 22,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 5,
+                  "_Curve": {
+                    "Index": 21,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 25,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 5,
+                    "_Curve": {
+                      "Index": 23,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 24,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1106175613
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 34,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 27,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1890601913
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.1,
+              "_IsSettingRadius": true,
+              "_Radius": 0.1,
+              "_IsSettingOffset": true,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 28,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 30,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 20,
+                  "_Curve": {
+                    "Index": 29,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 33,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 1,
+                    "_Curve": {
+                      "Index": 31,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 32,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1106175613
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 39,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 35,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 391171961
+                }
+              },
+              "_IsSettingHeight": false,
+              "_Height": 0.4,
+              "_IsSettingRadius": true,
+              "_Radius": 0.2,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 36,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 38,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 20,
+                  "_Curve": {
+                    "Index": 37,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": []
+            }
+          },
+          {
+            "Index": 56,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 40,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1106175613
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.8,
+              "_IsSettingRadius": true,
+              "_Radius": 0.4,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 41,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3946539076
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 43,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 20,
+                  "_Curve": {
+                    "Index": 42,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 46,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 44,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 45,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 49,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 47,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 48,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1890601913
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 52,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 50,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 51,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 847302998
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 55,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 5,
+                    "_Curve": {
+                      "Index": 53,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 54,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1699390205
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 67,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 57,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1783475296
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.8,
+              "_IsSettingRadius": true,
+              "_Radius": 0.2,
+              "_IsSettingOffset": true,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 58,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 60,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 20,
+                  "_Curve": {
+                    "Index": 59,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [],
+                      "MinValue": 10,
+                      "MaxValue": -10,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 100,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 63,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 1,
+                    "_Curve": {
+                      "Index": 61,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 62,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 66,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 0.1,
+                    "_Curve": {
+                      "Index": 64,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 65,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1890601913
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 75,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 68,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 847302998
+                }
+              },
+              "_IsSettingHeight": false,
+              "_Height": 1.8,
+              "_IsSettingRadius": false,
+              "_Radius": 0.2,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 69,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3276980779
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 71,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 1,
+                  "_Time": 30,
+                  "_Curve": {
+                    "Index": 70,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 1"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 74,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 72,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 73,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 83,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 76,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 787607639
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.8,
+              "_IsSettingRadius": true,
+              "_Radius": 0.45,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 77,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3946539076
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 79,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 1,
+                  "_Time": 30,
+                  "_Curve": {
+                    "Index": 78,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 1"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 82,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 80,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 81,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 91,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 84,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1385585625
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.8,
+              "_IsSettingRadius": true,
+              "_Radius": 0.4,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 85,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1549972489
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 87,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 1,
+                  "_Time": 30,
+                  "_Curve": {
+                    "Index": 86,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 1"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 90,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 88,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 89,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 99,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 92,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1854607113
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 0.8,
+              "_IsSettingRadius": true,
+              "_Radius": 0.4,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 93,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1549972489
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 95,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 1,
+                  "_Time": 30,
+                  "_Curve": {
+                    "Index": 94,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 1"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 98,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 96,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 97,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 107,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 100,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1131103044
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 0.82,
+              "_IsSettingRadius": true,
+              "_Radius": 0.41,
+              "_IsSettingOffset": true,
+              "_OffsetPosition": "\u003C0.1, 0, 0.16\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 101,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1549972489
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 103,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 1,
+                  "_Time": 30,
+                  "_Curve": {
+                    "Index": 102,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 1"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 106,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 104,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 105,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 124,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 108,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1950563661
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.6,
+              "_IsSettingRadius": false,
+              "_Radius": 0.4,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 109,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3946539076
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 111,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 20,
+                  "_Curve": {
+                    "Index": 110,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 114,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 112,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 113,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 117,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 115,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 116,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1890601913
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 120,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 118,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 119,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 847302998
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 123,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 5,
+                    "_Curve": {
+                      "Index": 121,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 122,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1699390205
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 141,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 125,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2815648052
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 0.2,
+              "_IsSettingRadius": true,
+              "_Radius": 0.1,
+              "_IsSettingOffset": true,
+              "_OffsetPosition": "\u003C0, 1.3, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 126,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3946539076
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 128,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 20,
+                  "_Curve": {
+                    "Index": 127,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 131,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 129,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 130,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 134,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 132,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 133,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1890601913
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 137,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 135,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 136,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 847302998
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 140,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 5,
+                    "_Curve": {
+                      "Index": 138,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 139,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1699390205
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 149,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 142,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 4228876873
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.8,
+              "_IsSettingRadius": true,
+              "_Radius": 0.25,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 143,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1549972489
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 145,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 1,
+                  "_Time": 30,
+                  "_Curve": {
+                    "Index": 144,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 1"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 148,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 146,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 147,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 157,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 150,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2534157153
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.1,
+              "_IsSettingRadius": true,
+              "_Radius": 0.25,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 151,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3946539076
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 153,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 5,
+                  "_Curve": {
+                    "Index": 152,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 156,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 5,
+                    "_Curve": {
+                      "Index": 154,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 155,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1106175613
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 174,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 158,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 714797677
+                }
+              },
+              "_IsSettingHeight": true,
+              "_Height": 1.6,
+              "_IsSettingRadius": true,
+              "_Radius": 0.25,
+              "_IsSettingOffset": false,
+              "_OffsetPosition": "\u003C0, 0, 0\u003E",
+              "_IsSettingJoint": false,
+              "_JointName": {
+                "Index": 159,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3946539076
+                }
+              },
+              "_InterpolationGeneralParam": {
+                "Index": 161,
+                "Class": "app.InterpolationParamBase",
+                "Userdata": null,
+                "Fields": {
+                  "_Type": 0,
+                  "_Time": 20,
+                  "_Curve": {
+                    "Index": 160,
+                    "Class": "via.AnimationCurve",
+                    "Userdata": null,
+                    "Fields": {
+                      "Keys": [
+                        "0: 0",
+                        "1: 0"
+                      ],
+                      "MinValue": -11,
+                      "MaxValue": 11,
+                      "LoopStartTime": 0,
+                      "LoopEndTime": 1,
+                      "LoopCount": 0,
+                      "LoopWrapNo": 2
+                    }
+                  }
+                }
+              },
+              "_Interpolation": [
+                {
+                  "Index": 164,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 162,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 163,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 391171961
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 167,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 165,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 166,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1890601913
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 170,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 20,
+                    "_Curve": {
+                      "Index": 168,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 169,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 847302998
+                      }
+                    }
+                  }
+                },
+                {
+                  "Index": 173,
+                  "Class": "app.InterpolationParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Type": 0,
+                    "_Time": 5,
+                    "_Curve": {
+                      "Index": 171,
+                      "Class": "via.AnimationCurve",
+                      "Userdata": null,
+                      "Fields": {
+                        "Keys": [
+                          "0: 0",
+                          "1: 0"
+                        ],
+                        "MinValue": -11,
+                        "MaxValue": 11,
+                        "LoopStartTime": 0,
+                        "LoopEndTime": 1,
+                        "LoopCount": 0,
+                        "LoopWrapNo": 2
+                      }
+                    },
+                    "_PrevName": {
+                      "Index": 172,
+                      "Class": "app.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1699390205
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1699390205
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3946539076
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 3,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1106175613
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 5,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 6,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.1,
+        "_IsSettingRadius": false,
+        "_Radius": 0.4,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 2,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 4,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 7,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3208231786
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 10,
+        "_Curve": {
+          "Ref": 11,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 9,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 0.5,
+        "_IsSettingRadius": true,
+        "_Radius": 0.2,
+        "_IsSettingOffset": true,
+        "_OffsetPosition": "\u003C0, 0.5, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 10,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 12,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": []
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 453262490
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 10,
+        "_Curve": {
+          "Ref": 16,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 14,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1,
+        "_IsSettingRadius": true,
+        "_Radius": 0.1,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 15,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 17,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": []
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3025123060
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3946539076
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 21,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1106175613
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 23,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 24,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 19,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.1,
+        "_IsSettingRadius": false,
+        "_Radius": 0.4,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 20,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 22,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 25,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1890601913
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 29,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1106175613
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 1,
+        "_Curve": {
+          "Ref": 31,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 32,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 27,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.1,
+        "_IsSettingRadius": true,
+        "_Radius": 0.1,
+        "_IsSettingOffset": true,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 28,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 30,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 33,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 37,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 35,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": false,
+        "_Height": 0.4,
+        "_IsSettingRadius": true,
+        "_Radius": 0.2,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 36,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 38,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": []
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1106175613
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3946539076
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 42,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 44,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 45,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1890601913
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 47,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 48,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 847302998
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 50,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 51,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1699390205
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 53,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 54,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 40,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.8,
+        "_IsSettingRadius": true,
+        "_Radius": 0.4,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 41,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 43,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 46,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 49,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 52,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 55,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1783475296
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [],
+        "MinValue": 10,
+        "MaxValue": -10,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 59,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 1,
+        "_Curve": {
+          "Ref": 61,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 62,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1890601913
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 0.1,
+        "_Curve": {
+          "Ref": 64,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 65,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 57,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.8,
+        "_IsSettingRadius": true,
+        "_Radius": 0.2,
+        "_IsSettingOffset": true,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 58,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 60,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 63,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 66,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 847302998
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3276980779
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Time": 30,
+        "_Curve": {
+          "Ref": 70,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 72,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 73,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 68,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": false,
+        "_Height": 1.8,
+        "_IsSettingRadius": false,
+        "_Radius": 0.2,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 69,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 71,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 74,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 787607639
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3946539076
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Time": 30,
+        "_Curve": {
+          "Ref": 78,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 80,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 81,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 76,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.8,
+        "_IsSettingRadius": true,
+        "_Radius": 0.45,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 77,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 79,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 82,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1385585625
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1549972489
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Time": 30,
+        "_Curve": {
+          "Ref": 86,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 88,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 89,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 84,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.8,
+        "_IsSettingRadius": true,
+        "_Radius": 0.4,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 85,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 87,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 90,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1854607113
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1549972489
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Time": 30,
+        "_Curve": {
+          "Ref": 94,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 96,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 97,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 92,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 0.8,
+        "_IsSettingRadius": true,
+        "_Radius": 0.4,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 93,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 95,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 98,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1131103044
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1549972489
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Time": 30,
+        "_Curve": {
+          "Ref": 102,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 104,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 105,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 100,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 0.82,
+        "_IsSettingRadius": true,
+        "_Radius": 0.41,
+        "_IsSettingOffset": true,
+        "_OffsetPosition": "\u003C0.1, 0, 0.16\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 101,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 103,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 106,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1950563661
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3946539076
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 110,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 112,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 113,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1890601913
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 115,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 116,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 119,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 847302998
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 118,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 119,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 122,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1699390205
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 121,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 122,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 108,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.6,
+        "_IsSettingRadius": false,
+        "_Radius": 0.4,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 109,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 111,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 114,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 117,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 120,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 123,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 125,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2815648052
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3946539076
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 128,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 127,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 131,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 129,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 130,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 133,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1890601913
+      }
+    },
+    {
+      "Index": 134,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 132,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 133,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 847302998
+      }
+    },
+    {
+      "Index": 137,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 135,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 136,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 138,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 139,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1699390205
+      }
+    },
+    {
+      "Index": 140,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 138,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 139,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 141,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 125,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 0.2,
+        "_IsSettingRadius": true,
+        "_Radius": 0.1,
+        "_IsSettingOffset": true,
+        "_OffsetPosition": "\u003C0, 1.3, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 126,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 128,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 131,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 134,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 137,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 140,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 142,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4228876873
+      }
+    },
+    {
+      "Index": 143,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1549972489
+      }
+    },
+    {
+      "Index": 144,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 145,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Time": 30,
+        "_Curve": {
+          "Ref": 144,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 146,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 147,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 148,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 146,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 147,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 149,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 142,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.8,
+        "_IsSettingRadius": true,
+        "_Radius": 0.25,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 143,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 145,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 148,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 150,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2534157153
+      }
+    },
+    {
+      "Index": 151,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3946539076
+      }
+    },
+    {
+      "Index": 152,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 153,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 152,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 154,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 155,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1106175613
+      }
+    },
+    {
+      "Index": 156,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 154,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 155,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 157,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 150,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.1,
+        "_IsSettingRadius": true,
+        "_Radius": 0.25,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 151,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 153,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 156,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 158,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 714797677
+      }
+    },
+    {
+      "Index": 159,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3946539076
+      }
+    },
+    {
+      "Index": 160,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 161,
+      "Class": "app.InterpolationParamBase",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 160,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 162,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 163,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 391171961
+      }
+    },
+    {
+      "Index": 164,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 162,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 163,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 165,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 166,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1890601913
+      }
+    },
+    {
+      "Index": 167,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 165,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 166,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 168,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 169,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 847302998
+      }
+    },
+    {
+      "Index": 170,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 20,
+        "_Curve": {
+          "Ref": 168,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 169,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 171,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": -11,
+        "MaxValue": 11,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 172,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1699390205
+      }
+    },
+    {
+      "Index": 173,
+      "Class": "app.InterpolationParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Time": 5,
+        "_Curve": {
+          "Ref": 171,
+          "Class": "via.AnimationCurve"
+        },
+        "_PrevName": {
+          "Ref": 172,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 174,
+      "Class": "app.CharacterControllerShapeUserData.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 158,
+          "Class": "app.NameHash"
+        },
+        "_IsSettingHeight": true,
+        "_Height": 1.6,
+        "_IsSettingRadius": true,
+        "_Radius": 0.25,
+        "_IsSettingOffset": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E",
+        "_IsSettingJoint": false,
+        "_JointName": {
+          "Ref": 159,
+          "Class": "app.NameHash"
+        },
+        "_InterpolationGeneralParam": {
+          "Ref": 161,
+          "Class": "app.InterpolationParamBase"
+        },
+        "_Interpolation": [
+          {
+            "Ref": 164,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 167,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 170,
+            "Class": "app.InterpolationParam"
+          },
+          {
+            "Ref": 173,
+            "Class": "app.InterpolationParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 175,
+      "Class": "app.CharacterControllerShapeUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": [
+          {
+            "Ref": 8,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 26,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 34,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 39,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 56,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 67,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 75,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 83,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 91,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 99,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 107,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 124,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 141,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 149,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 157,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          },
+          {
+            "Ref": 174,
+            "Class": "app.CharacterControllerShapeUserData.SettingParam"
+          }
+        ]
+      }
+    }
+  ]
+}

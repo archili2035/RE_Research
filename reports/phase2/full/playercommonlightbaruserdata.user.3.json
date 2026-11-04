@@ -1,0 +1,503 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playercommonlightbaruserdata.user.3",
+  "Objects": [
+    {
+      "Index": 21,
+      "Class": "app.PlayerLightBarUserData",
+      "Userdata": null,
+      "Fields": {
+        "_FineSetings": [
+          {
+            "Index": 5,
+            "Class": "app.PlayerLightBarSetting",
+            "Userdata": null,
+            "Fields": {
+              "_Mode": {
+                "Index": 1,
+                "Class": "app.LightBarFeedbackMode",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Steady"
+                }
+              },
+              "_SteadyAnimator": {
+                "Index": 2,
+                "Class": "app.DeviceFeedbackColorAnimator_Steady",
+                "Userdata": null,
+                "Fields": {
+                  "_Color": "FF00FF00"
+                }
+              },
+              "_CyclePulseAnimator": {
+                "Index": 3,
+                "Class": "app.DeviceFeedbackColorAnimator_CyclePulse",
+                "Userdata": null,
+                "Fields": {
+                  "_BaseColor": "FFFFFFFF",
+                  "_Duration": 3
+                }
+              },
+              "_DetailedCyclePulseAnimator": {
+                "Index": 4,
+                "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse",
+                "Userdata": null,
+                "Fields": {
+                  "_BaseColor": "00000000",
+                  "_MaxBrightness": 1,
+                  "_MinBrightness": 0,
+                  "_MaxBrightnessTimeSec": 1,
+                  "_MinBrightnessTimeSec": 1,
+                  "_ToMaxBrightnessTimeSec": 1,
+                  "_ToMinBrightnessTimeSec": 1
+                }
+              },
+              "STRUCT__EnableTimeSec__HasValue": false,
+              "STRUCT__EnableTimeSec__Value": 0
+            }
+          }
+        ],
+        "_CautionSetings": [
+          {
+            "Index": 10,
+            "Class": "app.PlayerLightBarSetting",
+            "Userdata": null,
+            "Fields": {
+              "_Mode": {
+                "Index": 6,
+                "Class": "app.LightBarFeedbackMode",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Steady"
+                }
+              },
+              "_SteadyAnimator": {
+                "Index": 7,
+                "Class": "app.DeviceFeedbackColorAnimator_Steady",
+                "Userdata": null,
+                "Fields": {
+                  "_Color": "FF00CCFF"
+                }
+              },
+              "_CyclePulseAnimator": {
+                "Index": 8,
+                "Class": "app.DeviceFeedbackColorAnimator_CyclePulse",
+                "Userdata": null,
+                "Fields": {
+                  "_BaseColor": "FFFFFFFF",
+                  "_Duration": 3
+                }
+              },
+              "_DetailedCyclePulseAnimator": {
+                "Index": 9,
+                "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse",
+                "Userdata": null,
+                "Fields": {
+                  "_BaseColor": "00000000",
+                  "_MaxBrightness": 1,
+                  "_MinBrightness": 0,
+                  "_MaxBrightnessTimeSec": 1,
+                  "_MinBrightnessTimeSec": 1,
+                  "_ToMaxBrightnessTimeSec": 1,
+                  "_ToMinBrightnessTimeSec": 1
+                }
+              },
+              "STRUCT__EnableTimeSec__HasValue": false,
+              "STRUCT__EnableTimeSec__Value": 0
+            }
+          }
+        ],
+        "_DangerSetings": [
+          {
+            "Index": 15,
+            "Class": "app.PlayerLightBarSetting",
+            "Userdata": null,
+            "Fields": {
+              "_Mode": {
+                "Index": 11,
+                "Class": "app.LightBarFeedbackMode",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "Steady"
+                }
+              },
+              "_SteadyAnimator": {
+                "Index": 12,
+                "Class": "app.DeviceFeedbackColorAnimator_Steady",
+                "Userdata": null,
+                "Fields": {
+                  "_Color": "FFFFFFFF"
+                }
+              },
+              "_CyclePulseAnimator": {
+                "Index": 13,
+                "Class": "app.DeviceFeedbackColorAnimator_CyclePulse",
+                "Userdata": null,
+                "Fields": {
+                  "_BaseColor": "FFFFFFFF",
+                  "_Duration": 3
+                }
+              },
+              "_DetailedCyclePulseAnimator": {
+                "Index": 14,
+                "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse",
+                "Userdata": null,
+                "Fields": {
+                  "_BaseColor": "00000000",
+                  "_MaxBrightness": 1,
+                  "_MinBrightness": 0,
+                  "_MaxBrightnessTimeSec": 1,
+                  "_MinBrightnessTimeSec": 1,
+                  "_ToMaxBrightnessTimeSec": 1,
+                  "_ToMinBrightnessTimeSec": 1
+                }
+              },
+              "STRUCT__EnableTimeSec__HasValue": true,
+              "STRUCT__EnableTimeSec__Value": 0.5
+            }
+          },
+          {
+            "Index": 20,
+            "Class": "app.PlayerLightBarSetting",
+            "Userdata": null,
+            "Fields": {
+              "_Mode": {
+                "Index": 16,
+                "Class": "app.LightBarFeedbackMode",
+                "Userdata": null,
+                "Fields": {
+                  "_Name": "DetailedCyclePulse"
+                }
+              },
+              "_SteadyAnimator": {
+                "Index": 17,
+                "Class": "app.DeviceFeedbackColorAnimator_Steady",
+                "Userdata": null,
+                "Fields": {
+                  "_Color": "FF000000"
+                }
+              },
+              "_CyclePulseAnimator": {
+                "Index": 18,
+                "Class": "app.DeviceFeedbackColorAnimator_CyclePulse",
+                "Userdata": null,
+                "Fields": {
+                  "_BaseColor": "FFFFFFFF",
+                  "_Duration": 3
+                }
+              },
+              "_DetailedCyclePulseAnimator": {
+                "Index": 19,
+                "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse",
+                "Userdata": null,
+                "Fields": {
+                  "_BaseColor": "FF0000FF",
+                  "_MaxBrightness": 1,
+                  "_MinBrightness": 0,
+                  "_MaxBrightnessTimeSec": 2,
+                  "_MinBrightnessTimeSec": 0.5,
+                  "_ToMaxBrightnessTimeSec": 1,
+                  "_ToMinBrightnessTimeSec": 1
+                }
+              },
+              "STRUCT__EnableTimeSec__HasValue": false,
+              "STRUCT__EnableTimeSec__Value": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.LightBarFeedbackMode",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Steady"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.DeviceFeedbackColorAnimator_Steady",
+      "Userdata": null,
+      "Fields": {
+        "_Color": "FF00FF00"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.DeviceFeedbackColorAnimator_CyclePulse",
+      "Userdata": null,
+      "Fields": {
+        "_BaseColor": "FFFFFFFF",
+        "_Duration": 3
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse",
+      "Userdata": null,
+      "Fields": {
+        "_BaseColor": "00000000",
+        "_MaxBrightness": 1,
+        "_MinBrightness": 0,
+        "_MaxBrightnessTimeSec": 1,
+        "_MinBrightnessTimeSec": 1,
+        "_ToMaxBrightnessTimeSec": 1,
+        "_ToMinBrightnessTimeSec": 1
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerLightBarSetting",
+      "Userdata": null,
+      "Fields": {
+        "_Mode": {
+          "Ref": 1,
+          "Class": "app.LightBarFeedbackMode"
+        },
+        "_SteadyAnimator": {
+          "Ref": 2,
+          "Class": "app.DeviceFeedbackColorAnimator_Steady"
+        },
+        "_CyclePulseAnimator": {
+          "Ref": 3,
+          "Class": "app.DeviceFeedbackColorAnimator_CyclePulse"
+        },
+        "_DetailedCyclePulseAnimator": {
+          "Ref": 4,
+          "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse"
+        },
+        "STRUCT__EnableTimeSec__HasValue": false,
+        "STRUCT__EnableTimeSec__Value": 0
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.LightBarFeedbackMode",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Steady"
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.DeviceFeedbackColorAnimator_Steady",
+      "Userdata": null,
+      "Fields": {
+        "_Color": "FF00CCFF"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.DeviceFeedbackColorAnimator_CyclePulse",
+      "Userdata": null,
+      "Fields": {
+        "_BaseColor": "FFFFFFFF",
+        "_Duration": 3
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse",
+      "Userdata": null,
+      "Fields": {
+        "_BaseColor": "00000000",
+        "_MaxBrightness": 1,
+        "_MinBrightness": 0,
+        "_MaxBrightnessTimeSec": 1,
+        "_MinBrightnessTimeSec": 1,
+        "_ToMaxBrightnessTimeSec": 1,
+        "_ToMinBrightnessTimeSec": 1
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerLightBarSetting",
+      "Userdata": null,
+      "Fields": {
+        "_Mode": {
+          "Ref": 6,
+          "Class": "app.LightBarFeedbackMode"
+        },
+        "_SteadyAnimator": {
+          "Ref": 7,
+          "Class": "app.DeviceFeedbackColorAnimator_Steady"
+        },
+        "_CyclePulseAnimator": {
+          "Ref": 8,
+          "Class": "app.DeviceFeedbackColorAnimator_CyclePulse"
+        },
+        "_DetailedCyclePulseAnimator": {
+          "Ref": 9,
+          "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse"
+        },
+        "STRUCT__EnableTimeSec__HasValue": false,
+        "STRUCT__EnableTimeSec__Value": 0
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.LightBarFeedbackMode",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Steady"
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.DeviceFeedbackColorAnimator_Steady",
+      "Userdata": null,
+      "Fields": {
+        "_Color": "FFFFFFFF"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.DeviceFeedbackColorAnimator_CyclePulse",
+      "Userdata": null,
+      "Fields": {
+        "_BaseColor": "FFFFFFFF",
+        "_Duration": 3
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse",
+      "Userdata": null,
+      "Fields": {
+        "_BaseColor": "00000000",
+        "_MaxBrightness": 1,
+        "_MinBrightness": 0,
+        "_MaxBrightnessTimeSec": 1,
+        "_MinBrightnessTimeSec": 1,
+        "_ToMaxBrightnessTimeSec": 1,
+        "_ToMinBrightnessTimeSec": 1
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerLightBarSetting",
+      "Userdata": null,
+      "Fields": {
+        "_Mode": {
+          "Ref": 11,
+          "Class": "app.LightBarFeedbackMode"
+        },
+        "_SteadyAnimator": {
+          "Ref": 12,
+          "Class": "app.DeviceFeedbackColorAnimator_Steady"
+        },
+        "_CyclePulseAnimator": {
+          "Ref": 13,
+          "Class": "app.DeviceFeedbackColorAnimator_CyclePulse"
+        },
+        "_DetailedCyclePulseAnimator": {
+          "Ref": 14,
+          "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse"
+        },
+        "STRUCT__EnableTimeSec__HasValue": true,
+        "STRUCT__EnableTimeSec__Value": 0.5
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.LightBarFeedbackMode",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "DetailedCyclePulse"
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.DeviceFeedbackColorAnimator_Steady",
+      "Userdata": null,
+      "Fields": {
+        "_Color": "FF000000"
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.DeviceFeedbackColorAnimator_CyclePulse",
+      "Userdata": null,
+      "Fields": {
+        "_BaseColor": "FFFFFFFF",
+        "_Duration": 3
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse",
+      "Userdata": null,
+      "Fields": {
+        "_BaseColor": "FF0000FF",
+        "_MaxBrightness": 1,
+        "_MinBrightness": 0,
+        "_MaxBrightnessTimeSec": 2,
+        "_MinBrightnessTimeSec": 0.5,
+        "_ToMaxBrightnessTimeSec": 1,
+        "_ToMinBrightnessTimeSec": 1
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerLightBarSetting",
+      "Userdata": null,
+      "Fields": {
+        "_Mode": {
+          "Ref": 16,
+          "Class": "app.LightBarFeedbackMode"
+        },
+        "_SteadyAnimator": {
+          "Ref": 17,
+          "Class": "app.DeviceFeedbackColorAnimator_Steady"
+        },
+        "_CyclePulseAnimator": {
+          "Ref": 18,
+          "Class": "app.DeviceFeedbackColorAnimator_CyclePulse"
+        },
+        "_DetailedCyclePulseAnimator": {
+          "Ref": 19,
+          "Class": "app.DeviceFeedbackColorAnimator_DetailedCyclePulse"
+        },
+        "STRUCT__EnableTimeSec__HasValue": false,
+        "STRUCT__EnableTimeSec__Value": 0
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerLightBarUserData",
+      "Userdata": null,
+      "Fields": {
+        "_FineSetings": [
+          {
+            "Ref": 5,
+            "Class": "app.PlayerLightBarSetting"
+          }
+        ],
+        "_CautionSetings": [
+          {
+            "Ref": 10,
+            "Class": "app.PlayerLightBarSetting"
+          }
+        ],
+        "_DangerSetings": [
+          {
+            "Ref": 15,
+            "Class": "app.PlayerLightBarSetting"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.PlayerLightBarSetting"
+          }
+        ]
+      }
+    }
+  ]
+}

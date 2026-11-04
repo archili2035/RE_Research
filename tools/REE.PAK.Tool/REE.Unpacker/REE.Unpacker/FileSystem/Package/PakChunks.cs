@@ -1,0 +1,101 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace REE.Unpacker
+{
+    class PakChunkHeader
+    {
+        public Int32 dwMaxBlockSize { get; set; }
+        public Int32 dwChunksCount { get; set; }
+    }
+
+    class PakChunkEntry
+    {
+        public Int64 dwChunkOffset { get; set; }
+        public Int64 dwChunkSize { get; set; }
+        public UInt64 dwHash { get; set; } // Added in latest patch DD2
+    }
+
+    class PakChunks
+    {
+        public static List<PakChunkEntry> lpMapTable = new List<PakChunkEntry>();
+
+        public static void iReadMapTable(Stream TPakStream, Int32 dwEntrySize)
+        {
+            var m_ChunkHeader = new PakChunkHeader();
+
+            if (dwEntrySize == 8)
+            {
+                m_ChunkHeader.dwMaxBlockSize = TPakStream.ReadInt32();
+                m_ChunkHeader.dwChunksCount = TPakStream.ReadInt32();
+            }
+            else if (dwEntrySize == 16)
+            {
+                m_ChunkHeader.dwChunksCount = TPakStream.ReadInt32();
+                m_ChunkHeader.dwMaxBlockSize = TPakStream.ReadInt32();
+            }
+
+            var dwOffsets = new UInt32[m_ChunkHeader.dwChunksCount];
+            var dwSizes = new UInt32[m_ChunkHeader.dwChunksCount];
+            var dwHashes = new UInt64[m_ChunkHeader.dwChunksCount];
+
+            for (int i = 0; i < m_ChunkHeader.dwChunksCount; i++)
+            {
+                dwOffsets[i] = TPakStream.ReadUInt32();
+                dwSizes[i] = TPakStream.ReadUInt32();
+
+                if (dwEntrySize == 16)
+                {
+                    dwHashes[i] = TPakStream.ReadUInt64();
+                }
+            }
+
+            lpMapTable.Clear();
+            for (Int32 i = 0; i < m_ChunkHeader.dwChunksCount; i++)
+            {
+                lpMapTable.Add(new PakChunkEntry
+                {
+                    dwChunkOffset = dwOffsets[i] + (((Int64)dwSizes[i] & 0x3FF) << 32),
+                    dwChunkSize = (Int64)dwSizes[i] >> 10
+                });
+            }
+        }
+
+        public static Byte[] iUnwrapChunks(FileStream TPakStream, PakEntry m_Entry)
+        {
+            const Int32 dwMaxChunkSize = 524288;
+            Int64 dwRemainSize = m_Entry.dwCompressedSize;
+            Int32 dwChunkId = (Int32)m_Entry.dwOffset;
+
+            using (var TMemoryStream = new MemoryStream())
+            {
+                while (dwRemainSize > 0)
+                {
+                    Int64 dwChunkOffset = (Int64)lpMapTable[dwChunkId].dwChunkOffset;
+                    Int32 dwChunkSize = (Int32)lpMapTable[dwChunkId].dwChunkSize;
+
+                    TPakStream.Seek(dwChunkOffset, SeekOrigin.Begin);
+                    var lpSrcBuffer = TPakStream.ReadBytes(dwChunkSize);
+
+                    if (dwChunkSize == dwMaxChunkSize)
+                    {
+                        TMemoryStream.Write(lpSrcBuffer, 0, lpSrcBuffer.Length);
+                    }
+                    else
+                    {
+                        var lpDstBuffer = ZSTD.iDecompress(lpSrcBuffer);
+                        TMemoryStream.Write(lpDstBuffer, 0, lpDstBuffer.Length);
+                    }
+
+                    dwChunkId++;
+                    dwRemainSize -= dwChunkSize;
+                }
+
+                TMemoryStream.SetLength((Int32)m_Entry.dwDecompressedSize);
+
+                return TMemoryStream.ToArray();
+            }
+        }
+    }
+}

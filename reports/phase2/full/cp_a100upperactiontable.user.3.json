@@ -1,0 +1,139 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100upperactiontable.user.3",
+  "Objects": [
+    {
+      "Index": 4,
+      "Class": "app.ActionTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Actions": [
+          {
+            "Index": 1,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bag.Loop",
+              "_ActionHash": 4078264421,
+              "_ActionCategory": 0,
+              "_Priority": 8990,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 2,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "DisposePoisonPump",
+              "_ActionHash": 1008208283,
+              "_ActionCategory": 0,
+              "_Priority": 2000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          }
+        ],
+        "_PriorityDefinitions": [],
+        "_AddtionalActions": [
+          {
+            "Index": 3,
+            "Class": "app.ActionTableUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerUpperActionTable.user",
+            "Fields": {}
+          }
+        ],
+        "_ActionSubTables": [],
+        "_TagEnumType": "app.PlayerDefine.ActionFlag",
+        "_AdditionalTags": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bag.Loop",
+        "_ActionHash": 4078264421,
+        "_ActionCategory": 0,
+        "_Priority": 8990,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "DisposePoisonPump",
+        "_ActionHash": 1008208283,
+        "_ActionCategory": 0,
+        "_Priority": 2000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.ActionTableUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerUpperActionTable.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "app.ActionTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Actions": [
+          {
+            "Ref": 1,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.ActionData"
+          }
+        ],
+        "_PriorityDefinitions": [],
+        "_AddtionalActions": [
+          {
+            "Ref": 3,
+            "Class": "app.ActionTableUserData"
+          }
+        ],
+        "_ActionSubTables": [],
+        "_TagEnumType": "app.PlayerDefine.ActionFlag",
+        "_AdditionalTags": []
+      }
+    }
+  ]
+}

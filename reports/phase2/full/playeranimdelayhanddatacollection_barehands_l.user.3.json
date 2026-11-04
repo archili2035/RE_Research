@@ -1,0 +1,145 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/animdelayhand/leftarm/datatable/barehands/playeranimdelayhanddatacollection_barehands_l.user.3",
+  "Objects": [
+    {
+      "Index": 7,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": null,
+      "Fields": {
+        "_Data": [
+          {
+            "Index": 6,
+            "Class": "app.AnimDelayHand_AdjustmentData",
+            "Userdata": null,
+            "Fields": {
+              "_DelayHandCondition": {
+                "Index": 4,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 1,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 3,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 1,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 2,
+                          "Class": "app.PlayerComplexConditionParam_Always"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_Priority": 1000,
+              "_TransitionKeepTimeSec": 0,
+              "_DelayHandUnitUserData": {
+                "Index": 5,
+                "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/PlayerAnimDelayHand_AdjustmentUnit_NoAdjustment.user",
+                "Fields": {}
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Always"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerComplexConditionParam_Always",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 2,
+          "Class": "app.PlayerComplexConditionParam_Always"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 3,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/PlayerAnimDelayHand_AdjustmentUnit_NoAdjustment.user",
+      "Fields": {}
+    },
+    {
+      "Index": 6,
+      "Class": "app.AnimDelayHand_AdjustmentData",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Ref": 4,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Priority": 1000,
+        "_TransitionKeepTimeSec": 0,
+        "_DelayHandUnitUserData": {
+          "Ref": 5,
+          "Class": "app.AnimDelayHand_AdjustmentUnitUserData"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": null,
+      "Fields": {
+        "_Data": [
+          {
+            "Ref": 6,
+            "Class": "app.AnimDelayHand_AdjustmentData"
+          }
+        ]
+      }
+    }
+  ]
+}

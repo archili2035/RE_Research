@@ -1,0 +1,67 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a110montagepresetdata.user.3",
+  "Objects": [
+    {
+      "Index": 3,
+      "Class": "app.CharacterMontagePresetCatalogUserData",
+      "Userdata": null,
+      "Fields": {
+        "_CharacterKind": "cp_A110",
+        "_Presets": [
+          {
+            "Index": 2,
+            "Class": "app.CharacterMontagePresetCatalogUserData.Entry",
+            "Userdata": null,
+            "Fields": {
+              "_Preset": {
+                "Index": 1,
+                "Class": "app.MontageData",
+                "Userdata": "Character/ch/ch02/0200/ch0200_MontageData_9.user",
+                "Fields": {}
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.MontageData",
+      "Userdata": "Character/ch/ch02/0200/ch0200_MontageData_9.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.CharacterMontagePresetCatalogUserData.Entry",
+      "Userdata": null,
+      "Fields": {
+        "_Preset": {
+          "Ref": 1,
+          "Class": "app.MontageData"
+        }
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.CharacterMontagePresetCatalogUserData",
+      "Userdata": null,
+      "Fields": {
+        "_CharacterKind": "cp_A110",
+        "_Presets": [
+          {
+            "Ref": 2,
+            "Class": "app.CharacterMontagePresetCatalogUserData.Entry"
+          }
+        ]
+      }
+    }
+  ]
+}

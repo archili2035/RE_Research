@@ -1,0 +1,24 @@
+# Local SDKs, package caches and downloaded installers
+/tools/dotnet/
+/tools/dotnet-home/
+/tools/nuget/
+/tools/dotnet-sdk.zip
+/tools/zstd.zip
+/tools/zstd/
+# Build output and local state
+**/[Bb]in/
+**/[Oo]bj/
+**/.vs/
+**/__pycache__/
+*.user
+*.suo
+*.tmp
+*.log
+# Vendored source snapshots: keep code, omit upstream Git metadata
+**/.git
+/tools/ReExtractor/.gitmodules
+# Credentials and machine-local configuration
+.env
+.env.*
+*.pem
+*.key

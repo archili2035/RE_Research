@@ -1,0 +1,39 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/facialconfiguration/cp_a000ondamagefacialanimationconfiguration.user.3",
+  "Objects": [
+    {
+      "Index": 1,
+      "Class": "app.CharacterOnDamageFacialAnimationConfiguration",
+      "Userdata": null,
+      "Fields": {
+        "_OnDamageBankID": 2,
+        "_LightMotionID": 10,
+        "_MiddleMotionID": 20,
+        "_HeavyMotionID": 30,
+        "_OnDeadBankID": 4,
+        "_OnDeadMotionID": 0
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CharacterOnDamageFacialAnimationConfiguration",
+      "Userdata": null,
+      "Fields": {
+        "_OnDamageBankID": 2,
+        "_LightMotionID": 10,
+        "_MiddleMotionID": 20,
+        "_HeavyMotionID": 30,
+        "_OnDeadBankID": 4,
+        "_OnDeadMotionID": 0
+      }
+    }
+  ]
+}

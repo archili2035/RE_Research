@@ -1,0 +1,485 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerflashlight.user.3",
+  "Objects": [
+    {
+      "Index": 15,
+      "Class": "app.FlashLightUserData",
+      "Userdata": null,
+      "Fields": {
+        "_UsePoolObject": true,
+        "_LightPoolID": {
+          "Index": 1,
+          "Class": "app.LightID",
+          "Userdata": null,
+          "Fields": {
+            "_Name": "Light_0000"
+          }
+        },
+        "_ParamList": [
+          {
+            "Index": 3,
+            "Class": "app.FlashLightHeadUnit.ControlParam",
+            "Userdata": null,
+            "Fields": {
+              "_UseLightGroup": 0,
+              "_ConstJointName": "Head_0",
+              "_ConstJointAxis": 3,
+              "_ConstOffsetPos": "\u003C0.2, 0, 0.2\u003E",
+              "_ConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+              "_DampingParam": {
+                "Index": 2,
+                "Class": "app.DampingParam",
+                "Userdata": null,
+                "Fields": {
+                  "_DampingTime": 0.1,
+                  "_DampingRate": 0.8
+                }
+              },
+              "_ShakeTimeRange": "Range(0.5, 1)",
+              "_ShakeIntensity": 0.005,
+              "_ProcCamIntensity": 1,
+              "_ProcCamInterpolateRate": 0.0085,
+              "_ProcCamOffInterpolateRate": 0.02,
+              "_IsRotateLimit": false,
+              "_YawDegRange": "Range(-100, 200)",
+              "_PitchDegRange": "Range(-45, 90)"
+            }
+          },
+          {
+            "Index": 5,
+            "Class": "app.FlashLightHeadUnit.ControlParam",
+            "Userdata": null,
+            "Fields": {
+              "_UseLightGroup": 0,
+              "_ConstJointName": "L_Pec_B",
+              "_ConstJointAxis": 6,
+              "_ConstOffsetPos": "\u003C0, 0, 0\u003E",
+              "_ConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+              "_DampingParam": {
+                "Index": 4,
+                "Class": "app.DampingParam",
+                "Userdata": null,
+                "Fields": {
+                  "_DampingTime": 0.2,
+                  "_DampingRate": 0.8
+                }
+              },
+              "_ShakeTimeRange": "Range(0, 0)",
+              "_ShakeIntensity": 0,
+              "_ProcCamIntensity": 0,
+              "_ProcCamInterpolateRate": 0.03,
+              "_ProcCamOffInterpolateRate": 0.005,
+              "_IsRotateLimit": true,
+              "_YawDegRange": "Range(-100, 200)",
+              "_PitchDegRange": "Range(-80, 160)"
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.FlashLightTwinUnit.ControlParam",
+            "Userdata": null,
+            "Fields": {
+              "_UseLightGroup": 28,
+              "_LightConstJointName": "L_Wep",
+              "_LightConstJointAxis": 3,
+              "_LightConstOffsetPos": "\u003C0, 0, 0.08\u003E",
+              "_LightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+              "_PointLightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+              "_IsConstJointDirForLightAction": true,
+              "_IsConstLightEntity": true,
+              "_DampingParam": {
+                "Index": 6,
+                "Class": "app.DampingParam",
+                "Userdata": null,
+                "Fields": {
+                  "_DampingTime": 0.1,
+                  "_DampingRate": 0.8
+                }
+              },
+              "_ShakeTimeRange": "Range(0.5, 1)",
+              "_ShakeIntensity": 0.005,
+              "_ShakeLightPosData": {
+                "Index": 7,
+                "Class": "app.FlashLightTwinUnit.ShakeLightPositionData",
+                "Userdata": null,
+                "Fields": {
+                  "_Enable": false,
+                  "_ShakePositionArea": "\u003C1, 1, 1\u003E",
+                  "_ShakeTimeRange": "Range(0.5, 1)"
+                }
+              },
+              "_ProcCamIntensity": 1,
+              "_ProcCamInterpolateRate": 0.0085,
+              "_ProcCamOffInterpolateRate": 0.02,
+              "_IsRotateLimit": true,
+              "_YawDegRange": "Range(-50, 100)",
+              "_PitchDegRange": "Range(-80, 160)",
+              "_MeshConstJointName": "L_Wep",
+              "_MeshConstOffsetPos": "\u003C0, 0, 0\u003E"
+            }
+          },
+          {
+            "Index": 11,
+            "Class": "app.FlashLightTwinUnit.ControlParam",
+            "Userdata": null,
+            "Fields": {
+              "_UseLightGroup": 3,
+              "_LightConstJointName": "L_Wep",
+              "_LightConstJointAxis": 3,
+              "_LightConstOffsetPos": "\u003C0, 0.07, 0\u003E",
+              "_LightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+              "_PointLightConstOffsetRot": "{X:0.775924 Y:0.0008013858 Z:-0.021210851 W:0.63046914}",
+              "_IsConstJointDirForLightAction": false,
+              "_IsConstLightEntity": false,
+              "_DampingParam": {
+                "Index": 9,
+                "Class": "app.DampingParam",
+                "Userdata": null,
+                "Fields": {
+                  "_DampingTime": 0.1,
+                  "_DampingRate": 0.8
+                }
+              },
+              "_ShakeTimeRange": "Range(0.5, 1)",
+              "_ShakeIntensity": 0,
+              "_ShakeLightPosData": {
+                "Index": 10,
+                "Class": "app.FlashLightTwinUnit.ShakeLightPositionData",
+                "Userdata": null,
+                "Fields": {
+                  "_Enable": true,
+                  "_ShakePositionArea": "\u003C0.03, 0.01, 0.01\u003E",
+                  "_ShakeTimeRange": "Range(0.08, 0)"
+                }
+              },
+              "_ProcCamIntensity": 1,
+              "_ProcCamInterpolateRate": 0.0085,
+              "_ProcCamOffInterpolateRate": 0.02,
+              "_IsRotateLimit": true,
+              "_YawDegRange": "Range(-50, 100)",
+              "_PitchDegRange": "Range(-80, 160)",
+              "_MeshConstJointName": "L_Wep",
+              "_MeshConstOffsetPos": "\u003C0, 0, 0\u003E"
+            }
+          },
+          {
+            "Index": 14,
+            "Class": "app.FlashLightTwinUnit.ControlParam",
+            "Userdata": null,
+            "Fields": {
+              "_UseLightGroup": 96,
+              "_LightConstJointName": "Hip",
+              "_LightConstJointAxis": 3,
+              "_LightConstOffsetPos": "\u003C0.04, -0.17, 0.1\u003E",
+              "_LightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+              "_PointLightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+              "_IsConstJointDirForLightAction": false,
+              "_IsConstLightEntity": true,
+              "_DampingParam": {
+                "Index": 12,
+                "Class": "app.DampingParam",
+                "Userdata": null,
+                "Fields": {
+                  "_DampingTime": 0.1,
+                  "_DampingRate": 0.8
+                }
+              },
+              "_ShakeTimeRange": "Range(0.5, 1)",
+              "_ShakeIntensity": 0.005,
+              "_ShakeLightPosData": {
+                "Index": 13,
+                "Class": "app.FlashLightTwinUnit.ShakeLightPositionData",
+                "Userdata": null,
+                "Fields": {
+                  "_Enable": false,
+                  "_ShakePositionArea": "\u003C1, 1, 1\u003E",
+                  "_ShakeTimeRange": "Range(0.5, 1)"
+                }
+              },
+              "_ProcCamIntensity": 1,
+              "_ProcCamInterpolateRate": 0.0085,
+              "_ProcCamOffInterpolateRate": 0.02,
+              "_IsRotateLimit": true,
+              "_YawDegRange": "Range(-50, 100)",
+              "_PitchDegRange": "Range(-80, 160)",
+              "_MeshConstJointName": "Hip",
+              "_MeshConstOffsetPos": "\u003C0.04, -0.17, 0\u003E"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.LightID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Light_0000"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.FlashLightHeadUnit.ControlParam",
+      "Userdata": null,
+      "Fields": {
+        "_UseLightGroup": 0,
+        "_ConstJointName": "Head_0",
+        "_ConstJointAxis": 3,
+        "_ConstOffsetPos": "\u003C0.2, 0, 0.2\u003E",
+        "_ConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+        "_DampingParam": {
+          "Ref": 2,
+          "Class": "app.DampingParam"
+        },
+        "_ShakeTimeRange": "Range(0.5, 1)",
+        "_ShakeIntensity": 0.005,
+        "_ProcCamIntensity": 1,
+        "_ProcCamInterpolateRate": 0.0085,
+        "_ProcCamOffInterpolateRate": 0.02,
+        "_IsRotateLimit": false,
+        "_YawDegRange": "Range(-100, 200)",
+        "_PitchDegRange": "Range(-45, 90)"
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.FlashLightHeadUnit.ControlParam",
+      "Userdata": null,
+      "Fields": {
+        "_UseLightGroup": 0,
+        "_ConstJointName": "L_Pec_B",
+        "_ConstJointAxis": 6,
+        "_ConstOffsetPos": "\u003C0, 0, 0\u003E",
+        "_ConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+        "_DampingParam": {
+          "Ref": 4,
+          "Class": "app.DampingParam"
+        },
+        "_ShakeTimeRange": "Range(0, 0)",
+        "_ShakeIntensity": 0,
+        "_ProcCamIntensity": 0,
+        "_ProcCamInterpolateRate": 0.03,
+        "_ProcCamOffInterpolateRate": 0.005,
+        "_IsRotateLimit": true,
+        "_YawDegRange": "Range(-100, 200)",
+        "_PitchDegRange": "Range(-80, 160)"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.FlashLightTwinUnit.ShakeLightPositionData",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_ShakePositionArea": "\u003C1, 1, 1\u003E",
+        "_ShakeTimeRange": "Range(0.5, 1)"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.FlashLightTwinUnit.ControlParam",
+      "Userdata": null,
+      "Fields": {
+        "_UseLightGroup": 28,
+        "_LightConstJointName": "L_Wep",
+        "_LightConstJointAxis": 3,
+        "_LightConstOffsetPos": "\u003C0, 0, 0.08\u003E",
+        "_LightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+        "_PointLightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+        "_IsConstJointDirForLightAction": true,
+        "_IsConstLightEntity": true,
+        "_DampingParam": {
+          "Ref": 6,
+          "Class": "app.DampingParam"
+        },
+        "_ShakeTimeRange": "Range(0.5, 1)",
+        "_ShakeIntensity": 0.005,
+        "_ShakeLightPosData": {
+          "Ref": 7,
+          "Class": "app.FlashLightTwinUnit.ShakeLightPositionData"
+        },
+        "_ProcCamIntensity": 1,
+        "_ProcCamInterpolateRate": 0.0085,
+        "_ProcCamOffInterpolateRate": 0.02,
+        "_IsRotateLimit": true,
+        "_YawDegRange": "Range(-50, 100)",
+        "_PitchDegRange": "Range(-80, 160)",
+        "_MeshConstJointName": "L_Wep",
+        "_MeshConstOffsetPos": "\u003C0, 0, 0\u003E"
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.FlashLightTwinUnit.ShakeLightPositionData",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_ShakePositionArea": "\u003C0.03, 0.01, 0.01\u003E",
+        "_ShakeTimeRange": "Range(0.08, 0)"
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.FlashLightTwinUnit.ControlParam",
+      "Userdata": null,
+      "Fields": {
+        "_UseLightGroup": 3,
+        "_LightConstJointName": "L_Wep",
+        "_LightConstJointAxis": 3,
+        "_LightConstOffsetPos": "\u003C0, 0.07, 0\u003E",
+        "_LightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+        "_PointLightConstOffsetRot": "{X:0.775924 Y:0.0008013858 Z:-0.021210851 W:0.63046914}",
+        "_IsConstJointDirForLightAction": false,
+        "_IsConstLightEntity": false,
+        "_DampingParam": {
+          "Ref": 9,
+          "Class": "app.DampingParam"
+        },
+        "_ShakeTimeRange": "Range(0.5, 1)",
+        "_ShakeIntensity": 0,
+        "_ShakeLightPosData": {
+          "Ref": 10,
+          "Class": "app.FlashLightTwinUnit.ShakeLightPositionData"
+        },
+        "_ProcCamIntensity": 1,
+        "_ProcCamInterpolateRate": 0.0085,
+        "_ProcCamOffInterpolateRate": 0.02,
+        "_IsRotateLimit": true,
+        "_YawDegRange": "Range(-50, 100)",
+        "_PitchDegRange": "Range(-80, 160)",
+        "_MeshConstJointName": "L_Wep",
+        "_MeshConstOffsetPos": "\u003C0, 0, 0\u003E"
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.FlashLightTwinUnit.ShakeLightPositionData",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_ShakePositionArea": "\u003C1, 1, 1\u003E",
+        "_ShakeTimeRange": "Range(0.5, 1)"
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.FlashLightTwinUnit.ControlParam",
+      "Userdata": null,
+      "Fields": {
+        "_UseLightGroup": 96,
+        "_LightConstJointName": "Hip",
+        "_LightConstJointAxis": 3,
+        "_LightConstOffsetPos": "\u003C0.04, -0.17, 0.1\u003E",
+        "_LightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+        "_PointLightConstOffsetRot": "{X:0 Y:0 Z:0 W:1}",
+        "_IsConstJointDirForLightAction": false,
+        "_IsConstLightEntity": true,
+        "_DampingParam": {
+          "Ref": 12,
+          "Class": "app.DampingParam"
+        },
+        "_ShakeTimeRange": "Range(0.5, 1)",
+        "_ShakeIntensity": 0.005,
+        "_ShakeLightPosData": {
+          "Ref": 13,
+          "Class": "app.FlashLightTwinUnit.ShakeLightPositionData"
+        },
+        "_ProcCamIntensity": 1,
+        "_ProcCamInterpolateRate": 0.0085,
+        "_ProcCamOffInterpolateRate": 0.02,
+        "_IsRotateLimit": true,
+        "_YawDegRange": "Range(-50, 100)",
+        "_PitchDegRange": "Range(-80, 160)",
+        "_MeshConstJointName": "Hip",
+        "_MeshConstOffsetPos": "\u003C0.04, -0.17, 0\u003E"
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.FlashLightUserData",
+      "Userdata": null,
+      "Fields": {
+        "_UsePoolObject": true,
+        "_LightPoolID": {
+          "Ref": 1,
+          "Class": "app.LightID"
+        },
+        "_ParamList": [
+          {
+            "Ref": 3,
+            "Class": "app.FlashLightHeadUnit.ControlParam"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.FlashLightHeadUnit.ControlParam"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.FlashLightTwinUnit.ControlParam"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.FlashLightTwinUnit.ControlParam"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.FlashLightTwinUnit.ControlParam"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/animdelayhand/cp_a100animdelayhanduserdata.user.3",
+  "Objects": [
+    {
+      "Index": 3,
+      "Class": "app.AnimDelayHandUserData",
+      "Userdata": null,
+      "Fields": {
+        "_RightArmSpecificationData": {
+          "Index": 1,
+          "Class": "app.AnimDelayHandData_ArmSpecification",
+          "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/PlayerAnimDelayHandData_RightArmSpecification.user",
+          "Fields": {}
+        },
+        "_LeftArmSpecificationData": {
+          "Index": 2,
+          "Class": "app.AnimDelayHandData_ArmSpecification",
+          "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/LeftArm/PlayerAnimDelayHandData_LeftArmSpecification.user",
+          "Fields": {}
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.AnimDelayHandData_ArmSpecification",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/RightArm/PlayerAnimDelayHandData_RightArmSpecification.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.AnimDelayHandData_ArmSpecification",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/LeftArm/PlayerAnimDelayHandData_LeftArmSpecification.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.AnimDelayHandUserData",
+      "Userdata": null,
+      "Fields": {
+        "_RightArmSpecificationData": {
+          "Ref": 1,
+          "Class": "app.AnimDelayHandData_ArmSpecification"
+        },
+        "_LeftArmSpecificationData": {
+          "Ref": 2,
+          "Class": "app.AnimDelayHandData_ArmSpecification"
+        }
+      }
+    }
+  ]
+}

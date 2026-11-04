@@ -1,0 +1,431 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerenvcheckparam.user.3",
+  "Objects": [
+    {
+      "Index": 13,
+      "Class": "app.EnvironmentCheckParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbWallCheck": true,
+        "_StartInputStopWallDeg": 12,
+        "_CancelStopWallDeg": 30,
+        "_StartStopWallDistance": 0.8,
+        "_StopWallParameter": {
+          "Index": 1,
+          "Class": "app.EnvironmentChecker.WallParameter",
+          "Userdata": null,
+          "Fields": {
+            "_Distance": 1.6,
+            "_Height": 1,
+            "_Width": 0.8,
+            "_WallAngle": 60,
+            "_IsHitRayNum": 3,
+            "_IsCeiling": false,
+            "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+            "_IgnoreMaterialAttributeValue": -1,
+            "_IsCastSphere": false,
+            "_Radius": 0.2,
+            "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+            "STRUCT__CheckHitSameWallDegThreshold__Value": 0
+          }
+        },
+        "_CeilingParameter": {
+          "Index": 2,
+          "Class": "app.EnvironmentChecker.WallParameter",
+          "Userdata": null,
+          "Fields": {
+            "_Distance": 0.9,
+            "_Height": 0.5,
+            "_Width": 0,
+            "_WallAngle": 70,
+            "_IsHitRayNum": 1,
+            "_IsCeiling": true,
+            "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+            "_IgnoreMaterialAttributeValue": -1,
+            "_IsCastSphere": true,
+            "_Radius": 0.37,
+            "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+            "STRUCT__CheckHitSameWallDegThreshold__Value": 0
+          }
+        },
+        "_GeneralWallParameterList": [
+          {
+            "Index": 4,
+            "Class": "app.EnvironmentCheckController.GeneralWallParameter",
+            "Userdata": null,
+            "Fields": {
+              "_Distance": 1.5,
+              "_Height": 1.2,
+              "_Width": 0,
+              "_WallAngle": 30,
+              "_IsHitRayNum": 3,
+              "_IsCeiling": false,
+              "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+              "_IgnoreMaterialAttributeValue": -1,
+              "_IsCastSphere": false,
+              "_Radius": 0.2,
+              "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+              "STRUCT__CheckHitSameWallDegThreshold__Value": 0,
+              "_Hash": {
+                "Index": 3,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2165733483
+                }
+              }
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.EnvironmentCheckController.GeneralWallParameter",
+            "Userdata": null,
+            "Fields": {
+              "_Distance": 1.5,
+              "_Height": 1.2,
+              "_Width": 0,
+              "_WallAngle": 30,
+              "_IsHitRayNum": 3,
+              "_IsCeiling": false,
+              "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+              "_IgnoreMaterialAttributeValue": -1,
+              "_IsCastSphere": false,
+              "_Radius": 0.2,
+              "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+              "STRUCT__CheckHitSameWallDegThreshold__Value": 0,
+              "_Hash": {
+                "Index": 5,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 70969219
+                }
+              }
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.EnvironmentCheckController.GeneralWallParameter",
+            "Userdata": null,
+            "Fields": {
+              "_Distance": 2.5,
+              "_Height": 0.9,
+              "_Width": 0.8,
+              "_WallAngle": 40,
+              "_IsHitRayNum": 3,
+              "_IsCeiling": false,
+              "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+              "_IgnoreMaterialAttributeValue": -1,
+              "_IsCastSphere": false,
+              "_Radius": 0.2,
+              "STRUCT__CheckHitSameWallDegThreshold__HasValue": true,
+              "STRUCT__CheckHitSameWallDegThreshold__Value": 35,
+              "_Hash": {
+                "Index": 7,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2327920167
+                }
+              }
+            }
+          },
+          {
+            "Index": 10,
+            "Class": "app.EnvironmentCheckController.GeneralWallParameter",
+            "Userdata": null,
+            "Fields": {
+              "_Distance": 1.75,
+              "_Height": 0.9,
+              "_Width": 0,
+              "_WallAngle": 40,
+              "_IsHitRayNum": 1,
+              "_IsCeiling": false,
+              "_CollisionFilter": "Config/Physics/Filter/Effect_VS_Bullet/BulletDefault.cfil",
+              "_IgnoreMaterialAttributeValue": -1,
+              "_IsCastSphere": false,
+              "_Radius": 0.2,
+              "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+              "STRUCT__CheckHitSameWallDegThreshold__Value": 35,
+              "_Hash": {
+                "Index": 9,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3608885047
+                }
+              }
+            }
+          }
+        ],
+        "_StepParameter": {
+          "Index": 11,
+          "Class": "app.EnvironmentChecker.StepParameter",
+          "Userdata": null,
+          "Fields": {
+            "_MinHeight": 0.01,
+            "_WidthHeight": 0.2,
+            "_DistanceFront": 0.75,
+            "_LowestThreshold": 0.48,
+            "_IsSimple": false
+          }
+        },
+        "_ClimbWallParameter": {
+          "Index": 12,
+          "Class": "app.EnvironmentChecker.ClimbWallParameter",
+          "Userdata": null,
+          "Fields": {
+            "_DistanceFront": 2.55,
+            "_DiffWallAngleYThreshold": 90,
+            "_MaxDistanceToClimb": 2.55,
+            "_MotionMoveXZLength": 0.65,
+            "_OpenSpaceWallWidth": 0.8,
+            "_LightMode": false,
+            "_IsClimbOverWindow": true
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.EnvironmentChecker.WallParameter",
+      "Userdata": null,
+      "Fields": {
+        "_Distance": 1.6,
+        "_Height": 1,
+        "_Width": 0.8,
+        "_WallAngle": 60,
+        "_IsHitRayNum": 3,
+        "_IsCeiling": false,
+        "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+        "_IgnoreMaterialAttributeValue": -1,
+        "_IsCastSphere": false,
+        "_Radius": 0.2,
+        "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+        "STRUCT__CheckHitSameWallDegThreshold__Value": 0
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.EnvironmentChecker.WallParameter",
+      "Userdata": null,
+      "Fields": {
+        "_Distance": 0.9,
+        "_Height": 0.5,
+        "_Width": 0,
+        "_WallAngle": 70,
+        "_IsHitRayNum": 1,
+        "_IsCeiling": true,
+        "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+        "_IgnoreMaterialAttributeValue": -1,
+        "_IsCastSphere": true,
+        "_Radius": 0.37,
+        "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+        "STRUCT__CheckHitSameWallDegThreshold__Value": 0
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2165733483
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.EnvironmentCheckController.GeneralWallParameter",
+      "Userdata": null,
+      "Fields": {
+        "_Distance": 1.5,
+        "_Height": 1.2,
+        "_Width": 0,
+        "_WallAngle": 30,
+        "_IsHitRayNum": 3,
+        "_IsCeiling": false,
+        "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+        "_IgnoreMaterialAttributeValue": -1,
+        "_IsCastSphere": false,
+        "_Radius": 0.2,
+        "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+        "STRUCT__CheckHitSameWallDegThreshold__Value": 0,
+        "_Hash": {
+          "Ref": 3,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 70969219
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.EnvironmentCheckController.GeneralWallParameter",
+      "Userdata": null,
+      "Fields": {
+        "_Distance": 1.5,
+        "_Height": 1.2,
+        "_Width": 0,
+        "_WallAngle": 30,
+        "_IsHitRayNum": 3,
+        "_IsCeiling": false,
+        "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+        "_IgnoreMaterialAttributeValue": -1,
+        "_IsCastSphere": false,
+        "_Radius": 0.2,
+        "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+        "STRUCT__CheckHitSameWallDegThreshold__Value": 0,
+        "_Hash": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2327920167
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.EnvironmentCheckController.GeneralWallParameter",
+      "Userdata": null,
+      "Fields": {
+        "_Distance": 2.5,
+        "_Height": 0.9,
+        "_Width": 0.8,
+        "_WallAngle": 40,
+        "_IsHitRayNum": 3,
+        "_IsCeiling": false,
+        "_CollisionFilter": "Config/Physics/Filter/CharacterPlayer.cfil",
+        "_IgnoreMaterialAttributeValue": -1,
+        "_IsCastSphere": false,
+        "_Radius": 0.2,
+        "STRUCT__CheckHitSameWallDegThreshold__HasValue": true,
+        "STRUCT__CheckHitSameWallDegThreshold__Value": 35,
+        "_Hash": {
+          "Ref": 7,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3608885047
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.EnvironmentCheckController.GeneralWallParameter",
+      "Userdata": null,
+      "Fields": {
+        "_Distance": 1.75,
+        "_Height": 0.9,
+        "_Width": 0,
+        "_WallAngle": 40,
+        "_IsHitRayNum": 1,
+        "_IsCeiling": false,
+        "_CollisionFilter": "Config/Physics/Filter/Effect_VS_Bullet/BulletDefault.cfil",
+        "_IgnoreMaterialAttributeValue": -1,
+        "_IsCastSphere": false,
+        "_Radius": 0.2,
+        "STRUCT__CheckHitSameWallDegThreshold__HasValue": false,
+        "STRUCT__CheckHitSameWallDegThreshold__Value": 35,
+        "_Hash": {
+          "Ref": 9,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.EnvironmentChecker.StepParameter",
+      "Userdata": null,
+      "Fields": {
+        "_MinHeight": 0.01,
+        "_WidthHeight": 0.2,
+        "_DistanceFront": 0.75,
+        "_LowestThreshold": 0.48,
+        "_IsSimple": false
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.EnvironmentChecker.ClimbWallParameter",
+      "Userdata": null,
+      "Fields": {
+        "_DistanceFront": 2.55,
+        "_DiffWallAngleYThreshold": 90,
+        "_MaxDistanceToClimb": 2.55,
+        "_MotionMoveXZLength": 0.65,
+        "_OpenSpaceWallWidth": 0.8,
+        "_LightMode": false,
+        "_IsClimbOverWindow": true
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.EnvironmentCheckParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsClimbWallCheck": true,
+        "_StartInputStopWallDeg": 12,
+        "_CancelStopWallDeg": 30,
+        "_StartStopWallDistance": 0.8,
+        "_StopWallParameter": {
+          "Ref": 1,
+          "Class": "app.EnvironmentChecker.WallParameter"
+        },
+        "_CeilingParameter": {
+          "Ref": 2,
+          "Class": "app.EnvironmentChecker.WallParameter"
+        },
+        "_GeneralWallParameterList": [
+          {
+            "Ref": 4,
+            "Class": "app.EnvironmentCheckController.GeneralWallParameter"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.EnvironmentCheckController.GeneralWallParameter"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.EnvironmentCheckController.GeneralWallParameter"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.EnvironmentCheckController.GeneralWallParameter"
+          }
+        ],
+        "_StepParameter": {
+          "Ref": 11,
+          "Class": "app.EnvironmentChecker.StepParameter"
+        },
+        "_ClimbWallParameter": {
+          "Ref": 12,
+          "Class": "app.EnvironmentChecker.ClimbWallParameter"
+        }
+      }
+    }
+  ]
+}

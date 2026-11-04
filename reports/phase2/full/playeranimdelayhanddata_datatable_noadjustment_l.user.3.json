@@ -1,0 +1,69 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/animdelayhand/leftarm/datatable/playeranimdelayhanddata_datatable_noadjustment_l.user.3",
+  "Objects": [
+    {
+      "Index": 3,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Index": 1,
+          "Class": "app.PlayerComplexCondition",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_ConditionType": 0,
+            "_ConditionUnits": []
+          }
+        },
+        "_Additional": [],
+        "_Collection": {
+          "Index": 2,
+          "Class": "app.AnimDelayHandData_DataCollection",
+          "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/LeftArm/DataTable/NoAdjustment/PlayerAnimDelayHandDataCollection_NoAdjustment_L.user",
+          "Fields": {}
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/LeftArm/DataTable/NoAdjustment/PlayerAnimDelayHandDataCollection_NoAdjustment_L.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.AnimDelayHandData_DataTable",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Additional": [],
+        "_Collection": {
+          "Ref": 2,
+          "Class": "app.AnimDelayHandData_DataCollection"
+        }
+      }
+    }
+  ]
+}

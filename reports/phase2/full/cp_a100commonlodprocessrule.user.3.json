@@ -1,0 +1,385 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100commonlodprocessrule.user.3",
+  "Objects": [
+    {
+      "Index": 18,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": null,
+      "Fields": {
+        "_Section": {
+          "Index": 17,
+          "Class": "app.lod.LODProcessSection",
+          "Userdata": null,
+          "Fields": {
+            "_Rules": [
+              {
+                "Index": 2,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.rule.LODProcessRule\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 1,
+                    "Class": "app.lod.rule.DistanceToCamera",
+                    "Userdata": null,
+                    "Fields": {
+                      "OwnerDisable": true,
+                      "STRUCT_Lod1Len__HasValue": false,
+                      "STRUCT_Lod1Len__Value": 0,
+                      "STRUCT_Lod2Len__HasValue": true,
+                      "STRUCT_Lod2Len__Value": 20,
+                      "STRUCT_Lod3Len__HasValue": true,
+                      "STRUCT_Lod3Len__Value": 50
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 4,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.rule.LODProcessRule\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 3,
+                    "Class": "app.lod.rule.CheckBehindCamera",
+                    "Userdata": null,
+                    "Fields": {
+                      "OwnerDisable": true,
+                      "OutLen": 3
+                    }
+                  }
+                }
+              }
+            ],
+            "_Adapts": [
+              {
+                "Index": 6,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 5,
+                    "Class": "app.lod.adapt.JointConstraintsAdapt",
+                    "Userdata": null,
+                    "Fields": {
+                      "IsShadow": false,
+                      "BodyDisableLevel": 1,
+                      "FullDisableLevel": 3,
+                      "_CanForceDisableOnLowSpec": false
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 8,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 7,
+                    "Class": "app.lod.adapt.RagdollAdapt",
+                    "Userdata": null,
+                    "Fields": {
+                      "_StableStaticEnableLevel": 2
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 10,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 9,
+                    "Class": "app.lod.adapt.ChainAdapt",
+                    "Userdata": null,
+                    "Fields": {
+                      "IsShadow": false,
+                      "FreezeLevel": 1,
+                      "FullDisableLevel": 3,
+                      "_CanForceDisableOnLowSpec": false
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 12,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 11,
+                    "Class": "anim.AnimationControllerLodAdapt",
+                    "Userdata": null,
+                    "Fields": {}
+                  }
+                }
+              },
+              {
+                "Index": 14,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 13,
+                    "Class": "app.lod.adapt.ChildMotionAdapt",
+                    "Userdata": null,
+                    "Fields": {
+                      "IsShadow": false,
+                      "ThinOutLevel": 1,
+                      "FullDisableLevel": 3
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 16,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 15,
+                    "Class": "app.lod.adapt.ChildSecondaryAdapt",
+                    "Userdata": null,
+                    "Fields": {
+                      "IsShadow": false,
+                      "_CanForceDisableOnLowSpec": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.lod.rule.DistanceToCamera",
+      "Userdata": null,
+      "Fields": {
+        "OwnerDisable": true,
+        "STRUCT_Lod1Len__HasValue": false,
+        "STRUCT_Lod1Len__Value": 0,
+        "STRUCT_Lod2Len__HasValue": true,
+        "STRUCT_Lod2Len__Value": 20,
+        "STRUCT_Lod3Len__HasValue": true,
+        "STRUCT_Lod3Len__Value": 50
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.rule.LODProcessRule\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 1,
+          "Class": "app.lod.rule.DistanceToCamera"
+        }
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.lod.rule.CheckBehindCamera",
+      "Userdata": null,
+      "Fields": {
+        "OwnerDisable": true,
+        "OutLen": 3
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.rule.LODProcessRule\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 3,
+          "Class": "app.lod.rule.CheckBehindCamera"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.lod.adapt.JointConstraintsAdapt",
+      "Userdata": null,
+      "Fields": {
+        "IsShadow": false,
+        "BodyDisableLevel": 1,
+        "FullDisableLevel": 3,
+        "_CanForceDisableOnLowSpec": false
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 5,
+          "Class": "app.lod.adapt.JointConstraintsAdapt"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.lod.adapt.RagdollAdapt",
+      "Userdata": null,
+      "Fields": {
+        "_StableStaticEnableLevel": 2
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 7,
+          "Class": "app.lod.adapt.RagdollAdapt"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.lod.adapt.ChainAdapt",
+      "Userdata": null,
+      "Fields": {
+        "IsShadow": false,
+        "FreezeLevel": 1,
+        "FullDisableLevel": 3,
+        "_CanForceDisableOnLowSpec": false
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 9,
+          "Class": "app.lod.adapt.ChainAdapt"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "anim.AnimationControllerLodAdapt",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 12,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 11,
+          "Class": "anim.AnimationControllerLodAdapt"
+        }
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.lod.adapt.ChildMotionAdapt",
+      "Userdata": null,
+      "Fields": {
+        "IsShadow": false,
+        "ThinOutLevel": 1,
+        "FullDisableLevel": 3
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 13,
+          "Class": "app.lod.adapt.ChildMotionAdapt"
+        }
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.lod.adapt.ChildSecondaryAdapt",
+      "Userdata": null,
+      "Fields": {
+        "IsShadow": false,
+        "_CanForceDisableOnLowSpec": false
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 15,
+          "Class": "app.lod.adapt.ChildSecondaryAdapt"
+        }
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.lod.LODProcessSection",
+      "Userdata": null,
+      "Fields": {
+        "_Rules": [
+          {
+            "Ref": 2,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.rule.LODProcessRule\u003E"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.rule.LODProcessRule\u003E"
+          }
+        ],
+        "_Adapts": [
+          {
+            "Ref": 6,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E"
+          },
+          {
+            "Ref": 16,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": null,
+      "Fields": {
+        "_Section": {
+          "Ref": 17,
+          "Class": "app.lod.LODProcessSection"
+        }
+      }
+    }
+  ]
+}

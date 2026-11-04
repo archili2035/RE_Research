@@ -1,0 +1,973 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000putweaponsetting.user.3",
+  "Objects": [
+    {
+      "Index": 44,
+      "Class": "app.PlayerPutWeaponSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponSettingList": [
+          {
+            "Index": 5,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0000",
+              "_WeaponData": {
+                "Index": 1,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 0,
+                  "_TakeWeaponMotionStartFrame": 18
+                }
+              },
+              "_AttachmentVariationList": [
+                {
+                  "Index": 4,
+                  "Class": "app.PlayerPutWeaponSettingUserData.AttachmentVariation",
+                  "Userdata": null,
+                  "Fields": {
+                    "_AttachmentList": [
+                      {
+                        "Ref": 2,
+                        "Class": "app.PlayerPutWeaponSettingUserData.Attachment"
+                      }
+                    ],
+                    "_WeaponData": {
+                      "Index": 3,
+                      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_PutWeaponPosition": 1,
+                        "_TakeWeaponMotionStartFrame": 28
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Index": 7,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0003",
+              "_WeaponData": {
+                "Index": 6,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 0,
+                  "_TakeWeaponMotionStartFrame": 18
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 9,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0007",
+              "_WeaponData": {
+                "Index": 8,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 0,
+                  "_TakeWeaponMotionStartFrame": 18
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 11,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0400",
+              "_WeaponData": {
+                "Index": 10,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 1,
+                  "_TakeWeaponMotionStartFrame": 28
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 13,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0006",
+              "_WeaponData": {
+                "Index": 12,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 1,
+                  "_TakeWeaponMotionStartFrame": 28
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 15,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0005",
+              "_WeaponData": {
+                "Index": 14,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 1,
+                  "_TakeWeaponMotionStartFrame": 28
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 17,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0103",
+              "_WeaponData": {
+                "Index": 16,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 3,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 19,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0100",
+              "_WeaponData": {
+                "Index": 18,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 1,
+                  "_TakeWeaponMotionStartFrame": 18
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 21,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0104",
+              "_WeaponData": {
+                "Index": 20,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 3,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 23,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0500",
+              "_WeaponData": {
+                "Index": 22,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 3,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 25,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0501",
+              "_WeaponData": {
+                "Index": 24,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 3,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 27,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0503",
+              "_WeaponData": {
+                "Index": 26,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 3,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 29,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0600",
+              "_WeaponData": {
+                "Index": 28,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 3,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 31,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0601",
+              "_WeaponData": {
+                "Index": 30,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 3,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 33,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0200",
+              "_WeaponData": {
+                "Index": 32,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 2,
+                  "_TakeWeaponMotionStartFrame": 25
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 35,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0204",
+              "_WeaponData": {
+                "Index": 34,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 2,
+                  "_TakeWeaponMotionStartFrame": 25
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 37,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0700",
+              "_WeaponData": {
+                "Index": 36,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 3,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 39,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0300",
+              "_WeaponData": {
+                "Index": 38,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 4,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 41,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0350",
+              "_WeaponData": {
+                "Index": 40,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 4,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          },
+          {
+            "Index": 43,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0355",
+              "_WeaponData": {
+                "Index": 42,
+                "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+                "Userdata": null,
+                "Fields": {
+                  "_PutWeaponPosition": 4,
+                  "_TakeWeaponMotionStartFrame": 12
+                }
+              },
+              "_AttachmentVariationList": []
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 0,
+        "_TakeWeaponMotionStartFrame": 18
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerPutWeaponSettingUserData.Attachment",
+      "Userdata": null,
+      "Fields": {
+        "_AttachmentID": "ath0100"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 1,
+        "_TakeWeaponMotionStartFrame": 28
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerPutWeaponSettingUserData.AttachmentVariation",
+      "Userdata": null,
+      "Fields": {
+        "_AttachmentList": [
+          {
+            "Ref": 2,
+            "Class": "app.PlayerPutWeaponSettingUserData.Attachment"
+          }
+        ],
+        "_WeaponData": {
+          "Ref": 3,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0000",
+        "_WeaponData": {
+          "Ref": 1,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": [
+          {
+            "Ref": 4,
+            "Class": "app.PlayerPutWeaponSettingUserData.AttachmentVariation"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 0,
+        "_TakeWeaponMotionStartFrame": 18
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0003",
+        "_WeaponData": {
+          "Ref": 6,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 0,
+        "_TakeWeaponMotionStartFrame": 18
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0007",
+        "_WeaponData": {
+          "Ref": 8,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 1,
+        "_TakeWeaponMotionStartFrame": 28
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0400",
+        "_WeaponData": {
+          "Ref": 10,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 1,
+        "_TakeWeaponMotionStartFrame": 28
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0006",
+        "_WeaponData": {
+          "Ref": 12,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 1,
+        "_TakeWeaponMotionStartFrame": 28
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0005",
+        "_WeaponData": {
+          "Ref": 14,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 3,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0103",
+        "_WeaponData": {
+          "Ref": 16,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 1,
+        "_TakeWeaponMotionStartFrame": 18
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0100",
+        "_WeaponData": {
+          "Ref": 18,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 3,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0104",
+        "_WeaponData": {
+          "Ref": 20,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 3,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0500",
+        "_WeaponData": {
+          "Ref": 22,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 3,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0501",
+        "_WeaponData": {
+          "Ref": 24,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 3,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0503",
+        "_WeaponData": {
+          "Ref": 26,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 3,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0600",
+        "_WeaponData": {
+          "Ref": 28,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 3,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0601",
+        "_WeaponData": {
+          "Ref": 30,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 2,
+        "_TakeWeaponMotionStartFrame": 25
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0200",
+        "_WeaponData": {
+          "Ref": 32,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 2,
+        "_TakeWeaponMotionStartFrame": 25
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0204",
+        "_WeaponData": {
+          "Ref": 34,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 3,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0700",
+        "_WeaponData": {
+          "Ref": 36,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 4,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0300",
+        "_WeaponData": {
+          "Ref": 38,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 4,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0350",
+        "_WeaponData": {
+          "Ref": 40,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.PlayerPutWeaponSettingUserData.WeaponData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponPosition": 4,
+        "_TakeWeaponMotionStartFrame": 12
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0355",
+        "_WeaponData": {
+          "Ref": 42,
+          "Class": "app.PlayerPutWeaponSettingUserData.WeaponData"
+        },
+        "_AttachmentVariationList": []
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.PlayerPutWeaponSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_PutWeaponSettingList": [
+          {
+            "Ref": 5,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 23,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 31,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 35,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 37,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 39,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 41,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          },
+          {
+            "Ref": 43,
+            "Class": "app.PlayerPutWeaponSettingUserData.PutWeaponSetting"
+          }
+        ]
+      }
+    }
+  ]
+}

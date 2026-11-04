@@ -1,0 +1,101 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerslopeparameter.user.3",
+  "Objects": [
+    {
+      "Index": 3,
+      "Class": "app.HumanSlopeParameter",
+      "Userdata": null,
+      "Fields": {
+        "_SlopeTransposeAdjustParameter": {
+          "Index": 1,
+          "Class": "app.SlopeIndividualParameter.TransposeAdjust",
+          "Userdata": null,
+          "Fields": {
+            "_Enable": true,
+            "_DampingRate": 0.9,
+            "_DampingTime": 0.1,
+            "_MaxCorrection": 0.8
+          }
+        },
+        "_SpeedRateStartSlope": 0.4,
+        "_AngleStartSlope": 180,
+        "_MaxSlideSpeed": 8,
+        "SlideAccelCurve": {
+          "Index": 2,
+          "Class": "via.AnimationCurve",
+          "Userdata": null,
+          "Fields": {
+            "Keys": [
+              "0: 2",
+              "90: 8"
+            ],
+            "MinValue": 0,
+            "MaxValue": 50,
+            "LoopStartTime": 0,
+            "LoopEndTime": 90,
+            "LoopCount": 0,
+            "LoopWrapNo": 2
+          }
+        },
+        "SecSlideDownOnWalk": 0.5,
+        "SecSlideDownOnRun": 0.85
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.SlopeIndividualParameter.TransposeAdjust",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_DampingRate": 0.9,
+        "_DampingTime": 0.1,
+        "_MaxCorrection": 0.8
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 2",
+          "90: 8"
+        ],
+        "MinValue": 0,
+        "MaxValue": 50,
+        "LoopStartTime": 0,
+        "LoopEndTime": 90,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.HumanSlopeParameter",
+      "Userdata": null,
+      "Fields": {
+        "_SlopeTransposeAdjustParameter": {
+          "Ref": 1,
+          "Class": "app.SlopeIndividualParameter.TransposeAdjust"
+        },
+        "_SpeedRateStartSlope": 0.4,
+        "_AngleStartSlope": 180,
+        "_MaxSlideSpeed": 8,
+        "SlideAccelCurve": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        },
+        "SecSlideDownOnWalk": 0.5,
+        "SecSlideDownOnRun": 0.85
+      }
+    }
+  ]
+}

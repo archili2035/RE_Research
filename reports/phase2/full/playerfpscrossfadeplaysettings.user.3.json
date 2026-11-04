@@ -1,0 +1,173 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerfpscrossfadeplaysettings.user.3",
+  "Objects": [
+    {
+      "Index": 8,
+      "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData",
+      "Userdata": null,
+      "Fields": {
+        "_PlaySettings": [
+          {
+            "Index": 3,
+            "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.PlaySetting",
+            "Userdata": null,
+            "Fields": {
+              "_StateType": 6,
+              "_ControlState": {
+                "Index": 1,
+                "Class": "app.MotionTransitionControl.MotionControlStates.Cluster",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3328633162
+                }
+              },
+              "_EndParameter": {
+                "Index": 2,
+                "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.EndParameter",
+                "Userdata": null,
+                "Fields": {
+                  "_EndType": 2,
+                  "_EndTime": 30
+                }
+              }
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.PlaySetting",
+            "Userdata": null,
+            "Fields": {
+              "_StateType": 6,
+              "_ControlState": {
+                "Index": 4,
+                "Class": "app.MotionTransitionControl.MotionControlStates.Cluster",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3038411834
+                }
+              },
+              "_EndParameter": {
+                "Index": 5,
+                "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.EndParameter",
+                "Userdata": null,
+                "Fields": {
+                  "_EndType": 2,
+                  "_EndTime": 20
+                }
+              }
+            }
+          }
+        ],
+        "_ClusterTableUserData": {
+          "Index": 7,
+          "Class": "app.MotionTransitionControl.MotionControlStates.MotionClusterTableUserData",
+          "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerMotionClusterTable.user",
+          "Fields": {}
+        },
+        "_AdditionalSettings": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.MotionTransitionControl.MotionControlStates.Cluster",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3328633162
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.EndParameter",
+      "Userdata": null,
+      "Fields": {
+        "_EndType": 2,
+        "_EndTime": 30
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.PlaySetting",
+      "Userdata": null,
+      "Fields": {
+        "_StateType": 6,
+        "_ControlState": {
+          "Ref": 1,
+          "Class": "app.MotionTransitionControl.MotionControlStates.Cluster"
+        },
+        "_EndParameter": {
+          "Ref": 2,
+          "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.EndParameter"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.MotionTransitionControl.MotionControlStates.Cluster",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3038411834
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.EndParameter",
+      "Userdata": null,
+      "Fields": {
+        "_EndType": 2,
+        "_EndTime": 20
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.PlaySetting",
+      "Userdata": null,
+      "Fields": {
+        "_StateType": 6,
+        "_ControlState": {
+          "Ref": 4,
+          "Class": "app.MotionTransitionControl.MotionControlStates.Cluster"
+        },
+        "_EndParameter": {
+          "Ref": 5,
+          "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.EndParameter"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.MotionTransitionControl.MotionControlStates.MotionClusterTableUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerMotionClusterTable.user",
+      "Fields": {}
+    },
+    {
+      "Index": 8,
+      "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData",
+      "Userdata": null,
+      "Fields": {
+        "_PlaySettings": [
+          {
+            "Ref": 3,
+            "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.PlaySetting"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.MotionTransitionControl.MotionPlaySettingsUserData.PlaySetting"
+          }
+        ],
+        "_ClusterTableUserData": {
+          "Ref": 7,
+          "Class": "app.MotionTransitionControl.MotionControlStates.MotionClusterTableUserData"
+        },
+        "_AdditionalSettings": []
+      }
+    }
+  ]
+}

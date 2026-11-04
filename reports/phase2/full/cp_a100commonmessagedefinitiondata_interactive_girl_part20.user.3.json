@@ -1,0 +1,83 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/commonmessage/cp_a100commonmessagedefinitiondata_interactive_girl_part20.user.3",
+  "Objects": [
+    {
+      "Index": 3,
+      "Class": "app.CommonMessageDefinitionData",
+      "Userdata": null,
+      "Fields": {
+        "_MasterDatas": [
+          {
+            "Index": 2,
+            "Class": "app.CommonMessageDefinitionData.MasterData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2784574170
+                }
+              },
+              "_TarkRate": 1,
+              "_Priority": 50,
+              "_EnableLoop": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_EnableDelay": false,
+              "_DelaySecond": 3,
+              "_IgnoreCoolTime": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2784574170
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CommonMessageDefinitionData.MasterData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_TarkRate": 1,
+        "_Priority": 50,
+        "_EnableLoop": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_EnableDelay": false,
+        "_DelaySecond": 3,
+        "_IgnoreCoolTime": true
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.CommonMessageDefinitionData",
+      "Userdata": null,
+      "Fields": {
+        "_MasterDatas": [
+          {
+            "Ref": 2,
+            "Class": "app.CommonMessageDefinitionData.MasterData"
+          }
+        ]
+      }
+    }
+  ]
+}

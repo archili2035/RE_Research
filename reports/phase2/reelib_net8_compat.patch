@@ -1,0 +1,126 @@
+diff --git a/REE-Lib/Common/HashUtils.cs b/REE-Lib/Common/HashUtils.cs
+index b8a6916..44f7f3e 100644
+--- a/REE-Lib/Common/HashUtils.cs
++++ b/REE-Lib/Common/HashUtils.cs
+@@ -46,7 +46,7 @@ namespace ReeLib.Common
+                     }
+                     while (!proc.StandardOutput.EndOfStream) {
+                         var line = proc.StandardOutput.ReadLine();
+-                        if (line != null && !line.ContainsAnyExcept(charWhitelist) && (filter == null || filter.Invoke(line))) {
++                        if (line != null && !line.AsSpan().ContainsAnyExcept(charWhitelist) && (filter == null || filter.Invoke(line))) {
+                             yield return line;
+                         }
+                     }
+@@ -119,4 +119,4 @@ namespace ReeLib.Common
+             return strings;
+         }
+     }
+-}
+\ No newline at end of file
++}
+diff --git a/REE-Lib/Data/Il2cppCache/EnumDescriptor.cs b/REE-Lib/Data/Il2cppCache/EnumDescriptor.cs
+index 15d18ad..9b47561 100644
+--- a/REE-Lib/Data/Il2cppCache/EnumDescriptor.cs
++++ b/REE-Lib/Data/Il2cppCache/EnumDescriptor.cs
+@@ -100,7 +100,7 @@ public abstract class EnumDescriptor
+         foreach (var type in MaskBitsDict.Keys) {
+             var descType = typeof(EnumDescriptor<>).MakeGenericType(type);
+             descType
+-                .GetMethod(nameof(EnumDescriptor<>.ResetConverter), System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static)!
++                .GetMethod("ResetConverter", System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static)!
+                 .Invoke(null, []);
+         }
+         _useSafeValueConverter = safeMode;
+@@ -343,3 +343,4 @@ public sealed class EnumDescriptor<T> : EnumDescriptor where T : struct, IBinary
+         }
+     }
+ }
++
+diff --git a/REE-Lib/Data/ListFileWrapper.cs b/REE-Lib/Data/ListFileWrapper.cs
+index 05bb442..d8da0bc 100644
+--- a/REE-Lib/Data/ListFileWrapper.cs
++++ b/REE-Lib/Data/ListFileWrapper.cs
+@@ -118,7 +118,7 @@ public class ListFileWrapper
+             if (lastSlash == -1) return comparePath.StartsWith(path, StringComparison.OrdinalIgnoreCase);
+ 
+             var compareDir = comparePath.AsSpan(0, lastSlash + 1);
+-            return path.StartsWith(compareDir, StringComparison.OrdinalIgnoreCase) && comparePath.StartsWith(path, StringComparison.OrdinalIgnoreCase);
++            return path.AsSpan().StartsWith(compareDir, StringComparison.OrdinalIgnoreCase) && comparePath.StartsWith(path, StringComparison.OrdinalIgnoreCase);
+         }
+ 
+         path = PathUtils.GetFilepathWithoutSuffixes(path).ToString();
+@@ -367,3 +367,4 @@ public class ListFileWrapper
+         return exactMatch < 0 ? PathType.Folder : PathType.File;
+     }
+ }
++
+diff --git a/REE-Lib/OtherFiles/EFX/EfxExpressionParser.cs b/REE-Lib/OtherFiles/EFX/EfxExpressionParser.cs
+index f8d633e..3eaa25e 100644
+--- a/REE-Lib/OtherFiles/EFX/EfxExpressionParser.cs
++++ b/REE-Lib/OtherFiles/EFX/EfxExpressionParser.cs
+@@ -243,7 +243,7 @@ public static partial class EfxExpressionStringParser
+ 		[EfxExpressionFunction.Func21] = 5,
+ 	};
+ 
+-	public static int GetFunctionParameterCount(string functionName) => functionArgCount.GetValueOrDefault(functionName.GetSpanHash(), -1);
++	public static int GetFunctionParameterCount(string functionName) => functionArgCount.GetValueOrDefault(functionName.AsSpan().GetSpanHash(), -1);
+ 	public static int GetFunctionParameterCount(EfxExpressionFunction functionId) => FunctionArgCounts.GetValueOrDefault(functionId, -1);
+ 
+ 	private static readonly Dictionary<int, int> functionArgCount = new(FunctionArgCounts.Select(x => new KeyValuePair<int, int>(x.Key.ToString().GetHashCode(), x.Value))) {
+@@ -623,4 +623,4 @@ public static class EfxExpressionTreeUtils
+ 		throw new Exception("Found unsupported expression component");
+ 	}
+ 
+-}
+\ No newline at end of file
++}
+diff --git a/REE-Lib/OtherFiles/MeshFile.cs b/REE-Lib/OtherFiles/MeshFile.cs
+index 87d4cc3..9c1a6a8 100644
+--- a/REE-Lib/OtherFiles/MeshFile.cs
++++ b/REE-Lib/OtherFiles/MeshFile.cs
+@@ -303,7 +303,7 @@ namespace ReeLib.Mesh
+ 					_ => throw new IndexOutOfRangeException(),
+ 				};
+ 			} else {
+-				var arr = MemoryMarshal.AsBytes(boneIndices);
++				var arr = MemoryMarshal.AsBytes(boneIndices.AsSpan());
+ 				return (int)arr[index];
+ 			}
+ 		}
+@@ -2597,3 +2597,4 @@ namespace ReeLib
+         }
+     }
+ }
++
+diff --git a/REE-Lib/RszFile/MotFile.cs b/REE-Lib/RszFile/MotFile.cs
+index 2782c8e..49efcf0 100644
+--- a/REE-Lib/RszFile/MotFile.cs
++++ b/REE-Lib/RszFile/MotFile.cs
+@@ -3227,16 +3227,16 @@ namespace ReeLib
+                 clip.ChangeVersion(version);
+                 if (version <= MotVersion.RE2_DMC5) {
+                     if (clip.Translation?.maxFrame == 0) {
+-                        clip.Translation?.frameRate = Header.FrameRate;
+-                        clip.Translation?.maxFrame = Header.endFrame;
++                        clip.Translation.frameRate = Header.FrameRate;
++                        clip.Translation.maxFrame = Header.endFrame;
+                     }
+                     if (clip.Rotation?.maxFrame == 0) {
+-                        clip.Rotation?.frameRate = Header.FrameRate;
+-                        clip.Rotation?.maxFrame = Header.endFrame;
++                        clip.Rotation.frameRate = Header.FrameRate;
++                        clip.Rotation.maxFrame = Header.endFrame;
+                     }
+                     if (clip.Scale?.maxFrame == 0) {
+-                        clip.Scale?.frameRate = Header.FrameRate;
+-                        clip.Scale?.maxFrame = Header.endFrame;
++                        clip.Scale.frameRate = Header.FrameRate;
++                        clip.Scale.maxFrame = Header.endFrame;
+                     }
+                 }
+             }
+@@ -3343,3 +3343,4 @@ namespace ReeLib
+         }
+     }
+ }
++

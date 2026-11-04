@@ -1,0 +1,3163 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100griphandoverwriteuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 145,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultJointMask": 200,
+        "_EmptyTransionInfo": {
+          "Index": 1,
+          "Class": "via.motion.SetMotionTransitionInfo",
+          "Userdata": null,
+          "Fields": {
+            "StartTime": 0,
+            "InterpolationFrame": 10,
+            "InterpolationCurve": 1,
+            "InterpolationMode": 1
+          }
+        },
+        "_OnlyRightJointMask": 201,
+        "_RequestPresetDataList": [
+          {
+            "Index": 5,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 2,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3510239010
+                }
+              },
+              "_RequestInfo": {
+                "Index": 4,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 0,
+                  "_MotionID": 0,
+                  "_MotionTransitionInfo": {
+                    "Index": 3,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": false
+                }
+              }
+            }
+          },
+          {
+            "Index": 9,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 6,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 88286090
+                }
+              },
+              "_RequestInfo": {
+                "Index": 8,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 0,
+                  "_MotionID": 0,
+                  "_MotionTransitionInfo": {
+                    "Index": 7,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": true
+                }
+              }
+            }
+          },
+          {
+            "Index": 13,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 10,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2338636751
+                }
+              },
+              "_RequestInfo": {
+                "Index": 12,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 100,
+                  "_MotionID": 2,
+                  "_MotionTransitionInfo": {
+                    "Index": 11,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": true
+                }
+              }
+            }
+          },
+          {
+            "Index": 17,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 14,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2385824598
+                }
+              },
+              "_RequestInfo": {
+                "Index": 16,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 100,
+                  "_MotionID": 160,
+                  "_MotionTransitionInfo": {
+                    "Index": 15,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": true
+                }
+              }
+            }
+          },
+          {
+            "Index": 21,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 18,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1096142545
+                }
+              },
+              "_RequestInfo": {
+                "Index": 20,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 900,
+                  "_MotionID": 1,
+                  "_MotionTransitionInfo": {
+                    "Index": 19,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": false
+                }
+              }
+            }
+          },
+          {
+            "Index": 25,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 22,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3720319146
+                }
+              },
+              "_RequestInfo": {
+                "Index": 24,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 900,
+                  "_MotionID": 1,
+                  "_MotionTransitionInfo": {
+                    "Index": 23,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": true
+                }
+              }
+            }
+          },
+          {
+            "Index": 29,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 26,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 528779460
+                }
+              },
+              "_RequestInfo": {
+                "Index": 28,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 100,
+                  "_MotionID": 2,
+                  "_MotionTransitionInfo": {
+                    "Index": 27,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": true
+                }
+              }
+            }
+          },
+          {
+            "Index": 33,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 30,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 352639844
+                }
+              },
+              "_RequestInfo": {
+                "Index": 32,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 100,
+                  "_MotionID": 160,
+                  "_MotionTransitionInfo": {
+                    "Index": 31,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": true
+                }
+              }
+            }
+          },
+          {
+            "Index": 37,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 34,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 292928203
+                }
+              },
+              "_RequestInfo": {
+                "Index": 36,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 100,
+                  "_MotionID": 6000,
+                  "_MotionTransitionInfo": {
+                    "Index": 35,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": true
+                }
+              }
+            }
+          },
+          {
+            "Index": 41,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 38,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2363484336
+                }
+              },
+              "_RequestInfo": {
+                "Index": 40,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 100,
+                  "_MotionID": 6000,
+                  "_MotionTransitionInfo": {
+                    "Index": 39,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": false
+                }
+              }
+            }
+          },
+          {
+            "Index": 45,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+            "Userdata": null,
+            "Fields": {
+              "_NameHash": {
+                "Index": 42,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2919130899
+                }
+              },
+              "_RequestInfo": {
+                "Index": 44,
+                "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_BankID": 100,
+                  "_MotionID": 160,
+                  "_MotionTransitionInfo": {
+                    "Index": 43,
+                    "Class": "via.motion.SetMotionTransitionInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "StartTime": 0,
+                      "InterpolationFrame": 10,
+                      "InterpolationCurve": 0,
+                      "InterpolationMode": 1
+                    }
+                  },
+                  "_LeftHandOff": false
+                }
+              }
+            }
+          }
+        ],
+        "_AutoRequestList": [
+          {
+            "Index": 53,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+            "Userdata": null,
+            "Fields": {
+              "_Request": {
+                "Index": 52,
+                "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+                "Userdata": null,
+                "Fields": {
+                  "_CommonRequest": {
+                    "Index": 47,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 46,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  },
+                  "_HoldingRequest": {
+                    "Index": 49,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 48,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 88286090
+                        }
+                      }
+                    }
+                  },
+                  "_DangerRequest": {
+                    "Index": 51,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 50,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "_Enable": true,
+              "_PermitWeaponIDs": [
+                "arm0000",
+                "arm0001",
+                "arm0400",
+                "arm0003",
+                "arm0004",
+                "arm0007",
+                "arm0005",
+                "arm0006",
+                "arm0505"
+              ]
+            }
+          },
+          {
+            "Index": 61,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+            "Userdata": null,
+            "Fields": {
+              "_Request": {
+                "Index": 60,
+                "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+                "Userdata": null,
+                "Fields": {
+                  "_CommonRequest": {
+                    "Index": 55,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 54,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  },
+                  "_HoldingRequest": {
+                    "Index": 57,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 56,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2338636751
+                        }
+                      }
+                    }
+                  },
+                  "_DangerRequest": {
+                    "Index": 59,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 58,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "_Enable": true,
+              "_PermitWeaponIDs": [
+                "arm0300",
+                "arm0303",
+                "arm0335",
+                "arm0350",
+                "arm0351",
+                "arm0354",
+                "arm0355"
+              ]
+            }
+          },
+          {
+            "Index": 69,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+            "Userdata": null,
+            "Fields": {
+              "_Request": {
+                "Index": 68,
+                "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+                "Userdata": null,
+                "Fields": {
+                  "_CommonRequest": {
+                    "Index": 63,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 62,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2363484336
+                        }
+                      }
+                    }
+                  },
+                  "_HoldingRequest": {
+                    "Index": 65,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 64,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2180083513
+                        }
+                      }
+                    }
+                  },
+                  "_DangerRequest": {
+                    "Index": 67,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 66,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "_Enable": true,
+              "_PermitWeaponIDs": [
+                "arm0100",
+                "arm0600",
+                "arm0601",
+                "arm0500",
+                "arm0501",
+                "arm0103",
+                "arm0104",
+                "arm0503",
+                "arm0700"
+              ]
+            }
+          },
+          {
+            "Index": 77,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+            "Userdata": null,
+            "Fields": {
+              "_Request": {
+                "Index": 76,
+                "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+                "Userdata": null,
+                "Fields": {
+                  "_CommonRequest": {
+                    "Index": 71,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 70,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  },
+                  "_HoldingRequest": {
+                    "Index": 73,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 72,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2385824598
+                        }
+                      }
+                    }
+                  },
+                  "_DangerRequest": {
+                    "Index": 75,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 74,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "_Enable": true,
+              "_PermitWeaponIDs": [
+                "arm0200",
+                "arm0202",
+                "arm0203",
+                "arm0204",
+                "arm0207"
+              ]
+            }
+          }
+        ],
+        "_AutoRequestListFPS": [
+          {
+            "Index": 85,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+            "Userdata": null,
+            "Fields": {
+              "_Request": {
+                "Index": 84,
+                "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+                "Userdata": null,
+                "Fields": {
+                  "_CommonRequest": {
+                    "Index": 79,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 78,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  },
+                  "_HoldingRequest": {
+                    "Index": 81,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 80,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 88286090
+                        }
+                      }
+                    }
+                  },
+                  "_DangerRequest": {
+                    "Index": 83,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 82,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "_Enable": true,
+              "_PermitWeaponIDs": [
+                "arm0000",
+                "arm0001",
+                "arm0400",
+                "arm0003",
+                "arm0004",
+                "arm0007",
+                "arm0005",
+                "arm0006",
+                "arm0505"
+              ]
+            }
+          },
+          {
+            "Index": 93,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+            "Userdata": null,
+            "Fields": {
+              "_Request": {
+                "Index": 92,
+                "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+                "Userdata": null,
+                "Fields": {
+                  "_CommonRequest": {
+                    "Index": 87,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 86,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  },
+                  "_HoldingRequest": {
+                    "Index": 89,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 88,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2338636751
+                        }
+                      }
+                    }
+                  },
+                  "_DangerRequest": {
+                    "Index": 91,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 90,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "_Enable": true,
+              "_PermitWeaponIDs": [
+                "arm0300",
+                "arm0303",
+                "arm0335",
+                "arm0350",
+                "arm0351",
+                "arm0354",
+                "arm0355"
+              ]
+            }
+          },
+          {
+            "Index": 101,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+            "Userdata": null,
+            "Fields": {
+              "_Request": {
+                "Index": 100,
+                "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+                "Userdata": null,
+                "Fields": {
+                  "_CommonRequest": {
+                    "Index": 95,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 94,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2363484336
+                        }
+                      }
+                    }
+                  },
+                  "_HoldingRequest": {
+                    "Index": 97,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 96,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2180083513
+                        }
+                      }
+                    }
+                  },
+                  "_DangerRequest": {
+                    "Index": 99,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 98,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2363484336
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "_Enable": true,
+              "_PermitWeaponIDs": [
+                "arm0100",
+                "arm0600",
+                "arm0601",
+                "arm0500",
+                "arm0501",
+                "arm0104",
+                "arm0103",
+                "arm0104",
+                "arm0503",
+                "arm0700"
+              ]
+            }
+          },
+          {
+            "Index": 109,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+            "Userdata": null,
+            "Fields": {
+              "_Request": {
+                "Index": 108,
+                "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+                "Userdata": null,
+                "Fields": {
+                  "_CommonRequest": {
+                    "Index": 103,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 102,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  },
+                  "_HoldingRequest": {
+                    "Index": 105,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 104,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2385824598
+                        }
+                      }
+                    }
+                  },
+                  "_DangerRequest": {
+                    "Index": 107,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 106,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "_Enable": true,
+              "_PermitWeaponIDs": [
+                "arm0200",
+                "arm0202",
+                "arm0203",
+                "arm0204",
+                "arm0207"
+              ]
+            }
+          },
+          {
+            "Index": 117,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+            "Userdata": null,
+            "Fields": {
+              "_Request": {
+                "Index": 116,
+                "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+                "Userdata": null,
+                "Fields": {
+                  "_CommonRequest": {
+                    "Index": 111,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 110,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  },
+                  "_HoldingRequest": {
+                    "Index": 113,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": true,
+                      "_RequestHash": {
+                        "Index": 112,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 2919130899
+                        }
+                      }
+                    }
+                  },
+                  "_DangerRequest": {
+                    "Index": 115,
+                    "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Enable": false,
+                      "_RequestHash": {
+                        "Index": 114,
+                        "Class": "app.NameHash",
+                        "Userdata": null,
+                        "Fields": {
+                          "_Hash": 292928203
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "_Enable": true,
+              "_PermitWeaponIDs": [
+                "arm3003"
+              ]
+            }
+          }
+        ],
+        "_PermitUpperActionList": [
+          {
+            "Index": 118,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 4170644924
+            }
+          },
+          {
+            "Index": 119,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 3905855045
+            }
+          },
+          {
+            "Index": 120,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 307595368
+            }
+          },
+          {
+            "Index": 121,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 3881641710
+            }
+          },
+          {
+            "Index": 122,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 3881362397
+            }
+          },
+          {
+            "Index": 123,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2214955534
+            }
+          },
+          {
+            "Index": 124,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 4077825449
+            }
+          },
+          {
+            "Index": 125,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2261904973
+            }
+          },
+          {
+            "Index": 126,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 1761904603
+            }
+          },
+          {
+            "Index": 127,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2355018870
+            }
+          },
+          {
+            "Index": 128,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 3116597500
+            }
+          },
+          {
+            "Index": 129,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 687819026
+            }
+          },
+          {
+            "Index": 130,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2179421360
+            }
+          },
+          {
+            "Index": 131,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 1416407470
+            }
+          },
+          {
+            "Index": 132,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 3197459160
+            }
+          },
+          {
+            "Index": 133,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2854118086
+            }
+          },
+          {
+            "Index": 134,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2169997892
+            }
+          },
+          {
+            "Index": 135,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 918030836
+            }
+          },
+          {
+            "Index": 136,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2682044902
+            }
+          },
+          {
+            "Index": 137,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 658595872
+            }
+          },
+          {
+            "Index": 138,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2020757553
+            }
+          },
+          {
+            "Index": 139,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 1507983011
+            }
+          },
+          {
+            "Index": 140,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2494400512
+            }
+          },
+          {
+            "Index": 141,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 8726428
+            }
+          },
+          {
+            "Index": 142,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2770594847
+            }
+          },
+          {
+            "Index": 143,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 1928530831
+            }
+          },
+          {
+            "Index": 144,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 1753154249
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 1,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3510239010
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 0,
+        "_MotionID": 0,
+        "_MotionTransitionInfo": {
+          "Ref": 3,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": false
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 2,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 4,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 88286090
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 0,
+        "_MotionID": 0,
+        "_MotionTransitionInfo": {
+          "Ref": 7,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": true
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 6,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 8,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2338636751
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 2,
+        "_MotionTransitionInfo": {
+          "Ref": 11,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": true
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 10,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 12,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2385824598
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 160,
+        "_MotionTransitionInfo": {
+          "Ref": 15,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": true
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 14,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 16,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1096142545
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 900,
+        "_MotionID": 1,
+        "_MotionTransitionInfo": {
+          "Ref": 19,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": false
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 18,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 20,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3720319146
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 900,
+        "_MotionID": 1,
+        "_MotionTransitionInfo": {
+          "Ref": 23,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": true
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 22,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 24,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 528779460
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 2,
+        "_MotionTransitionInfo": {
+          "Ref": 27,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": true
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 26,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 28,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 352639844
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 160,
+        "_MotionTransitionInfo": {
+          "Ref": 31,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": true
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 30,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 32,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 6000,
+        "_MotionTransitionInfo": {
+          "Ref": 35,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": true
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 34,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 36,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2363484336
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 6000,
+        "_MotionTransitionInfo": {
+          "Ref": 39,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": false
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 38,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 40,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2919130899
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "via.motion.SetMotionTransitionInfo",
+      "Userdata": null,
+      "Fields": {
+        "StartTime": 0,
+        "InterpolationFrame": 10,
+        "InterpolationCurve": 0,
+        "InterpolationMode": 1
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 160,
+        "_MotionTransitionInfo": {
+          "Ref": 43,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_LeftHandOff": false
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData",
+      "Userdata": null,
+      "Fields": {
+        "_NameHash": {
+          "Ref": 42,
+          "Class": "app.NameHash"
+        },
+        "_RequestInfo": {
+          "Ref": 44,
+          "Class": "app.PlayerGripHandOverWriteDriver.RequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 46,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 88286090
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 48,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 50,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+      "Userdata": null,
+      "Fields": {
+        "_CommonRequest": {
+          "Ref": 47,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_HoldingRequest": {
+          "Ref": 49,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_DangerRequest": {
+          "Ref": 51,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+      "Userdata": null,
+      "Fields": {
+        "_Request": {
+          "Ref": 52,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests"
+        },
+        "_Enable": true,
+        "_PermitWeaponIDs": [
+          "arm0000",
+          "arm0001",
+          "arm0400",
+          "arm0003",
+          "arm0004",
+          "arm0007",
+          "arm0005",
+          "arm0006",
+          "arm0505"
+        ]
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 54,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2338636751
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 56,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 58,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+      "Userdata": null,
+      "Fields": {
+        "_CommonRequest": {
+          "Ref": 55,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_HoldingRequest": {
+          "Ref": 57,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_DangerRequest": {
+          "Ref": 59,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+      "Userdata": null,
+      "Fields": {
+        "_Request": {
+          "Ref": 60,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests"
+        },
+        "_Enable": true,
+        "_PermitWeaponIDs": [
+          "arm0300",
+          "arm0303",
+          "arm0335",
+          "arm0350",
+          "arm0351",
+          "arm0354",
+          "arm0355"
+        ]
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2363484336
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 62,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 64,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 66,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+      "Userdata": null,
+      "Fields": {
+        "_CommonRequest": {
+          "Ref": 63,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_HoldingRequest": {
+          "Ref": 65,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_DangerRequest": {
+          "Ref": 67,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+      "Userdata": null,
+      "Fields": {
+        "_Request": {
+          "Ref": 68,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests"
+        },
+        "_Enable": true,
+        "_PermitWeaponIDs": [
+          "arm0100",
+          "arm0600",
+          "arm0601",
+          "arm0500",
+          "arm0501",
+          "arm0103",
+          "arm0104",
+          "arm0503",
+          "arm0700"
+        ]
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 70,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2385824598
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 72,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 74,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+      "Userdata": null,
+      "Fields": {
+        "_CommonRequest": {
+          "Ref": 71,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_HoldingRequest": {
+          "Ref": 73,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_DangerRequest": {
+          "Ref": 75,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+      "Userdata": null,
+      "Fields": {
+        "_Request": {
+          "Ref": 76,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests"
+        },
+        "_Enable": true,
+        "_PermitWeaponIDs": [
+          "arm0200",
+          "arm0202",
+          "arm0203",
+          "arm0204",
+          "arm0207"
+        ]
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 78,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 88286090
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 80,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 82,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+      "Userdata": null,
+      "Fields": {
+        "_CommonRequest": {
+          "Ref": 79,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_HoldingRequest": {
+          "Ref": 81,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_DangerRequest": {
+          "Ref": 83,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+      "Userdata": null,
+      "Fields": {
+        "_Request": {
+          "Ref": 84,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests"
+        },
+        "_Enable": true,
+        "_PermitWeaponIDs": [
+          "arm0000",
+          "arm0001",
+          "arm0400",
+          "arm0003",
+          "arm0004",
+          "arm0007",
+          "arm0005",
+          "arm0006",
+          "arm0505"
+        ]
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 86,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2338636751
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 88,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 90,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+      "Userdata": null,
+      "Fields": {
+        "_CommonRequest": {
+          "Ref": 87,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_HoldingRequest": {
+          "Ref": 89,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_DangerRequest": {
+          "Ref": 91,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+      "Userdata": null,
+      "Fields": {
+        "_Request": {
+          "Ref": 92,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests"
+        },
+        "_Enable": true,
+        "_PermitWeaponIDs": [
+          "arm0300",
+          "arm0303",
+          "arm0335",
+          "arm0350",
+          "arm0351",
+          "arm0354",
+          "arm0355"
+        ]
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2363484336
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 94,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 96,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2363484336
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 98,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+      "Userdata": null,
+      "Fields": {
+        "_CommonRequest": {
+          "Ref": 95,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_HoldingRequest": {
+          "Ref": 97,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_DangerRequest": {
+          "Ref": 99,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+      "Userdata": null,
+      "Fields": {
+        "_Request": {
+          "Ref": 100,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests"
+        },
+        "_Enable": true,
+        "_PermitWeaponIDs": [
+          "arm0100",
+          "arm0600",
+          "arm0601",
+          "arm0500",
+          "arm0501",
+          "arm0104",
+          "arm0103",
+          "arm0104",
+          "arm0503",
+          "arm0700"
+        ]
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 102,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2385824598
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 104,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 106,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+      "Userdata": null,
+      "Fields": {
+        "_CommonRequest": {
+          "Ref": 103,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_HoldingRequest": {
+          "Ref": 105,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_DangerRequest": {
+          "Ref": 107,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+      "Userdata": null,
+      "Fields": {
+        "_Request": {
+          "Ref": 108,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests"
+        },
+        "_Enable": true,
+        "_PermitWeaponIDs": [
+          "arm0200",
+          "arm0202",
+          "arm0203",
+          "arm0204",
+          "arm0207"
+        ]
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 110,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2919130899
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_RequestHash": {
+          "Ref": 112,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 292928203
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RequestHash": {
+          "Ref": 114,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests",
+      "Userdata": null,
+      "Fields": {
+        "_CommonRequest": {
+          "Ref": 111,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_HoldingRequest": {
+          "Ref": 113,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        },
+        "_DangerRequest": {
+          "Ref": 115,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.AutoRequestInfo"
+        }
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData",
+      "Userdata": null,
+      "Fields": {
+        "_Request": {
+          "Ref": 116,
+          "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData.Requests"
+        },
+        "_Enable": true,
+        "_PermitWeaponIDs": [
+          "arm3003"
+        ]
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4170644924
+      }
+    },
+    {
+      "Index": 119,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3905855045
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 307595368
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3881641710
+      }
+    },
+    {
+      "Index": 122,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3881362397
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2214955534
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4077825449
+      }
+    },
+    {
+      "Index": 125,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2261904973
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1761904603
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2355018870
+      }
+    },
+    {
+      "Index": 128,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3116597500
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 687819026
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2179421360
+      }
+    },
+    {
+      "Index": 131,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1416407470
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3197459160
+      }
+    },
+    {
+      "Index": 133,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2854118086
+      }
+    },
+    {
+      "Index": 134,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2169997892
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 918030836
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2682044902
+      }
+    },
+    {
+      "Index": 137,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 658595872
+      }
+    },
+    {
+      "Index": 138,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2020757553
+      }
+    },
+    {
+      "Index": 139,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1507983011
+      }
+    },
+    {
+      "Index": 140,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2494400512
+      }
+    },
+    {
+      "Index": 141,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 8726428
+      }
+    },
+    {
+      "Index": 142,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2770594847
+      }
+    },
+    {
+      "Index": 143,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1928530831
+      }
+    },
+    {
+      "Index": 144,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1753154249
+      }
+    },
+    {
+      "Index": 145,
+      "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultJointMask": 200,
+        "_EmptyTransionInfo": {
+          "Ref": 1,
+          "Class": "via.motion.SetMotionTransitionInfo"
+        },
+        "_OnlyRightJointMask": 201,
+        "_RequestPresetDataList": [
+          {
+            "Ref": 5,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 37,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 41,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          },
+          {
+            "Ref": 45,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.RequestPresetData"
+          }
+        ],
+        "_AutoRequestList": [
+          {
+            "Ref": 53,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData"
+          },
+          {
+            "Ref": 61,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData"
+          },
+          {
+            "Ref": 69,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData"
+          },
+          {
+            "Ref": 77,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData"
+          }
+        ],
+        "_AutoRequestListFPS": [
+          {
+            "Ref": 85,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData"
+          },
+          {
+            "Ref": 93,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData"
+          },
+          {
+            "Ref": 101,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData"
+          },
+          {
+            "Ref": 109,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData"
+          },
+          {
+            "Ref": 117,
+            "Class": "app.PlayerGripHandOverWriteConfiguration.PlayerGripHandOverWriteUserData.AutoRequestData"
+          }
+        ],
+        "_PermitUpperActionList": [
+          {
+            "Ref": 118,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 119,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 120,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 121,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 122,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 123,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 124,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 125,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 126,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 127,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 128,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 129,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 130,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 131,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 132,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 133,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 134,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 135,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 136,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 137,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 138,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 139,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 140,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 141,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 142,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 143,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 144,
+            "Class": "app.NameHash"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+	"$schema": "resource-info.schema.json",
+	"file_extensions": {
+		"Uri": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/global/file_extensions.json",
+		"LastUpdatedAtUtc": "2026-09-04T14:30:00Z"
+	},
+	"resources": {
+		"dd2": {
+			"LastUpdatedAtUtc": "2026-10-10T10:30:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/kagenocookie/REasy/refs/heads/master/resources/data/dumps/rszdd2.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/dd2_files.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/efx_structs.json",
+			"CollisionDefinition": "config/collision/towercollision.cdef.7",
+			"DynamicsDefinition": "config/dynamics/towerdynamics.def.6"
+		},
+		"dmc5":{
+			"LastUpdatedAtUtc": "2026-07-12T16:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszdmc5.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/DMC5_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/efx_structs.json",
+			"CollisionDefinition": "collision/sagcollision.cdef.3",
+			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
+		},
+		"mhrise":{
+			"LastUpdatedAtUtc": "2026-06-26T01:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhrise.json",
+				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/MHR_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/mhrise/il2cpp_cache.json",
+			"CollisionDefinition": "natives/stm/physics/collisiondefinition.cdef.4"
+		},
+		"mhwilds":{
+			"LastUpdatedAtUtc": "2026-08-09T14:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhwilds.json",
+				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/MHWS_STM.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/mhwilds/il2cpp_cache.json",
+			"CollisionDefinition": "collision/sagcollision.cdef.3",
+			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
+		},
+		"re2":{
+			"LastUpdatedAtUtc": "2026-07-12T16:00:00Z",
+			"RszPatchFiles": [
+          		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre2.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE2_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/efx_structs.json",
+			"CollisionDefinition": "objectroot/collision/ropewaycollisiondefinition.cdef.3",
+			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.5"
+		},
+		"re2rt":{
+			"LastUpdatedAtUtc": "2025-09-08T00:00:00Z",
+			"RszPatchFiles": [
+          		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre2rt.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE2_RT_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/efx_structs.json",
+			"CollisionDefinition": "objectroot/collision/ropewaycollisiondefinition.cdef.4",
+			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.6"
+		},
+		"re3":{
+			"LastUpdatedAtUtc": "2025-10-25T00:00:00Z",
+			"RszPatchFiles": [
+          		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre3.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE3_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3/efx_structs.json",
+			"CollisionDefinition": "escape/collision/ropewaycollisiondefinition.cdef.3",
+			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.5"
+		},
+		"re3rt":{
+			"LastUpdatedAtUtc": "2025-10-25T00:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre3rt.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3rt/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE3_RT_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3rt/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3rt/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/efx_structs.json",
+			"CollisionDefinition": "escape/collision/ropewaycollisiondefinition.cdef.4",
+			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.6"
+		},
+		"re4":{
+			"LastUpdatedAtUtc": "2026-06-27T01:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre4.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re4/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/RE4_STM.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re4/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re4/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re4/efx_structs.json",
+			"CollisionDefinition": "_share/config/physics/appcollisiondefinition.cdef.5",
+			"DynamicsDefinition": "_share/config/dynamics/appdynamicsdefinition.def.6"
+		},
+		"re7":{
+			"LastUpdatedAtUtc": "2026-06-26T01:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre7.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE7_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7/efx_structs.json",
+			"CollisionDefinition": "collision/harawatacollision.cdef.1"
+		},
+		"re7rt":{
+			"LastUpdatedAtUtc": "2026-06-26T01:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre7rt.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7rt/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE7_RT_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7rt/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7rt/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/efx_structs.json",
+			"CollisionDefinition": "collision/harawatacollision.cdef.4"
+		},
+		"re8":{
+			"LastUpdatedAtUtc": "2026-06-25T13:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre8.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE8_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/pfb_ref_props.json",
+			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/efx_structs.json",
+			"CollisionDefinition": "natives/stm/collisionfilter/villagecollision.cdef.3",
+			"DynamicsDefinition": "natives/stm/collisionfilter/villagedynamics.def.6"
+		},
+		"re9":{
+			"LastUpdatedAtUtc": "2026-08-15T18:10:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre9.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re9/rsz_patch.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/RE9_STM.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re9/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re9/pfb_ref_props.json",
+			"CollisionDefinition": "natives/stm/config/physics/appcollisiondefinition.cdef.7",
+			"DynamicsDefinition": "natives/stm/config/dynamics/appdynamicsdefinition.def.6"
+		},
+		"sf6":{
+			"LastUpdatedAtUtc": "2026-08-03T08:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszsf6.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/SF6_STM.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/sf6/il2cpp_cache.json",
+			"CollisionDefinition": "natives/stm/product/collision/collision.cdef.5",
+			"DynamicsDefinition": "natives/stm/product/dynamicssys/definition/dynamicsdefinition.def.6"
+		},
+		"oni2":{
+			"LastUpdatedAtUtc": "2026-06-30T14:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszo2.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/O2_STM.list"
+		},
+		"pragmata":{
+			"LastUpdatedAtUtc": "2026-09-28T03:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszpragmata.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/rsz_patch.json"
+			],
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/pfb_ref_props.json",
+			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/pragmata.list"
+		},
+		"mhsto3":{
+			"LastUpdatedAtUtc": "2026-06-30T14:00:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhst3.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/MHST3_DEMO_STM.list"
+		},
+		"oniws":{
+			"LastUpdatedAtUtc": "2026-09-15T05:55:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszoniwots.json"
+			],
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oniws/il2cpp_cache.json",
+			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oniws/oniws_files.list"
+		}
+	}
+}

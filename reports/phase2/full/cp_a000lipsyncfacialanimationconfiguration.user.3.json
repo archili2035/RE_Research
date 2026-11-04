@@ -1,0 +1,149 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/facialconfiguration/cp_a000lipsyncfacialanimationconfiguration.user.3",
+  "Objects": [
+    {
+      "Index": 3,
+      "Class": "app.CharacterLipSyncFacialAnimationConfiguration",
+      "Userdata": null,
+      "Fields": {
+        "_LipSyncLayerIndex": 1,
+        "_UseCustomVowelTrack": false,
+        "_BankID": 1,
+        "_MotionID_Neutral": 10,
+        "_MotionID_A": 120,
+        "_MotionID_I": 130,
+        "_MotionID_U": 140,
+        "_MotionID_E": 150,
+        "_MotionID_O": 160,
+        "_ReplaceNeutralWithA": true,
+        "_AheadLipSyncTime": 0.02,
+        "_VolumeEmotionRateCurve": {
+          "Index": 1,
+          "Class": "via.AnimationCurve",
+          "Userdata": null,
+          "Fields": {
+            "Keys": [
+              "0: 0",
+              "0.518: 0.19502565",
+              "0.771: 0.7969766",
+              "1: 1"
+            ],
+            "MinValue": 0,
+            "MaxValue": 1,
+            "LoopStartTime": 0,
+            "LoopEndTime": 1,
+            "LoopCount": 0,
+            "LoopWrapNo": 2
+          }
+        },
+        "_VolumeBlendRateCurve": {
+          "Index": 2,
+          "Class": "via.AnimationCurve",
+          "Userdata": null,
+          "Fields": {
+            "Keys": [
+              "0: 0",
+              "0.4812: 0.10830028",
+              "0.777: 0.55921054",
+              "1: 1"
+            ],
+            "MinValue": 0,
+            "MaxValue": 1,
+            "LoopStartTime": 0,
+            "LoopEndTime": 1,
+            "LoopCount": 0,
+            "LoopWrapNo": 2
+          }
+        },
+        "_VolumeChaseTime": 0.3,
+        "_VolumeResetTime": 0.2,
+        "_TransitionFrame": 5,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1,
+        "_BreathingVolumeScale": 0.2,
+        "_GrowlingVolumeScale": 0.2,
+        "_GrowlingVowelType": 72
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.518: 0.19502565",
+          "0.771: 0.7969766",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.4812: 0.10830028",
+          "0.777: 0.55921054",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.CharacterLipSyncFacialAnimationConfiguration",
+      "Userdata": null,
+      "Fields": {
+        "_LipSyncLayerIndex": 1,
+        "_UseCustomVowelTrack": false,
+        "_BankID": 1,
+        "_MotionID_Neutral": 10,
+        "_MotionID_A": 120,
+        "_MotionID_I": 130,
+        "_MotionID_U": 140,
+        "_MotionID_E": 150,
+        "_MotionID_O": 160,
+        "_ReplaceNeutralWithA": true,
+        "_AheadLipSyncTime": 0.02,
+        "_VolumeEmotionRateCurve": {
+          "Ref": 1,
+          "Class": "via.AnimationCurve"
+        },
+        "_VolumeBlendRateCurve": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        },
+        "_VolumeChaseTime": 0.3,
+        "_VolumeResetTime": 0.2,
+        "_TransitionFrame": 5,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1,
+        "_BreathingVolumeScale": 0.2,
+        "_GrowlingVolumeScale": 0.2,
+        "_GrowlingVowelType": 72
+      }
+    }
+  ]
+}

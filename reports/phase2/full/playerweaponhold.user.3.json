@@ -1,0 +1,3169 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerweaponhold.user.3",
+  "Objects": [
+    {
+      "Index": 115,
+      "Class": "app.WeaponHoldStanceAdjusterUserData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponSettings": [
+          {
+            "Index": 9,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 1,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 2,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 3,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 4,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 5,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 6,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 5,
+                    "_MinAngle": -13,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 7,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Lower",
+                    "_MaxAngle": 17,
+                    "_MinAngle": 0,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 8,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 1
+            }
+          },
+          {
+            "Index": 17,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 10,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 11,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 12,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -20,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 13,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -25,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 14,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 15,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 16,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 10,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 4
+            }
+          },
+          {
+            "Index": 25,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 18,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 19,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 20,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 21,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 22,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 23,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 18,
+                    "_MinAngle": -20,
+                    "_RotationCoefficient": 0.1,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 24,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 3
+            }
+          },
+          {
+            "Index": 33,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 26,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 27,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 28,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 29,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -25,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 30,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 31,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 32,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 5
+            }
+          },
+          {
+            "Index": 41,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 34,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 35,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 36,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 37,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 38,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 39,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 18,
+                    "_MinAngle": -20,
+                    "_RotationCoefficient": 0.1,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 40,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 2
+            }
+          },
+          {
+            "Index": 49,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 42,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 43,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 44,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 45,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 46,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 47,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 18,
+                    "_MinAngle": -20,
+                    "_RotationCoefficient": 0.1,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 48,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 8
+            }
+          },
+          {
+            "Index": 57,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 50,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 51,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 52,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 53,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 54,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 55,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 18,
+                    "_MinAngle": -20,
+                    "_RotationCoefficient": 0.1,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 56,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 7
+            }
+          },
+          {
+            "Index": 65,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 58,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 59,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 60,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 5,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 61,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 5,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 62,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 63,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -25,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 64,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0.15
+                }
+              },
+              "_LookDirLerpSpeed": 10,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 0
+            }
+          },
+          {
+            "Index": 73,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 66,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 67,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 68,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 69,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 70,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 71,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.1,
+                    "_AutoSymmetryControl": false
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 72,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 6
+            }
+          },
+          {
+            "Index": 80,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 74,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 75,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 76,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 5,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 77,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 5,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 78,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 79,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 9
+            }
+          },
+          {
+            "Index": 88,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 81,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 82,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 83,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 84,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 85,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 86,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.1,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 87,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_WeaponCategory": 10
+            }
+          }
+        ],
+        "_WeaponIDSettings": [
+          {
+            "Index": 96,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponIndividualSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 89,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 90,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 91,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 92,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 93,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 94,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "L_Arm_Upper",
+                    "_MaxAngle": 18,
+                    "_MinAngle": -20,
+                    "_RotationCoefficient": 0.1,
+                    "_AutoSymmetryControl": false
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 95,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": true,
+              "_IsRotateCamAxis": true,
+              "_WeaponID": "arm0550"
+            }
+          },
+          {
+            "Index": 104,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponIndividualSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 97,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 98,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_0",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 99,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_1",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -15,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 100,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 15,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 101,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 102,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "L_Arm_Upper",
+                    "_MaxAngle": 18,
+                    "_MinAngle": -20,
+                    "_RotationCoefficient": 0.1,
+                    "_AutoSymmetryControl": false
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 103,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 25,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": true,
+              "_IsRotateCamAxis": true,
+              "_WeaponID": "arm0008"
+            }
+          }
+        ],
+        "_ExtraSettings": [
+          {
+            "Index": 114,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.ExtraSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointSettings": [
+                {
+                  "Index": 105,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Neck_1",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 106,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Clavicle",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 107,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "L_Arm_Clavicle",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -20,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 108,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Spine_2",
+                    "_MaxAngle": 30,
+                    "_MinAngle": -30,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 109,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "Head_0",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -5,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 110,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "R_Arm_Upper",
+                    "_MaxAngle": 20,
+                    "_MinAngle": -25,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                },
+                {
+                  "Index": 111,
+                  "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+                  "Userdata": null,
+                  "Fields": {
+                    "_JointName": "L_Arm_Upper",
+                    "_MaxAngle": 10,
+                    "_MinAngle": -10,
+                    "_RotationCoefficient": 0.5,
+                    "_AutoSymmetryControl": true
+                  }
+                }
+              ],
+              "_CameraLookAtSetting": {
+                "Index": 112,
+                "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+                "Userdata": null,
+                "Fields": {
+                  "_OffsetY": 0
+                }
+              },
+              "_LookDirLerpSpeed": 10,
+              "_IsCorrectPrevPosLeftArm": false,
+              "_IsCorrectPrevPosRightArm": false,
+              "_IsRotateCamAxis": false,
+              "_ExtraName": {
+                "Index": 113,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2355771863
+                }
+              }
+            }
+          }
+        ],
+        "_WeaponLookAtOnCoefficient": 1,
+        "_WeaponLookAtOffCoefficient": 0.25
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 10,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 5,
+        "_MinAngle": -13,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Lower",
+        "_MaxAngle": 17,
+        "_MinAngle": 0,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 1,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 8,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 1
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 10,
+        "_MinAngle": -20,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 10,
+        "_MinAngle": -25,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 10,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 16,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 10,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 4
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 15,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 18,
+        "_MinAngle": -20,
+        "_RotationCoefficient": 0.1,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 18,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 22,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 23,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 24,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 3
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 10,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 10,
+        "_MinAngle": -25,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 26,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 28,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 31,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 32,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 5
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 15,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 18,
+        "_MinAngle": -20,
+        "_RotationCoefficient": 0.1,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 34,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 35,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 36,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 37,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 38,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 39,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 40,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 2
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 15,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 18,
+        "_MinAngle": -20,
+        "_RotationCoefficient": 0.1,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 42,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 43,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 44,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 45,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 46,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 47,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 48,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 8
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 15,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 18,
+        "_MinAngle": -20,
+        "_RotationCoefficient": 0.1,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 50,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 51,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 52,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 53,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 54,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 55,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 56,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 7
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 5,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 5,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 20,
+        "_MinAngle": -25,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0.15
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 58,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 59,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 60,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 61,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 62,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 63,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 64,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 10,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 0
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 10,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.1,
+        "_AutoSymmetryControl": false
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 66,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 67,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 68,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 69,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 70,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 71,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 72,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 6
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 5,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 5,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 74,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 75,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 76,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 77,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 78,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 79,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 9
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.1,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 81,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 82,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 83,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 84,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 85,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 86,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 87,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_WeaponCategory": 10
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 15,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "L_Arm_Upper",
+        "_MaxAngle": 18,
+        "_MinAngle": -20,
+        "_RotationCoefficient": 0.1,
+        "_AutoSymmetryControl": false
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponIndividualSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 89,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 90,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 91,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 92,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 93,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 94,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 95,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": true,
+        "_IsRotateCamAxis": true,
+        "_WeaponID": "arm0550"
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_0",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_1",
+        "_MaxAngle": 15,
+        "_MinAngle": -15,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 15,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "L_Arm_Upper",
+        "_MaxAngle": 18,
+        "_MinAngle": -20,
+        "_RotationCoefficient": 0.1,
+        "_AutoSymmetryControl": false
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponIndividualSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 97,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 98,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 99,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 100,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 101,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 102,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 103,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 25,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": true,
+        "_IsRotateCamAxis": true,
+        "_WeaponID": "arm0008"
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Neck_1",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Clavicle",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "L_Arm_Clavicle",
+        "_MaxAngle": 20,
+        "_MinAngle": -20,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Spine_2",
+        "_MaxAngle": 30,
+        "_MinAngle": -30,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "Head_0",
+        "_MaxAngle": 20,
+        "_MinAngle": -5,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Arm_Upper",
+        "_MaxAngle": 20,
+        "_MinAngle": -25,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "L_Arm_Upper",
+        "_MaxAngle": 10,
+        "_MinAngle": -10,
+        "_RotationCoefficient": 0.5,
+        "_AutoSymmetryControl": true
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OffsetY": 0
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2355771863
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.WeaponHoldStanceAdjusterUserData.ExtraSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointSettings": [
+          {
+            "Ref": 105,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 106,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 107,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 108,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 109,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 110,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          },
+          {
+            "Ref": 111,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.JointSetting"
+          }
+        ],
+        "_CameraLookAtSetting": {
+          "Ref": 112,
+          "Class": "app.WeaponHoldStanceAdjusterUserData.CameraLookAtSetting"
+        },
+        "_LookDirLerpSpeed": 10,
+        "_IsCorrectPrevPosLeftArm": false,
+        "_IsCorrectPrevPosRightArm": false,
+        "_IsRotateCamAxis": false,
+        "_ExtraName": {
+          "Ref": 113,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "app.WeaponHoldStanceAdjusterUserData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponSettings": [
+          {
+            "Ref": 9,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 41,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 49,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 57,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 65,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 73,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 80,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          },
+          {
+            "Ref": 88,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponSetting"
+          }
+        ],
+        "_WeaponIDSettings": [
+          {
+            "Ref": 96,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponIndividualSetting"
+          },
+          {
+            "Ref": 104,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.WeaponIndividualSetting"
+          }
+        ],
+        "_ExtraSettings": [
+          {
+            "Ref": 114,
+            "Class": "app.WeaponHoldStanceAdjusterUserData.ExtraSetting"
+          }
+        ],
+        "_WeaponLookAtOnCoefficient": 1,
+        "_WeaponLookAtOffCoefficient": 0.25
+      }
+    }
+  ]
+}

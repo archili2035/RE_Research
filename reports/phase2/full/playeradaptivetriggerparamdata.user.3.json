@@ -1,0 +1,2527 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playeradaptivetriggerparamdata.user.3",
+  "Objects": [
+    {
+      "Index": 117,
+      "Class": "app.AdaptiveTriggerParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultData": {
+          "Index": 4,
+          "Class": "app.AdaptiveTriggerParamUserData.Data",
+          "Userdata": null,
+          "Fields": {
+            "_WeaponID": "Invalid",
+            "_HoldTriggerParam": {
+              "Index": 1,
+              "Class": "app.AdaptiveTriggerParamApp",
+              "Userdata": null,
+              "Fields": {
+                "_TriggerId": 3951620629,
+                "_TriggerCheckIntensity": 0.1
+              }
+            },
+            "_ShotTriggerParam": {
+              "Index": 2,
+              "Class": "app.AdaptiveTriggerParamApp",
+              "Userdata": null,
+              "Fields": {
+                "_TriggerId": 3826621646,
+                "_TriggerCheckIntensity": 0.85
+              }
+            },
+            "_ShotWaitTriggerParam": {
+              "Index": 3,
+              "Class": "app.AdaptiveTriggerParamApp",
+              "Userdata": null,
+              "Fields": {
+                "_TriggerId": 3826621646,
+                "_TriggerCheckIntensity": 0.65
+              }
+            }
+          }
+        },
+        "DataList": [
+          {
+            "Index": 8,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0400",
+              "_HoldTriggerParam": {
+                "Index": 5,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 6,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1739998391,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 7,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 3867094564,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0100",
+              "_HoldTriggerParam": {
+                "Index": 9,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 10,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2737597604,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 11,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 1
+                }
+              }
+            }
+          },
+          {
+            "Index": 16,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0202",
+              "_HoldTriggerParam": {
+                "Index": 13,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 14,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 217182848,
+                  "_TriggerCheckIntensity": 0.6
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 15,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0
+                }
+              }
+            }
+          },
+          {
+            "Index": 20,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0101",
+              "_HoldTriggerParam": {
+                "Index": 17,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 18,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2737597604,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 19,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 24,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0102",
+              "_HoldTriggerParam": {
+                "Index": 21,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 22,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2737597604,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 23,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 28,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0103",
+              "_HoldTriggerParam": {
+                "Index": 25,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 26,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2737597604,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 27,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 32,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0104",
+              "_HoldTriggerParam": {
+                "Index": 29,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 30,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2737597604,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 31,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 36,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0503",
+              "_HoldTriggerParam": {
+                "Index": 33,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 34,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 421142256,
+                  "_TriggerCheckIntensity": 0.9
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 35,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 40,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0600",
+              "_HoldTriggerParam": {
+                "Index": 37,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 38,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2737597604,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 39,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 44,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0601",
+              "_HoldTriggerParam": {
+                "Index": 41,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 42,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2737597604,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 43,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 48,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0700",
+              "_HoldTriggerParam": {
+                "Index": 45,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 46,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2737597604,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 47,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 52,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0005",
+              "_HoldTriggerParam": {
+                "Index": 49,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 50,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1739998391,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 51,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 3867094564,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 56,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0006",
+              "_HoldTriggerParam": {
+                "Index": 53,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 54,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1739998391,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 55,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 3867094564,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 60,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0203",
+              "_HoldTriggerParam": {
+                "Index": 57,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 58,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 217182848,
+                  "_TriggerCheckIntensity": 0.6
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 59,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 64,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0204",
+              "_HoldTriggerParam": {
+                "Index": 61,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 62,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 217182848,
+                  "_TriggerCheckIntensity": 0.6
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 63,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 68,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0200",
+              "_HoldTriggerParam": {
+                "Index": 65,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 66,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 217182848,
+                  "_TriggerCheckIntensity": 0.6
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 67,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 72,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0207",
+              "_HoldTriggerParam": {
+                "Index": 69,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 70,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 217182848,
+                  "_TriggerCheckIntensity": 0.6
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 71,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 76,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0300",
+              "_HoldTriggerParam": {
+                "Index": 73,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 74,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 75,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 80,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0303",
+              "_HoldTriggerParam": {
+                "Index": 77,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 78,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 79,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 84,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0350",
+              "_HoldTriggerParam": {
+                "Index": 81,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 82,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 83,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 88,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0351",
+              "_HoldTriggerParam": {
+                "Index": 85,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 86,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 87,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 92,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0335",
+              "_HoldTriggerParam": {
+                "Index": 89,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 90,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 91,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 96,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0354",
+              "_HoldTriggerParam": {
+                "Index": 93,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 94,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 95,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          },
+          {
+            "Index": 100,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0500",
+              "_HoldTriggerParam": {
+                "Index": 97,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 98,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 421142256,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 99,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 104,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0501",
+              "_HoldTriggerParam": {
+                "Index": 101,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 102,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 421142256,
+                  "_TriggerCheckIntensity": 0.9
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 103,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 108,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0550",
+              "_HoldTriggerParam": {
+                "Index": 105,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 106,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 421142256,
+                  "_TriggerCheckIntensity": 0.9
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 107,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 112,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0505",
+              "_HoldTriggerParam": {
+                "Index": 109,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 110,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 421142256,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 111,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 2418644799,
+                  "_TriggerCheckIntensity": 0.85
+                }
+              }
+            }
+          },
+          {
+            "Index": 116,
+            "Class": "app.AdaptiveTriggerParamUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_WeaponID": "arm0355",
+              "_HoldTriggerParam": {
+                "Index": 113,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotTriggerParam": {
+                "Index": 114,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              },
+              "_ShotWaitTriggerParam": {
+                "Index": 115,
+                "Class": "app.AdaptiveTriggerParamApp",
+                "Userdata": null,
+                "Fields": {
+                  "_TriggerId": 1112495362,
+                  "_TriggerCheckIntensity": 0.1
+                }
+              }
+            }
+          }
+        ],
+        "ExtraDataList": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 3951620629,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 3826621646,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 3826621646,
+        "_TriggerCheckIntensity": 0.65
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "Invalid",
+        "_HoldTriggerParam": {
+          "Ref": 1,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 2,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 3,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1739998391,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 3867094564,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0400",
+        "_HoldTriggerParam": {
+          "Ref": 5,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 6,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 7,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2737597604,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 1
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0100",
+        "_HoldTriggerParam": {
+          "Ref": 9,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 10,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 11,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 217182848,
+        "_TriggerCheckIntensity": 0.6
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0202",
+        "_HoldTriggerParam": {
+          "Ref": 13,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 14,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 15,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2737597604,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0101",
+        "_HoldTriggerParam": {
+          "Ref": 17,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 18,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 19,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2737597604,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0102",
+        "_HoldTriggerParam": {
+          "Ref": 21,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 22,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 23,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2737597604,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0103",
+        "_HoldTriggerParam": {
+          "Ref": 25,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 26,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 27,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2737597604,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0104",
+        "_HoldTriggerParam": {
+          "Ref": 29,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 30,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 31,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 421142256,
+        "_TriggerCheckIntensity": 0.9
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0503",
+        "_HoldTriggerParam": {
+          "Ref": 33,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 34,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 35,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2737597604,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0600",
+        "_HoldTriggerParam": {
+          "Ref": 37,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 38,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 39,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2737597604,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0601",
+        "_HoldTriggerParam": {
+          "Ref": 41,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 42,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 43,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2737597604,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0700",
+        "_HoldTriggerParam": {
+          "Ref": 45,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 46,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 47,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1739998391,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 3867094564,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0005",
+        "_HoldTriggerParam": {
+          "Ref": 49,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 50,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 51,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1739998391,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 3867094564,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0006",
+        "_HoldTriggerParam": {
+          "Ref": 53,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 54,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 55,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 217182848,
+        "_TriggerCheckIntensity": 0.6
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0203",
+        "_HoldTriggerParam": {
+          "Ref": 57,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 58,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 59,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 217182848,
+        "_TriggerCheckIntensity": 0.6
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0204",
+        "_HoldTriggerParam": {
+          "Ref": 61,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 62,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 63,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 217182848,
+        "_TriggerCheckIntensity": 0.6
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0200",
+        "_HoldTriggerParam": {
+          "Ref": 65,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 66,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 67,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 217182848,
+        "_TriggerCheckIntensity": 0.6
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0207",
+        "_HoldTriggerParam": {
+          "Ref": 69,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 70,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 71,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0300",
+        "_HoldTriggerParam": {
+          "Ref": 73,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 74,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 75,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0303",
+        "_HoldTriggerParam": {
+          "Ref": 77,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 78,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 79,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0350",
+        "_HoldTriggerParam": {
+          "Ref": 81,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 82,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 83,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0351",
+        "_HoldTriggerParam": {
+          "Ref": 85,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 86,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 87,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0335",
+        "_HoldTriggerParam": {
+          "Ref": 89,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 90,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 91,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0354",
+        "_HoldTriggerParam": {
+          "Ref": 93,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 94,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 95,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 421142256,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0500",
+        "_HoldTriggerParam": {
+          "Ref": 97,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 98,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 99,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 421142256,
+        "_TriggerCheckIntensity": 0.9
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0501",
+        "_HoldTriggerParam": {
+          "Ref": 101,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 102,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 103,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 421142256,
+        "_TriggerCheckIntensity": 0.9
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0550",
+        "_HoldTriggerParam": {
+          "Ref": 105,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 106,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 107,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 421142256,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 2418644799,
+        "_TriggerCheckIntensity": 0.85
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0505",
+        "_HoldTriggerParam": {
+          "Ref": 109,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 110,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 111,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "app.AdaptiveTriggerParamApp",
+      "Userdata": null,
+      "Fields": {
+        "_TriggerId": 1112495362,
+        "_TriggerCheckIntensity": 0.1
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "app.AdaptiveTriggerParamUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponID": "arm0355",
+        "_HoldTriggerParam": {
+          "Ref": 113,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotTriggerParam": {
+          "Ref": 114,
+          "Class": "app.AdaptiveTriggerParamApp"
+        },
+        "_ShotWaitTriggerParam": {
+          "Ref": 115,
+          "Class": "app.AdaptiveTriggerParamApp"
+        }
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "app.AdaptiveTriggerParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultData": {
+          "Ref": 4,
+          "Class": "app.AdaptiveTriggerParamUserData.Data"
+        },
+        "DataList": [
+          {
+            "Ref": 8,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 16,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 28,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 32,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 36,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 40,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 44,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 48,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 52,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 56,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 60,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 64,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 68,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 72,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 76,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 80,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 84,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 88,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 92,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 96,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 100,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 104,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 108,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 112,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          },
+          {
+            "Ref": 116,
+            "Class": "app.AdaptiveTriggerParamUserData.Data"
+          }
+        ],
+        "ExtraDataList": []
+      }
+    }
+  ]
+}

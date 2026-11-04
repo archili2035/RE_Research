@@ -1,0 +1,343 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/commonmessage/cp_a100commonmessagedefinitiondata_fatzombie.user.3",
+  "Objects": [
+    {
+      "Index": 13,
+      "Class": "app.CommonMessageDefinitionData",
+      "Userdata": null,
+      "Fields": {
+        "_MasterDatas": [
+          {
+            "Index": 2,
+            "Class": "app.CommonMessageDefinitionData.MasterData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1558250689
+                }
+              },
+              "_TarkRate": 0.5,
+              "_Priority": 50,
+              "_EnableLoop": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_EnableDelay": false,
+              "_DelaySecond": 3,
+              "_IgnoreCoolTime": true
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.CommonMessageDefinitionData.MasterData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 3,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 516776715
+                }
+              },
+              "_TarkRate": 0.5,
+              "_Priority": 50,
+              "_EnableLoop": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_EnableDelay": false,
+              "_DelaySecond": 3,
+              "_IgnoreCoolTime": true
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.CommonMessageDefinitionData.MasterData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 5,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 457914167
+                }
+              },
+              "_TarkRate": 0.5,
+              "_Priority": 50,
+              "_EnableLoop": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_EnableDelay": false,
+              "_DelaySecond": 3,
+              "_IgnoreCoolTime": true
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.CommonMessageDefinitionData.MasterData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 7,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 4014688967
+                }
+              },
+              "_TarkRate": 0.5,
+              "_Priority": 50,
+              "_EnableLoop": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_EnableDelay": false,
+              "_DelaySecond": 3,
+              "_IgnoreCoolTime": true
+            }
+          },
+          {
+            "Index": 10,
+            "Class": "app.CommonMessageDefinitionData.MasterData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 9,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 179263214
+                }
+              },
+              "_TarkRate": 0.5,
+              "_Priority": 50,
+              "_EnableLoop": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_EnableDelay": false,
+              "_DelaySecond": 3,
+              "_IgnoreCoolTime": true
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.CommonMessageDefinitionData.MasterData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 11,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2747849593
+                }
+              },
+              "_TarkRate": 0.5,
+              "_Priority": 50,
+              "_EnableLoop": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_EnableDelay": false,
+              "_DelaySecond": 3,
+              "_IgnoreCoolTime": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1558250689
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CommonMessageDefinitionData.MasterData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_TarkRate": 0.5,
+        "_Priority": 50,
+        "_EnableLoop": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_EnableDelay": false,
+        "_DelaySecond": 3,
+        "_IgnoreCoolTime": true
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 516776715
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.CommonMessageDefinitionData.MasterData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 3,
+          "Class": "app.NameHash"
+        },
+        "_TarkRate": 0.5,
+        "_Priority": 50,
+        "_EnableLoop": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_EnableDelay": false,
+        "_DelaySecond": 3,
+        "_IgnoreCoolTime": true
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 457914167
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.CommonMessageDefinitionData.MasterData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        },
+        "_TarkRate": 0.5,
+        "_Priority": 50,
+        "_EnableLoop": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_EnableDelay": false,
+        "_DelaySecond": 3,
+        "_IgnoreCoolTime": true
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4014688967
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.CommonMessageDefinitionData.MasterData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 7,
+          "Class": "app.NameHash"
+        },
+        "_TarkRate": 0.5,
+        "_Priority": 50,
+        "_EnableLoop": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_EnableDelay": false,
+        "_DelaySecond": 3,
+        "_IgnoreCoolTime": true
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 179263214
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.CommonMessageDefinitionData.MasterData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 9,
+          "Class": "app.NameHash"
+        },
+        "_TarkRate": 0.5,
+        "_Priority": 50,
+        "_EnableLoop": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_EnableDelay": false,
+        "_DelaySecond": 3,
+        "_IgnoreCoolTime": true
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2747849593
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.CommonMessageDefinitionData.MasterData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 11,
+          "Class": "app.NameHash"
+        },
+        "_TarkRate": 0.5,
+        "_Priority": 50,
+        "_EnableLoop": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_EnableDelay": false,
+        "_DelaySecond": 3,
+        "_IgnoreCoolTime": true
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.CommonMessageDefinitionData",
+      "Userdata": null,
+      "Fields": {
+        "_MasterDatas": [
+          {
+            "Ref": 2,
+            "Class": "app.CommonMessageDefinitionData.MasterData"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.CommonMessageDefinitionData.MasterData"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.CommonMessageDefinitionData.MasterData"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.CommonMessageDefinitionData.MasterData"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.CommonMessageDefinitionData.MasterData"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.CommonMessageDefinitionData.MasterData"
+          }
+        ]
+      }
+    }
+  ]
+}

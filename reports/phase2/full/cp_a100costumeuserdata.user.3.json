@@ -1,0 +1,221 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100costumeuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 9,
+      "Class": "app.PlayerCostumeSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DataArray": [
+          {
+            "Index": 1,
+            "Class": "app.PlayerCostumeSettingUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_BonusIDName": "bo99_00_102",
+              "_VisibleEquipPockets": [],
+              "_IsVisibleBodyLightEntity": false
+            }
+          },
+          {
+            "Index": 2,
+            "Class": "app.PlayerCostumeSettingUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_BonusIDName": "bo99_00_103",
+              "_VisibleEquipPockets": [],
+              "_IsVisibleBodyLightEntity": false
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.PlayerCostumeSettingUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_BonusIDName": "bo99_00_104",
+              "_VisibleEquipPockets": [
+                {
+                  "Index": 3,
+                  "Class": "app.NameHash",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Hash": 1803427045
+                  }
+                }
+              ],
+              "_IsVisibleBodyLightEntity": false
+            }
+          },
+          {
+            "Index": 5,
+            "Class": "app.PlayerCostumeSettingUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_BonusIDName": "bo99_00_105",
+              "_VisibleEquipPockets": [],
+              "_IsVisibleBodyLightEntity": false
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.PlayerCostumeSettingUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_BonusIDName": "bo99_00_106",
+              "_VisibleEquipPockets": [],
+              "_IsVisibleBodyLightEntity": false
+            }
+          },
+          {
+            "Index": 7,
+            "Class": "app.PlayerCostumeSettingUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_BonusIDName": "bo99_00_100",
+              "_VisibleEquipPockets": [],
+              "_IsVisibleBodyLightEntity": true
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.PlayerCostumeSettingUserData.Data",
+            "Userdata": null,
+            "Fields": {
+              "_BonusIDName": "bo99_00_101",
+              "_VisibleEquipPockets": [],
+              "_IsVisibleBodyLightEntity": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerCostumeSettingUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_BonusIDName": "bo99_00_102",
+        "_VisibleEquipPockets": [],
+        "_IsVisibleBodyLightEntity": false
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerCostumeSettingUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_BonusIDName": "bo99_00_103",
+        "_VisibleEquipPockets": [],
+        "_IsVisibleBodyLightEntity": false
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1803427045
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerCostumeSettingUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_BonusIDName": "bo99_00_104",
+        "_VisibleEquipPockets": [
+          {
+            "Ref": 3,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsVisibleBodyLightEntity": false
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerCostumeSettingUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_BonusIDName": "bo99_00_105",
+        "_VisibleEquipPockets": [],
+        "_IsVisibleBodyLightEntity": false
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.PlayerCostumeSettingUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_BonusIDName": "bo99_00_106",
+        "_VisibleEquipPockets": [],
+        "_IsVisibleBodyLightEntity": false
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerCostumeSettingUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_BonusIDName": "bo99_00_100",
+        "_VisibleEquipPockets": [],
+        "_IsVisibleBodyLightEntity": true
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerCostumeSettingUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_BonusIDName": "bo99_00_101",
+        "_VisibleEquipPockets": [],
+        "_IsVisibleBodyLightEntity": true
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerCostumeSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DataArray": [
+          {
+            "Ref": 1,
+            "Class": "app.PlayerCostumeSettingUserData.Data"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.PlayerCostumeSettingUserData.Data"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.PlayerCostumeSettingUserData.Data"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.PlayerCostumeSettingUserData.Data"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.PlayerCostumeSettingUserData.Data"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.PlayerCostumeSettingUserData.Data"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.PlayerCostumeSettingUserData.Data"
+          }
+        ]
+      }
+    }
+  ]
+}

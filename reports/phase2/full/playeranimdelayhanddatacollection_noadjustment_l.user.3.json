@@ -1,0 +1,93 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/animdelayhand/leftarm/datatable/noadjustment/playeranimdelayhanddatacollection_noadjustment_l.user.3",
+  "Objects": [
+    {
+      "Index": 4,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": null,
+      "Fields": {
+        "_Data": [
+          {
+            "Index": 3,
+            "Class": "app.AnimDelayHand_AdjustmentData",
+            "Userdata": null,
+            "Fields": {
+              "_DelayHandCondition": {
+                "Index": 1,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "_Priority": 5,
+              "_TransitionKeepTimeSec": 0,
+              "_DelayHandUnitUserData": {
+                "Index": 2,
+                "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/PlayerAnimDelayHand_AdjustmentUnit_NoAdjustment.user",
+                "Fields": {}
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.AnimDelayHand_AdjustmentUnitUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/AnimDelayHand/PlayerAnimDelayHand_AdjustmentUnit_NoAdjustment.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.AnimDelayHand_AdjustmentData",
+      "Userdata": null,
+      "Fields": {
+        "_DelayHandCondition": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Priority": 5,
+        "_TransitionKeepTimeSec": 0,
+        "_DelayHandUnitUserData": {
+          "Ref": 2,
+          "Class": "app.AnimDelayHand_AdjustmentUnitUserData"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.AnimDelayHandData_DataCollection",
+      "Userdata": null,
+      "Fields": {
+        "_Data": [
+          {
+            "Ref": 3,
+            "Class": "app.AnimDelayHand_AdjustmentData"
+          }
+        ]
+      }
+    }
+  ]
+}

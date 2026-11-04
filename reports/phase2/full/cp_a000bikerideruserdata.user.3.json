@@ -1,0 +1,81 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000bikerideruserdata.user.3",
+  "Objects": [
+    {
+      "Index": 3,
+      "Class": "app.BikeRiderUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsSetGpuCloth": true,
+        "_GpuClothSetting": {
+          "Index": 2,
+          "Class": "app.BikeRiderUserData.GPUClothSetting",
+          "Userdata": null,
+          "Fields": {
+            "_OverwriteBlendAmountTranslation": true,
+            "_BlendAmountTranslation": 1,
+            "_OverwriteBlendAmountRotation": true,
+            "_BlendAmountRotation": 1,
+            "_CostumeUnits": [
+              {
+                "Index": 1,
+                "Class": "app.BikeRiderUserData.GPUClothSetting.CostumeUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_CostumeID": 9900001,
+                  "_GpuClothAsset": "Character/ch/ch01/0100/45/00/ch0100_45_00_bike.gpuc"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.BikeRiderUserData.GPUClothSetting.CostumeUnit",
+      "Userdata": null,
+      "Fields": {
+        "_CostumeID": 9900001,
+        "_GpuClothAsset": "Character/ch/ch01/0100/45/00/ch0100_45_00_bike.gpuc"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.BikeRiderUserData.GPUClothSetting",
+      "Userdata": null,
+      "Fields": {
+        "_OverwriteBlendAmountTranslation": true,
+        "_BlendAmountTranslation": 1,
+        "_OverwriteBlendAmountRotation": true,
+        "_BlendAmountRotation": 1,
+        "_CostumeUnits": [
+          {
+            "Ref": 1,
+            "Class": "app.BikeRiderUserData.GPUClothSetting.CostumeUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.BikeRiderUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsSetGpuCloth": true,
+        "_GpuClothSetting": {
+          "Ref": 2,
+          "Class": "app.BikeRiderUserData.GPUClothSetting"
+        }
+      }
+    }
+  ]
+}

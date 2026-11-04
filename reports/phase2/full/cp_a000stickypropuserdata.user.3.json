@@ -1,0 +1,99 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000stickypropuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 4,
+      "Class": "app.CharacterStickyPropConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_MaxStickyPropNumber": 4,
+        "_StickyPropDefinitionContainerPrefab": {
+          "Index": 1,
+          "Class": "via.Prefab",
+          "Userdata": null,
+          "Fields": {
+            "Standby": false,
+            "Path": ""
+          }
+        },
+        "_StickyPropPostureDefinitions": [
+          {
+            "Index": 3,
+            "Class": "app.StickyPropPostureDefinition",
+            "Userdata": null,
+            "Fields": {
+              "_ID": {
+                "Index": 2,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1734082915
+                }
+              },
+              "_JointName": "root",
+              "_PositionOffset": "\u003C0, 0, 0\u003E",
+              "_RotationOffsetEuler": "\u003C0, 0, 0\u003E"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "via.Prefab",
+      "Userdata": null,
+      "Fields": {
+        "Standby": false,
+        "Path": ""
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1734082915
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.StickyPropPostureDefinition",
+      "Userdata": null,
+      "Fields": {
+        "_ID": {
+          "Ref": 2,
+          "Class": "app.NameHash"
+        },
+        "_JointName": "root",
+        "_PositionOffset": "\u003C0, 0, 0\u003E",
+        "_RotationOffsetEuler": "\u003C0, 0, 0\u003E"
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.CharacterStickyPropConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_MaxStickyPropNumber": 4,
+        "_StickyPropDefinitionContainerPrefab": {
+          "Ref": 1,
+          "Class": "via.Prefab"
+        },
+        "_StickyPropPostureDefinitions": [
+          {
+            "Ref": 3,
+            "Class": "app.StickyPropPostureDefinition"
+          }
+        ]
+      }
+    }
+  ]
+}

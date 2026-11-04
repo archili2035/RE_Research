@@ -1,0 +1,311 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playershadowbodycontrolleruserdata.user.3",
+  "Objects": [
+    {
+      "Index": 14,
+      "Class": "app.ShadowBodyControllerUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IKUnits": [
+          {
+            "Index": 6,
+            "Class": "app.ShadowBodyControllerUserData.IKUnit",
+            "Userdata": null,
+            "Fields": {
+              "_Condition": {
+                "Index": 5,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 4,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 1,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 3,
+                          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "STRUCT__FullBodyParamIndex__HasValue": true,
+              "STRUCT__FullBodyParamIndex__Value": 1,
+              "_IsEnableLookAt": true,
+              "STRUCT__LookAtParamIndex__HasValue": false,
+              "STRUCT__LookAtParamIndex__Value": 0
+            }
+          },
+          {
+            "Index": 11,
+            "Class": "app.ShadowBodyControllerUserData.IKUnit",
+            "Userdata": null,
+            "Fields": {
+              "_Condition": {
+                "Index": 10,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 9,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 7,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 8,
+                          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "STRUCT__FullBodyParamIndex__HasValue": true,
+              "STRUCT__FullBodyParamIndex__Value": 0,
+              "_IsEnableLookAt": true,
+              "STRUCT__LookAtParamIndex__HasValue": true,
+              "STRUCT__LookAtParamIndex__Value": 1
+            }
+          },
+          {
+            "Index": 13,
+            "Class": "app.ShadowBodyControllerUserData.IKUnit",
+            "Userdata": null,
+            "Fields": {
+              "_Condition": {
+                "Index": 12,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": []
+                }
+              },
+              "STRUCT__FullBodyParamIndex__HasValue": true,
+              "STRUCT__FullBodyParamIndex__Value": 0,
+              "_IsEnableLookAt": true,
+              "STRUCT__LookAtParamIndex__HasValue": false,
+              "STRUCT__LookAtParamIndex__Value": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2261904973
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 2,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 3,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 4,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.ShadowBodyControllerUserData.IKUnit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 5,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "STRUCT__FullBodyParamIndex__HasValue": true,
+        "STRUCT__FullBodyParamIndex__Value": 1,
+        "_IsEnableLookAt": true,
+        "STRUCT__LookAtParamIndex__HasValue": false,
+        "STRUCT__LookAtParamIndex__Value": 0
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 32,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 7,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 8,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 9,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.ShadowBodyControllerUserData.IKUnit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 10,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "STRUCT__FullBodyParamIndex__HasValue": true,
+        "STRUCT__FullBodyParamIndex__Value": 0,
+        "_IsEnableLookAt": true,
+        "STRUCT__LookAtParamIndex__HasValue": true,
+        "STRUCT__LookAtParamIndex__Value": 1
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.ShadowBodyControllerUserData.IKUnit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 12,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "STRUCT__FullBodyParamIndex__HasValue": true,
+        "STRUCT__FullBodyParamIndex__Value": 0,
+        "_IsEnableLookAt": true,
+        "STRUCT__LookAtParamIndex__HasValue": false,
+        "STRUCT__LookAtParamIndex__Value": 0
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.ShadowBodyControllerUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IKUnits": [
+          {
+            "Ref": 6,
+            "Class": "app.ShadowBodyControllerUserData.IKUnit"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.ShadowBodyControllerUserData.IKUnit"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.ShadowBodyControllerUserData.IKUnit"
+          }
+        ]
+      }
+    }
+  ]
+}

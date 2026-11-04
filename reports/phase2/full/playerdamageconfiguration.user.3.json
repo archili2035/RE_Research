@@ -1,0 +1,3185 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerdamageconfiguration.user.3",
+  "Objects": [
+    {
+      "Index": 155,
+      "Class": "app.CharacterDamageConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DamageParts": [
+          {
+            "Index": 2,
+            "Class": "app.CharacterDamageConfigurationUserData.DamagePartsDefinition",
+            "Userdata": null,
+            "Fields": {
+              "_DamagePart": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 935285574
+                }
+              },
+              "_DamagePartsIncludeParts": 1
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.CharacterDamageConfigurationUserData.DamagePartsDefinition",
+            "Userdata": null,
+            "Fields": {
+              "_DamagePart": {
+                "Index": 3,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1048105261
+                }
+              },
+              "_DamagePartsIncludeParts": 31202
+            }
+          }
+        ],
+        "_DefaultPostureReactionTable": {
+          "Index": 85,
+          "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterPostureType": 0,
+            "_Reactions": [
+              {
+                "Index": 9,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 2,
+                  "_DamagePart": {
+                    "Index": 5,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 935285574
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 6,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1508655403
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 7,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 8,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3724359166
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 14,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 2,
+                  "_DamagePart": {
+                    "Index": 10,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1048105261
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 11,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1508655403
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 12,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 13,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3724359166
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 19,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 4,
+                  "_DamagePart": {
+                    "Index": 15,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 935285574
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 16,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1508655403
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 17,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 18,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3849885271
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 24,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 4,
+                  "_DamagePart": {
+                    "Index": 20,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1048105261
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 21,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1508655403
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 22,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 23,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3724359166
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 29,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 8,
+                  "_DamagePart": {
+                    "Index": 25,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 935285574
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 26,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1508655403
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 27,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 28,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3724359166
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 34,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 8,
+                  "_DamagePart": {
+                    "Index": 30,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1048105261
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 31,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1508655403
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 32,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 33,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3724359166
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 39,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 16,
+                  "_DamagePart": {
+                    "Index": 35,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 935285574
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 36,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1508655403
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 37,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 38,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3724359166
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 44,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 16,
+                  "_DamagePart": {
+                    "Index": 40,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1048105261
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 41,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1508655403
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 42,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 43,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3724359166
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 49,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 32,
+                  "_DamagePart": {
+                    "Index": 45,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 935285574
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 46,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1508655403
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 47,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1299658975
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 48,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3849885271
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 54,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 32,
+                  "_DamagePart": {
+                    "Index": 50,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1048105261
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 51,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 52,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3724359166
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 53,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3724359166
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 59,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 64,
+                  "_DamagePart": {
+                    "Index": 55,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 935285574
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 56,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 57,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 58,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 64,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 64,
+                  "_DamagePart": {
+                    "Index": 60,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1048105261
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 61,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 62,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 63,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3542644386
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 69,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 128,
+                  "_DamagePart": {
+                    "Index": 65,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 935285574
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 66,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3136769848
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 67,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 76826711
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 68,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 2687660037
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 74,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 128,
+                  "_DamagePart": {
+                    "Index": 70,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1048105261
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 71,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3136769848
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 72,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 76826711
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 73,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 2687660037
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 79,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 512,
+                  "_DamagePart": {
+                    "Index": 75,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 935285574
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 76,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 2705255267
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 77,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 115245771
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 78,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3036593960
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 84,
+                "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+                "Userdata": null,
+                "Fields": {
+                  "_AttackType": 512,
+                  "_DamagePart": {
+                    "Index": 80,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1048105261
+                    }
+                  },
+                  "LightActionNameHash": {
+                    "Index": 81,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 2705255267
+                    }
+                  },
+                  "MiddleActionNameHash": {
+                    "Index": 82,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 115245771
+                    }
+                  },
+                  "HeavyActionNameHash": {
+                    "Index": 83,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3036593960
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_AdditionalPostureReactionTables": [],
+        "_ShellIDSpecifiedReactions": [
+          {
+            "Index": 87,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_ShellID": "Arm0502Single",
+              "_DamageAction": {
+                "Index": 86,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 872781124
+                }
+              }
+            }
+          },
+          {
+            "Index": 89,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_ShellID": "Arm0315Throwing",
+              "_DamageAction": {
+                "Index": 88,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2687660037
+                }
+              }
+            }
+          },
+          {
+            "Index": 91,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_ShellID": "Arm0504Single",
+              "_DamageAction": {
+                "Index": 90,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 872781124
+                }
+              }
+            }
+          },
+          {
+            "Index": 93,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_ShellID": "Arm0338Throwing",
+              "_DamageAction": {
+                "Index": 92,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2687660037
+                }
+              }
+            }
+          },
+          {
+            "Index": 95,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_ShellID": "Arm0339Throwing",
+              "_DamageAction": {
+                "Index": 94,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2687660037
+                }
+              }
+            }
+          }
+        ],
+        "_AttackKeySpecifiedReactions": [
+          {
+            "Index": 99,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_AttackKey": {
+                "Index": 96,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 345245379
+                }
+              },
+              "_DamageAction": {
+                "Index": 97,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3133151806
+                }
+              },
+              "_HasDeriveActionFromDamageAction": false,
+              "_DeriveActionFromDamageAction": {
+                "Index": 98,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          {
+            "Index": 103,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_AttackKey": {
+                "Index": 100,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3278470819
+                }
+              },
+              "_DamageAction": {
+                "Index": 101,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2687660037
+                }
+              },
+              "_HasDeriveActionFromDamageAction": false,
+              "_DeriveActionFromDamageAction": {
+                "Index": 102,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          {
+            "Index": 107,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_AttackKey": {
+                "Index": 104,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 554804730
+                }
+              },
+              "_DamageAction": {
+                "Index": 105,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2687660037
+                }
+              },
+              "_HasDeriveActionFromDamageAction": false,
+              "_DeriveActionFromDamageAction": {
+                "Index": 106,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          {
+            "Index": 111,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_AttackKey": {
+                "Index": 108,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3919556158
+                }
+              },
+              "_DamageAction": {
+                "Index": 109,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2687660037
+                }
+              },
+              "_HasDeriveActionFromDamageAction": false,
+              "_DeriveActionFromDamageAction": {
+                "Index": 110,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          {
+            "Index": 115,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_AttackKey": {
+                "Index": 112,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 482573659
+                }
+              },
+              "_DamageAction": {
+                "Index": 113,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2687660037
+                }
+              },
+              "_HasDeriveActionFromDamageAction": false,
+              "_DeriveActionFromDamageAction": {
+                "Index": 114,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          {
+            "Index": 119,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_AttackKey": {
+                "Index": 116,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3048650124
+                }
+              },
+              "_DamageAction": {
+                "Index": 117,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2687660037
+                }
+              },
+              "_HasDeriveActionFromDamageAction": false,
+              "_DeriveActionFromDamageAction": {
+                "Index": 118,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          {
+            "Index": 123,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_AttackKey": {
+                "Index": 120,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3003026361
+                }
+              },
+              "_DamageAction": {
+                "Index": 121,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2687660037
+                }
+              },
+              "_HasDeriveActionFromDamageAction": false,
+              "_DeriveActionFromDamageAction": {
+                "Index": 122,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          {
+            "Index": 127,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_AttackKey": {
+                "Index": 124,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1945492436
+                }
+              },
+              "_DamageAction": {
+                "Index": 125,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 513490322
+                }
+              },
+              "_HasDeriveActionFromDamageAction": false,
+              "_DeriveActionFromDamageAction": {
+                "Index": 126,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          {
+            "Index": 131,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+            "Userdata": null,
+            "Fields": {
+              "_AttackKey": {
+                "Index": 128,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2228239709
+                }
+              },
+              "_DamageAction": {
+                "Index": 129,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3133151806
+                }
+              },
+              "_HasDeriveActionFromDamageAction": false,
+              "_DeriveActionFromDamageAction": {
+                "Index": 130,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          }
+        ],
+        "_DamageFactorConfiguration": {
+          "Index": 137,
+          "Class": "app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration",
+          "Userdata": null,
+          "Fields": {
+            "_DamagePartToDamageFactorData": {
+              "Index": 132,
+              "Class": "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration.DamageFactorData\u003E",
+              "Userdata": null,
+              "Fields": {}
+            },
+            "DamageFactorList": [
+              {
+                "Index": 134,
+                "Class": "app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration.DamageFactorListEntry",
+                "Userdata": null,
+                "Fields": {
+                  "_DamagePart": {
+                    "Index": 133,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 935285574
+                    }
+                  },
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1,
+                  "_IsWinceFactorEqualDamageFactor": true
+                }
+              },
+              {
+                "Index": 136,
+                "Class": "app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration.DamageFactorListEntry",
+                "Userdata": null,
+                "Fields": {
+                  "_DamagePart": {
+                    "Index": 135,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1048105261
+                    }
+                  },
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1,
+                  "_IsWinceFactorEqualDamageFactor": true
+                }
+              }
+            ]
+          }
+        },
+        "_AttackKeyDamageFactorSettings": {
+          "Index": 138,
+          "Class": "app.AttackKeyDamageFactorSettings",
+          "Userdata": null,
+          "Fields": {
+            "_DataTable": []
+          }
+        },
+        "_ShellIDDamageFactorSettings": {
+          "Index": 139,
+          "Class": "app.ShellIDDamageFactorSettings",
+          "Userdata": null,
+          "Fields": {
+            "_DataTable": []
+          }
+        },
+        "_WeaponIDDamageFactorSettings": {
+          "Index": 140,
+          "Class": "app.ShellIDDamageFactorSettings.WeaponIDDamageFactorSettings",
+          "Userdata": null,
+          "Fields": {
+            "_DataTable": []
+          }
+        },
+        "_WeaponCategoryDamageFactorSettings": {
+          "Index": 154,
+          "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings",
+          "Userdata": null,
+          "Fields": {
+            "_DataTable": [
+              {
+                "Index": 141,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Handgun",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 142,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Revolver",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 143,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Rifle",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 144,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Shotgun",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 145,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Machinegun",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 146,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Knife",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 147,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Axe",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 148,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Grenade",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 149,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "RocketLauncher",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 150,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Chainsaw",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 151,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "PoisonPump",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 152,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "Bottle",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              },
+              {
+                "Index": 153,
+                "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "EnemyWeapon",
+                  "_DamageFactor": 1,
+                  "_WinceFactor": 1
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CharacterDamageConfigurationUserData.DamagePartsDefinition",
+      "Userdata": null,
+      "Fields": {
+        "_DamagePart": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_DamagePartsIncludeParts": 1
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.CharacterDamageConfigurationUserData.DamagePartsDefinition",
+      "Userdata": null,
+      "Fields": {
+        "_DamagePart": {
+          "Ref": 3,
+          "Class": "app.NameHash"
+        },
+        "_DamagePartsIncludeParts": 31202
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1508655403
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3724359166
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 2,
+        "_DamagePart": {
+          "Ref": 5,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 6,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 7,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 8,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1508655403
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3724359166
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 2,
+        "_DamagePart": {
+          "Ref": 10,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 11,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 12,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 13,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1508655403
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3849885271
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 4,
+        "_DamagePart": {
+          "Ref": 15,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 16,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 17,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 18,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1508655403
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3724359166
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 4,
+        "_DamagePart": {
+          "Ref": 20,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 21,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 22,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 23,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1508655403
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3724359166
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 8,
+        "_DamagePart": {
+          "Ref": 25,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 26,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 27,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 28,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1508655403
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3724359166
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 8,
+        "_DamagePart": {
+          "Ref": 30,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 31,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 32,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 33,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1508655403
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3724359166
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 16,
+        "_DamagePart": {
+          "Ref": 35,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 36,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 37,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 38,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1508655403
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3724359166
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 16,
+        "_DamagePart": {
+          "Ref": 40,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 41,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 42,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 43,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1508655403
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1299658975
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3849885271
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 32,
+        "_DamagePart": {
+          "Ref": 45,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 46,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 47,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 48,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3724359166
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3724359166
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 32,
+        "_DamagePart": {
+          "Ref": 50,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 51,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 52,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 53,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 64,
+        "_DamagePart": {
+          "Ref": 55,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 56,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 57,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 58,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3542644386
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 64,
+        "_DamagePart": {
+          "Ref": 60,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 61,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 62,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 63,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3136769848
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 76826711
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 128,
+        "_DamagePart": {
+          "Ref": 65,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 66,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 67,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 68,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3136769848
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 76826711
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 128,
+        "_DamagePart": {
+          "Ref": 70,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 71,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 72,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 73,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2705255267
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 115245771
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3036593960
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 512,
+        "_DamagePart": {
+          "Ref": 75,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 76,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 77,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 78,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2705255267
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 115245771
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3036593960
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction",
+      "Userdata": null,
+      "Fields": {
+        "_AttackType": 512,
+        "_DamagePart": {
+          "Ref": 80,
+          "Class": "app.NameHash"
+        },
+        "LightActionNameHash": {
+          "Ref": 81,
+          "Class": "app.NameHash"
+        },
+        "MiddleActionNameHash": {
+          "Ref": 82,
+          "Class": "app.NameHash"
+        },
+        "HeavyActionNameHash": {
+          "Ref": 83,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore",
+      "Userdata": null,
+      "Fields": {
+        "_CharacterPostureType": 0,
+        "_Reactions": [
+          {
+            "Ref": 9,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 34,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 39,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 44,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 49,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 54,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 59,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 64,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 69,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 74,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 79,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          },
+          {
+            "Ref": 84,
+            "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore.Reaction"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 872781124
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_ShellID": "Arm0502Single",
+        "_DamageAction": {
+          "Ref": 86,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_ShellID": "Arm0315Throwing",
+        "_DamageAction": {
+          "Ref": 88,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 872781124
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_ShellID": "Arm0504Single",
+        "_DamageAction": {
+          "Ref": 90,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_ShellID": "Arm0338Throwing",
+        "_DamageAction": {
+          "Ref": 92,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_ShellID": "Arm0339Throwing",
+        "_DamageAction": {
+          "Ref": 94,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 345245379
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3133151806
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_AttackKey": {
+          "Ref": 96,
+          "Class": "app.NameHash"
+        },
+        "_DamageAction": {
+          "Ref": 97,
+          "Class": "app.NameHash"
+        },
+        "_HasDeriveActionFromDamageAction": false,
+        "_DeriveActionFromDamageAction": {
+          "Ref": 98,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3278470819
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_AttackKey": {
+          "Ref": 100,
+          "Class": "app.NameHash"
+        },
+        "_DamageAction": {
+          "Ref": 101,
+          "Class": "app.NameHash"
+        },
+        "_HasDeriveActionFromDamageAction": false,
+        "_DeriveActionFromDamageAction": {
+          "Ref": 102,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 554804730
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_AttackKey": {
+          "Ref": 104,
+          "Class": "app.NameHash"
+        },
+        "_DamageAction": {
+          "Ref": 105,
+          "Class": "app.NameHash"
+        },
+        "_HasDeriveActionFromDamageAction": false,
+        "_DeriveActionFromDamageAction": {
+          "Ref": 106,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3919556158
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_AttackKey": {
+          "Ref": 108,
+          "Class": "app.NameHash"
+        },
+        "_DamageAction": {
+          "Ref": 109,
+          "Class": "app.NameHash"
+        },
+        "_HasDeriveActionFromDamageAction": false,
+        "_DeriveActionFromDamageAction": {
+          "Ref": 110,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 482573659
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_AttackKey": {
+          "Ref": 112,
+          "Class": "app.NameHash"
+        },
+        "_DamageAction": {
+          "Ref": 113,
+          "Class": "app.NameHash"
+        },
+        "_HasDeriveActionFromDamageAction": false,
+        "_DeriveActionFromDamageAction": {
+          "Ref": 114,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3048650124
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 119,
+      "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_AttackKey": {
+          "Ref": 116,
+          "Class": "app.NameHash"
+        },
+        "_DamageAction": {
+          "Ref": 117,
+          "Class": "app.NameHash"
+        },
+        "_HasDeriveActionFromDamageAction": false,
+        "_DeriveActionFromDamageAction": {
+          "Ref": 118,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3003026361
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 122,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_AttackKey": {
+          "Ref": 120,
+          "Class": "app.NameHash"
+        },
+        "_DamageAction": {
+          "Ref": 121,
+          "Class": "app.NameHash"
+        },
+        "_HasDeriveActionFromDamageAction": false,
+        "_DeriveActionFromDamageAction": {
+          "Ref": 122,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1945492436
+      }
+    },
+    {
+      "Index": 125,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 513490322
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_AttackKey": {
+          "Ref": 124,
+          "Class": "app.NameHash"
+        },
+        "_DamageAction": {
+          "Ref": 125,
+          "Class": "app.NameHash"
+        },
+        "_HasDeriveActionFromDamageAction": false,
+        "_DeriveActionFromDamageAction": {
+          "Ref": 126,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 128,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2228239709
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3133151806
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2180083513
+      }
+    },
+    {
+      "Index": 131,
+      "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam",
+      "Userdata": null,
+      "Fields": {
+        "_AttackKey": {
+          "Ref": 128,
+          "Class": "app.NameHash"
+        },
+        "_DamageAction": {
+          "Ref": 129,
+          "Class": "app.NameHash"
+        },
+        "_HasDeriveActionFromDamageAction": false,
+        "_DeriveActionFromDamageAction": {
+          "Ref": 130,
+          "Class": "app.NameHash"
+        }
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration.DamageFactorData\u003E",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 133,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 935285574
+      }
+    },
+    {
+      "Index": 134,
+      "Class": "app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration.DamageFactorListEntry",
+      "Userdata": null,
+      "Fields": {
+        "_DamagePart": {
+          "Ref": 133,
+          "Class": "app.NameHash"
+        },
+        "_DamageFactor": 1,
+        "_WinceFactor": 1,
+        "_IsWinceFactorEqualDamageFactor": true
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1048105261
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration.DamageFactorListEntry",
+      "Userdata": null,
+      "Fields": {
+        "_DamagePart": {
+          "Ref": 135,
+          "Class": "app.NameHash"
+        },
+        "_DamageFactor": 1,
+        "_WinceFactor": 1,
+        "_IsWinceFactorEqualDamageFactor": true
+      }
+    },
+    {
+      "Index": 137,
+      "Class": "app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration",
+      "Userdata": null,
+      "Fields": {
+        "_DamagePartToDamageFactorData": {
+          "Ref": 132,
+          "Class": "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration.DamageFactorData\u003E"
+        },
+        "DamageFactorList": [
+          {
+            "Ref": 134,
+            "Class": "app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration.DamageFactorListEntry"
+          },
+          {
+            "Ref": 136,
+            "Class": "app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration.DamageFactorListEntry"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 138,
+      "Class": "app.AttackKeyDamageFactorSettings",
+      "Userdata": null,
+      "Fields": {
+        "_DataTable": []
+      }
+    },
+    {
+      "Index": 139,
+      "Class": "app.ShellIDDamageFactorSettings",
+      "Userdata": null,
+      "Fields": {
+        "_DataTable": []
+      }
+    },
+    {
+      "Index": 140,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponIDDamageFactorSettings",
+      "Userdata": null,
+      "Fields": {
+        "_DataTable": []
+      }
+    },
+    {
+      "Index": 141,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Handgun",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 142,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Revolver",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 143,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Rifle",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 144,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Shotgun",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 145,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Machinegun",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 146,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Knife",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 147,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Axe",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 148,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Grenade",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 149,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "RocketLauncher",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 150,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Chainsaw",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 151,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "PoisonPump",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 152,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "Bottle",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 153,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "EnemyWeapon",
+        "_DamageFactor": 1,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 154,
+      "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings",
+      "Userdata": null,
+      "Fields": {
+        "_DataTable": [
+          {
+            "Ref": 141,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 142,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 143,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 144,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 145,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 146,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 147,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 148,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 149,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 150,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 151,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 152,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          },
+          {
+            "Ref": 153,
+            "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings.SettingsData"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 155,
+      "Class": "app.CharacterDamageConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DamageParts": [
+          {
+            "Ref": 2,
+            "Class": "app.CharacterDamageConfigurationUserData.DamagePartsDefinition"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.CharacterDamageConfigurationUserData.DamagePartsDefinition"
+          }
+        ],
+        "_DefaultPostureReactionTable": {
+          "Ref": 85,
+          "Class": "app.CharacterDamageConfigurationUserData.ReactionDataCore"
+        },
+        "_AdditionalPostureReactionTables": [],
+        "_ShellIDSpecifiedReactions": [
+          {
+            "Ref": 87,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam"
+          },
+          {
+            "Ref": 89,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam"
+          },
+          {
+            "Ref": 91,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam"
+          },
+          {
+            "Ref": 93,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam"
+          },
+          {
+            "Ref": 95,
+            "Class": "app.CharacterDamageConfigurationUserData.ShellIDSpecifiedReactionParam"
+          }
+        ],
+        "_AttackKeySpecifiedReactions": [
+          {
+            "Ref": 99,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam"
+          },
+          {
+            "Ref": 103,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam"
+          },
+          {
+            "Ref": 107,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam"
+          },
+          {
+            "Ref": 111,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam"
+          },
+          {
+            "Ref": 115,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam"
+          },
+          {
+            "Ref": 119,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam"
+          },
+          {
+            "Ref": 123,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam"
+          },
+          {
+            "Ref": 127,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam"
+          },
+          {
+            "Ref": 131,
+            "Class": "app.CharacterDamageConfigurationUserData.AttackKeySpecifiedReactionParam"
+          }
+        ],
+        "_DamageFactorConfiguration": {
+          "Ref": 137,
+          "Class": "app.CharacterDamageConfigurationUserData.BodyPartDamageFactorConfiguration"
+        },
+        "_AttackKeyDamageFactorSettings": {
+          "Ref": 138,
+          "Class": "app.AttackKeyDamageFactorSettings"
+        },
+        "_ShellIDDamageFactorSettings": {
+          "Ref": 139,
+          "Class": "app.ShellIDDamageFactorSettings"
+        },
+        "_WeaponIDDamageFactorSettings": {
+          "Ref": 140,
+          "Class": "app.ShellIDDamageFactorSettings.WeaponIDDamageFactorSettings"
+        },
+        "_WeaponCategoryDamageFactorSettings": {
+          "Ref": 154,
+          "Class": "app.ShellIDDamageFactorSettings.WeaponCategoryDamageFactorSettings"
+        }
+      }
+    }
+  ]
+}

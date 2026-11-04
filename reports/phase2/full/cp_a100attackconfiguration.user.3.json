@@ -1,0 +1,89 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100attackconfiguration.user.3",
+  "Objects": [
+    {
+      "Index": 4,
+      "Class": "app.CharacterAttackConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_AttackHitData": {
+          "Index": 1,
+          "Class": "app.AttackHitUserData",
+          "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100AttackHit.user",
+          "Fields": {}
+        },
+        "_WeaponIDAttackFactorSettings": {
+          "Index": 3,
+          "Class": "app.WeaponIDAttackFactorSettings",
+          "Userdata": null,
+          "Fields": {
+            "_DataTable": [
+              {
+                "Index": 2,
+                "Class": "app.WeaponIDAttackFactorSettings.SettingsData",
+                "Userdata": null,
+                "Fields": {
+                  "_Key": "arm0351",
+                  "_DamageFactor": 4.4,
+                  "_WinceFactor": 1
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.AttackHitUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100AttackHit.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.WeaponIDAttackFactorSettings.SettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": "arm0351",
+        "_DamageFactor": 4.4,
+        "_WinceFactor": 1
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.WeaponIDAttackFactorSettings",
+      "Userdata": null,
+      "Fields": {
+        "_DataTable": [
+          {
+            "Ref": 2,
+            "Class": "app.WeaponIDAttackFactorSettings.SettingsData"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.CharacterAttackConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_AttackHitData": {
+          "Ref": 1,
+          "Class": "app.AttackHitUserData"
+        },
+        "_WeaponIDAttackFactorSettings": {
+          "Ref": 3,
+          "Class": "app.WeaponIDAttackFactorSettings"
+        }
+      }
+    }
+  ]
+}

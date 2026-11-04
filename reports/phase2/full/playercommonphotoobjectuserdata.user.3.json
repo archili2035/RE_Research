@@ -1,0 +1,5275 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/photomode/playercommonphotoobjectuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 281,
+      "Class": "app.PlayerPhotoObjectUserData",
+      "Userdata": null,
+      "Fields": {
+        "_FPSPostureReplaceTable": {
+          "Index": 42,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable",
+          "Userdata": null,
+          "Fields": {
+            "_Units": [
+              {
+                "Index": 5,
+                "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Sources": [
+                    {
+                      "Index": 1,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 10,
+                        "_MotionID": 3005
+                      }
+                    },
+                    {
+                      "Index": 2,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 10,
+                        "_MotionID": 3035
+                      }
+                    },
+                    {
+                      "Index": 3,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 10,
+                        "_MotionID": 3055
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 4,
+                    "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 0,
+                      "_MotionID": 6102
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 8,
+                "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Sources": [
+                    {
+                      "Index": 6,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 10,
+                        "_MotionID": 3300
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 7,
+                    "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 100,
+                      "_MotionID": 1100
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 15,
+                "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Sources": [
+                    {
+                      "Index": 9,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 515
+                      }
+                    },
+                    {
+                      "Index": 10,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 516
+                      }
+                    },
+                    {
+                      "Index": 11,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 517
+                      }
+                    },
+                    {
+                      "Index": 12,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 518
+                      }
+                    },
+                    {
+                      "Index": 13,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 519
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 14,
+                    "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 5,
+                      "_MotionID": 515
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 22,
+                "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Sources": [
+                    {
+                      "Index": 16,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 510
+                      }
+                    },
+                    {
+                      "Index": 17,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 511
+                      }
+                    },
+                    {
+                      "Index": 18,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 512
+                      }
+                    },
+                    {
+                      "Index": 19,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 513
+                      }
+                    },
+                    {
+                      "Index": 20,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 514
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 21,
+                    "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 5,
+                      "_MotionID": 510
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 29,
+                "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Sources": [
+                    {
+                      "Index": 23,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 520
+                      }
+                    },
+                    {
+                      "Index": 24,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 521
+                      }
+                    },
+                    {
+                      "Index": 25,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 522
+                      }
+                    },
+                    {
+                      "Index": 26,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 523
+                      }
+                    },
+                    {
+                      "Index": 27,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 524
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 28,
+                    "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 5,
+                      "_MotionID": 520
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 33,
+                "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Sources": [
+                    {
+                      "Index": 30,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 10,
+                        "_MotionID": 3500
+                      }
+                    },
+                    {
+                      "Index": 31,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 10,
+                        "_MotionID": 3501
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 32,
+                    "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 0,
+                      "_MotionID": 8601
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 37,
+                "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Sources": [
+                    {
+                      "Index": 34,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 900,
+                        "_MotionID": 2010
+                      }
+                    },
+                    {
+                      "Index": 35,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 900,
+                        "_MotionID": 2011
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 36,
+                    "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 0,
+                      "_MotionID": 8651
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 41,
+                "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Sources": [
+                    {
+                      "Index": 38,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 10,
+                        "_MotionID": 3
+                      }
+                    },
+                    {
+                      "Index": 39,
+                      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 10,
+                        "_MotionID": 5
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 40,
+                    "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 100,
+                      "_MotionID": 206
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_FPSPostureOverwriteTable": {
+          "Index": 168,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable",
+          "Userdata": null,
+          "Fields": {
+            "_Units": [
+              {
+                "Index": 54,
+                "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_TargetLayerIndices": [
+                    0
+                  ],
+                  "_Condition": {
+                    "Index": 52,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 45,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 51,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 53,
+                    "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEmpty": false,
+                      "STRUCT__BankID__HasValue": false,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": true,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": false,
+                      "STRUCT__MotionID__Value": 0,
+                      "_IsSyncFrame": false,
+                      "_SyncLayerNo": 0
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 69,
+                "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_TargetLayerIndices": [
+                    0
+                  ],
+                  "_Condition": {
+                    "Index": 67,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 57,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 66,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 68,
+                    "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEmpty": false,
+                      "STRUCT__BankID__HasValue": true,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 1,
+                      "_IsSyncFrame": false,
+                      "_SyncLayerNo": 0
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 81,
+                "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_TargetLayerIndices": [
+                    3,
+                    4
+                  ],
+                  "_Condition": {
+                    "Index": 79,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 72,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 78,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 80,
+                    "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEmpty": true,
+                      "STRUCT__BankID__HasValue": true,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 0,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 0,
+                      "_IsSyncFrame": false,
+                      "_SyncLayerNo": 0
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 91,
+                "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_TargetLayerIndices": [
+                    3
+                  ],
+                  "_Condition": {
+                    "Index": 89,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 84,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 88,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 90,
+                    "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEmpty": false,
+                      "STRUCT__BankID__HasValue": false,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": true,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": false,
+                      "STRUCT__MotionID__Value": 0,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 1
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 104,
+                "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_TargetLayerIndices": [
+                    4
+                  ],
+                  "_Condition": {
+                    "Index": 102,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 94,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 97,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 101,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 103,
+                    "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEmpty": false,
+                      "STRUCT__BankID__HasValue": true,
+                      "STRUCT__BankID__Value": 100,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 6000,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 0
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 120,
+                "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_TargetLayerIndices": [
+                    0
+                  ],
+                  "_Condition": {
+                    "Index": 118,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 107,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 110,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 114,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 117,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 119,
+                    "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEmpty": false,
+                      "STRUCT__BankID__HasValue": true,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 1,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 0
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 136,
+                "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_TargetLayerIndices": [
+                    0
+                  ],
+                  "_Condition": {
+                    "Index": 134,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 123,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 126,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 130,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 133,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 135,
+                    "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEmpty": false,
+                      "STRUCT__BankID__HasValue": true,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 50,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 0
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 154,
+                "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_TargetLayerIndices": [
+                    8
+                  ],
+                  "_Condition": {
+                    "Index": 152,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 140,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 143,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 146,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 151,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 153,
+                    "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEmpty": false,
+                      "STRUCT__BankID__HasValue": false,
+                      "STRUCT__BankID__Value": 100,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 311,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 8
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 167,
+                "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_TargetLayerIndices": [
+                    8
+                  ],
+                  "_Condition": {
+                    "Index": 165,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 158,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 161,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 164,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 166,
+                    "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEmpty": false,
+                      "STRUCT__BankID__HasValue": false,
+                      "STRUCT__BankID__Value": 100,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 1130,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 8
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_FPSAdditionalPostureTable": {
+          "Index": 190,
+          "Class": "app.PlayerPhotoObjectAdditionalPostureTable",
+          "Userdata": null,
+          "Fields": {
+            "_Units": [
+              {
+                "Index": 175,
+                "Class": "app.PlayerPhotoObjectAdditionalPostureTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 3,
+                  "_References": [
+                    {
+                      "Index": 169,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 515
+                      }
+                    },
+                    {
+                      "Index": 170,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 516
+                      }
+                    },
+                    {
+                      "Index": 171,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 517
+                      }
+                    },
+                    {
+                      "Index": 172,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 518
+                      }
+                    },
+                    {
+                      "Index": 173,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 519
+                      }
+                    }
+                  ],
+                  "_LayerIndex": 8,
+                  "_Target": {
+                    "Index": 174,
+                    "Class": "app.PlayerPhotoObjectAdditionalPostureTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 535,
+                      "_MotionID": 530,
+                      "_ReferenceLayerIndex": 3
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 182,
+                "Class": "app.PlayerPhotoObjectAdditionalPostureTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 3,
+                  "_References": [
+                    {
+                      "Index": 176,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 510
+                      }
+                    },
+                    {
+                      "Index": 177,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 511
+                      }
+                    },
+                    {
+                      "Index": 178,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 512
+                      }
+                    },
+                    {
+                      "Index": 179,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 513
+                      }
+                    },
+                    {
+                      "Index": 180,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 514
+                      }
+                    }
+                  ],
+                  "_LayerIndex": 8,
+                  "_Target": {
+                    "Index": 181,
+                    "Class": "app.PlayerPhotoObjectAdditionalPostureTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 5,
+                      "_MotionID": 530,
+                      "_ReferenceLayerIndex": 3
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 189,
+                "Class": "app.PlayerPhotoObjectAdditionalPostureTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 3,
+                  "_References": [
+                    {
+                      "Index": 183,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 520
+                      }
+                    },
+                    {
+                      "Index": 184,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 521
+                      }
+                    },
+                    {
+                      "Index": 185,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 522
+                      }
+                    },
+                    {
+                      "Index": 186,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 523
+                      }
+                    },
+                    {
+                      "Index": 187,
+                      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 5,
+                        "_MotionID": 524
+                      }
+                    }
+                  ],
+                  "_LayerIndex": 8,
+                  "_Target": {
+                    "Index": 188,
+                    "Class": "app.PlayerPhotoObjectAdditionalPostureTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 5,
+                      "_MotionID": 540,
+                      "_ReferenceLayerIndex": 3
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_FPSAdditionalJointMaskTable": {
+          "Index": 197,
+          "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable",
+          "Userdata": null,
+          "Fields": {
+            "_Units": [
+              {
+                "Index": 191,
+                "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 3,
+                  "_BankID": 5,
+                  "_MotionID": 510,
+                  "_JointMaskID": 1010
+                }
+              },
+              {
+                "Index": 192,
+                "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 5,
+                  "_BankID": 5,
+                  "_MotionID": 510,
+                  "_JointMaskID": 1000
+                }
+              },
+              {
+                "Index": 193,
+                "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 8,
+                  "_BankID": 5,
+                  "_MotionID": 530,
+                  "_JointMaskID": 5001
+                }
+              },
+              {
+                "Index": 194,
+                "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 8,
+                  "_BankID": 100,
+                  "_MotionID": 1130,
+                  "_JointMaskID": 0
+                }
+              },
+              {
+                "Index": 195,
+                "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 8,
+                  "_BankID": 100,
+                  "_MotionID": 311,
+                  "_JointMaskID": 4
+                }
+              },
+              {
+                "Index": 196,
+                "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 3,
+                  "_BankID": 100,
+                  "_MotionID": 1103,
+                  "_JointMaskID": 0
+                }
+              }
+            ]
+          }
+        },
+        "_FPSWeaponPostureOverwriteTable": {
+          "Index": 266,
+          "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable",
+          "Userdata": null,
+          "Fields": {
+            "_Units": [
+              {
+                "Index": 209,
+                "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Condition": {
+                    "Index": 207,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 200,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 206,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 208,
+                    "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "STRUCT__BankID__HasValue": true,
+                      "STRUCT__BankID__Value": 100,
+                      "STRUCT__BankType__HasValue": true,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 160,
+                      "_IsSyncFrame": false,
+                      "_SyncLayerNo": 0
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 224,
+                "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Condition": {
+                    "Index": 222,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 212,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 221,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 223,
+                    "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "STRUCT__BankID__HasValue": true,
+                      "STRUCT__BankID__Value": 100,
+                      "STRUCT__BankType__HasValue": true,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 0,
+                      "_IsSyncFrame": false,
+                      "_SyncLayerNo": 0
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 234,
+                "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Condition": {
+                    "Index": 232,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 227,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 231,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 233,
+                    "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "STRUCT__BankID__HasValue": false,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": true,
+                      "STRUCT__BankType__Value": 1,
+                      "STRUCT__MotionID__HasValue": false,
+                      "STRUCT__MotionID__Value": 0,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 1
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 246,
+                "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Condition": {
+                    "Index": 244,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 239,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 243,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 245,
+                    "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "STRUCT__BankID__HasValue": true,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 0,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 140,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 3
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 258,
+                "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Condition": {
+                    "Index": 256,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 251,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 255,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 257,
+                    "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "STRUCT__BankID__HasValue": true,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 0,
+                      "STRUCT__MotionID__HasValue": true,
+                      "STRUCT__MotionID__Value": 161,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 3
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 265,
+                "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_Condition": {
+                    "Index": 263,
+                    "Class": "app.PlayerComplexCondition",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsEnable": true,
+                      "_ConditionType": 0,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 262,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  },
+                  "_Target": {
+                    "Index": 264,
+                    "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "STRUCT__BankID__HasValue": false,
+                      "STRUCT__BankID__Value": 0,
+                      "STRUCT__BankType__HasValue": false,
+                      "STRUCT__BankType__Value": 0,
+                      "STRUCT__MotionID__HasValue": false,
+                      "STRUCT__MotionID__Value": 0,
+                      "_IsSyncFrame": true,
+                      "_SyncLayerNo": 3
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_FPSWeaponSlingPostureOverwriteTable": {
+          "Index": 273,
+          "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable",
+          "Userdata": null,
+          "Fields": {
+            "_Units": [
+              {
+                "Index": 269,
+                "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 3,
+                  "_Sources": [
+                    {
+                      "Index": 267,
+                      "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 100,
+                        "_MotionID": 1301
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 268,
+                    "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 0,
+                      "_MotionID": 1301
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 272,
+                "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 3,
+                  "_Sources": [
+                    {
+                      "Index": 270,
+                      "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 100,
+                        "_MotionID": 1311
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 271,
+                    "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_BankID": 0,
+                      "_MotionID": 1311
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_PlayerPhotoObjectChangeCollisionShapeTable": {
+          "Index": 280,
+          "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable",
+          "Userdata": null,
+          "Fields": {
+            "_Units": [
+              {
+                "Index": 279,
+                "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable.Unit",
+                "Userdata": null,
+                "Fields": {
+                  "_ReferenceLayerIndex": 8,
+                  "_BonusID": {
+                    "Index": 274,
+                    "Class": "app.BonusID",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "bo99_00_103"
+                    }
+                  },
+                  "_References": [
+                    {
+                      "Index": 275,
+                      "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable.ReferenceMotionData",
+                      "Userdata": null,
+                      "Fields": {
+                        "_BankID": 100,
+                        "_MotionID": 1130
+                      }
+                    }
+                  ],
+                  "_Target": {
+                    "Index": 278,
+                    "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable.JointShapeData",
+                    "Userdata": null,
+                    "Fields": {
+                      "_MontagePartsName": "55",
+                      "_TargetJoints": [
+                        {
+                          "Ref": 276,
+                          "Class": "app.NameHash"
+                        },
+                        {
+                          "Ref": 277,
+                          "Class": "app.NameHash"
+                        }
+                      ],
+                      "_RadiusScale": 2
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_IsDisableGPUCloth": false,
+        "_IsDisableChain": false
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 10,
+        "_MotionID": 3005
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 10,
+        "_MotionID": 3035
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 10,
+        "_MotionID": 3055
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 0,
+        "_MotionID": 6102
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Sources": [
+          {
+            "Ref": 1,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 4,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 10,
+        "_MotionID": 3300
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 1100
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Sources": [
+          {
+            "Ref": 6,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 7,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 515
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 516
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 517
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 518
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 519
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 515
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Sources": [
+          {
+            "Ref": 9,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 14,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 510
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 511
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 512
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 513
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 514
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 510
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Sources": [
+          {
+            "Ref": 16,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 21,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 520
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 521
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 522
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 523
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 524
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 520
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Sources": [
+          {
+            "Ref": 23,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 26,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 28,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 10,
+        "_MotionID": 3500
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 10,
+        "_MotionID": 3501
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 0,
+        "_MotionID": 8601
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Sources": [
+          {
+            "Ref": 30,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 31,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 32,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 900,
+        "_MotionID": 2010
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 900,
+        "_MotionID": 2011
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 0,
+        "_MotionID": 8651
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Sources": [
+          {
+            "Ref": 34,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 35,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 36,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 10,
+        "_MotionID": 3
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 10,
+        "_MotionID": 5
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 206
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Sources": [
+          {
+            "Ref": 38,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          },
+          {
+            "Ref": 39,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 40,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.PlayerPhotoObjectPostureReplaceTable",
+      "Userdata": null,
+      "Fields": {
+        "_Units": [
+          {
+            "Ref": 5,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit"
+          },
+          {
+            "Ref": 22,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit"
+          },
+          {
+            "Ref": 37,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit"
+          },
+          {
+            "Ref": 41,
+            "Class": "app.PlayerPhotoObjectPostureReplaceTable.Unit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          10
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 43,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 44,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Composite"
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 24,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 47,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 48,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.PlayerComplexConditionParam_Composite",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 49,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 46,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 50,
+          "Class": "app.PlayerComplexConditionParam_Composite"
+        }
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 45,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 51,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEmpty": false,
+        "STRUCT__BankID__HasValue": false,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": true,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": false,
+        "STRUCT__MotionID__Value": 0,
+        "_IsSyncFrame": false,
+        "_SyncLayerNo": 0
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_TargetLayerIndices": [
+          0
+        ],
+        "_Condition": {
+          "Ref": 52,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 53,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          10,
+          9
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 55,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 56,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Composite"
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 7,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 59,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 60,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "MotionFlag"
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.PlayerComplexConditionParam_MotionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_MotionFlag": 59,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 62,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 63,
+          "Class": "app.PlayerComplexConditionParam_MotionFlag"
+        }
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.PlayerComplexConditionParam_Composite",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 61,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 64,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 58,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 65,
+          "Class": "app.PlayerComplexConditionParam_Composite"
+        }
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 57,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 66,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEmpty": false,
+        "STRUCT__BankID__HasValue": true,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 1,
+        "_IsSyncFrame": false,
+        "_SyncLayerNo": 0
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_TargetLayerIndices": [
+          0
+        ],
+        "_Condition": {
+          "Ref": 67,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 68,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          10,
+          9
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 70,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 71,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Composite"
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 134217752,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 74,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 75,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.PlayerComplexConditionParam_Composite",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 76,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 73,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 77,
+          "Class": "app.PlayerComplexConditionParam_Composite"
+        }
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 72,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 78,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEmpty": true,
+        "STRUCT__BankID__HasValue": true,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 0,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 0,
+        "_IsSyncFrame": false,
+        "_SyncLayerNo": 0
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_TargetLayerIndices": [
+          3,
+          4
+        ],
+        "_Condition": {
+          "Ref": 79,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 80,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          10
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 82,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 83,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionTable"
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3077397117
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.PlayerComplexConditionParam_ActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckCurrentAction": true,
+        "_Actions": [
+          {
+            "Ref": 86,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevAction": false,
+        "_PrevActions": []
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 85,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 87,
+          "Class": "app.PlayerComplexConditionParam_ActionTable"
+        }
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 84,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 88,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEmpty": false,
+        "STRUCT__BankID__HasValue": false,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": true,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": false,
+        "STRUCT__MotionID__Value": 0,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 1
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_TargetLayerIndices": [
+          3
+        ],
+        "_Condition": {
+          "Ref": 89,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 90,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          2,
+          3,
+          7,
+          8
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 92,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 93,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 7,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 95,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 96,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4170644924
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 99,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 98,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 100,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 94,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 97,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 101,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEmpty": false,
+        "STRUCT__BankID__HasValue": true,
+        "STRUCT__BankID__Value": 100,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 6000,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 0
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_TargetLayerIndices": [
+          4
+        ],
+        "_Condition": {
+          "Ref": 102,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 103,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          2,
+          3,
+          7,
+          8
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 105,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 106,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "MotionFlag"
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.PlayerComplexConditionParam_MotionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_MotionFlag": 27,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 108,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 109,
+          "Class": "app.PlayerComplexConditionParam_MotionFlag"
+        }
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4170644924
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 112,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 111,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 113,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Crouch"
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "app.PlayerComplexConditionParam_Crouch",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": false
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 115,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 116,
+          "Class": "app.PlayerComplexConditionParam_Crouch"
+        }
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 107,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 110,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 114,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 117,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 119,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEmpty": false,
+        "STRUCT__BankID__HasValue": true,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 1,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 0
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_TargetLayerIndices": [
+          0
+        ],
+        "_Condition": {
+          "Ref": 118,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 119,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 122,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          2,
+          3,
+          7,
+          8
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 121,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 122,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "MotionFlag"
+      }
+    },
+    {
+      "Index": 125,
+      "Class": "app.PlayerComplexConditionParam_MotionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_MotionFlag": 27,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 124,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 125,
+          "Class": "app.PlayerComplexConditionParam_MotionFlag"
+        }
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 128,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4170644924
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 128,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 127,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 129,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 131,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Crouch"
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "app.PlayerComplexConditionParam_Crouch",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true
+      }
+    },
+    {
+      "Index": 133,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 131,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 132,
+          "Class": "app.PlayerComplexConditionParam_Crouch"
+        }
+      }
+    },
+    {
+      "Index": 134,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 123,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 126,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 130,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 133,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEmpty": false,
+        "STRUCT__BankID__HasValue": true,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 50,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 0
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_TargetLayerIndices": [
+          0
+        ],
+        "_Condition": {
+          "Ref": 134,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 135,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 137,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 138,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0400"
+      }
+    },
+    {
+      "Index": 139,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [],
+        "_WeaponIDs": [
+          {
+            "Ref": 138,
+            "Class": "app.WeaponID"
+          }
+        ],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 140,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 137,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 139,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 141,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Crouch"
+      }
+    },
+    {
+      "Index": 142,
+      "Class": "app.PlayerComplexConditionParam_Crouch",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true
+      }
+    },
+    {
+      "Index": 143,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 141,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 142,
+          "Class": "app.PlayerComplexConditionParam_Crouch"
+        }
+      }
+    },
+    {
+      "Index": 144,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "MotionFlag"
+      }
+    },
+    {
+      "Index": 145,
+      "Class": "app.PlayerComplexConditionParam_MotionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_MotionFlag": 4,
+        "_IsOr": false
+      }
+    },
+    {
+      "Index": 146,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 144,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 145,
+          "Class": "app.PlayerComplexConditionParam_MotionFlag"
+        }
+      }
+    },
+    {
+      "Index": 147,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 148,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4189314221
+      }
+    },
+    {
+      "Index": 149,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2148863310
+      }
+    },
+    {
+      "Index": 150,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 148,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 149,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 151,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 147,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 150,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 152,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 140,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 143,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 146,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 151,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 153,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEmpty": false,
+        "STRUCT__BankID__HasValue": false,
+        "STRUCT__BankID__Value": 100,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 311,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 8
+      }
+    },
+    {
+      "Index": 154,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_TargetLayerIndices": [
+          8
+        ],
+        "_Condition": {
+          "Ref": 152,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 153,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 155,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 156,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0400"
+      }
+    },
+    {
+      "Index": 157,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [],
+        "_WeaponIDs": [
+          {
+            "Ref": 156,
+            "Class": "app.WeaponID"
+          }
+        ],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 158,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 155,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 157,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 159,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Crouch"
+      }
+    },
+    {
+      "Index": 160,
+      "Class": "app.PlayerComplexConditionParam_Crouch",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true
+      }
+    },
+    {
+      "Index": 161,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 159,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 160,
+          "Class": "app.PlayerComplexConditionParam_Crouch"
+        }
+      }
+    },
+    {
+      "Index": 162,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "MotionFlag"
+      }
+    },
+    {
+      "Index": 163,
+      "Class": "app.PlayerComplexConditionParam_MotionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_MotionFlag": 4,
+        "_IsOr": false
+      }
+    },
+    {
+      "Index": 164,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 162,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 163,
+          "Class": "app.PlayerComplexConditionParam_MotionFlag"
+        }
+      }
+    },
+    {
+      "Index": 165,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 158,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 161,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 164,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 166,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEmpty": false,
+        "STRUCT__BankID__HasValue": false,
+        "STRUCT__BankID__Value": 100,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 1130,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 8
+      }
+    },
+    {
+      "Index": 167,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_TargetLayerIndices": [
+          8
+        ],
+        "_Condition": {
+          "Ref": 165,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 166,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 168,
+      "Class": "app.PlayerPhotoObjectPostureOverwriteTable",
+      "Userdata": null,
+      "Fields": {
+        "_Units": [
+          {
+            "Ref": 54,
+            "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 69,
+            "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 81,
+            "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 91,
+            "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 104,
+            "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 120,
+            "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 136,
+            "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 154,
+            "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 167,
+            "Class": "app.PlayerPhotoObjectPostureOverwriteTable.Unit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 169,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 515
+      }
+    },
+    {
+      "Index": 170,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 516
+      }
+    },
+    {
+      "Index": 171,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 517
+      }
+    },
+    {
+      "Index": 172,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 518
+      }
+    },
+    {
+      "Index": 173,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 519
+      }
+    },
+    {
+      "Index": 174,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 535,
+        "_MotionID": 530,
+        "_ReferenceLayerIndex": 3
+      }
+    },
+    {
+      "Index": 175,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 3,
+        "_References": [
+          {
+            "Ref": 169,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 170,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 171,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 172,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 173,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          }
+        ],
+        "_LayerIndex": 8,
+        "_Target": {
+          "Ref": 174,
+          "Class": "app.PlayerPhotoObjectAdditionalPostureTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 176,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 510
+      }
+    },
+    {
+      "Index": 177,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 511
+      }
+    },
+    {
+      "Index": 178,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 512
+      }
+    },
+    {
+      "Index": 179,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 513
+      }
+    },
+    {
+      "Index": 180,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 514
+      }
+    },
+    {
+      "Index": 181,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 530,
+        "_ReferenceLayerIndex": 3
+      }
+    },
+    {
+      "Index": 182,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 3,
+        "_References": [
+          {
+            "Ref": 176,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 177,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 178,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 179,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 180,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          }
+        ],
+        "_LayerIndex": 8,
+        "_Target": {
+          "Ref": 181,
+          "Class": "app.PlayerPhotoObjectAdditionalPostureTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 183,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 520
+      }
+    },
+    {
+      "Index": 184,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 521
+      }
+    },
+    {
+      "Index": 185,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 522
+      }
+    },
+    {
+      "Index": 186,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 523
+      }
+    },
+    {
+      "Index": 187,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 524
+      }
+    },
+    {
+      "Index": 188,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 5,
+        "_MotionID": 540,
+        "_ReferenceLayerIndex": 3
+      }
+    },
+    {
+      "Index": 189,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 3,
+        "_References": [
+          {
+            "Ref": 183,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 184,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 185,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 186,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          },
+          {
+            "Ref": 187,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.ReferenceMotionData"
+          }
+        ],
+        "_LayerIndex": 8,
+        "_Target": {
+          "Ref": 188,
+          "Class": "app.PlayerPhotoObjectAdditionalPostureTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 190,
+      "Class": "app.PlayerPhotoObjectAdditionalPostureTable",
+      "Userdata": null,
+      "Fields": {
+        "_Units": [
+          {
+            "Ref": 175,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.Unit"
+          },
+          {
+            "Ref": 182,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.Unit"
+          },
+          {
+            "Ref": 189,
+            "Class": "app.PlayerPhotoObjectAdditionalPostureTable.Unit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 191,
+      "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 3,
+        "_BankID": 5,
+        "_MotionID": 510,
+        "_JointMaskID": 1010
+      }
+    },
+    {
+      "Index": 192,
+      "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 5,
+        "_BankID": 5,
+        "_MotionID": 510,
+        "_JointMaskID": 1000
+      }
+    },
+    {
+      "Index": 193,
+      "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 8,
+        "_BankID": 5,
+        "_MotionID": 530,
+        "_JointMaskID": 5001
+      }
+    },
+    {
+      "Index": 194,
+      "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 8,
+        "_BankID": 100,
+        "_MotionID": 1130,
+        "_JointMaskID": 0
+      }
+    },
+    {
+      "Index": 195,
+      "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 8,
+        "_BankID": 100,
+        "_MotionID": 311,
+        "_JointMaskID": 4
+      }
+    },
+    {
+      "Index": 196,
+      "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 3,
+        "_BankID": 100,
+        "_MotionID": 1103,
+        "_JointMaskID": 0
+      }
+    },
+    {
+      "Index": 197,
+      "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable",
+      "Userdata": null,
+      "Fields": {
+        "_Units": [
+          {
+            "Ref": 191,
+            "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit"
+          },
+          {
+            "Ref": 192,
+            "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit"
+          },
+          {
+            "Ref": 193,
+            "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit"
+          },
+          {
+            "Ref": 194,
+            "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit"
+          },
+          {
+            "Ref": 195,
+            "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit"
+          },
+          {
+            "Ref": 196,
+            "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable.Unit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 198,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 199,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          10
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 200,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 198,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 199,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 201,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Composite"
+      }
+    },
+    {
+      "Index": 202,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 203,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 24,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 204,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 202,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 203,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 205,
+      "Class": "app.PlayerComplexConditionParam_Composite",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 204,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 206,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 201,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 205,
+          "Class": "app.PlayerComplexConditionParam_Composite"
+        }
+      }
+    },
+    {
+      "Index": 207,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 200,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 206,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 208,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__BankID__HasValue": true,
+        "STRUCT__BankID__Value": 100,
+        "STRUCT__BankType__HasValue": true,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 160,
+        "_IsSyncFrame": false,
+        "_SyncLayerNo": 0
+      }
+    },
+    {
+      "Index": 209,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 207,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 208,
+          "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 210,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 211,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          10
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 212,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 210,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 211,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 213,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Composite"
+      }
+    },
+    {
+      "Index": 214,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 215,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 7,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 216,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 214,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 215,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 217,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "MotionFlag"
+      }
+    },
+    {
+      "Index": 218,
+      "Class": "app.PlayerComplexConditionParam_MotionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_MotionFlag": 59,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 219,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 217,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 218,
+          "Class": "app.PlayerComplexConditionParam_MotionFlag"
+        }
+      }
+    },
+    {
+      "Index": 220,
+      "Class": "app.PlayerComplexConditionParam_Composite",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 216,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 219,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 221,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 213,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 220,
+          "Class": "app.PlayerComplexConditionParam_Composite"
+        }
+      }
+    },
+    {
+      "Index": 222,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 212,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 221,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 223,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__BankID__HasValue": true,
+        "STRUCT__BankID__Value": 100,
+        "STRUCT__BankType__HasValue": true,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 0,
+        "_IsSyncFrame": false,
+        "_SyncLayerNo": 0
+      }
+    },
+    {
+      "Index": 224,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 222,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 223,
+          "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 225,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 226,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          10
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 227,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 225,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 226,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 228,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionTable"
+      }
+    },
+    {
+      "Index": 229,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3077397117
+      }
+    },
+    {
+      "Index": 230,
+      "Class": "app.PlayerComplexConditionParam_ActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckCurrentAction": true,
+        "_Actions": [
+          {
+            "Ref": 229,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevAction": false,
+        "_PrevActions": []
+      }
+    },
+    {
+      "Index": 231,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 228,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 230,
+          "Class": "app.PlayerComplexConditionParam_ActionTable"
+        }
+      }
+    },
+    {
+      "Index": 232,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 227,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 231,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 233,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__BankID__HasValue": false,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": true,
+        "STRUCT__BankType__Value": 1,
+        "STRUCT__MotionID__HasValue": false,
+        "STRUCT__MotionID__Value": 0,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 1
+      }
+    },
+    {
+      "Index": 234,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 232,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 233,
+          "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 235,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 236,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0200"
+      }
+    },
+    {
+      "Index": 237,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0204"
+      }
+    },
+    {
+      "Index": 238,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [],
+        "_WeaponIDs": [
+          {
+            "Ref": 236,
+            "Class": "app.WeaponID"
+          },
+          {
+            "Ref": 237,
+            "Class": "app.WeaponID"
+          }
+        ],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 239,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 235,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 238,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 240,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 241,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3905855045
+      }
+    },
+    {
+      "Index": 242,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 241,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 243,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 240,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 242,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 244,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 239,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 243,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 245,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__BankID__HasValue": true,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 0,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 140,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 3
+      }
+    },
+    {
+      "Index": 246,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 244,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 245,
+          "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 247,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 248,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0200"
+      }
+    },
+    {
+      "Index": 249,
+      "Class": "app.WeaponID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "arm0204"
+      }
+    },
+    {
+      "Index": 250,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [],
+        "_WeaponIDs": [
+          {
+            "Ref": 248,
+            "Class": "app.WeaponID"
+          },
+          {
+            "Ref": 249,
+            "Class": "app.WeaponID"
+          }
+        ],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 251,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 247,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 250,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 252,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 253,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 307595368
+      }
+    },
+    {
+      "Index": 254,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 253,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 255,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 252,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 254,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 256,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 251,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 255,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 257,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__BankID__HasValue": true,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 0,
+        "STRUCT__MotionID__HasValue": true,
+        "STRUCT__MotionID__Value": 161,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 3
+      }
+    },
+    {
+      "Index": 258,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 256,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 257,
+          "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 259,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 260,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 828322444
+      }
+    },
+    {
+      "Index": 261,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 260,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 262,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 259,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 261,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 263,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 262,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 264,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__BankID__HasValue": false,
+        "STRUCT__BankID__Value": 0,
+        "STRUCT__BankType__HasValue": false,
+        "STRUCT__BankType__Value": 0,
+        "STRUCT__MotionID__HasValue": false,
+        "STRUCT__MotionID__Value": 0,
+        "_IsSyncFrame": true,
+        "_SyncLayerNo": 3
+      }
+    },
+    {
+      "Index": 265,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 263,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_Target": {
+          "Ref": 264,
+          "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 266,
+      "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable",
+      "Userdata": null,
+      "Fields": {
+        "_Units": [
+          {
+            "Ref": 209,
+            "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 224,
+            "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 234,
+            "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 246,
+            "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 258,
+            "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 265,
+            "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable.Unit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 267,
+      "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 1301
+      }
+    },
+    {
+      "Index": 268,
+      "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 0,
+        "_MotionID": 1301
+      }
+    },
+    {
+      "Index": 269,
+      "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 3,
+        "_Sources": [
+          {
+            "Ref": 267,
+            "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 268,
+          "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 270,
+      "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 1311
+      }
+    },
+    {
+      "Index": 271,
+      "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 0,
+        "_MotionID": 1311
+      }
+    },
+    {
+      "Index": 272,
+      "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 3,
+        "_Sources": [
+          {
+            "Ref": 270,
+            "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 271,
+          "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.MotionData"
+        }
+      }
+    },
+    {
+      "Index": 273,
+      "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable",
+      "Userdata": null,
+      "Fields": {
+        "_Units": [
+          {
+            "Ref": 269,
+            "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.Unit"
+          },
+          {
+            "Ref": 272,
+            "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable.Unit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 274,
+      "Class": "app.BonusID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "bo99_00_103"
+      }
+    },
+    {
+      "Index": 275,
+      "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable.ReferenceMotionData",
+      "Userdata": null,
+      "Fields": {
+        "_BankID": 100,
+        "_MotionID": 1130
+      }
+    },
+    {
+      "Index": 276,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 508059067
+      }
+    },
+    {
+      "Index": 277,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2571687070
+      }
+    },
+    {
+      "Index": 278,
+      "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable.JointShapeData",
+      "Userdata": null,
+      "Fields": {
+        "_MontagePartsName": "55",
+        "_TargetJoints": [
+          {
+            "Ref": 276,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 277,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_RadiusScale": 2
+      }
+    },
+    {
+      "Index": 279,
+      "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable.Unit",
+      "Userdata": null,
+      "Fields": {
+        "_ReferenceLayerIndex": 8,
+        "_BonusID": {
+          "Ref": 274,
+          "Class": "app.BonusID"
+        },
+        "_References": [
+          {
+            "Ref": 275,
+            "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable.ReferenceMotionData"
+          }
+        ],
+        "_Target": {
+          "Ref": 278,
+          "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable.JointShapeData"
+        }
+      }
+    },
+    {
+      "Index": 280,
+      "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable",
+      "Userdata": null,
+      "Fields": {
+        "_Units": [
+          {
+            "Ref": 279,
+            "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable.Unit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 281,
+      "Class": "app.PlayerPhotoObjectUserData",
+      "Userdata": null,
+      "Fields": {
+        "_FPSPostureReplaceTable": {
+          "Ref": 42,
+          "Class": "app.PlayerPhotoObjectPostureReplaceTable"
+        },
+        "_FPSPostureOverwriteTable": {
+          "Ref": 168,
+          "Class": "app.PlayerPhotoObjectPostureOverwriteTable"
+        },
+        "_FPSAdditionalPostureTable": {
+          "Ref": 190,
+          "Class": "app.PlayerPhotoObjectAdditionalPostureTable"
+        },
+        "_FPSAdditionalJointMaskTable": {
+          "Ref": 197,
+          "Class": "app.PlayerPhotoObjectAdditionalJointMaskTable"
+        },
+        "_FPSWeaponPostureOverwriteTable": {
+          "Ref": 266,
+          "Class": "app.PlayerPhotoObjectWeaponPostureOverwriteTable"
+        },
+        "_FPSWeaponSlingPostureOverwriteTable": {
+          "Ref": 273,
+          "Class": "app.PlayerPhotoObjectWeaponSlingPostureOverwriteTable"
+        },
+        "_PlayerPhotoObjectChangeCollisionShapeTable": {
+          "Ref": 280,
+          "Class": "app.PlayerPhotoObjectChangeCollisionShapeTable"
+        },
+        "_IsDisableGPUCloth": false,
+        "_IsDisableChain": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,4411 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100emotesettinguserdata.user.3",
+  "Objects": [
+    {
+      "Index": 160,
+      "Class": "app.PlayerEmoteSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IntervalTimeSetting": {
+          "Index": 5,
+          "Class": "app.PlayerEmoteSettingUserData.IntervalTimeSetting",
+          "Userdata": null,
+          "Fields": {
+            "_ActionTables": [
+              {
+                "Index": 1,
+                "Class": "app.ActionTableUserData",
+                "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonActionTable.user",
+                "Fields": {}
+              },
+              {
+                "Index": 2,
+                "Class": "app.ActionTableUserData",
+                "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100ActionTable.user",
+                "Fields": {}
+              }
+            ],
+            "_DefaultActingIntervalTime": "Range(20, 10)",
+            "_ActionIntervalTimes": [
+              {
+                "Index": 4,
+                "Class": "app.PlayerEmoteSettingUserData.ActionIntervalTime",
+                "Userdata": null,
+                "Fields": {
+                  "_ActionNameHash": {
+                    "Index": 3,
+                    "Class": "app.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 3389212796
+                    }
+                  },
+                  "_ActingIntervalTime": "Range(15, 5)"
+                }
+              }
+            ],
+            "_PrevEmoteHoldingTime": "Range(60, 30)"
+          }
+        },
+        "_HPCurveSettingList": [
+          {
+            "Index": 7,
+            "Class": "app.PlayerEmoteSettingUserData.HPCurveInfo",
+            "Userdata": null,
+            "Fields": {
+              "_HitPointCurve": {
+                "Index": 6,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.5747: 0",
+                    "0.675: 1",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 9,
+            "Class": "app.PlayerEmoteSettingUserData.HPCurveInfo",
+            "Userdata": null,
+            "Fields": {
+              "_HitPointCurve": {
+                "Index": 8,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.2: 0",
+                    "0.2998: 1",
+                    "0.5747: 1",
+                    "0.675: 0",
+                    "1: 0"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 11,
+            "Class": "app.PlayerEmoteSettingUserData.HPCurveInfo",
+            "Userdata": null,
+            "Fields": {
+              "_HitPointCurve": {
+                "Index": 10,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 1",
+                    "0.2: 1",
+                    "0.2998: 0",
+                    "1: 0"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              }
+            }
+          }
+        ],
+        "_PlayerEmoteSettingList": [
+          {
+            "Index": 16,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 50,
+              "_MotionListNum": 801,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                1,
+                4,
+                6,
+                0
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 8,
+              "_ConditionList": [
+                {
+                  "Index": 13,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 3,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 12,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                },
+                {
+                  "Index": 15,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 14,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 34,
+              "_ProbabilityMove": 0,
+              "_CurveID": 2
+            }
+          },
+          {
+            "Index": 23,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7000,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                6,
+                4
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 0,
+              "_CheckMental": 1,
+              "_ConditionList": [
+                {
+                  "Index": 18,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 3,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 17,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                },
+                {
+                  "Index": 20,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 19,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 22,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 11,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 21,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0002"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 40,
+              "_ProbabilityMove": 0,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 30,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7002,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                4,
+                6
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 263,
+              "_ConditionList": [
+                {
+                  "Index": 25,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 24,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 27,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 26,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 29,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 28,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 37,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7003,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                4,
+                6
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 263,
+              "_ConditionList": [
+                {
+                  "Index": 32,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 31,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 34,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 33,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 36,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 35,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 44,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7004,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                4,
+                6
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 263,
+              "_ConditionList": [
+                {
+                  "Index": 39,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 38,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 41,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 40,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 43,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 42,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 47,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 50,
+              "_MotionListNum": 5000,
+              "_EmoteType": 2,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                4,
+                6
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 1,
+              "_CheckMental": 263,
+              "_ConditionList": [
+                {
+                  "Index": 46,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": 0,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 45,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 100,
+              "_ProbabilityMove": 100,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 54,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7006,
+              "_EmoteType": 2,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                4,
+                6
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 263,
+              "_ConditionList": [
+                {
+                  "Index": 49,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 48,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                },
+                {
+                  "Index": 51,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": 0,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 50,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 53,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": 0,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 52,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 0,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 61,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7007,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                4,
+                6
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 256,
+              "_ConditionList": [
+                {
+                  "Index": 56,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 55,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 58,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 57,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 60,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 59,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 68,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7008,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                4,
+                6
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 256,
+              "_ConditionList": [
+                {
+                  "Index": 63,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 62,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 65,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 64,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 67,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 3,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 66,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 0,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 77,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7007,
+              "_EmoteType": 0,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                1
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 6,
+              "_ConditionList": [
+                {
+                  "Index": 70,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 69,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 72,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 71,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 74,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 73,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 76,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 9,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 75,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 86,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7008,
+              "_EmoteType": 0,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                1
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 6,
+              "_ConditionList": [
+                {
+                  "Index": 79,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 78,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 81,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 80,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 83,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 3,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 82,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                },
+                {
+                  "Index": 85,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 9,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 84,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 0,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 93,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 50,
+              "_MotionListNum": 927,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                4,
+                6
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 256,
+              "_ConditionList": [
+                {
+                  "Index": 88,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 87,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 90,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 89,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 92,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 91,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 102,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 7009,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                4,
+                6
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 262,
+              "_ConditionList": [
+                {
+                  "Index": 95,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 94,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 97,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 96,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 99,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 98,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 101,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 9,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 100,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 109,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 50,
+              "_MotionListNum": 928,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 256,
+              "_ConditionList": [
+                {
+                  "Index": 104,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 103,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 106,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 7,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 105,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 108,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 107,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 116,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 50,
+              "_MotionListNum": 929,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                6,
+                4
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 1,
+              "_ConditionList": [
+                {
+                  "Index": 111,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 3,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 110,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                },
+                {
+                  "Index": 113,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 112,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 115,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 9,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 114,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 40,
+              "_ProbabilityMove": 0,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 121,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 0,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0,
+                1,
+                6,
+                4
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 6,
+              "_ConditionList": [
+                {
+                  "Index": 118,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 3,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 117,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                },
+                {
+                  "Index": 120,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 119,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 0,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 126,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 0,
+              "_EmoteType": 0,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                0
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 256,
+              "_ConditionList": [
+                {
+                  "Index": 123,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 3,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 122,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                },
+                {
+                  "Index": 125,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 124,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 0,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 131,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 0,
+              "_MotionListNum": 0,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                1,
+                4,
+                6,
+                0
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 8,
+              "_ConditionList": [
+                {
+                  "Index": 128,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 3,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 127,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                },
+                {
+                  "Index": 130,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 129,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 33,
+              "_ProbabilityMove": 0,
+              "_CurveID": 2
+            }
+          },
+          {
+            "Index": 138,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 900,
+              "_MotionListNum": 5000,
+              "_EmoteType": 0,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                1
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 1,
+              "_CheckMental": 262,
+              "_ConditionList": [
+                {
+                  "Index": 133,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 132,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 135,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 134,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 137,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 9,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 136,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 145,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 900,
+              "_MotionListNum": 5001,
+              "_EmoteType": 0,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                1
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 1,
+              "_CheckMental": 6,
+              "_ConditionList": [
+                {
+                  "Index": 140,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 139,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 142,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 141,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 144,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 9,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 143,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 25,
+              "_ProbabilityMove": 40,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 148,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 50,
+              "_MotionListNum": 926,
+              "_EmoteType": 1,
+              "_IsUseGunMotion": false,
+              "_WeaponCategoryList": [
+                1,
+                4,
+                6,
+                0
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 2,
+              "_CheckMental": 256,
+              "_ConditionList": [
+                {
+                  "Index": 147,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 146,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": true
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 30,
+              "_ProbabilityMove": 0,
+              "_CurveID": 0
+            }
+          },
+          {
+            "Index": 159,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+            "Userdata": null,
+            "Fields": {
+              "_MotionBankID": 100,
+              "_MotionListNum": 1203,
+              "_EmoteType": 0,
+              "_IsUseGunMotion": true,
+              "_WeaponCategoryList": [
+                1
+              ],
+              "_WeaponIDList": [],
+              "_ViewType": 0,
+              "_CheckMental": 6,
+              "_ConditionList": [
+                {
+                  "Index": 150,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 6,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 149,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 152,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 5,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 0,
+                    "_MontagePartsID": {
+                      "Index": 151,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 154,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 10,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 2,
+                    "_MontagePartsID": {
+                      "Index": 153,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 156,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 9,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 2,
+                    "_MontagePartsID": {
+                      "Index": 155,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                },
+                {
+                  "Index": 158,
+                  "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Condition": 2,
+                    "_LightKind": -1,
+                    "_AttachmentTag": 2,
+                    "_MontagePartsID": {
+                      "Index": 157,
+                      "Class": "app.PlayerMontagePartsID",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Name": "pm0000"
+                      }
+                    },
+                    "_CompareValue": false
+                  }
+                }
+              ],
+              "_Compare": 1,
+              "_ProbabilityIdle": 20,
+              "_ProbabilityMove": 20,
+              "_CurveID": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.ActionTableUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonActionTable.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.ActionTableUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100ActionTable.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3389212796
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerEmoteSettingUserData.ActionIntervalTime",
+      "Userdata": null,
+      "Fields": {
+        "_ActionNameHash": {
+          "Ref": 3,
+          "Class": "app.NameHash"
+        },
+        "_ActingIntervalTime": "Range(15, 5)"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerEmoteSettingUserData.IntervalTimeSetting",
+      "Userdata": null,
+      "Fields": {
+        "_ActionTables": [
+          {
+            "Ref": 1,
+            "Class": "app.ActionTableUserData"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.ActionTableUserData"
+          }
+        ],
+        "_DefaultActingIntervalTime": "Range(20, 10)",
+        "_ActionIntervalTimes": [
+          {
+            "Ref": 4,
+            "Class": "app.PlayerEmoteSettingUserData.ActionIntervalTime"
+          }
+        ],
+        "_PrevEmoteHoldingTime": "Range(60, 30)"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.5747: 0",
+          "0.675: 1",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerEmoteSettingUserData.HPCurveInfo",
+      "Userdata": null,
+      "Fields": {
+        "_HitPointCurve": {
+          "Ref": 6,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.2: 0",
+          "0.2998: 1",
+          "0.5747: 1",
+          "0.675: 0",
+          "1: 0"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerEmoteSettingUserData.HPCurveInfo",
+      "Userdata": null,
+      "Fields": {
+        "_HitPointCurve": {
+          "Ref": 8,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 1",
+          "0.2: 1",
+          "0.2998: 0",
+          "1: 0"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.PlayerEmoteSettingUserData.HPCurveInfo",
+      "Userdata": null,
+      "Fields": {
+        "_HitPointCurve": {
+          "Ref": 10,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 3,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 12,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 14,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 50,
+        "_MotionListNum": 801,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          1,
+          4,
+          6,
+          0
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 8,
+        "_ConditionList": [
+          {
+            "Ref": 13,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 34,
+        "_ProbabilityMove": 0,
+        "_CurveID": 2
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 3,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 17,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 19,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0002"
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 11,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 21,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7000,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          6,
+          4
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 0,
+        "_CheckMental": 1,
+        "_ConditionList": [
+          {
+            "Ref": 18,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 22,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 40,
+        "_ProbabilityMove": 0,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 24,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 26,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 28,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7002,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 263,
+        "_ConditionList": [
+          {
+            "Ref": 25,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 31,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 33,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 35,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7003,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 263,
+        "_ConditionList": [
+          {
+            "Ref": 32,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 34,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 36,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 38,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 40,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 42,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7004,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 263,
+        "_ConditionList": [
+          {
+            "Ref": 39,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 41,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 43,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": 0,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 45,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 50,
+        "_MotionListNum": 5000,
+        "_EmoteType": 2,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 1,
+        "_CheckMental": 263,
+        "_ConditionList": [
+          {
+            "Ref": 46,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 100,
+        "_ProbabilityMove": 100,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 48,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": 0,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 50,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": 0,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 52,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7006,
+        "_EmoteType": 2,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 263,
+        "_ConditionList": [
+          {
+            "Ref": 49,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 51,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 53,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 0,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 55,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 57,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 59,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7007,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 256,
+        "_ConditionList": [
+          {
+            "Ref": 56,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 58,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 60,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 62,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 64,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 3,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 66,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7008,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 256,
+        "_ConditionList": [
+          {
+            "Ref": 63,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 65,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 67,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 0,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 69,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 71,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 73,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 9,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 75,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7007,
+        "_EmoteType": 0,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          1
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 6,
+        "_ConditionList": [
+          {
+            "Ref": 70,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 72,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 74,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 76,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 78,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 80,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 3,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 82,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 9,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 84,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7008,
+        "_EmoteType": 0,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          1
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 6,
+        "_ConditionList": [
+          {
+            "Ref": 79,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 81,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 83,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 85,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 0,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 87,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 89,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 91,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 50,
+        "_MotionListNum": 927,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 256,
+        "_ConditionList": [
+          {
+            "Ref": 88,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 90,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 92,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 94,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 96,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 98,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 9,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 100,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 7009,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 262,
+        "_ConditionList": [
+          {
+            "Ref": 95,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 97,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 99,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 101,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 103,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 7,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 105,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 107,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 50,
+        "_MotionListNum": 928,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 256,
+        "_ConditionList": [
+          {
+            "Ref": 104,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 106,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 108,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 3,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 110,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 112,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 9,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 114,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 50,
+        "_MotionListNum": 929,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          6,
+          4
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 1,
+        "_ConditionList": [
+          {
+            "Ref": 111,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 113,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 115,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 40,
+        "_ProbabilityMove": 0,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 3,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 117,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 119,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 119,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 0,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0,
+          1,
+          6,
+          4
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 6,
+        "_ConditionList": [
+          {
+            "Ref": 118,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 120,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 0,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 122,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 3,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 122,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 125,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 124,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 0,
+        "_EmoteType": 0,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          0
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 256,
+        "_ConditionList": [
+          {
+            "Ref": 123,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 125,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 0,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 128,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 3,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 127,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 129,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 131,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 0,
+        "_MotionListNum": 0,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          1,
+          4,
+          6,
+          0
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 8,
+        "_ConditionList": [
+          {
+            "Ref": 128,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 130,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 33,
+        "_ProbabilityMove": 0,
+        "_CurveID": 2
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 133,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 132,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 134,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 134,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 137,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 9,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 136,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 138,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 900,
+        "_MotionListNum": 5000,
+        "_EmoteType": 0,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          1
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 1,
+        "_CheckMental": 262,
+        "_ConditionList": [
+          {
+            "Ref": 133,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 135,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 137,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 139,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 140,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 139,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 141,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 142,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 141,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 143,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 144,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 9,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 143,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 145,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 900,
+        "_MotionListNum": 5001,
+        "_EmoteType": 0,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          1
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 1,
+        "_CheckMental": 6,
+        "_ConditionList": [
+          {
+            "Ref": 140,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 142,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 144,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 25,
+        "_ProbabilityMove": 40,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 146,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 147,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 146,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": true
+      }
+    },
+    {
+      "Index": 148,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 50,
+        "_MotionListNum": 926,
+        "_EmoteType": 1,
+        "_IsUseGunMotion": false,
+        "_WeaponCategoryList": [
+          1,
+          4,
+          6,
+          0
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 2,
+        "_CheckMental": 256,
+        "_ConditionList": [
+          {
+            "Ref": 147,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 30,
+        "_ProbabilityMove": 0,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 149,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 150,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 6,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 149,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 151,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 152,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 5,
+        "_LightKind": -1,
+        "_AttachmentTag": 0,
+        "_MontagePartsID": {
+          "Ref": 151,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 153,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 154,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 10,
+        "_LightKind": -1,
+        "_AttachmentTag": 2,
+        "_MontagePartsID": {
+          "Ref": 153,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 155,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 156,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 9,
+        "_LightKind": -1,
+        "_AttachmentTag": 2,
+        "_MontagePartsID": {
+          "Ref": 155,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 157,
+      "Class": "app.PlayerMontagePartsID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "pm0000"
+      }
+    },
+    {
+      "Index": 158,
+      "Class": "app.PlayerEmoteSettingUserData.ConditionInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": 2,
+        "_LightKind": -1,
+        "_AttachmentTag": 2,
+        "_MontagePartsID": {
+          "Ref": 157,
+          "Class": "app.PlayerMontagePartsID"
+        },
+        "_CompareValue": false
+      }
+    },
+    {
+      "Index": 159,
+      "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting",
+      "Userdata": null,
+      "Fields": {
+        "_MotionBankID": 100,
+        "_MotionListNum": 1203,
+        "_EmoteType": 0,
+        "_IsUseGunMotion": true,
+        "_WeaponCategoryList": [
+          1
+        ],
+        "_WeaponIDList": [],
+        "_ViewType": 0,
+        "_CheckMental": 6,
+        "_ConditionList": [
+          {
+            "Ref": 150,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 152,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 154,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 156,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          },
+          {
+            "Ref": 158,
+            "Class": "app.PlayerEmoteSettingUserData.ConditionInfo"
+          }
+        ],
+        "_Compare": 1,
+        "_ProbabilityIdle": 20,
+        "_ProbabilityMove": 20,
+        "_CurveID": 0
+      }
+    },
+    {
+      "Index": 160,
+      "Class": "app.PlayerEmoteSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IntervalTimeSetting": {
+          "Ref": 5,
+          "Class": "app.PlayerEmoteSettingUserData.IntervalTimeSetting"
+        },
+        "_HPCurveSettingList": [
+          {
+            "Ref": 7,
+            "Class": "app.PlayerEmoteSettingUserData.HPCurveInfo"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.PlayerEmoteSettingUserData.HPCurveInfo"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.PlayerEmoteSettingUserData.HPCurveInfo"
+          }
+        ],
+        "_PlayerEmoteSettingList": [
+          {
+            "Ref": 16,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 23,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 37,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 44,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 47,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 54,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 61,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 68,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 77,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 86,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 93,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 102,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 109,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 116,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 121,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 126,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 131,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 138,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 145,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 148,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          },
+          {
+            "Ref": 159,
+            "Class": "app.PlayerEmoteSettingUserData.PlayerEmoteSetting"
+          }
+        ]
+      }
+    }
+  ]
+}

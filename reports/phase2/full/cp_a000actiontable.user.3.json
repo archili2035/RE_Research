@@ -1,0 +1,659 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000actiontable.user.3",
+  "Objects": [
+    {
+      "Index": 17,
+      "Class": "app.ActionTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Actions": [
+          {
+            "Index": 1,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "EnemyStunAction.Kick_Low",
+              "_ActionHash": 2087707508,
+              "_ActionCategory": 1,
+              "_Priority": 7000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4198400,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 2,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "EnemyStunAction.Kick_Strong",
+              "_ActionHash": 4021829840,
+              "_ActionCategory": 1,
+              "_Priority": 7000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4198400,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 3,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "EnemyStunAction.GrappleMove",
+              "_ActionHash": 2544135672,
+              "_ActionCategory": 0,
+              "_Priority": 7000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "EnemyStunAction.Kick_UpDown",
+              "_ActionHash": 1037891275,
+              "_ActionCategory": 1,
+              "_Priority": 7000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4198400,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 5,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "EnemyStunAction.Kick_TargetDown",
+              "_ActionHash": 1073772046,
+              "_ActionCategory": 1,
+              "_Priority": 7000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4198400,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "EnemyStunAction.PursuitMelee",
+              "_ActionHash": 2154304614,
+              "_ActionCategory": 1,
+              "_Priority": 7000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194336,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 7,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "UseGroundWeapon",
+              "_ActionHash": 1247413883,
+              "_ActionCategory": 1,
+              "_Priority": 7000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.BikeSmall",
+              "_ActionHash": 3857155227,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 9,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.BikeLarge",
+              "_ActionHash": 2650613140,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 10,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Reaction.ElevatorReaction",
+              "_ActionHash": 4160411208,
+              "_ActionCategory": 9,
+              "_Priority": 8700,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 11,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.ch8620g",
+              "_ActionHash": 73208952,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "ThrowGimmick",
+              "_ActionHash": 1013715959,
+              "_ActionCategory": 1,
+              "_Priority": 7000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 13,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Reaction.SickStaggerWalkLarge",
+              "_ActionHash": 1965922837,
+              "_ActionCategory": 9,
+              "_Priority": 5000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 14,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Reaction.SickStaggerWalkSmall",
+              "_ActionHash": 2354480113,
+              "_ActionCategory": 9,
+              "_Priority": 5000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 15,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Reaction.SickStaggerWalkGateFront",
+              "_ActionHash": 1302313544,
+              "_ActionCategory": 9,
+              "_Priority": 5000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          }
+        ],
+        "_PriorityDefinitions": [],
+        "_AddtionalActions": [
+          {
+            "Index": 16,
+            "Class": "app.ActionTableUserData",
+            "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonActionTable.user",
+            "Fields": {}
+          }
+        ],
+        "_ActionSubTables": [],
+        "_TagEnumType": "app.PlayerDefine.ActionFlag",
+        "_AdditionalTags": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "EnemyStunAction.Kick_Low",
+        "_ActionHash": 2087707508,
+        "_ActionCategory": 1,
+        "_Priority": 7000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4198400,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "EnemyStunAction.Kick_Strong",
+        "_ActionHash": 4021829840,
+        "_ActionCategory": 1,
+        "_Priority": 7000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4198400,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "EnemyStunAction.GrappleMove",
+        "_ActionHash": 2544135672,
+        "_ActionCategory": 0,
+        "_Priority": 7000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "EnemyStunAction.Kick_UpDown",
+        "_ActionHash": 1037891275,
+        "_ActionCategory": 1,
+        "_Priority": 7000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4198400,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "EnemyStunAction.Kick_TargetDown",
+        "_ActionHash": 1073772046,
+        "_ActionCategory": 1,
+        "_Priority": 7000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4198400,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "EnemyStunAction.PursuitMelee",
+        "_ActionHash": 2154304614,
+        "_ActionCategory": 1,
+        "_Priority": 7000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194336,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "UseGroundWeapon",
+        "_ActionHash": 1247413883,
+        "_ActionCategory": 1,
+        "_Priority": 7000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.BikeSmall",
+        "_ActionHash": 3857155227,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.BikeLarge",
+        "_ActionHash": 2650613140,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Reaction.ElevatorReaction",
+        "_ActionHash": 4160411208,
+        "_ActionCategory": 9,
+        "_Priority": 8700,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.ch8620g",
+        "_ActionHash": 73208952,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "ThrowGimmick",
+        "_ActionHash": 1013715959,
+        "_ActionCategory": 1,
+        "_Priority": 7000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Reaction.SickStaggerWalkLarge",
+        "_ActionHash": 1965922837,
+        "_ActionCategory": 9,
+        "_Priority": 5000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Reaction.SickStaggerWalkSmall",
+        "_ActionHash": 2354480113,
+        "_ActionCategory": 9,
+        "_Priority": 5000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Reaction.SickStaggerWalkGateFront",
+        "_ActionHash": 1302313544,
+        "_ActionCategory": 9,
+        "_Priority": 5000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.ActionTableUserData",
+      "Userdata": "AppSystem/Character/CharacterPrefab/PlayerCommon/UserData/PlayerCommonActionTable.user",
+      "Fields": {}
+    },
+    {
+      "Index": 17,
+      "Class": "app.ActionTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Actions": [
+          {
+            "Ref": 1,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.ActionData"
+          }
+        ],
+        "_PriorityDefinitions": [],
+        "_AddtionalActions": [
+          {
+            "Ref": 16,
+            "Class": "app.ActionTableUserData"
+          }
+        ],
+        "_ActionSubTables": [],
+        "_TagEnumType": "app.PlayerDefine.ActionFlag",
+        "_AdditionalTags": []
+      }
+    }
+  ]
+}

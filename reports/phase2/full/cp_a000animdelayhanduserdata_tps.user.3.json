@@ -1,0 +1,47 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/animdelayhand/cp_a000animdelayhanduserdata_tps.user.3",
+  "Objects": [
+    {
+      "Index": 1,
+      "Class": "app.AnimDelayHandUserData",
+      "Userdata": null,
+      "Fields": {
+        "_RightArmSpecificationData": {
+          "Index": 0,
+          "Class": "",
+          "Userdata": null,
+          "Fields": {}
+        },
+        "_LeftArmSpecificationData": {
+          "Index": 0,
+          "Class": "",
+          "Userdata": null,
+          "Fields": {}
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.AnimDelayHandUserData",
+      "Userdata": null,
+      "Fields": {
+        "_RightArmSpecificationData": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "_LeftArmSpecificationData": {
+          "Ref": 0,
+          "Class": ""
+        }
+      }
+    }
+  ]
+}

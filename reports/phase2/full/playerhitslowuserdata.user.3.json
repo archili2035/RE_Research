@@ -1,0 +1,1063 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerhitslowuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 37,
+      "Class": "app.HitSlowUserData",
+      "Userdata": null,
+      "Fields": {
+        "_HitSlowDataList": [
+          {
+            "Index": 3,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1106175613
+                }
+              },
+              "_HitSlowFrame": 10,
+              "_HitSlowCurve": {
+                "Index": 2,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 1",
+                    "0.01643: 0.6080256",
+                    "0.0994: 0.1990813",
+                    "0.308: 0.1966173",
+                    "0.605: 0.6485366",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": false
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 4,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3445313039
+                }
+              },
+              "_HitSlowFrame": 5,
+              "_HitSlowCurve": {
+                "Index": 5,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0.15",
+                    "0.2957: 0.14788587",
+                    "0.6187: 0.4857454",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": false
+            }
+          },
+          {
+            "Index": 9,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 7,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 894617275
+                }
+              },
+              "_HitSlowFrame": 15,
+              "_HitSlowCurve": {
+                "Index": 8,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0.1",
+                    "0.4: 0.1",
+                    "0.6846: 0.21610971",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": false
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 10,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 768258520
+                }
+              },
+              "_HitSlowFrame": 10,
+              "_HitSlowCurve": {
+                "Index": 11,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0.1",
+                    "0.05: 0.1",
+                    "0.638: 0.19450317",
+                    "0.813: 0.56819814",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": true
+            }
+          },
+          {
+            "Index": 15,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 13,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 72426820
+                }
+              },
+              "_HitSlowFrame": 9,
+              "_HitSlowCurve": {
+                "Index": 14,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.2091: 0",
+                    "0.603: 0",
+                    "0.872: 0.50739884",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": true
+            }
+          },
+          {
+            "Index": 18,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 16,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 4089634551
+                }
+              },
+              "_HitSlowFrame": 5,
+              "_HitSlowCurve": {
+                "Index": 17,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.2091: 0",
+                    "0.603: 0",
+                    "0.872: 0.50739884",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": false
+            }
+          },
+          {
+            "Index": 21,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 19,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1771670754
+                }
+              },
+              "_HitSlowFrame": 14,
+              "_HitSlowCurve": {
+                "Index": 20,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0.06",
+                    "0.1: 0.06",
+                    "0.536: 0.16279101",
+                    "0.808: 0.73733133",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": false
+            }
+          },
+          {
+            "Index": 24,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 22,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1305337243
+                }
+              },
+              "_HitSlowFrame": 10,
+              "_HitSlowCurve": {
+                "Index": 23,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 1",
+                    "0.01643: 0.6080256",
+                    "0.0594: 0.1166289",
+                    "0.576: 0.1712473",
+                    "0.855: 0.46460396",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": false
+            }
+          },
+          {
+            "Index": 27,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 25,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2482451707
+                }
+              },
+              "_HitSlowFrame": 9,
+              "_HitSlowCurve": {
+                "Index": 26,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.2091: 0",
+                    "0.603: 0",
+                    "0.872: 0.50739884",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": true
+            }
+          },
+          {
+            "Index": 30,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 28,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2649437117
+                }
+              },
+              "_HitSlowFrame": 20,
+              "_HitSlowCurve": {
+                "Index": 29,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0.04",
+                    "0.5996: 0.04",
+                    "0.7183: 0.43023315",
+                    "0.8: 1",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": true
+            }
+          },
+          {
+            "Index": 33,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 31,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3921206400
+                }
+              },
+              "_HitSlowFrame": 20,
+              "_HitSlowCurve": {
+                "Index": 32,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0.04",
+                    "0.5996: 0.04",
+                    "0.7183: 0.43023315",
+                    "0.8: 1",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": true
+            }
+          },
+          {
+            "Index": 36,
+            "Class": "app.HitSlowUserData.HitSlowData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 34,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3921206400
+                }
+              },
+              "_HitSlowFrame": 20,
+              "_HitSlowCurve": {
+                "Index": 35,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0.04",
+                    "0.5996: 0.04",
+                    "0.7183: 0.43023315",
+                    "0.8: 1",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_ApplyDamageSide": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1106175613
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 1",
+          "0.01643: 0.6080256",
+          "0.0994: 0.1990813",
+          "0.308: 0.1966173",
+          "0.605: 0.6485366",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 10,
+        "_HitSlowCurve": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": false
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3445313039
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0.15",
+          "0.2957: 0.14788587",
+          "0.6187: 0.4857454",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 4,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 5,
+        "_HitSlowCurve": {
+          "Ref": 5,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": false
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 894617275
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0.1",
+          "0.4: 0.1",
+          "0.6846: 0.21610971",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 7,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 15,
+        "_HitSlowCurve": {
+          "Ref": 8,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": false
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 768258520
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0.1",
+          "0.05: 0.1",
+          "0.638: 0.19450317",
+          "0.813: 0.56819814",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 10,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 10,
+        "_HitSlowCurve": {
+          "Ref": 11,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": true
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 72426820
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.2091: 0",
+          "0.603: 0",
+          "0.872: 0.50739884",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 13,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 9,
+        "_HitSlowCurve": {
+          "Ref": 14,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": true
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 4089634551
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.2091: 0",
+          "0.603: 0",
+          "0.872: 0.50739884",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 16,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 5,
+        "_HitSlowCurve": {
+          "Ref": 17,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": false
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1771670754
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0.06",
+          "0.1: 0.06",
+          "0.536: 0.16279101",
+          "0.808: 0.73733133",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 19,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 14,
+        "_HitSlowCurve": {
+          "Ref": 20,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": false
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1305337243
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 1",
+          "0.01643: 0.6080256",
+          "0.0594: 0.1166289",
+          "0.576: 0.1712473",
+          "0.855: 0.46460396",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 22,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 10,
+        "_HitSlowCurve": {
+          "Ref": 23,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": false
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2482451707
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.2091: 0",
+          "0.603: 0",
+          "0.872: 0.50739884",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 25,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 9,
+        "_HitSlowCurve": {
+          "Ref": 26,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": true
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2649437117
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0.04",
+          "0.5996: 0.04",
+          "0.7183: 0.43023315",
+          "0.8: 1",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 28,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 20,
+        "_HitSlowCurve": {
+          "Ref": 29,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": true
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3921206400
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0.04",
+          "0.5996: 0.04",
+          "0.7183: 0.43023315",
+          "0.8: 1",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 31,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 20,
+        "_HitSlowCurve": {
+          "Ref": 32,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": true
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3921206400
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0.04",
+          "0.5996: 0.04",
+          "0.7183: 0.43023315",
+          "0.8: 1",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.HitSlowUserData.HitSlowData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 34,
+          "Class": "app.NameHash"
+        },
+        "_HitSlowFrame": 20,
+        "_HitSlowCurve": {
+          "Ref": 35,
+          "Class": "via.AnimationCurve"
+        },
+        "_ApplyDamageSide": true
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.HitSlowUserData",
+      "Userdata": null,
+      "Fields": {
+        "_HitSlowDataList": [
+          {
+            "Ref": 3,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          },
+          {
+            "Ref": 36,
+            "Class": "app.HitSlowUserData.HitSlowData"
+          }
+        ]
+      }
+    }
+  ]
+}

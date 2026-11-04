@@ -1,0 +1,35 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playercommonpreaddsetting.user.3",
+  "Objects": [
+    {
+      "Index": 1,
+      "Class": "app.UpperBodyPreAddSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultBankIdOffset": 2000,
+        "_DefaultMotionIdOffset": 0,
+        "_DefaultJointMaskID": 11,
+        "_BankSettings": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.UpperBodyPreAddSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultBankIdOffset": 2000,
+        "_DefaultMotionIdOffset": 0,
+        "_DefaultJointMaskID": 11,
+        "_BankSettings": []
+      }
+    }
+  ]
+}

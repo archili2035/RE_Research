@@ -1,0 +1,799 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/lookat/cp_a100lookaroundsetting.user.3",
+  "Objects": [
+    {
+      "Index": 35,
+      "Class": "app.AppIkLookAtLookAroundSettingForPlayerUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Setting": {
+          "Index": 34,
+          "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam",
+          "Userdata": null,
+          "Fields": {
+            "_TargetCategory": 4,
+            "_Priority": 80,
+            "_Weight": 0,
+            "_TimeLimitSetting": 0,
+            "_AimedAngleSetting": 0.34906587,
+            "_LookAtTime": 5,
+            "_LookAtDelayTimeRange": "Range(0, 0)",
+            "STRUCT__IntervalTimeRange__HasValue": false,
+            "STRUCT__IntervalTimeRange__Value": "Range(0, 0)",
+            "_PositionSetting": 4,
+            "_BaseObject": "Ref\u003C00000000-0000-0000-0000-000000000000 =\u003E \u003E",
+            "_JointName": "",
+            "_ViewPoint": "\u003C0, 1, 1\u003E",
+            "_DisableDamping": false,
+            "_SpeedRateRange": "Range(1, 0)",
+            "STRUCT__ForceInterpTimeRange__HasValue": false,
+            "STRUCT__ForceInterpTimeRange__Value": "Range(0, 0)",
+            "_CheckRayCast": true,
+            "_IsOneShotRayCast": true,
+            "_IgnoreDistanceFromHead": 0,
+            "_DisableAngleRangeSetting": false,
+            "_AimRate": 1,
+            "_RandomType": 0,
+            "_RandomSetting": {
+              "Index": 2,
+              "Class": "app.AppIkLookAtViewPointRandomizer.BoxSetting",
+              "Userdata": null,
+              "Fields": {
+                "STRUCT__ChangeTime__HasValue": false,
+                "STRUCT__ChangeTime__Value": "Range(0, 0)",
+                "_DampingSetting": {
+                  "Index": 1,
+                  "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Enable": false,
+                    "_Damping": 0.7,
+                    "_Omega": 3,
+                    "_OnChangeTargetStrength": 1,
+                    "_EnableWarp": true,
+                    "_WarpDistanceFromTarget": 1
+                  }
+                },
+                "_RangeX": "Range(-1, 2)",
+                "_RangeY": "Range(-1, 2)",
+                "_RangeZ": "Range(-1, 2)",
+                "_RandomArea": "[Pos: 0 0 0, Extent: \u003C1, 1, 1\u003E]"
+              }
+            },
+            "_WatcherRestrictionTagBit": 0,
+            "_RandomSettings": {
+              "Index": 33,
+              "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.RandomSettingParamCollection",
+              "Userdata": null,
+              "Fields": {
+                "_RandomSettings": [
+                  {
+                    "Index": 7,
+                    "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+                    "Userdata": null,
+                    "Fields": {
+                      "_MentalState": 1,
+                      "_ChangeCountToSuspend": "Range(0, 0)",
+                      "_LookAtIntervalTime": "Range(0, 0)",
+                      "_ViewPointDistance": 1,
+                      "_RandomSetting": {
+                        "Index": 6,
+                        "Class": "app.AppIkLookAtLookAroundRandomSetting",
+                        "Userdata": null,
+                        "Fields": {
+                          "STRUCT__ChangeTime__HasValue": true,
+                          "STRUCT__ChangeTime__Value": "Range(3.2, 6.8)",
+                          "_DampingSetting": {
+                            "Ref": 3,
+                            "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+                          },
+                          "_PrimaryAreaSetting": {
+                            "Ref": 4,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+                          },
+                          "_SecondaryAreaSetting": {
+                            "Ref": 5,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Index": 12,
+                    "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+                    "Userdata": null,
+                    "Fields": {
+                      "_MentalState": 2,
+                      "_ChangeCountToSuspend": "Range(0, 0)",
+                      "_LookAtIntervalTime": "Range(0, 0)",
+                      "_ViewPointDistance": 1,
+                      "_RandomSetting": {
+                        "Index": 11,
+                        "Class": "app.AppIkLookAtLookAroundRandomSetting",
+                        "Userdata": null,
+                        "Fields": {
+                          "STRUCT__ChangeTime__HasValue": true,
+                          "STRUCT__ChangeTime__Value": "Range(2.5, 4.5)",
+                          "_DampingSetting": {
+                            "Ref": 8,
+                            "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+                          },
+                          "_PrimaryAreaSetting": {
+                            "Ref": 9,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+                          },
+                          "_SecondaryAreaSetting": {
+                            "Ref": 10,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Index": 17,
+                    "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+                    "Userdata": null,
+                    "Fields": {
+                      "_MentalState": 4,
+                      "_ChangeCountToSuspend": "Range(0, 0)",
+                      "_LookAtIntervalTime": "Range(0, 0)",
+                      "_ViewPointDistance": 1,
+                      "_RandomSetting": {
+                        "Index": 16,
+                        "Class": "app.AppIkLookAtLookAroundRandomSetting",
+                        "Userdata": null,
+                        "Fields": {
+                          "STRUCT__ChangeTime__HasValue": true,
+                          "STRUCT__ChangeTime__Value": "Range(2, 3)",
+                          "_DampingSetting": {
+                            "Ref": 13,
+                            "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+                          },
+                          "_PrimaryAreaSetting": {
+                            "Ref": 14,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+                          },
+                          "_SecondaryAreaSetting": {
+                            "Ref": 15,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Index": 22,
+                    "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+                    "Userdata": null,
+                    "Fields": {
+                      "_MentalState": 8,
+                      "_ChangeCountToSuspend": "Range(0, 0)",
+                      "_LookAtIntervalTime": "Range(0, 0)",
+                      "_ViewPointDistance": 1,
+                      "_RandomSetting": {
+                        "Index": 21,
+                        "Class": "app.AppIkLookAtLookAroundRandomSetting",
+                        "Userdata": null,
+                        "Fields": {
+                          "STRUCT__ChangeTime__HasValue": true,
+                          "STRUCT__ChangeTime__Value": "Range(2, 4)",
+                          "_DampingSetting": {
+                            "Ref": 18,
+                            "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+                          },
+                          "_PrimaryAreaSetting": {
+                            "Ref": 19,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+                          },
+                          "_SecondaryAreaSetting": {
+                            "Ref": 20,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Index": 27,
+                    "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+                    "Userdata": null,
+                    "Fields": {
+                      "_MentalState": 256,
+                      "_ChangeCountToSuspend": "Range(0, 0)",
+                      "_LookAtIntervalTime": "Range(0, 0)",
+                      "_ViewPointDistance": 1,
+                      "_RandomSetting": {
+                        "Index": 26,
+                        "Class": "app.AppIkLookAtLookAroundRandomSetting",
+                        "Userdata": null,
+                        "Fields": {
+                          "STRUCT__ChangeTime__HasValue": true,
+                          "STRUCT__ChangeTime__Value": "Range(1.8, 4.2)",
+                          "_DampingSetting": {
+                            "Ref": 23,
+                            "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+                          },
+                          "_PrimaryAreaSetting": {
+                            "Ref": 24,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+                          },
+                          "_SecondaryAreaSetting": {
+                            "Ref": 25,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Index": 32,
+                    "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+                    "Userdata": null,
+                    "Fields": {
+                      "_MentalState": 16,
+                      "_ChangeCountToSuspend": "Range(0, 0)",
+                      "_LookAtIntervalTime": "Range(0, 0)",
+                      "_ViewPointDistance": 1,
+                      "_RandomSetting": {
+                        "Index": 31,
+                        "Class": "app.AppIkLookAtLookAroundRandomSetting",
+                        "Userdata": null,
+                        "Fields": {
+                          "STRUCT__ChangeTime__HasValue": true,
+                          "STRUCT__ChangeTime__Value": "Range(1.8, 4.2)",
+                          "_DampingSetting": {
+                            "Ref": 28,
+                            "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+                          },
+                          "_PrimaryAreaSetting": {
+                            "Ref": 29,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+                          },
+                          "_SecondaryAreaSetting": {
+                            "Ref": 30,
+                            "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_Damping": 0.7,
+        "_Omega": 3,
+        "_OnChangeTargetStrength": 1,
+        "_EnableWarp": true,
+        "_WarpDistanceFromTarget": 1
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.AppIkLookAtViewPointRandomizer.BoxSetting",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__ChangeTime__HasValue": false,
+        "STRUCT__ChangeTime__Value": "Range(0, 0)",
+        "_DampingSetting": {
+          "Ref": 1,
+          "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+        },
+        "_RangeX": "Range(-1, 2)",
+        "_RangeY": "Range(-1, 2)",
+        "_RangeZ": "Range(-1, 2)",
+        "_RandomArea": "[Pos: 0 0 0, Extent: \u003C1, 1, 1\u003E]"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_Damping": 0.75,
+        "_Omega": 10,
+        "_OnChangeTargetStrength": 0,
+        "_EnableWarp": false,
+        "_WarpDistanceFromTarget": 0.5
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.65, 1.3)",
+        "_RangeY": "Range(-0.3, 0.6)",
+        "_RangeZ": "Range(-0.3, 0.6)"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.4, 0.8)",
+        "_RangeY": "Range(-0.1, 0.2)"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__ChangeTime__HasValue": true,
+        "STRUCT__ChangeTime__Value": "Range(3.2, 6.8)",
+        "_DampingSetting": {
+          "Ref": 3,
+          "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+        },
+        "_PrimaryAreaSetting": {
+          "Ref": 4,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+        },
+        "_SecondaryAreaSetting": {
+          "Ref": 5,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+      "Userdata": null,
+      "Fields": {
+        "_MentalState": 1,
+        "_ChangeCountToSuspend": "Range(0, 0)",
+        "_LookAtIntervalTime": "Range(0, 0)",
+        "_ViewPointDistance": 1,
+        "_RandomSetting": {
+          "Ref": 6,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting"
+        }
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_Damping": 0.75,
+        "_Omega": 10,
+        "_OnChangeTargetStrength": 0,
+        "_EnableWarp": false,
+        "_WarpDistanceFromTarget": 0.5
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.5, 1)",
+        "_RangeY": "Range(-0.25, 0.5)",
+        "_RangeZ": "Range(-0.3, 0.6)"
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.4, 0.8)",
+        "_RangeY": "Range(-0.1, 0.2)"
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__ChangeTime__HasValue": true,
+        "STRUCT__ChangeTime__Value": "Range(2.5, 4.5)",
+        "_DampingSetting": {
+          "Ref": 8,
+          "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+        },
+        "_PrimaryAreaSetting": {
+          "Ref": 9,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+        },
+        "_SecondaryAreaSetting": {
+          "Ref": 10,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+        }
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+      "Userdata": null,
+      "Fields": {
+        "_MentalState": 2,
+        "_ChangeCountToSuspend": "Range(0, 0)",
+        "_LookAtIntervalTime": "Range(0, 0)",
+        "_ViewPointDistance": 1,
+        "_RandomSetting": {
+          "Ref": 11,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting"
+        }
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_Damping": 0.75,
+        "_Omega": 10,
+        "_OnChangeTargetStrength": 0,
+        "_EnableWarp": false,
+        "_WarpDistanceFromTarget": 0.5
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.25, 0.5)",
+        "_RangeY": "Range(-0.2, 0.4)",
+        "_RangeZ": "Range(0, 0.3)"
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.4, 0.8)",
+        "_RangeY": "Range(-0.1, 0.2)"
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__ChangeTime__HasValue": true,
+        "STRUCT__ChangeTime__Value": "Range(2, 3)",
+        "_DampingSetting": {
+          "Ref": 13,
+          "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+        },
+        "_PrimaryAreaSetting": {
+          "Ref": 14,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+        },
+        "_SecondaryAreaSetting": {
+          "Ref": 15,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+        }
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+      "Userdata": null,
+      "Fields": {
+        "_MentalState": 4,
+        "_ChangeCountToSuspend": "Range(0, 0)",
+        "_LookAtIntervalTime": "Range(0, 0)",
+        "_ViewPointDistance": 1,
+        "_RandomSetting": {
+          "Ref": 16,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_Damping": 0.75,
+        "_Omega": 10,
+        "_OnChangeTargetStrength": 0,
+        "_EnableWarp": false,
+        "_WarpDistanceFromTarget": 0.5
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.4, 0.8)",
+        "_RangeY": "Range(-0.3, 0.5)",
+        "_RangeZ": "Range(0, 0.3)"
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.4, 0.8)",
+        "_RangeY": "Range(-0.08, 0.16)"
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__ChangeTime__HasValue": true,
+        "STRUCT__ChangeTime__Value": "Range(2, 4)",
+        "_DampingSetting": {
+          "Ref": 18,
+          "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+        },
+        "_PrimaryAreaSetting": {
+          "Ref": 19,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+        },
+        "_SecondaryAreaSetting": {
+          "Ref": 20,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+      "Userdata": null,
+      "Fields": {
+        "_MentalState": 8,
+        "_ChangeCountToSuspend": "Range(0, 0)",
+        "_LookAtIntervalTime": "Range(0, 0)",
+        "_ViewPointDistance": 1,
+        "_RandomSetting": {
+          "Ref": 21,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting"
+        }
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_Damping": 0.75,
+        "_Omega": 10,
+        "_OnChangeTargetStrength": 0,
+        "_EnableWarp": false,
+        "_WarpDistanceFromTarget": 0.5
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.4, 0.8)",
+        "_RangeY": "Range(-0.3, 0.5)",
+        "_RangeZ": "Range(0, 0.3)"
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.4, 0.8)",
+        "_RangeY": "Range(-0.08, 0.16)"
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__ChangeTime__HasValue": true,
+        "STRUCT__ChangeTime__Value": "Range(1.8, 4.2)",
+        "_DampingSetting": {
+          "Ref": 23,
+          "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+        },
+        "_PrimaryAreaSetting": {
+          "Ref": 24,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+        },
+        "_SecondaryAreaSetting": {
+          "Ref": 25,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+        }
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+      "Userdata": null,
+      "Fields": {
+        "_MentalState": 256,
+        "_ChangeCountToSuspend": "Range(0, 0)",
+        "_LookAtIntervalTime": "Range(0, 0)",
+        "_ViewPointDistance": 1,
+        "_RandomSetting": {
+          "Ref": 26,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting"
+        }
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_Damping": 0.75,
+        "_Omega": 10,
+        "_OnChangeTargetStrength": 0,
+        "_EnableWarp": false,
+        "_WarpDistanceFromTarget": 0.5
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.4, 0.8)",
+        "_RangeY": "Range(-0.3, 0.5)",
+        "_RangeZ": "Range(0, 0.3)"
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting",
+      "Userdata": null,
+      "Fields": {
+        "_RangeX": "Range(-0.4, 0.8)",
+        "_RangeY": "Range(-0.08, 0.16)"
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.AppIkLookAtLookAroundRandomSetting",
+      "Userdata": null,
+      "Fields": {
+        "STRUCT__ChangeTime__HasValue": true,
+        "STRUCT__ChangeTime__Value": "Range(1.8, 4.2)",
+        "_DampingSetting": {
+          "Ref": 28,
+          "Class": "app.AppIkLookAtViewPointRandomizer.DampingParam"
+        },
+        "_PrimaryAreaSetting": {
+          "Ref": 29,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.PrimaryAreaSetting"
+        },
+        "_SecondaryAreaSetting": {
+          "Ref": 30,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting.SecondaryAreaSetting"
+        }
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam",
+      "Userdata": null,
+      "Fields": {
+        "_MentalState": 16,
+        "_ChangeCountToSuspend": "Range(0, 0)",
+        "_LookAtIntervalTime": "Range(0, 0)",
+        "_ViewPointDistance": 1,
+        "_RandomSetting": {
+          "Ref": 31,
+          "Class": "app.AppIkLookAtLookAroundRandomSetting"
+        }
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.RandomSettingParamCollection",
+      "Userdata": null,
+      "Fields": {
+        "_RandomSettings": [
+          {
+            "Ref": 7,
+            "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam"
+          },
+          {
+            "Ref": 22,
+            "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam"
+          },
+          {
+            "Ref": 32,
+            "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.LookAroundRandomParam"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam",
+      "Userdata": null,
+      "Fields": {
+        "_TargetCategory": 4,
+        "_Priority": 80,
+        "_Weight": 0,
+        "_TimeLimitSetting": 0,
+        "_AimedAngleSetting": 0.34906587,
+        "_LookAtTime": 5,
+        "_LookAtDelayTimeRange": "Range(0, 0)",
+        "STRUCT__IntervalTimeRange__HasValue": false,
+        "STRUCT__IntervalTimeRange__Value": "Range(0, 0)",
+        "_PositionSetting": 4,
+        "_BaseObject": "Ref\u003C00000000-0000-0000-0000-000000000000 =\u003E \u003E",
+        "_JointName": "",
+        "_ViewPoint": "\u003C0, 1, 1\u003E",
+        "_DisableDamping": false,
+        "_SpeedRateRange": "Range(1, 0)",
+        "STRUCT__ForceInterpTimeRange__HasValue": false,
+        "STRUCT__ForceInterpTimeRange__Value": "Range(0, 0)",
+        "_CheckRayCast": true,
+        "_IsOneShotRayCast": true,
+        "_IgnoreDistanceFromHead": 0,
+        "_DisableAngleRangeSetting": false,
+        "_AimRate": 1,
+        "_RandomType": 0,
+        "_RandomSetting": {
+          "Ref": 2,
+          "Class": "app.AppIkLookAtViewPointRandomizer.BoxSetting"
+        },
+        "_WatcherRestrictionTagBit": 0,
+        "_RandomSettings": {
+          "Ref": 33,
+          "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam.RandomSettingParamCollection"
+        }
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.AppIkLookAtLookAroundSettingForPlayerUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Setting": {
+          "Ref": 34,
+          "Class": "app.AppIkLookAtTargetLookAroundForPlayer.SettingParam"
+        }
+      }
+    }
+  ]
+}

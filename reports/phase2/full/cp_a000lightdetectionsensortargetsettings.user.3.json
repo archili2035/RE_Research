@@ -1,0 +1,51 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000lightdetectionsensortargetsettings.user.3",
+  "Objects": [
+    {
+      "Index": 2,
+      "Class": "app.LightDetectionSensorTargetSettingsUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Category": 1,
+        "_BasisJoint": {
+          "Index": 1,
+          "Class": "app.NameHash",
+          "Userdata": null,
+          "Fields": {
+            "_Hash": 1518327321
+          }
+        },
+        "_LightRadius": 1
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1518327321
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.LightDetectionSensorTargetSettingsUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Category": 1,
+        "_BasisJoint": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_LightRadius": 1
+      }
+    }
+  ]
+}

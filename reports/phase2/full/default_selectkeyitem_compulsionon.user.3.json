@@ -1,0 +1,77 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/flashlight/default_selectkeyitem_compulsionon.user.3",
+  "Objects": [
+    {
+      "Index": 3,
+      "Class": "app.FlashLightOverrideControlUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultData": {
+          "Index": 1,
+          "Class": "app.FlashLightOverrideControlUserData.SettingData",
+          "Userdata": null,
+          "Fields": {
+            "_FollowCamPosition": true,
+            "_OffsetPosition": "\u003C0, 0, 0\u003E"
+          }
+        },
+        "_UseFPSData": false,
+        "_FPSData": {
+          "Index": 2,
+          "Class": "app.FlashLightOverrideControlUserData.SettingData",
+          "Userdata": null,
+          "Fields": {
+            "_FollowCamPosition": false,
+            "_OffsetPosition": "\u003C0, 0, 0\u003E"
+          }
+        },
+        "_IntensityRate": 0.04,
+        "_IsForceEnable": true
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.FlashLightOverrideControlUserData.SettingData",
+      "Userdata": null,
+      "Fields": {
+        "_FollowCamPosition": true,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.FlashLightOverrideControlUserData.SettingData",
+      "Userdata": null,
+      "Fields": {
+        "_FollowCamPosition": false,
+        "_OffsetPosition": "\u003C0, 0, 0\u003E"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.FlashLightOverrideControlUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultData": {
+          "Ref": 1,
+          "Class": "app.FlashLightOverrideControlUserData.SettingData"
+        },
+        "_UseFPSData": false,
+        "_FPSData": {
+          "Ref": 2,
+          "Class": "app.FlashLightOverrideControlUserData.SettingData"
+        },
+        "_IntensityRate": 0.04,
+        "_IsForceEnable": true
+      }
+    }
+  ]
+}

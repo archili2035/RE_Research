@@ -1,0 +1,747 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100animdynamicfpsupperrotateuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 35,
+      "Class": "app.AnimDynamicFPSUpperRotateUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsTwistingBustAvailable": true,
+        "_CameraToChestOffset": "\u003C-0.28, -0.061\u003E",
+        "_IsTransformingShoulderAvailable": true,
+        "_TransformShoulderCondition": {
+          "Index": 14,
+          "Class": "app.PlayerComplexCondition",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_ConditionType": 1,
+            "_ConditionUnits": [
+              {
+                "Index": 3,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 1,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "ActionFlag"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 2,
+                    "Class": "app.PlayerComplexConditionParam_ActionFlag",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_ActionFlag": 4159096,
+                      "_IsOr": true
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 8,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 4,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "ActionTable"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 7,
+                    "Class": "app.PlayerComplexConditionParam_ActionTable",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_IsCheckCurrentAction": true,
+                      "_Actions": [
+                        {
+                          "Ref": 5,
+                          "Class": "app.NameHash"
+                        },
+                        {
+                          "Ref": 6,
+                          "Class": "app.NameHash"
+                        }
+                      ],
+                      "_IsCheckPrevAction": false,
+                      "_PrevActions": []
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 13,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 9,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "SubActionTable"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 12,
+                    "Class": "app.PlayerComplexConditionParam_SubActionTable",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_IsCheckActionTrigger": false,
+                      "_IsCheckCurrentSubAction": true,
+                      "_SubActions": [
+                        {
+                          "Ref": 10,
+                          "Class": "app.NameHash"
+                        },
+                        {
+                          "Ref": 11,
+                          "Class": "app.NameHash"
+                        }
+                      ],
+                      "_IsCheckPrevSubAction": false,
+                      "_PrevSubActions": []
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_TransformLeftShoulderRotationCondition": {
+          "Index": 31,
+          "Class": "app.PlayerComplexCondition",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_ConditionType": 1,
+            "_ConditionUnits": [
+              {
+                "Index": 23,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 15,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "Composite"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 22,
+                    "Class": "app.PlayerComplexConditionParam_Composite",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_ConditionType": 1,
+                      "_ConditionUnits": [
+                        {
+                          "Ref": 18,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        },
+                        {
+                          "Ref": 21,
+                          "Class": "app.PlayerComplexConditionUnit"
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 27,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 24,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "SubActionTable"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 26,
+                    "Class": "app.PlayerComplexConditionParam_SubActionTable",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_IsCheckActionTrigger": false,
+                      "_IsCheckCurrentSubAction": true,
+                      "_SubActions": [
+                        {
+                          "Ref": 25,
+                          "Class": "app.NameHash"
+                        }
+                      ],
+                      "_IsCheckPrevSubAction": false,
+                      "_PrevSubActions": []
+                    }
+                  }
+                }
+              },
+              {
+                "Index": 30,
+                "Class": "app.PlayerComplexConditionUnit",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKind": {
+                    "Index": 28,
+                    "Class": "app.PlayerComplexConditionKind",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Name": "SpecifiedFlag"
+                    }
+                  },
+                  "_ConditionParam": {
+                    "Index": 29,
+                    "Class": "app.PlayerComplexConditionParam_SpecifiedFlag",
+                    "Userdata": null,
+                    "Fields": {
+                      "_IsSatisfied": true,
+                      "_FlagKind": 1
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_TransformRightShoulderRotationCondition": {
+          "Index": 32,
+          "Class": "app.PlayerComplexCondition",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": false,
+            "_ConditionType": 0,
+            "_ConditionUnits": []
+          }
+        },
+        "_ShoulderEnableSec": 0.2,
+        "_ShoulderDisableSec": 0.5,
+        "_RotationBlendRateDampingParam": {
+          "Index": 33,
+          "Class": "app.DampingParam",
+          "Userdata": null,
+          "Fields": {
+            "_DampingTime": 0.1,
+            "_DampingRate": 0.9
+          }
+        },
+        "_IsEnableHandIK": true,
+        "_HandIKEnableSec": 0.2,
+        "_HandIKDisableSec": 0.66,
+        "_ArmMaxRatio": 1,
+        "_ArmMinRatio": 0.2,
+        "_Param": {
+          "Index": 34,
+          "Class": "app.UpperRotateStateUserData",
+          "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100UpperRotateStateData.user",
+          "Fields": {}
+        },
+        "_EnableRecoilShake": true,
+        "_RecoilOffsetTestTarget": "\u003C0.007, 0.01, 0\u003E",
+        "_RecoilAdjustTime": 0.2,
+        "_RecoilWaitResetTime": 1.5,
+        "_RecoilResetTime": 0.75
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionFlag"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerComplexConditionParam_ActionFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ActionFlag": 4159096,
+        "_IsOr": true
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 2,
+          "Class": "app.PlayerComplexConditionParam_ActionFlag"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ActionTable"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3260109019
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3077397117
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerComplexConditionParam_ActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckCurrentAction": true,
+        "_Actions": [
+          {
+            "Ref": 5,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevAction": false,
+        "_PrevActions": []
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 4,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 7,
+          "Class": "app.PlayerComplexConditionParam_ActionTable"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2355018870
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 223104098
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 10,
+            "Class": "app.NameHash"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 9,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 12,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 3,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Composite"
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "LightEquipment"
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerComplexConditionParam_LightEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_LightType": 0,
+        "_IsCheckLightState": true,
+        "_LightStates": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "_IsCheckPrevState": true,
+        "_PrevLightStates": [
+          3
+        ]
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 16,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 17,
+          "Class": "app.PlayerComplexConditionParam_LightEquipment"
+        }
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "LightEquipment"
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerComplexConditionParam_LightEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_LightType": 1,
+        "_IsCheckLightState": true,
+        "_LightStates": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "_IsCheckPrevState": true,
+        "_PrevLightStates": [
+          3
+        ]
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 19,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 20,
+          "Class": "app.PlayerComplexConditionParam_LightEquipment"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.PlayerComplexConditionParam_Composite",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 18,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 15,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 22,
+          "Class": "app.PlayerComplexConditionParam_Composite"
+        }
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SubActionTable"
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2261904973
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.PlayerComplexConditionParam_SubActionTable",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_IsCheckActionTrigger": false,
+        "_IsCheckCurrentSubAction": true,
+        "_SubActions": [
+          {
+            "Ref": 25,
+            "Class": "app.NameHash"
+          }
+        ],
+        "_IsCheckPrevSubAction": false,
+        "_PrevSubActions": []
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 24,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 26,
+          "Class": "app.PlayerComplexConditionParam_SubActionTable"
+        }
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "SpecifiedFlag"
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.PlayerComplexConditionParam_SpecifiedFlag",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_FlagKind": 1
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 28,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 29,
+          "Class": "app.PlayerComplexConditionParam_SpecifiedFlag"
+        }
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 1,
+        "_ConditionUnits": [
+          {
+            "Ref": 23,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.PlayerComplexConditionUnit"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_ConditionType": 0,
+        "_ConditionUnits": []
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.9
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.UpperRotateStateUserData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/cp_A100UpperRotateStateData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 35,
+      "Class": "app.AnimDynamicFPSUpperRotateUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsTwistingBustAvailable": true,
+        "_CameraToChestOffset": "\u003C-0.28, -0.061\u003E",
+        "_IsTransformingShoulderAvailable": true,
+        "_TransformShoulderCondition": {
+          "Ref": 14,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_TransformLeftShoulderRotationCondition": {
+          "Ref": 31,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_TransformRightShoulderRotationCondition": {
+          "Ref": 32,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_ShoulderEnableSec": 0.2,
+        "_ShoulderDisableSec": 0.5,
+        "_RotationBlendRateDampingParam": {
+          "Ref": 33,
+          "Class": "app.DampingParam"
+        },
+        "_IsEnableHandIK": true,
+        "_HandIKEnableSec": 0.2,
+        "_HandIKDisableSec": 0.66,
+        "_ArmMaxRatio": 1,
+        "_ArmMinRatio": 0.2,
+        "_Param": {
+          "Ref": 34,
+          "Class": "app.UpperRotateStateUserData"
+        },
+        "_EnableRecoilShake": true,
+        "_RecoilOffsetTestTarget": "\u003C0.007, 0.01, 0\u003E",
+        "_RecoilAdjustTime": 0.2,
+        "_RecoilWaitResetTime": 1.5,
+        "_RecoilResetTime": 0.75
+      }
+    }
+  ]
+}

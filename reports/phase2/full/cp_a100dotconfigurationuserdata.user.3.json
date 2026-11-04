@@ -1,0 +1,51 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100dotconfigurationuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 2,
+      "Class": "app.CharacterDOTConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_FireAilmentIgnoreActions": [
+          {
+            "Index": 1,
+            "Class": "app.NameHash",
+            "Userdata": null,
+            "Fields": {
+              "_Hash": 2687660037
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2687660037
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CharacterDOTConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_FireAilmentIgnoreActions": [
+          {
+            "Ref": 1,
+            "Class": "app.NameHash"
+          }
+        ]
+      }
+    }
+  ]
+}

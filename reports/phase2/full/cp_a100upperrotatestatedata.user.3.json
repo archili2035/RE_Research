@@ -1,0 +1,263 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/cp_a100upperrotatestatedata.user.3",
+  "Objects": [
+    {
+      "Index": 9,
+      "Class": "app.UpperRotateStateUserData",
+      "Userdata": null,
+      "Fields": {
+        "WeaponActionParameterMapList": [
+          {
+            "Index": 1,
+            "Class": "app.UpperRotateStateUserData.WeaponActionParameterMap",
+            "Userdata": null,
+            "Fields": {
+              "_Category": 1,
+              "_WeaponActionType": 1,
+              "_HandRotationByCameraParameterIndex": 1,
+              "_ArmRotationByCameraParameterIndex": 0
+            }
+          }
+        ],
+        "_RotationByCameraParameterList": [
+          {
+            "Index": 3,
+            "Class": "app.UpperRotateStateUserData.RotationByCameraParameter",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 2,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 493607068
+                }
+              },
+              "RotationUp": "{X:0 Y:0 Z:0 W:1}",
+              "RotationDown": "{X:0 Y:0 Z:0 W:1}",
+              "RotationLeft": "{X:0 Y:0 Z:0 W:1}",
+              "RotationRight": "{X:0 Y:0 Z:0 W:1}",
+              "Tension": 1,
+              "Inertia": 0
+            }
+          },
+          {
+            "Index": 5,
+            "Class": "app.UpperRotateStateUserData.RotationByCameraParameter",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 4,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2387168420
+                }
+              },
+              "RotationUp": "{X:0 Y:0 Z:0 W:1}",
+              "RotationDown": "{X:0 Y:0 Z:0 W:1}",
+              "RotationLeft": "{X:0 Y:0 Z:0 W:1}",
+              "RotationRight": "{X:0 Y:0 Z:0 W:1}",
+              "Tension": 1,
+              "Inertia": 0
+            }
+          }
+        ],
+        "PostureParams": [
+          {
+            "Index": 6,
+            "Class": "app.UpperRotateStateUserData.PostureParam",
+            "Userdata": null,
+            "Fields": {
+              "_Name": "Stand",
+              "_TwistingWaistRate": 0.5,
+              "_TwistingStomachRate": 0.5,
+              "_TwistingChestRate": 1
+            }
+          }
+        ],
+        "WeaponCategoryActionParamSetting": [],
+        "WeaponIdActionParamSetting": [],
+        "ExtraActionParams": [
+          {
+            "Index": 7,
+            "Class": "app.UpperRotateStateUserData.ActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_TransformShoulderRateUpper": 0.5,
+              "_TransformShoulderRateForward": 0.1,
+              "_TransformShoulderRateLower": 0.5,
+              "_IKOffset": 0,
+              "_CamRotaionOffset": "{X:2.069817E-09 Y:0.1305262 Z:1.572183E-08 W:0.9914449}",
+              "_CamPositionOffset": "\u003C0, -0.1, 0.05\u003E",
+              "_Name": "Guard"
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.UpperRotateStateUserData.ActionParam",
+            "Userdata": null,
+            "Fields": {
+              "_TransformShoulderRateUpper": 0.5,
+              "_TransformShoulderRateForward": 0.1,
+              "_TransformShoulderRateLower": 0.5,
+              "_IKOffset": 0,
+              "_CamRotaionOffset": "{X:-3.108624E-15 Y:4.929498E-23 Z:1.585749E-08 W:1}",
+              "_CamPositionOffset": "\u003C0, 0, 0\u003E",
+              "_Name": "Stand"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.UpperRotateStateUserData.WeaponActionParameterMap",
+      "Userdata": null,
+      "Fields": {
+        "_Category": 1,
+        "_WeaponActionType": 1,
+        "_HandRotationByCameraParameterIndex": 1,
+        "_ArmRotationByCameraParameterIndex": 0
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 493607068
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.UpperRotateStateUserData.RotationByCameraParameter",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 2,
+          "Class": "app.NameHash"
+        },
+        "RotationUp": "{X:0 Y:0 Z:0 W:1}",
+        "RotationDown": "{X:0 Y:0 Z:0 W:1}",
+        "RotationLeft": "{X:0 Y:0 Z:0 W:1}",
+        "RotationRight": "{X:0 Y:0 Z:0 W:1}",
+        "Tension": 1,
+        "Inertia": 0
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2387168420
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.UpperRotateStateUserData.RotationByCameraParameter",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 4,
+          "Class": "app.NameHash"
+        },
+        "RotationUp": "{X:0 Y:0 Z:0 W:1}",
+        "RotationDown": "{X:0 Y:0 Z:0 W:1}",
+        "RotationLeft": "{X:0 Y:0 Z:0 W:1}",
+        "RotationRight": "{X:0 Y:0 Z:0 W:1}",
+        "Tension": 1,
+        "Inertia": 0
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.UpperRotateStateUserData.PostureParam",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Stand",
+        "_TwistingWaistRate": 0.5,
+        "_TwistingStomachRate": 0.5,
+        "_TwistingChestRate": 1
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.UpperRotateStateUserData.ActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_TransformShoulderRateUpper": 0.5,
+        "_TransformShoulderRateForward": 0.1,
+        "_TransformShoulderRateLower": 0.5,
+        "_IKOffset": 0,
+        "_CamRotaionOffset": "{X:2.069817E-09 Y:0.1305262 Z:1.572183E-08 W:0.9914449}",
+        "_CamPositionOffset": "\u003C0, -0.1, 0.05\u003E",
+        "_Name": "Guard"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.UpperRotateStateUserData.ActionParam",
+      "Userdata": null,
+      "Fields": {
+        "_TransformShoulderRateUpper": 0.5,
+        "_TransformShoulderRateForward": 0.1,
+        "_TransformShoulderRateLower": 0.5,
+        "_IKOffset": 0,
+        "_CamRotaionOffset": "{X:-3.108624E-15 Y:4.929498E-23 Z:1.585749E-08 W:1}",
+        "_CamPositionOffset": "\u003C0, 0, 0\u003E",
+        "_Name": "Stand"
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.UpperRotateStateUserData",
+      "Userdata": null,
+      "Fields": {
+        "WeaponActionParameterMapList": [
+          {
+            "Ref": 1,
+            "Class": "app.UpperRotateStateUserData.WeaponActionParameterMap"
+          }
+        ],
+        "_RotationByCameraParameterList": [
+          {
+            "Ref": 3,
+            "Class": "app.UpperRotateStateUserData.RotationByCameraParameter"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.UpperRotateStateUserData.RotationByCameraParameter"
+          }
+        ],
+        "PostureParams": [
+          {
+            "Ref": 6,
+            "Class": "app.UpperRotateStateUserData.PostureParam"
+          }
+        ],
+        "WeaponCategoryActionParamSetting": [],
+        "WeaponIdActionParamSetting": [],
+        "ExtraActionParams": [
+          {
+            "Ref": 7,
+            "Class": "app.UpperRotateStateUserData.ActionParam"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.UpperRotateStateUserData.ActionParam"
+          }
+        ]
+      }
+    }
+  ]
+}

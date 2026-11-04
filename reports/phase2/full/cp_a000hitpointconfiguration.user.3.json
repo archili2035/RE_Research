@@ -1,0 +1,189 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000hitpointconfiguration.user.3",
+  "Objects": [
+    {
+      "Index": 7,
+      "Class": "app.CharacterHitPointConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_HitPointConfig": {
+          "Index": 1,
+          "Class": "app.HitPointConfigurationData",
+          "Userdata": null,
+          "Fields": {
+            "_IsNoDieCharacter": false,
+            "_MaximumHitPointTable": [
+              1200
+            ],
+            "_IsSetVitalRange": true,
+            "_VitalRange_Fine": "Range(501, 699)",
+            "_VitalRange_Caution": "Range(201, 299)",
+            "_VitalRange_Danger": "Range(0, 200)",
+            "_IsEnableGuts": true,
+            "_GutsThreshold": 2,
+            "_GutsRate": 0.5,
+            "_NoDieOnGuts": false,
+            "_NoDieGutsCapacity": -300
+          }
+        },
+        "_ReactionHPConfig": {
+          "Index": 5,
+          "Class": "app.ReactionHPConfigurationData",
+          "Userdata": null,
+          "Fields": {
+            "_ReactionHP": 1000,
+            "_EnableLevelUp": false,
+            "_GaugeLevelDamageRateList": {
+              "Index": 3,
+              "Class": "app.GaugeLevelDamageRateList",
+              "Userdata": null,
+              "Fields": {
+                "_MaxReactionHPLevel": 0,
+                "_DamageRateDatas": [],
+                "_DamageFilterInfo": {
+                  "Index": 2,
+                  "Class": "app.DamageFilterInfo",
+                  "Userdata": null,
+                  "Fields": {
+                    "_EnableWhiteList": false,
+                    "_WhiteList": [],
+                    "_EnableBlackList": false,
+                    "_BlackList": [],
+                    "_CheckWhiteToBlack": true
+                  }
+                }
+              }
+            },
+            "_EnableRegeneration": false,
+            "_RegenerationData": {
+              "Index": 4,
+              "Class": "app.HitPointRegenerationData",
+              "Userdata": null,
+              "Fields": {
+                "_RegenerationStartTime": 1,
+                "_RegenerationValue": 100
+              }
+            }
+          }
+        },
+        "_EnableSpecialReactionHP": false,
+        "_SpecialReactionHPConfig": {
+          "Index": 6,
+          "Class": "app.SpecialReactionHPConfigurationData",
+          "Userdata": null,
+          "Fields": {
+            "_SpecialReactionHPControlParams": []
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.HitPointConfigurationData",
+      "Userdata": null,
+      "Fields": {
+        "_IsNoDieCharacter": false,
+        "_MaximumHitPointTable": [
+          1200
+        ],
+        "_IsSetVitalRange": true,
+        "_VitalRange_Fine": "Range(501, 699)",
+        "_VitalRange_Caution": "Range(201, 299)",
+        "_VitalRange_Danger": "Range(0, 200)",
+        "_IsEnableGuts": true,
+        "_GutsThreshold": 2,
+        "_GutsRate": 0.5,
+        "_NoDieOnGuts": false,
+        "_NoDieGutsCapacity": -300
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.DamageFilterInfo",
+      "Userdata": null,
+      "Fields": {
+        "_EnableWhiteList": false,
+        "_WhiteList": [],
+        "_EnableBlackList": false,
+        "_BlackList": [],
+        "_CheckWhiteToBlack": true
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.GaugeLevelDamageRateList",
+      "Userdata": null,
+      "Fields": {
+        "_MaxReactionHPLevel": 0,
+        "_DamageRateDatas": [],
+        "_DamageFilterInfo": {
+          "Ref": 2,
+          "Class": "app.DamageFilterInfo"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.HitPointRegenerationData",
+      "Userdata": null,
+      "Fields": {
+        "_RegenerationStartTime": 1,
+        "_RegenerationValue": 100
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.ReactionHPConfigurationData",
+      "Userdata": null,
+      "Fields": {
+        "_ReactionHP": 1000,
+        "_EnableLevelUp": false,
+        "_GaugeLevelDamageRateList": {
+          "Ref": 3,
+          "Class": "app.GaugeLevelDamageRateList"
+        },
+        "_EnableRegeneration": false,
+        "_RegenerationData": {
+          "Ref": 4,
+          "Class": "app.HitPointRegenerationData"
+        }
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.SpecialReactionHPConfigurationData",
+      "Userdata": null,
+      "Fields": {
+        "_SpecialReactionHPControlParams": []
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.CharacterHitPointConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_HitPointConfig": {
+          "Ref": 1,
+          "Class": "app.HitPointConfigurationData"
+        },
+        "_ReactionHPConfig": {
+          "Ref": 5,
+          "Class": "app.ReactionHPConfigurationData"
+        },
+        "_EnableSpecialReactionHP": false,
+        "_SpecialReactionHPConfig": {
+          "Ref": 6,
+          "Class": "app.SpecialReactionHPConfigurationData"
+        }
+      }
+    }
+  ]
+}

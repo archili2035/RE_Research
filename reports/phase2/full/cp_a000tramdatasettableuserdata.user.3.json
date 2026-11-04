@@ -1,0 +1,5881 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000tramdatasettableuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 238,
+      "Class": "app.TramDataSetTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeDataClassName": "app.tram.Ch0100",
+        "_StateEnumName": "app.PlayerDefine.MotionFlag",
+        "_TramDataSetArray": [
+          {
+            "Index": 3,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_IdleLoop",
+              "_TramNodeHash": {
+                "Index": 1,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3389212796,
+                  "Node": 3097846092
+                }
+              },
+              "_TransitionData": {
+                "Index": 2,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_CrouchIdleStart",
+              "_TramNodeHash": {
+                "Index": 4,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3389212796,
+                  "Node": 1489347074
+                }
+              },
+              "_TransitionData": {
+                "Index": 5,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 40,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 9,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_CrouchIdleLoop",
+              "_TramNodeHash": {
+                "Index": 7,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3389212796,
+                  "Node": 466335682
+                }
+              },
+              "_TransitionData": {
+                "Index": 8,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 25,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_CrouchIdleEnd",
+              "_TramNodeHash": {
+                "Index": 10,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3389212796,
+                  "Node": 4253044497
+                }
+              },
+              "_TransitionData": {
+                "Index": 11,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 15,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_IdleLoopSimple",
+              "_TramNodeHash": {
+                "Index": 13,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3389212796,
+                  "Node": 3331293537
+                }
+              },
+              "_TransitionData": {
+                "Index": 14,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 18,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_IdleTurnLeftStart",
+              "_TramNodeHash": {
+                "Index": 16,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 0,
+                  "Group": 0,
+                  "Node": 0
+                }
+              },
+              "_TransitionData": {
+                "Index": 17,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 21,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_IdleTurnLeftLoop",
+              "_TramNodeHash": {
+                "Index": 19,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3389212796,
+                  "Node": 3430914357
+                }
+              },
+              "_TransitionData": {
+                "Index": 20,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 24,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_IdleTurnLeftEnd",
+              "_TramNodeHash": {
+                "Index": 22,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 0,
+                  "Group": 0,
+                  "Node": 0
+                }
+              },
+              "_TransitionData": {
+                "Index": 23,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 27,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_IdleTurnRightStart",
+              "_TramNodeHash": {
+                "Index": 25,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 0,
+                  "Group": 0,
+                  "Node": 0
+                }
+              },
+              "_TransitionData": {
+                "Index": 26,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 30,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_IdleTurnRightLoop",
+              "_TramNodeHash": {
+                "Index": 28,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3389212796,
+                  "Node": 3017521207
+                }
+              },
+              "_TransitionData": {
+                "Index": 29,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 33,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_IdleTurnRightEnd",
+              "_TramNodeHash": {
+                "Index": 31,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 0,
+                  "Group": 0,
+                  "Node": 0
+                }
+              },
+              "_TransitionData": {
+                "Index": 32,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 36,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_CrouchIdleTurnLeftStart",
+              "_TramNodeHash": {
+                "Index": 34,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 0,
+                  "Group": 0,
+                  "Node": 0
+                }
+              },
+              "_TransitionData": {
+                "Index": 35,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 39,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_CrouchIdleTurnLeftLoop",
+              "_TramNodeHash": {
+                "Index": 37,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3389212796,
+                  "Node": 804830757
+                }
+              },
+              "_TransitionData": {
+                "Index": 38,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 42,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_CrouchIdleTurnLeftEnd",
+              "_TramNodeHash": {
+                "Index": 40,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 0,
+                  "Group": 0,
+                  "Node": 0
+                }
+              },
+              "_TransitionData": {
+                "Index": 41,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 45,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_CrouchIdleTurnRightStart",
+              "_TramNodeHash": {
+                "Index": 43,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 0,
+                  "Group": 0,
+                  "Node": 0
+                }
+              },
+              "_TransitionData": {
+                "Index": 44,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 48,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_CrouchIdleTurnRightLoop",
+              "_TramNodeHash": {
+                "Index": 46,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3389212796,
+                  "Node": 1186097023
+                }
+              },
+              "_TransitionData": {
+                "Index": 47,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 51,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Idle_CrouchIdleTurnRightEnd",
+              "_TramNodeHash": {
+                "Index": 49,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 0,
+                  "Group": 0,
+                  "Node": 0
+                }
+              },
+              "_TransitionData": {
+                "Index": 50,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 54,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeFrontLoop",
+              "_TramNodeHash": {
+                "Index": 52,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 3472741740
+                }
+              },
+              "_TransitionData": {
+                "Index": 53,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 35,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 57,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeFrontEnd",
+              "_TramNodeHash": {
+                "Index": 55,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 81839628
+                }
+              },
+              "_TransitionData": {
+                "Index": 56,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 40,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 0,
+              "_ExitFrame": 40,
+              "_State": 8
+            }
+          },
+          {
+            "Index": 60,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeBackLoop",
+              "_TramNodeHash": {
+                "Index": 58,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 293131758
+                }
+              },
+              "_TransitionData": {
+                "Index": 59,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 35,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 64
+            }
+          },
+          {
+            "Index": 63,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeBackEnd",
+              "_TramNodeHash": {
+                "Index": 61,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 22490906
+                }
+              },
+              "_TransitionData": {
+                "Index": 62,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 40,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 0,
+              "_ExitFrame": 40,
+              "_State": 8
+            }
+          },
+          {
+            "Index": 66,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_CrouchStrafeFrontStart",
+              "_TramNodeHash": {
+                "Index": 64,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 25217404
+                }
+              },
+              "_TransitionData": {
+                "Index": 65,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 8193
+            }
+          },
+          {
+            "Index": 69,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_CrouchStrafeFrontLoop",
+              "_TramNodeHash": {
+                "Index": 67,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 2629432670
+                }
+              },
+              "_TransitionData": {
+                "Index": 68,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 45,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 72,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_CrouchStrafeBackStart",
+              "_TramNodeHash": {
+                "Index": 70,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 392834861
+                }
+              },
+              "_TransitionData": {
+                "Index": 71,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 8257
+            }
+          },
+          {
+            "Index": 75,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_CrouchStrafeBackLoop",
+              "_TramNodeHash": {
+                "Index": 73,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 4035366966
+                }
+              },
+              "_TransitionData": {
+                "Index": 74,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 45,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 8256
+            }
+          },
+          {
+            "Index": 78,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_CrouchStrafeEnd_FB",
+              "_TramNodeHash": {
+                "Index": 76,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 1458574686
+                }
+              },
+              "_TransitionData": {
+                "Index": 77,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.6,
+              "_State": 8200
+            }
+          },
+          {
+            "Index": 81,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_CrouchStrafeEnd_L",
+              "_TramNodeHash": {
+                "Index": 79,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 70044560
+                }
+              },
+              "_TransitionData": {
+                "Index": 80,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.6,
+              "_State": 8200
+            }
+          },
+          {
+            "Index": 84,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_CrouchStrafeEnd_R",
+              "_TramNodeHash": {
+                "Index": 82,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 1452946067
+                }
+              },
+              "_TransitionData": {
+                "Index": 83,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.6,
+              "_State": 8200
+            }
+          },
+          {
+            "Index": 87,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_WalkBankLeft",
+              "_TramNodeHash": {
+                "Index": 85,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 4242119794
+                }
+              },
+              "_TransitionData": {
+                "Index": 86,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 90,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_WalkBankRight",
+              "_TramNodeHash": {
+                "Index": 88,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 119665360
+                }
+              },
+              "_TransitionData": {
+                "Index": 89,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 93,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeFrontTurn",
+              "_TramNodeHash": {
+                "Index": 91,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 3261119225
+                }
+              },
+              "_TransitionData": {
+                "Index": 92,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 40,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 30,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 96,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeBackTurn",
+              "_TramNodeHash": {
+                "Index": 94,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 3284453722
+                }
+              },
+              "_TransitionData": {
+                "Index": 95,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 40,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 30,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 99,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeFrontStartR",
+              "_TramNodeHash": {
+                "Index": 97,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 3351623536
+                }
+              },
+              "_TransitionData": {
+                "Index": 98,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 1
+            }
+          },
+          {
+            "Index": 102,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeBackStartR",
+              "_TramNodeHash": {
+                "Index": 100,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 627457365
+                }
+              },
+              "_TransitionData": {
+                "Index": 101,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 1
+            }
+          },
+          {
+            "Index": 105,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeFrontStartL",
+              "_TramNodeHash": {
+                "Index": 103,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 2107855546
+                }
+              },
+              "_TransitionData": {
+                "Index": 104,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 1
+            }
+          },
+          {
+            "Index": 108,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeBackStartL",
+              "_TramNodeHash": {
+                "Index": 106,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 3103557971
+                }
+              },
+              "_TransitionData": {
+                "Index": 107,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 1
+            }
+          },
+          {
+            "Index": 111,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeGazeStart",
+              "_TramNodeHash": {
+                "Index": 109,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 3083013791
+                }
+              },
+              "_TransitionData": {
+                "Index": 110,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 10,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 1025
+            }
+          },
+          {
+            "Index": 114,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_CrouchStrafeGazeStart",
+              "_TramNodeHash": {
+                "Index": 112,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 2746923622
+                }
+              },
+              "_TransitionData": {
+                "Index": 113,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 10,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 9217
+            }
+          },
+          {
+            "Index": 117,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeEnd_WallHit",
+              "_TramNodeHash": {
+                "Index": 115,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 0,
+                  "Group": 0,
+                  "Node": 0
+                }
+              },
+              "_TransitionData": {
+                "Index": 116,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 10,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 520
+            }
+          },
+          {
+            "Index": 120,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunStart",
+              "_TramNodeHash": {
+                "Index": 118,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 738448661
+                }
+              },
+              "_TransitionData": {
+                "Index": 119,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 10,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 50,
+              "_State": 2
+            }
+          },
+          {
+            "Index": 123,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunFrontLoop",
+              "_TramNodeHash": {
+                "Index": 121,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 1521772889
+                }
+              },
+              "_TransitionData": {
+                "Index": 122,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 126,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunEnd",
+              "_TramNodeHash": {
+                "Index": 124,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 3705329191
+                }
+              },
+              "_TransitionData": {
+                "Index": 125,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 0,
+              "_ExitFrame": 90,
+              "_State": 16
+            }
+          },
+          {
+            "Index": 129,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_BattleRunEnd",
+              "_TramNodeHash": {
+                "Index": 127,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 1364803659
+                }
+              },
+              "_TransitionData": {
+                "Index": 128,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 0,
+              "_ExitFrame": 90,
+              "_State": 16
+            }
+          },
+          {
+            "Index": 132,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_BattleRunEndFast",
+              "_TramNodeHash": {
+                "Index": 130,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 462812685
+                }
+              },
+              "_TransitionData": {
+                "Index": 131,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 0,
+              "_ExitFrame": 90,
+              "_State": 16
+            }
+          },
+          {
+            "Index": 135,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunLeftTurn_180",
+              "_TramNodeHash": {
+                "Index": 133,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 812941719
+                }
+              },
+              "_TransitionData": {
+                "Index": 134,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.7,
+              "_State": 32
+            }
+          },
+          {
+            "Index": 138,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_HandLightRunLeftTurn_180",
+              "_TramNodeHash": {
+                "Index": 136,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 1474306705
+                }
+              },
+              "_TransitionData": {
+                "Index": 137,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.7,
+              "_State": 32
+            }
+          },
+          {
+            "Index": 141,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunRightTurn_180",
+              "_TramNodeHash": {
+                "Index": 139,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 4219448675
+                }
+              },
+              "_TransitionData": {
+                "Index": 140,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.7,
+              "_State": 32
+            }
+          },
+          {
+            "Index": 144,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_HandLightRunRightTurn_180",
+              "_TramNodeHash": {
+                "Index": 142,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 3925273704
+                }
+              },
+              "_TransitionData": {
+                "Index": 143,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.7,
+              "_State": 32
+            }
+          },
+          {
+            "Index": 147,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_AvoidRightObstrable",
+              "_TramNodeHash": {
+                "Index": 145,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 3386227362
+                }
+              },
+              "_TransitionData": {
+                "Index": 146,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 12,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 150,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_AvoidLeftObstrable",
+              "_TramNodeHash": {
+                "Index": 148,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 369590500
+                }
+              },
+              "_TransitionData": {
+                "Index": 149,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 12,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 153,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_AvoidRightAttack",
+              "_TramNodeHash": {
+                "Index": 151,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 3061511164
+                }
+              },
+              "_TransitionData": {
+                "Index": 152,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 12,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 156,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_AvoidLeftAttack",
+              "_TramNodeHash": {
+                "Index": 154,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 115227795
+                }
+              },
+              "_TransitionData": {
+                "Index": 155,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 12,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 159,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_BankStartLeft",
+              "_TramNodeHash": {
+                "Index": 157,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 341002749
+                }
+              },
+              "_TransitionData": {
+                "Index": 158,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 162,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_BankStartRight",
+              "_TramNodeHash": {
+                "Index": 160,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 4052463853
+                }
+              },
+              "_TransitionData": {
+                "Index": 161,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 165,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_BankLeft",
+              "_TramNodeHash": {
+                "Index": 163,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 2356320979
+                }
+              },
+              "_TransitionData": {
+                "Index": 164,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 40,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 168,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_BankRight",
+              "_TramNodeHash": {
+                "Index": 166,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 3029530959
+                }
+              },
+              "_TransitionData": {
+                "Index": 167,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 40,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 20,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 171,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunLeftTurn_90",
+              "_TramNodeHash": {
+                "Index": 169,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 1090620549
+                }
+              },
+              "_TransitionData": {
+                "Index": 170,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 174,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunRightTurn_90",
+              "_TramNodeHash": {
+                "Index": 172,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 1667542775
+                }
+              },
+              "_TransitionData": {
+                "Index": 173,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 177,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunLeftTurnCancel_90",
+              "_TramNodeHash": {
+                "Index": 175,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 597828340
+                }
+              },
+              "_TransitionData": {
+                "Index": 176,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 180,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunRightTurnCancel_90",
+              "_TramNodeHash": {
+                "Index": 178,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 1463549639
+                }
+              },
+              "_TransitionData": {
+                "Index": 179,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 183,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunEnd_WallHit",
+              "_TramNodeHash": {
+                "Index": 181,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 2608116107
+                }
+              },
+              "_TransitionData": {
+                "Index": 182,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 10,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 536
+            }
+          },
+          {
+            "Index": 186,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StepLoop",
+              "_TramNodeHash": {
+                "Index": 184,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 3524795706
+                }
+              },
+              "_TransitionData": {
+                "Index": 185,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 12,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 189,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeFrontTurnStartL",
+              "_TramNodeHash": {
+                "Index": 187,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 2214314615
+                }
+              },
+              "_TransitionData": {
+                "Index": 188,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 1
+            }
+          },
+          {
+            "Index": 192,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeBackTurnStartL",
+              "_TramNodeHash": {
+                "Index": 190,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 902565370
+                }
+              },
+              "_TransitionData": {
+                "Index": 191,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 1
+            }
+          },
+          {
+            "Index": 195,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeFrontTurnStartR",
+              "_TramNodeHash": {
+                "Index": 193,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 2812289568
+                }
+              },
+              "_TransitionData": {
+                "Index": 194,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 1
+            }
+          },
+          {
+            "Index": 198,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeBackTurnStartR",
+              "_TramNodeHash": {
+                "Index": 196,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 866815596
+                }
+              },
+              "_TransitionData": {
+                "Index": 197,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 20,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 1
+            }
+          },
+          {
+            "Index": 201,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_CrouchStepLoop",
+              "_TramNodeHash": {
+                "Index": 199,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 3555290390
+                }
+              },
+              "_TransitionData": {
+                "Index": 200,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 12,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 8192
+            }
+          },
+          {
+            "Index": 204,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunStartWatch",
+              "_TramNodeHash": {
+                "Index": 202,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 3063999659
+                }
+              },
+              "_TransitionData": {
+                "Index": 203,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 12,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 2
+            }
+          },
+          {
+            "Index": 207,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunStartWatchLight",
+              "_TramNodeHash": {
+                "Index": 205,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 3163944543
+                }
+              },
+              "_TransitionData": {
+                "Index": 206,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 12,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.9,
+              "_State": 2
+            }
+          },
+          {
+            "Index": 210,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunEndWatchLight",
+              "_TramNodeHash": {
+                "Index": 208,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 232885452
+                }
+              },
+              "_TransitionData": {
+                "Index": 209,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 0,
+              "_ExitFrame": 90,
+              "_State": 16
+            }
+          },
+          {
+            "Index": 213,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunEndWatchLightFast",
+              "_TramNodeHash": {
+                "Index": 211,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 2539426963
+                }
+              },
+              "_TransitionData": {
+                "Index": 212,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 0,
+              "_ExitFrame": 90,
+              "_State": 16
+            }
+          },
+          {
+            "Index": 216,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_BattleRunLeftTurn_180",
+              "_TramNodeHash": {
+                "Index": 214,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 25417661
+                }
+              },
+              "_TransitionData": {
+                "Index": 215,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.7,
+              "_State": 32
+            }
+          },
+          {
+            "Index": 219,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_BattleRunRightTurn_180",
+              "_TramNodeHash": {
+                "Index": 217,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 3794921236
+                }
+              },
+              "_TransitionData": {
+                "Index": 218,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 15,
+                  "_InterpolationMode": 1,
+                  "_InterpolationCurve": 3
+                }
+              },
+              "_MotionEndConditionType": 3,
+              "_ExitFrame": 0.7,
+              "_State": 32
+            }
+          },
+          {
+            "Index": 222,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_AvoidLeftObstrable",
+              "_TramNodeHash": {
+                "Index": 220,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 369590500
+                }
+              },
+              "_TransitionData": {
+                "Index": 221,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 16,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 225,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_AvoidRightObstrable",
+              "_TramNodeHash": {
+                "Index": 223,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 3386227362
+                }
+              },
+              "_TransitionData": {
+                "Index": 224,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 16,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 2,
+              "_ExitFrame": 40,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 228,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunFrontLoopSimpleBank",
+              "_TramNodeHash": {
+                "Index": 226,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 2534640196
+                }
+              },
+              "_TransitionData": {
+                "Index": 227,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 231,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Run_RunFrontDoorOpen",
+              "_TramNodeHash": {
+                "Index": 229,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 847302998,
+                  "Node": 1824290119
+                }
+              },
+              "_TransitionData": {
+                "Index": 230,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 0
+            }
+          },
+          {
+            "Index": 234,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeGazeTurnStartL_180",
+              "_TramNodeHash": {
+                "Index": 232,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 30201623
+                }
+              },
+              "_TransitionData": {
+                "Index": 233,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 1
+            }
+          },
+          {
+            "Index": 237,
+            "Class": "app.TramDataSet",
+            "Userdata": null,
+            "Fields": {
+              "_TramNodeName": "Common_Strafe_StrafeGazeTurnStartR_180",
+              "_TramNodeHash": {
+                "Index": 235,
+                "Class": "app.tram.TramNodeHash",
+                "Userdata": null,
+                "Fields": {
+                  "Data": 1226553885,
+                  "Group": 3681821659,
+                  "Node": 4043357991
+                }
+              },
+              "_TransitionData": {
+                "Index": 236,
+                "Class": "app.TramTransitionData",
+                "Userdata": null,
+                "Fields": {
+                  "_InterpolationFrame": 30,
+                  "_InterpolationMode": 2,
+                  "_InterpolationCurve": 1
+                }
+              },
+              "_MotionEndConditionType": 1,
+              "_ExitFrame": 0,
+              "_State": 1
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3389212796,
+        "Node": 3097846092
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_IdleLoop",
+        "_TramNodeHash": {
+          "Ref": 1,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 2,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3389212796,
+        "Node": 1489347074
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_CrouchIdleStart",
+        "_TramNodeHash": {
+          "Ref": 4,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 5,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 40,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3389212796,
+        "Node": 466335682
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 25,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_CrouchIdleLoop",
+        "_TramNodeHash": {
+          "Ref": 7,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 8,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3389212796,
+        "Node": 4253044497
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_CrouchIdleEnd",
+        "_TramNodeHash": {
+          "Ref": 10,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 11,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3389212796,
+        "Node": 3331293537
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_IdleLoopSimple",
+        "_TramNodeHash": {
+          "Ref": 13,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 14,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 0,
+        "Group": 0,
+        "Node": 0
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_IdleTurnLeftStart",
+        "_TramNodeHash": {
+          "Ref": 16,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 17,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3389212796,
+        "Node": 3430914357
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_IdleTurnLeftLoop",
+        "_TramNodeHash": {
+          "Ref": 19,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 20,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 0,
+        "Group": 0,
+        "Node": 0
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_IdleTurnLeftEnd",
+        "_TramNodeHash": {
+          "Ref": 22,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 23,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 0,
+        "Group": 0,
+        "Node": 0
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_IdleTurnRightStart",
+        "_TramNodeHash": {
+          "Ref": 25,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 26,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3389212796,
+        "Node": 3017521207
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_IdleTurnRightLoop",
+        "_TramNodeHash": {
+          "Ref": 28,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 29,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 0,
+        "Group": 0,
+        "Node": 0
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_IdleTurnRightEnd",
+        "_TramNodeHash": {
+          "Ref": 31,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 32,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 0,
+        "Group": 0,
+        "Node": 0
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_CrouchIdleTurnLeftStart",
+        "_TramNodeHash": {
+          "Ref": 34,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 35,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3389212796,
+        "Node": 804830757
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_CrouchIdleTurnLeftLoop",
+        "_TramNodeHash": {
+          "Ref": 37,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 38,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 0,
+        "Group": 0,
+        "Node": 0
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_CrouchIdleTurnLeftEnd",
+        "_TramNodeHash": {
+          "Ref": 40,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 41,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 0,
+        "Group": 0,
+        "Node": 0
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_CrouchIdleTurnRightStart",
+        "_TramNodeHash": {
+          "Ref": 43,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 44,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3389212796,
+        "Node": 1186097023
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_CrouchIdleTurnRightLoop",
+        "_TramNodeHash": {
+          "Ref": 46,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 47,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 0,
+        "Group": 0,
+        "Node": 0
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Idle_CrouchIdleTurnRightEnd",
+        "_TramNodeHash": {
+          "Ref": 49,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 50,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 3472741740
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 35,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontLoop",
+        "_TramNodeHash": {
+          "Ref": 52,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 53,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 81839628
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 40,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontEnd",
+        "_TramNodeHash": {
+          "Ref": 55,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 56,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 0,
+        "_ExitFrame": 40,
+        "_State": 8
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 293131758
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 35,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackLoop",
+        "_TramNodeHash": {
+          "Ref": 58,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 59,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 64
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 22490906
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 40,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackEnd",
+        "_TramNodeHash": {
+          "Ref": 61,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 62,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 0,
+        "_ExitFrame": 40,
+        "_State": 8
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 25217404
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeFrontStart",
+        "_TramNodeHash": {
+          "Ref": 64,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 65,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 8193
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 2629432670
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 45,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeFrontLoop",
+        "_TramNodeHash": {
+          "Ref": 67,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 68,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 392834861
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeBackStart",
+        "_TramNodeHash": {
+          "Ref": 70,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 71,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 8257
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 4035366966
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 45,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeBackLoop",
+        "_TramNodeHash": {
+          "Ref": 73,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 74,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 8256
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 1458574686
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeEnd_FB",
+        "_TramNodeHash": {
+          "Ref": 76,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 77,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.6,
+        "_State": 8200
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 70044560
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeEnd_L",
+        "_TramNodeHash": {
+          "Ref": 79,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 80,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.6,
+        "_State": 8200
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 1452946067
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeEnd_R",
+        "_TramNodeHash": {
+          "Ref": 82,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 83,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.6,
+        "_State": 8200
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 4242119794
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_WalkBankLeft",
+        "_TramNodeHash": {
+          "Ref": 85,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 86,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 119665360
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_WalkBankRight",
+        "_TramNodeHash": {
+          "Ref": 88,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 89,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 3261119225
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 40,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 93,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontTurn",
+        "_TramNodeHash": {
+          "Ref": 91,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 92,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 30,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 3284453722
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 40,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackTurn",
+        "_TramNodeHash": {
+          "Ref": 94,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 95,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 30,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 3351623536
+      }
+    },
+    {
+      "Index": 98,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontStartR",
+        "_TramNodeHash": {
+          "Ref": 97,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 98,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 100,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 627457365
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackStartR",
+        "_TramNodeHash": {
+          "Ref": 100,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 101,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 2107855546
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontStartL",
+        "_TramNodeHash": {
+          "Ref": 103,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 104,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 106,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 3103557971
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 108,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackStartL",
+        "_TramNodeHash": {
+          "Ref": 106,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 107,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 3083013791
+      }
+    },
+    {
+      "Index": 110,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 10,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeGazeStart",
+        "_TramNodeHash": {
+          "Ref": 109,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 110,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 1025
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 2746923622
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 10,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStrafeGazeStart",
+        "_TramNodeHash": {
+          "Ref": 112,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 113,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 9217
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 0,
+        "Group": 0,
+        "Node": 0
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 10,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeEnd_WallHit",
+        "_TramNodeHash": {
+          "Ref": 115,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 116,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 520
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 738448661
+      }
+    },
+    {
+      "Index": 119,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 10,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunStart",
+        "_TramNodeHash": {
+          "Ref": 118,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 119,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 50,
+        "_State": 2
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 1521772889
+      }
+    },
+    {
+      "Index": 122,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunFrontLoop",
+        "_TramNodeHash": {
+          "Ref": 121,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 122,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 3705329191
+      }
+    },
+    {
+      "Index": 125,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunEnd",
+        "_TramNodeHash": {
+          "Ref": 124,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 125,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 0,
+        "_ExitFrame": 90,
+        "_State": 16
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 1364803659
+      }
+    },
+    {
+      "Index": 128,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_BattleRunEnd",
+        "_TramNodeHash": {
+          "Ref": 127,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 128,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 0,
+        "_ExitFrame": 90,
+        "_State": 16
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 462812685
+      }
+    },
+    {
+      "Index": 131,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_BattleRunEndFast",
+        "_TramNodeHash": {
+          "Ref": 130,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 131,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 0,
+        "_ExitFrame": 90,
+        "_State": 16
+      }
+    },
+    {
+      "Index": 133,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 812941719
+      }
+    },
+    {
+      "Index": 134,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunLeftTurn_180",
+        "_TramNodeHash": {
+          "Ref": 133,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 134,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.7,
+        "_State": 32
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 1474306705
+      }
+    },
+    {
+      "Index": 137,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 138,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_HandLightRunLeftTurn_180",
+        "_TramNodeHash": {
+          "Ref": 136,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 137,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.7,
+        "_State": 32
+      }
+    },
+    {
+      "Index": 139,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 4219448675
+      }
+    },
+    {
+      "Index": 140,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 141,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunRightTurn_180",
+        "_TramNodeHash": {
+          "Ref": 139,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 140,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.7,
+        "_State": 32
+      }
+    },
+    {
+      "Index": 142,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 3925273704
+      }
+    },
+    {
+      "Index": 143,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 144,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_HandLightRunRightTurn_180",
+        "_TramNodeHash": {
+          "Ref": 142,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 143,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.7,
+        "_State": 32
+      }
+    },
+    {
+      "Index": 145,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 3386227362
+      }
+    },
+    {
+      "Index": 146,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 12,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 147,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_AvoidRightObstrable",
+        "_TramNodeHash": {
+          "Ref": 145,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 146,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 148,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 369590500
+      }
+    },
+    {
+      "Index": 149,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 12,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 150,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_AvoidLeftObstrable",
+        "_TramNodeHash": {
+          "Ref": 148,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 149,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 151,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 3061511164
+      }
+    },
+    {
+      "Index": 152,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 12,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 153,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_AvoidRightAttack",
+        "_TramNodeHash": {
+          "Ref": 151,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 152,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 154,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 115227795
+      }
+    },
+    {
+      "Index": 155,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 12,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 156,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_AvoidLeftAttack",
+        "_TramNodeHash": {
+          "Ref": 154,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 155,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 157,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 341002749
+      }
+    },
+    {
+      "Index": 158,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 159,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_BankStartLeft",
+        "_TramNodeHash": {
+          "Ref": 157,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 158,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 160,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 4052463853
+      }
+    },
+    {
+      "Index": 161,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 162,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_BankStartRight",
+        "_TramNodeHash": {
+          "Ref": 160,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 161,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 163,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 2356320979
+      }
+    },
+    {
+      "Index": 164,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 40,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 165,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_BankLeft",
+        "_TramNodeHash": {
+          "Ref": 163,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 164,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 166,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 3029530959
+      }
+    },
+    {
+      "Index": 167,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 40,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 168,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_BankRight",
+        "_TramNodeHash": {
+          "Ref": 166,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 167,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 20,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 169,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 1090620549
+      }
+    },
+    {
+      "Index": 170,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 171,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunLeftTurn_90",
+        "_TramNodeHash": {
+          "Ref": 169,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 170,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 172,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 1667542775
+      }
+    },
+    {
+      "Index": 173,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 174,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunRightTurn_90",
+        "_TramNodeHash": {
+          "Ref": 172,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 173,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 175,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 597828340
+      }
+    },
+    {
+      "Index": 176,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 177,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunLeftTurnCancel_90",
+        "_TramNodeHash": {
+          "Ref": 175,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 176,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 178,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 1463549639
+      }
+    },
+    {
+      "Index": 179,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 180,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunRightTurnCancel_90",
+        "_TramNodeHash": {
+          "Ref": 178,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 179,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 181,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 2608116107
+      }
+    },
+    {
+      "Index": 182,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 10,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 183,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunEnd_WallHit",
+        "_TramNodeHash": {
+          "Ref": 181,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 182,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 536
+      }
+    },
+    {
+      "Index": 184,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 3524795706
+      }
+    },
+    {
+      "Index": 185,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 12,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 186,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StepLoop",
+        "_TramNodeHash": {
+          "Ref": 184,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 185,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 187,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 2214314615
+      }
+    },
+    {
+      "Index": 188,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 189,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontTurnStartL",
+        "_TramNodeHash": {
+          "Ref": 187,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 188,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 190,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 902565370
+      }
+    },
+    {
+      "Index": 191,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 192,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackTurnStartL",
+        "_TramNodeHash": {
+          "Ref": 190,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 191,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 193,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 2812289568
+      }
+    },
+    {
+      "Index": 194,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 195,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeFrontTurnStartR",
+        "_TramNodeHash": {
+          "Ref": 193,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 194,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 196,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 866815596
+      }
+    },
+    {
+      "Index": 197,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 20,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 198,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeBackTurnStartR",
+        "_TramNodeHash": {
+          "Ref": 196,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 197,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 199,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 3555290390
+      }
+    },
+    {
+      "Index": 200,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 12,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 201,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_CrouchStepLoop",
+        "_TramNodeHash": {
+          "Ref": 199,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 200,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 8192
+      }
+    },
+    {
+      "Index": 202,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 3063999659
+      }
+    },
+    {
+      "Index": 203,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 12,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 204,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunStartWatch",
+        "_TramNodeHash": {
+          "Ref": 202,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 203,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 2
+      }
+    },
+    {
+      "Index": 205,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 3163944543
+      }
+    },
+    {
+      "Index": 206,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 12,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 207,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunStartWatchLight",
+        "_TramNodeHash": {
+          "Ref": 205,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 206,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.9,
+        "_State": 2
+      }
+    },
+    {
+      "Index": 208,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 232885452
+      }
+    },
+    {
+      "Index": 209,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 210,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunEndWatchLight",
+        "_TramNodeHash": {
+          "Ref": 208,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 209,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 0,
+        "_ExitFrame": 90,
+        "_State": 16
+      }
+    },
+    {
+      "Index": 211,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 2539426963
+      }
+    },
+    {
+      "Index": 212,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 213,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunEndWatchLightFast",
+        "_TramNodeHash": {
+          "Ref": 211,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 212,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 0,
+        "_ExitFrame": 90,
+        "_State": 16
+      }
+    },
+    {
+      "Index": 214,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 25417661
+      }
+    },
+    {
+      "Index": 215,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 216,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_BattleRunLeftTurn_180",
+        "_TramNodeHash": {
+          "Ref": 214,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 215,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.7,
+        "_State": 32
+      }
+    },
+    {
+      "Index": 217,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 3794921236
+      }
+    },
+    {
+      "Index": 218,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 15,
+        "_InterpolationMode": 1,
+        "_InterpolationCurve": 3
+      }
+    },
+    {
+      "Index": 219,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_BattleRunRightTurn_180",
+        "_TramNodeHash": {
+          "Ref": 217,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 218,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 3,
+        "_ExitFrame": 0.7,
+        "_State": 32
+      }
+    },
+    {
+      "Index": 220,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 369590500
+      }
+    },
+    {
+      "Index": 221,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 16,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 222,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_AvoidLeftObstrable",
+        "_TramNodeHash": {
+          "Ref": 220,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 221,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 223,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 3386227362
+      }
+    },
+    {
+      "Index": 224,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 16,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 225,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_AvoidRightObstrable",
+        "_TramNodeHash": {
+          "Ref": 223,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 224,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 2,
+        "_ExitFrame": 40,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 226,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 2534640196
+      }
+    },
+    {
+      "Index": 227,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 228,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunFrontLoopSimpleBank",
+        "_TramNodeHash": {
+          "Ref": 226,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 227,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 229,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 847302998,
+        "Node": 1824290119
+      }
+    },
+    {
+      "Index": 230,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 231,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Run_RunFrontDoorOpen",
+        "_TramNodeHash": {
+          "Ref": 229,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 230,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 0
+      }
+    },
+    {
+      "Index": 232,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 30201623
+      }
+    },
+    {
+      "Index": 233,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 234,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeGazeTurnStartL_180",
+        "_TramNodeHash": {
+          "Ref": 232,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 233,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 235,
+      "Class": "app.tram.TramNodeHash",
+      "Userdata": null,
+      "Fields": {
+        "Data": 1226553885,
+        "Group": 3681821659,
+        "Node": 4043357991
+      }
+    },
+    {
+      "Index": 236,
+      "Class": "app.TramTransitionData",
+      "Userdata": null,
+      "Fields": {
+        "_InterpolationFrame": 30,
+        "_InterpolationMode": 2,
+        "_InterpolationCurve": 1
+      }
+    },
+    {
+      "Index": 237,
+      "Class": "app.TramDataSet",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeName": "Common_Strafe_StrafeGazeTurnStartR_180",
+        "_TramNodeHash": {
+          "Ref": 235,
+          "Class": "app.tram.TramNodeHash"
+        },
+        "_TransitionData": {
+          "Ref": 236,
+          "Class": "app.TramTransitionData"
+        },
+        "_MotionEndConditionType": 1,
+        "_ExitFrame": 0,
+        "_State": 1
+      }
+    },
+    {
+      "Index": 238,
+      "Class": "app.TramDataSetTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_TramNodeDataClassName": "app.tram.Ch0100",
+        "_StateEnumName": "app.PlayerDefine.MotionFlag",
+        "_TramDataSetArray": [
+          {
+            "Ref": 3,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 36,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 39,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 42,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 45,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 48,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 51,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 54,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 57,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 60,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 63,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 66,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 69,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 72,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 75,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 78,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 81,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 84,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 87,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 90,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 93,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 96,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 99,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 102,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 105,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 108,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 111,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 114,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 117,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 120,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 123,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 126,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 129,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 132,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 135,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 138,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 141,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 144,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 147,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 150,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 153,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 156,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 159,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 162,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 165,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 168,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 171,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 174,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 177,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 180,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 183,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 186,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 189,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 192,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 195,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 198,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 201,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 204,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 207,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 210,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 213,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 216,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 219,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 222,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 225,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 228,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 231,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 234,
+            "Class": "app.TramDataSet"
+          },
+          {
+            "Ref": 237,
+            "Class": "app.TramDataSet"
+          }
+        ]
+      }
+    }
+  ]
+}

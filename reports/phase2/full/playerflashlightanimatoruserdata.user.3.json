@@ -1,0 +1,337 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playerflashlightanimatoruserdata.user.3",
+  "Objects": [
+    {
+      "Index": 10,
+      "Class": "app.FlashLightAnimatorUserData",
+      "Userdata": null,
+      "Fields": {
+        "_AnimationSettingArray": [
+          {
+            "Index": 3,
+            "Class": "app.FlashLightAnimatorUserData.AnimationSetting",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 1,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1106175613
+                }
+              },
+              "_Curve": {
+                "Index": 2,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 1",
+                    "0.05005: 0.7653278",
+                    "0.2087: 1",
+                    "0.2878: 0.9471467",
+                    "0.3828: 1",
+                    "0.4236: 0.9471461",
+                    "0.4504: 0.739958",
+                    "0.5186: 1",
+                    "0.5605: 0.94503266",
+                    "0.604: 1",
+                    "0.653: 0.83298165",
+                    "0.773: 0.953489",
+                    "0.8447: 0.9809725",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_MaxRate": 1,
+              "_LoopTime": 4
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.FlashLightAnimatorUserData.AnimationSetting",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 4,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2111799194
+                }
+              },
+              "_Curve": {
+                "Index": 5,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 1",
+                    "0.05005: 0.7653278",
+                    "0.2087: 1",
+                    "0.2878: 0.9471467",
+                    "0.3828: 1",
+                    "0.4236: 0.9471461",
+                    "0.4504: 0.739958",
+                    "0.5186: 1",
+                    "0.5605: 0.94503266",
+                    "0.604: 1",
+                    "0.653: 0.83298165",
+                    "0.773: 0.953489",
+                    "0.8447: 0.9809725",
+                    "1: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_MaxRate": 1,
+              "_LoopTime": 4
+            }
+          },
+          {
+            "Index": 9,
+            "Class": "app.FlashLightAnimatorUserData.AnimationSetting",
+            "Userdata": null,
+            "Fields": {
+              "_Name": {
+                "Index": 7,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 847302998
+                }
+              },
+              "_Curve": {
+                "Index": 8,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0.72938716",
+                    "0.0793: 0.44397408",
+                    "0.1819: 0.66173416",
+                    "0.2573: 1",
+                    "0.3433: 0.49682894",
+                    "0.4575: 0.8964069",
+                    "0.52: 0.7949267",
+                    "0.659: 0.96406054",
+                    "0.7285: 0.6004235",
+                    "0.867: 0.8646945",
+                    "1: 0.72942585"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_MaxRate": 1,
+              "_LoopTime": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1106175613
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 1",
+          "0.05005: 0.7653278",
+          "0.2087: 1",
+          "0.2878: 0.9471467",
+          "0.3828: 1",
+          "0.4236: 0.9471461",
+          "0.4504: 0.739958",
+          "0.5186: 1",
+          "0.5605: 0.94503266",
+          "0.604: 1",
+          "0.653: 0.83298165",
+          "0.773: 0.953489",
+          "0.8447: 0.9809725",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.FlashLightAnimatorUserData.AnimationSetting",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_Curve": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        },
+        "_MaxRate": 1,
+        "_LoopTime": 4
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2111799194
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 1",
+          "0.05005: 0.7653278",
+          "0.2087: 1",
+          "0.2878: 0.9471467",
+          "0.3828: 1",
+          "0.4236: 0.9471461",
+          "0.4504: 0.739958",
+          "0.5186: 1",
+          "0.5605: 0.94503266",
+          "0.604: 1",
+          "0.653: 0.83298165",
+          "0.773: 0.953489",
+          "0.8447: 0.9809725",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.FlashLightAnimatorUserData.AnimationSetting",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 4,
+          "Class": "app.NameHash"
+        },
+        "_Curve": {
+          "Ref": 5,
+          "Class": "via.AnimationCurve"
+        },
+        "_MaxRate": 1,
+        "_LoopTime": 4
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 847302998
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0.72938716",
+          "0.0793: 0.44397408",
+          "0.1819: 0.66173416",
+          "0.2573: 1",
+          "0.3433: 0.49682894",
+          "0.4575: 0.8964069",
+          "0.52: 0.7949267",
+          "0.659: 0.96406054",
+          "0.7285: 0.6004235",
+          "0.867: 0.8646945",
+          "1: 0.72942585"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.FlashLightAnimatorUserData.AnimationSetting",
+      "Userdata": null,
+      "Fields": {
+        "_Name": {
+          "Ref": 7,
+          "Class": "app.NameHash"
+        },
+        "_Curve": {
+          "Ref": 8,
+          "Class": "via.AnimationCurve"
+        },
+        "_MaxRate": 1,
+        "_LoopTime": 3
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.FlashLightAnimatorUserData",
+      "Userdata": null,
+      "Fields": {
+        "_AnimationSettingArray": [
+          {
+            "Ref": 3,
+            "Class": "app.FlashLightAnimatorUserData.AnimationSetting"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.FlashLightAnimatorUserData.AnimationSetting"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.FlashLightAnimatorUserData.AnimationSetting"
+          }
+        ]
+      }
+    }
+  ]
+}

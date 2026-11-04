@@ -1,0 +1,1601 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/commonmessage/cp_a100commonmessagetable_part40_specialzombie.user.3",
+  "Objects": [
+    {
+      "Index": 73,
+      "Class": "app.CommonMessageTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefinitionData": {
+          "Index": 1,
+          "Class": "app.CommonMessageDefinitionData",
+          "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/CommonMessage/cp_A100CommonMessageDefinitionData_SpecialZombie.user",
+          "Fields": {}
+        },
+        "_SettingsData": [
+          {
+            "Index": 13,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 2,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3066859707
+                }
+              },
+              "_IsOverwriteDefinitionData": true,
+              "_TalkRate": 0.25,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": true,
+              "_ConversationIDs": [
+                {
+                  "Index": 3,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1450"
+                  }
+                },
+                {
+                  "Index": 4,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1451"
+                  }
+                },
+                {
+                  "Index": 5,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1452"
+                  }
+                },
+                {
+                  "Index": 6,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1453"
+                  }
+                },
+                {
+                  "Index": 7,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1454"
+                  }
+                },
+                {
+                  "Index": 8,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1455"
+                  }
+                },
+                {
+                  "Index": 9,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1456"
+                  }
+                },
+                {
+                  "Index": 10,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1457"
+                  }
+                },
+                {
+                  "Index": 11,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1458"
+                  }
+                },
+                {
+                  "Index": 12,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1459"
+                  }
+                }
+              ],
+              "_ShuffleType": 0
+            }
+          },
+          {
+            "Index": 25,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 14,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 386043128
+                }
+              },
+              "_IsOverwriteDefinitionData": true,
+              "_TalkRate": 1,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": true,
+              "_ConversationIDs": [
+                {
+                  "Index": 15,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1080"
+                  }
+                },
+                {
+                  "Index": 16,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1081"
+                  }
+                },
+                {
+                  "Index": 17,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1082"
+                  }
+                },
+                {
+                  "Index": 18,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1083"
+                  }
+                },
+                {
+                  "Index": 19,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1084"
+                  }
+                },
+                {
+                  "Index": 20,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1085"
+                  }
+                },
+                {
+                  "Index": 21,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1086"
+                  }
+                },
+                {
+                  "Index": 22,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1087"
+                  }
+                },
+                {
+                  "Index": 23,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1088"
+                  }
+                },
+                {
+                  "Index": 24,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1089"
+                  }
+                }
+              ],
+              "_ShuffleType": 0
+            }
+          },
+          {
+            "Index": 37,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 26,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2369782480
+                }
+              },
+              "_IsOverwriteDefinitionData": true,
+              "_TalkRate": 1,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": true,
+              "_ConversationIDs": [
+                {
+                  "Index": 27,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1080"
+                  }
+                },
+                {
+                  "Index": 28,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1081"
+                  }
+                },
+                {
+                  "Index": 29,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1082"
+                  }
+                },
+                {
+                  "Index": 30,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1083"
+                  }
+                },
+                {
+                  "Index": 31,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1084"
+                  }
+                },
+                {
+                  "Index": 32,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1085"
+                  }
+                },
+                {
+                  "Index": 33,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1086"
+                  }
+                },
+                {
+                  "Index": 34,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1087"
+                  }
+                },
+                {
+                  "Index": 35,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1088"
+                  }
+                },
+                {
+                  "Index": 36,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1089"
+                  }
+                }
+              ],
+              "_ShuffleType": 0
+            }
+          },
+          {
+            "Index": 40,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 38,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 5915795
+                }
+              },
+              "_IsOverwriteDefinitionData": true,
+              "_TalkRate": 1,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": true,
+              "_ConversationIDs": [
+                {
+                  "Index": 39,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1553"
+                  }
+                }
+              ],
+              "_ShuffleType": 0
+            }
+          },
+          {
+            "Index": 42,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 41,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1317418002
+                }
+              },
+              "_IsOverwriteDefinitionData": true,
+              "_TalkRate": 0,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": true,
+              "_ConversationIDs": [],
+              "_ShuffleType": 0
+            }
+          },
+          {
+            "Index": 54,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 43,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2613321731
+                }
+              },
+              "_IsOverwriteDefinitionData": true,
+              "_TalkRate": 1,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": true,
+              "_ConversationIDs": [
+                {
+                  "Index": 44,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1150"
+                  }
+                },
+                {
+                  "Index": 45,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1151"
+                  }
+                },
+                {
+                  "Index": 46,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1152"
+                  }
+                },
+                {
+                  "Index": 47,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1153"
+                  }
+                },
+                {
+                  "Index": 48,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1154"
+                  }
+                },
+                {
+                  "Index": 49,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1155"
+                  }
+                },
+                {
+                  "Index": 50,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1156"
+                  }
+                },
+                {
+                  "Index": 51,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1157"
+                  }
+                },
+                {
+                  "Index": 52,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1158"
+                  }
+                },
+                {
+                  "Index": 53,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1159"
+                  }
+                }
+              ],
+              "_ShuffleType": 0
+            }
+          },
+          {
+            "Index": 66,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 55,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 867094691
+                }
+              },
+              "_IsOverwriteDefinitionData": true,
+              "_TalkRate": 1,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": true,
+              "_ConversationIDs": [
+                {
+                  "Index": 56,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1080"
+                  }
+                },
+                {
+                  "Index": 57,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1081"
+                  }
+                },
+                {
+                  "Index": 58,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1082"
+                  }
+                },
+                {
+                  "Index": 59,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1083"
+                  }
+                },
+                {
+                  "Index": 60,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1084"
+                  }
+                },
+                {
+                  "Index": 61,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1085"
+                  }
+                },
+                {
+                  "Index": 62,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1086"
+                  }
+                },
+                {
+                  "Index": 63,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1087"
+                  }
+                },
+                {
+                  "Index": 64,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1088"
+                  }
+                },
+                {
+                  "Index": 65,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1089"
+                  }
+                }
+              ],
+              "_ShuffleType": 0
+            }
+          },
+          {
+            "Index": 72,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+            "Userdata": null,
+            "Fields": {
+              "_Key": {
+                "Index": 67,
+                "Class": "app.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 3911452343
+                }
+              },
+              "_IsOverwriteDefinitionData": false,
+              "_TalkRate": 1,
+              "_IsOverwriteCallInterval": false,
+              "_CallInterval": "\u003C2, 10\u003E",
+              "_IsOverwriteIgnoreCoolTime": false,
+              "_IgnoreCoolTime": false,
+              "_ConversationIDs": [
+                {
+                  "Index": 68,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1206"
+                  }
+                },
+                {
+                  "Index": 69,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1207"
+                  }
+                },
+                {
+                  "Index": 70,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1208"
+                  }
+                },
+                {
+                  "Index": 71,
+                  "Class": "app.ConversationID",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Name": "ReactionsPL_1209"
+                  }
+                }
+              ],
+              "_ShuffleType": 0
+            }
+          }
+        ],
+        "AdditionalCommonMessageTable": [],
+        "_CoolTime": 0,
+        "_CoolTimeRange": "\u003C3, 30\u003E",
+        "_EnableProhibitRepeatSameConversationID": true
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CommonMessageDefinitionData",
+      "Userdata": "GameAssets/Character/CharacterPrefab/cp_A1/cp_A100/UserData/CommonMessage/cp_A100CommonMessageDefinitionData_SpecialZombie.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3066859707
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1450"
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1451"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1452"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1453"
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1454"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1455"
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1456"
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1457"
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1458"
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1459"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 2,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": true,
+        "_TalkRate": 0.25,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": true,
+        "_ConversationIDs": [
+          {
+            "Ref": 3,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 0
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 386043128
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1080"
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1081"
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1082"
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1083"
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1084"
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1085"
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1086"
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1087"
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1088"
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1089"
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 14,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": true,
+        "_TalkRate": 1,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": true,
+        "_ConversationIDs": [
+          {
+            "Ref": 15,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 16,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 22,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 23,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 0
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2369782480
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1080"
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1081"
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1082"
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1083"
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1084"
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1085"
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1086"
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1087"
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1088"
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1089"
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 26,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": true,
+        "_TalkRate": 1,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": true,
+        "_ConversationIDs": [
+          {
+            "Ref": 27,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 28,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 31,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 32,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 34,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 35,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 36,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 0
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 5915795
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1553"
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 38,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": true,
+        "_TalkRate": 1,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": true,
+        "_ConversationIDs": [
+          {
+            "Ref": 39,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 0
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1317418002
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 41,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": true,
+        "_TalkRate": 0,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": true,
+        "_ConversationIDs": [],
+        "_ShuffleType": 0
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2613321731
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1150"
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1151"
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1152"
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1153"
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1154"
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1155"
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1156"
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1157"
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1158"
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1159"
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 43,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": true,
+        "_TalkRate": 1,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": true,
+        "_ConversationIDs": [
+          {
+            "Ref": 44,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 45,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 46,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 47,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 48,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 49,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 50,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 51,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 52,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 53,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 0
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 867094691
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1080"
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1081"
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1082"
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1083"
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1084"
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1085"
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1086"
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1087"
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1088"
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1089"
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 55,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": true,
+        "_TalkRate": 1,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": true,
+        "_ConversationIDs": [
+          {
+            "Ref": 56,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 57,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 58,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 59,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 60,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 61,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 62,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 63,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 64,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 65,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 0
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3911452343
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1206"
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1207"
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1208"
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.ConversationID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "ReactionsPL_1209"
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.CommonMessageTableUserData.MessageTableSettingsData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": {
+          "Ref": 67,
+          "Class": "app.NameHash"
+        },
+        "_IsOverwriteDefinitionData": false,
+        "_TalkRate": 1,
+        "_IsOverwriteCallInterval": false,
+        "_CallInterval": "\u003C2, 10\u003E",
+        "_IsOverwriteIgnoreCoolTime": false,
+        "_IgnoreCoolTime": false,
+        "_ConversationIDs": [
+          {
+            "Ref": 68,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 69,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 70,
+            "Class": "app.ConversationID"
+          },
+          {
+            "Ref": 71,
+            "Class": "app.ConversationID"
+          }
+        ],
+        "_ShuffleType": 0
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.CommonMessageTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefinitionData": {
+          "Ref": 1,
+          "Class": "app.CommonMessageDefinitionData"
+        },
+        "_SettingsData": [
+          {
+            "Ref": 13,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 37,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 40,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 42,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 54,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 66,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          },
+          {
+            "Ref": 72,
+            "Class": "app.CommonMessageTableUserData.MessageTableSettingsData"
+          }
+        ],
+        "AdditionalCommonMessageTable": [],
+        "_CoolTime": 0,
+        "_CoolTimeRange": "\u003C3, 30\u003E",
+        "_EnableProhibitRepeatSameConversationID": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,983 @@
+{
+  "via.render.LightRenderer": {
+    "FieldPatches": [
+      {
+        "Name": "ukn",
+        "ReplaceName": "ukn1"
+      },
+      {
+        "Name": "ukn",
+        "ReplaceName": "ukn2"
+      },
+      {
+        "Name": "GSSShadowDistance",
+        "ReplaceName": "GSSShadowDistance1"
+      },
+      {
+        "Name": "GSSShadowDistance",
+        "ReplaceName": "GSSShadowDistance2"
+      },
+      {
+        "Name": "GSSShadowDistance",
+        "ReplaceName": "GSSShadowDistance3"
+      }
+    ]
+  },
+  "app.Cp_C500SpawnParam": {
+    "FieldPatches": [
+      {
+        "Name": "_CpC500SpawnSettings",
+        "ReplaceName": "_CpC500SpawnSettings1"
+      },
+      {
+        "Name": "_CpC500SpawnSettings",
+        "ReplaceName": "_CpC500SpawnSettings2"
+      }
+    ]
+  },
+  "via.motion.MotionInfo": {
+    "FieldPatches": [
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown1"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown2"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown3"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown4"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown5"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown6"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown7"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown8"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown9"
+      }
+    ]
+  },
+  "via.render.MeshRebinder": {
+    "FieldPatches": [
+      {
+        "Name": "Enabled",
+        "ReplaceName": "Enabled1"
+      },
+      {
+        "Name": "Enabled",
+        "ReplaceName": "Enabled2"
+      }
+    ]
+  },
+  "via.landscape.Foliage": {
+    "FieldPatches": [
+      {
+        "Name": "DecalReciveMode",
+        "ReplaceName": "DecalReciveMode1"
+      },
+      {
+        "Name": "DecalReciveMode",
+        "ReplaceName": "DecalReciveMode2"
+      }
+    ]
+  },
+  "via.f16.UF": {
+    "FieldPatches": [
+      {
+        "Name": "u",
+        "ReplaceName": "u1"
+      },
+      {
+        "Name": "u",
+        "ReplaceName": "u2"
+      }
+    ]
+  },
+  "app.EnemyBodyPartDriver.EnemyBodyPartContext": {
+    "FieldPatches": [
+      {
+        "Name": "_Version",
+        "ReplaceName": "_Version1"
+      },
+      {
+        "Name": "_Version",
+        "ReplaceName": "_Version2"
+      }
+    ]
+  },
+  "via.KeyFrame.UF": {
+    "FieldPatches": [
+      {
+        "Name": "f",
+        "ReplaceName": "f1"
+      },
+      {
+        "Name": "f",
+        "ReplaceName": "f2"
+      },
+      {
+        "Name": "f",
+        "ReplaceName": "f3"
+      },
+      {
+        "Name": "f",
+        "ReplaceName": "f4"
+      }
+    ]
+  },
+  "app.CharacterSpawnParamBackup": {
+    "FieldPatches": [
+      {
+        "Name": "_Version",
+        "ReplaceName": "_Version1"
+      },
+      {
+        "Name": "_Version",
+        "ReplaceName": "_Version2"
+      }
+    ]
+  },
+  "via.gui.GUISystem": {
+    "FieldPatches": [
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)1"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)2"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)3"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)4"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)5"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)6"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)7"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)8"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)9"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)10"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)11"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)12"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)13"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)14"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)15"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)16"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)17"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)18"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)19"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)20"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)21"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)22"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)23"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)24"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)25"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)26"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)27"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)28"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)29"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)30"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)31"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)32"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)33"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)34"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)35"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)36"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)37"
+      },
+      {
+        "Name": "DistanceFieldTextureMargin",
+        "ReplaceName": "DistanceFieldTextureMargin1"
+      },
+      {
+        "Name": "DistanceFieldTextureMargin",
+        "ReplaceName": "DistanceFieldTextureMargin2"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)38"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)39"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)40"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)41"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)42"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)43"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)44"
+      }
+    ]
+  },
+  "app.Cp_B000BodyPartDriver.Cp_B000BodyPartData": {
+    "FieldPatches": [
+      {
+        "Name": "_Version",
+        "ReplaceName": "_Version1"
+      },
+      {
+        "Name": "_Version",
+        "ReplaceName": "_Version2"
+      }
+    ]
+  },
+  "via.effect.PrimitiveSystem": {
+    "FieldPatches": [
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)1"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)2"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)3"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)4"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)5"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)6"
+      }
+    ]
+  },
+  "via.ShareService": {
+    "FieldPatches": [
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown1"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown2"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown3"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown4"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown5"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown6"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown7"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown8"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown9"
+      }
+    ]
+  },
+  "via.render.ExperimentalRayTrace": {
+    "FieldPatches": [
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)1"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)2"
+      }
+    ]
+  },
+  "via.motion.MotionJackFsm2": {
+    "FieldPatches": [
+      {
+        "Name": "UserVariables",
+        "ReplaceName": "UserVariables1"
+      },
+      {
+        "Name": "UserVariables",
+        "ReplaceName": "UserVariables2"
+      }
+    ]
+  },
+  "via.motion.MotionManager": {
+    "FieldPatches": [
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)1"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)2"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)3"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)4"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)5"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)6"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)7"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)8"
+      }
+    ]
+  },
+  "via.motion.IkLizard": {
+    "FieldPatches": [
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)1"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)2"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)3"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)4"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)5"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)6"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)7"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)8"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)9"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)10"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)11"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)12"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)13"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)14"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)15"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)16"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)17"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)18"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)19"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)20"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)21"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)22"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)23"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)24"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)25"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)26"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)27"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)28"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)29"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)30"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)31"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)32"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)33"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)34"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)35"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)36"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)37"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)38"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)39"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)40"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)41"
+      }
+    ]
+  },
+  "via.motion.TreeCameraLayer": {
+    "FieldPatches": [
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown1",
+        "Type": "S32"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown2"
+      }
+    ]
+  },
+  "via.KeyFrame.Time_Type": {
+    "FieldPatches": [
+      {
+        "Name": "ui",
+        "ReplaceName": "ui1"
+      },
+      {
+        "Name": "ui",
+        "ReplaceName": "ui2"
+      }
+    ]
+  },
+  "via.physics.System": {
+    "FieldPatches": [
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)1"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)2"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)3"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)4"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)5"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)6"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)7"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)8"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)9"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)10"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)11"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)12"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)13"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)14"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)15"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)16"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)17"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)18"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)19"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)20"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)21"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)22"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)23"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)24"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)25"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)26"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)27"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)28"
+      }
+    ]
+  },
+  "via.KeyFrame.Normal": {
+    "FieldPatches": [
+      {
+        "Name": "ui",
+        "ReplaceName": "ui1"
+      },
+      {
+        "Name": "ui",
+        "ReplaceName": "ui2"
+      }
+    ]
+  },
+  "via.timeline.GameObjectClipPlayerLegacy": {
+    "FieldPatches": [
+      {
+        "Name": "TimelineResource",
+        "ReplaceName": "TimelineResource1"
+      },
+      {
+        "Name": "TimelineResource",
+        "ReplaceName": "TimelineResource2"
+      },
+      {
+        "Name": "StartFrame",
+        "ReplaceName": "StartFrame1"
+      },
+      {
+        "Name": "StartFrame",
+        "ReplaceName": "StartFrame2"
+      },
+      {
+        "Name": "EndFrame",
+        "ReplaceName": "EndFrame1"
+      },
+      {
+        "Name": "EndFrame",
+        "ReplaceName": "EndFrame2"
+      },
+      {
+        "Name": "PlayState",
+        "ReplaceName": "PlayState1"
+      },
+      {
+        "Name": "PlayState",
+        "ReplaceName": "PlayState2"
+      },
+      {
+        "Name": "PlaySpeed",
+        "ReplaceName": "PlaySpeed1"
+      },
+      {
+        "Name": "PlaySpeed",
+        "ReplaceName": "PlaySpeed2"
+      },
+      {
+        "Name": "Loop",
+        "ReplaceName": "Loop1"
+      },
+      {
+        "Name": "Loop",
+        "ReplaceName": "Loop2"
+      },
+      {
+        "Name": "EnableEvent",
+        "ReplaceName": "EnableEvent1"
+      },
+      {
+        "Name": "EnableEvent",
+        "ReplaceName": "EnableEvent2"
+      }
+    ]
+  },
+  "via.timeline.UserCurvePlayer": {
+    "FieldPatches": [
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown1"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown2"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown3"
+      }
+    ]
+  },
+  "via.render.layer.CubemapCapture": {
+    "FieldPatches": [
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)1"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)2"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)3"
+      }
+    ]
+  },
+  "via.motion.TreeLayer": {
+    "FieldPatches": [
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown1",
+        "Type": "S32"
+      },
+      {
+        "Name": "unknown",
+        "ReplaceName": "unknown2"
+      }
+    ]
+  },
+  "app.PlayerMessageEventRequestArg_Battle_FleeFromEnemy": {
+    "FieldPatches": [
+      {
+        "Name": "_CharacterKindParam",
+        "ReplaceName": "_CharacterKindParam1"
+      },
+      {
+        "Name": "_CharacterKindParam",
+        "ReplaceName": "_CharacterKindParam2"
+      }
+    ]
+  },
+  "via.render.IESPointLight": {
+    "FieldPatches": [
+      {
+        "Name": "IES",
+        "ReplaceName": "IES1"
+      },
+      {
+        "Name": "IES",
+        "ReplaceName": "IES2"
+      }
+    ]
+  },
+  "app.Cp_C510SpawnParam": {
+    "FieldPatches": [
+      {
+        "Name": "_CpC500SpawnSettings",
+        "ReplaceName": "_CpC500SpawnSettings1"
+      },
+      {
+        "Name": "_CpC500SpawnSettings",
+        "ReplaceName": "_CpC500SpawnSettings2"
+      }
+    ]
+  },
+  "via.motion.Motion": {
+    "FieldPatches": [
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)1",
+        "Type": "S32"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)2",
+        "Type": "S32"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)3",
+        "Type": "S32"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)4"
+      },
+      {
+        "Name": "(?)",
+        "ReplaceName": "(?)5"
+      }
+    ]
+  },
+  "via.network.HttpClient": {
+    "FieldPatches": [
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  }
+}

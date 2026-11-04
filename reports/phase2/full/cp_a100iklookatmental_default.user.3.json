@@ -1,0 +1,733 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a1/cp_a100/userdata/lookat/cp_a100iklookatmental_default.user.3",
+  "Objects": [
+    {
+      "Index": 21,
+      "Class": "app.AppIkLookAtSettingForMentalUserData",
+      "Userdata": null,
+      "Fields": {
+        "_EyeJointSetting": {
+          "Index": 3,
+          "Class": "app.AppIkLookAtSettingForMentalUserData.EyeJointParam",
+          "Userdata": null,
+          "Fields": {
+            "_YawRangeRate": 1,
+            "_PitchRangeRate": 1,
+            "_YawSpeedRate": 1,
+            "_PitchSpeedRate": 1,
+            "_YawRate": 1,
+            "_PitchRate": 1,
+            "_YawCurve": {
+              "Index": 1,
+              "Class": "via.AnimationCurve",
+              "Userdata": null,
+              "Fields": {
+                "Keys": [
+                  "0: 0",
+                  "0.25: 1"
+                ],
+                "MinValue": 0,
+                "MaxValue": 1,
+                "LoopStartTime": 0,
+                "LoopEndTime": 100,
+                "LoopCount": 0,
+                "LoopWrapNo": 2
+              }
+            },
+            "_PitchCurve": {
+              "Index": 2,
+              "Class": "via.AnimationCurve",
+              "Userdata": null,
+              "Fields": {
+                "Keys": [
+                  "0: 0",
+                  "0.25: 1"
+                ],
+                "MinValue": 0,
+                "MaxValue": 1,
+                "LoopStartTime": 0,
+                "LoopEndTime": 100,
+                "LoopCount": 0,
+                "LoopWrapNo": 2
+              }
+            }
+          }
+        },
+        "_JointSettings": [
+          {
+            "Index": 6,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawRangeRate": 1,
+              "_PitchRangeRate": 1,
+              "_YawSpeedRate": 1,
+              "_PitchSpeedRate": 1,
+              "_YawRate": 1,
+              "_PitchRate": 1,
+              "_YawCurve": {
+                "Index": 4,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_PitchCurve": {
+                "Index": 5,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 9,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawRangeRate": 1,
+              "_PitchRangeRate": 1,
+              "_YawSpeedRate": 1,
+              "_PitchSpeedRate": 1,
+              "_YawRate": 1,
+              "_PitchRate": 1,
+              "_YawCurve": {
+                "Index": 7,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_PitchCurve": {
+                "Index": 8,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawRangeRate": 1,
+              "_PitchRangeRate": 1,
+              "_YawSpeedRate": 1,
+              "_PitchSpeedRate": 1,
+              "_YawRate": 1,
+              "_PitchRate": 1,
+              "_YawCurve": {
+                "Index": 10,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_PitchCurve": {
+                "Index": 11,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 15,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawRangeRate": 1,
+              "_PitchRangeRate": 1,
+              "_YawSpeedRate": 1,
+              "_PitchSpeedRate": 1,
+              "_YawRate": 1,
+              "_PitchRate": 1,
+              "_YawCurve": {
+                "Index": 13,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_PitchCurve": {
+                "Index": 14,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              }
+            }
+          },
+          {
+            "Index": 18,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawRangeRate": 1,
+              "_PitchRangeRate": 1,
+              "_YawSpeedRate": 1,
+              "_PitchSpeedRate": 1,
+              "_YawRate": 1,
+              "_PitchRate": 1,
+              "_YawCurve": {
+                "Index": 16,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              },
+              "_PitchCurve": {
+                "Index": 17,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.25: 1"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 100,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              }
+            }
+          }
+        ],
+        "_ViewPointLimitParams": [
+          {
+            "Index": 19,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.ViewPointLimitParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawRange": "Range(-70, 90)",
+              "_PitchRange": "Range(-45, 63)"
+            }
+          }
+        ],
+        "_DampingSetting": {
+          "Index": 20,
+          "Class": "app.AppIkLookAtSettingForMentalUserData.DampingParam",
+          "Userdata": null,
+          "Fields": {
+            "_Enable": true,
+            "_Damping": 0.8,
+            "_Omega": 20,
+            "_OnChangeTargetStrength": 5,
+            "_EnableWarp": true,
+            "_WarpDistanceFromTarget": 0.5
+          }
+        },
+        "_LookAtTimeRateRange": "Range(1, 0.5)",
+        "_SpeedRateRange": "Range(0.5, 0.75)",
+        "_DisengageSpeedRateRange": "Range(1, 0)",
+        "_LookAtDelayTimeRate": 1,
+        "_TaskIgnorePriorityThreshold": -1
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.AppIkLookAtSettingForMentalUserData.EyeJointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawRangeRate": 1,
+        "_PitchRangeRate": 1,
+        "_YawSpeedRate": 1,
+        "_PitchSpeedRate": 1,
+        "_YawRate": 1,
+        "_PitchRate": 1,
+        "_YawCurve": {
+          "Ref": 1,
+          "Class": "via.AnimationCurve"
+        },
+        "_PitchCurve": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawRangeRate": 1,
+        "_PitchRangeRate": 1,
+        "_YawSpeedRate": 1,
+        "_PitchSpeedRate": 1,
+        "_YawRate": 1,
+        "_PitchRate": 1,
+        "_YawCurve": {
+          "Ref": 4,
+          "Class": "via.AnimationCurve"
+        },
+        "_PitchCurve": {
+          "Ref": 5,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawRangeRate": 1,
+        "_PitchRangeRate": 1,
+        "_YawSpeedRate": 1,
+        "_PitchSpeedRate": 1,
+        "_YawRate": 1,
+        "_PitchRate": 1,
+        "_YawCurve": {
+          "Ref": 7,
+          "Class": "via.AnimationCurve"
+        },
+        "_PitchCurve": {
+          "Ref": 8,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawRangeRate": 1,
+        "_PitchRangeRate": 1,
+        "_YawSpeedRate": 1,
+        "_PitchSpeedRate": 1,
+        "_YawRate": 1,
+        "_PitchRate": 1,
+        "_YawCurve": {
+          "Ref": 10,
+          "Class": "via.AnimationCurve"
+        },
+        "_PitchCurve": {
+          "Ref": 11,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawRangeRate": 1,
+        "_PitchRangeRate": 1,
+        "_YawSpeedRate": 1,
+        "_PitchSpeedRate": 1,
+        "_YawRate": 1,
+        "_PitchRate": 1,
+        "_YawCurve": {
+          "Ref": 13,
+          "Class": "via.AnimationCurve"
+        },
+        "_PitchCurve": {
+          "Ref": 14,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.25: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawRangeRate": 1,
+        "_PitchRangeRate": 1,
+        "_YawSpeedRate": 1,
+        "_PitchSpeedRate": 1,
+        "_YawRate": 1,
+        "_PitchRate": 1,
+        "_YawCurve": {
+          "Ref": 16,
+          "Class": "via.AnimationCurve"
+        },
+        "_PitchCurve": {
+          "Ref": 17,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.AppIkLookAtSettingForMentalUserData.ViewPointLimitParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawRange": "Range(-70, 90)",
+        "_PitchRange": "Range(-45, 63)"
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.AppIkLookAtSettingForMentalUserData.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_Damping": 0.8,
+        "_Omega": 20,
+        "_OnChangeTargetStrength": 5,
+        "_EnableWarp": true,
+        "_WarpDistanceFromTarget": 0.5
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.AppIkLookAtSettingForMentalUserData",
+      "Userdata": null,
+      "Fields": {
+        "_EyeJointSetting": {
+          "Ref": 3,
+          "Class": "app.AppIkLookAtSettingForMentalUserData.EyeJointParam"
+        },
+        "_JointSettings": [
+          {
+            "Ref": 6,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.JointParam"
+          }
+        ],
+        "_ViewPointLimitParams": [
+          {
+            "Ref": 19,
+            "Class": "app.AppIkLookAtSettingForMentalUserData.ViewPointLimitParam"
+          }
+        ],
+        "_DampingSetting": {
+          "Ref": 20,
+          "Class": "app.AppIkLookAtSettingForMentalUserData.DampingParam"
+        },
+        "_LookAtTimeRateRange": "Range(1, 0.5)",
+        "_SpeedRateRange": "Range(0.5, 0.75)",
+        "_DisengageSpeedRateRange": "Range(1, 0)",
+        "_LookAtDelayTimeRate": 1,
+        "_TaskIgnorePriorityThreshold": -1
+      }
+    }
+  ]
+}

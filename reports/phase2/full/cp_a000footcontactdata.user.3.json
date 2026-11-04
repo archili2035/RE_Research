@@ -1,0 +1,159 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000footcontactdata.user.3",
+  "Objects": [
+    {
+      "Index": 5,
+      "Class": "app.character.FootContactUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsRootControl": false,
+        "_IsRootSpace": false,
+        "_SkeletonRatio": -1,
+        "_HeightMargin": 0.01,
+        "_ContactSpeedBase": 0.65,
+        "_LeaveSpeedBase": 0.72,
+        "_SlideLengthBase": 0.5,
+        "_SlideAngleBase": 20,
+        "_SlideAngleSpeedBase": 37.5,
+        "_FastSlideRootAccelBase": 16,
+        "_FastSlideRootSpeedBase": 2.5,
+        "_FastSlideAccelBase": 60,
+        "_ShuffleSpeedLimit": 1.4,
+        "_MotionStatusSettingListData": {
+          "Index": 0,
+          "Class": "",
+          "Userdata": null,
+          "Fields": {}
+        },
+        "_LimbSettingList": [
+          {
+            "Index": 2,
+            "Class": "app.character.LimbSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointName": "L_Leg_Toes",
+              "_Axis": 1,
+              "_UseVirtualGround": false,
+              "_GroundJointName": "",
+              "_SoundLimbUserData": {
+                "Index": 1,
+                "Class": "app.character.SoundLimbUserData",
+                "Userdata": "Sound/Asset/SoundLimb/snd_SoundLimb_SND_AUTO_CH0100_MT_FS_WALK_L.user",
+                "Fields": {}
+              },
+              "_VFXEmit": false,
+              "RayDistOffset": 0
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.character.LimbSetting",
+            "Userdata": null,
+            "Fields": {
+              "_JointName": "R_Leg_Toes",
+              "_Axis": 5,
+              "_UseVirtualGround": false,
+              "_GroundJointName": "",
+              "_SoundLimbUserData": {
+                "Index": 3,
+                "Class": "app.character.SoundLimbUserData",
+                "Userdata": "Sound/Asset/SoundLimb/snd_SoundLimb_SND_AUTO_CH0100_MT_FS_WALK_R.user",
+                "Fields": {}
+              },
+              "_VFXEmit": false,
+              "RayDistOffset": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.character.SoundLimbUserData",
+      "Userdata": "Sound/Asset/SoundLimb/snd_SoundLimb_SND_AUTO_CH0100_MT_FS_WALK_L.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.character.LimbSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "L_Leg_Toes",
+        "_Axis": 1,
+        "_UseVirtualGround": false,
+        "_GroundJointName": "",
+        "_SoundLimbUserData": {
+          "Ref": 1,
+          "Class": "app.character.SoundLimbUserData"
+        },
+        "_VFXEmit": false,
+        "RayDistOffset": 0
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.character.SoundLimbUserData",
+      "Userdata": "Sound/Asset/SoundLimb/snd_SoundLimb_SND_AUTO_CH0100_MT_FS_WALK_R.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "app.character.LimbSetting",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "R_Leg_Toes",
+        "_Axis": 5,
+        "_UseVirtualGround": false,
+        "_GroundJointName": "",
+        "_SoundLimbUserData": {
+          "Ref": 3,
+          "Class": "app.character.SoundLimbUserData"
+        },
+        "_VFXEmit": false,
+        "RayDistOffset": 0
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.character.FootContactUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsRootControl": false,
+        "_IsRootSpace": false,
+        "_SkeletonRatio": -1,
+        "_HeightMargin": 0.01,
+        "_ContactSpeedBase": 0.65,
+        "_LeaveSpeedBase": 0.72,
+        "_SlideLengthBase": 0.5,
+        "_SlideAngleBase": 20,
+        "_SlideAngleSpeedBase": 37.5,
+        "_FastSlideRootAccelBase": 16,
+        "_FastSlideRootSpeedBase": 2.5,
+        "_FastSlideAccelBase": 60,
+        "_ShuffleSpeedLimit": 1.4,
+        "_MotionStatusSettingListData": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "_LimbSettingList": [
+          {
+            "Ref": 2,
+            "Class": "app.character.LimbSetting"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.character.LimbSetting"
+          }
+        ]
+      }
+    }
+  ]
+}

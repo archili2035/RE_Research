@@ -1,0 +1,49 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playershadowfacecommonlodprocessrule.user.3",
+  "Objects": [
+    {
+      "Index": 2,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": null,
+      "Fields": {
+        "_Section": {
+          "Index": 1,
+          "Class": "app.lod.LODProcessSection",
+          "Userdata": null,
+          "Fields": {
+            "_Rules": [],
+            "_Adapts": []
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.lod.LODProcessSection",
+      "Userdata": null,
+      "Fields": {
+        "_Rules": [],
+        "_Adapts": []
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": null,
+      "Fields": {
+        "_Section": {
+          "Ref": 1,
+          "Class": "app.lod.LODProcessSection"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/lookat/cp_a000iklookatposture_holding.user.3",
+  "Objects": [
+    {
+      "Index": 7,
+      "Class": "app.AppIkLookAtSettingForPostureUserData",
+      "Userdata": null,
+      "Fields": {
+        "_EyeJointSetting": {
+          "Index": 1,
+          "Class": "app.AppIkLookAtSettingForPostureUserData.EyeJointParam",
+          "Userdata": null,
+          "Fields": {
+            "_YawSpeed": 4.8869224,
+            "_PitchSpeed": 4.3633237,
+            "_YawRange": "Range(-0.6632251, 1.3264502)",
+            "_PitchRange": "Range(-0.08726647, 0.2617994)",
+            "_YawRate": 0.5,
+            "_PitchRate": 0.2
+          }
+        },
+        "_JointSettings": [
+          {
+            "Index": 2,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawSpeed": 0.5235988,
+              "_PitchSpeed": 0.5235988,
+              "_YawRange": "Range(-0.34906587, 0.6108653)",
+              "_PitchRange": "Range(-0.20943953, 0.2617994)",
+              "_YawRate": 0.4,
+              "_PitchRate": 0.32,
+              "STRUCT__ForceInterpolateTime__HasValue": false,
+              "STRUCT__ForceInterpolateTime__Value": 0
+            }
+          },
+          {
+            "Index": 3,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawSpeed": 0.43633235,
+              "_PitchSpeed": 0.43633235,
+              "_YawRange": "Range(-0.34906587, 0.7853982)",
+              "_PitchRange": "Range(-0.34906587, 0.43633235)",
+              "_YawRate": 0.3,
+              "_PitchRate": 0.15,
+              "STRUCT__ForceInterpolateTime__HasValue": false,
+              "STRUCT__ForceInterpolateTime__Value": 0
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawSpeed": 0.43633235,
+              "_PitchSpeed": 0.43633235,
+              "_YawRange": "Range(-0.34906587, 0.7853982)",
+              "_PitchRange": "Range(-0.34906587, 0.45378563)",
+              "_YawRate": 0.2,
+              "_PitchRate": 0.15,
+              "STRUCT__ForceInterpolateTime__HasValue": false,
+              "STRUCT__ForceInterpolateTime__Value": 0
+            }
+          },
+          {
+            "Index": 5,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawSpeed": 0.2617994,
+              "_PitchSpeed": 0.2617994,
+              "_YawRange": "Range(-0.31415927, 0.8377581)",
+              "_PitchRange": "Range(-0.122173056, 0.20943953)",
+              "_YawRate": 0.1,
+              "_PitchRate": 0.1,
+              "STRUCT__ForceInterpolateTime__HasValue": false,
+              "STRUCT__ForceInterpolateTime__Value": 0
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+            "Userdata": null,
+            "Fields": {
+              "_YawSpeed": 0.2617994,
+              "_PitchSpeed": 0.2617994,
+              "_YawRange": "Range(-0.31415927, 0.8377581)",
+              "_PitchRange": "Range(-0.122173056, 0.20943953)",
+              "_YawRate": 0.1,
+              "_PitchRate": 0.05,
+              "STRUCT__ForceInterpolateTime__HasValue": false,
+              "STRUCT__ForceInterpolateTime__Value": 0
+            }
+          }
+        ],
+        "_DisengageSpeedRateRange": "Range(1, 0)",
+        "STRUCT__ForceIterpTime__HasValue": false,
+        "STRUCT__ForceIterpTime__Value": 0
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.AppIkLookAtSettingForPostureUserData.EyeJointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawSpeed": 4.8869224,
+        "_PitchSpeed": 4.3633237,
+        "_YawRange": "Range(-0.6632251, 1.3264502)",
+        "_PitchRange": "Range(-0.08726647, 0.2617994)",
+        "_YawRate": 0.5,
+        "_PitchRate": 0.2
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawSpeed": 0.5235988,
+        "_PitchSpeed": 0.5235988,
+        "_YawRange": "Range(-0.34906587, 0.6108653)",
+        "_PitchRange": "Range(-0.20943953, 0.2617994)",
+        "_YawRate": 0.4,
+        "_PitchRate": 0.32,
+        "STRUCT__ForceInterpolateTime__HasValue": false,
+        "STRUCT__ForceInterpolateTime__Value": 0
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawSpeed": 0.43633235,
+        "_PitchSpeed": 0.43633235,
+        "_YawRange": "Range(-0.34906587, 0.7853982)",
+        "_PitchRange": "Range(-0.34906587, 0.43633235)",
+        "_YawRate": 0.3,
+        "_PitchRate": 0.15,
+        "STRUCT__ForceInterpolateTime__HasValue": false,
+        "STRUCT__ForceInterpolateTime__Value": 0
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawSpeed": 0.43633235,
+        "_PitchSpeed": 0.43633235,
+        "_YawRange": "Range(-0.34906587, 0.7853982)",
+        "_PitchRange": "Range(-0.34906587, 0.45378563)",
+        "_YawRate": 0.2,
+        "_PitchRate": 0.15,
+        "STRUCT__ForceInterpolateTime__HasValue": false,
+        "STRUCT__ForceInterpolateTime__Value": 0
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawSpeed": 0.2617994,
+        "_PitchSpeed": 0.2617994,
+        "_YawRange": "Range(-0.31415927, 0.8377581)",
+        "_PitchRange": "Range(-0.122173056, 0.20943953)",
+        "_YawRate": 0.1,
+        "_PitchRate": 0.1,
+        "STRUCT__ForceInterpolateTime__HasValue": false,
+        "STRUCT__ForceInterpolateTime__Value": 0
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam",
+      "Userdata": null,
+      "Fields": {
+        "_YawSpeed": 0.2617994,
+        "_PitchSpeed": 0.2617994,
+        "_YawRange": "Range(-0.31415927, 0.8377581)",
+        "_PitchRange": "Range(-0.122173056, 0.20943953)",
+        "_YawRate": 0.1,
+        "_PitchRate": 0.05,
+        "STRUCT__ForceInterpolateTime__HasValue": false,
+        "STRUCT__ForceInterpolateTime__Value": 0
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.AppIkLookAtSettingForPostureUserData",
+      "Userdata": null,
+      "Fields": {
+        "_EyeJointSetting": {
+          "Ref": 1,
+          "Class": "app.AppIkLookAtSettingForPostureUserData.EyeJointParam"
+        },
+        "_JointSettings": [
+          {
+            "Ref": 2,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.AppIkLookAtSettingForPostureUserData.JointParam"
+          }
+        ],
+        "_DisengageSpeedRateRange": "Range(1, 0)",
+        "STRUCT__ForceIterpTime__HasValue": false,
+        "STRUCT__ForceIterpTime__Value": 0
+      }
+    }
+  ]
+}

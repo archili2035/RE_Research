@@ -1,0 +1,525 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000dotcontrollerconfiguration.user.3",
+  "Objects": [
+    {
+      "Index": 13,
+      "Class": "app.DOTControllerConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_PlayerAttackFireAilmentParameter": {
+          "Index": 3,
+          "Class": "app.DOTParameter",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_ContinuousSecondsRankValue": {
+              "Index": 1,
+              "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E",
+              "Userdata": null,
+              "Fields": {
+                "_Parameter": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            },
+            "_AttackHitKey": "DOTBurn",
+            "_IsDecreaseMaxHitPoint": false,
+            "_DecreaseHitPointBorder": 200,
+            "_DecreaseMaxHitPointRate": {
+              "Index": 2,
+              "Class": "via.AnimationCurve",
+              "Userdata": null,
+              "Fields": {
+                "Keys": [
+                  "0: 0",
+                  "1000: 0"
+                ],
+                "MinValue": 0,
+                "MaxValue": 1,
+                "LoopStartTime": 0,
+                "LoopEndTime": 1000,
+                "LoopCount": 0,
+                "LoopWrapNo": 2
+              }
+            },
+            "_SlipDamageParSecond": 2,
+            "_UseLoopEffect": true,
+            "_EffectContainerID": 1,
+            "_EffectElementID": 0,
+            "_UseExplosionEffect": false,
+            "_HasSpreadAttack": false,
+            "_SpreadAttackColliderResourceID": 0,
+            "_SpreadAttackColliderKey": "",
+            "_SpreadAttackHitKey": ""
+          }
+        },
+        "_OtherFireAilmentParameter": {
+          "Index": 6,
+          "Class": "app.DOTParameter",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_ContinuousSecondsRankValue": {
+              "Index": 4,
+              "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E",
+              "Userdata": null,
+              "Fields": {
+                "_Parameter": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            },
+            "_AttackHitKey": "DOTBurn",
+            "_IsDecreaseMaxHitPoint": false,
+            "_DecreaseHitPointBorder": 200,
+            "_DecreaseMaxHitPointRate": {
+              "Index": 5,
+              "Class": "via.AnimationCurve",
+              "Userdata": null,
+              "Fields": {
+                "Keys": [
+                  "0: 0",
+                  "1000: 0"
+                ],
+                "MinValue": 0,
+                "MaxValue": 1,
+                "LoopStartTime": 0,
+                "LoopEndTime": 1000,
+                "LoopCount": 0,
+                "LoopWrapNo": 2
+              }
+            },
+            "_SlipDamageParSecond": 2,
+            "_UseLoopEffect": true,
+            "_EffectContainerID": 1,
+            "_EffectElementID": 0,
+            "_UseExplosionEffect": false,
+            "_HasSpreadAttack": false,
+            "_SpreadAttackColliderResourceID": 0,
+            "_SpreadAttackColliderKey": "",
+            "_SpreadAttackHitKey": ""
+          }
+        },
+        "_AcidAilmentParameter": {
+          "Index": 9,
+          "Class": "app.DOTParameter",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": false,
+            "_ContinuousSecondsRankValue": {
+              "Index": 7,
+              "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E",
+              "Userdata": null,
+              "Fields": {
+                "_Parameter": [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ]
+              }
+            },
+            "_AttackHitKey": "DOTAcid",
+            "_IsDecreaseMaxHitPoint": false,
+            "_DecreaseHitPointBorder": 200,
+            "_DecreaseMaxHitPointRate": {
+              "Index": 8,
+              "Class": "via.AnimationCurve",
+              "Userdata": null,
+              "Fields": {
+                "Keys": [
+                  "0: 0",
+                  "1000: 0"
+                ],
+                "MinValue": 0,
+                "MaxValue": 1,
+                "LoopStartTime": 0,
+                "LoopEndTime": 1000,
+                "LoopCount": 0,
+                "LoopWrapNo": 2
+              }
+            },
+            "_SlipDamageParSecond": 2,
+            "_UseLoopEffect": false,
+            "_EffectContainerID": 1,
+            "_EffectElementID": 0,
+            "_UseExplosionEffect": false,
+            "_HasSpreadAttack": false,
+            "_SpreadAttackColliderResourceID": 0,
+            "_SpreadAttackColliderKey": "",
+            "_SpreadAttackHitKey": ""
+          }
+        },
+        "_SickAilmentParameter": {
+          "Index": 12,
+          "Class": "app.DOTParameter",
+          "Userdata": null,
+          "Fields": {
+            "_IsEnable": true,
+            "_ContinuousSecondsRankValue": {
+              "Index": 10,
+              "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E",
+              "Userdata": null,
+              "Fields": {
+                "_Parameter": [
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1,
+                  -1
+                ]
+              }
+            },
+            "_AttackHitKey": "",
+            "_IsDecreaseMaxHitPoint": false,
+            "_DecreaseHitPointBorder": 200,
+            "_DecreaseMaxHitPointRate": {
+              "Index": 11,
+              "Class": "via.AnimationCurve",
+              "Userdata": null,
+              "Fields": {
+                "Keys": [
+                  "0: 0",
+                  "400: 0.3",
+                  "1000: 0.6"
+                ],
+                "MinValue": 0,
+                "MaxValue": 1,
+                "LoopStartTime": 0,
+                "LoopEndTime": 1000,
+                "LoopCount": 0,
+                "LoopWrapNo": 2
+              }
+            },
+            "_SlipDamageParSecond": 0,
+            "_UseLoopEffect": false,
+            "_EffectContainerID": 1,
+            "_EffectElementID": 0,
+            "_UseExplosionEffect": false,
+            "_HasSpreadAttack": false,
+            "_SpreadAttackColliderResourceID": 0,
+            "_SpreadAttackColliderKey": "",
+            "_SpreadAttackHitKey": ""
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Parameter": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1000: 0"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1000,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.DOTParameter",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ContinuousSecondsRankValue": {
+          "Ref": 1,
+          "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E"
+        },
+        "_AttackHitKey": "DOTBurn",
+        "_IsDecreaseMaxHitPoint": false,
+        "_DecreaseHitPointBorder": 200,
+        "_DecreaseMaxHitPointRate": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        },
+        "_SlipDamageParSecond": 2,
+        "_UseLoopEffect": true,
+        "_EffectContainerID": 1,
+        "_EffectElementID": 0,
+        "_UseExplosionEffect": false,
+        "_HasSpreadAttack": false,
+        "_SpreadAttackColliderResourceID": 0,
+        "_SpreadAttackColliderKey": "",
+        "_SpreadAttackHitKey": ""
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Parameter": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1000: 0"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1000,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.DOTParameter",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ContinuousSecondsRankValue": {
+          "Ref": 4,
+          "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E"
+        },
+        "_AttackHitKey": "DOTBurn",
+        "_IsDecreaseMaxHitPoint": false,
+        "_DecreaseHitPointBorder": 200,
+        "_DecreaseMaxHitPointRate": {
+          "Ref": 5,
+          "Class": "via.AnimationCurve"
+        },
+        "_SlipDamageParSecond": 2,
+        "_UseLoopEffect": true,
+        "_EffectContainerID": 1,
+        "_EffectElementID": 0,
+        "_UseExplosionEffect": false,
+        "_HasSpreadAttack": false,
+        "_SpreadAttackColliderResourceID": 0,
+        "_SpreadAttackColliderKey": "",
+        "_SpreadAttackHitKey": ""
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Parameter": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1000: 0"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1000,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.DOTParameter",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": false,
+        "_ContinuousSecondsRankValue": {
+          "Ref": 7,
+          "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E"
+        },
+        "_AttackHitKey": "DOTAcid",
+        "_IsDecreaseMaxHitPoint": false,
+        "_DecreaseHitPointBorder": 200,
+        "_DecreaseMaxHitPointRate": {
+          "Ref": 8,
+          "Class": "via.AnimationCurve"
+        },
+        "_SlipDamageParSecond": 2,
+        "_UseLoopEffect": false,
+        "_EffectContainerID": 1,
+        "_EffectElementID": 0,
+        "_UseExplosionEffect": false,
+        "_HasSpreadAttack": false,
+        "_SpreadAttackColliderResourceID": 0,
+        "_SpreadAttackColliderKey": "",
+        "_SpreadAttackHitKey": ""
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Parameter": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "400: 0.3",
+          "1000: 0.6"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1000,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.DOTParameter",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ContinuousSecondsRankValue": {
+          "Ref": 10,
+          "Class": "app.RankBorderValueHolder\u00601\u003CSystem.Single\u003E"
+        },
+        "_AttackHitKey": "",
+        "_IsDecreaseMaxHitPoint": false,
+        "_DecreaseHitPointBorder": 200,
+        "_DecreaseMaxHitPointRate": {
+          "Ref": 11,
+          "Class": "via.AnimationCurve"
+        },
+        "_SlipDamageParSecond": 0,
+        "_UseLoopEffect": false,
+        "_EffectContainerID": 1,
+        "_EffectElementID": 0,
+        "_UseExplosionEffect": false,
+        "_HasSpreadAttack": false,
+        "_SpreadAttackColliderResourceID": 0,
+        "_SpreadAttackColliderKey": "",
+        "_SpreadAttackHitKey": ""
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.DOTControllerConfigurationUserData",
+      "Userdata": null,
+      "Fields": {
+        "_PlayerAttackFireAilmentParameter": {
+          "Ref": 3,
+          "Class": "app.DOTParameter"
+        },
+        "_OtherFireAilmentParameter": {
+          "Ref": 6,
+          "Class": "app.DOTParameter"
+        },
+        "_AcidAilmentParameter": {
+          "Ref": 9,
+          "Class": "app.DOTParameter"
+        },
+        "_SickAilmentParameter": {
+          "Ref": 12,
+          "Class": "app.DOTParameter"
+        }
+      }
+    }
+  ]
+}

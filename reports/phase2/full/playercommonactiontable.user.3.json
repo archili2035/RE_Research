@@ -1,0 +1,3321 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playercommonactiontable.user.3",
+  "Objects": [
+    {
+      "Index": 83,
+      "Class": "app.ActionTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Actions": [
+          {
+            "Index": 1,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Idle",
+              "_ActionHash": 3389212796,
+              "_ActionCategory": 0,
+              "_Priority": 9000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 1,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 2,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Move",
+              "_ActionHash": 876602883,
+              "_ActionCategory": 0,
+              "_Priority": 9000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 2,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 3,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "HoldIdle",
+              "_ActionHash": 1842661656,
+              "_ActionCategory": 0,
+              "_Priority": 9000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 4,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "HoldMove",
+              "_ActionHash": 1432221759,
+              "_ActionCategory": 0,
+              "_Priority": 9000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 5,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Run",
+              "_ActionHash": 847302998,
+              "_ActionCategory": 0,
+              "_Priority": 9000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 6,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Reaction.DefaultLow",
+              "_ActionHash": 2637513032,
+              "_ActionCategory": 9,
+              "_Priority": 9000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 7,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "AfterDamage",
+              "_ActionHash": 3143429287,
+              "_ActionCategory": 0,
+              "_Priority": 8900,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 8,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "QuickTurn",
+              "_ActionHash": 3209109388,
+              "_ActionCategory": 0,
+              "_Priority": 8100,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 16384,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 9,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "MeleeAttack.Kick",
+              "_ActionHash": 505183491,
+              "_ActionCategory": 1,
+              "_Priority": 8100,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4198400,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 10,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Break.DoorLockFinish",
+              "_ActionHash": 2860872671,
+              "_ActionCategory": 1,
+              "_Priority": 8000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 11,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "MeleeAttack.MeleeAction",
+              "_ActionHash": 2959876627,
+              "_ActionCategory": 1,
+              "_Priority": 7900,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": true,
+              "_Tag": 4194336,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 12,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Break.DoorLock",
+              "_ActionHash": 1320427192,
+              "_ActionCategory": 1,
+              "_Priority": 7800,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": true,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 13,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Break.OnShelf",
+              "_ActionHash": 992262312,
+              "_ActionCategory": 1,
+              "_Priority": 7800,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 14,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Break.Ground",
+              "_ActionHash": 1136695491,
+              "_ActionCategory": 1,
+              "_Priority": 7800,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 15,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Throwing",
+              "_ActionHash": 3260109019,
+              "_ActionCategory": 0,
+              "_Priority": 7700,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 16,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Reaction.DefaultHigh",
+              "_ActionHash": 2189132218,
+              "_ActionCategory": 9,
+              "_Priority": 8700,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 17,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Slip",
+              "_ActionHash": 342317888,
+              "_ActionCategory": 0,
+              "_Priority": 4800,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194816,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 18,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Climb.ClimbOverWindow",
+              "_ActionHash": 1626899679,
+              "_ActionCategory": 7,
+              "_Priority": 4000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194816,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 19,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Climb.LowClimbOver",
+              "_ActionHash": 2530868427,
+              "_ActionCategory": 7,
+              "_Priority": 4000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194816,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 20,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Climb.LowWall",
+              "_ActionHash": 617671201,
+              "_ActionCategory": 7,
+              "_Priority": 4000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194816,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 21,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Climb.AxeHighWall",
+              "_ActionHash": 448122892,
+              "_ActionCategory": 7,
+              "_Priority": 4000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194816,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 22,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Climb.ClimbOverWindowBreak",
+              "_ActionHash": 1518571659,
+              "_ActionCategory": 7,
+              "_Priority": 4000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194816,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 23,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Climb.AxeHighClimbOver",
+              "_ActionHash": 934743401,
+              "_ActionCategory": 7,
+              "_Priority": 4000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194816,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 24,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Fall",
+              "_ActionHash": 3944215113,
+              "_ActionCategory": 0,
+              "_Priority": 4000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 6291456,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 25,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Landing",
+              "_ActionHash": 2810633879,
+              "_ActionCategory": 0,
+              "_Priority": 3900,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4195328,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 26,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.Default",
+              "_ActionHash": 1726166575,
+              "_ActionCategory": 0,
+              "_Priority": 3600,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 27,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.EnemyWatchL",
+              "_ActionHash": 2693607560,
+              "_ActionCategory": 0,
+              "_Priority": 3590,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 28,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.EnemyWatchR",
+              "_ActionHash": 2149362479,
+              "_ActionCategory": 0,
+              "_Priority": 3590,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 29,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.Jump",
+              "_ActionHash": 2767318373,
+              "_ActionCategory": 0,
+              "_Priority": 3570,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 30,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.JumpStart",
+              "_ActionHash": 2940564614,
+              "_ActionCategory": 0,
+              "_Priority": 3565,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 31,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.Landing",
+              "_ActionHash": 3756798955,
+              "_ActionCategory": 0,
+              "_Priority": 3560,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 32,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActCautionGround",
+              "_ActionHash": 2374436728,
+              "_ActionCategory": 0,
+              "_Priority": 3554,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 33,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActCautionHead",
+              "_ActionHash": 798198682,
+              "_ActionCategory": 0,
+              "_Priority": 3554,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 34,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActAccel",
+              "_ActionHash": 2683136647,
+              "_ActionCategory": 0,
+              "_Priority": 3555,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 35,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActBrake",
+              "_ActionHash": 2678264503,
+              "_ActionCategory": 0,
+              "_Priority": 3555,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 36,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ShiftDown",
+              "_ActionHash": 1456779436,
+              "_ActionCategory": 0,
+              "_Priority": 3555,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 37,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.GrazeHit",
+              "_ActionHash": 2190515315,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 38,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActWheelie",
+              "_ActionHash": 1720445923,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 39,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActDriftTurn",
+              "_ActionHash": 2361211260,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 40,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActDriftTurn_A",
+              "_ActionHash": 1941225351,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 41,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActDriftTurn_B",
+              "_ActionHash": 2805960752,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 42,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActDriftTurn_C",
+              "_ActionHash": 2708385671,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 43,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ShiftUp",
+              "_ActionHash": 4089799955,
+              "_ActionCategory": 0,
+              "_Priority": 3555,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 44,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActTurnToRestart_A",
+              "_ActionHash": 2490055912,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 45,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActTurnToRestart_B",
+              "_ActionHash": 3054016394,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 46,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActTurnToRestart_C",
+              "_ActionHash": 84357623,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 47,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActTurnToRestart_D",
+              "_ActionHash": 1436135102,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 48,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.Hold",
+              "_ActionHash": 1078056190,
+              "_ActionCategory": 0,
+              "_Priority": 3550,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 16,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 49,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.HoldEnd",
+              "_ActionHash": 298622512,
+              "_ActionCategory": 0,
+              "_Priority": 3550,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 50,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.Reload",
+              "_ActionHash": 1989796640,
+              "_ActionCategory": 0,
+              "_Priority": 3540,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 51,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActClash",
+              "_ActionHash": 1313187820,
+              "_ActionCategory": 0,
+              "_Priority": 3530,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 52,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActLanding",
+              "_ActionHash": 632088871,
+              "_ActionCategory": 0,
+              "_Priority": 3520,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 53,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActStopExplosion",
+              "_ActionHash": 3568403962,
+              "_ActionCategory": 0,
+              "_Priority": 3520,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 54,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "GetSpecialWeapon",
+              "_ActionHash": 1848306136,
+              "_ActionCategory": 0,
+              "_Priority": 3500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 55,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "DisposeSpecialWeapon",
+              "_ActionHash": 363058719,
+              "_ActionCategory": 0,
+              "_Priority": 3400,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 56,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "GrappleInterrupt",
+              "_ActionHash": 87348813,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 57,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "BloodDrawing",
+              "_ActionHash": 3180323914,
+              "_ActionCategory": 0,
+              "_Priority": 3000,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 58,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Occupied.Low",
+              "_ActionHash": 2310297153,
+              "_ActionCategory": 8,
+              "_Priority": 3000,
+              "_ThinkOff": true,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 59,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.HeadSmall",
+              "_ActionHash": 1508655403,
+              "_ActionCategory": 3,
+              "_Priority": 2900,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 60,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.BodyMedium",
+              "_ActionHash": 3542644386,
+              "_ActionCategory": 3,
+              "_Priority": 2800,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 61,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.HeadMedium",
+              "_ActionHash": 1299658975,
+              "_ActionCategory": 3,
+              "_Priority": 2800,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 62,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.HeadLarge",
+              "_ActionHash": 3849885271,
+              "_ActionCategory": 3,
+              "_Priority": 2700,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 63,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.BodyLarge",
+              "_ActionHash": 3724359166,
+              "_ActionCategory": 3,
+              "_Priority": 2700,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 64,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.Arm0502",
+              "_ActionHash": 872781124,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 65,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.BlowAway",
+              "_ActionHash": 3133151806,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 66,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.ExplosionSmall",
+              "_ActionHash": 3136769848,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 67,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.ExplosionMedium",
+              "_ActionHash": 76826711,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 68,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.ExplosionLarge",
+              "_ActionHash": 2687660037,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 69,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.ElectricSmall",
+              "_ActionHash": 2705255267,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 70,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.ElectricMedium",
+              "_ActionHash": 115245771,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 71,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.ElectricLarge",
+              "_ActionHash": 3036593960,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 72,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.ExplosionSelf",
+              "_ActionHash": 1116791910,
+              "_ActionCategory": 3,
+              "_Priority": 2500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 73,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Damage.BodyMediumBreakGm",
+              "_ActionHash": 513490322,
+              "_ActionCategory": 3,
+              "_Priority": 2800,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 74,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActJump",
+              "_ActionHash": 3213511329,
+              "_ActionCategory": 0,
+              "_Priority": 2400,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 75,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActMiddleJump",
+              "_ActionHash": 2935708164,
+              "_ActionCategory": 0,
+              "_Priority": 2400,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 76,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Bike.ActHighJump",
+              "_ActionHash": 4171944433,
+              "_ActionCategory": 0,
+              "_Priority": 2400,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 77,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Parry",
+              "_ActionHash": 3873251877,
+              "_ActionCategory": 1,
+              "_Priority": 1800,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": true,
+              "_PermitRepeatable": false,
+              "_Tag": 1077936128,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 78,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "EmergencyAvoidance",
+              "_ActionHash": 2880481415,
+              "_ActionCategory": 0,
+              "_Priority": 1500,
+              "_ThinkOff": false,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 79,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Dead.Bike",
+              "_ActionHash": 2194447617,
+              "_ActionCategory": 4,
+              "_Priority": 1000,
+              "_ThinkOff": true,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 80,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Dead.Empty",
+              "_ActionHash": 2986521753,
+              "_ActionCategory": 4,
+              "_Priority": 1000,
+              "_ThinkOff": true,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 81,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Dead.Default",
+              "_ActionHash": 2561163528,
+              "_ActionCategory": 4,
+              "_Priority": 1000,
+              "_ThinkOff": true,
+              "_DisableUpdateContextTransform": true,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 4194304,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          },
+          {
+            "Index": 82,
+            "Class": "app.ActionData",
+            "Userdata": null,
+            "Fields": {
+              "_ActionName": "Occupied.Default",
+              "_ActionHash": 1001403660,
+              "_ActionCategory": 8,
+              "_Priority": 900,
+              "_ThinkOff": true,
+              "_DisableUpdateContextTransform": false,
+              "_Repeatable": false,
+              "_PermitRepeatable": false,
+              "_Tag": 0,
+              "_RoleActionTag": 0,
+              "_ActionAdditionalTags": []
+            }
+          }
+        ],
+        "_PriorityDefinitions": [],
+        "_AddtionalActions": [],
+        "_ActionSubTables": [],
+        "_TagEnumType": "app.PlayerDefine.ActionFlag",
+        "_AdditionalTags": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Idle",
+        "_ActionHash": 3389212796,
+        "_ActionCategory": 0,
+        "_Priority": 9000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 1,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Move",
+        "_ActionHash": 876602883,
+        "_ActionCategory": 0,
+        "_Priority": 9000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 2,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "HoldIdle",
+        "_ActionHash": 1842661656,
+        "_ActionCategory": 0,
+        "_Priority": 9000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "HoldMove",
+        "_ActionHash": 1432221759,
+        "_ActionCategory": 0,
+        "_Priority": 9000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Run",
+        "_ActionHash": 847302998,
+        "_ActionCategory": 0,
+        "_Priority": 9000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Reaction.DefaultLow",
+        "_ActionHash": 2637513032,
+        "_ActionCategory": 9,
+        "_Priority": 9000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "AfterDamage",
+        "_ActionHash": 3143429287,
+        "_ActionCategory": 0,
+        "_Priority": 8900,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "QuickTurn",
+        "_ActionHash": 3209109388,
+        "_ActionCategory": 0,
+        "_Priority": 8100,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 16384,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "MeleeAttack.Kick",
+        "_ActionHash": 505183491,
+        "_ActionCategory": 1,
+        "_Priority": 8100,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4198400,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Break.DoorLockFinish",
+        "_ActionHash": 2860872671,
+        "_ActionCategory": 1,
+        "_Priority": 8000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "MeleeAttack.MeleeAction",
+        "_ActionHash": 2959876627,
+        "_ActionCategory": 1,
+        "_Priority": 7900,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": true,
+        "_Tag": 4194336,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Break.DoorLock",
+        "_ActionHash": 1320427192,
+        "_ActionCategory": 1,
+        "_Priority": 7800,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": true,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Break.OnShelf",
+        "_ActionHash": 992262312,
+        "_ActionCategory": 1,
+        "_Priority": 7800,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Break.Ground",
+        "_ActionHash": 1136695491,
+        "_ActionCategory": 1,
+        "_Priority": 7800,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Throwing",
+        "_ActionHash": 3260109019,
+        "_ActionCategory": 0,
+        "_Priority": 7700,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Reaction.DefaultHigh",
+        "_ActionHash": 2189132218,
+        "_ActionCategory": 9,
+        "_Priority": 8700,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Slip",
+        "_ActionHash": 342317888,
+        "_ActionCategory": 0,
+        "_Priority": 4800,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194816,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Climb.ClimbOverWindow",
+        "_ActionHash": 1626899679,
+        "_ActionCategory": 7,
+        "_Priority": 4000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194816,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Climb.LowClimbOver",
+        "_ActionHash": 2530868427,
+        "_ActionCategory": 7,
+        "_Priority": 4000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194816,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Climb.LowWall",
+        "_ActionHash": 617671201,
+        "_ActionCategory": 7,
+        "_Priority": 4000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194816,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Climb.AxeHighWall",
+        "_ActionHash": 448122892,
+        "_ActionCategory": 7,
+        "_Priority": 4000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194816,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Climb.ClimbOverWindowBreak",
+        "_ActionHash": 1518571659,
+        "_ActionCategory": 7,
+        "_Priority": 4000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194816,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Climb.AxeHighClimbOver",
+        "_ActionHash": 934743401,
+        "_ActionCategory": 7,
+        "_Priority": 4000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194816,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Fall",
+        "_ActionHash": 3944215113,
+        "_ActionCategory": 0,
+        "_Priority": 4000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 6291456,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Landing",
+        "_ActionHash": 2810633879,
+        "_ActionCategory": 0,
+        "_Priority": 3900,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4195328,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.Default",
+        "_ActionHash": 1726166575,
+        "_ActionCategory": 0,
+        "_Priority": 3600,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.EnemyWatchL",
+        "_ActionHash": 2693607560,
+        "_ActionCategory": 0,
+        "_Priority": 3590,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.EnemyWatchR",
+        "_ActionHash": 2149362479,
+        "_ActionCategory": 0,
+        "_Priority": 3590,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.Jump",
+        "_ActionHash": 2767318373,
+        "_ActionCategory": 0,
+        "_Priority": 3570,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.JumpStart",
+        "_ActionHash": 2940564614,
+        "_ActionCategory": 0,
+        "_Priority": 3565,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.Landing",
+        "_ActionHash": 3756798955,
+        "_ActionCategory": 0,
+        "_Priority": 3560,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActCautionGround",
+        "_ActionHash": 2374436728,
+        "_ActionCategory": 0,
+        "_Priority": 3554,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActCautionHead",
+        "_ActionHash": 798198682,
+        "_ActionCategory": 0,
+        "_Priority": 3554,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActAccel",
+        "_ActionHash": 2683136647,
+        "_ActionCategory": 0,
+        "_Priority": 3555,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActBrake",
+        "_ActionHash": 2678264503,
+        "_ActionCategory": 0,
+        "_Priority": 3555,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ShiftDown",
+        "_ActionHash": 1456779436,
+        "_ActionCategory": 0,
+        "_Priority": 3555,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.GrazeHit",
+        "_ActionHash": 2190515315,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActWheelie",
+        "_ActionHash": 1720445923,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActDriftTurn",
+        "_ActionHash": 2361211260,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActDriftTurn_A",
+        "_ActionHash": 1941225351,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 41,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActDriftTurn_B",
+        "_ActionHash": 2805960752,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActDriftTurn_C",
+        "_ActionHash": 2708385671,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 43,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ShiftUp",
+        "_ActionHash": 4089799955,
+        "_ActionCategory": 0,
+        "_Priority": 3555,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActTurnToRestart_A",
+        "_ActionHash": 2490055912,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActTurnToRestart_B",
+        "_ActionHash": 3054016394,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActTurnToRestart_C",
+        "_ActionHash": 84357623,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActTurnToRestart_D",
+        "_ActionHash": 1436135102,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.Hold",
+        "_ActionHash": 1078056190,
+        "_ActionCategory": 0,
+        "_Priority": 3550,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 16,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.HoldEnd",
+        "_ActionHash": 298622512,
+        "_ActionCategory": 0,
+        "_Priority": 3550,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.Reload",
+        "_ActionHash": 1989796640,
+        "_ActionCategory": 0,
+        "_Priority": 3540,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActClash",
+        "_ActionHash": 1313187820,
+        "_ActionCategory": 0,
+        "_Priority": 3530,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActLanding",
+        "_ActionHash": 632088871,
+        "_ActionCategory": 0,
+        "_Priority": 3520,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActStopExplosion",
+        "_ActionHash": 3568403962,
+        "_ActionCategory": 0,
+        "_Priority": 3520,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "GetSpecialWeapon",
+        "_ActionHash": 1848306136,
+        "_ActionCategory": 0,
+        "_Priority": 3500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "DisposeSpecialWeapon",
+        "_ActionHash": 363058719,
+        "_ActionCategory": 0,
+        "_Priority": 3400,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "GrappleInterrupt",
+        "_ActionHash": 87348813,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "BloodDrawing",
+        "_ActionHash": 3180323914,
+        "_ActionCategory": 0,
+        "_Priority": 3000,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Occupied.Low",
+        "_ActionHash": 2310297153,
+        "_ActionCategory": 8,
+        "_Priority": 3000,
+        "_ThinkOff": true,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.HeadSmall",
+        "_ActionHash": 1508655403,
+        "_ActionCategory": 3,
+        "_Priority": 2900,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.BodyMedium",
+        "_ActionHash": 3542644386,
+        "_ActionCategory": 3,
+        "_Priority": 2800,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.HeadMedium",
+        "_ActionHash": 1299658975,
+        "_ActionCategory": 3,
+        "_Priority": 2800,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.HeadLarge",
+        "_ActionHash": 3849885271,
+        "_ActionCategory": 3,
+        "_Priority": 2700,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.BodyLarge",
+        "_ActionHash": 3724359166,
+        "_ActionCategory": 3,
+        "_Priority": 2700,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.Arm0502",
+        "_ActionHash": 872781124,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.BlowAway",
+        "_ActionHash": 3133151806,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.ExplosionSmall",
+        "_ActionHash": 3136769848,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.ExplosionMedium",
+        "_ActionHash": 76826711,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.ExplosionLarge",
+        "_ActionHash": 2687660037,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.ElectricSmall",
+        "_ActionHash": 2705255267,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.ElectricMedium",
+        "_ActionHash": 115245771,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.ElectricLarge",
+        "_ActionHash": 3036593960,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.ExplosionSelf",
+        "_ActionHash": 1116791910,
+        "_ActionCategory": 3,
+        "_Priority": 2500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Damage.BodyMediumBreakGm",
+        "_ActionHash": 513490322,
+        "_ActionCategory": 3,
+        "_Priority": 2800,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActJump",
+        "_ActionHash": 3213511329,
+        "_ActionCategory": 0,
+        "_Priority": 2400,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActMiddleJump",
+        "_ActionHash": 2935708164,
+        "_ActionCategory": 0,
+        "_Priority": 2400,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 76,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Bike.ActHighJump",
+        "_ActionHash": 4171944433,
+        "_ActionCategory": 0,
+        "_Priority": 2400,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Parry",
+        "_ActionHash": 3873251877,
+        "_ActionCategory": 1,
+        "_Priority": 1800,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": true,
+        "_PermitRepeatable": false,
+        "_Tag": 1077936128,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 78,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "EmergencyAvoidance",
+        "_ActionHash": 2880481415,
+        "_ActionCategory": 0,
+        "_Priority": 1500,
+        "_ThinkOff": false,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Dead.Bike",
+        "_ActionHash": 2194447617,
+        "_ActionCategory": 4,
+        "_Priority": 1000,
+        "_ThinkOff": true,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Dead.Empty",
+        "_ActionHash": 2986521753,
+        "_ActionCategory": 4,
+        "_Priority": 1000,
+        "_ThinkOff": true,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Dead.Default",
+        "_ActionHash": 2561163528,
+        "_ActionCategory": 4,
+        "_Priority": 1000,
+        "_ThinkOff": true,
+        "_DisableUpdateContextTransform": true,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 4194304,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "app.ActionData",
+      "Userdata": null,
+      "Fields": {
+        "_ActionName": "Occupied.Default",
+        "_ActionHash": 1001403660,
+        "_ActionCategory": 8,
+        "_Priority": 900,
+        "_ThinkOff": true,
+        "_DisableUpdateContextTransform": false,
+        "_Repeatable": false,
+        "_PermitRepeatable": false,
+        "_Tag": 0,
+        "_RoleActionTag": 0,
+        "_ActionAdditionalTags": []
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "app.ActionTableUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Actions": [
+          {
+            "Ref": 1,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 7,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 9,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 12,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 16,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 18,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 22,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 23,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 24,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 26,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 27,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 28,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 29,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 31,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 32,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 33,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 34,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 35,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 36,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 37,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 38,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 39,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 40,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 41,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 42,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 43,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 44,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 45,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 46,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 47,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 48,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 49,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 50,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 51,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 52,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 53,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 54,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 55,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 56,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 57,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 58,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 59,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 60,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 61,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 62,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 63,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 64,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 65,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 66,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 67,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 68,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 69,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 70,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 71,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 72,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 73,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 74,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 75,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 76,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 77,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 78,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 79,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 80,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 81,
+            "Class": "app.ActionData"
+          },
+          {
+            "Ref": 82,
+            "Class": "app.ActionData"
+          }
+        ],
+        "_PriorityDefinitions": [],
+        "_AddtionalActions": [],
+        "_ActionSubTables": [],
+        "_TagEnumType": "app.PlayerDefine.ActionFlag",
+        "_AdditionalTags": []
+      }
+    }
+  ]
+}

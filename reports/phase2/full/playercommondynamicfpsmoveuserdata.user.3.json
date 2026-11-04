@@ -1,0 +1,682 @@
+{
+  "Path": "natives/stm/appsystem/character/characterprefab/playercommon/userdata/playercommondynamicfpsmoveuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 29,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DynamicFPSMoveParams": [
+          {
+            "Index": 7,
+            "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam",
+            "Userdata": null,
+            "Fields": {
+              "_Condition": {
+                "Index": 4,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 3,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 1,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 2,
+                          "Class": "app.PlayerComplexConditionParam_LightEquipment"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_CameraAngleLimitParam": {
+                "Index": 5,
+                "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+                "Userdata": null,
+                "Fields": {
+                  "_MoveStraightAngleDegRange": "Range(-3, 6)",
+                  "_AngleDegRange_FaceDown": "Range(-3, 6)",
+                  "_FaceDownAngleDegMax": 60
+                }
+              },
+              "_MotionVariableAngleLimitParam": {
+                "Index": 6,
+                "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+                "Userdata": null,
+                "Fields": {
+                  "_MoveStraightAngleDegRange": "Range(-3, 6)",
+                  "_AngleDegRange_FaceDown": "Range(-3, 6)",
+                  "_FaceDownAngleDegMax": 60
+                }
+              },
+              "_MinAngleRate": 3,
+              "_MinAngleRateOnWalkCameraInput": 3,
+              "_MinAngleRateOnRunCameraInput": 3,
+              "_MoveStartFollowTimeSec": 0.5,
+              "_MoveStartFollowAngleRate": 3,
+              "_IdleTurnRate": 7,
+              "_ReturnCameraForwardRate": 7,
+              "_ReturnImmediatelyAngleDeg": 20
+            }
+          },
+          {
+            "Index": 14,
+            "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam",
+            "Userdata": null,
+            "Fields": {
+              "_Condition": {
+                "Index": 11,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 10,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 8,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 9,
+                          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_CameraAngleLimitParam": {
+                "Index": 12,
+                "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+                "Userdata": null,
+                "Fields": {
+                  "_MoveStraightAngleDegRange": "Range(-7, 14)",
+                  "_AngleDegRange_FaceDown": "Range(-5, 10)",
+                  "_FaceDownAngleDegMax": 60
+                }
+              },
+              "_MotionVariableAngleLimitParam": {
+                "Index": 13,
+                "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+                "Userdata": null,
+                "Fields": {
+                  "_MoveStraightAngleDegRange": "Range(-45, 90)",
+                  "_AngleDegRange_FaceDown": "Range(-5, 10)",
+                  "_FaceDownAngleDegMax": 60
+                }
+              },
+              "_MinAngleRate": 0,
+              "_MinAngleRateOnWalkCameraInput": 8,
+              "_MinAngleRateOnRunCameraInput": 8,
+              "_MoveStartFollowTimeSec": 0.5,
+              "_MoveStartFollowAngleRate": 3,
+              "_IdleTurnRate": 10,
+              "_ReturnCameraForwardRate": 5.5,
+              "_ReturnImmediatelyAngleDeg": 20
+            }
+          },
+          {
+            "Index": 21,
+            "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam",
+            "Userdata": null,
+            "Fields": {
+              "_Condition": {
+                "Index": 18,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 17,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 15,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 16,
+                          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_CameraAngleLimitParam": {
+                "Index": 19,
+                "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+                "Userdata": null,
+                "Fields": {
+                  "_MoveStraightAngleDegRange": "Range(-2, 9)",
+                  "_AngleDegRange_FaceDown": "Range(-2, 7)",
+                  "_FaceDownAngleDegMax": 60
+                }
+              },
+              "_MotionVariableAngleLimitParam": {
+                "Index": 20,
+                "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+                "Userdata": null,
+                "Fields": {
+                  "_MoveStraightAngleDegRange": "Range(-45, 90)",
+                  "_AngleDegRange_FaceDown": "Range(-5, 10)",
+                  "_FaceDownAngleDegMax": 60
+                }
+              },
+              "_MinAngleRate": 0,
+              "_MinAngleRateOnWalkCameraInput": 8,
+              "_MinAngleRateOnRunCameraInput": 8,
+              "_MoveStartFollowTimeSec": 0.5,
+              "_MoveStartFollowAngleRate": 3,
+              "_IdleTurnRate": 10,
+              "_ReturnCameraForwardRate": 5.5,
+              "_ReturnImmediatelyAngleDeg": 20
+            }
+          },
+          {
+            "Index": 28,
+            "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam",
+            "Userdata": null,
+            "Fields": {
+              "_Condition": {
+                "Index": 25,
+                "Class": "app.PlayerComplexCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_IsEnable": true,
+                  "_ConditionType": 0,
+                  "_ConditionUnits": [
+                    {
+                      "Index": 24,
+                      "Class": "app.PlayerComplexConditionUnit",
+                      "Userdata": null,
+                      "Fields": {
+                        "_ConditionKind": {
+                          "Ref": 22,
+                          "Class": "app.PlayerComplexConditionKind"
+                        },
+                        "_ConditionParam": {
+                          "Ref": 23,
+                          "Class": "app.PlayerComplexConditionParam_Always"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "_CameraAngleLimitParam": {
+                "Index": 26,
+                "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+                "Userdata": null,
+                "Fields": {
+                  "_MoveStraightAngleDegRange": "Range(-45, 90)",
+                  "_AngleDegRange_FaceDown": "Range(-5, 10)",
+                  "_FaceDownAngleDegMax": 60
+                }
+              },
+              "_MotionVariableAngleLimitParam": {
+                "Index": 27,
+                "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+                "Userdata": null,
+                "Fields": {
+                  "_MoveStraightAngleDegRange": "Range(-45, 90)",
+                  "_AngleDegRange_FaceDown": "Range(-5, 10)",
+                  "_FaceDownAngleDegMax": 60
+                }
+              },
+              "_MinAngleRate": 0,
+              "_MinAngleRateOnWalkCameraInput": 8,
+              "_MinAngleRateOnRunCameraInput": 8,
+              "_MoveStartFollowTimeSec": 0.5,
+              "_MoveStartFollowAngleRate": 3,
+              "_IdleTurnRate": 10,
+              "_ReturnCameraForwardRate": 5.5,
+              "_ReturnImmediatelyAngleDeg": 20
+            }
+          }
+        ],
+        "_SharedData": []
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "LightEquipment"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerComplexConditionParam_LightEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_LightType": 1,
+        "_IsCheckLightState": false,
+        "_LightStates": [],
+        "_IsCheckPrevState": false,
+        "_PrevLightStates": []
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 1,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 2,
+          "Class": "app.PlayerComplexConditionParam_LightEquipment"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 3,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+      "Userdata": null,
+      "Fields": {
+        "_MoveStraightAngleDegRange": "Range(-3, 6)",
+        "_AngleDegRange_FaceDown": "Range(-3, 6)",
+        "_FaceDownAngleDegMax": 60
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+      "Userdata": null,
+      "Fields": {
+        "_MoveStraightAngleDegRange": "Range(-3, 6)",
+        "_AngleDegRange_FaceDown": "Range(-3, 6)",
+        "_FaceDownAngleDegMax": 60
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 4,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_CameraAngleLimitParam": {
+          "Ref": 5,
+          "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam"
+        },
+        "_MotionVariableAngleLimitParam": {
+          "Ref": 6,
+          "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam"
+        },
+        "_MinAngleRate": 3,
+        "_MinAngleRateOnWalkCameraInput": 3,
+        "_MinAngleRateOnRunCameraInput": 3,
+        "_MoveStartFollowTimeSec": 0.5,
+        "_MoveStartFollowAngleRate": 3,
+        "_IdleTurnRate": 7,
+        "_ReturnCameraForwardRate": 7,
+        "_ReturnImmediatelyAngleDeg": 20
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          2,
+          3,
+          8
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 8,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 9,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 10,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+      "Userdata": null,
+      "Fields": {
+        "_MoveStraightAngleDegRange": "Range(-7, 14)",
+        "_AngleDegRange_FaceDown": "Range(-5, 10)",
+        "_FaceDownAngleDegMax": 60
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+      "Userdata": null,
+      "Fields": {
+        "_MoveStraightAngleDegRange": "Range(-45, 90)",
+        "_AngleDegRange_FaceDown": "Range(-5, 10)",
+        "_FaceDownAngleDegMax": 60
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 11,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_CameraAngleLimitParam": {
+          "Ref": 12,
+          "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam"
+        },
+        "_MotionVariableAngleLimitParam": {
+          "Ref": 13,
+          "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam"
+        },
+        "_MinAngleRate": 0,
+        "_MinAngleRateOnWalkCameraInput": 8,
+        "_MinAngleRateOnRunCameraInput": 8,
+        "_MoveStartFollowTimeSec": 0.5,
+        "_MoveStartFollowAngleRate": 3,
+        "_IdleTurnRate": 10,
+        "_ReturnCameraForwardRate": 5.5,
+        "_ReturnImmediatelyAngleDeg": 20
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "WeaponEquipment"
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerComplexConditionParam_WeaponEquipment",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true,
+        "_WeaponCategories": [
+          7
+        ],
+        "_WeaponIDs": [],
+        "_AttachmentUnits": []
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 15,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 16,
+          "Class": "app.PlayerComplexConditionParam_WeaponEquipment"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 17,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+      "Userdata": null,
+      "Fields": {
+        "_MoveStraightAngleDegRange": "Range(-2, 9)",
+        "_AngleDegRange_FaceDown": "Range(-2, 7)",
+        "_FaceDownAngleDegMax": 60
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+      "Userdata": null,
+      "Fields": {
+        "_MoveStraightAngleDegRange": "Range(-45, 90)",
+        "_AngleDegRange_FaceDown": "Range(-5, 10)",
+        "_FaceDownAngleDegMax": 60
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 18,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_CameraAngleLimitParam": {
+          "Ref": 19,
+          "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam"
+        },
+        "_MotionVariableAngleLimitParam": {
+          "Ref": 20,
+          "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam"
+        },
+        "_MinAngleRate": 0,
+        "_MinAngleRateOnWalkCameraInput": 8,
+        "_MinAngleRateOnRunCameraInput": 8,
+        "_MoveStartFollowTimeSec": 0.5,
+        "_MoveStartFollowAngleRate": 3,
+        "_IdleTurnRate": 10,
+        "_ReturnCameraForwardRate": 5.5,
+        "_ReturnImmediatelyAngleDeg": 20
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.PlayerComplexConditionKind",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Always"
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.PlayerComplexConditionParam_Always",
+      "Userdata": null,
+      "Fields": {
+        "_IsSatisfied": true
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerComplexConditionUnit",
+      "Userdata": null,
+      "Fields": {
+        "_ConditionKind": {
+          "Ref": 22,
+          "Class": "app.PlayerComplexConditionKind"
+        },
+        "_ConditionParam": {
+          "Ref": 23,
+          "Class": "app.PlayerComplexConditionParam_Always"
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.PlayerComplexCondition",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ConditionType": 0,
+        "_ConditionUnits": [
+          {
+            "Ref": 24,
+            "Class": "app.PlayerComplexConditionUnit"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+      "Userdata": null,
+      "Fields": {
+        "_MoveStraightAngleDegRange": "Range(-45, 90)",
+        "_AngleDegRange_FaceDown": "Range(-5, 10)",
+        "_FaceDownAngleDegMax": 60
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam",
+      "Userdata": null,
+      "Fields": {
+        "_MoveStraightAngleDegRange": "Range(-45, 90)",
+        "_AngleDegRange_FaceDown": "Range(-5, 10)",
+        "_FaceDownAngleDegMax": 60
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam",
+      "Userdata": null,
+      "Fields": {
+        "_Condition": {
+          "Ref": 25,
+          "Class": "app.PlayerComplexCondition"
+        },
+        "_CameraAngleLimitParam": {
+          "Ref": 26,
+          "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam"
+        },
+        "_MotionVariableAngleLimitParam": {
+          "Ref": 27,
+          "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam.AngleLimitParam"
+        },
+        "_MinAngleRate": 0,
+        "_MinAngleRateOnWalkCameraInput": 8,
+        "_MinAngleRateOnRunCameraInput": 8,
+        "_MoveStartFollowTimeSec": 0.5,
+        "_MoveStartFollowAngleRate": 3,
+        "_IdleTurnRate": 10,
+        "_ReturnCameraForwardRate": 5.5,
+        "_ReturnImmediatelyAngleDeg": 20
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DynamicFPSMoveParams": [
+          {
+            "Ref": 7,
+            "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam"
+          },
+          {
+            "Ref": 21,
+            "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam"
+          },
+          {
+            "Ref": 28,
+            "Class": "app.PlayerFPSMovementConfiguration.DynamicFPSMoveParam"
+          }
+        ],
+        "_SharedData": []
+      }
+    }
+  ]
+}

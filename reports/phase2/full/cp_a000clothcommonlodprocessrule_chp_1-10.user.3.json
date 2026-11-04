@@ -1,0 +1,149 @@
+{
+  "Path": "natives/stm/gameassets/character/characterprefab/cp_a0/cp_a000/userdata/cp_a000clothcommonlodprocessrule_chp_1-10.user.3",
+  "Objects": [
+    {
+      "Index": 6,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": null,
+      "Fields": {
+        "_Section": {
+          "Index": 5,
+          "Class": "app.lod.LODProcessSection",
+          "Userdata": null,
+          "Fields": {
+            "_Rules": [
+              {
+                "Index": 2,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.rule.LODProcessRule\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 1,
+                    "Class": "app.lod.rule.DistanceToCamera",
+                    "Userdata": null,
+                    "Fields": {
+                      "OwnerDisable": true,
+                      "STRUCT_Lod1Len__HasValue": false,
+                      "STRUCT_Lod1Len__Value": 0,
+                      "STRUCT_Lod2Len__HasValue": true,
+                      "STRUCT_Lod2Len__Value": 20,
+                      "STRUCT_Lod3Len__HasValue": true,
+                      "STRUCT_Lod3Len__Value": 50
+                    }
+                  }
+                }
+              }
+            ],
+            "_Adapts": [
+              {
+                "Index": 4,
+                "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+                "Userdata": null,
+                "Fields": {
+                  "_Process": {
+                    "Index": 3,
+                    "Class": "app.lod.adapt.GpuClothAdaptForPlayer",
+                    "Userdata": null,
+                    "Fields": {
+                      "IsShadow": false,
+                      "LowIterationLevel": 1,
+                      "FullDisableLevel": 3,
+                      "_CanForceDisableOnLowSpec": false,
+                      "_CostumeUnits": []
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.lod.rule.DistanceToCamera",
+      "Userdata": null,
+      "Fields": {
+        "OwnerDisable": true,
+        "STRUCT_Lod1Len__HasValue": false,
+        "STRUCT_Lod1Len__Value": 0,
+        "STRUCT_Lod2Len__HasValue": true,
+        "STRUCT_Lod2Len__Value": 20,
+        "STRUCT_Lod3Len__HasValue": true,
+        "STRUCT_Lod3Len__Value": 50
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.rule.LODProcessRule\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 1,
+          "Class": "app.lod.rule.DistanceToCamera"
+        }
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.lod.adapt.GpuClothAdaptForPlayer",
+      "Userdata": null,
+      "Fields": {
+        "IsShadow": false,
+        "LowIterationLevel": 1,
+        "FullDisableLevel": 3,
+        "_CanForceDisableOnLowSpec": false,
+        "_CostumeUnits": []
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_Process": {
+          "Ref": 3,
+          "Class": "app.lod.adapt.GpuClothAdaptForPlayer"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.lod.LODProcessSection",
+      "Userdata": null,
+      "Fields": {
+        "_Rules": [
+          {
+            "Ref": 2,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.rule.LODProcessRule\u003E"
+          }
+        ],
+        "_Adapts": [
+          {
+            "Ref": 4,
+            "Class": "app.lod.LODProcessDefine.ClassSelector\u00601\u003Capp.lod.adapt.LODProcessAdapt\u003E"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.lod.LODProcessRuleAsset",
+      "Userdata": null,
+      "Fields": {
+        "_Section": {
+          "Ref": 5,
+          "Class": "app.lod.LODProcessSection"
+        }
+      }
+    }
+  ]
+}
