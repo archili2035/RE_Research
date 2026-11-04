@@ -1,0 +1,7 @@
+using ReeLib;using System.Text.Json;using System.Numerics;
+Directory.SetCurrentDirectory("E:/CodexPepo/RE_Research");
+var report=new List<object>();
+foreach(var file in Directory.GetFiles("reports/model/samples","*.mesh.*",SearchOption.AllDirectories).Concat(Directory.GetFiles("reports/model_extra/samples","*.mesh.*",SearchOption.AllDirectories).Where(p=>!p.Contains("streaming")))){try{using var m=new MeshFile(new FileHandler(file));if(!m.Read())throw new Exception("Read failed");var sf=file.Replace("reports/model/samples","reports/model_streaming/samples").Replace("stm\\character","stm\\streaming\\character");if(File.Exists(sf))m.LoadStreamingData(new FileHandler(sf));report.Add(new{file,streaming=m.RequiresStreamingData,bones=m.BoneData?.Bones.Count,deform=m.BoneData?.DeformBones.Count,materials=m.MaterialNames,lods=m.MeshData?.LODs.Select(l=>new{groups=l.MeshGroups.Select(g=>new{id=g.groupId,sub=g.Submeshes.Select(s=>new{mat=s.materialIndex,vertices=s.Positions.Length,indices=s.indicesCount,weights=s.Weights.Length}).ToArray()}).ToArray()}).ToArray()});}catch(Exception e){report.Add(new{file,error=e.ToString()});}}
+File.WriteAllText("reports/model/inspection.json",JsonSerializer.Serialize(report,new JsonSerializerOptions{WriteIndented=true}));
+
+

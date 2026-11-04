@@ -1,6 +1,6 @@
 # RE_Research
 
-RE Engine 资源研究：动画解析（里昂手枪动作骨架播放器）、RE9 关卡与地图资产、RE9 怪物纹理解码。
+RE Engine 资源研究：动画解析（里昂手枪动作灰模与骨架播放器）、RE9 关卡与地图资产、RE9 怪物纹理解码。
 
 ## 网页播放器
 
@@ -14,7 +14,7 @@ node player/server.cjs
 
 然后访问 `http://127.0.0.1:8765`。
 
-播放器包含 14 条动作，支持播放、暂停、逐帧、时间轴、倍速、视角调整及骨骼范围着色。当前展示骨架轨道，尚未加载角色网格、贴图、武器及游戏运行时 IK 和动画混合。
+播放器包含 14 条动作，支持播放、暂停、逐帧、时间轴、倍速、视角调整及骨骼范围着色。v2 已加载六个真实身体网格分件，支持灰模、灰模＋骨架、骨架、线框及绑定姿态预览；暂无贴图、武器、游戏运行时 IK 和动画混合。详见 [模型实现说明](player/MODEL_README.md)。
 
 ## 目录
 
@@ -38,4 +38,11 @@ node player/server.cjs
 node player/verify.cjs
 ```
 
-浏览器检查脚本依赖本机 Playwright / Chromium 环境，详见 `player/README.md`。
+浏览器检查脚本依赖本机 Playwright / Chromium 环境，详见 `player/README.md` 和 `player/MODEL_README.md`。
+
+## 其他研究成果
+
+- [RE9 关卡与地图资产研究报告](reports/RE9_levels/RE9_关卡与地图资产研究报告.md)
+- [RE9 怪物图鉴](reports/RE9_monsters/RE9_monster_atlas.html)（下载仓库后用浏览器打开）
+- [怪物纹理解码脚本说明](scripts/re9_monsters/README.md)
+
