@@ -1,6 +1,6 @@
 # RE_Research
 
-RE Engine 动画资源研究、解析报告及里昂手枪动作骨架播放器。
+RE Engine 资源研究：动画解析（里昂手枪动作骨架播放器）、RE9 关卡与地图资产、RE9 怪物纹理解码。
 
 ## 网页播放器
 
@@ -19,8 +19,8 @@ node player/server.cjs
 ## 目录
 
 - `player/`：离线网页、动画数据、说明页与验证脚本。
-- `scripts/`：C# / PowerShell 资源解析、审计及动画导出脚本。
-- `reports/`：研究报告、资源索引、样本及解析结果。
+- `scripts/`：资源解析、审计及导出脚本（C# / PowerShell 动画管线；`re9_monsters/` 为 RE9 怪物纹理 Python 脚本）。
+- `reports/`：研究报告、资源索引、样本及解析结果（含 `RE9_levels/` 关卡地图报告、`RE9_monsters/` 怪物图鉴）。
 - `references/`：资源列表及格式参考数据。
 - `tools/`：研究使用的第三方工具源码快照及安装脚本。
 
