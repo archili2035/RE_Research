@@ -1,0 +1,34 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/common/ignorecameracollisionuserdata.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\common\\ignorecameracollisionuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 1,
+      "Class": "app.IgnoreCameraCollisionUserData",
+      "Userdata": null,
+      "Fields": {
+        "_SphereRadius": 0.1,
+        "_CapsuleDistance": 1,
+        "_CapsuleRadius": 0.1
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.IgnoreCameraCollisionUserData",
+      "Userdata": null,
+      "Fields": {
+        "_SphereRadius": 0.1,
+        "_CapsuleDistance": 1,
+        "_CapsuleRadius": 0.1
+      }
+    }
+  ]
+}

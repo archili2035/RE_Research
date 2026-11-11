@@ -1,0 +1,3431 @@
+[
+  {
+    "Path": "natives/stm/_chainsaw/appsystem/weapon/weaponcataloguserdata_1st.user.2",
+    "SchemaMismatches": [],
+    "Objects": [
+      {
+        "Ref": 61,
+        "Class": "chainsaw.WeaponCatalogUserData"
+      }
+    ],
+    "Instances": [
+      {
+        "Index": 0,
+        "Class": "",
+        "Userdata": null,
+        "Fields": {}
+      },
+      {
+        "Index": 1,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp4000.pfb"
+        }
+      },
+      {
+        "Index": 2,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 4000,
+          "_Prefab": {
+            "Ref": 1,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 3,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp4001.pfb"
+        }
+      },
+      {
+        "Index": 4,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 4001,
+          "_Prefab": {
+            "Ref": 3,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 5,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp4100.pfb"
+        }
+      },
+      {
+        "Index": 6,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 4100,
+          "_Prefab": {
+            "Ref": 5,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 7,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp4200.pfb"
+        }
+      },
+      {
+        "Index": 8,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 4200,
+          "_Prefab": {
+            "Ref": 7,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 9,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp4201.pfb"
+        }
+      },
+      {
+        "Index": 10,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 4201,
+          "_Prefab": {
+            "Ref": 9,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 11,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp4400.pfb"
+        }
+      },
+      {
+        "Index": 12,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 4400,
+          "_Prefab": {
+            "Ref": 11,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 13,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp4502.pfb"
+        }
+      },
+      {
+        "Index": 14,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 4502,
+          "_Prefab": {
+            "Ref": 13,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 15,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp4600.pfb"
+        }
+      },
+      {
+        "Index": 16,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 4600,
+          "_Prefab": {
+            "Ref": 15,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 17,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5000.pfb"
+        }
+      },
+      {
+        "Index": 18,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5000,
+          "_Prefab": {
+            "Ref": 17,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 19,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5002.pfb"
+        }
+      },
+      {
+        "Index": 20,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5002,
+          "_Prefab": {
+            "Ref": 19,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 21,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5006.pfb"
+        }
+      },
+      {
+        "Index": 22,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5006,
+          "_Prefab": {
+            "Ref": 21,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 23,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5300.pfb"
+        }
+      },
+      {
+        "Index": 24,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5300,
+          "_Prefab": {
+            "Ref": 23,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 25,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5400.pfb"
+        }
+      },
+      {
+        "Index": 26,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5400,
+          "_Prefab": {
+            "Ref": 25,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 27,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5402.pfb"
+        }
+      },
+      {
+        "Index": 28,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5402,
+          "_Prefab": {
+            "Ref": 27,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 29,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5403.pfb"
+        }
+      },
+      {
+        "Index": 30,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5403,
+          "_Prefab": {
+            "Ref": 29,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 31,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5404.pfb"
+        }
+      },
+      {
+        "Index": 32,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5404,
+          "_Prefab": {
+            "Ref": 31,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 33,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5405.pfb"
+        }
+      },
+      {
+        "Index": 34,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5405,
+          "_Prefab": {
+            "Ref": 33,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 35,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5406.pfb"
+        }
+      },
+      {
+        "Index": 36,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5406,
+          "_Prefab": {
+            "Ref": 35,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 37,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5801.pfb"
+        }
+      },
+      {
+        "Index": 38,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5801,
+          "_Prefab": {
+            "Ref": 37,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 39,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5802.pfb"
+        }
+      },
+      {
+        "Index": 40,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5802,
+          "_Prefab": {
+            "Ref": 39,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 41,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5803.pfb"
+        }
+      },
+      {
+        "Index": 42,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5803,
+          "_Prefab": {
+            "Ref": 41,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 43,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5804.pfb"
+        }
+      },
+      {
+        "Index": 44,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5804,
+          "_Prefab": {
+            "Ref": 43,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 45,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5805.pfb"
+        }
+      },
+      {
+        "Index": 46,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5805,
+          "_Prefab": {
+            "Ref": 45,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 47,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5806.pfb"
+        }
+      },
+      {
+        "Index": 48,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5806,
+          "_Prefab": {
+            "Ref": 47,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 49,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5810.pfb"
+        }
+      },
+      {
+        "Index": 50,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5810,
+          "_Prefab": {
+            "Ref": 49,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 51,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5814.pfb"
+        }
+      },
+      {
+        "Index": 52,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5814,
+          "_Prefab": {
+            "Ref": 51,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 53,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5815.pfb"
+        }
+      },
+      {
+        "Index": 54,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5815,
+          "_Prefab": {
+            "Ref": 53,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 55,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5816.pfb"
+        }
+      },
+      {
+        "Index": 56,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5816,
+          "_Prefab": {
+            "Ref": 55,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 57,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5821.pfb"
+        }
+      },
+      {
+        "Index": 58,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5821,
+          "_Prefab": {
+            "Ref": 57,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 59,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": "_Chainsaw/AppSystem/Prefab/Weapon/wp5831.pfb"
+        }
+      },
+      {
+        "Index": 60,
+        "Class": "chainsaw.WeaponCatalogUserData.Data",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponID": 5831,
+          "_Prefab": {
+            "Ref": 59,
+            "Class": "via.Prefab"
+          }
+        }
+      },
+      {
+        "Index": 61,
+        "Class": "chainsaw.WeaponCatalogUserData",
+        "Userdata": null,
+        "Fields": {
+          "_DataTable": [
+            {
+              "Ref": 2,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 4,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 6,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 8,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 10,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 12,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 14,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 16,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 18,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 20,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 22,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 24,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 26,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 28,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 30,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 32,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 34,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 36,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 38,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 40,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 42,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 44,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 46,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 48,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 50,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 52,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 54,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 56,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 58,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            },
+            {
+              "Ref": 60,
+              "Class": "chainsaw.WeaponCatalogUserData.Data"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "Path": "natives/stm/_chainsaw/appsystem/prefab/weapon/wp4000.pfb.17",
+    "SchemaMismatches": [],
+    "Objects": [
+      {
+        "Ref": 1,
+        "Class": "via.GameObject"
+      },
+      {
+        "Ref": 2,
+        "Class": "via.Transform"
+      },
+      {
+        "Ref": 3,
+        "Class": "via.render.Mesh"
+      },
+      {
+        "Ref": 4,
+        "Class": "chainsaw.HitController"
+      },
+      {
+        "Ref": 7,
+        "Class": "chainsaw.CharacterDynamicMotionBankAttacher"
+      },
+      {
+        "Ref": 8,
+        "Class": "chainsaw.DisableEffectOwnerOnStartEvent"
+      },
+      {
+        "Ref": 11,
+        "Class": "soundlib.SoundVibrationBehavior"
+      },
+      {
+        "Ref": 13,
+        "Class": "soundlib.SoundVibrationDefineInfoListDataHolder"
+      },
+      {
+        "Ref": 14,
+        "Class": "chainsaw.Gun"
+      },
+      {
+        "Ref": 16,
+        "Class": "chainsaw.SoundGunContainer"
+      },
+      {
+        "Ref": 19,
+        "Class": "via.motion.Motion"
+      },
+      {
+        "Ref": 21,
+        "Class": "via.motion.MotionFsm2"
+      },
+      {
+        "Ref": 23,
+        "Class": "chainsaw.MotionController"
+      },
+      {
+        "Ref": 24,
+        "Class": "chainsaw.MotionEventMediator"
+      },
+      {
+        "Ref": 26,
+        "Class": "via.effect.script.ObjectEffectManager"
+      },
+      {
+        "Ref": 27,
+        "Class": "chainsaw.SoundMotionSequenceApp"
+      },
+      {
+        "Ref": 28,
+        "Class": "via.GameObject"
+      },
+      {
+        "Ref": 29,
+        "Class": "via.Transform"
+      },
+      {
+        "Ref": 31,
+        "Class": "chainsaw.BulletShellGenerator"
+      },
+      {
+        "Ref": 32,
+        "Class": "via.GameObject"
+      },
+      {
+        "Ref": 33,
+        "Class": "via.Transform"
+      },
+      {
+        "Ref": 41,
+        "Class": "chainsaw.LaserSightController"
+      },
+      {
+        "Ref": 43,
+        "Class": "via.effect.script.ObjectEffectManager"
+      },
+      {
+        "Ref": 44,
+        "Class": "via.GameObject"
+      },
+      {
+        "Ref": 45,
+        "Class": "via.Transform"
+      },
+      {
+        "Ref": 48,
+        "Class": "via.render.Mesh"
+      },
+      {
+        "Ref": 49,
+        "Class": "via.GameObject"
+      },
+      {
+        "Ref": 50,
+        "Class": "via.Transform"
+      },
+      {
+        "Ref": 51,
+        "Class": "via.relib.effect.behavior.ReLibEPVStandardChild"
+      },
+      {
+        "Ref": 52,
+        "Class": "via.GameObject"
+      },
+      {
+        "Ref": 53,
+        "Class": "via.Transform"
+      },
+      {
+        "Ref": 54,
+        "Class": "via.render.Mesh"
+      },
+      {
+        "Ref": 55,
+        "Class": "via.GameObject"
+      },
+      {
+        "Ref": 56,
+        "Class": "via.Transform"
+      },
+      {
+        "Ref": 60,
+        "Class": "via.render.Mesh"
+      }
+    ],
+    "Instances": [
+      {
+        "Index": 0,
+        "Class": "",
+        "Userdata": null,
+        "Fields": {}
+      },
+      {
+        "Index": 1,
+        "Class": "via.GameObject",
+        "Userdata": null,
+        "Fields": {
+          "Name": "wp4000",
+          "Tag": "",
+          "UpdateSelf": true,
+          "DrawSelf": true,
+          "Timescale": -1
+        }
+      },
+      {
+        "Index": 2,
+        "Class": "via.Transform",
+        "Userdata": null,
+        "Fields": {
+          "Position": "<0, 0, 0>",
+          "Rotation": "{X:0 Y:0 Z:0 W:1}",
+          "Scale": "<1, 1, 1>",
+          "ParentJoint": "",
+          "SameJointsContraint": false,
+          "AbsoluteScaling": false,
+          "JointSegmentScale": false,
+          "JointFastLockScene": false
+        }
+      },
+      {
+        "Index": 3,
+        "Class": "via.render.Mesh",
+        "Userdata": null,
+        "Fields": {
+          "RenderOutputID": 3,
+          "Enabled": true,
+          "Mesh": "_Chainsaw/Character/wp/wp40/wp4000/00/wp4000_00.mesh",
+          "Material": "_Chainsaw/Character/wp/wp40/wp4000/00/wp4000_00.mdf2",
+          "StaticMesh": false,
+          "SmallObjectCullingFactor": 1,
+          "SharedSkeleton": false,
+          "SharedSkeletonGameObject": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "BVHRebuildFactor": 0.25,
+          "BVHCacheStrategy": 2,
+          "BVHCacheProtectFrame": 30,
+          "PreferOpaque": 2,
+          "PreferAlphaMask": 2,
+          "PreferShadowCast": 2,
+          "EnableRebraiding": 2,
+          "BVHDebug(?)": false,
+          "DrawDefault": true,
+          "ManualBoundingBoxUpdated": false,
+          "FrustumCulling": true,
+          "OcclusionCulling": true,
+          "Occluder": false,
+          "OccluderByLod": 0,
+          "DrawLaterOccluder": false,
+          "DrawVoxelize": true,
+          "DrawnEnvmap": true,
+          "DrawDepthBlocker": false,
+          "DrawDepthOcclusion": true,
+          "DrawRaytracing": true,
+          "DrawGlobalSparseShadow": false,
+          "IgnoreDepth": false,
+          "IgnoreDepthTransparentCorrection": false,
+          "ViewSpaceScaling": false,
+          "MaskIgnoreDepthMesh": false,
+          "BeautyMaskFlag": false,
+          "BeautyMaskChannel": 0,
+          "ReceiveSSSSSFlag": true,
+          "StreamingPriority": 3,
+          "DrawPriorityBias": 0,
+          "TransparentBias": 0,
+          "StencilValue": 7,
+          "Materials": [],
+          "UseStencilValuePriority": false,
+          "IgnoreDepthStencilValueWrite": false,
+          "DecalReciveMode": 0,
+          "DrawPostDecal": false,
+          "MeshDecalPriority": 10,
+          "DrawShadowCast": true,
+          "ShadowCastMode": 2,
+          "RealMeshShadow": false,
+          "DrawFarCascadeShadowCast": false,
+          "LodMode": 1,
+          "LodLevel": 0,
+          "LodFollowTarget": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "EnableLodEffectiveRange": false,
+          "LodEffectiveRange": "Range(0, 0)",
+          "ShadowLodMode": 1,
+          "ShadowLodLevel": 0,
+          "EnableShadowLodEffectiveRange": false,
+          "ShadowLodEffectiveRange": "Range(0, 0)",
+          "ShaderLod": -1,
+          "PartsEnable": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "PartsCaching": false,
+          "NormalRecalculationEnable": true,
+          "NREdgeExcluded": false,
+          "NormalRecalculationResizeLodEnable": false,
+          "NormalRecalculationResizeLod": 0,
+          "UseBlendShapeRealTimeLod": false,
+          "UseBlendShapeNormal": true,
+          "BlendShapeChannelWeights": [],
+          "DrawAABB": false,
+          "DrawOccluder": false,
+          "DrawOccluder(?)": false
+        }
+      },
+      {
+        "Index": 4,
+        "Class": "chainsaw.HitController",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_UserData": {
+            "Ref": 0,
+            "Class": ""
+          }
+        }
+      },
+      {
+        "Index": 5,
+        "Class": "via.motion.DynamicMotionBank",
+        "Userdata": null,
+        "Fields": {
+          "Priority": 0,
+          "OverwriteBankID": false,
+          "BankID": 0,
+          "OverwriteBankType": false,
+          "BankType": 0,
+          "OverwriteBankTypeMaskBit": false,
+          "BankTypeMaskBit": 0,
+          "v7_MotionBank": "_Chainsaw/Animation/ch/cha0/motbank/cha0_wp4000.motbank",
+          "v8_MotionList": ""
+        }
+      },
+      {
+        "Index": 6,
+        "Class": "chainsaw.CharacterDynamicMotionBankAttacher.Data",
+        "Userdata": null,
+        "Fields": {
+          "_ID": 100000,
+          "_DynamicMotionBanks": {
+            "Ref": 5,
+            "Class": "via.motion.DynamicMotionBank"
+          }
+        }
+      },
+      {
+        "Index": 7,
+        "Class": "chainsaw.CharacterDynamicMotionBankAttacher",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_Datas": [
+            {
+              "Ref": 6,
+              "Class": "chainsaw.CharacterDynamicMotionBankAttacher.Data"
+            }
+          ]
+        }
+      },
+      {
+        "Index": 8,
+        "Class": "chainsaw.DisableEffectOwnerOnStartEvent",
+        "Userdata": null,
+        "Fields": {
+          "_IsEnable": true
+        }
+      },
+      {
+        "Index": 9,
+        "Class": "soundlib.SoundVibInfoByTriggerListData",
+        "Userdata": "_Chainsaw/Haptics/Weapon/wp4000/Wp4000SoundVibInfoByTriggerListData.user",
+        "Fields": {}
+      },
+      {
+        "Index": 10,
+        "Class": "soundlib.SoundVibInfoByWavListData",
+        "Userdata": "_Chainsaw/Haptics/Weapon/wp4000/Wp4000SoundVibInfoByWavListData.user",
+        "Fields": {}
+      },
+      {
+        "Index": 11,
+        "Class": "soundlib.SoundVibrationBehavior",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_AssetList": [
+            {
+              "Ref": 9,
+              "Class": "soundlib.SoundVibInfoByTriggerListData"
+            },
+            {
+              "Ref": 10,
+              "Class": "soundlib.SoundVibInfoByWavListData"
+            }
+          ]
+        }
+      },
+      {
+        "Index": 12,
+        "Class": "soundlib.SoundVibrationDefineInfoListData",
+        "Userdata": "_Chainsaw/Haptics/Weapon/wp4000/Wp4000SoundVibrationDefineInfoListData.user",
+        "Fields": {}
+      },
+      {
+        "Index": 13,
+        "Class": "soundlib.SoundVibrationDefineInfoListDataHolder",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_Data": [
+            {
+              "Ref": 12,
+              "Class": "soundlib.SoundVibrationDefineInfoListData"
+            }
+          ]
+        }
+      },
+      {
+        "Index": 14,
+        "Class": "chainsaw.Gun",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_ScopeCameraObject": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "_CurrentReticleFitPoint": 0,
+          "_IsReticleFitting": false,
+          "_CastRayLength": 50
+        }
+      },
+      {
+        "Index": 15,
+        "Class": "soundlib.SoundContainerListData",
+        "Userdata": "_Chainsaw/Sound/Resource/Container/Weapon/snd_cont_wp_4000.user",
+        "Fields": {}
+      },
+      {
+        "Index": 16,
+        "Class": "chainsaw.SoundGunContainer",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_UserDataList": [
+            {
+              "Ref": 15,
+              "Class": "soundlib.SoundContainerListData"
+            }
+          ],
+          "_DynamicLoadData": false,
+          "_ShotReverbDistance": 10,
+          "_HitDelayTimeSec": 0,
+          "_HitDelayRandomTimeSec": 0,
+          "_MaxHitCnt": 6
+        }
+      },
+      {
+        "Index": 17,
+        "Class": "via.motion.TreeLayer",
+        "Userdata": null,
+        "Fields": {
+          "EnableInertiaFade": false,
+          "AdditionalInterpolationNum": 0,
+          "BlendMode": 0,
+          "BlendRate": 1,
+          "WorldRotationBlend": false,
+          "Resource (.mot)": "",
+          "MotionBankID": 0,
+          "MotionID": 4294967295,
+          "JointMaskID": 0,
+          "JointMaskIDMode": 0,
+          "BaseLayerNo": 0,
+          "WrapMode": 0,
+          "MirrorSymmetry": false,
+          "ShowIntFrame": false,
+          "EnableDevelopNode": false,
+          "Frame": 0,
+          "Speed": 1,
+          "StopUpdate": false,
+          "AutoStopUpdate": false,
+          "AutoPrevMotRefClear": false,
+          "ContinueSnapshotFromTransorm": false,
+          "InterpolationMode": 1,
+          "InterpolationCurve": 0,
+          "InterpolationFrame": 0,
+          "unknown1": 0,
+          "unknown2": 0
+        }
+      },
+      {
+        "Index": 18,
+        "Class": "via.motion.TreeLayer",
+        "Userdata": null,
+        "Fields": {
+          "EnableInertiaFade": false,
+          "AdditionalInterpolationNum": 0,
+          "BlendMode": 0,
+          "BlendRate": 1,
+          "WorldRotationBlend": false,
+          "Resource (.mot)": "",
+          "MotionBankID": 0,
+          "MotionID": 4294967295,
+          "JointMaskID": 0,
+          "JointMaskIDMode": 0,
+          "BaseLayerNo": 0,
+          "WrapMode": 0,
+          "MirrorSymmetry": false,
+          "ShowIntFrame": false,
+          "EnableDevelopNode": false,
+          "Frame": 0,
+          "Speed": 1,
+          "StopUpdate": false,
+          "AutoStopUpdate": false,
+          "AutoPrevMotRefClear": false,
+          "ContinueSnapshotFromTransorm": false,
+          "InterpolationMode": 1,
+          "InterpolationCurve": 0,
+          "InterpolationFrame": 0,
+          "unknown1": 0,
+          "unknown2": 0
+        }
+      },
+      {
+        "Index": 19,
+        "Class": "via.motion.Motion",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "PlayState": 0,
+          "PlaySpeed": 1,
+          "PlayReset": false,
+          "ExecutePriority": 0,
+          "AfterParentAnimation": false,
+          "AfterParentAnimationOrder": 0,
+          "ParallelAfterParent": false,
+          "RootMotion": 2,
+          "RootScaleDisabled": false,
+          "StopAtMotionEnd": false,
+          "MotionBankAsset": "_Chainsaw/Animation/wp/wp40/wp4000/motbank/wp4000.motbank",
+          "UserVariables": "",
+          "JointMap": "",
+          "JointLODGroup": "",
+          "TargetBankType": 0,
+          "EnableLayerUpdateOrder": false,
+          "Layer": [
+            {
+              "Ref": 17,
+              "Class": "via.motion.TreeLayer"
+            },
+            {
+              "Ref": 18,
+              "Class": "via.motion.TreeLayer"
+            }
+          ],
+          "MotionBank": [],
+          "DynamicMotionBank": [],
+          "JointMapExpressionEnabled": true,
+          "ExpressionLOD": 0,
+          "IntervalUpdateOption": 2,
+          "EnabledSkeletonMask": true,
+          "JointLODGroupLevel": 0,
+          "JointLODGroupForceSkips": 0,
+          "BoneColor(?)": "00000000",
+          "GridSize(?)": 0,
+          "DebugDrawJointSize(?)": 0
+        }
+      },
+      {
+        "Index": 20,
+        "Class": "via.motion.MotionFsm2Layer",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "Resource": "",
+          "DynamicReference": false,
+          "ReferenceTreeReleaseTime": 0,
+          "DebugGuid": "00000000-0000-0000-0000-000000000000",
+          "AttachedTool": false,
+          "OwnerExecLine": 0,
+          "MotionFsm2Resource": "_Chainsaw/AppSystem/Weapon/Motion/Fsm/WeaponCommon.motfsm2",
+          "TargetMotionLayerNo": -1,
+          "ExecuteMotionLayerNo": 0,
+          "OverwriteJointMaskID": false,
+          "LocalBankType": 0,
+          "OverwriteLocalBankType": false,
+          "BlendMode": 0,
+          "OverwriteBlendMode": false,
+          "BlendRate": 1,
+          "OverwriteBlendRate": false
+        }
+      },
+      {
+        "Index": 21,
+        "Class": "via.motion.MotionFsm2",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "Trees": [],
+          "UserVariables": "",
+          "ExecLine": 2,
+          "ExecGroup": 1,
+          "PuppetMode": false,
+          "PuppetKeepActivation": false,
+          "ToolPuppetMode(?)": false,
+          "DevelopOwnerGameObject": 0,
+          "v9_AutoCreateMotionLayer": false,
+          "v10_StopExeWithMotStopAtEnd": false,
+          "v11_Layer": [
+            {
+              "Ref": 20,
+              "Class": "via.motion.MotionFsm2Layer"
+            }
+          ]
+        }
+      },
+      {
+        "Index": 22,
+        "Class": "chainsaw.MotionTransitionUserData",
+        "Userdata": "_Chainsaw/Animation/wp/wp40/wp4000/userdata/wp4000TransitionUserData.user",
+        "Fields": {}
+      },
+      {
+        "Index": 23,
+        "Class": "chainsaw.MotionController",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_UserData": {
+            "Ref": 22,
+            "Class": "chainsaw.MotionTransitionUserData"
+          },
+          "_IsNotInterpolationFromEmptyOnLayer0": true,
+          "_TramUnitUserData": {
+            "Ref": 0,
+            "Class": ""
+          },
+          "_InterpolationJointGroupData": {
+            "Ref": 0,
+            "Class": ""
+          }
+        }
+      },
+      {
+        "Index": 24,
+        "Class": "chainsaw.MotionEventMediator",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true
+        }
+      },
+      {
+        "Index": 25,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": true,
+          "Path": "_Chainsaw/VFX/Provider/EPV_Weapon/EPV_wp4000/epvc_0015_wp4000_0000.pfb"
+        }
+      },
+      {
+        "Index": 26,
+        "Class": "via.effect.script.ObjectEffectManager",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_DisableRequestEffect": false,
+          "DataContainer": {
+            "Ref": 25,
+            "Class": "via.Prefab"
+          },
+          "ExternalDataContainers": [],
+          "TargetGameObject": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "ExternalPropertys": [],
+          "disableVFXTriggerTrack": false,
+          "disableVFXRangeTrack": false,
+          "disableMotionJackCheck": false,
+          "_VFXTriggerTrackUseHighestWeight": false,
+          "_VFXRangeTrackUseHighestWeight": false,
+          "_StaticDataContainer": false,
+          "_DisableByEmptyDataContainer": false
+        }
+      },
+      {
+        "Index": 27,
+        "Class": "chainsaw.SoundMotionSequenceApp",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_UseAutoTrigger": false,
+          "_TriggerParent": false,
+          "_TriggerMyself": false,
+          "_LimitDistance": 25,
+          "_UpdateInvisible": false
+        }
+      },
+      {
+        "Index": 28,
+        "Class": "via.GameObject",
+        "Userdata": null,
+        "Fields": {
+          "Name": "BulletShellGenerator",
+          "Tag": "",
+          "UpdateSelf": true,
+          "DrawSelf": true,
+          "Timescale": -1
+        }
+      },
+      {
+        "Index": 29,
+        "Class": "via.Transform",
+        "Userdata": null,
+        "Fields": {
+          "Position": "<0, 0, 0>",
+          "Rotation": "{X:0 Y:0 Z:0 W:1}",
+          "Scale": "<1, 1, 1>",
+          "ParentJoint": "",
+          "SameJointsContraint": false,
+          "AbsoluteScaling": false,
+          "JointSegmentScale": false,
+          "JointFastLockScene": false
+        }
+      },
+      {
+        "Index": 30,
+        "Class": "chainsaw.BulletShellGeneratorUserData",
+        "Userdata": "_Chainsaw/AppSystem/Shell/Bullet/wp4000/WP4000ShellGeneratorUserData.user",
+        "Fields": {}
+      },
+      {
+        "Index": 31,
+        "Class": "chainsaw.BulletShellGenerator",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_UserData": {
+            "Ref": 30,
+            "Class": "chainsaw.BulletShellGeneratorUserData"
+          }
+        }
+      },
+      {
+        "Index": 32,
+        "Class": "via.GameObject",
+        "Userdata": null,
+        "Fields": {
+          "Name": "LaserSight",
+          "Tag": "PhotoDrawOff",
+          "UpdateSelf": true,
+          "DrawSelf": false,
+          "Timescale": -1
+        }
+      },
+      {
+        "Index": 33,
+        "Class": "via.Transform",
+        "Userdata": null,
+        "Fields": {
+          "Position": "<0, 0, 0>",
+          "Rotation": "{X:0 Y:0 Z:0 W:1}",
+          "Scale": "<1, 1, 1>",
+          "ParentJoint": "",
+          "SameJointsContraint": false,
+          "AbsoluteScaling": false,
+          "JointSegmentScale": false,
+          "JointFastLockScene": false
+        }
+      },
+      {
+        "Index": 34,
+        "Class": "via.AnimationCurve",
+        "Userdata": null,
+        "Fields": {
+          "Keys": [
+            "0: 0",
+            "0.8: 0.02",
+            "1: 1"
+          ],
+          "MinValue": 0,
+          "MaxValue": 1,
+          "LoopStartTime": 0,
+          "LoopEndTime": 1,
+          "LoopCount": 0,
+          "LoopWrapNo": 2
+        }
+      },
+      {
+        "Index": 35,
+        "Class": "chainsaw.LaserSightController.CurveVariable",
+        "Userdata": null,
+        "Fields": {
+          "_BaseValue": 1,
+          "Curve": {
+            "Ref": 34,
+            "Class": "via.AnimationCurve"
+          }
+        }
+      },
+      {
+        "Index": 36,
+        "Class": "via.AnimationCurve",
+        "Userdata": null,
+        "Fields": {
+          "Keys": [
+            "0: 1",
+            "1: 0"
+          ],
+          "MinValue": 0,
+          "MaxValue": 1,
+          "LoopStartTime": 0,
+          "LoopEndTime": 1,
+          "LoopCount": 0,
+          "LoopWrapNo": 2
+        }
+      },
+      {
+        "Index": 37,
+        "Class": "chainsaw.LaserSightController.CurveVariable",
+        "Userdata": null,
+        "Fields": {
+          "_BaseValue": 1,
+          "Curve": {
+            "Ref": 36,
+            "Class": "via.AnimationCurve"
+          }
+        }
+      },
+      {
+        "Index": 38,
+        "Class": "via.AnimationCurve",
+        "Userdata": null,
+        "Fields": {
+          "Keys": [
+            "0: 1",
+            "1: 0"
+          ],
+          "MinValue": 0,
+          "MaxValue": 1,
+          "LoopStartTime": 0,
+          "LoopEndTime": 1,
+          "LoopCount": 0,
+          "LoopWrapNo": 2
+        }
+      },
+      {
+        "Index": 39,
+        "Class": "chainsaw.LaserSightController.CurveVariable",
+        "Userdata": null,
+        "Fields": {
+          "_BaseValue": 1,
+          "Curve": {
+            "Ref": 38,
+            "Class": "via.AnimationCurve"
+          }
+        }
+      },
+      {
+        "Index": 40,
+        "Class": "chainsaw.PlayerLaserSightControllerUserData",
+        "Userdata": "_Chainsaw/AppSystem/Weapon/LaserSight/PlayerLaserSightControllerUserData.user",
+        "Fields": {}
+      },
+      {
+        "Index": 41,
+        "Class": "chainsaw.LaserSightController",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "OptionColor": [
+            "FF0000FF",
+            "FFFF0000",
+            "FF00FF00",
+            "FFFFFFFF"
+          ],
+          "HideAngle": 15,
+          "ShowAngle": 1.5,
+          "HideLength": 0.8,
+          "ShowLength": 4,
+          "SightEmitJointName": "vfx_Laser1",
+          "STRUCT__SightEmitJointOffset__HasValue": false,
+          "STRUCT__SightEmitJointOffset__Value": "<0, 0, 0>",
+          "SightLineVisibleCurve": {
+            "Ref": 35,
+            "Class": "chainsaw.LaserSightController.CurveVariable"
+          },
+          "VisibleLightAngle": 15,
+          "VanishingLightAngle": 25,
+          "VisibleLightLength": 1,
+          "VanishingLightLength": 0.2,
+          "SightLightVisivleCurve": {
+            "Ref": 37,
+            "Class": "chainsaw.LaserSightController.CurveVariable"
+          },
+          "VisibleLightAngleRateCurve": {
+            "Ref": 39,
+            "Class": "chainsaw.LaserSightController.CurveVariable"
+          },
+          "LineWidth": 1.5,
+          "LaserLengthRate": 0.9,
+          "PlayerParam": {
+            "Ref": 40,
+            "Class": "chainsaw.PlayerLaserSightControllerUserData"
+          }
+        }
+      },
+      {
+        "Index": 42,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": true,
+          "Path": "_Chainsaw/VFX/Provider/EPV_Weapon/EPV_Weapon_Common/epv_0002_weapon_common_epvc_lasersight_0000.pfb"
+        }
+      },
+      {
+        "Index": 43,
+        "Class": "via.effect.script.ObjectEffectManager",
+        "Userdata": null,
+        "Fields": {
+          "Enabled": true,
+          "_DisableRequestEffect": false,
+          "DataContainer": {
+            "Ref": 42,
+            "Class": "via.Prefab"
+          },
+          "ExternalDataContainers": [],
+          "TargetGameObject": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "ExternalPropertys": [],
+          "disableVFXTriggerTrack": false,
+          "disableVFXRangeTrack": false,
+          "disableMotionJackCheck": false,
+          "_VFXTriggerTrackUseHighestWeight": false,
+          "_VFXRangeTrackUseHighestWeight": false,
+          "_StaticDataContainer": false,
+          "_DisableByEmptyDataContainer": false
+        }
+      },
+      {
+        "Index": 44,
+        "Class": "via.GameObject",
+        "Userdata": null,
+        "Fields": {
+          "Name": "Line",
+          "Tag": "",
+          "UpdateSelf": true,
+          "DrawSelf": true,
+          "Timescale": -1
+        }
+      },
+      {
+        "Index": 45,
+        "Class": "via.Transform",
+        "Userdata": null,
+        "Fields": {
+          "Position": "<0, 0, 0>",
+          "Rotation": "{X:0 Y:0 Z:0 W:1}",
+          "Scale": "<1, 1, 1>",
+          "ParentJoint": "",
+          "SameJointsContraint": false,
+          "AbsoluteScaling": false,
+          "JointSegmentScale": false,
+          "JointFastLockScene": false
+        }
+      },
+      {
+        "Index": 46,
+        "Class": "via.render.MaterialParam",
+        "Userdata": null,
+        "Fields": {
+          "MaterialName": "lambert1",
+          "VariableName": "EmissiveColor",
+          "ValueF4": "<1, 0, 0, 1>",
+          "ValueT": "",
+          "ValueF": 0,
+          "ValueB": ""
+        }
+      },
+      {
+        "Index": 47,
+        "Class": "via.render.MaterialParam",
+        "Userdata": null,
+        "Fields": {
+          "MaterialName": "lambert1",
+          "VariableName": "AlphaRate",
+          "ValueF4": "<0, 0, 0, 0>",
+          "ValueT": "",
+          "ValueF": 0,
+          "ValueB": ""
+        }
+      },
+      {
+        "Index": 48,
+        "Class": "via.render.Mesh",
+        "Userdata": null,
+        "Fields": {
+          "RenderOutputID": 15,
+          "Enabled": true,
+          "Mesh": "_Chainsaw/VFX/Mesh/MESH_Common/mesh_0002_common_laser_sight_0000/mesh_0002_common_laser_sight_0000_00.mesh",
+          "Material": "_Chainsaw/VFX/Mesh/MESH_Common/mesh_0002_common_laser_sight_0000/mesh_0002_common_laser_sight_0000_00_00.mdf2",
+          "StaticMesh": false,
+          "SmallObjectCullingFactor": 1,
+          "SharedSkeleton": false,
+          "SharedSkeletonGameObject": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "BVHRebuildFactor": 0.25,
+          "BVHCacheStrategy": 2,
+          "BVHCacheProtectFrame": 30,
+          "PreferOpaque": 2,
+          "PreferAlphaMask": 2,
+          "PreferShadowCast": 2,
+          "EnableRebraiding": 2,
+          "BVHDebug(?)": false,
+          "DrawDefault": true,
+          "ManualBoundingBoxUpdated": false,
+          "FrustumCulling": true,
+          "OcclusionCulling": true,
+          "Occluder": false,
+          "OccluderByLod": 0,
+          "DrawLaterOccluder": false,
+          "DrawVoxelize": true,
+          "DrawnEnvmap": true,
+          "DrawDepthBlocker": false,
+          "DrawDepthOcclusion": true,
+          "DrawRaytracing": true,
+          "DrawGlobalSparseShadow": false,
+          "IgnoreDepth": false,
+          "IgnoreDepthTransparentCorrection": false,
+          "ViewSpaceScaling": false,
+          "MaskIgnoreDepthMesh": false,
+          "BeautyMaskFlag": false,
+          "BeautyMaskChannel": 0,
+          "ReceiveSSSSSFlag": true,
+          "StreamingPriority": 3,
+          "DrawPriorityBias": 0,
+          "TransparentBias": 0,
+          "StencilValue": 0,
+          "Materials": [
+            {
+              "Ref": 46,
+              "Class": "via.render.MaterialParam"
+            },
+            {
+              "Ref": 47,
+              "Class": "via.render.MaterialParam"
+            }
+          ],
+          "UseStencilValuePriority": false,
+          "IgnoreDepthStencilValueWrite": false,
+          "DecalReciveMode": 0,
+          "DrawPostDecal": false,
+          "MeshDecalPriority": 10,
+          "DrawShadowCast": false,
+          "ShadowCastMode": 1,
+          "RealMeshShadow": false,
+          "DrawFarCascadeShadowCast": false,
+          "LodMode": 0,
+          "LodLevel": 0,
+          "LodFollowTarget": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "EnableLodEffectiveRange": false,
+          "LodEffectiveRange": "Range(0, 0)",
+          "ShadowLodMode": 0,
+          "ShadowLodLevel": 0,
+          "EnableShadowLodEffectiveRange": false,
+          "ShadowLodEffectiveRange": "Range(0, 0)",
+          "ShaderLod": -1,
+          "PartsEnable": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "PartsCaching": false,
+          "NormalRecalculationEnable": true,
+          "NREdgeExcluded": false,
+          "NormalRecalculationResizeLodEnable": false,
+          "NormalRecalculationResizeLod": 0,
+          "UseBlendShapeRealTimeLod": false,
+          "UseBlendShapeNormal": true,
+          "BlendShapeChannelWeights": [],
+          "DrawAABB": false,
+          "DrawOccluder": false,
+          "DrawOccluder(?)": false
+        }
+      },
+      {
+        "Index": 49,
+        "Class": "via.GameObject",
+        "Userdata": null,
+        "Fields": {
+          "Name": "Light",
+          "Tag": "",
+          "UpdateSelf": true,
+          "DrawSelf": true,
+          "Timescale": -1
+        }
+      },
+      {
+        "Index": 50,
+        "Class": "via.Transform",
+        "Userdata": null,
+        "Fields": {
+          "Position": "<0, 0, 0>",
+          "Rotation": "{X:0 Y:0 Z:0 W:1}",
+          "Scale": "<1, 1, 1>",
+          "ParentJoint": "",
+          "SameJointsContraint": false,
+          "AbsoluteScaling": false,
+          "JointSegmentScale": false,
+          "JointFastLockScene": false
+        }
+      },
+      {
+        "Index": 51,
+        "Class": "via.relib.effect.behavior.ReLibEPVStandardChild",
+        "Userdata": null,
+        "Fields": {
+          "RelationChildId": 0
+        }
+      },
+      {
+        "Index": 52,
+        "Class": "via.GameObject",
+        "Userdata": null,
+        "Fields": {
+          "Name": "ver4",
+          "Tag": "",
+          "UpdateSelf": true,
+          "DrawSelf": false,
+          "Timescale": -1
+        }
+      },
+      {
+        "Index": 53,
+        "Class": "via.Transform",
+        "Userdata": null,
+        "Fields": {
+          "Position": "<0, 0, 0>",
+          "Rotation": "{X:0 Y:0 Z:0 W:1}",
+          "Scale": "<1, 1, 1>",
+          "ParentJoint": "",
+          "SameJointsContraint": false,
+          "AbsoluteScaling": false,
+          "JointSegmentScale": false,
+          "JointFastLockScene": false
+        }
+      },
+      {
+        "Index": 54,
+        "Class": "via.render.Mesh",
+        "Userdata": null,
+        "Fields": {
+          "RenderOutputID": 31,
+          "Enabled": true,
+          "Mesh": "_Chainsaw/Character/wp/wp40/wp4000/20/wp4000_20.mesh",
+          "Material": "_Chainsaw/Character/wp/wp40/wp4000/20/wp4000_20.mdf2",
+          "StaticMesh": false,
+          "SmallObjectCullingFactor": 1,
+          "SharedSkeleton": false,
+          "SharedSkeletonGameObject": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "BVHRebuildFactor": 0.25,
+          "BVHCacheStrategy": 2,
+          "BVHCacheProtectFrame": 30,
+          "PreferOpaque": 2,
+          "PreferAlphaMask": 2,
+          "PreferShadowCast": 2,
+          "EnableRebraiding": 2,
+          "BVHDebug(?)": false,
+          "DrawDefault": true,
+          "ManualBoundingBoxUpdated": false,
+          "FrustumCulling": true,
+          "OcclusionCulling": true,
+          "Occluder": false,
+          "OccluderByLod": 0,
+          "DrawLaterOccluder": false,
+          "DrawVoxelize": true,
+          "DrawnEnvmap": true,
+          "DrawDepthBlocker": false,
+          "DrawDepthOcclusion": false,
+          "DrawRaytracing": true,
+          "DrawGlobalSparseShadow": false,
+          "IgnoreDepth": false,
+          "IgnoreDepthTransparentCorrection": false,
+          "ViewSpaceScaling": false,
+          "MaskIgnoreDepthMesh": false,
+          "BeautyMaskFlag": false,
+          "BeautyMaskChannel": 0,
+          "ReceiveSSSSSFlag": true,
+          "StreamingPriority": 3,
+          "DrawPriorityBias": 0,
+          "TransparentBias": 0,
+          "StencilValue": 0,
+          "Materials": [],
+          "UseStencilValuePriority": false,
+          "IgnoreDepthStencilValueWrite": false,
+          "DecalReciveMode": 0,
+          "DrawPostDecal": false,
+          "MeshDecalPriority": 10,
+          "DrawShadowCast": false,
+          "ShadowCastMode": 1,
+          "RealMeshShadow": false,
+          "DrawFarCascadeShadowCast": false,
+          "LodMode": 0,
+          "LodLevel": 0,
+          "LodFollowTarget": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "EnableLodEffectiveRange": false,
+          "LodEffectiveRange": "Range(0, 0)",
+          "ShadowLodMode": 0,
+          "ShadowLodLevel": 0,
+          "EnableShadowLodEffectiveRange": false,
+          "ShadowLodEffectiveRange": "Range(0, 0)",
+          "ShaderLod": -1,
+          "PartsEnable": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "PartsCaching": false,
+          "NormalRecalculationEnable": true,
+          "NREdgeExcluded": false,
+          "NormalRecalculationResizeLodEnable": false,
+          "NormalRecalculationResizeLod": 0,
+          "UseBlendShapeRealTimeLod": false,
+          "UseBlendShapeNormal": true,
+          "BlendShapeChannelWeights": [],
+          "DrawAABB": false,
+          "DrawOccluder": false,
+          "DrawOccluder(?)": false
+        }
+      },
+      {
+        "Index": 55,
+        "Class": "via.GameObject",
+        "Userdata": null,
+        "Fields": {
+          "Name": "ver5",
+          "Tag": "",
+          "UpdateSelf": true,
+          "DrawSelf": false,
+          "Timescale": -1
+        }
+      },
+      {
+        "Index": 56,
+        "Class": "via.Transform",
+        "Userdata": null,
+        "Fields": {
+          "Position": "<0, 0, 0>",
+          "Rotation": "{X:0 Y:0 Z:0 W:1}",
+          "Scale": "<1, 1, 1>",
+          "ParentJoint": "",
+          "SameJointsContraint": false,
+          "AbsoluteScaling": false,
+          "JointSegmentScale": false,
+          "JointFastLockScene": false
+        }
+      },
+      {
+        "Index": 57,
+        "Class": "via.render.MaterialParam",
+        "Userdata": null,
+        "Fields": {
+          "MaterialName": "wp4000_00_Laserbeam",
+          "VariableName": "EmissiveColor",
+          "ValueF4": "<0, 0, 0, 0>",
+          "ValueT": "",
+          "ValueF": 0,
+          "ValueB": ""
+        }
+      },
+      {
+        "Index": 58,
+        "Class": "via.render.MaterialParam",
+        "Userdata": null,
+        "Fields": {
+          "MaterialName": "wp4000_00_Laserbeam",
+          "VariableName": "EmissiveIntensity",
+          "ValueF4": "<0, 0, 0, 0>",
+          "ValueT": "",
+          "ValueF": 0,
+          "ValueB": ""
+        }
+      },
+      {
+        "Index": 59,
+        "Class": "via.render.MaterialParam",
+        "Userdata": null,
+        "Fields": {
+          "MaterialName": "wp4000_00_Laserbeam",
+          "VariableName": "AlphaRate",
+          "ValueF4": "<0, 0, 0, 0>",
+          "ValueT": "",
+          "ValueF": 0,
+          "ValueB": ""
+        }
+      },
+      {
+        "Index": 60,
+        "Class": "via.render.Mesh",
+        "Userdata": null,
+        "Fields": {
+          "RenderOutputID": 31,
+          "Enabled": true,
+          "Mesh": "_Chainsaw/Character/wp/wp40/wp4000/21/wp4000_21.mesh",
+          "Material": "_Chainsaw/Character/wp/wp40/wp4000/21/wp4000_21.mdf2",
+          "StaticMesh": false,
+          "SmallObjectCullingFactor": 1,
+          "SharedSkeleton": false,
+          "SharedSkeletonGameObject": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "BVHRebuildFactor": 0.25,
+          "BVHCacheStrategy": 2,
+          "BVHCacheProtectFrame": 30,
+          "PreferOpaque": 2,
+          "PreferAlphaMask": 2,
+          "PreferShadowCast": 2,
+          "EnableRebraiding": 2,
+          "BVHDebug(?)": false,
+          "DrawDefault": true,
+          "ManualBoundingBoxUpdated": false,
+          "FrustumCulling": true,
+          "OcclusionCulling": true,
+          "Occluder": false,
+          "OccluderByLod": 0,
+          "DrawLaterOccluder": false,
+          "DrawVoxelize": true,
+          "DrawnEnvmap": true,
+          "DrawDepthBlocker": false,
+          "DrawDepthOcclusion": false,
+          "DrawRaytracing": true,
+          "DrawGlobalSparseShadow": false,
+          "IgnoreDepth": false,
+          "IgnoreDepthTransparentCorrection": false,
+          "ViewSpaceScaling": false,
+          "MaskIgnoreDepthMesh": false,
+          "BeautyMaskFlag": false,
+          "BeautyMaskChannel": 0,
+          "ReceiveSSSSSFlag": true,
+          "StreamingPriority": 3,
+          "DrawPriorityBias": 0,
+          "TransparentBias": 0,
+          "StencilValue": 0,
+          "Materials": [
+            {
+              "Ref": 57,
+              "Class": "via.render.MaterialParam"
+            },
+            {
+              "Ref": 58,
+              "Class": "via.render.MaterialParam"
+            },
+            {
+              "Ref": 59,
+              "Class": "via.render.MaterialParam"
+            }
+          ],
+          "UseStencilValuePriority": false,
+          "IgnoreDepthStencilValueWrite": false,
+          "DecalReciveMode": 0,
+          "DrawPostDecal": false,
+          "MeshDecalPriority": 10,
+          "DrawShadowCast": false,
+          "ShadowCastMode": 1,
+          "RealMeshShadow": false,
+          "DrawFarCascadeShadowCast": false,
+          "LodMode": 0,
+          "LodLevel": 0,
+          "LodFollowTarget": "Ref<00000000-0000-0000-0000-000000000000 => >",
+          "EnableLodEffectiveRange": false,
+          "LodEffectiveRange": "Range(0, 0)",
+          "ShadowLodMode": 0,
+          "ShadowLodLevel": 0,
+          "EnableShadowLodEffectiveRange": false,
+          "ShadowLodEffectiveRange": "Range(0, 0)",
+          "ShaderLod": -1,
+          "PartsEnable": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "PartsCaching": false,
+          "NormalRecalculationEnable": true,
+          "NREdgeExcluded": false,
+          "NormalRecalculationResizeLodEnable": false,
+          "NormalRecalculationResizeLod": 0,
+          "UseBlendShapeRealTimeLod": false,
+          "UseBlendShapeNormal": true,
+          "BlendShapeChannelWeights": [],
+          "DrawAABB": false,
+          "DrawOccluder": false,
+          "DrawOccluder(?)": false
+        }
+      }
+    ]
+  },
+  {
+    "Path": "natives/stm/_chainsaw/appsystem/shell/bullet/wp4000/wp4000shellgeneratoruserdata.user.2",
+    "SchemaMismatches": [],
+    "Objects": [
+      {
+        "Ref": 5,
+        "Class": "chainsaw.BulletShellGeneratorUserData"
+      }
+    ],
+    "Instances": [
+      {
+        "Index": 0,
+        "Class": "",
+        "Userdata": null,
+        "Fields": {}
+      },
+      {
+        "Index": 1,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": false,
+          "Path": ""
+        }
+      },
+      {
+        "Index": 2,
+        "Class": "via.Prefab",
+        "Userdata": null,
+        "Fields": {
+          "Standby": true,
+          "Path": ""
+        }
+      },
+      {
+        "Index": 3,
+        "Class": "share.PrefabController",
+        "Userdata": null,
+        "Fields": {
+          "_Item": {
+            "Ref": 2,
+            "Class": "via.Prefab"
+          },
+          "_IsConvertVec3ToPosition": true,
+          "_LoadPriority": 32767
+        }
+      },
+      {
+        "Index": 4,
+        "Class": "chainsaw.BulletShellInfoUserData",
+        "Userdata": "_Chainsaw/AppSystem/Shell/Bullet/wp4000/WP4000ShellInfo.user",
+        "Fields": {}
+      },
+      {
+        "Index": 5,
+        "Class": "chainsaw.BulletShellGeneratorUserData",
+        "Userdata": null,
+        "Fields": {
+          "_FolderType": 0,
+          "_Prefab": {
+            "Ref": 1,
+            "Class": "via.Prefab"
+          },
+          "_ObjectPoolEnable": true,
+          "_ShellType": 0,
+          "_IsCreateDummy": false,
+          "_IsUsePoolDummy": false,
+          "_CreateDummyShellType": -1,
+          "_DummyPrefab": {
+            "Ref": 3,
+            "Class": "share.PrefabController"
+          },
+          "_ShellInfoUserData": {
+            "Ref": 4,
+            "Class": "chainsaw.BulletShellInfoUserData"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "Path": "natives/stm/_chainsaw/appsystem/shell/bullet/wp4000/wp4000shellinfo.user.2",
+    "SchemaMismatches": [],
+    "Objects": [
+      {
+        "Ref": 12,
+        "Class": "chainsaw.BulletShellInfoUserData"
+      }
+    ],
+    "Instances": [
+      {
+        "Index": 0,
+        "Class": "",
+        "Userdata": null,
+        "Fields": {}
+      },
+      {
+        "Index": 1,
+        "Class": "chainsaw.ShellBaseLifeInfo",
+        "Userdata": null,
+        "Fields": {
+          "_Type": 2,
+          "_Time": 5,
+          "_Distance": 100,
+          "_TerrainHit": true,
+          "_WaterSufaceHit": false,
+          "_CorrectEndPosition": false
+        }
+      },
+      {
+        "Index": 2,
+        "Class": "chainsaw.BulletShellMoveInfo",
+        "Userdata": null,
+        "Fields": {
+          "_Direction": "<0, 0, 1>",
+          "_Speed": 300,
+          "_Gravity": 0,
+          "_IgnoreGravityDistance": 20,
+          "_DrawShellObject": false,
+          "_RandomRadius": 0.007,
+          "_RandomRadius_Fit": 0.004
+        }
+      },
+      {
+        "Index": 3,
+        "Class": "via.AnimationCurve",
+        "Userdata": null,
+        "Fields": {
+          "Keys": [
+            "0: 1",
+            "0.75: 1",
+            "1: 0.75"
+          ],
+          "MinValue": 0,
+          "MaxValue": 2,
+          "LoopStartTime": 0,
+          "LoopEndTime": 1,
+          "LoopCount": 0,
+          "LoopWrapNo": 2
+        }
+      },
+      {
+        "Index": 4,
+        "Class": "chainsaw.ShellBaseAttackInfo.CurveVariable",
+        "Userdata": null,
+        "Fields": {
+          "_BaseValue": 1,
+          "_RateCurve": {
+            "Ref": 3,
+            "Class": "via.AnimationCurve"
+          }
+        }
+      },
+      {
+        "Index": 5,
+        "Class": "via.AnimationCurve",
+        "Userdata": null,
+        "Fields": {
+          "Keys": [
+            "0: 1",
+            "0.75: 1",
+            "1: 0.75"
+          ],
+          "MinValue": 0,
+          "MaxValue": 2,
+          "LoopStartTime": 0,
+          "LoopEndTime": 1,
+          "LoopCount": 0,
+          "LoopWrapNo": 2
+        }
+      },
+      {
+        "Index": 6,
+        "Class": "chainsaw.ShellBaseAttackInfo.CurveVariable",
+        "Userdata": null,
+        "Fields": {
+          "_BaseValue": 1,
+          "_RateCurve": {
+            "Ref": 5,
+            "Class": "via.AnimationCurve"
+          }
+        }
+      },
+      {
+        "Index": 7,
+        "Class": "via.AnimationCurve",
+        "Userdata": null,
+        "Fields": {
+          "Keys": [
+            "0: 1",
+            "0.75: 1",
+            "1: 0.75"
+          ],
+          "MinValue": 0,
+          "MaxValue": 2,
+          "LoopStartTime": 0,
+          "LoopEndTime": 1,
+          "LoopCount": 0,
+          "LoopWrapNo": 2
+        }
+      },
+      {
+        "Index": 8,
+        "Class": "chainsaw.ShellBaseAttackInfo.CurveVariable",
+        "Userdata": null,
+        "Fields": {
+          "_BaseValue": 1,
+          "_RateCurve": {
+            "Ref": 7,
+            "Class": "via.AnimationCurve"
+          }
+        }
+      },
+      {
+        "Index": 9,
+        "Class": "via.AnimationCurve",
+        "Userdata": null,
+        "Fields": {
+          "Keys": [
+            "0: 1",
+            "0.75: 1",
+            "1: 0.75"
+          ],
+          "MinValue": 0,
+          "MaxValue": 2,
+          "LoopStartTime": 0,
+          "LoopEndTime": 1,
+          "LoopCount": 0,
+          "LoopWrapNo": 2
+        }
+      },
+      {
+        "Index": 10,
+        "Class": "chainsaw.ShellBaseAttackInfo.CurveVariable",
+        "Userdata": null,
+        "Fields": {
+          "_BaseValue": 1,
+          "_RateCurve": {
+            "Ref": 9,
+            "Class": "via.AnimationCurve"
+          }
+        }
+      },
+      {
+        "Index": 11,
+        "Class": "chainsaw.BulletShellAttackInfo",
+        "Userdata": null,
+        "Fields": {
+          "_VibrationTriggerID": 4294967295,
+          "_DecayByDistCamToVibrationOwner": false,
+          "_DecayDistLimitNear": 0,
+          "_DecayDistLimitFar": 0,
+          "_DamageRate": {
+            "Ref": 4,
+            "Class": "chainsaw.ShellBaseAttackInfo.CurveVariable"
+          },
+          "_WinceRate": {
+            "Ref": 6,
+            "Class": "chainsaw.ShellBaseAttackInfo.CurveVariable"
+          },
+          "_BreakRate": {
+            "Ref": 8,
+            "Class": "chainsaw.ShellBaseAttackInfo.CurveVariable"
+          },
+          "_StoppingRate": {
+            "Ref": 10,
+            "Class": "chainsaw.ShellBaseAttackInfo.CurveVariable"
+          },
+          "_ColliderRadius": 0.005,
+          "_CriticalRate": 5,
+          "_CriticalRate_Fit": 7,
+          "_TerrainHitSoundType": 3
+        }
+      },
+      {
+        "Index": 12,
+        "Class": "chainsaw.BulletShellInfoUserData",
+        "Userdata": null,
+        "Fields": {
+          "_LifeInfo": {
+            "Ref": 1,
+            "Class": "chainsaw.ShellBaseLifeInfo"
+          },
+          "_MoveInfo": {
+            "Ref": 2,
+            "Class": "chainsaw.BulletShellMoveInfo"
+          },
+          "_AttackInfo": {
+            "Ref": 11,
+            "Class": "chainsaw.BulletShellAttackInfo"
+          }
+        }
+      }
+    ]
+  }
+]

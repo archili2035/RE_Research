@@ -1,0 +1,746 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>固定房间与门资产规范 · RE 研究室</title><style>/*!
+ * xavierstudio-site-kit · tokens
+ * 一层：设计令牌。唯一真相源。
+ *
+ * 风格口径：苹果官网的骨架（排版节奏、留白、双表面色带、药丸按钮）
+ *          + 保留个人色（赭石强调色、衬线标题）
+ *
+ * 硬性约束：任何页面、任何组件都不准写死色值与字号，只引用这里的变量。
+ *          新增语义色请先加令牌，再在组件里引用。
+ */
+:root {
+  /* ---- 表面 ---------------------------------------------------------- */
+  /* 苹果用纯白 / #f5f5f7 两级表面做色带交替，这里整体偏暖一度保留个人气质 */
+  --surface: #fdfcfa;
+  --surface-alt: #f4f2ed;
+  --surface-raised: #ffffff;
+  --surface-inverse: #1c1b18;
+
+  /* ---- 文字 ---------------------------------------------------------- */
+  --ink: #1c1b18;
+  --ink-secondary: #605d56;
+  --ink-tertiary: #8a867d;
+  --ink-on-inverse: #f4f2ed;
+  --ink-on-accent: #ffffff;
+
+  /* ---- 强调色与语义色 ------------------------------------------------ */
+  --accent: #9c3d2e;
+  --accent-hover: #7f2f22;
+  --accent-wash: #f6ebe8;
+  --accent-line: #d9b3aa;
+
+  --ok: #4f6b45;
+  --ok-wash: #eef3e9;
+  --warn: #9a6a1c;
+  --warn-wash: #faf1de;
+  --danger: #a33226;
+  --danger-wash: #fbebe9;
+  --info: #3f5a73;
+  --info-wash: #ecf1f6;
+
+  /* ---- 分隔 ---------------------------------------------------------- */
+  /* 苹果几乎不用边框，靠表面层级分区；发丝线只在表格与必要处出现 */
+  --hairline: #e4e0d7;
+  --hairline-strong: #cdc7ba;
+
+  /* ---- 字体 ---------------------------------------------------------- */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-serif:
+    "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", Georgia, serif;
+  --font-mono:
+    ui-monospace, "SF Mono", "JetBrains Mono", "IBM Plex Mono", Consolas, monospace;
+
+  /* ---- 字阶 ----------------------------------------------------------
+   * 苹果的做法：字号越大，字距收得越紧。每一级字号都配一组行高与字距。
+   */
+  --text-display: 64px;
+  --text-display-lh: 1.06;
+  --text-display-ls: -0.015em;
+
+  --text-h1: 44px;
+  --text-h1-lh: 1.1;
+  --text-h1-ls: -0.009em;
+
+  --text-h2: 30px;
+  --text-h2-lh: 1.2;
+  --text-h2-ls: -0.005em;
+
+  --text-h3: 22px;
+  --text-h3-lh: 1.3;
+  --text-h3-ls: -0.003em;
+
+  --text-h4: 18px;
+  --text-h4-lh: 1.4;
+  --text-h4-ls: 0;
+
+  --text-body: 17px;
+  --text-body-lh: 1.47;
+
+  --text-small: 14px;
+  --text-small-lh: 1.55;
+
+  --text-micro: 12px;
+  --text-micro-lh: 1.5;
+  --text-micro-ls: 0.04em;
+
+  /* ---- 字重 ---------------------------------------------------------- */
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-bold: 600;
+
+  /* ---- 间距（4 的倍数） ---------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ---- 版面宽度 ------------------------------------------------------
+   * 980px 是苹果的内容宽；阅读密集的长文收到 692px 以控制每行字数。
+   */
+  --width-wide: 1180px;
+  --width-content: 980px;
+  --width-reading: 692px;
+
+  /* ---- 圆角 ---------------------------------------------------------- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-pill: 980px;
+
+  /* ---- 阴影 ----------------------------------------------------------
+   * 克制使用。层级优先用表面色差表达，阴影只给浮起元素。
+   */
+  --shadow-sm: 0 1px 2px rgba(28, 27, 24, 0.04);
+  --shadow-md: 0 4px 16px rgba(28, 27, 24, 0.06);
+
+  /* ---- 动效 ---------------------------------------------------------- */
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration: 0.22s;
+}
+
+/* 窄屏收字号与纵向节奏，令牌一处改、全站生效 */
+@media (max-width: 734px) {
+  :root {
+    --text-display: 40px;
+    --text-h1: 32px;
+    --text-h2: 24px;
+    --text-h3: 19px;
+    --text-body: 16px;
+    --space-9: 56px;
+    --space-10: 72px;
+  }
+}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--surface);color:var(--ink);font:var(--text-body)/var(--text-body-lh) var(--font-sans)}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}header,main,footer{max-width:var(--width-wide);margin:auto;padding:var(--space-6)}header{display:flex;justify-content:space-between;align-items:center;gap:var(--space-4);border-bottom:1px solid var(--hairline)}header a{text-decoration:none}.eyebrow{font-size:var(--text-micro);letter-spacing:var(--text-micro-ls);color:var(--accent)}h1{font-family:var(--font-serif);font-size:var(--text-h1);font-weight:var(--weight-bold);line-height:var(--text-h1-lh);margin:var(--space-4) 0}h2{font-size:var(--text-h2);line-height:var(--text-h2-lh)}h3{font-size:var(--text-h3)}.lead{color:var(--ink-secondary);max-width:var(--width-reading);line-height:1.8}footer{font-size:var(--text-small);color:var(--ink-secondary);border-top:1px solid var(--hairline);line-height:1.8}.pill{display:inline-block;padding:var(--space-2) var(--space-3);border-radius:var(--radius-pill);background:var(--accent-wash);font-size:var(--text-micro);color:var(--accent)}@media(max-width:600px){header,main,footer{padding:var(--space-5)}header{align-items:flex-start;flex-direction:column}}
+article{max-width:var(--width-content);line-height:1.85}article h2{margin-top:var(--space-7)}article h3{margin-top:var(--space-6)}pre{overflow:auto;background:var(--surface-alt);padding:var(--space-4);border-radius:var(--radius-sm)}code{font-family:var(--font-mono);font-size:var(--text-small)}table{border-collapse:collapse;display:block;overflow:auto;max-width:100%;font-size:var(--text-small)}th,td{padding:var(--space-3);border:1px solid var(--hairline);text-align:left}th{background:var(--surface-alt)}blockquote{border-left:3px solid var(--accent-line);margin-left:0;padding-left:var(--space-4);color:var(--ink-secondary)}p,li{overflow-wrap:anywhere}article a{word-break:break-word}</style></head><body><header><a href="index.html">← RE 研究主题</a><span class="pill">研究文档</span></header><main><p class="eyebrow">LEVEL DESIGN / MODULE CONTRACT</p><article><h1>固定空间资产清单 · V6 建筑通道版</h1>
+<p>数据源：dist/catalog.js，catalogVersion = 4。详见 <a href="map_corridor_design.html">完整通道设计与决策</a>。</p>
+<h2>制作边界</h2>
+<p>14 个固定房间 + 8 个建筑通道，共 22 种空间模块。房间门定义保持 V4 不变；通道 C01–C08 为新的建筑通道目录，旧版本同编号不可混用。实例、旋转和玩法标签不增加资产种类。不包含家具、道具、材质等公共构件，当前没有交付三维成品。</p>
+<p>每格 2×2 米；只允许 0°／90°／180°／270°旋转，禁止拉伸、镜像、裁切、临时开门或封接口。通道主体宽 2 米，前厅局部加宽；2 米是用户确认的本轮原型参数，<strong>不是《安魂曲》实测值</strong>。</p>
+<h2>房间轮廓</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>外接尺寸（格）</th>
+<th align="right">占地格数</th>
+<th align="right">净面积</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>S1</td>
+<td>2×2</td>
+<td align="right">4</td>
+<td align="right">16 m²</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>2×3</td>
+<td align="right">6</td>
+<td align="right">24 m²</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>3×3</td>
+<td align="right">9</td>
+<td align="right">36 m²</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>3×4</td>
+<td align="right">12</td>
+<td align="right">48 m²</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>4×4</td>
+<td align="right">16</td>
+<td align="right">64 m²</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>4×4 减去右上 2×2</td>
+<td align="right">12</td>
+<td align="right">48 m²</td>
+</tr>
+</tbody></table>
+<h2>房间模块</h2>
+<p>同编号固定形状、门数、门位。全部实例必须实现全部门，不能把门封墙。</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>类别</th>
+<th>形状</th>
+<th align="right">面积</th>
+<th align="right">固定实际门数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>R01</td>
+<td>大堂</td>
+<td>S3</td>
+<td align="right">36 m²</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>R02</td>
+<td>大堂</td>
+<td>S5</td>
+<td align="right">64 m²</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>R03</td>
+<td>厨房</td>
+<td>S4</td>
+<td align="right">48 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>R04</td>
+<td>厨房</td>
+<td>S6</td>
+<td align="right">48 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>R05</td>
+<td>医疗室</td>
+<td>S3</td>
+<td align="right">36 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>R06</td>
+<td>医疗室</td>
+<td>S4</td>
+<td align="right">48 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>R07</td>
+<td>储藏室</td>
+<td>S1</td>
+<td align="right">16 m²</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>R08</td>
+<td>储藏室</td>
+<td>S2</td>
+<td align="right">24 m²</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>R09</td>
+<td>办公室</td>
+<td>S3</td>
+<td align="right">36 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>办公室</td>
+<td>S6</td>
+<td align="right">48 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>休息室</td>
+<td>S3</td>
+<td align="right">36 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>休息室</td>
+<td>S4</td>
+<td align="right">48 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>楼梯间</td>
+<td>S2</td>
+<td align="right">24 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>R14</td>
+<td>杂物间</td>
+<td>S1</td>
+<td align="right">16 m²</td>
+<td align="right">1</td>
+</tr>
+</tbody></table>
+<p>R07/R08/R14 为单门，R01/R02 为三门，其余为双门。主路使用多门房间，奖励房使用单门房间。R13 为独立楼梯间，两层同坐标、同朝向配对；跨层连接不计入平面门。三维梯段、净空与层高尚待灰盒验证。</p>
+<h2>固定房门坐标</h2>
+<p>0° 局部格坐标，x 向右、y 向下；inside 与 outside 的公共边为门，法线指向 outside。门编号随整体旋转保持不变。</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>门</th>
+<th>inside</th>
+<th>outside</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>R01</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R01</td>
+<td>D2 / door</td>
+<td>(2,1)</td>
+<td>(3,1)</td>
+</tr>
+<tr>
+<td>R01</td>
+<td>D3 / door</td>
+<td>(1,2)</td>
+<td>(1,3)</td>
+</tr>
+<tr>
+<td>R02</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R02</td>
+<td>D2 / door</td>
+<td>(3,1)</td>
+<td>(4,1)</td>
+</tr>
+<tr>
+<td>R02</td>
+<td>D3 / door</td>
+<td>(1,3)</td>
+<td>(1,4)</td>
+</tr>
+<tr>
+<td>R03</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R03</td>
+<td>D2 / door</td>
+<td>(2,1)</td>
+<td>(3,1)</td>
+</tr>
+<tr>
+<td>R04</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R04</td>
+<td>D2 / door</td>
+<td>(3,2)</td>
+<td>(4,2)</td>
+</tr>
+<tr>
+<td>R05</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R05</td>
+<td>D2 / door</td>
+<td>(1,2)</td>
+<td>(1,3)</td>
+</tr>
+<tr>
+<td>R06</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R06</td>
+<td>D2 / door</td>
+<td>(2,1)</td>
+<td>(3,1)</td>
+</tr>
+<tr>
+<td>R07</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(0,2)</td>
+</tr>
+<tr>
+<td>R08</td>
+<td>D1 / door</td>
+<td>(0,2)</td>
+<td>(0,3)</td>
+</tr>
+<tr>
+<td>R09</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R09</td>
+<td>D2 / door</td>
+<td>(2,1)</td>
+<td>(3,1)</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>D2 / door</td>
+<td>(2,3)</td>
+<td>(2,4)</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>D2 / door</td>
+<td>(1,2)</td>
+<td>(1,3)</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(-1,1)</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>D2 / door</td>
+<td>(2,1)</td>
+<td>(3,1)</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>D1 / door</td>
+<td>(0,0)</td>
+<td>(0,-1)</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>D2 / door</td>
+<td>(0,2)</td>
+<td>(0,3)</td>
+</tr>
+<tr>
+<td>R14</td>
+<td>D1 / door</td>
+<td>(0,1)</td>
+<td>(0,2)</td>
+</tr>
+</tbody></table>
+<h2>完整通道模块</h2>
+<p>这些是完整美术模块，不是逐格寻路后的显示合并。每个实例的 cells 必须精确等于某个模块旋转和平移后的 cells。</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>名称</th>
+<th>外接尺寸（格）</th>
+<th align="right">占地格数</th>
+<th align="right">净面积</th>
+<th align="right">固定接口数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C01</td>
+<td>短连接廊</td>
+<td>3×1</td>
+<td align="right">3</td>
+<td align="right">12 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>C02</td>
+<td>单侧门长廊</td>
+<td>7×1</td>
+<td align="right">7</td>
+<td align="right">28 m²</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>C03</td>
+<td>错位双侧门长廊</td>
+<td>7×1</td>
+<td align="right">7</td>
+<td align="right">28 m²</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>C04</td>
+<td>不等臂转角廊</td>
+<td>5×3</td>
+<td align="right">7</td>
+<td align="right">28 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>C05</td>
+<td>错位折廊</td>
+<td>7×3</td>
+<td align="right">9</td>
+<td align="right">36 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>C06</td>
+<td>偏置分岔廊</td>
+<td>7×4</td>
+<td align="right">10</td>
+<td align="right">40 m²</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>C07</td>
+<td>半包围回廊</td>
+<td>7×5</td>
+<td align="right">15</td>
+<td align="right">60 m²</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>C08</td>
+<td>加宽转角前厅</td>
+<td>4×3</td>
+<td align="right">8</td>
+<td align="right">32 m²</td>
+<td align="right">3</td>
+</tr>
+</tbody></table>
+<h3>C01 短连接廊</h3>
+<pre><code class="language-text">■■■
+</code></pre>
+<h3>C02 单侧门长廊</h3>
+<pre><code class="language-text">■■■■■■■
+</code></pre>
+<h3>C03 错位双侧门长廊</h3>
+<pre><code class="language-text">■■■■■■■
+</code></pre>
+<h3>C04 不等臂转角廊</h3>
+<pre><code class="language-text">□□□□■
+□□□□■
+■■■■■
+</code></pre>
+<h3>C05 错位折廊</h3>
+<pre><code class="language-text">□□□■■■■
+□□□■□□□
+■■■■□□□
+</code></pre>
+<h3>C06 偏置分岔廊</h3>
+<pre><code class="language-text">■■■■■■■
+□□□□□■□
+□□□□□■□
+□□□□□■□
+</code></pre>
+<h3>C07 半包围回廊</h3>
+<pre><code class="language-text">■■■■■■■
+■□□□□□■
+■□□□□□■
+■□□□□□■
+■□□□□□■
+</code></pre>
+<h3>C08 加宽转角前厅</h3>
+<pre><code class="language-text">□□■■
+□□■■
+■■■■
+</code></pre>
+<h3>通道固定接口坐标</h3>
+<p>全部接口宽 1 格；接续口与房间侧门类型固定，没有随机侧门。</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>接口／类型</th>
+<th>inside</th>
+<th>outside</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C01</td>
+<td>P1 / continuation</td>
+<td>(0,0)</td>
+<td>(-1,0)</td>
+</tr>
+<tr>
+<td>C01</td>
+<td>P2 / continuation</td>
+<td>(2,0)</td>
+<td>(3,0)</td>
+</tr>
+<tr>
+<td>C02</td>
+<td>P1 / continuation</td>
+<td>(0,0)</td>
+<td>(-1,0)</td>
+</tr>
+<tr>
+<td>C02</td>
+<td>P2 / continuation</td>
+<td>(6,0)</td>
+<td>(7,0)</td>
+</tr>
+<tr>
+<td>C02</td>
+<td>P3 / room</td>
+<td>(3,0)</td>
+<td>(3,1)</td>
+</tr>
+<tr>
+<td>C03</td>
+<td>P1 / continuation</td>
+<td>(0,0)</td>
+<td>(-1,0)</td>
+</tr>
+<tr>
+<td>C03</td>
+<td>P2 / continuation</td>
+<td>(6,0)</td>
+<td>(7,0)</td>
+</tr>
+<tr>
+<td>C03</td>
+<td>P3 / room</td>
+<td>(2,0)</td>
+<td>(2,-1)</td>
+</tr>
+<tr>
+<td>C03</td>
+<td>P4 / room</td>
+<td>(4,0)</td>
+<td>(4,1)</td>
+</tr>
+<tr>
+<td>C04</td>
+<td>P1 / continuation</td>
+<td>(0,2)</td>
+<td>(-1,2)</td>
+</tr>
+<tr>
+<td>C04</td>
+<td>P2 / continuation</td>
+<td>(4,0)</td>
+<td>(4,-1)</td>
+</tr>
+<tr>
+<td>C05</td>
+<td>P1 / continuation</td>
+<td>(0,2)</td>
+<td>(-1,2)</td>
+</tr>
+<tr>
+<td>C05</td>
+<td>P2 / continuation</td>
+<td>(6,0)</td>
+<td>(6,-1)</td>
+</tr>
+<tr>
+<td>C06</td>
+<td>P1 / continuation</td>
+<td>(0,0)</td>
+<td>(-1,0)</td>
+</tr>
+<tr>
+<td>C06</td>
+<td>P2 / continuation</td>
+<td>(6,0)</td>
+<td>(7,0)</td>
+</tr>
+<tr>
+<td>C06</td>
+<td>P3 / continuation</td>
+<td>(5,3)</td>
+<td>(5,4)</td>
+</tr>
+<tr>
+<td>C07</td>
+<td>P1 / continuation</td>
+<td>(0,4)</td>
+<td>(0,5)</td>
+</tr>
+<tr>
+<td>C07</td>
+<td>P2 / continuation</td>
+<td>(6,4)</td>
+<td>(6,5)</td>
+</tr>
+<tr>
+<td>C07</td>
+<td>P3 / room</td>
+<td>(3,0)</td>
+<td>(3,1)</td>
+</tr>
+<tr>
+<td>C08</td>
+<td>P1 / continuation</td>
+<td>(0,2)</td>
+<td>(-1,2)</td>
+</tr>
+<tr>
+<td>C08</td>
+<td>P2 / continuation</td>
+<td>(3,0)</td>
+<td>(3,-1)</td>
+</tr>
+<tr>
+<td>C08</td>
+<td>P3 / room</td>
+<td>(3,1)</td>
+<td>(4,1)</td>
+</tr>
+</tbody></table>
+<h2>严格连接合同</h2>
+<p>所有接口一对一连接，禁止封口、原子补格、拉伸或临时开门。room 类型侧门只能接房间；continuation 接续口可接通道或房间。C07 内侧房间必须完整落在 enclosure 内。</p>
+<h2>网页与导出</h2>
+<p>全部 22 个模块可见，蓝色为接续口、黄色为房门；组团卡片可检查通道服务的房间。导出 version = 6、catalogVersion = 4，包含 corridorInstances、roomGroups、ports.kind、connections 和 C07 enclosure。旧版本同编号不兼容。</p>
+<p>V6.1 默认样例：23 房间、房间面积 764 m²、通道面积 620 m²；最长无分支通道 42 格，最大直连组 4 间。仍未达到 24 格长度目标，当前不保证布局质量达标。验证记录见 macro-test-results.json；完整方案与历史对比见 CORRIDOR_DESIGN.md。</p>
+</article></main><footer>内容来自工作区研究文档。<a href="index.html">返回主题导航</a></footer></body></html>

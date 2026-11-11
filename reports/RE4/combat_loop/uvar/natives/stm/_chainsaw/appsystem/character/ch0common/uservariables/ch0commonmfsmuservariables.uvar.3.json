@@ -1,0 +1,760 @@
+{
+  "Name": "ch0CommonMFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "MoveDir",
+      "guid": "c61e4dc7-d725-4624-8bbb-610bd10fe108",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TargetMoveDir",
+      "guid": "81aeeffd-f0fd-4db9-a90f-5444f24ffee3",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StickDampingPower",
+      "guid": "4c4dd481-b501-4d81-97ac-555d36484912",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveStickPower",
+      "guid": "0dbf9275-eb9c-4c3d-b248-08ca90a19dc1",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "WatchDir",
+      "guid": "057ace95-d352-4f6a-aeae-78eb6083d009",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TargetWatchDir",
+      "guid": "53e4dad0-1df1-4f54-899e-c750cd88e1b7",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "InverseTargetWatchDir",
+      "guid": "4e92f6fc-e6e7-486f-99a9-2396655cf5e3",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "WatchStickPower",
+      "guid": "7539bead-3de0-42a0-a001-ef3d7c5e27cc",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotionVariationTreeIndex",
+      "guid": "17ca352e-fb17-4c0f-aaba-635e94abb5d1",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AttackVatiationId",
+      "guid": "034ccf81-d41a-4459-b8bc-5618d8bd5f5d",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotionVariationId",
+      "guid": "ffa2439b-0d4e-4b50-b072-ccabc25e96e5",
+      "type": 8,
+      "Default": "4294967295",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ConditionalMotionEnd",
+      "guid": "de5063bf-a6de-4cac-8999-f13ba0136b4d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "LastDamageDirection",
+      "guid": "e488c367-65c5-4fba-b206-c776f811e1d4",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLastDamageFromFront",
+      "guid": "4fcf92a9-ef0b-4e03-93b2-6de04b64a4ba",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLastDamageFromLeft",
+      "guid": "b07d1b49-53b5-44b8-9ec6-d32224f81eb4",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLastDamageFromAbove",
+      "guid": "18fe5883-7541-40d2-97a7-cd0ac9c03716",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "WheelSpeed",
+      "guid": "da7d1699-300b-42cf-807b-20c6e5e32fd1",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "WheelBlendRate",
+      "guid": "cd0ead89-ec72-4368-a36c-a66dc04af7ea",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RunSpeed",
+      "guid": "d84ee979-e193-4d36-88f8-67a642d32c01",
+      "type": 11,
+      "Default": "1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DiffTargetWatchAndMove",
+      "guid": "2d1ce0fa-ae39-4241-8c24-49af1811770c",
+      "type": 11,
+      "Default": "0",
+      "Expression": [
+        {
+          "nodeId": 0,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "53e4dad0-1df1-4f54-899e-c750cd88e1b7",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 1,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "81aeeffd-f0fd-4db9-a90f-5444f24ffee3",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 2,
+          "Name": "CalculateNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "1",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 3,
+          "Name": "AbsNode",
+          "Params": []
+        }
+      ],
+      "OutputNode": 3,
+      "Connections": [
+        {},
+        {},
+        {}
+      ]
+    },
+    {
+      "Name": "WalkSpeedMaxStickPower",
+      "guid": "ac7cfb6f-652d-4163-92cf-dbaa011fb61c",
+      "type": 11,
+      "Default": "0.7",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLastDamageFrontLeft",
+      "guid": "d1227039-8258-4b0c-a116-f2518ba4ee86",
+      "type": 2,
+      "Default": "False",
+      "Expression": [
+        {
+          "nodeId": 0,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "4fcf92a9-ef0b-4e03-93b2-6de04b64a4ba",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 1,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "e488c367-65c5-4fba-b206-c776f811e1d4",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 2,
+          "Name": "ValueNode",
+          "Params": [
+            {
+              "Name": "Value",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 3,
+          "Name": "CompareNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 4,
+          "Name": "LogicNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        }
+      ],
+      "OutputNode": 4,
+      "Connections": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    {
+      "Name": "IsLastDamageFrontRight",
+      "guid": "f7a6f002-025a-4399-9222-8a7c1961dd82",
+      "type": 2,
+      "Default": "False",
+      "Expression": [
+        {
+          "nodeId": 0,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "4fcf92a9-ef0b-4e03-93b2-6de04b64a4ba",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 1,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "e488c367-65c5-4fba-b206-c776f811e1d4",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 2,
+          "Name": "ValueNode",
+          "Params": [
+            {
+              "Name": "Value",
+              "Value": "3",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 3,
+          "Name": "CompareNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 4,
+          "Name": "LogicNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        }
+      ],
+      "OutputNode": 4,
+      "Connections": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    {
+      "Name": "DampingMoveDir",
+      "guid": "46436862-59e7-465f-8e98-ae0151d7a1a7",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsDampingMoveDir",
+      "guid": "607d2aac-e542-4b9b-889c-f4bca8d36919",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "ch0CommonActionUserVariables",
+      "Variables": [
+        {
+          "Name": "Fire",
+          "guid": "e3d674f8-ff75-4324-9685-ba7d772b6268",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "CombatEnable",
+          "guid": "61a99a07-40ca-4f94-b900-2bd57a8248bb",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "ShootEnable",
+          "guid": "02a38701-66dd-4816-9c7c-910d52d248d8",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "ReloadEnable",
+          "guid": "f515ca0e-2446-47a8-a151-a2582e2fda35",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "ChangeWeaponEnable",
+          "guid": "0924c23b-146f-4945-8532-26167e9da753",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "SwitchMotionBankType",
+          "guid": "c8957a61-345f-46e3-bdaa-b99fd8a8500b",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "SwitchMotionBankType_Arm",
+          "guid": "348afd07-23a0-4ca5-98c5-91431e9ad027",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsBareHands",
+          "guid": "02fb55c0-55b0-4686-a6e1-974b9a70fa0d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsEquipGun",
+          "guid": "d53bf0d8-5954-4500-8ce2-1ca184dc80e1",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsEquipMelee",
+          "guid": "937039af-c8bd-4760-8d45-3748584d8930",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsEquipGrenade",
+          "guid": "439d1c4a-ffd6-475d-8da6-70752eadbe55",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsEquipHandAccessory",
+          "guid": "b0ea4cba-3853-4f52-b80f-92532cd82e09",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsLocked",
+          "guid": "0a85fc70-e4c7-4807-9e32-334292083950",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsJacked",
+          "guid": "0d723fc7-5be1-48a4-9779-5f2395c68415",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsJackedNoAutoMove",
+          "guid": "19cef726-69cb-4226-a94b-6b8cd6185225",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "MeleeHit",
+          "guid": "c08a2550-6d5e-408d-8cb4-41b9fb1fdf6f",
+          "type": 16,
+          "Default": null,
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "MeleeBreak",
+          "guid": "0d22eee0-dc31-4ddd-a60e-a6c2c5edcfbc",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsFrontWall",
+          "guid": "e6a8244c-fdb0-4444-bf34-3f15dfa66387",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "ShootCansel",
+          "guid": "952515d6-158b-4f26-8fb7-9b4721fe0327",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "JogTurn",
+          "guid": "c7026114-c88d-48a0-99e4-070ed7ee3d42",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsNPCMode",
+          "guid": "df290db0-d29a-4bba-af4e-7c317dce1be2",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "DoorWalkPass",
+          "guid": "52877c36-38f8-4b72-a116-e514222f2954",
+          "type": 16,
+          "Default": null,
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "FullBodyReload",
+          "guid": "7fbfd0dd-725f-433b-87ce-8a9aa505634e",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "SpecalAttack",
+          "guid": "96b7bbdc-0fc9-4a63-8bc7-b71d57e76a44",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IgnitionLighter",
+          "guid": "52198275-2931-4a69-a4bc-4612a1b161a9",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "RequestCrouch",
+          "guid": "da6ebf1b-1403-4bfe-889b-be59f36b81a1",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "GunRaided",
+          "guid": "603ac0c5-dea2-4b9a-ac59-cba5ebc019e3",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "DisableHoldWalk",
+          "guid": "9579e86b-7d9e-4bdd-8a3e-4f702ec65991",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsNearmissLeft",
+          "guid": "ebfad5bc-090b-4dc4-a62d-aebdcb5d74e1",
+          "type": 16,
+          "Default": null,
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsNearmissRight",
+          "guid": "e2e03ac6-f72f-4d37-8868-84578fea59d5",
+          "type": 16,
+          "Default": null,
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsNearmissFront",
+          "guid": "e75dace9-db01-4b2d-89d4-97af8186ea0a",
+          "type": 16,
+          "Default": null,
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsNearmissUp",
+          "guid": "72bb3ef6-78e4-4f23-b1e5-c56e45832d18",
+          "type": 16,
+          "Default": null,
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsBigNearmiss",
+          "guid": "1aa8d2a3-a8cd-4ce9-ae95-2e75f0ce3e24",
+          "type": 16,
+          "Default": null,
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "SwitchLight",
+          "guid": "c2231f40-3dd3-4379-9332-d9d6e845c17a",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "SwitchBattle",
+          "guid": "4105d2b3-5ec0-4c54-aa6c-b61f563323ba",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsItemGet",
+          "guid": "5927a2f8-91df-42dd-a30b-5e0196508196",
+          "type": 16,
+          "Default": null,
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsFullBodyActing",
+          "guid": "65f96e74-ca97-4ad8-aed0-8d3c5538d38f",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    },
+    {
+      "Name": "AutoWalkUserVariable",
+      "Variables": [
+        {
+          "Name": "AutoWalk_Speed",
+          "guid": "b7b797d6-a8dd-4675-a6c7-72facbb90ecd",
+          "type": 11,
+          "Default": "0",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "AutoWalk_Dir",
+          "guid": "f55e8fd0-b3d3-4c00-a7bf-6193796016d6",
+          "type": 11,
+          "Default": "0",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/cp_a200/cp_a200tpscamerasettinguserdata.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak.patch_004.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\cp_a200\\cp_a200tpscamerasettinguserdata.user.3",
+  "Objects": [
+    {
+      "Index": 18,
+      "Class": "app.TPSCameraSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultSettingParam": {
+          "Ref": 3,
+          "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+        },
+        "_SettingList": [
+          {
+            "Ref": 5,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.PlayerCameraState",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Normal"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerCameraTPSActionParamUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/cp_A200/Action/cp_A200Normal.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_State": {
+          "Ref": 1,
+          "Class": "app.PlayerCameraState"
+        },
+        "_Default": {
+          "Ref": 2,
+          "Class": "app.PlayerCameraTPSActionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerCameraState",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Normal"
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_State": {
+          "Ref": 4,
+          "Class": "app.PlayerCameraState"
+        },
+        "_Default": {
+          "Ref": 2,
+          "Class": "app.PlayerCameraTPSActionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.PlayerCameraState",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Hold"
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerCameraTPSActionParamUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/cp_A200/Action/cp_A200Hold.user",
+      "Fields": {}
+    },
+    {
+      "Index": 8,
+      "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_State": {
+          "Ref": 6,
+          "Class": "app.PlayerCameraState"
+        },
+        "_Default": {
+          "Ref": 7,
+          "Class": "app.PlayerCameraTPSActionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerCameraState",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Crouch"
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerCameraTPSActionParamUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/cp_A200/Action/cp_A200Crouch.user",
+      "Fields": {}
+    },
+    {
+      "Index": 11,
+      "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_State": {
+          "Ref": 9,
+          "Class": "app.PlayerCameraState"
+        },
+        "_Default": {
+          "Ref": 10,
+          "Class": "app.PlayerCameraTPSActionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.PlayerCameraState",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "CrouchHold"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.PlayerCameraTPSActionParamUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/cp_A200/Action/cp_A200CrouchHold.user",
+      "Fields": {}
+    },
+    {
+      "Index": 14,
+      "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_State": {
+          "Ref": 12,
+          "Class": "app.PlayerCameraState"
+        },
+        "_Default": {
+          "Ref": 13,
+          "Class": "app.PlayerCameraTPSActionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.PlayerCameraState",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Run"
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerCameraTPSActionParamUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/cp_A200/Action/cp_A200Run.user",
+      "Fields": {}
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E",
+      "Userdata": null,
+      "Fields": {
+        "_State": {
+          "Ref": 15,
+          "Class": "app.PlayerCameraState"
+        },
+        "_Default": {
+          "Ref": 16,
+          "Class": "app.PlayerCameraTPSActionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.TPSCameraSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultSettingParam": {
+          "Ref": 3,
+          "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+        },
+        "_SettingList": [
+          {
+            "Ref": 5,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          },
+          {
+            "Ref": 8,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          },
+          {
+            "Ref": 11,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          },
+          {
+            "Ref": 14,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          },
+          {
+            "Ref": 17,
+            "Class": "app.PlayerCameraSettingParam\u00601\u003Capp.PlayerCameraTPSActionParamUserData\u003E"
+          }
+        ]
+      }
+    }
+  ]
+}

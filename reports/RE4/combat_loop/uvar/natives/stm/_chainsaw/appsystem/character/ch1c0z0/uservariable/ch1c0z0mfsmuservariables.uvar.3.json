@@ -1,0 +1,211 @@
+{
+  "Name": "ch1c0z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "DamageRot",
+      "guid": "2bb96196-3818-4b9f-aacb-1545d53ee293",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageDir",
+      "guid": "1311e632-38e4-4d2b-af7e-688defcf4fec",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TurnAngle",
+      "guid": "5ecf2c81-48b3-4309-b0e8-4cf7c096a08c",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDir",
+      "guid": "d679f7d2-3dbb-42a0-bd8e-82af521999f3",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsBackDamage",
+      "guid": "18519ac2-c96d-4962-85ad-f06b42751ae0",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsFront",
+      "guid": "e7b408da-b81d-42f5-9488-65acbc28d64c",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AimPitch",
+      "guid": "8a10ce8a-72b0-4a2a-89a4-35389f6ae80b",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AimSwitch",
+      "guid": "0c11dbd5-d12e-43c7-88fe-e353b1f8b61a",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RandomFloat",
+      "guid": "b1cd5e83-9fb3-44f2-9f36-d2cbef77b080",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RandomInt",
+      "guid": "bdcccee8-5f38-4a7c-8512-5f729d99b4fe",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotionVariationIndex",
+      "guid": "aa2dfc2d-597b-4aeb-ace9-fc89113ac302",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TurnDirNo",
+      "guid": "6d5c64c3-ddc7-40b6-b39c-1817cc12100a",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TurnType",
+      "guid": "a9c1b478-71f1-4161-872f-028560a8de0d",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsRunOrMove",
+      "guid": "8607eb05-eb61-4231-b39a-b90763ee5388",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsEquipHeavyTwoHandWeapon",
+      "guid": "490fc501-2e56-4953-8802-120a86da9f22",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AttackDir",
+      "guid": "7ee0442f-e4a5-4242-b239-09535f6686a6",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FlashDamage",
+      "guid": "640d63e5-cd0e-42ac-a855-7a92619a72c9",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "OnCeilingDamage",
+      "guid": "e38ec85a-23bf-48dc-b2e8-f969d2dfa12b",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsCraneFallBlow",
+      "guid": "b96dc0dd-062a-4898-8912-528e648e27e2",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "Name": "ch1f0z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "StateEnd",
+      "guid": "a2e36cc8-e75a-497e-a053-accb26c6499d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DistBlend",
+      "guid": "210d37f2-dbde-4192-b3c0-75af9c4a5609",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageTrigger",
+      "guid": "9211a05d-e363-4b59-b026-83721ca458d3",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsBackDamage",
+      "guid": "5e955057-c50a-4f1a-8fa5-475ee02d1895",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsWeakBreak",
+      "guid": "e4e54f85-bc77-42db-8f32-adbbdeb4994d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NewVariable",
+      "guid": "412aafd4-d6cf-4465-a92e-3f1eb40d7ce0",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ActionCheck",
+      "guid": "f67ef6ff-0fd0-4840-88dc-9af93cd7810c",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "CheckAttackHit",
+      "guid": "158b45a4-928d-488a-b17d-e96a5d581055",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NoHitCancel",
+      "guid": "cf771c1a-e721-45dd-bc1b-e7a5f9d3e060",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDir",
+      "guid": "4c57d019-9e55-4c7c-af53-e326fb16f5d4",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsDown",
+      "guid": "c65833c8-d3d9-4a47-8849-5b62304e2971",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsPlAvoid",
+      "guid": "97d47a7b-fee7-4c64-bb4e-bdca9a5bfa79",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsDispHandRock",
+      "guid": "7367ff2e-20aa-43ef-b924-9bfb375e570f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsTargetUpper",
+      "guid": "f1b77383-51b1-4143-94f8-e5c8c7d9e950",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsBigBreakDash",
+      "guid": "e06569d2-7181-4918-9219-1d05cdafd371",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsObjectLeft",
+      "guid": "8d82e923-1e72-40b2-b80b-2723dcb61e6e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLegL",
+      "guid": "990b7f48-d8e3-4fb8-b0cc-ccd3b7416f9a",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsHeadDamage",
+      "guid": "13418ca6-f08e-4130-bd66-fdf8e4a48117",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsFaceDamage",
+      "guid": "0c039928-ce28-4594-b80a-0fc5353c61d2",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageTriggerM",
+      "guid": "a081e6ce-f91f-456b-8b13-4f4817ad45e0",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageTriggerL",
+      "guid": "36df063a-661d-4dbe-aa08-29df0b188e85",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FatalDamage1",
+      "guid": "f377abc6-7575-4c07-8e4a-afb5b523e097",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FatalDamage2",
+      "guid": "36924be1-518d-4640-ae81-c100d6ca14f8",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FatalDamage3",
+      "guid": "10906b88-832c-453f-90cb-14e0ab7ea2c1",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FaceSelect",
+      "guid": "d4f3e74e-5ce0-4169-9515-11daf3216869",
+      "type": 8,
+      "Default": "\u003C0, 0, 5\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLHand",
+      "guid": "8a725c14-05c9-4e04-a582-327ddd54e688",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ActionCheck2",
+      "guid": "6e966aff-3d48-4caa-9315-475ff2079f09",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsNoReaction",
+      "guid": "6415ccf9-dc18-4add-b37c-23d77cd715d7",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsHitWall",
+      "guid": "0f37e56c-7dd2-4658-9145-5b1056fa1446",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsFallCliff",
+      "guid": "f84d44f1-0e32-4619-8868-acf1ab93ef29",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

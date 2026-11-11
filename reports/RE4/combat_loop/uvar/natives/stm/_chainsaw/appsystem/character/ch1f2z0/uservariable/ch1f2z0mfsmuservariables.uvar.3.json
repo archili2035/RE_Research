@@ -1,0 +1,112 @@
+{
+  "Name": "ch1f2z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "MoveDir",
+      "guid": "c6ae0375-bc51-4114-b2e4-dca029af6da3",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FastWakeup",
+      "guid": "60e84eb2-833d-413d-9321-629274e95e8f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Frozen",
+      "guid": "6a8678ad-f55d-4cd7-9395-11cc56e28c09",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TriggerAttack",
+      "guid": "bd2d78ac-76d0-4151-8536-b1181cc065c9",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RunningTurn",
+      "guid": "d7f588f4-1f50-471e-b44b-31d81404dded",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HoldFromBack",
+      "guid": "f2be26cd-5b67-4e55-af6b-05245c7fd38b",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "GeneralFlag",
+      "guid": "38ce8c36-5d15-474f-b443-95615f38842e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FrozenDamage",
+      "guid": "2273b8e5-4bbf-4b3e-ac3a-742ba5d0c7e3",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

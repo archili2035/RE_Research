@@ -1,0 +1,345 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>完整通道设计与决策 · RE 研究室</title><style>/*!
+ * xavierstudio-site-kit · tokens
+ * 一层：设计令牌。唯一真相源。
+ *
+ * 风格口径：苹果官网的骨架（排版节奏、留白、双表面色带、药丸按钮）
+ *          + 保留个人色（赭石强调色、衬线标题）
+ *
+ * 硬性约束：任何页面、任何组件都不准写死色值与字号，只引用这里的变量。
+ *          新增语义色请先加令牌，再在组件里引用。
+ */
+:root {
+  /* ---- 表面 ---------------------------------------------------------- */
+  /* 苹果用纯白 / #f5f5f7 两级表面做色带交替，这里整体偏暖一度保留个人气质 */
+  --surface: #fdfcfa;
+  --surface-alt: #f4f2ed;
+  --surface-raised: #ffffff;
+  --surface-inverse: #1c1b18;
+
+  /* ---- 文字 ---------------------------------------------------------- */
+  --ink: #1c1b18;
+  --ink-secondary: #605d56;
+  --ink-tertiary: #8a867d;
+  --ink-on-inverse: #f4f2ed;
+  --ink-on-accent: #ffffff;
+
+  /* ---- 强调色与语义色 ------------------------------------------------ */
+  --accent: #9c3d2e;
+  --accent-hover: #7f2f22;
+  --accent-wash: #f6ebe8;
+  --accent-line: #d9b3aa;
+
+  --ok: #4f6b45;
+  --ok-wash: #eef3e9;
+  --warn: #9a6a1c;
+  --warn-wash: #faf1de;
+  --danger: #a33226;
+  --danger-wash: #fbebe9;
+  --info: #3f5a73;
+  --info-wash: #ecf1f6;
+
+  /* ---- 分隔 ---------------------------------------------------------- */
+  /* 苹果几乎不用边框，靠表面层级分区；发丝线只在表格与必要处出现 */
+  --hairline: #e4e0d7;
+  --hairline-strong: #cdc7ba;
+
+  /* ---- 字体 ---------------------------------------------------------- */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-serif:
+    "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", Georgia, serif;
+  --font-mono:
+    ui-monospace, "SF Mono", "JetBrains Mono", "IBM Plex Mono", Consolas, monospace;
+
+  /* ---- 字阶 ----------------------------------------------------------
+   * 苹果的做法：字号越大，字距收得越紧。每一级字号都配一组行高与字距。
+   */
+  --text-display: 64px;
+  --text-display-lh: 1.06;
+  --text-display-ls: -0.015em;
+
+  --text-h1: 44px;
+  --text-h1-lh: 1.1;
+  --text-h1-ls: -0.009em;
+
+  --text-h2: 30px;
+  --text-h2-lh: 1.2;
+  --text-h2-ls: -0.005em;
+
+  --text-h3: 22px;
+  --text-h3-lh: 1.3;
+  --text-h3-ls: -0.003em;
+
+  --text-h4: 18px;
+  --text-h4-lh: 1.4;
+  --text-h4-ls: 0;
+
+  --text-body: 17px;
+  --text-body-lh: 1.47;
+
+  --text-small: 14px;
+  --text-small-lh: 1.55;
+
+  --text-micro: 12px;
+  --text-micro-lh: 1.5;
+  --text-micro-ls: 0.04em;
+
+  /* ---- 字重 ---------------------------------------------------------- */
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-bold: 600;
+
+  /* ---- 间距（4 的倍数） ---------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ---- 版面宽度 ------------------------------------------------------
+   * 980px 是苹果的内容宽；阅读密集的长文收到 692px 以控制每行字数。
+   */
+  --width-wide: 1180px;
+  --width-content: 980px;
+  --width-reading: 692px;
+
+  /* ---- 圆角 ---------------------------------------------------------- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-pill: 980px;
+
+  /* ---- 阴影 ----------------------------------------------------------
+   * 克制使用。层级优先用表面色差表达，阴影只给浮起元素。
+   */
+  --shadow-sm: 0 1px 2px rgba(28, 27, 24, 0.04);
+  --shadow-md: 0 4px 16px rgba(28, 27, 24, 0.06);
+
+  /* ---- 动效 ---------------------------------------------------------- */
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration: 0.22s;
+}
+
+/* 窄屏收字号与纵向节奏，令牌一处改、全站生效 */
+@media (max-width: 734px) {
+  :root {
+    --text-display: 40px;
+    --text-h1: 32px;
+    --text-h2: 24px;
+    --text-h3: 19px;
+    --text-body: 16px;
+    --space-9: 56px;
+    --space-10: 72px;
+  }
+}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--surface);color:var(--ink);font:var(--text-body)/var(--text-body-lh) var(--font-sans)}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}header,main,footer{max-width:var(--width-wide);margin:auto;padding:var(--space-6)}header{display:flex;justify-content:space-between;align-items:center;gap:var(--space-4);border-bottom:1px solid var(--hairline)}header a{text-decoration:none}.eyebrow{font-size:var(--text-micro);letter-spacing:var(--text-micro-ls);color:var(--accent)}h1{font-family:var(--font-serif);font-size:var(--text-h1);font-weight:var(--weight-bold);line-height:var(--text-h1-lh);margin:var(--space-4) 0}h2{font-size:var(--text-h2);line-height:var(--text-h2-lh)}h3{font-size:var(--text-h3)}.lead{color:var(--ink-secondary);max-width:var(--width-reading);line-height:1.8}footer{font-size:var(--text-small);color:var(--ink-secondary);border-top:1px solid var(--hairline);line-height:1.8}.pill{display:inline-block;padding:var(--space-2) var(--space-3);border-radius:var(--radius-pill);background:var(--accent-wash);font-size:var(--text-micro);color:var(--accent)}@media(max-width:600px){header,main,footer{padding:var(--space-5)}header{align-items:flex-start;flex-direction:column}}
+article{max-width:var(--width-content);line-height:1.85}article h2{margin-top:var(--space-7)}article h3{margin-top:var(--space-6)}pre{overflow:auto;background:var(--surface-alt);padding:var(--space-4);border-radius:var(--radius-sm)}code{font-family:var(--font-mono);font-size:var(--text-small)}table{border-collapse:collapse;display:block;overflow:auto;max-width:100%;font-size:var(--text-small)}th,td{padding:var(--space-3);border:1px solid var(--hairline);text-align:left}th{background:var(--surface-alt)}blockquote{border-left:3px solid var(--accent-line);margin-left:0;padding-left:var(--space-4);color:var(--ink-secondary)}p,li{overflow-wrap:anywhere}article a{word-break:break-word}</style></head><body><header><a href="index.html">← RE 研究主题</a><span class="pill">研究文档</span></header><main><p class="eyebrow">LEVEL DESIGN / WHOLE CORRIDOR PREFABS</p><article><h1>V6.1：房间与通道的分布修订</h1>
+<h2>原因与本轮改动</h2>
+<p>V6 优先把支路房间贴到其他房间，留下通道端口最后闭合。最近端口优先的贪心配对又会把剩余端口逼到远处。仅压缩包围框不能解决这种局部拥挤、外围绕行。</p>
+<ul>
+<li>主路放置阶段，房间直连组达到 3 间后插入完整通道；后续支路仍可能增加该组房间，因此最终组大小另行统计，不把 3 间宣称为全图硬上限。</li>
+<li>支路优先消耗固定侧门，其次通道接续口，最后才接其他房间。空间不足时优先延长完整连接廊，而不是额外长出分岔。</li>
+<li>提前预留二层返程楼梯，避免其他房间占用落点和接入方向。</li>
+<li>闭合阶段先计算端口对的完整模块路径，再回溯选择互不重叠的配对。不能只接最近的一对而不考虑其他接口。</li>
+<li>禁止仅剩单个端口时新增分岔并让两个分支绕回自身；禁止同一通道连通分量的自由端口直接互接。仍可能存在跨房间的长回路，这不是彻底消除回环。</li>
+<li>在最多 256 次确定性尝试、最多 12 个有效候选中择优；评分同时考虑通道面积、包围框、最长无分支通道、最大直连组，以及仅服务单一直连组的通道面积。</li>
+</ul>
+<h2>硬约束与质量目标</h2>
+<p>固定形状、固定门位、接口类型、所有接口唯一连通、无重叠、楼梯对齐与奖励锁仍是硬约束。没有引入封口或原子补格。</p>
+<p>最长无分支通道 ≤24 格、最大直连组 ≤4 间、仅服务单一直连组的通道面积为 0，是本轮<strong>评分目标</strong>，不是成功生成的硬保证。尝试把长度和组大小直接设为硬上限后，多组原有参数无法在预算内生成，因此没有把这种失败版本交付为默认。网页单独显示质量目标及未达标项，不把拓扑验证通过等同于布局设计合格。</p>
+<p>无分支通道指标沿仅有两个接口的通道模块累计内部步行格数，在房间或多接口通道处停止；不是所有房间间的最短距离。仅服务单一直连组的通道面积是优化代理指标，不代表这些回路在游戏中一概无用。</p>
+<h2>默认样例比较</h2>
+<p>相同 RE-0917 种子和输入规则，房间组合可能因重新生成而变化。</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th align="right">V6</th>
+<th align="right">V6.1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>最大房间直连组</td>
+<td align="right">7 间</td>
+<td align="right">4 间</td>
+</tr>
+<tr>
+<td>最长无分支通道</td>
+<td align="right">61 格</td>
+<td align="right">42 格</td>
+</tr>
+<tr>
+<td>通道净面积</td>
+<td align="right">744 m²</td>
+<td align="right">620 m²</td>
+</tr>
+<tr>
+<td>房间净面积</td>
+<td align="right">768 m²</td>
+<td align="right">764 m²</td>
+</tr>
+</tbody></table>
+<p>默认样例仍未达到 24 格的长度目标。<strong>这次是分布与闭合策略的改进，问题尚未完全解决</strong>；不能仅凭面积下降声称已接近参考图。下一步应进一步采用带外轮廓和房间槽位的局部分区模板，而不是继续扩大搜索边界。</p>
+<p>搜索放入内嵌 Web Worker，生成期间主页面保持可交互。工作线程源码由 write-worker.cjs 从目录、布局与生成器源码构建，并内嵌到 docs HTML；无需联网。</p>
+<p>本轮 20 组混合参数全部通过几何与玩法硬约束，八种通道均有实际样例；前三个种子重复一致。最长无分支通道范围为 3–60 格、最大直连组为 3–5 间，说明质量目标并非全部达成。单次生成实测约 1.6–44.9 秒（并发测试环境），不保证任意参数都能生成。离线网页、后台线程主页面响应、探索与导出检查通过。</p>
+<p>导出保持 version 6 / catalogVersion 4，新增 layoutRevision:1、directGroups、longestEmptyRun、unservedLoopArea 和 quality。模块库未变，原有资产坐标仍适用。</p>
+<hr>
+<h1>建筑通道设计方案 · V6</h1>
+<h2>V6：从参考图提炼建筑通道（实施方案）</h2>
+<p>参考图的一层厨房／餐厅周围体现沿房间外缘折转，二层病房区体现共用长廊与直接侧门，中央大堂二层体现围绕实体空间的回廊。这些是平面图观察，不是官方设计说明或米制实测。</p>
+<p>新库固定为八种资产：C01 3×1 短连接廊；C02 7×1 单侧门长廊；C03 7×1 错位双侧门长廊；C04 5×3 不等臂转角廊；C05 7×3 错位折廊；C06 7×4 偏置分岔廊；C07 7×5 半包围回廊；C08 4×3 加宽转角前厅。所有轮廓、门位和接口类型固定，只允许整体旋转。宽度主体为 2 米，前厅固定局部加宽。C05 采用阶梯轮廓、两端朝向相差 90°，同时承担错位和转向，不依赖临时弯头。</p>
+<p>区分 continuation 接续口与 room 房门口。接续口可接另一通道的接续口或房间门；房门口只能贴接房间，不能被闭合算法变成长廊。房间维持 1–3 门，通道允许 2–4 个固定接口。全部接口连通、不重叠、不封口、不增加原子补块继续作为硬约束。</p>
+<p>采用“固定通道骨架＋侧门房间”的局部组团，优先填满已有侧门，再扩展组团；各组团再经短连接或错位折廊连接。C07 内侧门必须接入一个占据内侧区域的房间，禁止无包围对象的空 U 廊。分流模块按需增加。主线路径允许房间直接对接，双层楼梯对齐。全部房间完成后，只对接续口和剩余房门做完整模块闭合，任何未填侧门都使候选失败。</p>
+<p>网页须完整展示 14 个房间与 8 个通道，区分接口颜色、用途、资产实际用量及局部房间组。导出升级 version 6 / catalogVersion 4，并携带接口类型与房间组关系。不同库版本中的同编号不兼容。</p>
+<h3>验证结果</h3>
+<p>20 组混合参数全部通过，八种通道均在测试地图中实际使用；前三个种子重复生成一致。本机本轮约 0.18–10.27 秒。离线 HTML、组团检查、探索、导出、手机布局与零外部请求检查通过。</p>
+<h3>实施调整与边界</h3>
+<p>C04 不等臂转角廊最终固定为两个接续口，不设侧门。纯转向不应强制消耗一个房间；侧门由 C02/C03/C07/C08 提供。C05 阶梯折廊两端为西向与北向，旋转后保持相对方向。C06 三个接续口，替代标准对称 T／十字。共八种资产，无可选门变体。</p>
+<p>C07 导出 enclosure（内侧 5×4 格区域），其侧门所连房间必须完整落在该区域中；不满足就重排。房间组为局部生成单元，仍保留先构造主路与楼梯、再放侧门通道骨架及支路房间的阶段；尚不是整栋建筑的全局分区求解器。没有支路房间的配置不强制生成侧门通道。</p>
+<p>V6 默认规则 RE-0917：23 房间、768 m² 房间、34 段通道、744 m² 通道，通道占总净面积约 49%，包围框 42×30 格。相较上一版紧凑样例 37% 的通道占比有所回升，不宣称密度提升；本轮重点验证固定侧门、异形通道和组团语义。后续可继续优化候选评分和房间分组。不同版本相同种子会选取不同房间组合。</p>
+<p>测试包括目录轮廓与固定门、端口类型、全接口唯一配对、无重叠、侧门只接房间、U 廊包围对象、楼梯与奖励锁、相同种子复现，以及八种资产实际进入生成样例。页面支持组团检查和离线 JSON 导出。</p>
+<hr>
+<h1>历史方案与试验记录（V5，非当前规格）</h1>
+<h1>固定大块通道设计方案 · V5</h1>
+<h2>本轮决策（2026-11-11）</h2>
+<ul>
+<li>用户确认：先沿用 1 格 = 2 米的通道宽度，完成本轮。</li>
+<li>用户确认：所有房间门和通道接口必须真实连通；暂不增加端头、封口或动态封墙。</li>
+<li>2 米是原型试验参数，不是《生化危机：安魂曲》的实测通道宽度。现有关卡报告与本次公开检索没有可核验的米制尺寸。要对齐原作，需测量场景几何／碰撞，并区分墙到墙净宽与家具遮挡后的可通行宽度。</li>
+</ul>
+<h2>为什么替换原子通道</h2>
+<p>V4 的 C01–C04 是逐格寻路后再分类的 1×1 单元，几何可以任意扭曲，与“生产少量完整美术模块”的目标不一致。V5 的网格只负责坐标、碰撞和校验；真正的生成与用量统计单位是完整通道实例。</p>
+<p>不允许把任意格子路线画上分段线后冒充固定通道。每个实例必须能由目录中的唯一轮廓、接口和刚体旋转还原；不能拉伸、裁切、重叠，也不能在中间临时加侧门。</p>
+<h2>第一版五种通道</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>名称</th>
+<th>外接格尺寸</th>
+<th align="right">占地格数</th>
+<th align="right">净面积</th>
+<th align="right">固定接口数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C01</td>
+<td>短直廊</td>
+<td>5×1</td>
+<td align="right">5</td>
+<td align="right">20 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>C02</td>
+<td>长直廊</td>
+<td>7×1</td>
+<td align="right">7</td>
+<td align="right">28 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>C03</td>
+<td>L 型转角廊</td>
+<td>3×3，每臂 3 格</td>
+<td align="right">5</td>
+<td align="right">20 m²</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>C04</td>
+<td>T 型分流廊</td>
+<td>5×3，横臂 5 格、纵臂 3 格</td>
+<td align="right">7</td>
+<td align="right">28 m²</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>C05</td>
+<td>十字分流廊</td>
+<td>5×5，每臂横贯 5 格</td>
+<td align="right">9</td>
+<td align="right">36 m²</td>
+<td align="right">4</td>
+</tr>
+</tbody></table>
+<p>所有臂宽固定 1 格。L/T/X 的空缺格不属于模块，不得按外接矩形面积计价。每个接口位于臂端，类型与宽度固定；房间仍是 R01–R14，门数与位置保持 V4 定义。共 19 种空间资产。</p>
+<p>这套库刻意先不增加长廊侧门变体。需要沿走廊分出房间时，使用 T／十字模块的固定接口；若后续希望做“病房沿长廊连续分布”，应新增带固定侧门的长廊资产编号，不能随机切侧门。</p>
+<h2>布局策略</h2>
+<ol>
+<li>保留固定房间、面积、类型上下限和单门奖励约束。</li>
+<li>主房间按固定门位逐个对接，优先直接共墙连接，其次插入一段完整通道。以建筑包围框评分选择位置，避免先大间距撒点。配对楼梯保持上下层同位。</li>
+<li>连接搜索的每一步放置一个完整通道模块，状态是当前未连接接口的位置、方向和剩余空间，而不是下一格往哪里走。</li>
+<li>短直廊、长直廊和 L 廊完成必要连接；只在后续房间缺少接入点时添加 T／十字分流模块，不再每层强制添加分流。</li>
+<li>探索和奖励房间对接开放接口；必要时先延长完整通道，再布置房间。</li>
+<li>最后将剩余开放接口配对成回环。不能留下悬空口，不能以装墙替代连接。若几何或接口配对无解，回退或更换确定性布局；失败要明确报告，不返回伪成功。</li>
+</ol>
+<p>所有接口一对一配对，同位置、反向法线、相同宽度。模块侧面贴邻不自动连通，交叉也不自动合并。上下层楼梯保持同一坐标系。</p>
+<h2>紧凑度取舍</h2>
+<p>完整模块、固定门位、全部接口连通、不重叠和玩法可达性均为硬约束。在满足这些条件的候选中，按通道面积 + 0.35 × 总包围框格面积评分择优。最多探索 64 个确定性布局，取得 4 个有效候选或通道面积不超过房间面积的一半时提前结束。允许区域间留白，但不再为每个主房间预设 18 格间距。开放接口预留 3 格接入空间，以适配最短 L 廊臂长。</p>
+<p>第一版不承诺精确的建筑外轮廓。通道面积单独统计，房间总面积预算不包含通道。可以观察通道面积占比、完整通道实例数和未连接接口数，之后再决定是否增加更短接头或带侧门长廊。</p>
+<h2>网页与导出要求</h2>
+<ul>
+<li>模块一览展示 14 个房间与 5 个完整通道，显示真实轮廓、尺寸、面积及固定接口。</li>
+<li>地图可显示完整通道的边界与实例编号，点击实例可查看模块编号、旋转和连接。</li>
+<li>“通道数量”统计整块实例数量；占用网格仅作为几何明细。</li>
+<li>导出包含通道实例 cells、ports、moduleId、rotation，以及端口配对信息。不能只导出一堆原子格子的朝向。</li>
+<li>升级 catalogVersion，避免旧 C01–C04 与新轮廓混用。</li>
+</ul>
+<h2>验证与后续决策</h2>
+<p>必须验证：实例轮廓与目录完全相符；无原子拼块回退；端口全部且唯一配对；无重叠；无靠侧面接触造成的隐式连通；楼梯对齐；工具可达、奖励不可绕锁、撤离可达；同种子可复现。</p>
+<p>暂不需要额外决策。若严格拼接成功率或通道长度不可接受，再向用户报告具体失败比例与样例，并讨论增加短通道模块、长廊侧门变体或固定端头；不能自行放宽“全部接口连通”。</p>
+<h2>紧凑排布修订结果（2026-11-11）</h2>
+<p>旧版 18 格主空间间距加上强制分流，会制造大量只为闭合接口的长回环；本轮移除这两种机制，模块库仍为 14 + 5，全部接口连通规则不变。</p>
+<p>默认种子 RE-0917、相同规则的对比：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th align="right">旧版</th>
+<th align="right">紧凑版</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>房间数量</td>
+<td align="right">23</td>
+<td align="right">23</td>
+</tr>
+<tr>
+<td>房间净面积</td>
+<td align="right">752 m²</td>
+<td align="right">844 m²</td>
+</tr>
+<tr>
+<td>完整通道数量</td>
+<td align="right">87</td>
+<td align="right">22</td>
+</tr>
+<tr>
+<td>通道净面积</td>
+<td align="right">1892 m²</td>
+<td align="right">504 m²</td>
+</tr>
+<tr>
+<td>通道占总净面积</td>
+<td align="right">72%</td>
+<td align="right">37%</td>
+</tr>
+<tr>
+<td>双层共用显示包围框</td>
+<td align="right">62 × 74 格</td>
+<td align="right">30 × 36 格</td>
+</tr>
+</tbody></table>
+<p>包围框面积缩小约 76%，通道面积减少约 73%。这是相同输入规则重新选取合法候选的对比，房间模块组合也会改变，不是对同一组房间进行刚体压缩。默认主线有 7 处房间直接门对门连接。</p>
+<p>20 个混合规则种子全部通过轮廓、碰撞、固定门位、全部端口配对、楼梯与奖励锁验证；前三个重复生成一致。本机耗时约 0.03–3.65 秒，不代表任意输入必定成功。</p>
+<p>剩余限制：固定门方向和长通道长度仍可能产生外围回环；当前只比较有限候选，不保证最优密度。环绕中庭和双翼只是布局评分倾向，不保证严格建筑轮廓。暂不需要用户放宽接口规则，也没有新增资产。</p>
+</article></main><footer>内容来自工作区研究文档。<a href="index.html">返回主题导航</a></footer></body></html>

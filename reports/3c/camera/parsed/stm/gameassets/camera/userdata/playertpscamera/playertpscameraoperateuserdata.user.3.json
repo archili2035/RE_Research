@@ -1,0 +1,123 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/playertpscameraoperateuserdata.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\playertpscameraoperateuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 6,
+      "Class": "app.CameraOperateUserData",
+      "Userdata": null,
+      "Fields": {
+        "OperateData": {
+          "Ref": 2,
+          "Class": "app.CameraOperateData"
+        },
+        "OperatePullBackData": {
+          "Ref": 5,
+          "Class": "app.CameraOperatePullBackData"
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CameraMouseOperateData",
+      "Userdata": null,
+      "Fields": {
+        "_SpeedMaxYaw": 200,
+        "_SpeedMaxPitch": 200,
+        "_AccelerateTimeYaw": 0,
+        "_AccelerateTimePitch": 0,
+        "_DeccelerateTimeYaw": 0,
+        "_DeccelerateTimePitch": 0
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CameraOperateData",
+      "Userdata": null,
+      "Fields": {
+        "_SpeedMaxYaw": 100,
+        "_SpeedMaxPitch": 100,
+        "_IsRageLimit": true,
+        "_YawRangeDeg": "Range(-180, 360)",
+        "_PitchRangeDeg": "Range(-180, 360)",
+        "_AccelerateTimeYaw": 0.1,
+        "_AccelerateTimePitch": 0.1,
+        "_DeccelerateTimeYaw": 0.05,
+        "_DeccelerateTimePitch": 0.05,
+        "_SensitivityYaw": 1,
+        "_SensitivityPitch": 1,
+        "_IsMouseOverride": true,
+        "_MouseOperateData": {
+          "Ref": 1,
+          "Class": "app.CameraMouseOperateData"
+        }
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [],
+        "MinValue": 10,
+        "MaxValue": -10,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.CameraCurveParam",
+      "Userdata": null,
+      "Fields": {
+        "_AssignType": 0,
+        "_PresetCurveType": 3,
+        "_AnimationCurve": {
+          "Ref": 3,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.CameraOperatePullBackData",
+      "Userdata": null,
+      "Fields": {
+        "_IsPullBack": false,
+        "_NoInputTimer": 1,
+        "_PullBackTimer": 1,
+        "_PullBackCount": -1,
+        "_IsInputPullBackCount": false,
+        "_PullBackCurve": {
+          "Ref": 4,
+          "Class": "app.CameraCurveParam"
+        }
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.CameraOperateUserData",
+      "Userdata": null,
+      "Fields": {
+        "OperateData": {
+          "Ref": 2,
+          "Class": "app.CameraOperateData"
+        },
+        "OperatePullBackData": {
+          "Ref": 5,
+          "Class": "app.CameraOperatePullBackData"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "Name": "JetSkiCrewUserVariables",
+  "Variables": [
+    {
+      "Name": "Speed",
+      "guid": "332c9da8-b3e3-4961-a206-127b07bdf2c3",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "SteerInput",
+      "guid": "2478408a-bb69-42bc-b55c-eb6f28695660",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageHit",
+      "guid": "4436883f-08d4-4796-9952-20b21a020e2f",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsAerial",
+      "guid": "ebf425b9-d3b6-42f0-9265-2aa4efa9767d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsSurprisedByExplosion",
+      "guid": "735ef15a-9756-4fca-a4ee-a7a598d5402b",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DoCareForFront",
+      "guid": "fdd97630-e50d-4201-9422-4cc5a4106a32",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DoCareForBack",
+      "guid": "2b322c5f-4cb7-474f-a819-a5b76534229a",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "JumpType",
+      "guid": "b6815da2-62ca-4b39-abda-c9f44cb2ea83",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "CeilingIsClose",
+      "guid": "5cf76071-d133-45c0-baaf-964953d78e04",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": []
+}

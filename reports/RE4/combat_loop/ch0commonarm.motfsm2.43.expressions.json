@@ -1,0 +1,392 @@
+{
+  "Path": "reports/RE4/extracted/natives/stm/_chainsaw/appsystem/character/ch0common\\motion\\fsm\\ch0commonarm.motfsm2.43",
+  "Variables": {
+    "Name": "BeahviorTree Local",
+    "Variables": [
+      {
+        "Name": "Tree_CheckMeleeHold",
+        "guid": "16f52708-9e94-4a65-8605-224960a18d1d",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "937039af-c8bd-4760-8d45-3748584d8930",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "84dfdd90-4dce-429e-b348-2af8f9507b8a",
+                "Callback": {
+                  "Index": 1,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "84dfdd90-4dce-429e-b348-2af8f9507b8a",
+                    "v2_Condition": true,
+                    "State": 256,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "LogicNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          }
+        ],
+        "OutputNode": 2,
+        "Connections": [
+          {
+            "targetId": 2,
+            "inputSlot": 0,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 2,
+            "inputSlot": 1,
+            "sourceId": 1,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_CheckArmDown",
+        "guid": "77b84988-3c51-4113-9e44-f089ac6604e4",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "dab396e1-571d-47c2-aa05-0155fcaa0d45",
+                "Callback": {
+                  "Index": 2,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "dab396e1-571d-47c2-aa05-0155fcaa0d45",
+                    "v2_Condition": true,
+                    "State": 1099520147487,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "NotNode",
+            "Params": []
+          }
+        ],
+        "OutputNode": 1,
+        "Connections": [
+          {
+            "targetId": 1,
+            "inputSlot": 0,
+            "sourceId": 0,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_CheckArmLoop",
+        "guid": "f63511e2-cd72-4be8-8f21-e2b96ac229b2",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "d53bf0d8-5954-4500-8ce2-1ca184dc80e1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "439d1c4a-ffd6-475d-8da6-70752eadbe55",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "b0ea4cba-3853-4f52-b80f-92532cd82e09",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 4,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "937039af-c8bd-4760-8d45-3748584d8930",
+                "Callback": null
+              }
+            ]
+          }
+        ],
+        "OutputNode": 2,
+        "Connections": [
+          {
+            "targetId": 2,
+            "inputSlot": 0,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 2,
+            "inputSlot": 1,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 2,
+            "inputSlot": 2,
+            "sourceId": 3,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 2,
+            "inputSlot": 3,
+            "sourceId": 4,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_CheckJackToArmLoop",
+        "guid": "c34d77ce-1845-4c06-a945-224f484647c6",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "LogicNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "d53bf0d8-5954-4500-8ce2-1ca184dc80e1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "439d1c4a-ffd6-475d-8da6-70752eadbe55",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 4,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "b0ea4cba-3853-4f52-b80f-92532cd82e09",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 5,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "937039af-c8bd-4760-8d45-3748584d8930",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 6,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "4064092163",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "6ff0eb83-25d5-4b8e-a233-e3a0716002b6",
+                "Callback": {
+                  "Index": 3,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckHug",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "6ff0eb83-25d5-4b8e-a233-e3a0716002b6",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 7,
+            "Name": "NotNode",
+            "Params": []
+          }
+        ],
+        "OutputNode": 0,
+        "Connections": [
+          {
+            "targetId": 3,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 1,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 2,
+            "sourceId": 4,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 3,
+            "sourceId": 5,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 0,
+            "inputSlot": 0,
+            "sourceId": 3,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 0,
+            "sourceId": 6,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 0,
+            "inputSlot": 1,
+            "sourceId": 7,
+            "outputSlot": 0
+          }
+        ]
+      }
+    ],
+    "Embedded": []
+  },
+  "SubVariables": []
+}

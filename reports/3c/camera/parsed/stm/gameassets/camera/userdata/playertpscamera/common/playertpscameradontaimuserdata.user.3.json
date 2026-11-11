@@ -1,0 +1,58 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/common/playertpscameradontaimuserdata.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\common\\playertpscameradontaimuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 3,
+      "Class": "app.CameraDontAimUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DontAimParam": {
+          "Ref": 2,
+          "Class": "app.CameraDontAimParam"
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.5,
+        "_DampingRate": 0.5
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CameraDontAimParam",
+      "Userdata": null,
+      "Fields": {
+        "_EnableDistance": 20,
+        "_EnableRadius": 0.16,
+        "_AcoidDamping": {
+          "Ref": 1,
+          "Class": "app.DampingParam"
+        }
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.CameraDontAimUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DontAimParam": {
+          "Ref": 2,
+          "Class": "app.CameraDontAimParam"
+        }
+      }
+    }
+  ]
+}

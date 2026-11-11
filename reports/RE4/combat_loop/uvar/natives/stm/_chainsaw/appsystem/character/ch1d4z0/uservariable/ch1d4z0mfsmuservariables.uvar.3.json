@@ -1,0 +1,139 @@
+{
+  "Name": "ch1d4z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "GeneralFlag",
+      "guid": "3d50f91b-4b73-48d9-bfd2-09352f0fad40",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "EscapeGrapple",
+      "guid": "08198f1d-a249-41af-aaf8-e933e00dcc65",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Is1d5z0",
+      "guid": "05bdc850-190b-4d20-b951-17b8e8cc0099",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ChangedMoveMode",
+      "guid": "654b0c69-aaf7-40d0-952b-a32d0d5d16d0",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ArmBlendRate",
+      "guid": "2a19a45c-eb07-4a2f-a715-99e437316db9",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HoldFromBack",
+      "guid": "f6860b51-dbc3-4efe-9386-4eb43c525834",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Stumble",
+      "guid": "423fa9c8-1daa-4f60-b4bc-a19e99d120ef",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Variation",
+      "guid": "08357dd7-49ee-4ffc-b29c-4ccb48e1fb82",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDir",
+      "guid": "6493b13b-cf6c-4727-b437-90d904c014ff",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "GrappleCancel",
+      "guid": "230d6a98-026d-4f03-89ca-032e48251f56",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "VoiceFacial",
+      "guid": "8fb97b93-2b60-4af2-a320-422724aeb71b",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

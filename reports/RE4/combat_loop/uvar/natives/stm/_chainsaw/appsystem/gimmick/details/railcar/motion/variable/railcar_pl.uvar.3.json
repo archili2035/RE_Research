@@ -1,0 +1,498 @@
+{
+  "Name": "RailCar_Pl",
+  "Variables": [
+    {
+      "Name": "ShootSpeedRate",
+      "guid": "f9d84518-9d88-4409-9ac2-78672bf0ab06",
+      "type": 11,
+      "Default": "1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsHold",
+      "guid": "891949e6-2013-4eec-a6bf-c4cd335f7d6e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Fire",
+      "guid": "652f6155-a1d9-4f23-b7e7-ca07c2da6903",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Reload",
+      "guid": "4f70759a-3eb2-4cb3-a185-55f2d1d55b81",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Empty",
+      "guid": "66f93a7f-fb74-4ec6-88d8-5189c2b1d92f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AutoReload",
+      "guid": "d0ff1626-e180-4743-b74b-ab220ab27bfb",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "EnemyHolding",
+      "guid": "54820121-c934-4272-a89c-ad1475339974",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IdlePattern",
+      "guid": "bebd2ab1-42e4-413f-bb79-d18f934e4ab8",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Damage",
+      "guid": "488b2d75-0236-4f5b-b148-4812f41a6866",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "YawBlend",
+      "guid": "28eee7ed-f2dd-48fd-98ef-46debe0723bc",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Nearmiss",
+      "guid": "a346a5e6-b480-4dea-87e0-10d0548104ff",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Jump",
+      "guid": "618ff514-4732-479f-9ed0-37dedd308b4e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ReactionType",
+      "guid": "18588d74-ae9c-4eb1-b2aa-34c00f3be5a8",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Explosion",
+      "guid": "22bdf939-9292-4475-b205-fe3f27c06b83",
+      "type": 2,
+      "Default": "False",
+      "Expression": [
+        {
+          "nodeId": 0,
+          "Name": "ValueNode",
+          "Params": [
+            {
+              "Name": "Value",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 1,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "18588d74-ae9c-4eb1-b2aa-34c00f3be5a8",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 2,
+          "Name": "CompareNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        }
+      ],
+      "OutputNode": 2,
+      "Connections": [
+        {},
+        {}
+      ]
+    },
+    {
+      "Name": "AoundView",
+      "guid": "04574e1b-5a71-4d94-aa36-3951a5e78709",
+      "type": 2,
+      "Default": "False",
+      "Expression": [
+        {
+          "nodeId": 0,
+          "Name": "ValueNode",
+          "Params": [
+            {
+              "Name": "Value",
+              "Value": "1",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 1,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "18588d74-ae9c-4eb1-b2aa-34c00f3be5a8",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 2,
+          "Name": "CompareNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        }
+      ],
+      "OutputNode": 2,
+      "Connections": [
+        {},
+        {}
+      ]
+    },
+    {
+      "Name": "BehindLook",
+      "guid": "38d7cbe4-dcb4-40a4-8a9b-7e1281e797ff",
+      "type": 2,
+      "Default": "False",
+      "Expression": [
+        {
+          "nodeId": 0,
+          "Name": "ValueNode",
+          "Params": [
+            {
+              "Name": "Value",
+              "Value": "2",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 1,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "18588d74-ae9c-4eb1-b2aa-34c00f3be5a8",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 2,
+          "Name": "CompareNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        }
+      ],
+      "OutputNode": 2,
+      "Connections": [
+        {},
+        {}
+      ]
+    },
+    {
+      "Name": "RailSwitch",
+      "guid": "a5c9722a-39d0-489b-b24d-920443f89f49",
+      "type": 2,
+      "Default": "False",
+      "Expression": [
+        {
+          "nodeId": 0,
+          "Name": "ValueNode",
+          "Params": [
+            {
+              "Name": "Value",
+              "Value": "3",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 1,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "18588d74-ae9c-4eb1-b2aa-34c00f3be5a8",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 2,
+          "Name": "CompareNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        }
+      ],
+      "OutputNode": 2,
+      "Connections": [
+        {},
+        {}
+      ]
+    },
+    {
+      "Name": "Fall",
+      "guid": "2f67d4f9-e692-401a-b53b-ac5c3ba895eb",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsJumpOrFall",
+      "guid": "10bf884a-b816-4d9d-a615-b353c74307df",
+      "type": 2,
+      "Default": "False",
+      "Expression": [
+        {
+          "nodeId": 0,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "2f67d4f9-e692-401a-b53b-ac5c3ba895eb",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 1,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "618ff514-4732-479f-9ed0-37dedd308b4e",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 2,
+          "Name": "LogicNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "1",
+              "Callback": null
+            }
+          ]
+        }
+      ],
+      "OutputNode": 2,
+      "Connections": [
+        {},
+        {}
+      ]
+    },
+    {
+      "Name": "FrontLook",
+      "guid": "ce8087c8-eda6-41f0-98e2-dfa1a77d6a82",
+      "type": 2,
+      "Default": "False",
+      "Expression": [
+        {
+          "nodeId": 0,
+          "Name": "ValueNode",
+          "Params": [
+            {
+              "Name": "Value",
+              "Value": "4",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 1,
+          "Name": "VariableReferenceNode",
+          "Params": [
+            {
+              "Name": "VariableID",
+              "Value": "18588d74-ae9c-4eb1-b2aa-34c00f3be5a8",
+              "Callback": null
+            }
+          ]
+        },
+        {
+          "nodeId": 2,
+          "Name": "CompareNode",
+          "Params": [
+            {
+              "Name": "Operation",
+              "Value": "0",
+              "Callback": null
+            }
+          ]
+        }
+      ],
+      "OutputNode": 2,
+      "Connections": [
+        {},
+        {}
+      ]
+    },
+    {
+      "Name": "RideOnType",
+      "guid": "766f0741-f648-41d3-8cd7-881ce5f723e6",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RideOnStandbyOK",
+      "guid": "e81f41be-1a3f-4942-83f6-649b70146914",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RideOnStart",
+      "guid": "0b01d378-26c2-4550-8067-e31b0f36d30c",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RideOnSkip",
+      "guid": "cd6aef71-b930-4d92-bbd0-1299ce59074f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RideOnEnd",
+      "guid": "ba0b60e9-831f-4cbb-b3e4-1badc1ad737f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RideOnPartnerReaction",
+      "guid": "1c25afac-7765-489f-8978-071257ed56b3",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Brake",
+      "guid": "c9f93980-6e15-43f4-b60c-7743b7e55c5e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DuringBraking",
+      "guid": "3d0c31ff-78ad-4202-948a-83369bbd6a6a",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "GetOffStart",
+      "guid": "c114118c-f6c6-4c4e-be9e-29e93d5c334f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "GetOffEnd",
+      "guid": "b65f3e21-951b-4302-b05d-fdbd9c55bcfd",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": []
+}

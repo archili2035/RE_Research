@@ -1,0 +1,69 @@
+{
+  "Name": "InstalledMachineGun_Shooter_FsmUserVariables",
+  "Variables": [
+    {
+      "Name": "IsShooting",
+      "guid": "2eb17de4-b4b6-4d65-af3f-b403b37aa3d3",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsIntervalWait",
+      "guid": "fc4d93a5-50d0-473f-941e-d1d6913138c7",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "YawBlendRate",
+      "guid": "200d6437-61da-4322-b5ca-2623f1b5c79b",
+      "type": 11,
+      "Default": "\u003C0, -1, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "PitchBlendRate",
+      "guid": "f7cd2340-9b67-43a0-acaf-7389f4b38bb0",
+      "type": 11,
+      "Default": "\u003C0, -1, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveState",
+      "guid": "b24476fe-3a16-41b5-8892-a8b044941e17",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ShootState",
+      "guid": "ff54d512-af69-4790-a9fc-174b5d399fc3",
+      "type": 8,
+      "Default": "\u003C0, 0, 3\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotionType",
+      "guid": "bb8fa807-1ace-46cd-a74e-ba6f74b2b5b9",
+      "type": 7,
+      "Default": "\u003C0, 0, 2\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": []
+}

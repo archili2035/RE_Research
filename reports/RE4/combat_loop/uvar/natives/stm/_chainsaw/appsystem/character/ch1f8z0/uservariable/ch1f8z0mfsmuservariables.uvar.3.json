@@ -1,0 +1,229 @@
+{
+  "Name": "ch1f8z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "StateEnd",
+      "guid": "a2e36cc8-e75a-497e-a053-accb26c6499d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "EnableLadderUp",
+      "guid": "ae9e6313-1d25-442b-b542-539f3fcc25ef",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Success",
+      "guid": "fc220369-336f-4f52-a271-f44c8d6b713b",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NextSuccess",
+      "guid": "e5c41b5f-3e29-4036-976a-3ca612314271",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NewVariable",
+      "guid": "b1993aa9-da3f-4a28-94a1-ffbad6d795a0",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NextFail",
+      "guid": "546527e2-5da3-44d8-b2e2-19740123a2ad",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NextActionState",
+      "guid": "eeeadf76-a391-4507-9fba-b32910b60c35",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NextSuccess2",
+      "guid": "c14d00d0-3057-4b2b-bd78-33b7f111a856",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AttackHitNext",
+      "guid": "6bf01d74-e5cb-4597-be5b-d0c778bf571e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsPlAvoid",
+      "guid": "d7f21b65-a86e-4a73-aba0-bf44beb61510",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TargetModelSpaceDir",
+      "guid": "79521536-9bfe-47a5-ab07-a59b0966a42a",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotTreeModelSpaceAttackTargetDir",
+      "guid": "d90881a6-3aa2-467e-8c2e-46c618146c90",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDirectionDirect",
+      "guid": "fffba345-09a7-41ee-a665-f58b70a73789",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDir",
+      "guid": "74c50d7c-00f8-4e73-99f2-da14508eefaa",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotTreeModelSpaceAttackTargetDirY",
+      "guid": "5e30674d-2e80-4f6c-b0b7-ec3ef0d057f2",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotTreeMoveAnimSpeedRate",
+      "guid": "63a74689-52a7-4718-8019-cf1f56f873c2",
+      "type": 11,
+      "Default": "1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AddLockOffBackLeft",
+      "guid": "a47028e0-bdb4-4c23-a959-8ead821cdc48",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AddLockOffBackRight",
+      "guid": "03bd27a1-a784-4e35-9225-0cd0e7d5c0c8",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AddLockOffFrontLeft",
+      "guid": "6d6ae61a-0324-40f1-a468-6c3a806834ea",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AddLockOffFrontRight",
+      "guid": "619f0008-cbe2-49f0-87d9-fb9fadacdade",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "PlayDamageReaction",
+      "guid": "d2e21f0b-ca27-44a7-8d74-2ff41d9aea76",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

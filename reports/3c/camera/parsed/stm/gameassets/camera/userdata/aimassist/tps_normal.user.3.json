@@ -1,0 +1,69 @@
+{
+  "Path": "stm/gameassets/camera/userdata/aimassist/tps_normal.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\aimassist\\tps_normal.user.3",
+  "Objects": [
+    {
+      "Index": 2,
+      "Class": "app.CameraAimAssistUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 1,
+          "Class": "app.CameraAimAssistParam"
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CameraAimAssistParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_EnableDistance": 20,
+        "_IsEnableDistanceOverrideScope": true,
+        "_EnableDistanceOverrideScope": 100,
+        "_EnableRangeX": 0.6,
+        "_EnableRangeY": 0.7,
+        "_IsEnableRangeOverride": false,
+        "_EnableRangeXTop": 0.3,
+        "_EnableRangeXBottom": 0.3,
+        "_EnableRangeYLeft": 0.3,
+        "_EnableRangeYRight": 0.3,
+        "_NearDistance": 4,
+        "_NearEnableRangeX": 0.7,
+        "_NearEnableRangeY": 0.8,
+        "_IsNearEnableRangeOverride": false,
+        "_NearEnableRangeXTop": 0.5,
+        "_NearEnableRangeXBottom": 0.5,
+        "_NearEnableRangeYLeft": 0.5,
+        "_NearEnableRangeYRight": 0.5,
+        "_StickForceDecayRate": 0.8,
+        "_HoldStartAssistTimeSec": 0.75,
+        "_AimmingStrongAssistEnable": true,
+        "_StrongAssistPowerX": 10,
+        "_StrongAssistPowerY": 10,
+        "_HoldStartAssistPowerX": 10,
+        "_HoldStartAssistPowerY": 10
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CameraAimAssistUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 1,
+          "Class": "app.CameraAimAssistParam"
+        }
+      }
+    }
+  ]
+}

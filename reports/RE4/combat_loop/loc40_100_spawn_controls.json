@@ -1,0 +1,323 @@
+{
+  "Path": "natives/stm/_chainsaw/leveldesign/location/loc40/level_loc40_100.scn.20",
+  "SchemaMismatches": [],
+  "Controllers": [
+    {
+      "Index": 660,
+      "Class": "chainsaw.CharacterSpawnController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_DifficutyParam": 63,
+        "_GUID": "e55a811a-ef89-450e-8b42-731d42e1b762",
+        "_SpawnCondition": {
+          "Index": 658,
+          "Class": "chainsaw.FlagCondition",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [
+              {
+                "Index": 657,
+                "Class": "chainsaw.CheckFlagInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_CheckFlag": "968d96da-ce9a-4a98-920a-02e26dc7d6e5",
+                  "_CompareValue": true
+                }
+              }
+            ],
+            "_Logic": 0
+          }
+        },
+        "_SpawnSkipCondition": {
+          "Index": 659,
+          "Class": "chainsaw.FlagConditionStrict",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [],
+            "_Logic": 0
+          }
+        }
+      }
+    },
+    {
+      "Index": 703,
+      "Class": "chainsaw.CharacterSpawnController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_DifficutyParam": 63,
+        "_GUID": "69765c79-b065-4723-a805-96f96e2c7860",
+        "_SpawnCondition": {
+          "Index": 699,
+          "Class": "chainsaw.FlagCondition",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [
+              {
+                "Index": 698,
+                "Class": "chainsaw.CheckFlagInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_CheckFlag": "ad6a87ee-8689-44ec-ab22-d3a272415269",
+                  "_CompareValue": true
+                }
+              }
+            ],
+            "_Logic": 0
+          }
+        },
+        "_SpawnSkipCondition": {
+          "Index": 702,
+          "Class": "chainsaw.FlagConditionStrict",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [
+              {
+                "Index": 700,
+                "Class": "chainsaw.CheckFlagInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_CheckFlag": "34de9cdb-a994-461a-865a-15b50c547b6c",
+                  "_CompareValue": true
+                }
+              },
+              {
+                "Index": 701,
+                "Class": "chainsaw.CheckFlagInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_CheckFlag": "61e8fc15-c4a1-44cb-8fe4-7d415c6cfa70",
+                  "_CompareValue": true
+                }
+              }
+            ],
+            "_Logic": 1
+          }
+        }
+      }
+    },
+    {
+      "Index": 846,
+      "Class": "chainsaw.CharacterSpawnController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_DifficutyParam": 63,
+        "_GUID": "c37e2954-faee-459b-bbd0-34dbcc28266b",
+        "_SpawnCondition": {
+          "Index": 844,
+          "Class": "chainsaw.FlagCondition",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [],
+            "_Logic": 0
+          }
+        },
+        "_SpawnSkipCondition": {
+          "Index": 845,
+          "Class": "chainsaw.FlagConditionStrict",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [],
+            "_Logic": 0
+          }
+        }
+      }
+    },
+    {
+      "Index": 899,
+      "Class": "chainsaw.CharacterSpawnController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_DifficutyParam": 63,
+        "_GUID": "581ea7e1-77a7-46d3-9f5e-c2c35da94bbe",
+        "_SpawnCondition": {
+          "Index": 897,
+          "Class": "chainsaw.FlagCondition",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [],
+            "_Logic": 0
+          }
+        },
+        "_SpawnSkipCondition": {
+          "Index": 898,
+          "Class": "chainsaw.FlagConditionStrict",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [],
+            "_Logic": 0
+          }
+        }
+      }
+    },
+    {
+      "Index": 1016,
+      "Class": "chainsaw.CharacterSpawnController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_DifficutyParam": 63,
+        "_GUID": "8e43ee72-4b73-42e3-a900-51aad4029850",
+        "_SpawnCondition": {
+          "Index": 1014,
+          "Class": "chainsaw.FlagCondition",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [],
+            "_Logic": 0
+          }
+        },
+        "_SpawnSkipCondition": {
+          "Index": 1015,
+          "Class": "chainsaw.FlagConditionStrict",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [],
+            "_Logic": 0
+          }
+        }
+      }
+    },
+    {
+      "Index": 1112,
+      "Class": "chainsaw.CharacterSpawnController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_DifficutyParam": 63,
+        "_GUID": "1f732fd7-91fb-099d-3621-685a08d954a4",
+        "_SpawnCondition": {
+          "Index": 1109,
+          "Class": "chainsaw.FlagCondition",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [],
+            "_Logic": 0
+          }
+        },
+        "_SpawnSkipCondition": {
+          "Index": 1111,
+          "Class": "chainsaw.FlagConditionStrict",
+          "Userdata": null,
+          "Fields": {
+            "_CheckFlags": [
+              {
+                "Index": 1110,
+                "Class": "chainsaw.CheckFlagInfo",
+                "Userdata": null,
+                "Fields": {
+                  "_CheckFlag": "ad6a87ee-8689-44ec-ab22-d3a272415269",
+                  "_CompareValue": true
+                }
+              }
+            ],
+            "_Logic": 0
+          }
+        }
+      }
+    }
+  ],
+  "ClassCounts": {
+    "": 1,
+    "via.GameObject": 60,
+    "via.Transform": 60,
+    "via.geometry.Vertex": 16,
+    "via.geometry.Face": 12,
+    "via.physics.MeshShape": 4,
+    "via.physics.FilterInfo": 32,
+    "via.physics.UserData": 32,
+    "via.physics.Collider": 32,
+    "via.geometry.GeometryBrush": 2,
+    "via.Folder": 4,
+    "via.render.Mesh": 3,
+    "chainsaw.CheckFlagInfo": 32,
+    "chainsaw.FlagCondition": 69,
+    "chainsaw.RuleStratum.ParticleFlag": 4,
+    "chainsaw.RuleStratum.Container": 6,
+    "chainsaw.RuleStratum.Rule": 6,
+    "chainsaw.RuleStratum.StratumGeneric`1<chainsaw.ObjectMove.Side>": 1,
+    "chainsaw.ObjectMove.MoveData": 2,
+    "chainsaw.ObjectMove": 1,
+    "via.physics.CapsuleShape": 1,
+    "chainsaw.collision.AttackUserData": 1,
+    "via.physics.Colliders": 27,
+    "chainsaw.RuleStratum.ParticleTrue": 2,
+    "chainsaw.RuleStratum.StratumBool": 5,
+    "chainsaw.ObjectHide": 2,
+    "chainsaw.ContextID": 58,
+    "chainsaw.GimmickCore": 26,
+    "via.physics.SphereShape": 10,
+    "chainsaw.collision.GimmickSensorUserData": 24,
+    "chainsaw.GimmickStreamingTextureController": 26,
+    "chainsaw.InteractTriggerAreaHit": 17,
+    "chainsaw.InteractHolder.TriggerContainer": 28,
+    "chainsaw.InteractHolder": 26,
+    "chainsaw.SetFlagSettings.SetFlagData": 24,
+    "chainsaw.SetFlagSettings.Param": 21,
+    "chainsaw.OptionSettings`1<chainsaw.SetFlagSettings.Param>": 17,
+    "chainsaw.SetFlagSettings": 17,
+    "chainsaw.InteractTriggerKey": 8,
+    "via.physics.BoxShape": 17,
+    "chainsaw.TutorialSettings.Param": 4,
+    "chainsaw.OptionSettings`1<chainsaw.TutorialSettings.Param>": 4,
+    "chainsaw.TutorialSettings": 4,
+    "chainsaw.ClapperboardMediator.CameraTimeline": 5,
+    "chainsaw.ClapperboardMediator.CameraDataContainer": 10,
+    "chainsaw.ClapperboardSettings.Param": 9,
+    "chainsaw.OptionSettings`1<chainsaw.ClapperboardSettings.Param>": 6,
+    "chainsaw.ClapperboardSettings": 6,
+    "chainsaw.GmCamera1Shot": 1,
+    "chainsaw.PortrayalSettings.Param": 6,
+    "chainsaw.OptionSettings`1<chainsaw.PortrayalSettings.Param>": 2,
+    "chainsaw.PortrayalSettings": 2,
+    "chainsaw.GimmickCameraSettingUserData": 4,
+    "chainsaw.ClapperboardMediator.CameraGimmick": 5,
+    "chainsaw.CheckFlagSettings.Param": 14,
+    "chainsaw.OptionSettings`1<chainsaw.CheckFlagSettings.Param>": 11,
+    "chainsaw.CheckFlagSettings": 11,
+    "chainsaw.InteractTriggerFlag": 3,
+    "chainsaw.RichTutorialSettings.Param": 1,
+    "chainsaw.OptionSettings`1<chainsaw.RichTutorialSettings.Param>": 1,
+    "chainsaw.RichTutorialSettings": 1,
+    "chainsaw.DeadEnemyCounter.Data": 1,
+    "chainsaw.DeadEnemyCounter": 1,
+    "chainsaw.GmViewPoint.LookPosition": 2,
+    "chainsaw.GmViewPoint": 1,
+    "chainsaw.MotionJackSupplier.Setting": 1,
+    "chainsaw.MotionJackSupplier": 2,
+    "chainsaw.GmOptionSleep": 1,
+    "chainsaw.MessageSettings.DialogSessionUnitSetting": 1,
+    "chainsaw.MessageSettings.Data": 1,
+    "chainsaw.MessageSettings.Param": 1,
+    "chainsaw.OptionSettings`1<chainsaw.MessageSettings.Param>": 1,
+    "chainsaw.DialogSessionEndIgnoreCondition": 1,
+    "chainsaw.MessageSettings": 1,
+    "chainsaw.FlagConditionStrict": 78,
+    "chainsaw.CharacterSpawnController": 6,
+    "chainsaw.BoxShape": 10,
+    "chainsaw.VariableColliderShape": 10,
+    "chainsaw.CharacterArea.AreaNode": 10,
+    "chainsaw.CharacterArea": 10,
+    "chainsaw.CharacterAreaSetting": 47,
+    "chainsaw.CharacterTargetPointSetting": 15,
+    "chainsaw.CharacterRelocationPointSetting": 15,
+    "chainsaw.EnemySpawnParam.ForceFindConditionSetting": 13,
+    "chainsaw.EnemyManager.LinkEnemyRangeParam": 13,
+    "chainsaw.EnemySpawnParam.BodyScaleSetting": 13,
+    "chainsaw.DropItemContext.SaveData": 13,
+    "chainsaw.Ch1c0SpawnParamCommon.BelongingsSetting": 6,
+    "chainsaw.TargetSensorUserData.SightRangeParam": 6,
+    "chainsaw.ParasiteATentacleNumberRandom": 6,
+    "chainsaw.Ch1c0SpawnParamCommon": 6,
+    "chainsaw.Ch8g1z0SpawnParam": 7,
+    "chainsaw.Ch2b0z0SpawnParam": 1,
+    "chainsaw.Ch2b1z0SpawnParam": 1,
+    "chainsaw.InterpolationData": 2,
+    "chainsaw.GmMiniDemo.EventDataNonPlayer": 2,
+    "chainsaw.GmMiniDemo.EventContainer": 2,
+    "chainsaw.GmMiniDemo": 1
+  }
+}

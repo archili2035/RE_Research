@@ -1,0 +1,283 @@
+{
+  "Name": "ch1c0z0BtUserVariables",
+  "Variables": [
+    {
+      "Name": "EnableUpdateMoveDirection",
+      "guid": "949638f3-407f-4910-90d0-5bdd20af8e1b",
+      "type": 2,
+      "Default": "True",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsDamage",
+      "guid": "7169583a-e266-4b60-8f19-677ea10e3a6f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HeadToGroupPosition",
+      "guid": "45bafe80-f0ed-4c50-a9ba-b7525f580048",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FlashMob",
+      "guid": "aeb3c874-2446-4847-8e7f-d19c04499ca2",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "KidnapMove",
+      "guid": "a17c308d-8be5-4c99-a74e-3e8c2f288190",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "isKidnapping",
+      "guid": "f3b93d9b-53f1-4388-9444-c4fec4249304",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "isKeyEscape",
+      "guid": "f142bf7d-c471-4751-be6d-ac230ee4fd58",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "KeyEscaoeMove",
+      "guid": "ed2a28f6-28c3-4fd3-8989-328084519251",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "isGhostMode",
+      "guid": "4ab133aa-f629-4950-a364-ff37959427c4",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ForceWait",
+      "guid": "2c0d49cc-31f0-4ae9-8434-bf1141dd8bfc",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ForceMoveWalk",
+      "guid": "73c70ef9-c324-4b36-ab21-ad32a3c9dc28",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ForceSimpleMove",
+      "guid": "b08a3854-bbee-4c39-81fc-5180c1262aa6",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsMole",
+      "guid": "5b422fe2-8757-4147-af1d-b4d1ccb8a3af",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsMoleMove",
+      "guid": "222e610c-3b66-46e8-91a3-6c39bcff4d19",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsKeyEscape",
+      "guid": "6895134b-7651-445b-bba6-d666a0c260d6",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsEscapeMove",
+      "guid": "0a7f9c21-4533-45ae-a891-3ce686e26dd1",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLiftBattery",
+      "guid": "a8256dee-fc37-4274-9dc3-ce8d16e52b03",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLiftBatteryMove",
+      "guid": "031ecb17-eacb-4194-839e-02726bc27dc6",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "SiegeWait",
+      "guid": "1e69d53d-9e8e-4b3b-aa8b-157a606d3d58",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonBtUserVariables",
+      "Variables": [
+        {
+          "Name": "LoseTarget",
+          "guid": "90724e54-e6d9-4dce-81f4-eefdec7145e5",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "Attention",
+          "guid": "4e700c95-03f9-4a1f-9011-4ad6205a38ed",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "Searching",
+          "guid": "bca1d6cf-ab03-4fb9-8372-6a1aa61f1587",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "FindTarget",
+          "guid": "e87f35bc-5e03-460b-a630-bb6d91cb10fa",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "AttackEnable",
+          "guid": "eebc147e-6b26-494d-a3bd-b32256ab4275",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "ForceMove",
+          "guid": "d20cf43b-0522-43ef-a65f-add495f17538",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "ThinkEnable",
+          "guid": "65963163-f909-4a3d-8981-39a07dbbf894",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsLive",
+          "guid": "c9a9ea37-30da-461f-9654-3e6e7c54ff09",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsRoleMode",
+          "guid": "18bff4ef-4176-4044-9568-93ec4179c123",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsForceMoveHomecoming",
+          "guid": "ae3b8979-adac-49b2-a01a-007203ce5988",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsForceMoveUnreachable",
+          "guid": "b3d48ba6-4e72-4299-ae32-c748332fd978",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

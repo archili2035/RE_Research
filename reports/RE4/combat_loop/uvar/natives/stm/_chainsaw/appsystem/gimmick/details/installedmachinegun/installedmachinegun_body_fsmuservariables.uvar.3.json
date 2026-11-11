@@ -1,0 +1,123 @@
+{
+  "Name": "InstalledMachineGun_Body_FsmUserVariables",
+  "Variables": [
+    {
+      "Name": "YawRotStage",
+      "guid": "2bdbf4b5-3566-4a39-8417-f8574bc92ae7",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "YawRotMoving",
+      "guid": "b7def357-ce0b-43c8-a5f5-aa67bbdcbeb2",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsShooting",
+      "guid": "24e83dbc-c2b6-4df1-b143-b413492e15ac",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsIntervalWait",
+      "guid": "6587068d-82e9-4e3a-b648-8e29e2779364",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "YawBlendRate",
+      "guid": "27923f20-b8e2-4272-aa3e-c95bfce02d25",
+      "type": 11,
+      "Default": "\u003C0, -1, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "PitchBlendRate",
+      "guid": "88f0519c-1a21-42c8-9919-fb34deb6d230",
+      "type": 11,
+      "Default": "\u003C0, -1, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsGrabbed",
+      "guid": "6d98b530-feff-4a00-9e55-e3069b32dd32",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "UserMoveState",
+      "guid": "fa9b8850-3054-4e2d-a2bf-b0d9d474176e",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "UserShootState",
+      "guid": "05d8d8af-ff58-4de2-9535-9ed93ca906e7",
+      "type": 8,
+      "Default": "\u003C0, 0, 3\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsShootEndMotCancel",
+      "guid": "4dcf592e-b174-4795-be71-13f642e69d48",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotionType",
+      "guid": "4b46032f-179d-464b-8139-e147038820e6",
+      "type": 7,
+      "Default": "\u003C0, 0, 2\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsBulletFire",
+      "guid": "b3c56a8b-5610-472f-ab86-c458d450639f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsUnarmed",
+      "guid": "c8ff4341-b039-4a72-b542-e4735c2b6d24",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": []
+}

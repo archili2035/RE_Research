@@ -1,0 +1,100 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/common/tpscameracharactercontactuserdata.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\common\\tpscameracharactercontactuserdata.user.3",
+  "Objects": [
+    {
+      "Index": 4,
+      "Class": "app.CameraCharacterContactUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsDrawSwitch": true,
+        "_IsDrawSwitchDead": false,
+        "_DrawSwitchCollisionRadius": 0.1,
+        "_DrawSwitchCollisionLength": 0.1,
+        "_DrawSwitchPlayerToTargetLength": 0.5,
+        "_DrawSwitchDelayTime": 0.01,
+        "_IsPushAvoid": true,
+        "_PushAvoidBasing": 0,
+        "_PushAvoidJointName": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_PushAvoidPos": "\u003C0.4, 0.4, 0.5\u003E",
+        "_PushCollisionRadius": 0.25,
+        "_PushCollisionRange": 0.1,
+        "_PushAvoidSpeedDamping": {
+          "Ref": 2,
+          "Class": "app.DampingParam"
+        },
+        "_PushReturnSpeedDamping": {
+          "Ref": 3,
+          "Class": "app.DampingParam"
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1951860438
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.3
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.CameraCharacterContactUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsDrawSwitch": true,
+        "_IsDrawSwitchDead": false,
+        "_DrawSwitchCollisionRadius": 0.1,
+        "_DrawSwitchCollisionLength": 0.1,
+        "_DrawSwitchPlayerToTargetLength": 0.5,
+        "_DrawSwitchDelayTime": 0.01,
+        "_IsPushAvoid": true,
+        "_PushAvoidBasing": 0,
+        "_PushAvoidJointName": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_PushAvoidPos": "\u003C0.4, 0.4, 0.5\u003E",
+        "_PushCollisionRadius": 0.25,
+        "_PushCollisionRange": 0.1,
+        "_PushAvoidSpeedDamping": {
+          "Ref": 2,
+          "Class": "app.DampingParam"
+        },
+        "_PushReturnSpeedDamping": {
+          "Ref": 3,
+          "Class": "app.DampingParam"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "Name": "ch1d0z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "StateEnd",
+      "guid": "a2e36cc8-e75a-497e-a053-accb26c6499d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NewVariable",
+      "guid": "99f901a7-a3a0-4eb1-aa25-7e6801248bc7",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageTrigger",
+      "guid": "9211a05d-e363-4b59-b026-83721ca458d3",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsBackDamage",
+      "guid": "5e955057-c50a-4f1a-8fa5-475ee02d1895",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ActionCheck",
+      "guid": "f67ef6ff-0fd0-4840-88dc-9af93cd7810c",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "CheckAttackHit",
+      "guid": "158b45a4-928d-488a-b17d-e96a5d581055",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NoHitCancel",
+      "guid": "cf771c1a-e721-45dd-bc1b-e7a5f9d3e060",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDir",
+      "guid": "4c57d019-9e55-4c7c-af53-e326fb16f5d4",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsRun",
+      "guid": "603a45b9-9228-42dc-ac17-4911bd185a7c",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsDown",
+      "guid": "c65833c8-d3d9-4a47-8849-5b62304e2971",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsTargetBack",
+      "guid": "575ef8fb-2202-4fb4-a008-74d025c765aa",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsCrawAction",
+      "guid": "9fb08786-e819-4a59-98aa-871ad473f707",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsFastWalk",
+      "guid": "e736c928-81c1-4158-93c5-2a85fc5109c9",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsSelect",
+      "guid": "4456fb4c-74ce-4db9-ace7-93d60ae60e20",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "SearchOn",
+      "guid": "4c691431-1761-4f88-b3bb-85fad1d9de54",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsRageMode",
+      "guid": "3d667c29-fceb-4634-8adc-e7589b9885a0",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsAnotherAction",
+      "guid": "d00a457c-e6d5-42fe-8312-5829d0c8933a",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IdleHearingTrigger",
+      "guid": "a7e1b896-0941-43e5-8680-b0005e575504",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsDamageRun",
+      "guid": "c44c5001-0b08-46dd-b148-2e51dd4e7f79",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageTriggerM",
+      "guid": "c8373370-616b-459a-8378-b292886b7eff",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageTriggerL",
+      "guid": "6ca0c7c9-b7bf-4615-a9e2-9106e6c35b67",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLeftHandAttack",
+      "guid": "254c0396-dc54-43e5-a4a5-72dbcd2ae74c",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "VoiceFacial",
+      "guid": "a7f13c90-3c1d-41f6-bded-7faa6d9d46e1",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

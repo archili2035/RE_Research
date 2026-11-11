@@ -1,0 +1,117 @@
+{
+  "source": "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663",
+  "metadata_source": "existing parsed report; compare with freshly extracted binary before conversion",
+  "clips": [
+    {
+      "Slot": 2,
+      "ID": 140,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0140_hold_start",
+      "Frames": 20,
+      "FPS": 60,
+      "Tracks": 59
+    },
+    {
+      "Slot": 3,
+      "ID": 141,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0141_hold_start_add",
+      "Frames": 20,
+      "FPS": 60,
+      "Tracks": 61
+    },
+    {
+      "Slot": 6,
+      "ID": 158,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0158_hold_end",
+      "Frames": 50,
+      "FPS": 60,
+      "Tracks": 59
+    },
+    {
+      "Slot": 7,
+      "ID": 159,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0159_hold_end_add",
+      "Frames": 50,
+      "FPS": 60,
+      "Tracks": 58
+    },
+    {
+      "Slot": 8,
+      "ID": 160,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0160_hold_loop",
+      "Frames": 432,
+      "FPS": 60,
+      "Tracks": 60
+    },
+    {
+      "Slot": 11,
+      "ID": 165,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0165_wheel_loop_L",
+      "Frames": 77,
+      "FPS": 60,
+      "Tracks": 60
+    },
+    {
+      "Slot": 12,
+      "ID": 167,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0167_wheel_loop_R",
+      "Frames": 77,
+      "FPS": 60,
+      "Tracks": 60
+    },
+    {
+      "Slot": 17,
+      "ID": 403,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0403_walk_F_loop",
+      "Frames": 210,
+      "FPS": 60,
+      "Tracks": 59
+    },
+    {
+      "Slot": 40,
+      "ID": 500,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0500_shoot",
+      "Frames": 50,
+      "FPS": 60,
+      "Tracks": 60
+    },
+    {
+      "Slot": 41,
+      "ID": 501,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0501_shoot",
+      "Frames": 50,
+      "FPS": 60,
+      "Tracks": 60
+    },
+    {
+      "Slot": 42,
+      "ID": 502,
+      "Switch": 0,
+      "Kind": "MotFile",
+      "Name": "cha0_wp4000H_0502_shoot",
+      "Frames": 50,
+      "FPS": 60,
+      "Tracks": 60
+    }
+  ],
+  "note": "500/501/502 are additive candidates; 140/158 may require companion layers; 161 is not hold_end in RE4"
+}

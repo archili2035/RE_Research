@@ -1,0 +1,8 @@
+﻿phase,evidence,observed,timing,unknown
+输入请求,输入树 Node 51；ActionInfo 40/41/42,请求 ShootTrigger；ResetDryFire；BookShoot,无测量时刻,命令 1785394695 和 CheckType 0 的枚举语义
+射击许可,Tree_checkShootEnable；ShootEnable GUID,变量、动作指令、Hold 相关条件、DryFire 回调和逻辑节点共同参与,无可靠总延迟,逻辑操作码与游戏回调实现未完全解释
+弹药／武器分支,Shoot → checkAmmo → checkFullAutoGun,有条件进入普通射击或 LOOP_SHOOT；空弹分支单列,序列化转移,CheckCondition Target 4/5 未独立映射枚举
+动画与出弹,Node 11708713；Bank 2 Motion 500,AppPlayMotion、GenerateShell、MuzzleFlash、GunFire、Rapid 动作并列存在,Motion500/501/502 各声明50帧/60fps,Timing=0 的回调阶段及射速生效公式
+命中与敌人反应,wp4000shellinfo；ch1c0z0 头部／反应表,独立 Damage/Wince/Break/Stopping；头部 Damage 覆盖1.2,没有闭合到确定硬直帧,最终阈值、部位绑定与运行时修正完整链
+体术接近,KickApproachData Bank1000 Motion900,3个距离配置分别使用BeginFrame35/25/15和插值10/15/20,AdjustEndFrame43,有效命中帧与最终位移求值
+退出／恢复,Tree_checkUnderlayerShootCansel；Shoot→Hold,下层结束、状态与动作条件；存在exitFrame和interpolationFrame,不把转移参数等同于输入锁定时间,完整取消窗口和角色恢复移动的实测时刻

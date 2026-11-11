@@ -1,0 +1,211 @@
+{
+  "Name": "ch6CommonBTreeUserVariables",
+  "Variables": [
+    {
+      "Name": "McForceRun",
+      "guid": "cda00f4c-74fb-4231-8e29-bdf8ce6ae5ff",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "McEnableMove",
+      "guid": "90c99700-3892-489a-9f65-77af24fd1d52",
+      "type": 2,
+      "Default": "True",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "McRequestRun",
+      "guid": "1b3446c0-1b9f-4084-a5a9-82f0a7bcf949",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "McEnableReloadEquipGun",
+      "guid": "378baa02-e540-406c-b75b-26a53572609d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "McEnableReloadEquipGrenade",
+      "guid": "d79d0140-551a-4ff2-903f-59bb5a0d51e8",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "ch0CommonBTreeUserVariables",
+      "Variables": [
+        {
+          "Name": "RunSwitch",
+          "guid": "a409becc-5340-4d99-8b34-a5bd2dfb4fec",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsJump",
+          "guid": "b3bfdfea-2224-4b3e-825a-50c282fa2d3e",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsHold",
+          "guid": "fdca7b9e-ddaf-4f8d-b622-ee243d368e73",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsElude",
+          "guid": "68eb2dad-b8e7-4003-bbcc-1c9d6c209f90",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "HoldEnable",
+          "guid": "2fc19ad7-83fb-4e96-b2c5-421e3e69e674",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "EquipBareHand",
+          "guid": "329baa7b-d792-487a-8eea-097192c3a17b",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "EquipGun",
+          "guid": "fb7b4a0f-9269-4993-9182-5394a4ffd41f",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "EquipMelee ",
+          "guid": "2d9bee7d-d70b-451b-a373-38ef4401e35c",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "EquipGrenade",
+          "guid": "37c6702c-e59d-4b39-8b20-6901c3c12036",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "EquipTypeMain",
+          "guid": "9c1ced16-a3c6-4fcd-bf65-d7df76cd913d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "WeaponTargetToL2",
+          "guid": "277e5ea0-9568-422c-bfa3-98535e7e1330",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "CameraEnable",
+          "guid": "86cc3710-657a-4da4-b1cd-d81a576a7927",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsJacked",
+          "guid": "815a828e-f4b3-4693-93a6-33713a2a246f",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsFrontWall",
+          "guid": "30d7e83b-6bd9-41df-b701-9971d5f22f57",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "EnableOperation",
+          "guid": "3669e8f6-dcc7-4598-a619-ca044bc9657b",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "RequestShortcutMenu",
+          "guid": "66d447e4-d039-4419-9e4b-73ff930c80f9",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "ButtonJog",
+          "guid": "0bb9db78-da18-43c5-bc34-a557abf0c0d1",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

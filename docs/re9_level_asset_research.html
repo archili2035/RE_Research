@@ -1,0 +1,600 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RE9 关卡与地图资产研究 · RE 研究室</title><style>/*!
+ * xavierstudio-site-kit · tokens
+ * 一层：设计令牌。唯一真相源。
+ *
+ * 风格口径：苹果官网的骨架（排版节奏、留白、双表面色带、药丸按钮）
+ *          + 保留个人色（赭石强调色、衬线标题）
+ *
+ * 硬性约束：任何页面、任何组件都不准写死色值与字号，只引用这里的变量。
+ *          新增语义色请先加令牌，再在组件里引用。
+ */
+:root {
+  /* ---- 表面 ---------------------------------------------------------- */
+  /* 苹果用纯白 / #f5f5f7 两级表面做色带交替，这里整体偏暖一度保留个人气质 */
+  --surface: #fdfcfa;
+  --surface-alt: #f4f2ed;
+  --surface-raised: #ffffff;
+  --surface-inverse: #1c1b18;
+
+  /* ---- 文字 ---------------------------------------------------------- */
+  --ink: #1c1b18;
+  --ink-secondary: #605d56;
+  --ink-tertiary: #8a867d;
+  --ink-on-inverse: #f4f2ed;
+  --ink-on-accent: #ffffff;
+
+  /* ---- 强调色与语义色 ------------------------------------------------ */
+  --accent: #9c3d2e;
+  --accent-hover: #7f2f22;
+  --accent-wash: #f6ebe8;
+  --accent-line: #d9b3aa;
+
+  --ok: #4f6b45;
+  --ok-wash: #eef3e9;
+  --warn: #9a6a1c;
+  --warn-wash: #faf1de;
+  --danger: #a33226;
+  --danger-wash: #fbebe9;
+  --info: #3f5a73;
+  --info-wash: #ecf1f6;
+
+  /* ---- 分隔 ---------------------------------------------------------- */
+  /* 苹果几乎不用边框，靠表面层级分区；发丝线只在表格与必要处出现 */
+  --hairline: #e4e0d7;
+  --hairline-strong: #cdc7ba;
+
+  /* ---- 字体 ---------------------------------------------------------- */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-serif:
+    "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", Georgia, serif;
+  --font-mono:
+    ui-monospace, "SF Mono", "JetBrains Mono", "IBM Plex Mono", Consolas, monospace;
+
+  /* ---- 字阶 ----------------------------------------------------------
+   * 苹果的做法：字号越大，字距收得越紧。每一级字号都配一组行高与字距。
+   */
+  --text-display: 64px;
+  --text-display-lh: 1.06;
+  --text-display-ls: -0.015em;
+
+  --text-h1: 44px;
+  --text-h1-lh: 1.1;
+  --text-h1-ls: -0.009em;
+
+  --text-h2: 30px;
+  --text-h2-lh: 1.2;
+  --text-h2-ls: -0.005em;
+
+  --text-h3: 22px;
+  --text-h3-lh: 1.3;
+  --text-h3-ls: -0.003em;
+
+  --text-h4: 18px;
+  --text-h4-lh: 1.4;
+  --text-h4-ls: 0;
+
+  --text-body: 17px;
+  --text-body-lh: 1.47;
+
+  --text-small: 14px;
+  --text-small-lh: 1.55;
+
+  --text-micro: 12px;
+  --text-micro-lh: 1.5;
+  --text-micro-ls: 0.04em;
+
+  /* ---- 字重 ---------------------------------------------------------- */
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-bold: 600;
+
+  /* ---- 间距（4 的倍数） ---------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ---- 版面宽度 ------------------------------------------------------
+   * 980px 是苹果的内容宽；阅读密集的长文收到 692px 以控制每行字数。
+   */
+  --width-wide: 1180px;
+  --width-content: 980px;
+  --width-reading: 692px;
+
+  /* ---- 圆角 ---------------------------------------------------------- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-pill: 980px;
+
+  /* ---- 阴影 ----------------------------------------------------------
+   * 克制使用。层级优先用表面色差表达，阴影只给浮起元素。
+   */
+  --shadow-sm: 0 1px 2px rgba(28, 27, 24, 0.04);
+  --shadow-md: 0 4px 16px rgba(28, 27, 24, 0.06);
+
+  /* ---- 动效 ---------------------------------------------------------- */
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration: 0.22s;
+}
+
+/* 窄屏收字号与纵向节奏，令牌一处改、全站生效 */
+@media (max-width: 734px) {
+  :root {
+    --text-display: 40px;
+    --text-h1: 32px;
+    --text-h2: 24px;
+    --text-h3: 19px;
+    --text-body: 16px;
+    --space-9: 56px;
+    --space-10: 72px;
+  }
+}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--surface);color:var(--ink);font:var(--text-body)/var(--text-body-lh) var(--font-sans)}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}header,main,footer{max-width:var(--width-wide);margin:auto;padding:var(--space-6)}header{display:flex;justify-content:space-between;align-items:center;gap:var(--space-4);border-bottom:1px solid var(--hairline)}header a{text-decoration:none}.eyebrow{font-size:var(--text-micro);letter-spacing:var(--text-micro-ls);color:var(--accent)}h1{font-family:var(--font-serif);font-size:var(--text-h1);font-weight:var(--weight-bold);line-height:var(--text-h1-lh);margin:var(--space-4) 0}h2{font-size:var(--text-h2);line-height:var(--text-h2-lh)}h3{font-size:var(--text-h3)}.lead{color:var(--ink-secondary);max-width:var(--width-reading);line-height:1.8}footer{font-size:var(--text-small);color:var(--ink-secondary);border-top:1px solid var(--hairline);line-height:1.8}.pill{display:inline-block;padding:var(--space-2) var(--space-3);border-radius:var(--radius-pill);background:var(--accent-wash);font-size:var(--text-micro);color:var(--accent)}@media(max-width:600px){header,main,footer{padding:var(--space-5)}header{align-items:flex-start;flex-direction:column}}
+article{max-width:var(--width-content);line-height:1.85}article h2{margin-top:var(--space-7)}article h3{margin-top:var(--space-6)}pre{overflow:auto;background:var(--surface-alt);padding:var(--space-4);border-radius:var(--radius-sm)}code{font-family:var(--font-mono);font-size:var(--text-small)}table{border-collapse:collapse;display:block;overflow:auto;max-width:100%;font-size:var(--text-small)}th,td{padding:var(--space-3);border:1px solid var(--hairline);text-align:left}th{background:var(--surface-alt)}blockquote{border-left:3px solid var(--accent-line);margin-left:0;padding-left:var(--space-4);color:var(--ink-secondary)}p,li{overflow-wrap:anywhere}article a{word-break:break-word}</style></head><body><header><a href="index.html">← RE 研究主题</a><span class="pill">研究文档</span></header><main><p class="eyebrow">RESOURCE STUDY / 原报告日期 2026-11-04</p><article><h1>RE9（生化危机9：安魂曲）关卡与地图资产研究报告</h1>
+<blockquote>
+<p>研究对象：<code>G:\SteamLibrary\steamapps\common\RESIDENT EVIL requiem BIOHAZARD requiem</code>
+引擎：CAPCOM RE Engine（DX12，<code>re9.exe</code>）
+日期：2026-11-04</p>
+</blockquote>
+<hr>
+<h2>1. 结论速览</h2>
+<ul>
+<li>游戏为《Resident Evil 9: Requiem》（生化危机9：安魂曲），Steam 版，标准 RE 引擎打包。</li>
+<li>全部数据打包在 <code>re_chunk_000.pak</code> 系列，共约 <strong>78 GB</strong>（主 pak + sub pak + 6 组 patch）。</li>
+<li>关卡采用 RE 引擎开放关卡流式加载架构，分三层：<ul>
+<li><strong>章节层（chapter）</strong>：<code>chap1 / chap3 / chap4 / chap5 / ff</code>，无 <code>chap2</code>。</li>
+<li><strong>舞台层（stage 流式区块）</strong>：<code>st10 / st30 / st40 / st50 / st90</code>，共 1340 个 layout 区块。</li>
+<li><strong>资源层</strong>：<code>environment/sm/sm0x~sm9x</code> 静态网格库 + 纹理 + 材质 + 碰撞 + 光照。</li>
+</ul>
+</li>
+<li>解包工具链已验证可用：<code>REE.PAK.Tool</code>（Ekey）+ <code>RE9_STM_Release.list</code>，成功解出真实文件名路径。</li>
+</ul>
+<hr>
+<h2>2. pak 资产总览</h2>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>大小</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>re_chunk_000.pak</td>
+<td>20.2 GB</td>
+<td>主 pak</td>
+</tr>
+<tr>
+<td>re_chunk_000.pak.sub_000.pak</td>
+<td>57.5 GB</td>
+<td>sub pak（流式加载内容）</td>
+</tr>
+<tr>
+<td>re_chunk_000.pak.patch_001.pak</td>
+<td>1.43 GB</td>
+<td>补丁</td>
+</tr>
+<tr>
+<td>re_chunk_000.pak.patch_002.pak</td>
+<td>20.1 MB</td>
+<td>补丁</td>
+</tr>
+<tr>
+<td>re_chunk_000.pak.patch_003.pak</td>
+<td>1.22 GB</td>
+<td>补丁</td>
+</tr>
+<tr>
+<td>re_chunk_000.pak.patch_004.pak</td>
+<td>86.2 MB</td>
+<td>补丁</td>
+</tr>
+<tr>
+<td>re_chunk_000.pak.patch_005.pak</td>
+<td>26.5 MB</td>
+<td>补丁</td>
+</tr>
+<tr>
+<td>re_chunk_000.pak.sub_000.pak.patch_001~005</td>
+<td>144 B ~ 74.9 MB</td>
+<td>sub 补丁</td>
+</tr>
+</tbody></table>
+<ul>
+<li>文件名清单 <code>RE9_STM_Release.list</code> 共 <strong>183,361</strong> 个条目，全部位于 <code>natives/stm/...</code>。</li>
+<li>其余为运行时文件（<code>shader.cache2</code>、<code>piplinelist.bin</code>、D3D12/DLSS 等），与关卡资产无关。</li>
+</ul>
+<hr>
+<h2>3. 目录结构（natives/stm/ 下一级）</h2>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>文件数</th>
+<th>与关卡的关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>environment</td>
+<td>52,687</td>
+<td><strong>关卡环境几何/纹理的主体</strong></td>
+</tr>
+<tr>
+<td>gameassets</td>
+<td>46,256</td>
+<td>游戏内容（角色/武器/道具/机关）</td>
+</tr>
+<tr>
+<td>streaming</td>
+<td>33,914</td>
+<td><strong>流式加载（关卡分区数据）</strong></td>
+</tr>
+<tr>
+<td>character</td>
+<td>14,453</td>
+<td>角色</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>8,827</td>
+<td>动画</td>
+</tr>
+<tr>
+<td>event</td>
+<td>6,940</td>
+<td>事件（含 6,772 个过场 cutscene）</td>
+</tr>
+<tr>
+<td>vfx</td>
+<td>4,791</td>
+<td>特效</td>
+</tr>
+<tr>
+<td>sound</td>
+<td>3,714</td>
+<td>音频</td>
+</tr>
+<tr>
+<td>light</td>
+<td>2,787</td>
+<td>光照</td>
+</tr>
+<tr>
+<td>gui</td>
+<td>2,677</td>
+<td>UI</td>
+</tr>
+<tr>
+<td>leveldesign</td>
+<td>2,342</td>
+<td><strong>关卡设计逻辑（章节/机关/道具）</strong></td>
+</tr>
+<tr>
+<td>appsystem</td>
+<td>2,231</td>
+<td>应用系统</td>
+</tr>
+<tr>
+<td>systems / materialshader / develop / materiallibrary_2 / message / config 等</td>
+<td>少量</td>
+<td>支撑</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>4. 关卡 / 地图结构</h2>
+<h3>4.1 章节层（chapter）—— 技术命名 vs 剧情对照</h3>
+<p>RE 引擎按&quot;物理可玩地图&quot;组织 chapter，而非按剧情分章。</p>
+<table>
+<thead>
+<tr>
+<th>技术名</th>
+<th>stage</th>
+<th>layout 区块数</th>
+<th>剧情对应（据攻略）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>chap1（chap1_00/01/10）</td>
+<td>st10</td>
+<td>110</td>
+<td>鹪木市·鹪木旅馆（格蕾丝，教学关）</td>
+</tr>
+<tr>
+<td>chap3（chap3_01~40，11 个子关）</td>
+<td>st30</td>
+<td>457</td>
+<td>罗兹山护理中心（格蕾丝+里昂，游戏最长章节）</td>
+</tr>
+<tr>
+<td>chap4（chap4_00~50，7 个子关）</td>
+<td>st40</td>
+<td>594</td>
+<td>浣熊市废墟 + RPD 警察局（里昂线）</td>
+</tr>
+<tr>
+<td>chap5（chap5_02~10，5 个子关）</td>
+<td>st50</td>
+<td>162</td>
+<td>地下方舟 ARK（最终）</td>
+</tr>
+<tr>
+<td>ff_01 / ff_02</td>
+<td>st90</td>
+<td>1</td>
+<td>最终战 / 结局</td>
+</tr>
+<tr>
+<td>cleargame</td>
+<td>—</td>
+<td>—</td>
+<td>通关结算</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>无 chap2</strong>：<code>leveldesign</code> 下不存在 <code>chap2</code>，但 <code>environment/sm/sm2x</code>（3,670 个文件）仍在——环境资产残留，疑似开发中被合并/砍掉的内容（见 §7）。</li>
+<li>双主角：格蕾丝（FBI 分析员，第一人称潜行解谜）+ 里昂（特工，第三人称枪战）。</li>
+</ul>
+<h3>4.2 舞台层（stage 流式区块）</h3>
+<p><code>environment/layout/exec/</code> 共 <strong>1,340</strong> 个布局区块，命名形如 <code>st40_209</code>：</p>
+<table>
+<thead>
+<tr>
+<th>stage</th>
+<th>区块数</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>st10</td>
+<td>110</td>
+<td>第 1 章</td>
+</tr>
+<tr>
+<td>st11</td>
+<td>2</td>
+<td>第 1 章附加</td>
+</tr>
+<tr>
+<td>st30</td>
+<td>457</td>
+<td>第 3 章（最大）</td>
+</tr>
+<tr>
+<td>st31</td>
+<td>2</td>
+<td>第 3 章附加</td>
+</tr>
+<tr>
+<td>st40</td>
+<td>594</td>
+<td>第 4 章（最大）</td>
+</tr>
+<tr>
+<td>st41</td>
+<td>12</td>
+<td>第 4 章附加</td>
+</tr>
+<tr>
+<td>st50</td>
+<td>162</td>
+<td>第 5 章</td>
+</tr>
+<tr>
+<td>st90</td>
+<td>1</td>
+<td>最终战</td>
+</tr>
+</tbody></table>
+<p>每个区块是关卡的流式分区（composite scene），如 <code>st40_202 / st40_209 / st40_233</code> 等，运行时按需加载——典型 RE 引擎开放关卡做法（同 RE4 重制、RE Village）。</p>
+<h3>4.3 资源层（environment/sm 静态网格）</h3>
+<table>
+<thead>
+<tr>
+<th>分组</th>
+<th>文件数</th>
+<th>对应</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sm0x</td>
+<td>14</td>
+<td>序章</td>
+</tr>
+<tr>
+<td>sm1x</td>
+<td>16,085</td>
+<td>第 1 章环境</td>
+</tr>
+<tr>
+<td>sm2x</td>
+<td>3,670</td>
+<td>第 2 章环境（关卡逻辑缺失，见 §7）</td>
+</tr>
+<tr>
+<td>sm3x</td>
+<td>7,826</td>
+<td>第 3 章环境</td>
+</tr>
+<tr>
+<td>sm4x</td>
+<td>308</td>
+<td>第 4 章环境（少量，几何多走 streaming）</td>
+</tr>
+<tr>
+<td>sm5x</td>
+<td>539</td>
+<td>第 5 章环境</td>
+</tr>
+<tr>
+<td>sm7x</td>
+<td>29</td>
+<td>—</td>
+</tr>
+<tr>
+<td>sm8x</td>
+<td>4,146</td>
+<td>终章（ARK / 最终战）</td>
+</tr>
+<tr>
+<td>sm9x</td>
+<td>341</td>
+<td>终章附加</td>
+</tr>
+<tr>
+<td>（无 sm6x）</td>
+<td>—</td>
+<td>第 6 章环境不存在</td>
+</tr>
+</tbody></table>
+<p><code>sm</code> 目录文件构成：<code>.mdf2</code>（材质 11,650）+ <code>.mesh</code>（网格 10,162）+ <code>.sdftex</code>（SDF 纹理 8,753）+ <code>.mcol</code> 等。</p>
+<hr>
+<h2>5. 关卡相关文件类型</h2>
+<table>
+<thead>
+<tr>
+<th>扩展名</th>
+<th>数量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>.mesh</td>
+<td>22,027</td>
+<td>模型网格（含骨架），关卡几何主体</td>
+</tr>
+<tr>
+<td>.tex</td>
+<td>48,601</td>
+<td>纹理（DDS 容器）</td>
+</tr>
+<tr>
+<td>.mdf2</td>
+<td>13,642</td>
+<td>材质定义（引用纹理）</td>
+</tr>
+<tr>
+<td>.sdftex</td>
+<td>8,914</td>
+<td>SDF 纹理（近距离烘焙/字体/杂项）</td>
+</tr>
+<tr>
+<td>.pfb</td>
+<td>8,844</td>
+<td>预制体（决定物件用哪些 mesh/mdf/chain）</td>
+</tr>
+<tr>
+<td>.scn</td>
+<td>5,974</td>
+<td>场景文件（关卡布局/灯光/触发器）</td>
+</tr>
+<tr>
+<td>.rcol</td>
+<td>312</td>
+<td>碰撞体</td>
+</tr>
+<tr>
+<td>.chain / .chain2</td>
+<td>175</td>
+<td>骨骼物理</td>
+</tr>
+<tr>
+<td>.rmesh</td>
+<td>556</td>
+<td>渲染网格（角色/皮肤专用）</td>
+</tr>
+<tr>
+<td>.efx</td>
+<td>2,268</td>
+<td>特效</td>
+</tr>
+<tr>
+<td>.fsmv2 / .motlist / .motbank</td>
+<td>—</td>
+<td>动画 / 动作列表</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>6. 解包工作流（已验证）</h2>
+<p>工具：<code>REE.PAK.Tool</code>（Ekey，GitHub），内含 <code>REE.Unpacker</code> / <code>REE.Packer</code>。</p>
+<pre><code class="language-bash"># 1. 下载工具 + 文件名清单
+# release 包: REE.Unpacker-x86.zip（含 REE.Unpacker.exe）
+# Projects 文件夹: git clone --depth 1 https://github.com/Ekey/REE.PAK.Tool.git
+# 确认 Projects/ 内有 RE9_STM_Release.list（Steam 版）与 RE9_EGS_Release.list
+
+# 2. 解包（需在 exe 同目录运行，否则报 ZSTD 缺失）
+cd &lt;工具目录&gt;/unpacker
+./REE.Unpacker.exe &quot;RE9_STM_Release&quot; \
+  &quot;G:/SteamLibrary/steamapps/common/RESIDENT EVIL requiem BIOHAZARD requiem/re_chunk_000.pak&quot; \
+  &quot;G:/_RE9_research/extract&quot;
+</code></pre>
+<p>验证结果：已用 <code>re_chunk_000.pak.patch_005.pak</code>（26.5 MB）成功解出 253 个文件，<code>RE9_STM_Release.list</code> 与 Steam 版哈希完全匹配，文件名解析正确。</p>
+<p>注意事项：</p>
+<ul>
+<li>必须先 <code>cd</code> 到 exe 所在目录（<code>libzstd.dll</code> 依赖当前工作目录）。</li>
+<li><code>.NET Framework 4.7.2</code> 依赖，Windows 默认满足。</li>
+<li>RE9 属较新 RE 引擎（同 MH Wilds）：<strong>不支持自定义 PAK</strong>（放入会崩溃），<code>.tex</code> 必须进 patch pak，需 REFramework 的 Loose File Loader 加载。</li>
+</ul>
+<hr>
+<h2>7. 值得关注的发现</h2>
+<ol>
+<li><strong>被砍掉的&quot;第 2 章&quot;</strong>：<code>leveldesign/chapter</code> 无 <code>chap2</code>，但 <code>environment/sm/sm2x</code>（3,670 文件）与 <code>animation/ch/ch02</code> 仍在——第 2 章环境与角色资产已做，关卡逻辑被移除/合并。这是 cut content 的直接证据，符合攻略中&quot;初代洋馆回归被删减，仍残留场景文件&quot;的说法。</li>
+<li><strong>sm6x 整体缺失</strong>：第 6 章环境资产不存在，但 <code>sm7x</code>（29）、<code>sm8x</code>（4,146）、<code>sm9x</code>（341）存在——章节编号与环境编号存在系统性错位，指向开发中期章节重组。</li>
+<li><strong>最终章双命名</strong>：<code>ff_01/ff_02</code>（final fight）+ <code>st90</code>，与剧情&quot;地下方舟 ARK + 释放/毁灭 Elpis 双结局&quot;对应。</li>
+<li><strong>过场规模</strong>：<code>event/cutscene</code> 6,772 个，命名 <code>cXXXsXXX</code>（如 <code>c311s900</code> = 第 3 章场景区 11 第 900 号镜头），覆盖 c1/c3/c4/c5 四章。</li>
+</ol>
+<hr>
+<h2>8. 完整解包成本估算</h2>
+<ul>
+<li>数据总量约 78 GB（含压缩），解包后约 <strong>100~120 GB</strong>（zstd 解压膨胀约 1.2~1.5 倍）。</li>
+<li>G 盘可用 2.8 TB，空间充足。</li>
+<li>时间：机械盘约 40<del>80 分钟，SSD 约 15</del>30 分钟（取决于 CPU 核数与 zstd 解压速度）。</li>
+<li>建议按需解包：仅研究关卡 → 优先解 <code>sub_000.pak</code>（含 streaming/environment）；仅研究过场 → 解主 pak。</li>
+</ul>
+<hr>
+<h2>9. 下一步建议</h2>
+<table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>动作</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>P0</td>
+<td>完整解包 <code>re_chunk_000.pak.sub_000.pak</code></td>
+<td>拿到 environment 关卡几何与 streaming 分区</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>用 Noesis + RE Engine 插件 / Blender + RE-Mesh-Editor 查看 <code>.mesh</code></td>
+<td>可视化具体关卡场景</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>用 RE-Asset-Library 按名检索模型</td>
+<td>定位特定关卡/角色资产</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>解析 <code>gui/message</code> 下的本地化文本</td>
+<td>提取章节标题、地图名、剧情文本</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>对比 <code>sm2x</code> 与 <code>chap3</code> 的几何重叠</td>
+<td>确认被砍内容的边界</td>
+</tr>
+</tbody></table>
+</article></main><footer>内容来自工作区研究文档。<a href="index.html">返回主题导航</a></footer></body></html>

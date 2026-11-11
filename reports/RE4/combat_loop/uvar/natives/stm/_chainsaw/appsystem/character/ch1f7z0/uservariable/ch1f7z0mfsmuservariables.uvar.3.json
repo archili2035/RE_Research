@@ -1,0 +1,229 @@
+{
+  "Name": "ch1f7z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "StateEnd",
+      "guid": "a2e36cc8-e75a-497e-a053-accb26c6499d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "EnableLadderUp",
+      "guid": "ae9e6313-1d25-442b-b542-539f3fcc25ef",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Success",
+      "guid": "fc220369-336f-4f52-a271-f44c8d6b713b",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NextSuccess",
+      "guid": "e5c41b5f-3e29-4036-976a-3ca612314271",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NextFail",
+      "guid": "546527e2-5da3-44d8-b2e2-19740123a2ad",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NextActionState",
+      "guid": "eeeadf76-a391-4507-9fba-b32910b60c35",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NextSuccess2",
+      "guid": "c14d00d0-3057-4b2b-bd78-33b7f111a856",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AttackHitNext",
+      "guid": "6bf01d74-e5cb-4597-be5b-d0c778bf571e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsPlAvoid",
+      "guid": "d7f21b65-a86e-4a73-aba0-bf44beb61510",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NowShieldState",
+      "guid": "63d0edfd-0d6a-4c29-b767-5228d81469b5",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NearPlayer",
+      "guid": "7db81343-2570-4d3a-bae5-4eeb3fda45ed",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "OnShieldHold",
+      "guid": "6c983bb5-08ff-4bcc-83af-c6821143c9f7",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ShieldUpDown",
+      "guid": "1fbc3690-536a-4cf8-98db-f1d7ee4fa215",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MFSMOnDamage",
+      "guid": "8e0caa83-699a-47ac-9e55-cd2c7a97decf",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MFSMOnDamageReaction",
+      "guid": "9ba96ebe-0de6-45db-b880-094314d59590",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RShieldUp",
+      "guid": "1a1d53c3-d9b6-479d-b4b5-b8dc04b2c983",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "cntBodyLargeDamage",
+      "guid": "38b7003b-005f-4293-88a3-d5cc732646ce",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FastWalkBlendRate",
+      "guid": "890e4992-9ad0-4b4e-a23a-cc53263c97a1",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "VoiceFacial",
+      "guid": "0e60c700-8be6-4229-98b1-e44c18739334",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FaceState",
+      "guid": "016355d2-2302-474d-a6f5-426c2cc28d2d",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "GrabVer2",
+      "guid": "787d13d1-e871-4a12-b220-d3e7e2298b3f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

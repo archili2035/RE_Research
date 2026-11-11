@@ -1,0 +1,112 @@
+{
+  "Name": "ch1f6z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "MoveDirectionX",
+      "guid": "01182b4a-bb58-409d-85f0-26b3dce3c5d2",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDirectionY",
+      "guid": "9461bfee-1057-4a87-aad0-7ecea4f0048b",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsSwinging",
+      "guid": "4f2f82c9-5c0e-43c2-8c20-b00a3738e71f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AttackDirectionX",
+      "guid": "f02bdb44-f16e-4c37-a6fe-69e78bebb0f0",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AttackDirectionY",
+      "guid": "0d37257f-85c9-4d21-91af-f80e336124a4",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AttackDirectionRatioXY",
+      "guid": "ab684734-48a0-4a7e-9ef4-ce0768f98611",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasPlayedDeadEvent",
+      "guid": "881a5df5-aa77-415d-b773-e89263048573",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "CanGrenade",
+      "guid": "9dabddeb-360a-4c86-a21e-8156757a6d03",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

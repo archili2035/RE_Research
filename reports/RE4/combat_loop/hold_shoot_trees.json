@@ -1,0 +1,372 @@
+{
+  "Path": "natives/stm/_chainsaw/appsystem/character/ch0common/motion/list/cha_hold.motlist.663",
+  "Entries": [
+    {
+      "Slot": 2,
+      "ID": 160,
+      "Switch": 0,
+      "Kind": "MotTreeFile",
+      "Name": "ch0_160_HOLD_LOOP",
+      "Nodes": [
+        {
+          "Index": 0,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 2000
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 160
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 1,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 2000
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 165
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "name": "",
+          "Type": "MotionNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": ""
+            },
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 2000
+            },
+            {
+              "name": "MotionID",
+              "type": 6,
+              "hash": 2673430856,
+              "Value": 167
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 3,
+          "name": "",
+          "Type": "OctSyncBlendNode",
+          "Parameters": [
+            {
+              "name": "RootTransPolarBlend",
+              "type": 0,
+              "hash": 964257277,
+              "Value": false
+            },
+            {
+              "name": "BlendRate",
+              "type": 9,
+              "hash": 2370884634,
+              "Value": 0
+            },
+            {
+              "name": "CircledBlend",
+              "type": 0,
+              "hash": 459737511,
+              "Value": false
+            },
+            {
+              "name": "BlendType",
+              "type": 6,
+              "hash": 4114796164,
+              "Value": 0
+            },
+            {
+              "name": "_SyncBlendNode_357794474",
+              "type": 5,
+              "hash": 357794474,
+              "Value": 0
+            }
+          ]
+        },
+        {
+          "Index": 4,
+          "name": "",
+          "Type": "VariablesNode",
+          "Parameters": [
+            {
+              "name": "Asset",
+              "type": 12,
+              "hash": 3620651061,
+              "Value": "_Chainsaw/AppSystem/Character/ch0Common/UserVariables/ch0CommonMFsmUserVariables.uvar"
+            }
+          ]
+        },
+        {
+          "Index": 5,
+          "name": "",
+          "Type": "PlaySpeedNode",
+          "Parameters": [
+            {
+              "name": "Speed",
+              "type": 9,
+              "hash": 4102950055,
+              "Value": 1
+            }
+          ]
+        }
+      ],
+      "Links": [
+        {
+          "inputNodeIndex": 3,
+          "inputPinNo": 1,
+          "outputNodeIndex": 0,
+          "outputPinNo": 0,
+          "type": 1
+        },
+        {
+          "inputNodeIndex": 3,
+          "inputPinNo": 0,
+          "outputNodeIndex": 2,
+          "outputPinNo": 0,
+          "type": 1
+        },
+        {
+          "inputNodeIndex": 3,
+          "inputPinNo": 2,
+          "outputNodeIndex": 1,
+          "outputPinNo": 0,
+          "type": 1
+        },
+        {
+          "inputNodeIndex": 3,
+          "inputPinNo": 0,
+          "outputNodeIndex": 4,
+          "outputPinNo": 0,
+          "type": 2
+        },
+        {
+          "inputNodeIndex": 5,
+          "inputPinNo": 0,
+          "outputNodeIndex": 4,
+          "outputPinNo": 0,
+          "type": 2
+        },
+        {
+          "inputNodeIndex": 5,
+          "inputPinNo": 0,
+          "outputNodeIndex": 3,
+          "outputPinNo": 0,
+          "type": 1
+        }
+      ]
+    },
+    {
+      "Slot": 11,
+      "ID": 500,
+      "Switch": 0,
+      "Kind": "MotTreeFile",
+      "Name": "ch0_500_SHOOT",
+      "Nodes": [
+        {
+          "Index": 0,
+          "name": "",
+          "Type": "RandomParameterNode",
+          "Parameters": [
+            {
+              "name": "InMin",
+              "type": 9,
+              "hash": 2609214554,
+              "Value": 0
+            },
+            {
+              "name": "InMax",
+              "type": 9,
+              "hash": 2157531142,
+              "Value": 2
+            }
+          ]
+        },
+        {
+          "Index": 1,
+          "name": "",
+          "Type": "SelectMotionNode",
+          "Parameters": [
+            {
+              "name": "BankID",
+              "type": 6,
+              "hash": 1557423995,
+              "Value": 2000
+            },
+            {
+              "name": "No00_BankID",
+              "type": 6,
+              "hash": 119573349,
+              "Value": 0
+            },
+            {
+              "name": "No00_MotionID",
+              "type": 6,
+              "hash": 3714534649,
+              "Value": 500
+            },
+            {
+              "name": "No01_BankID",
+              "type": 6,
+              "hash": 43879613,
+              "Value": 0
+            },
+            {
+              "name": "No01_MotionID",
+              "type": 6,
+              "hash": 3064692809,
+              "Value": 501
+            },
+            {
+              "name": "No02_BankID",
+              "type": 6,
+              "hash": 2106658217,
+              "Value": 0
+            },
+            {
+              "name": "No02_MotionID",
+              "type": 6,
+              "hash": 997690459,
+              "Value": 502
+            },
+            {
+              "name": "No03_BankID",
+              "type": 6,
+              "hash": 1247431348,
+              "Value": 0
+            },
+            {
+              "name": "No03_MotionID",
+              "type": 6,
+              "hash": 2952910012,
+              "Value": 4294967295
+            },
+            {
+              "name": "No04_BankID",
+              "type": 6,
+              "hash": 3644911457,
+              "Value": 0
+            },
+            {
+              "name": "No04_MotionID",
+              "type": 6,
+              "hash": 3401255985,
+              "Value": 4294967295
+            },
+            {
+              "name": "No05_BankID",
+              "type": 6,
+              "hash": 2405258189,
+              "Value": 0
+            },
+            {
+              "name": "No05_MotionID",
+              "type": 6,
+              "hash": 452812079,
+              "Value": 4294967295
+            },
+            {
+              "name": "No06_BankID",
+              "type": 6,
+              "hash": 3708765824,
+              "Value": 0
+            },
+            {
+              "name": "No06_MotionID",
+              "type": 6,
+              "hash": 1380573403,
+              "Value": 4294967295
+            },
+            {
+              "name": "No07_BankID",
+              "type": 6,
+              "hash": 2257339756,
+              "Value": 0
+            },
+            {
+              "name": "No07_MotionID",
+              "type": 6,
+              "hash": 3608271588,
+              "Value": 4294967295
+            },
+            {
+              "name": "BankSelectMode",
+              "type": 5,
+              "hash": 640354462,
+              "Value": 0
+            },
+            {
+              "name": "JointMaskID",
+              "type": 6,
+              "hash": 2204709593,
+              "Value": 0
+            }
+          ]
+        }
+      ],
+      "Links": [
+        {
+          "inputNodeIndex": 1,
+          "inputPinNo": 0,
+          "outputNodeIndex": 0,
+          "outputPinNo": 1,
+          "type": 2
+        }
+      ]
+    }
+  ]
+}

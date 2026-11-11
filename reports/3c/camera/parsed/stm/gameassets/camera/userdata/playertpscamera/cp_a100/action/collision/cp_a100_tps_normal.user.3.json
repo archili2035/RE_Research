@@ -1,0 +1,335 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/cp_a100/action/collision/cp_a100_tps_normal.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\cp_a100\\action\\collision\\cp_a100_tps_normal.user.3",
+  "Objects": [
+    {
+      "Index": 21,
+      "Class": "app.PlayerCameraCollisionUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 20,
+          "Class": "app.PlayerCameraCollisionParam"
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "-90: 0.2",
+          "0: 0.2",
+          "90: 0.2"
+        ],
+        "MinValue": -2,
+        "MaxValue": 2,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "-90: 1.8",
+          "0: 1.67",
+          "90: 1.55"
+        ],
+        "MinValue": -2,
+        "MaxValue": 2,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "-90: 0",
+          "0: 0.2",
+          "60: 0.2",
+          "90: 0.2"
+        ],
+        "MinValue": -2,
+        "MaxValue": 2,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerCameraCollisionParam.AvoidOffsetAnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "x": {
+          "Ref": 1,
+          "Class": "via.AnimationCurve"
+        },
+        "y": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        },
+        "z": {
+          "Ref": 3,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.95
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.3
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerCameraCollisionParam.CollisionParam",
+      "Userdata": null,
+      "Fields": {
+        "_CollisionRadius": 0.1,
+        "_CollisionRange": 0,
+        "_AvoidSpeedDamping": {
+          "Ref": 5,
+          "Class": "app.DampingParam"
+        },
+        "_ReturnSpeedDamping": {
+          "Ref": 6,
+          "Class": "app.DampingParam"
+        }
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.7
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.3
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.PlayerCameraCollisionParam.CollisionParam",
+      "Userdata": null,
+      "Fields": {
+        "_CollisionRadius": 0.35,
+        "_CollisionRange": 0,
+        "_AvoidSpeedDamping": {
+          "Ref": 8,
+          "Class": "app.DampingParam"
+        },
+        "_ReturnSpeedDamping": {
+          "Ref": 9,
+          "Class": "app.DampingParam"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.5,
+        "_DampingRate": 0.75
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.75,
+        "_DampingRate": 0.5
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.95
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.95
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.1,
+        "_DampingRate": 0.9
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [],
+        "MinValue": 10,
+        "MaxValue": -10,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.CameraCurveParam",
+      "Userdata": null,
+      "Fields": {
+        "_AssignType": 0,
+        "_PresetCurveType": 3,
+        "_AnimationCurve": {
+          "Ref": 16,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.4,
+        "_DampingRate": 0.9
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.CameraStateParam",
+      "Userdata": null,
+      "Fields": {
+        "_StateType": 0,
+        "_StateDamping": {
+          "Ref": 15,
+          "Class": "app.DampingParam"
+        },
+        "_StateTimer": 0,
+        "_StateCurve": {
+          "Ref": 17,
+          "Class": "app.CameraCurveParam"
+        },
+        "_CrouchRateReverse": false,
+        "_IsCrouchRateDampingParam": false,
+        "_CrouchRateDampingParam": {
+          "Ref": 18,
+          "Class": "app.DampingParam"
+        },
+        "_CrouchRateIgnoreRange": "Range(0.2, 0.6)",
+        "_CrouchRateIgnoreRangeSpeed": 0.05,
+        "_CrouchRateSpeedNull": 0.05
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.PlayerCameraCollisionParam",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_AvoidJointName": "root",
+        "_AvoidOffsetType": 1,
+        "_IsAvoidOffsetCurve": true,
+        "_AvoidOffset": "\u003C0.3, 1.67, 0\u003E",
+        "_AvoidOffsetCurve": {
+          "Ref": 4,
+          "Class": "app.PlayerCameraCollisionParam.AvoidOffsetAnimationCurve"
+        },
+        "_Collision": {
+          "Ref": 7,
+          "Class": "app.PlayerCameraCollisionParam.CollisionParam"
+        },
+        "_IsPreliminary": true,
+        "_PreliminaryCollision": {
+          "Ref": 10,
+          "Class": "app.PlayerCameraCollisionParam.CollisionParam"
+        },
+        "_CollisionStartPositionLength": 0.25,
+        "_XOffsetSpeedDamping": {
+          "Ref": 11,
+          "Class": "app.DampingParam"
+        },
+        "_XOffsetReturnSpeedDamping": {
+          "Ref": 12,
+          "Class": "app.DampingParam"
+        },
+        "_YCollisionStartPositionLength": 0,
+        "_YOffsetSpeedDamping": {
+          "Ref": 13,
+          "Class": "app.DampingParam"
+        },
+        "_YOffsetReturnSpeedDamping": {
+          "Ref": 14,
+          "Class": "app.DampingParam"
+        },
+        "_IsOverrideStartTransitionParam": true,
+        "_OverrideStartTransitionParam": {
+          "Ref": 19,
+          "Class": "app.CameraStateParam"
+        }
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.PlayerCameraCollisionUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 20,
+          "Class": "app.PlayerCameraCollisionParam"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "Name": "ch1f4z1MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "StateEnd",
+      "guid": "a2e36cc8-e75a-497e-a053-accb26c6499d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NewVariable",
+      "guid": "f8ee33c8-1aee-44b0-bb20-2ebfe5c5d01d",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotionVariationIndex",
+      "guid": "1efccd6b-6dc0-49be-b46f-74dd9653dc60",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsPlayer2F",
+      "guid": "c3ff47d0-abde-40cb-b4d1-22c03ba6149f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TriggerAddDamage",
+      "guid": "192c594b-2672-4e47-a946-c20fef78aa52",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ActionCheck",
+      "guid": "4accc5a2-8368-4572-a47b-0c246d2bd136",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDir",
+      "guid": "41688899-4829-4b8f-940b-90fe3d020b49",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FaceSelect",
+      "guid": "83c1013c-954f-44d2-90e0-e42c94c310b1",
+      "type": 8,
+      "Default": "\u003C0, 0, 3\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "VoiceFacial",
+      "guid": "1c2a561f-1b37-4e52-9490-3f302c52e592",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsLeftAction",
+      "guid": "fdf1babc-8a86-42d0-9b34-a48c67e8504b",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsHandW",
+      "guid": "2f1f1fae-04c4-42e2-bbb9-fef9364bff1e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsNoBodyAdd",
+      "guid": "b351e3e0-0177-47b6-b3a0-dec4d7b16a28",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

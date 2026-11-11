@@ -1,0 +1,3313 @@
+{
+  "Path": "natives/stm/_chainsaw/appsystem/camera/playercameracontroller/ch0a0z0/ch0a0z0camerasetting.user.2",
+  "SchemaMismatches": [],
+  "Objects": [
+    {
+      "Ref": 257,
+      "Class": "chainsaw.PlayerCameraSettingUserData"
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 2.10191",
+          "0.5996: 2.1019",
+          "1: 1"
+        ],
+        "MinValue": 1,
+        "MaxValue": 3,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "chainsaw.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingRate": 0.35,
+        "_DampingTime": 0.8
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "chainsaw.PlayerCameraSettingUserData.EdgeCorrectionParam",
+      "Userdata": null,
+      "Fields": {
+        "_CorrectionTime": 0.16,
+        "_CorrectionPositionOffsetDistance": 0.1,
+        "_PushDistance": 0.1,
+        "_WarpPushTime": 0.16,
+        "_WarpPushCurve": {
+          "Ref": 1,
+          "Class": "via.AnimationCurve"
+        },
+        "_WarpPushBackTime": 1,
+        "_WarpPushBackCurve": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        },
+        "_WarpPushMagnificationCurve": {
+          "Ref": 3,
+          "Class": "via.AnimationCurve"
+        },
+        "_OutCorrectionDampingParam": {
+          "Ref": 4,
+          "Class": "chainsaw.DampingParam"
+        }
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "chainsaw.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingRate": 0.4,
+        "_DampingTime": 0.5
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "chainsaw.PlayerCameraSettingUserData.DoorParameter",
+      "Userdata": null,
+      "Fields": {
+        "_MinRate": 0.5,
+        "_DoorDampingParam": {
+          "Ref": 6,
+          "Class": "chainsaw.DampingParam"
+        },
+        "_IgnoreState": 384
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 90",
+          "0.758: 77.1018",
+          "0.8613: 33.24839",
+          "1: 0"
+        ],
+        "MinValue": 0,
+        "MaxValue": 90,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "chainsaw.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingRate": 0.7,
+        "_DampingTime": 0.2
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "chainsaw.PlayerCameraSettingUserData.DamageCorrectionParameter",
+      "Userdata": null,
+      "Fields": {
+        "_BuriedRateCurve": {
+          "Ref": 8,
+          "Class": "via.AnimationCurve"
+        },
+        "_BuriedDampingParam": {
+          "Ref": 9,
+          "Class": "chainsaw.DampingParam"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChNormalDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 12,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 0,
+        "_Default": {
+          "Ref": 11,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 12,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chBattleNormal.user",
+      "Fields": {}
+    },
+    {
+      "Index": 15,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 1,
+        "_Default": {
+          "Ref": 14,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 15,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChJogDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 18,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 2,
+        "_Default": {
+          "Ref": 17,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 18,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 17,
+        "_Default": {
+          "Ref": 17,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 20,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chSprintDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 23,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 3,
+        "_Default": {
+          "Ref": 22,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 23,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chCrouchDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 26,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 4,
+        "_Default": {
+          "Ref": 25,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 26,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chForceCrouchDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 29,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 5,
+        "_Default": {
+          "Ref": 28,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 29,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 32,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldHandgun.user",
+      "Fields": {}
+    },
+    {
+      "Index": 33,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_WeaponID": -1,
+        "_WeaponCategory": 0,
+        "_UserData": {
+          "Ref": 32,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldShotgunWp4102.user",
+      "Fields": {}
+    },
+    {
+      "Index": 35,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4102,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 34,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldShotgun.user",
+      "Fields": {}
+    },
+    {
+      "Index": 37,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_WeaponID": -1,
+        "_WeaponCategory": 1,
+        "_UserData": {
+          "Ref": 36,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldRifleSemiAuto.user",
+      "Fields": {}
+    },
+    {
+      "Index": 39,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 38,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldRifle.user",
+      "Fields": {}
+    },
+    {
+      "Index": 41,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_WeaponID": -1,
+        "_WeaponCategory": 4,
+        "_UserData": {
+          "Ref": 40,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldSubmachinegunWp4201.user",
+      "Fields": {}
+    },
+    {
+      "Index": 43,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4201,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 42,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 44,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldSubmachinegunWp4202.user",
+      "Fields": {}
+    },
+    {
+      "Index": 45,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4202,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 44,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldSubmachinegun.user",
+      "Fields": {}
+    },
+    {
+      "Index": 47,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_WeaponID": -1,
+        "_WeaponCategory": 2,
+        "_UserData": {
+          "Ref": 46,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 48,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldMagnum.user",
+      "Fields": {}
+    },
+    {
+      "Index": 49,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_WeaponID": -1,
+        "_WeaponCategory": 5,
+        "_UserData": {
+          "Ref": 48,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldKnife.user",
+      "Fields": {}
+    },
+    {
+      "Index": 51,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_WeaponID": -1,
+        "_WeaponCategory": 10,
+        "_UserData": {
+          "Ref": 50,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldMineDart.user",
+      "Fields": {}
+    },
+    {
+      "Index": 53,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_WeaponID": -1,
+        "_WeaponCategory": 8,
+        "_UserData": {
+          "Ref": 52,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Weapon": [
+          {
+            "Ref": 33,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 35,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 37,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 39,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 41,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 43,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 45,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 47,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 49,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 51,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 53,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 6,
+        "_Default": {
+          "Ref": 31,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 54,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChViaScopeDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 57,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChViaScopeSemiAuto.user",
+      "Fields": {}
+    },
+    {
+      "Index": 58,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 57,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Weapon": [
+          {
+            "Ref": 58,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 11,
+        "_Default": {
+          "Ref": 56,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 59,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldGrenadeDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 62,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 16,
+        "_Default": {
+          "Ref": 61,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 62,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 65,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageSmall.user",
+      "Fields": {}
+    },
+    {
+      "Index": 66,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_UserData": {
+          "Ref": 65,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageMedium.user",
+      "Fields": {}
+    },
+    {
+      "Index": 68,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 2,
+        "_UserData": {
+          "Ref": 67,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageLarge.user",
+      "Fields": {}
+    },
+    {
+      "Index": 70,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 3,
+        "_UserData": {
+          "Ref": 69,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageExtraLarge.user",
+      "Fields": {}
+    },
+    {
+      "Index": 72,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 4,
+        "_UserData": {
+          "Ref": 71,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageDown.user",
+      "Fields": {}
+    },
+    {
+      "Index": 74,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 5,
+        "_UserData": {
+          "Ref": 73,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 75,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageGaurd.user",
+      "Fields": {}
+    },
+    {
+      "Index": 76,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 6,
+        "_UserData": {
+          "Ref": 75,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 77,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageBlow.user",
+      "Fields": {}
+    },
+    {
+      "Index": 78,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 7,
+        "_UserData": {
+          "Ref": 77,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageGunDown.user",
+      "Fields": {}
+    },
+    {
+      "Index": 80,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 8,
+        "_UserData": {
+          "Ref": 79,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 81,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageTripped.user",
+      "Fields": {}
+    },
+    {
+      "Index": 82,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 13,
+        "_UserData": {
+          "Ref": 81,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDamageBurst.user",
+      "Fields": {}
+    },
+    {
+      "Index": 84,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 10,
+        "_UserData": {
+          "Ref": 83,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 2,
+        "_Weapon": [],
+        "_Damage": [
+          {
+            "Ref": 66,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 68,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 70,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 72,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 74,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 76,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 78,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 80,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 82,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 84,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DamageDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 13,
+        "_Default": {
+          "Ref": 64,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 85,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chLadderDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 88,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 14,
+        "_Default": {
+          "Ref": 87,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 88,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chGimmickFallenShelf.user",
+      "Fields": {}
+    },
+    {
+      "Index": 91,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_UserData": {
+          "Ref": 90,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChLegHoldTrap.user",
+      "Fields": {}
+    },
+    {
+      "Index": 93,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 2,
+        "_UserData": {
+          "Ref": 92,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chBarricadeShelf.user",
+      "Fields": {}
+    },
+    {
+      "Index": 95,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 3,
+        "_UserData": {
+          "Ref": 94,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 5,
+        "_UserData": {
+          "Ref": 25,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chGimmickInstalledMachineGun.user",
+      "Fields": {}
+    },
+    {
+      "Index": 98,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 6,
+        "_UserData": {
+          "Ref": 97,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 99,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChRunSequence2.user",
+      "Fields": {}
+    },
+    {
+      "Index": 100,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 7,
+        "_UserData": {
+          "Ref": 99,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chCorrelatedShutter.user",
+      "Fields": {}
+    },
+    {
+      "Index": 102,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 8,
+        "_UserData": {
+          "Ref": 101,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChFloorBoard.user",
+      "Fields": {}
+    },
+    {
+      "Index": 104,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 9,
+        "_UserData": {
+          "Ref": 103,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChGondora.user",
+      "Fields": {}
+    },
+    {
+      "Index": 106,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 10,
+        "_UserData": {
+          "Ref": 105,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChGondora_Return.user",
+      "Fields": {}
+    },
+    {
+      "Index": 108,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 11,
+        "_UserData": {
+          "Ref": 107,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChDoorInAshleyHold.user",
+      "Fields": {}
+    },
+    {
+      "Index": 110,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 13,
+        "_UserData": {
+          "Ref": 109,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChStaggerWithCarriedPartner.user",
+      "Fields": {}
+    },
+    {
+      "Index": 112,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 14,
+        "_UserData": {
+          "Ref": 111,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 3,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [
+          {
+            "Ref": 91,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 93,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 95,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 96,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 98,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 100,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 102,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 104,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 106,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 108,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 110,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 112,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.GimmickDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 15,
+        "_Default": {
+          "Ref": 11,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 113,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChFatalKick.user",
+      "Fields": {}
+    },
+    {
+      "Index": 116,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 18,
+        "_Default": {
+          "Ref": 115,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 116,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChFatalRoundKick.user",
+      "Fields": {}
+    },
+    {
+      "Index": 119,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 19,
+        "_Default": {
+          "Ref": 118,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 119,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chPumpAction.user",
+      "Fields": {}
+    },
+    {
+      "Index": 122,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 21,
+        "_Default": {
+          "Ref": 121,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 122,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChTerrainActionDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 125,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 22,
+        "_Default": {
+          "Ref": 124,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 125,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chQuickTurm.user",
+      "Fields": {}
+    },
+    {
+      "Index": 128,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 24,
+        "_Default": {
+          "Ref": 127,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 128,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chCrouchQuickTurm.user",
+      "Fields": {}
+    },
+    {
+      "Index": 131,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 25,
+        "_Default": {
+          "Ref": 130,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 131,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 133,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chGrappled.user",
+      "Fields": {}
+    },
+    {
+      "Index": 134,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 26,
+        "_Default": {
+          "Ref": 133,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 134,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chAutoMove.user",
+      "Fields": {}
+    },
+    {
+      "Index": 137,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 138,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 27,
+        "_Default": {
+          "Ref": 136,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 137,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 139,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chFall.user",
+      "Fields": {}
+    },
+    {
+      "Index": 140,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 141,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 28,
+        "_Default": {
+          "Ref": 139,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 140,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 142,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chLanding.user",
+      "Fields": {}
+    },
+    {
+      "Index": 143,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 144,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 23,
+        "_Default": {
+          "Ref": 142,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 143,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 145,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 146,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4400IS.user",
+      "Fields": {}
+    },
+    {
+      "Index": 147,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4400,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 146,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 148,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4401IS.user",
+      "Fields": {}
+    },
+    {
+      "Index": 149,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 148,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 150,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4402IS.user",
+      "Fields": {}
+    },
+    {
+      "Index": 151,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4402,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 150,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 152,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Weapon": [
+          {
+            "Ref": 147,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 149,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 151,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 153,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 7,
+        "_Default": {
+          "Ref": 145,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 152,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 154,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4400Op.user",
+      "Fields": {}
+    },
+    {
+      "Index": 155,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4400,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 154,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 156,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4401Op.user",
+      "Fields": {}
+    },
+    {
+      "Index": 157,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 156,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 158,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4202Op.user",
+      "Fields": {}
+    },
+    {
+      "Index": 159,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4202,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 158,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 160,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4402Op.user",
+      "Fields": {}
+    },
+    {
+      "Index": 161,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4402,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 160,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 162,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Weapon": [
+          {
+            "Ref": 155,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 157,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 159,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 161,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 163,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 8,
+        "_Default": {
+          "Ref": 145,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 162,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 164,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4400So.user",
+      "Fields": {}
+    },
+    {
+      "Index": 165,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4400,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 164,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 166,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4401So.user",
+      "Fields": {}
+    },
+    {
+      "Index": 167,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 166,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 168,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4202So.user",
+      "Fields": {}
+    },
+    {
+      "Index": 169,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4202,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 168,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 170,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4402So.user",
+      "Fields": {}
+    },
+    {
+      "Index": 171,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4402,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 170,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 172,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Weapon": [
+          {
+            "Ref": 165,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 167,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 169,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 171,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 173,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 9,
+        "_Default": {
+          "Ref": 145,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 172,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 174,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4400Es.user",
+      "Fields": {}
+    },
+    {
+      "Index": 175,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4400,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 174,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 176,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4401Es.user",
+      "Fields": {}
+    },
+    {
+      "Index": 177,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 176,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 178,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4202Es.user",
+      "Fields": {}
+    },
+    {
+      "Index": 179,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4202,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 178,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 180,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChHoldScopeWp4402Es.user",
+      "Fields": {}
+    },
+    {
+      "Index": 181,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4402,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 180,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 182,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Weapon": [
+          {
+            "Ref": 175,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 177,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 179,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 181,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 183,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 10,
+        "_Default": {
+          "Ref": 145,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 182,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 184,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChCombatDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 185,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4400,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 174,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 186,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 176,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 187,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [
+          {
+            "Ref": 185,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 186,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 188,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 20,
+        "_Default": {
+          "Ref": 184,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 187,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 189,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldRifleWeaponChange.user",
+      "Fields": {}
+    },
+    {
+      "Index": 190,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4400,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 174,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 191,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 176,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 192,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [
+          {
+            "Ref": 190,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 191,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 193,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 12,
+        "_Default": {
+          "Ref": 189,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 192,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 194,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDeadDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 195,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4400,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 174,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 196,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 176,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 197,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDeadNormal.user",
+      "Fields": {}
+    },
+    {
+      "Index": 198,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_UserData": {
+          "Ref": 197,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 199,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDeadBurst.user",
+      "Fields": {}
+    },
+    {
+      "Index": 200,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 4,
+        "_UserData": {
+          "Ref": 199,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 201,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDeadBurn.user",
+      "Fields": {}
+    },
+    {
+      "Index": 202,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 7,
+        "_UserData": {
+          "Ref": 201,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 203,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDeadBreast.user",
+      "Fields": {}
+    },
+    {
+      "Index": 204,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 10,
+        "_UserData": {
+          "Ref": 203,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 205,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDeadBeheaded.user",
+      "Fields": {}
+    },
+    {
+      "Index": 206,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 3,
+        "_UserData": {
+          "Ref": 205,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 207,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDeadCrushed.user",
+      "Fields": {}
+    },
+    {
+      "Index": 208,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 8,
+        "_UserData": {
+          "Ref": 207,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 209,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDeadPopup.user",
+      "Fields": {}
+    },
+    {
+      "Index": 210,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 9,
+        "_UserData": {
+          "Ref": 209,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 211,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chDeadBodyCut.user",
+      "Fields": {}
+    },
+    {
+      "Index": 212,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 10,
+        "_UserData": {
+          "Ref": 211,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 213,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 11,
+        "_UserData": {
+          "Ref": 201,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 214,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 13,
+        "_UserData": {
+          "Ref": 11,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 215,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 14,
+        "_UserData": {
+          "Ref": 11,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 216,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 4,
+        "_Weapon": [
+          {
+            "Ref": 195,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 196,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": [
+          {
+            "Ref": 198,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 200,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 202,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 204,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 206,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 208,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 210,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 212,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 213,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 214,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 215,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.DeadDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 217,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 30,
+        "_Default": {
+          "Ref": 194,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 216,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 218,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chPartnerRescue.user",
+      "Fields": {}
+    },
+    {
+      "Index": 219,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4400,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 174,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 220,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 176,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 221,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [
+          {
+            "Ref": 219,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 220,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 222,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 31,
+        "_Default": {
+          "Ref": 218,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 221,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 223,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ch0NpcGameOver.user",
+      "Fields": {}
+    },
+    {
+      "Index": 224,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4400,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 174,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 225,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4401,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 176,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 226,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [
+          {
+            "Ref": 224,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 225,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 227,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 32,
+        "_Default": {
+          "Ref": 223,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 226,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 228,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldVariationWp4200.user",
+      "Fields": {}
+    },
+    {
+      "Index": 229,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4200,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 228,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 230,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chHoldVariationWp4600.user",
+      "Fields": {}
+    },
+    {
+      "Index": 231,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4600,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 230,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 232,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Weapon": [
+          {
+            "Ref": 229,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 231,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 233,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 33,
+        "_Default": {
+          "Ref": 31,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 232,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 234,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChTerrainUpWithPartnerDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 235,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4200,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 228,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 236,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_WeaponID": 4600,
+        "_WeaponCategory": -1,
+        "_UserData": {
+          "Ref": 230,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        }
+      }
+    },
+    {
+      "Index": 237,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 1,
+        "_Weapon": [
+          {
+            "Ref": 235,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 236,
+            "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting.WeaponDetailTable<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 238,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 34,
+        "_Default": {
+          "Ref": 234,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 237,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 239,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChTerrainUpWithPartner_1mDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 240,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 241,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 35,
+        "_Default": {
+          "Ref": 239,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 240,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 242,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChTerrainAction_Window.user",
+      "Fields": {}
+    },
+    {
+      "Index": 243,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 244,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 36,
+        "_Default": {
+          "Ref": 242,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 243,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 245,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/chFall_Window.user",
+      "Fields": {}
+    },
+    {
+      "Index": 246,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 247,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 37,
+        "_Default": {
+          "Ref": 245,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 246,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 248,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChTerrainAction_jump.user",
+      "Fields": {}
+    },
+    {
+      "Index": 249,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 250,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 38,
+        "_Default": {
+          "Ref": 248,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 249,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 251,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChFall_jump.user",
+      "Fields": {}
+    },
+    {
+      "Index": 252,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 253,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 39,
+        "_Default": {
+          "Ref": 251,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 252,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 254,
+      "Class": "chainsaw.PlayerCameraTransitionParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ChTerrainUp2mSoloDefault.user",
+      "Fields": {}
+    },
+    {
+      "Index": 255,
+      "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_Weapon": [],
+        "_Damage": [],
+        "_Gimmick": [],
+        "_Dead": []
+      }
+    },
+    {
+      "Index": 256,
+      "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>",
+      "Userdata": null,
+      "Fields": {
+        "_State": 40,
+        "_Default": {
+          "Ref": 254,
+          "Class": "chainsaw.PlayerCameraTransitionParamUserData"
+        },
+        "_Detail": {
+          "Ref": 255,
+          "Class": "chainsaw.PlayerCameraSettingParam`1.DetailSetting<chainsaw.PlayerCameraTransitionParamUserData>"
+        }
+      }
+    },
+    {
+      "Index": 257,
+      "Class": "chainsaw.PlayerCameraSettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultPitch": -0.1745329,
+        "_LensDistortion": 0.08,
+        "_FollowSpeed": 0.03333334,
+        "_FollowSpeedPitch": 0.01,
+        "_IgnoreFollowAngle": 0.5235988,
+        "_EdgeParam": {
+          "Ref": 5,
+          "Class": "chainsaw.PlayerCameraSettingUserData.EdgeCorrectionParam"
+        },
+        "_DoorParam": {
+          "Ref": 7,
+          "Class": "chainsaw.PlayerCameraSettingUserData.DoorParameter"
+        },
+        "_DamageCameraParam": {
+          "Ref": 10,
+          "Class": "chainsaw.PlayerCameraSettingUserData.DamageCorrectionParameter"
+        },
+        "_SettingList": [
+          {
+            "Ref": 13,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 16,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 19,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 21,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 24,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 27,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 30,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 55,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 60,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 63,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 86,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 89,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 114,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 117,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 120,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 123,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 126,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 129,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 132,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 135,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 138,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 141,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 144,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 153,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 163,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 173,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 183,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 188,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 193,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 217,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 222,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 227,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 233,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 238,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 241,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 244,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 247,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 250,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 253,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          },
+          {
+            "Ref": 256,
+            "Class": "chainsaw.PlayerCameraSettingParam`1<chainsaw.PlayerCameraTransitionParamUserData>"
+          }
+        ],
+        "_DefaultCameraRadius": 0.03
+      }
+    }
+  ]
+}

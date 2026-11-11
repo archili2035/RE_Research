@@ -1,0 +1,390 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/common/tpscameraneardooruserdata.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak.patch_004.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\common\\tpscameraneardooruserdata.user.3",
+  "Objects": [
+    {
+      "Index": 27,
+      "Class": "app.CameraNearDoorUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultData": {
+          "Ref": 4,
+          "Class": "app.CameraNearDoorUserData.SettingData"
+        },
+        "_OverrideDatas": [
+          {
+            "Ref": 11,
+            "Class": "app.CameraNearDoorUserData.OverrideSettingData"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.CameraNearDoorUserData.OverrideSettingData"
+          },
+          {
+            "Ref": 26,
+            "Class": "app.CameraNearDoorUserData.OverrideSettingData"
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1951860438
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.9,
+        "_DampingRate": 0.65
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.CameraNearDoorUserData.SettingData",
+      "Userdata": null,
+      "Fields": {
+        "_Range": 2,
+        "_AvoidBasing": 1,
+        "_AvoidJointName": {
+          "Ref": 1,
+          "Class": "app.NameHash"
+        },
+        "_AvoidPos": "\u003C-0.05, 0.45, 0.5\u003E",
+        "_SpeedDampingParam": {
+          "Ref": 2,
+          "Class": "app.DampingParam"
+        },
+        "_IgnoreSpeedDampingParam": {
+          "Ref": 3,
+          "Class": "app.DampingParam"
+        },
+        "_IgnoreStates": [],
+        "_ReturnTime": 0.5
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_A000"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3430261757
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.9,
+        "_DampingRate": 0.65
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.PlayerCameraState",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Run"
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.CameraNearDoorUserData.SettingData",
+      "Userdata": null,
+      "Fields": {
+        "_Range": 2,
+        "_AvoidBasing": 1,
+        "_AvoidJointName": {
+          "Ref": 6,
+          "Class": "app.NameHash"
+        },
+        "_AvoidPos": "\u003C0.15, 0.15, 0.5\u003E",
+        "_SpeedDampingParam": {
+          "Ref": 7,
+          "Class": "app.DampingParam"
+        },
+        "_IgnoreSpeedDampingParam": {
+          "Ref": 8,
+          "Class": "app.DampingParam"
+        },
+        "_IgnoreStates": [
+          {
+            "Ref": 9,
+            "Class": "app.PlayerCameraState"
+          }
+        ],
+        "_ReturnTime": 0.5
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.CameraNearDoorUserData.OverrideSettingData",
+      "Userdata": null,
+      "Fields": {
+        "_IDs": [
+          {
+            "Ref": 5,
+            "Class": "app.CharacterKindID"
+          }
+        ],
+        "_Data": {
+          "Ref": 10,
+          "Class": "app.CameraNearDoorUserData.SettingData"
+        }
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_A100"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_A110"
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3430261757
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.9,
+        "_DampingRate": 0.65
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerCameraState",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Run"
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.CameraNearDoorUserData.SettingData",
+      "Userdata": null,
+      "Fields": {
+        "_Range": 2,
+        "_AvoidBasing": 1,
+        "_AvoidJointName": {
+          "Ref": 14,
+          "Class": "app.NameHash"
+        },
+        "_AvoidPos": "\u003C0.15, 0.23, 0.5\u003E",
+        "_SpeedDampingParam": {
+          "Ref": 15,
+          "Class": "app.DampingParam"
+        },
+        "_IgnoreSpeedDampingParam": {
+          "Ref": 16,
+          "Class": "app.DampingParam"
+        },
+        "_IgnoreStates": [
+          {
+            "Ref": 17,
+            "Class": "app.PlayerCameraState"
+          }
+        ],
+        "_ReturnTime": 0.5
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.CameraNearDoorUserData.OverrideSettingData",
+      "Userdata": null,
+      "Fields": {
+        "_IDs": [
+          {
+            "Ref": 12,
+            "Class": "app.CharacterKindID"
+          },
+          {
+            "Ref": 13,
+            "Class": "app.CharacterKindID"
+          }
+        ],
+        "_Data": {
+          "Ref": 18,
+          "Class": "app.CameraNearDoorUserData.SettingData"
+        }
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_A200"
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 3430261757
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.9,
+        "_DampingRate": 0.65
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.PlayerCameraState",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Run"
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.CameraNearDoorUserData.SettingData",
+      "Userdata": null,
+      "Fields": {
+        "_Range": 2,
+        "_AvoidBasing": 1,
+        "_AvoidJointName": {
+          "Ref": 21,
+          "Class": "app.NameHash"
+        },
+        "_AvoidPos": "\u003C0.05, 0.2, 0.2\u003E",
+        "_SpeedDampingParam": {
+          "Ref": 22,
+          "Class": "app.DampingParam"
+        },
+        "_IgnoreSpeedDampingParam": {
+          "Ref": 23,
+          "Class": "app.DampingParam"
+        },
+        "_IgnoreStates": [
+          {
+            "Ref": 24,
+            "Class": "app.PlayerCameraState"
+          }
+        ],
+        "_ReturnTime": 0.5
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.CameraNearDoorUserData.OverrideSettingData",
+      "Userdata": null,
+      "Fields": {
+        "_IDs": [
+          {
+            "Ref": 20,
+            "Class": "app.CharacterKindID"
+          }
+        ],
+        "_Data": {
+          "Ref": 25,
+          "Class": "app.CameraNearDoorUserData.SettingData"
+        }
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.CameraNearDoorUserData",
+      "Userdata": null,
+      "Fields": {
+        "_DefaultData": {
+          "Ref": 4,
+          "Class": "app.CameraNearDoorUserData.SettingData"
+        },
+        "_OverrideDatas": [
+          {
+            "Ref": 11,
+            "Class": "app.CameraNearDoorUserData.OverrideSettingData"
+          },
+          {
+            "Ref": 19,
+            "Class": "app.CameraNearDoorUserData.OverrideSettingData"
+          },
+          {
+            "Ref": 26,
+            "Class": "app.CameraNearDoorUserData.OverrideSettingData"
+          }
+        ]
+      }
+    }
+  ]
+}

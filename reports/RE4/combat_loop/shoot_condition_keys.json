@@ -1,0 +1,173 @@
+[
+  {
+    "Key": 2830214703,
+    "Data": {
+      "Index": 210,
+      "Class": "chainsaw.PlayerConditionUserData.ConditionData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": 2830214703,
+        "_Condition": {
+          "Index": 209,
+          "Class": "chainsaw.PlayerCondition_LogicArray",
+          "Userdata": null,
+          "Fields": {
+            "_CompareType": 0,
+            "_Conditions": [
+              {
+                "Index": 207,
+                "Class": "chainsaw.PlayerCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKey": 201734832,
+                  "_ConditionType": 1
+                }
+              },
+              {
+                "Index": 208,
+                "Class": "chainsaw.PlayerCondition",
+                "Userdata": null,
+                "Fields": {
+                  "_ConditionKey": 1385585625,
+                  "_ConditionType": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "Key": 3130057401,
+    "Data": {
+      "Index": 260,
+      "Class": "chainsaw.PlayerConditionUserData.ConditionData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": 3130057401,
+        "_Condition": {
+          "Index": 259,
+          "Class": "chainsaw.PlayerCondition_CheckCommand",
+          "Userdata": null,
+          "Fields": {
+            "_CommandType": 1385585625,
+            "_CheckType": 2
+          }
+        }
+      }
+    }
+  },
+  {
+    "Key": 2294950129,
+    "Data": {
+      "Index": 244,
+      "Class": "chainsaw.PlayerConditionUserData.ConditionData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": 2294950129,
+        "_Condition": {
+          "Index": 243,
+          "Class": "chainsaw.PlayerCondition_Logic",
+          "Userdata": null,
+          "Fields": {
+            "_CompareType": 0,
+            "_ConditionA": {
+              "Index": 241,
+              "Class": "chainsaw.PlayerCondition",
+              "Userdata": null,
+              "Fields": {
+                "_ConditionKey": 2830214703,
+                "_ConditionType": 1
+              }
+            },
+            "_ConditionB": {
+              "Index": 242,
+              "Class": "chainsaw.PlayerCondition",
+              "Userdata": null,
+              "Fields": {
+                "_ConditionKey": 682497857,
+                "_ConditionType": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Key": 1385585625,
+    "Data": {
+      "Index": 6,
+      "Class": "chainsaw.PlayerConditionUserData.ConditionData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": 1385585625,
+        "_Condition": {
+          "Index": 5,
+          "Class": "chainsaw.PlayerCondition_CheckActionInstruct",
+          "Userdata": null,
+          "Fields": {
+            "_CollectType": 0,
+            "_Actions": {
+              "Index": 4,
+              "Class": "chainsaw.NameHashList",
+              "Userdata": null,
+              "Fields": {
+                "_NameHashes": [
+                  {
+                    "Index": 3,
+                    "Class": "chainsaw.NameHash",
+                    "Userdata": null,
+                    "Fields": {
+                      "_Hash": 1385585625
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Key": 201734832,
+    "Data": {
+      "Index": 206,
+      "Class": "chainsaw.PlayerConditionUserData.ConditionData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": 201734832,
+        "_Condition": {
+          "Index": 205,
+          "Class": "chainsaw.PlayerCondition_CheckMotionFsmUserVariable",
+          "Userdata": null,
+          "Fields": {
+            "_IsBool": true,
+            "_CompareType": 0,
+            "_CompareValue": 0,
+            "_UserVariableHash": 201734832
+          }
+        }
+      }
+    }
+  },
+  {
+    "Key": 682497857,
+    "Data": {
+      "Index": 240,
+      "Class": "chainsaw.PlayerConditionUserData.ConditionData",
+      "Userdata": null,
+      "Fields": {
+        "_Key": 682497857,
+        "_Condition": {
+          "Index": 239,
+          "Class": "chainsaw.PlayerCondition_CheckGunFire",
+          "Userdata": null,
+          "Fields": {}
+        }
+      }
+    }
+  }
+]

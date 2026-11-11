@@ -1,0 +1,321 @@
+{
+  "Name": "ch1f1z0BoatGmFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "StateEnd",
+      "guid": "e4ead519-c8d0-43f2-99f4-dd976ebc0fca",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Ride",
+      "guid": "b6b67c22-19c0-40ef-a78a-8f6a12011dba",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "GetOffType",
+      "guid": "213ee05d-e977-4cdf-9db0-f94a6304eff7",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveState",
+      "guid": "dc5c3987-d98e-427f-bebd-effa4bcc463b",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "WaitLoopActionNo",
+      "guid": "29ac9f0f-70a5-41f6-a968-ab9c0cd706b0",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FrontLoopActionNo",
+      "guid": "8759e867-6663-46bd-887d-8d8d9dadc1dc",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "PreFrontLoopActionNo",
+      "guid": "5acdb185-3801-4522-b800-d0d9ee867f6a",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ForceMoveChange",
+      "guid": "31c02709-5887-4c22-80f5-1fd6facee25f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "BattleReaction",
+      "guid": "808d2237-d42d-4a8d-b338-793ead54a9f9",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Stagger",
+      "guid": "08237908-a33b-4a94-a20d-4b2b31881b27",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Crash",
+      "guid": "37b119aa-37eb-40f5-91ee-28c086ec3d0b",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "CrashType",
+      "guid": "d9ce7dd6-d658-41b5-a766-69967ce3be6c",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Partner",
+      "guid": "00772fd3-c4b6-41b8-8072-7a7b36bc533d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Jack",
+      "guid": "84887baf-50eb-4352-a0d7-3eeea0b44bd6",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Hold",
+      "guid": "4dea8fc7-18a6-4ea7-b56e-917ff1139628",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HoldOff",
+      "guid": "d6c57685-4fd4-41f9-a506-ab5fadfaa6f5",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ResistSuccseed",
+      "guid": "ac521026-ef5e-4062-88c0-20d00d0dc973",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ResistFailed",
+      "guid": "cbab84c0-9c2a-4d28-870c-65afd28f1d73",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsSearchPhase",
+      "guid": "5af35620-a57d-49c7-8900-e581219d9332",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsReturnPhase",
+      "guid": "95e18100-35d7-4e78-87b8-195b1774a3a2",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "LeftRiding",
+      "guid": "98ee23dd-5845-4059-a119-9c7c35264233",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "returnFinishPhase",
+      "guid": "fa9a7170-5a7c-43e0-8ed3-5dde3d23fcaf",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "GetOn",
+      "guid": "887246cf-0baa-4b91-95fb-a7b3d8cd4296",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveStart",
+      "guid": "0e6c7f4d-ece0-4bf5-952f-7d8671a1dd3b",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Failed",
+      "guid": "b8768f65-a618-452f-9b8c-0e9401b146c3",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Battle",
+      "guid": "c0a74018-94ee-4228-a3ca-b0e17c485d58",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "InBattle",
+      "guid": "5babb8e0-566d-4920-90da-4d739f543056",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DelLagoEvent",
+      "guid": "f19c7f15-4e73-4a9a-8185-d472cc26a943",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ChargeMax",
+      "guid": "a5fab94d-aadd-42b8-8981-1cf936880962",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DieEnd",
+      "guid": "836d400a-70d4-4c48-8e2c-eab05ca678ca",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "PushAttack",
+      "guid": "cee8cd68-2174-451a-b4aa-81166c2dcbac",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AttackCount",
+      "guid": "86540a9e-244b-40f3-bcc4-27761d51364b",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TimeLimit",
+      "guid": "df99d117-dfd9-4c34-9452-06a13593bc76",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "SearchEventSuccess",
+      "guid": "366c00fc-155b-4b1e-a53d-bebbbc089af7",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "WeaponInvisible",
+      "guid": "6f0d4033-07ed-4701-9386-77816df35bfb",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": []
+}

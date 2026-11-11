@@ -1,0 +1,1981 @@
+{
+  "Path": "natives/stm/_chainsaw/appsystem/character/userdata/fatalrangeuserdata.user.2",
+  "Root": {
+    "Index": 221,
+    "Class": "chainsaw.FatalRangeUserdata",
+    "Userdata": null,
+    "Fields": {
+      "_FatalRange": {
+        "Index": 11,
+        "Class": "chainsaw.CharacterFatalRange",
+        "Userdata": null,
+        "Fields": {
+          "_Knife": {
+            "Index": 2,
+            "Class": "chainsaw.CharacterFatalRange.Data",
+            "Userdata": null,
+            "Fields": {
+              "_Range": 2,
+              "_IsEnableUniqueHeightRange": false,
+              "_UniqueHeightRange": "Range(-1, 2)",
+              "_StealthKillAngle": "Range(-75, 150)",
+              "_JointName": {
+                "Index": 1,
+                "Class": "chainsaw.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 1091167843
+                }
+              }
+            }
+          },
+          "_Kick": {
+            "Index": 4,
+            "Class": "chainsaw.CharacterFatalRange.Data",
+            "Userdata": null,
+            "Fields": {
+              "_Range": 3,
+              "_IsEnableUniqueHeightRange": false,
+              "_UniqueHeightRange": "Range(-1, 2)",
+              "_StealthKillAngle": "Range(-55, 110)",
+              "_JointName": {
+                "Index": 3,
+                "Class": "chainsaw.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          "_RoundKick": {
+            "Index": 6,
+            "Class": "chainsaw.CharacterFatalRange.Data",
+            "Userdata": null,
+            "Fields": {
+              "_Range": 3.5,
+              "_IsEnableUniqueHeightRange": false,
+              "_UniqueHeightRange": "Range(-1, 2)",
+              "_StealthKillAngle": "Range(-55, 110)",
+              "_JointName": {
+                "Index": 5,
+                "Class": "chainsaw.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          "_Notice": {
+            "Index": 8,
+            "Class": "chainsaw.CharacterFatalRange.Data",
+            "Userdata": null,
+            "Fields": {
+              "_Range": 8,
+              "_IsEnableUniqueHeightRange": false,
+              "_UniqueHeightRange": "Range(-1, 2)",
+              "_StealthKillAngle": "Range(-180, 360)",
+              "_JointName": {
+                "Index": 7,
+                "Class": "chainsaw.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          "_StealthKill": {
+            "Index": 10,
+            "Class": "chainsaw.CharacterFatalRange.Data",
+            "Userdata": null,
+            "Fields": {
+              "_Range": 2,
+              "_IsEnableUniqueHeightRange": false,
+              "_UniqueHeightRange": "Range(-1, 2)",
+              "_StealthKillAngle": "Range(-80, 160)",
+              "_JointName": {
+                "Index": 9,
+                "Class": "chainsaw.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 2180083513
+                }
+              }
+            }
+          },
+          "_HeightRange": "Range(-1, 2)",
+          "_OutRangeOffset": 0.2
+        }
+      },
+      "_DefaultIconSetting": {
+        "Index": 16,
+        "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+        "Userdata": null,
+        "Fields": {
+          "_Fatal": {
+            "Index": 13,
+            "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+            "Userdata": null,
+            "Fields": {
+              "_Joint": {
+                "Index": 12,
+                "Class": "chainsaw.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 935285574
+                }
+              },
+              "_Offset": "<0, 0.25, 0>"
+            }
+          },
+          "_Stealth": {
+            "Index": 15,
+            "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+            "Userdata": null,
+            "Fields": {
+              "_Joint": {
+                "Index": 14,
+                "Class": "chainsaw.NameHash",
+                "Userdata": null,
+                "Fields": {
+                  "_Hash": 935285574
+                }
+              },
+              "_Offset": "<0, 0, 0>",
+              "_Radius": 0.2
+            }
+          }
+        }
+      },
+      "_FatalRangeList": [
+        {
+          "Index": 33,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200006,
+            "_CharacterFatalRange": {
+              "Index": 27,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 18,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 13,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 17,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 20,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 19,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 22,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 9,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 21,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 24,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 20,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 23,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 26,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 0,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 25,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-2, 7)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 32,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 29,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 28,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 1, 0>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 31,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 30,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 0, 0>",
+                    "_Radius": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 50,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200023,
+            "_CharacterFatalRange": {
+              "Index": 44,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 35,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 13,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 34,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 37,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 36,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 39,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 38,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 41,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 10,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 40,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 43,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 13,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 42,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-20, 40)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 49,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 46,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 45,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2119772873
+                      }
+                    },
+                    "_Offset": "<0, 1, -0.7>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 48,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 47,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2119772873
+                      }
+                    },
+                    "_Offset": "<0, 0, 0>",
+                    "_Radius": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 67,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200008,
+            "_CharacterFatalRange": {
+              "Index": 61,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 52,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 51,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1549972489
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 54,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 53,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 56,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3.5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 55,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 58,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 57,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 60,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 59,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-1, 2)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 66,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 63,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 62,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 0.25, 0>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 65,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 64,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 0, 0>",
+                    "_Radius": 0.2
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 84,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200018,
+            "_CharacterFatalRange": {
+              "Index": 78,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 69,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 68,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 71,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 70,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 73,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 72,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 75,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 30,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 74,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 77,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 76,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-1, 2)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 83,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 80,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 79,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    },
+                    "_Offset": "<0.7, 1, 4>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 82,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 81,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    },
+                    "_Offset": "<0, 0.5, 0>",
+                    "_Radius": 0.2
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 101,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200005,
+            "_CharacterFatalRange": {
+              "Index": 95,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 86,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2.15,
+                    "_IsEnableUniqueHeightRange": true,
+                    "_UniqueHeightRange": "Range(-0.5, 1)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 85,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 88,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 87,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 90,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3.5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 89,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 92,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 91,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 94,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 93,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-1, 2)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 100,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 97,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 96,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    },
+                    "_Offset": "<0, 1, 0>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 99,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 98,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    },
+                    "_Offset": "<0, 0.5, 0>",
+                    "_Radius": 0.2
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 118,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200004,
+            "_CharacterFatalRange": {
+              "Index": 112,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 103,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 1.8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 102,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 105,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 104,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 107,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3.5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 106,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 109,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 108,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 111,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 110,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-1, 2)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 117,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 114,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 113,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    },
+                    "_Offset": "<0, 1, 0>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 116,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 115,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 420076861
+                      }
+                    },
+                    "_Offset": "<0, 0.5, 0>",
+                    "_Radius": 0.2
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 135,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200021,
+            "_CharacterFatalRange": {
+              "Index": 129,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 120,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 119,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1951860438
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 122,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 121,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 124,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3.5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 123,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 126,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 125,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 128,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 127,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-4, 5)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 134,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 131,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 130,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2119772873
+                      }
+                    },
+                    "_Offset": "<0, 0.5, 0>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 133,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 132,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2119772873
+                      }
+                    },
+                    "_Offset": "<0, 0.5, 0>",
+                    "_Radius": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 152,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200020,
+            "_CharacterFatalRange": {
+              "Index": 146,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 137,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 4,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 136,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1951860438
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 139,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 138,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 141,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3.5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 140,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 143,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 142,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 145,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 144,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-4, 14)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 151,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 148,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 147,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1951860438
+                      }
+                    },
+                    "_Offset": "<0, 0, 0>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 150,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 149,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2119772873
+                      }
+                    },
+                    "_Offset": "<0, 1, 0>",
+                    "_Radius": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 169,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200017,
+            "_CharacterFatalRange": {
+              "Index": 163,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 154,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 153,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1048105261
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 156,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 155,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 158,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3.5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 157,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 160,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 100,
+                    "_IsEnableUniqueHeightRange": true,
+                    "_UniqueHeightRange": "Range(-5, 10)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 159,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1048105261
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 162,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 161,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-2, 4)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 168,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 165,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 164,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2879905340
+                      }
+                    },
+                    "_Offset": "<0, 1.6, 1>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 167,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 166,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2119772873
+                      }
+                    },
+                    "_Offset": "<0, 2.5, 0>",
+                    "_Radius": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 186,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200000,
+            "_CharacterFatalRange": {
+              "Index": 180,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 171,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 170,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1091167843
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 173,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 172,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 175,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3.5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 174,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 177,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 176,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 179,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-45, 90)",
+                    "_JointName": {
+                      "Index": 178,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-1, 2)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 185,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 182,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 181,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 0.25, 0>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 184,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 183,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 0, 0>",
+                    "_Radius": 0.2
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 203,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200001,
+            "_CharacterFatalRange": {
+              "Index": 197,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 188,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 187,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1091167843
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 190,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 189,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 192,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3.5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 191,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 194,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 193,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 196,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-45, 90)",
+                    "_JointName": {
+                      "Index": 195,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-1, 2)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 202,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 199,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 198,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 0.25, 0>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 201,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 200,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 0, 0>",
+                    "_Radius": 0.2
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Index": 220,
+          "Class": "chainsaw.FatalRangeUserdata.CharacterFatalRangeData",
+          "Userdata": null,
+          "Fields": {
+            "_CharacterKindID": 200002,
+            "_CharacterFatalRange": {
+              "Index": 214,
+              "Class": "chainsaw.CharacterFatalRange",
+              "Userdata": null,
+              "Fields": {
+                "_Knife": {
+                  "Index": 205,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 204,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 1091167843
+                      }
+                    }
+                  }
+                },
+                "_Kick": {
+                  "Index": 207,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 206,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_RoundKick": {
+                  "Index": 209,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 3.5,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-55, 110)",
+                    "_JointName": {
+                      "Index": 208,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_Notice": {
+                  "Index": 211,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 8,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-180, 360)",
+                    "_JointName": {
+                      "Index": 210,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_StealthKill": {
+                  "Index": 213,
+                  "Class": "chainsaw.CharacterFatalRange.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Range": 2,
+                    "_IsEnableUniqueHeightRange": false,
+                    "_UniqueHeightRange": "Range(-1, 2)",
+                    "_StealthKillAngle": "Range(-45, 90)",
+                    "_JointName": {
+                      "Index": 212,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 2180083513
+                      }
+                    }
+                  }
+                },
+                "_HeightRange": "Range(-1, 2)",
+                "_OutRangeOffset": 0.2
+              }
+            },
+            "_IconSetting": {
+              "Index": 219,
+              "Class": "chainsaw.FatalRangeUserdata.IconSetting",
+              "Userdata": null,
+              "Fields": {
+                "_Fatal": {
+                  "Index": 216,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.Data",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 215,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 0.25, 0>"
+                  }
+                },
+                "_Stealth": {
+                  "Index": 218,
+                  "Class": "chainsaw.FatalRangeUserdata.IconSetting.StealthData",
+                  "Userdata": null,
+                  "Fields": {
+                    "_Joint": {
+                      "Index": 217,
+                      "Class": "chainsaw.NameHash",
+                      "Userdata": null,
+                      "Fields": {
+                        "_Hash": 935285574
+                      }
+                    },
+                    "_Offset": "<0, 0, 0>",
+                    "_Radius": 0.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "_RangeY": 180
+    }
+  }
+}

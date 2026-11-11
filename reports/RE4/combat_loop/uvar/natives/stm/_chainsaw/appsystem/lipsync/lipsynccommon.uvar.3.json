@@ -1,0 +1,69 @@
+{
+  "Name": "LipSyncCommon",
+  "Variables": [
+    {
+      "Name": "PhonemeCurrentIndex",
+      "guid": "30e5073c-6ca6-46b6-b8e2-73242b03f78a",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "PhonemeTransitRate",
+      "guid": "0e1beec2-eb83-429f-9fdd-d80b6fa60a2f",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "PhonemePreviousIndex",
+      "guid": "03f7d2ca-1e26-4f76-9248-1f73a3b0c6a0",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "VoiceVolume",
+      "guid": "1d3172ff-d2ee-4ae2-87ca-29b57587d7bf",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Emotion_Damage",
+      "guid": "3ec56cb3-8bcb-4952-90ca-92ae77ded5af",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Emotion_Angry",
+      "guid": "9fa57a87-97b6-49d1-8986-09521b0adcf2",
+      "type": 11,
+      "Default": "\u003C0, 0, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "VoiceTypeNo",
+      "guid": "b3e6771c-8ae5-4051-a84b-217a5a946d9a",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": []
+}

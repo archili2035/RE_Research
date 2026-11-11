@@ -1,0 +1,543 @@
+{
+  "Path": "natives/stm/_chainsaw/appsystem/character/ch0a0z0/ch0a0z0_head.pfb.17",
+  "SchemaMismatches": [],
+  "Objects": [
+    {
+      "Ref": 1,
+      "Class": "via.GameObject"
+    },
+    {
+      "Ref": 2,
+      "Class": "via.Transform"
+    },
+    {
+      "Ref": 6,
+      "Class": "via.behaviortree.BehaviorTree"
+    },
+    {
+      "Ref": 21,
+      "Class": "chainsaw.PlayerCommonParameter"
+    },
+    {
+      "Ref": 26,
+      "Class": "chainsaw.AppBehaviorTree"
+    },
+    {
+      "Ref": 27,
+      "Class": "chainsaw.HateController"
+    },
+    {
+      "Ref": 30,
+      "Class": "chainsaw.PlayerEquipment"
+    },
+    {
+      "Ref": 32,
+      "Class": "chainsaw.PlayerWallHitChecker"
+    },
+    {
+      "Ref": 33,
+      "Class": "chainsaw.TerrainAnalyzer"
+    },
+    {
+      "Ref": 34,
+      "Class": "chainsaw.TreasureInventoryController"
+    },
+    {
+      "Ref": 35,
+      "Class": "chainsaw.PlayerAimAssistTargetSelector"
+    },
+    {
+      "Ref": 36,
+      "Class": "chainsaw.Ch0a0z0HeadUpdater"
+    },
+    {
+      "Ref": 37,
+      "Class": "chainsaw.CsInventoryController"
+    },
+    {
+      "Ref": 38,
+      "Class": "chainsaw.KeyItemInventoryController"
+    },
+    {
+      "Ref": 39,
+      "Class": "chainsaw.PlayerDialogController"
+    },
+    {
+      "Ref": 40,
+      "Class": "chainsaw.UniqueInventoryController"
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "via.GameObject",
+      "Userdata": null,
+      "Fields": {
+        "Name": "ch0a0z0_head",
+        "Tag": "Player|EventStop",
+        "UpdateSelf": true,
+        "DrawSelf": true,
+        "Timescale": -1
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.Transform",
+      "Userdata": null,
+      "Fields": {
+        "Position": "<0, 0, 0>",
+        "Rotation": "{X:0 Y:0 Z:0 W:1}",
+        "Scale": "<1, 1, 1>",
+        "ParentJoint": "",
+        "SameJointsContraint": false,
+        "AbsoluteScaling": false,
+        "JointSegmentScale": false,
+        "JointFastLockScene": false
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "via.behaviortree.BehaviorTree.CoreHandle",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Resource": "_Chainsaw/AppSystem/Character/ch0Common/BehaviorTree/ch0CommonInput_cs.bhvt",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "via.behaviortree.BehaviorTree.CoreHandle",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Resource": "_Chainsaw/AppSystem/Character/ch0Common/BehaviorTree/ch0CommonThink_cs.bhvt",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "via.behaviortree.BehaviorTree.CoreHandle",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Resource": "",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "via.behaviortree.BehaviorTree",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Trees": [
+          {
+            "Ref": 3,
+            "Class": "via.behaviortree.BehaviorTree.CoreHandle"
+          },
+          {
+            "Ref": 4,
+            "Class": "via.behaviortree.BehaviorTree.CoreHandle"
+          },
+          {
+            "Ref": 5,
+            "Class": "via.behaviortree.BehaviorTree.CoreHandle"
+          }
+        ],
+        "UserVariables": "_Chainsaw/AppSystem/Character/ch0Common/UserVariables/ch0CommonBTreeUserVariables.uvar",
+        "ExecLine": 0,
+        "ExecGroup": 0,
+        "PuppetMode": false,
+        "PuppetKeepActivation": false,
+        "ToolPuppetMode(?)": false,
+        "DevelopOwnerGameObject": 0
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "chainsaw.character.MergedActionUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonMergedActionUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 8,
+      "Class": "chainsaw.LODControlUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/Ch0CommonLODControlUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 9,
+      "Class": "chainsaw.PlayerConfiguration",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonConfiguration.user",
+      "Fields": {}
+    },
+    {
+      "Index": 10,
+      "Class": "chainsaw.PlayerConfiguration",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonNpcConfiguration.user",
+      "Fields": {}
+    },
+    {
+      "Index": 11,
+      "Class": "chainsaw.PlayerSensorParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonSensorParamUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 12,
+      "Class": "chainsaw.PlayerCommonParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/CommonParam/ch0CommonParamUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 13,
+      "Class": "chainsaw.PlayerCommonParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/CommonParam/ch0CommonParamUserData_Assisted.user",
+      "Fields": {}
+    },
+    {
+      "Index": 14,
+      "Class": "chainsaw.PlayerCommonParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/CommonParam/ch0CommonParamUserData_Hardcore.user",
+      "Fields": {}
+    },
+    {
+      "Index": 15,
+      "Class": "chainsaw.PlayerCommonParamUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/CommonParam/ch0CommonParamUserData_Professional.user",
+      "Fields": {}
+    },
+    {
+      "Index": 16,
+      "Class": "chainsaw.PlayerActingSettingsUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonActingSettingsUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 17,
+      "Class": "chainsaw.PlayerConditionUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonMotionFsmConditionUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 18,
+      "Class": "chainsaw.PlayerConditionUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonBehaviorTreeConditionUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 19,
+      "Class": "chainsaw.PlayerActionTransitionUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonActionTransitionUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 20,
+      "Class": "chainsaw.PlayerTalkActingSettingsUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonTalkActingUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 21,
+      "Class": "chainsaw.PlayerCommonParameter",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_MergedActionUserData": {
+          "Ref": 7,
+          "Class": "chainsaw.character.MergedActionUserData"
+        },
+        "_DamageRateUserData": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "_BreakPartsUserData": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "_LODControlUserData": {
+          "Ref": 8,
+          "Class": "chainsaw.LODControlUserData"
+        },
+        "_CpuLODControlUserData": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "_Configurations": [
+          {
+            "Ref": 9,
+            "Class": "chainsaw.PlayerConfiguration"
+          },
+          {
+            "Ref": 10,
+            "Class": "chainsaw.PlayerConfiguration"
+          }
+        ],
+        "_PlayerSensorParamUserData": {
+          "Ref": 11,
+          "Class": "chainsaw.PlayerSensorParamUserData"
+        },
+        "_PlayerCommonParamUserData": {
+          "Ref": 12,
+          "Class": "chainsaw.PlayerCommonParamUserData"
+        },
+        "_PlayerCommonParamUserData_Assisted": {
+          "Ref": 13,
+          "Class": "chainsaw.PlayerCommonParamUserData"
+        },
+        "_PlayerCommonParamUserData_Hardcore": {
+          "Ref": 14,
+          "Class": "chainsaw.PlayerCommonParamUserData"
+        },
+        "_PlayerCommonParamUserData_Professional": {
+          "Ref": 15,
+          "Class": "chainsaw.PlayerCommonParamUserData"
+        },
+        "_PlayerActingSettingsUserData": {
+          "Ref": 16,
+          "Class": "chainsaw.PlayerActingSettingsUserData"
+        },
+        "_MotionFsmConditionUserData": {
+          "Ref": 17,
+          "Class": "chainsaw.PlayerConditionUserData"
+        },
+        "_BehaviorTreeConditionUserData": {
+          "Ref": 18,
+          "Class": "chainsaw.PlayerConditionUserData"
+        },
+        "_ActionTransitionUserData": {
+          "Ref": 19,
+          "Class": "chainsaw.PlayerActionTransitionUserData"
+        },
+        "_PlayerTalkActingSettingsUserData": {
+          "Ref": 20,
+          "Class": "chainsaw.PlayerTalkActingSettingsUserData"
+        }
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "chainsaw.AppBehaviorTreeUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/BehaviorTree/ch0CommonInput_cs.user",
+      "Fields": {}
+    },
+    {
+      "Index": 23,
+      "Class": "chainsaw.behaviortree.TreeInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_ConditionCacheEnable": true,
+        "_UserData": {
+          "Ref": 22,
+          "Class": "chainsaw.AppBehaviorTreeUserData"
+        }
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "chainsaw.behaviortree.TreeInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_ConditionCacheEnable": true,
+        "_UserData": {
+          "Ref": 0,
+          "Class": ""
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "chainsaw.behaviortree.TreeInfo",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_ConditionCacheEnable": true,
+        "_UserData": {
+          "Ref": 0,
+          "Class": ""
+        }
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "chainsaw.AppBehaviorTree",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_Trees": [
+          {
+            "Ref": 23,
+            "Class": "chainsaw.behaviortree.TreeInfo"
+          },
+          {
+            "Ref": 24,
+            "Class": "chainsaw.behaviortree.TreeInfo"
+          },
+          {
+            "Ref": 25,
+            "Class": "chainsaw.behaviortree.TreeInfo"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "chainsaw.HateController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_UserData": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "_EnableSerchingState": false,
+        "_HateDown": true,
+        "_HateDownTime": 10,
+        "_AttentionDown": true,
+        "_AttentionDownTime": 30
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "chainsaw.PlayerEquipment.WeaponChangeInfo",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 29,
+      "Class": "chainsaw.PlayerEquipment.WeaponChangeInfo",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 30,
+      "Class": "chainsaw.PlayerEquipment",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "WeaponChangeInfos": [
+          {
+            "Ref": 28,
+            "Class": "chainsaw.PlayerEquipment.WeaponChangeInfo"
+          },
+          {
+            "Ref": 29,
+            "Class": "chainsaw.PlayerEquipment.WeaponChangeInfo"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "chainsaw.WallHitUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonWallHitUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 32,
+      "Class": "chainsaw.PlayerWallHitChecker",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "AutoUpdate": true,
+        "_UserData": {
+          "Ref": 31,
+          "Class": "chainsaw.WallHitUserData"
+        }
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "chainsaw.TerrainAnalyzer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_Mode": 0,
+        "_WallCheckRayLength": 2,
+        "_FrontWallAngle": 60,
+        "_StepCheckDistance": 0.6,
+        "_FenceCheckDistance": 0.18,
+        "_SearchStepHeight": 2.5,
+        "_SearchCliffHeight": 10,
+        "_LadderTiltAngle": 60
+      }
+    },
+    {
+      "Index": 34,
+      "Class": "chainsaw.TreasureInventoryController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "chainsaw.PlayerAimAssistTargetSelector",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "chainsaw.Ch0a0z0HeadUpdater",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "chainsaw.CsInventoryController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "chainsaw.KeyItemInventoryController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "chainsaw.PlayerDialogController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 40,
+      "Class": "chainsaw.UniqueInventoryController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/common/action/fov/tps_kick.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\common\\action\\fov\\tps_kick.user.3",
+  "Objects": [
+    {
+      "Index": 4,
+      "Class": "app.PlayerCameraFOVParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 3,
+          "Class": "app.PlayerCameraFOVParam"
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerCameraFOVParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 2,
+        "_FOVTemplateType": 0,
+        "_FOVRate": 1,
+        "_FOVOverride": 45,
+        "_IsAvoidFieldOfView": false,
+        "_AvoidFieldOfView": 0,
+        "_AvoidFieldOfViewSpeed": {
+          "Ref": 1,
+          "Class": "app.DampingParam"
+        },
+        "_NearClip": 0.1,
+        "_IsAvoidNearClip": false,
+        "_AvoidNearClip": 0,
+        "_AvoidNearClipSpeed": {
+          "Ref": 2,
+          "Class": "app.DampingParam"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerCameraFOVParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 3,
+          "Class": "app.PlayerCameraFOVParam"
+        }
+      }
+    }
+  ]
+}

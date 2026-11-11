@@ -1,0 +1,264 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/common/action/position/hangingdefault.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\common\\action\\position\\hangingdefault.user.3",
+  "Objects": [
+    {
+      "Index": 14,
+      "Class": "app.TPSCameraTransitionParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 13,
+          "Class": "app.TPSCameraParam"
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "360: 0"
+        ],
+        "MinValue": -1,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "360: 0"
+        ],
+        "MinValue": -1,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "360: 0"
+        ],
+        "MinValue": -1,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0,
+        "_DampingRate": 1
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "-90: 1",
+          "180: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 2,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "-180: 1",
+          "180: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 2,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0,
+        "_DampingRate": 1
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.4,
+        "_DampingRate": 0.9
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [],
+        "MinValue": 10,
+        "MaxValue": -10,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.CameraCurveParam",
+      "Userdata": null,
+      "Fields": {
+        "_AssignType": 0,
+        "_PresetCurveType": 3,
+        "_AnimationCurve": {
+          "Ref": 9,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.4,
+        "_DampingRate": 0.9
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.CameraStateParam",
+      "Userdata": null,
+      "Fields": {
+        "_StateType": 0,
+        "_StateDamping": {
+          "Ref": 8,
+          "Class": "app.DampingParam"
+        },
+        "_StateTimer": 0,
+        "_StateCurve": {
+          "Ref": 10,
+          "Class": "app.CameraCurveParam"
+        },
+        "_CrouchRateReverse": false,
+        "_IsCrouchRateDampingParam": false,
+        "_CrouchRateDampingParam": {
+          "Ref": 11,
+          "Class": "app.DampingParam"
+        },
+        "_CrouchRateIgnoreRange": "Range(0.2, 0.6)",
+        "_CrouchRateIgnoreRangeSpeed": 0.05,
+        "_CrouchRateSpeedNull": 0.05
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.TPSCameraParam",
+      "Userdata": null,
+      "Fields": {
+        "_JointName": "root",
+        "_IsStop": false,
+        "_IsHipLocalPosDiff": false,
+        "_OffsetBasing": 3,
+        "_OffsetType": 0,
+        "_Offset": "\u003C-0.5, 1.5, 0\u003E",
+        "_XMoveYCurve": {
+          "Ref": 1,
+          "Class": "via.AnimationCurve"
+        },
+        "_XMoveYCurveNoTime": 0,
+        "_ZMoveXCurve": {
+          "Ref": 2,
+          "Class": "via.AnimationCurve"
+        },
+        "_ZMoveXCurveNoTime": 0,
+        "_YMoveXCurve": {
+          "Ref": 3,
+          "Class": "via.AnimationCurve"
+        },
+        "_YMoveXCurveNoTime": 0,
+        "_FollowOffset": {
+          "Ref": 4,
+          "Class": "app.DampingParam"
+        },
+        "_GazeDistanceType": 0,
+        "_GazeDistance": 1.75,
+        "_GazeDistanceXCurve": {
+          "Ref": 5,
+          "Class": "via.AnimationCurve"
+        },
+        "_GazeDistanceYCurve": {
+          "Ref": 6,
+          "Class": "via.AnimationCurve"
+        },
+        "_FollowGazeDistance": {
+          "Ref": 7,
+          "Class": "app.DampingParam"
+        },
+        "_IsPrevFix": false,
+        "_IsOverridePrevJointName": false,
+        "_OverridePrevJointName": "",
+        "_IsOverrideStartTransitionParam": false,
+        "_OverrideStartTransitionParam": {
+          "Ref": 12,
+          "Class": "app.CameraStateParam"
+        }
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.TPSCameraTransitionParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 13,
+          "Class": "app.TPSCameraParam"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "Name": "ch1d3z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "IsUnderWater",
+      "guid": "96592d6e-c999-4ce8-abdc-1bb4d8cf3094",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsFlying",
+      "guid": "a4d19b69-a65d-4254-85b5-e70215e9f733",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDirection",
+      "guid": "b15d46da-d316-42fc-b644-09bf29c838d7",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "WatchDirection",
+      "guid": "7a6eb2bd-6d3a-4a63-a238-760b8da50243",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FloorDirection",
+      "guid": "d66b7743-7343-4da6-87a1-5b8c95ec3c2b",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StepDirection",
+      "guid": "80a6131d-e673-443a-9cb3-63c0d73c2398",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "CanRegisterDeadBody",
+      "guid": "75ecc313-b56b-4fbd-bd49-7629f7800941",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ShouldMoveStraight",
+      "guid": "16ccf69b-3748-45af-ba43-68b0b995cac9",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "hasKnifeEscaped",
+      "guid": "caaaeb95-0fa0-4ef3-a068-ffa0fbc6771e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "hasButtonEscaped",
+      "guid": "d5906e16-9917-4f06-b981-a025fbbde998",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsGrappleLoop",
+      "guid": "2c2363ca-360c-4bd2-9b1d-161d735865fd",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsDown",
+      "guid": "99810360-f824-4dfb-bee8-875e19b80e71",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "OnWall",
+      "guid": "6967bc97-f25f-4a83-894b-192ea8a603b1",
+      "type": 16,
+      "Default": null,
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsParryReaction",
+      "guid": "aaea2927-d8d3-40be-a163-f765e4d39197",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsGroundMoveMot",
+      "guid": "66767558-4ebf-4341-b045-c85751e584c9",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasHitObstacleL",
+      "guid": "deb822b6-dab2-447c-94ea-2ed27f568853",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasHitObstacleR",
+      "guid": "d33367b1-1525-416f-ba51-94cec36d0ebf",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasRunawayPosition",
+      "guid": "b2b23a6e-ee1a-47e6-b1e4-81680eb6a492",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "AddMotion_Fly",
+      "guid": "1de955a2-b175-45fc-be40-b3d99f0ad390",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsHitFlash",
+      "guid": "b394ff99-d66e-479d-ab1e-d68bc3593535",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

@@ -1,0 +1,2384 @@
+{
+  "Path": "reports/RE4/extracted/natives/stm/_chainsaw/appsystem/character/ch0common\\motion\\fsm\\ch0commonupperbodyadd.motfsm2.43",
+  "Variables": {
+    "Name": "BeahviorTree Local",
+    "Variables": [
+      {
+        "Name": "Tree_checkShootEnable",
+        "guid": "e6a64a2d-963e-4873-ad62-35fc7090a290",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "02a38701-66dd-4816-9c7c-910d52d248d8",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "1197414890",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "67260cbe-ba3f-4e19-8d95-e0b971bdf98f",
+                "Callback": {
+                  "Index": 4,
+                  "Class": "chainsaw.BehaviorTreeCondition_MFSM_CheckActionInstruct",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "67260cbe-ba3f-4e19-8d95-e0b971bdf98f",
+                    "v2_Condition": true,
+                    "_CollectType": 1,
+                    "_Actions": {
+                      "Index": 3,
+                      "Class": "chainsaw.NameHashList",
+                      "Fields": {
+                        "_NameHashes": [
+                          {
+                            "Ref": 1,
+                            "Class": "chainsaw.NameHash"
+                          },
+                          {
+                            "Ref": 2,
+                            "Class": "chainsaw.NameHash"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3364783643",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "b49fc112-c3d6-45fc-924a-dc7688b8111e",
+                "Callback": {
+                  "Index": 18,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckActionCondition",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "b49fc112-c3d6-45fc-924a-dc7688b8111e",
+                    "v2_Condition": true,
+                    "_Condition": {
+                      "Index": 17,
+                      "Class": "chainsaw.PlayerCondition",
+                      "Fields": {
+                        "_ConditionKey": 2830214703,
+                        "_ConditionType": 0
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "656204610",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "65d39366-32bf-4ae8-b3f8-553aa056d8e5",
+                "Callback": {
+                  "Index": 19,
+                  "Class": "chainsaw.PlayerBehaviorTreeAction_MFSM_CheckDryFire",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "65d39366-32bf-4ae8-b3f8-553aa056d8e5",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 4,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3364783643",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "2e9c61e4-9659-4fb6-8fe6-8a7555f87066",
+                "Callback": {
+                  "Index": 35,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckActionCondition",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "2e9c61e4-9659-4fb6-8fe6-8a7555f87066",
+                    "v2_Condition": true,
+                    "_Condition": {
+                      "Index": 34,
+                      "Class": "chainsaw.PlayerCondition",
+                      "Fields": {
+                        "_ConditionKey": 3130057401,
+                        "_ConditionType": 0
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 5,
+            "Name": "LogicNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 6,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "1197414890",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "6329a321-5d65-4fde-9b46-f64c7df45b30",
+                "Callback": {
+                  "Index": 45,
+                  "Class": "chainsaw.BehaviorTreeCondition_MFSM_CheckActionInstruct",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "6329a321-5d65-4fde-9b46-f64c7df45b30",
+                    "v2_Condition": true,
+                    "_CollectType": 0,
+                    "_Actions": {
+                      "Index": 44,
+                      "Class": "chainsaw.NameHashList",
+                      "Fields": {
+                        "_NameHashes": [
+                          {
+                            "Ref": 43,
+                            "Class": "chainsaw.NameHash"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 7,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 8,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "8",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          }
+        ],
+        "OutputNode": 8,
+        "Connections": [
+          {
+            "targetId": 5,
+            "inputSlot": 0,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 5,
+            "inputSlot": 1,
+            "sourceId": 4,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 0,
+            "sourceId": 6,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 8,
+            "inputSlot": 1,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 8,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 8,
+            "inputSlot": 2,
+            "sourceId": 5,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 8,
+            "inputSlot": 4,
+            "sourceId": 7,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 8,
+            "inputSlot": 3,
+            "sourceId": 3,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkSlipThrough",
+        "guid": "7659b93f-1a83-4d39-8de5-3a58fd17c7e1",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "fa67c678-deb0-4d8a-a6ef-24f7d64c7ce1",
+                "Callback": {
+                  "Index": 16,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "fa67c678-deb0-4d8a-a6ef-24f7d64c7ce1",
+                    "v2_Condition": true,
+                    "State": 8796093022208,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "dc282e81-121a-4831-88d5-a4f877d33d36",
+                "Callback": {
+                  "Index": 5,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "dc282e81-121a-4831-88d5-a4f877d33d36",
+                    "v2_Condition": true,
+                    "State": 30,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "de4fcc87-4cda-4b19-900a-d86237e29e91",
+                "Callback": {
+                  "Index": 6,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "de4fcc87-4cda-4b19-900a-d86237e29e91",
+                    "v2_Condition": true,
+                    "State": 262528,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 4,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          }
+        ],
+        "OutputNode": 4,
+        "Connections": [
+          {
+            "targetId": 4,
+            "inputSlot": 0,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 4,
+            "inputSlot": 1,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 0,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 4,
+            "inputSlot": 2,
+            "sourceId": 3,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_canselSlipThrough",
+        "guid": "f2dd5ef5-ae7c-48f9-86b0-bcbad67aa794",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "5e4e65a8-6187-4dcf-92d3-21ae32a6a7fa",
+                "Callback": {
+                  "Index": 7,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "5e4e65a8-6187-4dcf-92d3-21ae32a6a7fa",
+                    "v2_Condition": true,
+                    "State": 30,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "a190e00f-e0b7-4e73-a2b7-eb3f2f8a8436",
+                "Callback": {
+                  "Index": 8,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "a190e00f-e0b7-4e73-a2b7-eb3f2f8a8436",
+                    "v2_Condition": true,
+                    "State": 262528,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 3,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 4,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "360468189",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "4a47d7c3-6a38-480b-9849-054c1e92cd2f",
+                "Callback": {
+                  "Index": 1,
+                  "Class": "via.motion.Fsm2ConditionMotionEnd",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "4a47d7c3-6a38-480b-9849-054c1e92cd2f",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "OutputNode": 3,
+        "Connections": [
+          {
+            "targetId": 2,
+            "inputSlot": 0,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 0,
+            "sourceId": 4,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 1,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 2,
+            "sourceId": 1,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkShootCansel",
+        "guid": "ef8c4004-556d-4f12-84c5-0154a993498d",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "61da8892-cff7-4d8f-b8af-95ff054b53d3",
+                "Callback": {
+                  "Index": 21,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "61da8892-cff7-4d8f-b8af-95ff054b53d3",
+                    "v2_Condition": true,
+                    "State": 14336,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "360468189",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "abb7c2ba-e899-47d6-99c0-8e7676c30b52",
+                "Callback": {
+                  "Index": 4,
+                  "Class": "via.motion.Fsm2ConditionMotionEnd",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "abb7c2ba-e899-47d6-99c0-8e7676c30b52",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3364783643",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "d322c455-1232-4a00-a8e5-d6a8ed72030a",
+                "Callback": {
+                  "Index": 23,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckActionCondition",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "d322c455-1232-4a00-a8e5-d6a8ed72030a",
+                    "v2_Condition": true,
+                    "_Condition": {
+                      "Index": 22,
+                      "Class": "chainsaw.PlayerCondition",
+                      "Fields": {
+                        "_ConditionKey": 2294950129,
+                        "_ConditionType": 0
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "OutputNode": 2,
+        "Connections": [
+          {
+            "targetId": 2,
+            "inputSlot": 1,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 2,
+            "inputSlot": 2,
+            "sourceId": 3,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 2,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkFullAutoShootCansel",
+        "guid": "e52a1df8-db65-48b7-a785-82ed18ad0c70",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "360468189",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "a7772014-f2ab-4ac0-a614-e57b53be6d83",
+                "Callback": {
+                  "Index": 2,
+                  "Class": "via.motion.Fsm2ConditionMotionEnd",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "a7772014-f2ab-4ac0-a614-e57b53be6d83",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "d76e3c48-1fa3-484e-b442-64fb8d38bfdd",
+                "Callback": {
+                  "Index": 9,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "d76e3c48-1fa3-484e-b442-64fb8d38bfdd",
+                    "v2_Condition": true,
+                    "State": 12288,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "b3799f8f-9641-425a-8b26-4132a9fe5d16",
+                "Callback": {
+                  "Index": 10,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "b3799f8f-9641-425a-8b26-4132a9fe5d16",
+                    "v2_Condition": true,
+                    "State": 256,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 4,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "1197414890",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "b3596b5c-0eda-4fa0-b24e-dcb8b1ce663d",
+                "Callback": {
+                  "Index": 13,
+                  "Class": "chainsaw.BehaviorTreeCondition_MFSM_CheckActionInstruct",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "b3596b5c-0eda-4fa0-b24e-dcb8b1ce663d",
+                    "v2_Condition": true,
+                    "_CollectType": 0,
+                    "_Actions": {
+                      "Index": 12,
+                      "Class": "chainsaw.NameHashList",
+                      "Fields": {
+                        "_NameHashes": [
+                          {
+                            "Ref": 11,
+                            "Class": "chainsaw.NameHash"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 5,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 6,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3511154953",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "cddca2dd-1cfd-4e09-9e5b-f6666890202d",
+                "Callback": {
+                  "Index": 14,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckCondition",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "cddca2dd-1cfd-4e09-9e5b-f6666890202d",
+                    "v2_Condition": true,
+                    "_Target": 4,
+                    "_Direction": 0,
+                    "_CheckAngle": "Range(0, 0)"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 7,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "8",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 8,
+            "Name": "NotNode",
+            "Params": []
+          }
+        ],
+        "OutputNode": 7,
+        "Connections": [
+          {
+            "targetId": 3,
+            "inputSlot": 0,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 5,
+            "inputSlot": 0,
+            "sourceId": 4,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 0,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 1,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 2,
+            "sourceId": 3,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 3,
+            "sourceId": 5,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 8,
+            "inputSlot": 0,
+            "sourceId": 6,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 4,
+            "sourceId": 8,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkDashAddBlend",
+        "guid": "ae967224-7fdc-4a2b-a678-ea54a4a20aff",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "298768106",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "45dfe579-95cd-4209-a726-52641d287e9e",
+                "Callback": {
+                  "Index": 15,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "45dfe579-95cd-4209-a726-52641d287e9e",
+                    "v2_Condition": true,
+                    "State": 2097152,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "c61e4dc7-d725-4624-8bbb-610bd10fe108",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "81aeeffd-f0fd-4db9-a90f-5444f24ffee3",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "CalculateNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 4,
+            "Name": "AbsNode",
+            "Params": []
+          },
+          {
+            "nodeId": 5,
+            "Name": "CompareNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "2",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 6,
+            "Name": "ValueNode",
+            "Params": [
+              {
+                "Name": "Value",
+                "Value": "0.1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 7,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 8,
+            "Name": "CompareNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "2",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 9,
+            "Name": "ValueNode",
+            "Params": [
+              {
+                "Name": "Value",
+                "Value": "0.5",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 10,
+            "Name": "CalculateNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 11,
+            "Name": "AbsNode",
+            "Params": []
+          },
+          {
+            "nodeId": 12,
+            "Name": "ValueNode",
+            "Params": [
+              {
+                "Name": "Value",
+                "Value": "0.075",
+                "Callback": null
+              }
+            ]
+          }
+        ],
+        "OutputNode": 7,
+        "Connections": [
+          {
+            "targetId": 3,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 1,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 4,
+            "inputSlot": 0,
+            "sourceId": 3,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 5,
+            "inputSlot": 0,
+            "sourceId": 4,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 5,
+            "inputSlot": 1,
+            "sourceId": 6,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 0,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 1,
+            "sourceId": 5,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 10,
+            "inputSlot": 0,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 10,
+            "inputSlot": 1,
+            "sourceId": 9,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 11,
+            "inputSlot": 0,
+            "sourceId": 10,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 8,
+            "inputSlot": 0,
+            "sourceId": 11,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 8,
+            "inputSlot": 1,
+            "sourceId": 12,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 7,
+            "inputSlot": 2,
+            "sourceId": 8,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkNearmiss",
+        "guid": "610f4cc2-8ae2-449d-97e9-14c2b9bba373",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "ebfad5bc-090b-4dc4-a62d-aebdcb5d74e1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "e2e03ac6-f72f-4d37-8868-84578fea59d5",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "e75dace9-db01-4b2d-89d4-97af8186ea0a",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "72bb3ef6-78e4-4f23-b1e5-c56e45832d18",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 4,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 5,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "1aa8d2a3-a8cd-4ce9-ae95-2e75f0ce3e24",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 6,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 7,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "3aa0e32e-bab4-43dc-8e56-06954d65eb46",
+                "Callback": {
+                  "Index": 40,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "3aa0e32e-bab4-43dc-8e56-06954d65eb46",
+                    "v2_Condition": true,
+                    "State": 2048,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 8,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 9,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 10,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "1707836210",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "8b220421-67d1-4ea6-bed8-13058f9fc08d",
+                "Callback": {
+                  "Index": 41,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckNPCState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "8b220421-67d1-4ea6-bed8-13058f9fc08d",
+                    "v2_Condition": true,
+                    "State": 1048832,
+                    "CheckPrevFrame": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 11,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 12,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3277772352",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "4d168f31-e60e-4432-b816-d4472b571b64",
+                "Callback": {
+                  "Index": 42,
+                  "Class": "chainsaw.Ch2a1z0BehaviorTreeCondition_MFSM_CheckBattleActingType",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "4d168f31-e60e-4432-b816-d4472b571b64",
+                    "v2_Condition": true,
+                    "Type": 4
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 13,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 14,
+            "Name": "LogicNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          }
+        ],
+        "OutputNode": 9,
+        "Connections": [
+          {
+            "targetId": 4,
+            "inputSlot": 0,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 4,
+            "inputSlot": 1,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 4,
+            "inputSlot": 2,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 4,
+            "inputSlot": 3,
+            "sourceId": 3,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 6,
+            "inputSlot": 0,
+            "sourceId": 5,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 8,
+            "inputSlot": 0,
+            "sourceId": 7,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 9,
+            "inputSlot": 1,
+            "sourceId": 6,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 9,
+            "inputSlot": 0,
+            "sourceId": 4,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 9,
+            "inputSlot": 2,
+            "sourceId": 8,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 11,
+            "inputSlot": 0,
+            "sourceId": 10,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 13,
+            "inputSlot": 0,
+            "sourceId": 12,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 14,
+            "inputSlot": 1,
+            "sourceId": 13,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 14,
+            "inputSlot": 0,
+            "sourceId": 11,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 9,
+            "inputSlot": 3,
+            "sourceId": 14,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkDropRocketLauncher",
+        "guid": "200dd6bd-e517-4e3c-842a-96dad9d509e8",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "LogicNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3252012763",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "d9107e95-ffaa-4137-b44b-053926214e21",
+                "Callback": {
+                  "Index": 3,
+                  "Class": "via.behaviortree.nodework.ConditionUnderLayerEnd",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "d9107e95-ffaa-4137-b44b-053926214e21",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3690635960",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "2c689a13-c4a1-4387-8c5f-0be61fff695b",
+                "Callback": {
+                  "Index": 20,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckOneTimeRocketLauncher",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "2c689a13-c4a1-4387-8c5f-0be61fff695b",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "OutputNode": 0,
+        "Connections": [
+          {
+            "targetId": 0,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 0,
+            "inputSlot": 1,
+            "sourceId": 2,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkFuulAutoShootLoop",
+        "guid": "009dfdbd-1ba9-4ea6-b953-ccc12e466701",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "LogicNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3364783643",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "cf326862-0df6-4ba8-8a76-8e93d69db8b3",
+                "Callback": {
+                  "Index": 25,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckActionCondition",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "cf326862-0df6-4ba8-8a76-8e93d69db8b3",
+                    "v2_Condition": true,
+                    "_Condition": {
+                      "Index": 24,
+                      "Class": "chainsaw.PlayerCondition",
+                      "Fields": {
+                        "_ConditionKey": 3130057401,
+                        "_ConditionType": 0
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "e3d674f8-ff75-4324-9685-ba7d772b6268",
+                "Callback": null
+              }
+            ]
+          }
+        ],
+        "OutputNode": 0,
+        "Connections": [
+          {
+            "targetId": 0,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 0,
+            "inputSlot": 1,
+            "sourceId": 2,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkUnderlayerShootCansel",
+        "guid": "29dea518-487b-410d-884e-578a0511667c",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3252012763",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "634317bb-775f-4a21-a8b2-9831433d278f",
+                "Callback": {
+                  "Index": 5,
+                  "Class": "via.behaviortree.nodework.ConditionUnderLayerEnd",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "634317bb-775f-4a21-a8b2-9831433d278f",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "83248a03-417f-47e0-8d19-806c0c0bf15a",
+                "Callback": {
+                  "Index": 26,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "83248a03-417f-47e0-8d19-806c0c0bf15a",
+                    "v2_Condition": true,
+                    "State": 14336,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3364783643",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "b76bf621-0cd0-45fe-a572-0977ce3ceca7",
+                "Callback": {
+                  "Index": 28,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckActionCondition",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "b76bf621-0cd0-45fe-a572-0977ce3ceca7",
+                    "v2_Condition": true,
+                    "_Condition": {
+                      "Index": 27,
+                      "Class": "chainsaw.PlayerCondition",
+                      "Fields": {
+                        "_ConditionKey": 2294950129,
+                        "_ConditionType": 0
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "OutputNode": 0,
+        "Connections": [
+          {
+            "targetId": 0,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 0,
+            "inputSlot": 1,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 0,
+            "inputSlot": 2,
+            "sourceId": 3,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkIsLock",
+        "guid": "2fd64578-2830-4df3-89fd-ac981f406f53",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "LogicNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "VariableReferenceNode",
+            "Params": [
+              {
+                "Name": "VariableID",
+                "Value": "0a85fc70-e4c7-4807-9e32-334292083950",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3045611935",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "32535402-798d-484e-9cea-6db9b7acf614",
+                "Callback": {
+                  "Index": 29,
+                  "Class": "chainsaw.WeaponBehaviorTreeCondition_CheckHasPumpAction",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "32535402-798d-484e-9cea-6db9b7acf614",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 4,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "dbb51774-02dd-437e-bb76-e9c74a4dd3a5",
+                "Callback": {
+                  "Index": 30,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "dbb51774-02dd-437e-bb76-e9c74a4dd3a5",
+                    "v2_Condition": true,
+                    "State": 1024,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 5,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 6,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "1738155548",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "3d53736d-dec1-4463-acc3-d9e0c4ac35fc",
+                "Callback": {
+                  "Index": 31,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckInventoryLocked",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "3d53736d-dec1-4463-acc3-d9e0c4ac35fc",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "OutputNode": 0,
+        "Connections": [
+          {
+            "targetId": 0,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 0,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 1,
+            "sourceId": 4,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 5,
+            "inputSlot": 0,
+            "sourceId": 3,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 0,
+            "inputSlot": 1,
+            "sourceId": 5,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 2,
+            "sourceId": 6,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkShootToHoldEnd",
+        "guid": "42a3d581-6490-4400-9627-3e5ad892ff6f",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "LogicNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3252012763",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "898e97b1-4bdf-4b1a-a8f3-f05062334732",
+                "Callback": {
+                  "Index": 6,
+                  "Class": "via.behaviortree.nodework.ConditionUnderLayerEnd",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "898e97b1-4bdf-4b1a-a8f3-f05062334732",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3364783643",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "754c0c31-ff0b-4e02-8492-dc2044307aa6",
+                "Callback": {
+                  "Index": 33,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckActionCondition",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "754c0c31-ff0b-4e02-8492-dc2044307aa6",
+                    "v2_Condition": true,
+                    "_Condition": {
+                      "Index": 32,
+                      "Class": "chainsaw.PlayerCondition",
+                      "Fields": {
+                        "_ConditionKey": 2294950129,
+                        "_ConditionType": 0
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "OutputNode": 0,
+        "Connections": [
+          {
+            "targetId": 0,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 0,
+            "inputSlot": 1,
+            "sourceId": 2,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkWallThrough",
+        "guid": "9c0d98b0-376e-4573-8094-4be0795bbeca",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "f8a35af1-b95f-4373-97f1-d123c117e423",
+                "Callback": {
+                  "Index": 36,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "f8a35af1-b95f-4373-97f1-d123c117e423",
+                    "v2_Condition": true,
+                    "State": 8796093022208,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "f2db494c-1e14-4f81-8442-6944220822a8",
+                "Callback": {
+                  "Index": 37,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "f2db494c-1e14-4f81-8442-6944220822a8",
+                    "v2_Condition": true,
+                    "State": 30,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "10de2f4e-28cf-4a36-9e22-a884caa7b984",
+                "Callback": {
+                  "Index": 38,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "10de2f4e-28cf-4a36-9e22-a884caa7b984",
+                    "v2_Condition": true,
+                    "State": 263552,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 3,
+            "Name": "NotNode",
+            "Params": []
+          },
+          {
+            "nodeId": 4,
+            "Name": "MultiLogicNode",
+            "Params": [
+              {
+                "Name": "Count",
+                "Value": "4",
+                "Callback": null
+              },
+              {
+                "Name": "Operation",
+                "Value": "0",
+                "Callback": null
+              }
+            ]
+          }
+        ],
+        "OutputNode": 4,
+        "Connections": [
+          {
+            "targetId": 4,
+            "inputSlot": 0,
+            "sourceId": 0,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 4,
+            "inputSlot": 1,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 3,
+            "inputSlot": 0,
+            "sourceId": 2,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 4,
+            "inputSlot": 2,
+            "sourceId": 3,
+            "outputSlot": 0
+          }
+        ]
+      },
+      {
+        "Name": "Tree_checkWallThroughEnd",
+        "guid": "6e7bf912-2d0a-4917-9a5c-2f9122c1eef9",
+        "type": 2,
+        "Default": "False",
+        "Expression": [
+          {
+            "nodeId": 0,
+            "Name": "LogicNode",
+            "Params": [
+              {
+                "Name": "Operation",
+                "Value": "1",
+                "Callback": null
+              }
+            ]
+          },
+          {
+            "nodeId": 1,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "360468189",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "46ca7813-1589-4c92-bbfc-c4e8eac8ed17",
+                "Callback": {
+                  "Index": 7,
+                  "Class": "via.motion.Fsm2ConditionMotionEnd",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "46ca7813-1589-4c92-bbfc-c4e8eac8ed17",
+                    "v2_Condition": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "nodeId": 2,
+            "Name": "CallbackNode",
+            "Params": [
+              {
+                "Name": "CallbackID",
+                "Value": "3287497865",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackFunctionID",
+                "Value": "0",
+                "Callback": null
+              },
+              {
+                "Name": "CallbackGuid",
+                "Value": "f9e48604-58a8-4cad-b290-21a25ba42658",
+                "Callback": {
+                  "Index": 39,
+                  "Class": "chainsaw.PlayerBehaviorTreeCondition_MFSM_CheckState",
+                  "Fields": {
+                    "v0_ID": 0,
+                    "v1_GUID": "f9e48604-58a8-4cad-b290-21a25ba42658",
+                    "v2_Condition": true,
+                    "State": 512,
+                    "CheckPrevFrame": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "OutputNode": 0,
+        "Connections": [
+          {
+            "targetId": 0,
+            "inputSlot": 0,
+            "sourceId": 1,
+            "outputSlot": 0
+          },
+          {
+            "targetId": 0,
+            "inputSlot": 1,
+            "sourceId": 2,
+            "outputSlot": 0
+          }
+        ]
+      }
+    ],
+    "Embedded": []
+  },
+  "SubVariables": []
+}

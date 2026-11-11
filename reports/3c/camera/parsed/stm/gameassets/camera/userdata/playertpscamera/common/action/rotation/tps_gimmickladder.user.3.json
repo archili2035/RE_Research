@@ -1,0 +1,282 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/common/action/rotation/tps_gimmickladder.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\common\\action\\rotation\\tps_gimmickladder.user.3",
+  "Objects": [
+    {
+      "Index": 17,
+      "Class": "app.PlayerCameraRotationParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 16,
+          "Class": "app.PlayerCameraRotationParam"
+        }
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.2,
+        "_DampingRate": 0.8
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.PlayerCameraRotationParam.RotationOffsetFixData",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_Deg": 0,
+        "_Time": 0
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.PlayerCameraRotationParam.RotationOffsetFixData",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_Deg": 0,
+        "_Time": 0
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.PlayerCameraRotationParam.RotationOffsetFixData",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": true,
+        "_Deg": 0,
+        "_Time": 0.25
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.PlayerCameraRotationParam.RotationOffsetRangeData",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RangeDeg": "Range(-180, 360)"
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.PlayerCameraRotationParam.RotationOffsetRangeData",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RangeDeg": "Range(-180, 360)"
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.PlayerCameraRotationParam.RotationOffsetRangeData",
+      "Userdata": null,
+      "Fields": {
+        "_Enable": false,
+        "_RangeDeg": "Range(-180, 360)"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 0"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.CameraCurveParam",
+      "Userdata": null,
+      "Fields": {
+        "_AssignType": 0,
+        "_PresetCurveType": 3,
+        "_AnimationCurve": {
+          "Ref": 8,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.CameraOperatePullBackData",
+      "Userdata": null,
+      "Fields": {
+        "_IsPullBack": false,
+        "_NoInputTimer": 1,
+        "_PullBackTimer": 1,
+        "_PullBackCount": 1,
+        "_IsInputPullBackCount": false,
+        "_PullBackCurve": {
+          "Ref": 9,
+          "Class": "app.CameraCurveParam"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.4,
+        "_DampingRate": 0.9
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [],
+        "MinValue": 10,
+        "MaxValue": -10,
+        "LoopStartTime": 0,
+        "LoopEndTime": 100,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.CameraCurveParam",
+      "Userdata": null,
+      "Fields": {
+        "_AssignType": 0,
+        "_PresetCurveType": 3,
+        "_AnimationCurve": {
+          "Ref": 12,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.DampingParam",
+      "Userdata": null,
+      "Fields": {
+        "_DampingTime": 0.4,
+        "_DampingRate": 0.9
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.CameraStateParam",
+      "Userdata": null,
+      "Fields": {
+        "_StateType": 0,
+        "_StateDamping": {
+          "Ref": 11,
+          "Class": "app.DampingParam"
+        },
+        "_StateTimer": 0,
+        "_StateCurve": {
+          "Ref": 13,
+          "Class": "app.CameraCurveParam"
+        },
+        "_CrouchRateReverse": false,
+        "_IsCrouchRateDampingParam": false,
+        "_CrouchRateDampingParam": {
+          "Ref": 14,
+          "Class": "app.DampingParam"
+        },
+        "_CrouchRateIgnoreRange": "Range(0.2, 0.6)",
+        "_CrouchRateIgnoreRangeSpeed": 0.05,
+        "_CrouchRateSpeedNull": 0.05
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.PlayerCameraRotationParam",
+      "Userdata": null,
+      "Fields": {
+        "_RestType": 0,
+        "_SyncJointName": "C_Prop_Cam_A",
+        "_OffsetRestRotation": "{X:0 Y:1 Z:0 W:-4.371139E-08}",
+        "_IsEndRotationReverse": false,
+        "_StartGazePointDistance": 1,
+        "_GazePointJointName": "R_Wep",
+        "_GazePointOffsetPos": "\u003C0, 0, 0\u003E",
+        "_GazePointDamping": {
+          "Ref": 1,
+          "Class": "app.DampingParam"
+        },
+        "_LockOnTargetDistance": 20,
+        "_LockOnTargetRangeX": 0.5,
+        "_LockOnTargetRangeY": 0.5,
+        "_FixRotation": "{X:0 Y:0 Z:0 W:1}",
+        "_IsOperation": true,
+        "_IsNotOperationInterpolation": true,
+        "_TwirlSpeedRate": 1,
+        "_IsRageLimit": true,
+        "_YawRangeDeg": "Range(-50, 100)",
+        "_PitchRangeDeg": "Range(-50, 100)",
+        "_OffsetType": 1,
+        "_OffsetFixYaw": {
+          "Ref": 2,
+          "Class": "app.PlayerCameraRotationParam.RotationOffsetFixData"
+        },
+        "_OffsetFixPitch": {
+          "Ref": 3,
+          "Class": "app.PlayerCameraRotationParam.RotationOffsetFixData"
+        },
+        "_OffsetFixRoll": {
+          "Ref": 4,
+          "Class": "app.PlayerCameraRotationParam.RotationOffsetFixData"
+        },
+        "_OffsetRangeYaw": {
+          "Ref": 5,
+          "Class": "app.PlayerCameraRotationParam.RotationOffsetRangeData"
+        },
+        "_OffsetRangePitch": {
+          "Ref": 6,
+          "Class": "app.PlayerCameraRotationParam.RotationOffsetRangeData"
+        },
+        "_OffsetRangeRoll": {
+          "Ref": 7,
+          "Class": "app.PlayerCameraRotationParam.RotationOffsetRangeData"
+        },
+        "_OperatePullBackData": {
+          "Ref": 10,
+          "Class": "app.CameraOperatePullBackData"
+        },
+        "_IsStartPullBackData": true,
+        "_IsOverrideStartTransitionParam": false,
+        "_OverrideStartTransitionParam": {
+          "Ref": 15,
+          "Class": "app.CameraStateParam"
+        }
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.PlayerCameraRotationParamUserData",
+      "Userdata": null,
+      "Fields": {
+        "_Param": {
+          "Ref": 16,
+          "Class": "app.PlayerCameraRotationParam"
+        }
+      }
+    }
+  ]
+}

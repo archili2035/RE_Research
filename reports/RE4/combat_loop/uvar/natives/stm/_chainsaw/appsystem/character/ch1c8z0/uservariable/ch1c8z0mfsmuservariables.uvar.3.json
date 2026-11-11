@@ -1,0 +1,310 @@
+{
+  "Name": "ch1c8z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "StateEnd",
+      "guid": "a2e36cc8-e75a-497e-a053-accb26c6499d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "EnableLadderUp",
+      "guid": "ae9e6313-1d25-442b-b542-539f3fcc25ef",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "NextLadderEnd",
+      "guid": "50d56e98-7e0d-4963-bdd4-f9bcddd5a44f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsTransitionParry",
+      "guid": "68941c88-68ab-43c1-9d99-755ebebaaa99",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsFinalBlow",
+      "guid": "f5d61347-9db9-4a78-b8ea-0a07c86fe76e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MoveDir",
+      "guid": "c6561185-84a1-4e86-a49b-885331fca82f",
+      "type": 11,
+      "Default": "\u003C0.5, 0, 1\u003E",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TurnDirNo",
+      "guid": "9629ab77-f0dd-49bf-accc-6eca1bb5cfbb",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TurnType",
+      "guid": "9bfcaaec-10dd-45af-855f-582357a2f994",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsRunOrMove",
+      "guid": "17c47569-f804-4eef-9022-18b29154345b",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ForbidTransition",
+      "guid": "1bd40cd6-1832-4170-8c04-a0df2652fa79",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsHitAttackPl",
+      "guid": "e503ccd4-7f05-4214-a44f-fbf68fd0e57b",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Turning",
+      "guid": "a10a6aaa-1c6b-4c68-be97-6344753ca7a2",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageRot",
+      "guid": "d508c9c4-bae4-42a5-bd5d-2aa86e446d85",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageDir",
+      "guid": "8caffb87-5e66-4cfb-b637-3a181d4986f4",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsBackDamage",
+      "guid": "be29a45b-56fd-4beb-bf46-0c53239dbbd4",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ReserveKneelDown",
+      "guid": "b018b630-386b-41ea-8273-ce9958516c73",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Stepping",
+      "guid": "a61d5d4f-f322-493b-8d32-0ec806f6e73f",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RequestKickDoorOpen",
+      "guid": "7eaa8d51-fcb6-4ff3-83fb-32df6012e955",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingSmallIndexHead",
+      "guid": "131d236f-42cf-40b7-829a-fba2952a7708",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingSmallIndexBody",
+      "guid": "f50f1a80-f1f5-4318-bd6a-de3866c2a4c4",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingSmallIndexArmL",
+      "guid": "7cac7351-5eb1-442c-9522-157582d55e99",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingSmallIndexArmR",
+      "guid": "ef37e555-b50b-4649-995d-74b596157411",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingSmallIndexLegL",
+      "guid": "e7205536-6036-447a-973d-18265672b07e",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingSmallIndexLegR",
+      "guid": "01e0701a-3c3f-42da-ab01-79dee01d6d62",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingLargeIndexHead",
+      "guid": "6d791b30-9034-48d9-a9c1-9c9cbfae46a8",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingLargeIndexBody",
+      "guid": "b9e0bff2-11cd-4b05-aee4-c97a289c2306",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingLargeIndexArmL",
+      "guid": "fdb1b4da-2c9d-4b43-997a-2e314d260860",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingLargeIndexArmR",
+      "guid": "9ba5e4f7-491e-447f-a6d2-bec94f4b7a42",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingLargeIndexLegL",
+      "guid": "5244dae1-fc16-4fea-8ff9-5e2f5dbfd3a2",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "StoppingLargeIndexLegR",
+      "guid": "e901d799-a9e2-4720-8b0c-d13d28ca9517",
+      "type": 7,
+      "Default": "-1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

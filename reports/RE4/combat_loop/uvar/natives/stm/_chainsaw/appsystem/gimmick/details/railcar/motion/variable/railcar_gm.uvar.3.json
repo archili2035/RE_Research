@@ -1,0 +1,132 @@
+{
+  "Name": "RailCar_Gm",
+  "Variables": [
+    {
+      "Name": "RideOnType",
+      "guid": "986c0dbd-257a-4caa-870c-597e2fd801de",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RideOnStandbyOK",
+      "guid": "d4bcd650-3de3-486a-bc19-c01def67914d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RideOnStart",
+      "guid": "80d946bc-d87f-4b7d-9f50-7f27d5cdaa2c",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RideOnSkip",
+      "guid": "c190bf7b-2c25-423d-8716-3fdf2b36a2c2",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RideOnEnd",
+      "guid": "73cf82fb-43a6-42d2-a2a1-a367fab5cbcf",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "RunSpeedRate",
+      "guid": "210546c4-db21-4462-b2e1-76e366125bde",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TiltRate",
+      "guid": "677f8fe6-96d8-407a-808e-0824acb5606a",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "FastMove",
+      "guid": "131b7489-0dca-4a1f-949b-c24ffdeaa582",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Landing",
+      "guid": "090eada7-dd00-4814-868e-7ee3c497f9a8",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Damage",
+      "guid": "7dd836f0-f033-46d4-a492-30705d03203d",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Brake",
+      "guid": "7ad510fb-3a86-4357-8db0-094131ea9a4d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DuringBraking",
+      "guid": "b19f37ee-8212-4d4d-b5b0-1f767e4ca903",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DistanceRate",
+      "guid": "744e5ff3-65d7-4372-8a79-6009dde62989",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "BrakeAddRate",
+      "guid": "072408ef-6da1-4837-8985-f623dcab3a9a",
+      "type": 11,
+      "Default": "1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": []
+}

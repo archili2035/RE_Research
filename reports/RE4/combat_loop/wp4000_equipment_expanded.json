@@ -1,0 +1,381 @@
+{
+  "Path": "natives/stm/_chainsaw/appsystem/weapon/weaponequipparamcataloguserdata.user.2",
+  "Root": {
+    "Index": 32,
+    "Class": "chainsaw.WeaponEquipParamCatalogUserData.Data",
+    "Userdata": null,
+    "Fields": {
+      "_WeaponID": 4000,
+      "_GenerateFollowTarget": 0,
+      "_Param": {
+        "Index": 2,
+        "Class": "chainsaw.WeaponEquipParamInfo",
+        "Userdata": null,
+        "Fields": {
+          "_Param": {
+            "Index": 1,
+            "Class": "chainsaw.WeaponEquipParam",
+            "Userdata": null,
+            "Fields": {
+              "ParentJointName": "R_Wep",
+              "LocalPosition": "<-0.0827, -0.027, 0.0075>",
+              "LocalRotation": "{X:0.4807976 Y:-0.5919678 Z:-0.3295864 W:0.5565795}",
+              "LocalScale": "<1, 1, 1>"
+            }
+          },
+          "_UniqueParam": []
+        }
+      },
+      "_IsEquipStorage": false,
+      "_StorageParam": {
+        "Index": 4,
+        "Class": "chainsaw.WeaponEquipParamInfo",
+        "Userdata": null,
+        "Fields": {
+          "_Param": {
+            "Index": 3,
+            "Class": "chainsaw.WeaponEquipParam",
+            "Userdata": null,
+            "Fields": {
+              "ParentJointName": "",
+              "LocalPosition": "<0, 0, 0>",
+              "LocalRotation": "{X:0 Y:0 Z:0 W:1}",
+              "LocalScale": "<1, 1, 1>"
+            }
+          },
+          "_UniqueParam": []
+        }
+      },
+      "_ThinkPlayerParam": {
+        "Index": 5,
+        "Class": "chainsaw.WeaponThinkPlayerParam",
+        "Userdata": null,
+        "Fields": {
+          "RangeDistance": 15
+        }
+      },
+      "_ReticleFitParamTable": {
+        "Index": 7,
+        "Class": "chainsaw.WeaponReticleFitParamTable",
+        "Userdata": null,
+        "Fields": {
+          "_ReticleFitEnable": true,
+          "_ReticleShape": 4,
+          "_DefaultParam": {
+            "Index": 6,
+            "Class": "chainsaw.WeaponReticleFitParam",
+            "Userdata": null,
+            "Fields": {
+              "_PointRange": "Range(0, 100)",
+              "_HoldAddPoint": 120,
+              "_MoveSubPoint": 1000,
+              "_CameraSubPoint": 123,
+              "_KeepFitLimitPoint": 99,
+              "_ShootSubPoint": 100
+            }
+          },
+          "_CustomParams": []
+        }
+      },
+      "_CameraRecoilParam": {
+        "Index": 9,
+        "Class": "chainsaw.CameraRecoilParam",
+        "Userdata": null,
+        "Fields": {
+          "_YawRangeDeg": "Range(0, 2)",
+          "_PitchRangeDeg": "Range(3.2, 0.5999999)",
+          "_Curve": {
+            "Index": 8,
+            "Class": "via.AnimationCurve",
+            "Userdata": null,
+            "Fields": {
+              "Keys": [
+                "0: 0",
+                "0.01996: 0",
+                "0.03: 1",
+                "0.4055: 0.3821654",
+                "1: -0.006060606"
+              ],
+              "MinValue": -1,
+              "MaxValue": 1,
+              "LoopStartTime": 0,
+              "LoopEndTime": 1,
+              "LoopCount": 0,
+              "LoopWrapNo": 2
+            }
+          },
+          "_CurveTime": 4,
+          "_InvalidCancelTime": 1
+        }
+      },
+      "_CameraShakeParam": {
+        "Index": 13,
+        "Class": "chainsaw.CameraShakeParam",
+        "Userdata": null,
+        "Fields": {
+          "_Type": 1,
+          "_Life": {
+            "Index": 11,
+            "Class": "chainsaw.CameraShakeParam.LifeParam",
+            "Userdata": null,
+            "Fields": {
+              "_IsLoop": false,
+              "_LifeTime": 0.5,
+              "_UseLifeAttenuation": true,
+              "_HasCurveData": true,
+              "_LifeCurve": {
+                "Index": 10,
+                "Class": "via.AnimationCurve",
+                "Userdata": null,
+                "Fields": {
+                  "Keys": [
+                    "0: 0",
+                    "0.1637: 0.9818181",
+                    "1: 0"
+                  ],
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "LoopStartTime": 0,
+                  "LoopEndTime": 1,
+                  "LoopCount": 0,
+                  "LoopWrapNo": 2
+                }
+              }
+            }
+          },
+          "_Move": {
+            "Index": 12,
+            "Class": "chainsaw.CameraShakeParam.MoveParam",
+            "Userdata": null,
+            "Fields": {
+              "_Period": "Range(0.133, 0.03299999)",
+              "_TranslationXRange": "Range(0, 0)",
+              "_TranslationYRange": "Range(0, 0)",
+              "_TranslationZRange": "Range(-0.004, 0.002)",
+              "_RotationXRange": "Range(0, 0)",
+              "_RotationYRange": "Range(0, 0)",
+              "_RotationZRange": "Range(0, 0)",
+              "_UseDistanceAttenuation": false,
+              "_DistanceAttenuationStart": 0,
+              "_DistanceAttenuationEnd": 0,
+              "_UseAngleAttenuation": false,
+              "_AngleAttenuationConeOffset": 0,
+              "_AngleAttenuationSpread": 0
+            }
+          }
+        }
+      },
+      "_WeaponStructureParam": {
+        "Index": 14,
+        "Class": "chainsaw.WeaponStructureParam",
+        "Userdata": null,
+        "Fields": {
+          "TypeOfReload": 0,
+          "TypeOfShoot": 0,
+          "ReloadNum": -1,
+          "_ReloadSpeedRate": 1,
+          "_ReloadParts": [
+            5
+          ],
+          "_NoAmmoPartsOff": [
+            20
+          ],
+          "_RapidSpeed": 2.3,
+          "_RapidBaseFrame": -1,
+          "_PumpActionRapidSpeed": 1
+        }
+      },
+      "_ScopeParam": {
+        "Index": 15,
+        "Class": "chainsaw.ScopeParam",
+        "Userdata": null,
+        "Fields": {
+          "_FOVMin": 5,
+          "_FOVMax": 25,
+          "_CameraOffSet": "<0, 0, 0>",
+          "SpeedAtFovMin": 1,
+          "SpeedAtFovMax": 1,
+          "PCSpeedScale": 1,
+          "CameraJoint": "scope_00",
+          "_Rates": []
+        }
+      },
+      "_HandShakeParam": {
+        "Index": 17,
+        "Class": "chainsaw.WeaponHandShakeParam",
+        "Userdata": null,
+        "Fields": {
+          "Time": 6,
+          "Curve": {
+            "Index": 16,
+            "Class": "via.AnimationCurve",
+            "Userdata": null,
+            "Fields": {
+              "Keys": [
+                "0: 0.4140128",
+                "1: 0.15"
+              ],
+              "MinValue": 0,
+              "MaxValue": 1,
+              "LoopStartTime": 0,
+              "LoopEndTime": 1,
+              "LoopCount": 0,
+              "LoopWrapNo": 2
+            }
+          },
+          "RStickOffset": 0.5
+        }
+      },
+      "_AdaptiveFeedBackParam": {
+        "Index": 19,
+        "Class": "chainsaw.WeaponAdaptiveFeedBackParam",
+        "Userdata": null,
+        "Fields": {
+          "_Data": {
+            "Index": 18,
+            "Class": "chainsaw.WeaponAdaptiveFeedBackUserData",
+            "Userdata": "_Chainsaw/AppSystem/Weapon/AdaptiveFeedBack/wp4000AdaptiveFeedBackUserData.user",
+            "Fields": {}
+          }
+        }
+      },
+      "_BuriedArmParam": {
+        "Index": 27,
+        "Class": "chainsaw.CharacterBuriedArmCorrectorUnit.Parameter",
+        "Userdata": null,
+        "Fields": {
+          "CorrectDampingParam": {
+            "Index": 20,
+            "Class": "chainsaw.DampingParam",
+            "Userdata": null,
+            "Fields": {
+              "_DampingRate": 0.8,
+              "_DampingTime": 0.15
+            }
+          },
+          "TargetPositionParameter": {
+            "Index": 21,
+            "Class": "chainsaw.ExtraJoint.Parameter",
+            "Userdata": null,
+            "Fields": {
+              "LocalPosition": "<0, 0, 0>",
+              "LocalRotation": "{X:0 Y:0 Z:0 W:1}",
+              "LocalScale": "<1, 1, 1>",
+              "ParentJointName": "R_Wep",
+              "ParentJointNameHash": 1138773017
+            }
+          },
+          "CorrectSensorParameter": {
+            "Index": 24,
+            "Class": "chainsaw.CharacterBuriedArmCorrectorUnit.Sensor.Parameter",
+            "Userdata": null,
+            "Fields": {
+              "_Radius": 0.1,
+              "_StartPosition": {
+                "Index": 22,
+                "Class": "chainsaw.ExtraJoint.Parameter",
+                "Userdata": null,
+                "Fields": {
+                  "LocalPosition": "<0, 0.2, 0.15>",
+                  "LocalRotation": "{X:0 Y:0 Z:0 W:1}",
+                  "LocalScale": "<1, 1, 1>",
+                  "ParentJointName": "R_Shoulder",
+                  "ParentJointNameHash": 767461792
+                }
+              },
+              "_EndPosition": {
+                "Index": 23,
+                "Class": "chainsaw.ExtraJoint.Parameter",
+                "Userdata": null,
+                "Fields": {
+                  "LocalPosition": "<-0.25, 0, 0.1>",
+                  "LocalRotation": "{X:0 Y:0 Z:0 W:1}",
+                  "LocalScale": "<1, 1, 1>",
+                  "ParentJointName": "R_Wep",
+                  "ParentJointNameHash": 1138773017
+                }
+              }
+            }
+          },
+          "CorrectPositionParameter": {
+            "Index": 25,
+            "Class": "chainsaw.ExtraJoint.Parameter",
+            "Userdata": null,
+            "Fields": {
+              "LocalPosition": "<-0.07, 0.2, 0.3>",
+              "LocalRotation": "{X:0 Y:0 Z:0 W:1}",
+              "LocalScale": "<1, 1, 1>",
+              "ParentJointName": "Spine_1",
+              "ParentJointNameHash": 1091167843
+            }
+          },
+          "CorrectRotation": "{X:0 Y:0 Z:0 W:1}",
+          "CorrectRotationCurve": {
+            "Index": 26,
+            "Class": "via.AnimationCurve",
+            "Userdata": null,
+            "Fields": {
+              "Keys": [
+                "0: 0",
+                "1: 1"
+              ],
+              "MinValue": 0,
+              "MaxValue": 1,
+              "LoopStartTime": 0,
+              "LoopEndTime": 1,
+              "LoopCount": 0,
+              "LoopWrapNo": 2
+            }
+          },
+          "CorrectHitRateNormalizeRange": "Range(0, 0.75)"
+        }
+      },
+      "_EnemyBuriedWeaponParam": {
+        "Index": 29,
+        "Class": "chainsaw.AnimWeaponPushbackUnit.WeaponParameter",
+        "Userdata": null,
+        "Fields": {
+          "_isUsePushBack": false,
+          "_EnablePushBackFromEnemy": false,
+          "_jointOffset": {
+            "Index": 28,
+            "Class": "chainsaw.AnimWeaponPushbackUnit.JointOffset",
+            "Userdata": null,
+            "Fields": {
+              "_offsetPos": "<0, 0, 0>"
+            }
+          },
+          "_isUseLeftHandModeSetting": false,
+          "_isReverseOffsetX": false,
+          "_isReverseOffsetY": false,
+          "_isReverseOffsetZ": false,
+          "_isTwoHanded": false,
+          "_MaxUpperBodyAngle": "<-25, 25, 25>"
+        }
+      },
+      "_ShoulderCorrectorParam": {
+        "Index": 30,
+        "Class": "chainsaw.WeaponShoulderCorrectorParam",
+        "Userdata": null,
+        "Fields": {
+          "_WeaponShoulderCorrectorEnableDistance": "Range(1, 50)",
+          "_WeaponShoulderCorrectorMaxAngleY": 7.52,
+          "_WeaponShoulderCorrectorMaxAngleX": 2,
+          "_WeaponShoulderCorrectorMinAngleY": 11,
+          "_WeaponShoulderCorrectorMinAngleX": 4,
+          "_WeaponShoulderCorrectorDelayRateFast": 0.05,
+          "_WeaponShoulderCorrectorDelayRateSlow": 0.005,
+          "_WeaponShoulderCorrectorDelayRateChangeDistance": 1
+        }
+      },
+      "_knifeCombatSpeedParam": {
+        "Index": 31,
+        "Class": "chainsaw.KnifeCombatSpeedParam",
+        "Userdata": null,
+        "Fields": {
+          "_KnifeCombatSpeed": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2434 @@
+{
+  "Path": "natives/stm/_chainsaw/appsystem/character/ch0a0z0/ch0a0z0_body.pfb.17",
+  "SchemaMismatches": [],
+  "Objects": [
+    {
+      "Ref": 1,
+      "Class": "via.GameObject"
+    },
+    {
+      "Ref": 2,
+      "Class": "via.Transform"
+    },
+    {
+      "Ref": 4,
+      "Class": "via.motion.ActorMotion"
+    },
+    {
+      "Ref": 14,
+      "Class": "via.motion.Motion"
+    },
+    {
+      "Ref": 15,
+      "Class": "chainsaw.EPVExpertDamageEffect"
+    },
+    {
+      "Ref": 17,
+      "Class": "via.effect.script.ObjectEffectManager"
+    },
+    {
+      "Ref": 21,
+      "Class": "chainsaw.ParentRTTContainer"
+    },
+    {
+      "Ref": 22,
+      "Class": "chainsaw.GPUClothCharacter"
+    },
+    {
+      "Ref": 23,
+      "Class": "chainsaw.MotionEventMediator"
+    },
+    {
+      "Ref": 26,
+      "Class": "chainsaw.MotionController"
+    },
+    {
+      "Ref": 27,
+      "Class": "chainsaw.EPVExpertAutoFootStep"
+    },
+    {
+      "Ref": 31,
+      "Class": "chainsaw.WaterObstacleController"
+    },
+    {
+      "Ref": 32,
+      "Class": "chainsaw.EPVExpertStandWave"
+    },
+    {
+      "Ref": 34,
+      "Class": "chainsaw.SkeletonObserver"
+    },
+    {
+      "Ref": 38,
+      "Class": "chainsaw.CharacterWeatherInfoHolder"
+    },
+    {
+      "Ref": 41,
+      "Class": "soundlib.SoundVibrationBehavior"
+    },
+    {
+      "Ref": 44,
+      "Class": "soundlib.SoundVibrationDefineInfoListDataHolder"
+    },
+    {
+      "Ref": 49,
+      "Class": "via.physics.Colliders"
+    },
+    {
+      "Ref": 50,
+      "Class": "via.motion.DummySkeleton"
+    },
+    {
+      "Ref": 52,
+      "Class": "via.physics.RequestSetCollider"
+    },
+    {
+      "Ref": 53,
+      "Class": "via.dynamics.RigidBodySet"
+    },
+    {
+      "Ref": 54,
+      "Class": "chainsaw.TimelineEventResetSimulation"
+    },
+    {
+      "Ref": 55,
+      "Class": "chainsaw.SoundMotionSequenceApp"
+    },
+    {
+      "Ref": 56,
+      "Class": "chainsaw.PlayerHapticsController"
+    },
+    {
+      "Ref": 57,
+      "Class": "chainsaw.TimelineEventMeshChanger"
+    },
+    {
+      "Ref": 58,
+      "Class": "chainsaw.SoundFsmStateHistory"
+    },
+    {
+      "Ref": 59,
+      "Class": "chainsaw.TargetMarker"
+    },
+    {
+      "Ref": 60,
+      "Class": "chainsaw.Ch0a0z0BodyUpdater"
+    },
+    {
+      "Ref": 61,
+      "Class": "via.physics.CharacterController"
+    },
+    {
+      "Ref": 62,
+      "Class": "chainsaw.AutoWalkCharacter"
+    },
+    {
+      "Ref": 63,
+      "Class": "chainsaw.PlayerActorZoneSensor"
+    },
+    {
+      "Ref": 64,
+      "Class": "chainsaw.PlayerGunDamageController"
+    },
+    {
+      "Ref": 70,
+      "Class": "chainsaw.StayAreaController"
+    },
+    {
+      "Ref": 72,
+      "Class": "chainsaw.MessageSpeakerRegister"
+    },
+    {
+      "Ref": 73,
+      "Class": "chainsaw.GroundAdsorber"
+    },
+    {
+      "Ref": 78,
+      "Class": "chainsaw.PlayerCameraPositionSetting"
+    },
+    {
+      "Ref": 79,
+      "Class": "chainsaw.MotionCameraContainer"
+    },
+    {
+      "Ref": 81,
+      "Class": "chainsaw.HitController"
+    },
+    {
+      "Ref": 88,
+      "Class": "via.motion.MotionFsm2"
+    },
+    {
+      "Ref": 89,
+      "Class": "chainsaw.SequenceTrackUpdater"
+    },
+    {
+      "Ref": 91,
+      "Class": "chainsaw.EmoteVoiceController"
+    },
+    {
+      "Ref": 96,
+      "Class": "chainsaw.CharacterControllerSupporter"
+    },
+    {
+      "Ref": 100,
+      "Class": "chainsaw.SoundCh0a0z0Container"
+    },
+    {
+      "Ref": 101,
+      "Class": "chainsaw.GrassZoneDetector"
+    },
+    {
+      "Ref": 102,
+      "Class": "chainsaw.SoundZoneWatcher"
+    },
+    {
+      "Ref": 103,
+      "Class": "chainsaw.TimelineEventActorPlayer"
+    },
+    {
+      "Ref": 104,
+      "Class": "chainsaw.PartsCollector"
+    },
+    {
+      "Ref": 111,
+      "Class": "chainsaw.InertiaMoveController"
+    },
+    {
+      "Ref": 112,
+      "Class": "chainsaw.SimulationPointOfSync"
+    },
+    {
+      "Ref": 113,
+      "Class": "chainsaw.AssistLightController"
+    },
+    {
+      "Ref": 114,
+      "Class": "via.dynamics.Ragdoll"
+    },
+    {
+      "Ref": 116,
+      "Class": "via.motion.MotionJackFsm2"
+    },
+    {
+      "Ref": 118,
+      "Class": "chainsaw.WindPushRegistrar"
+    },
+    {
+      "Ref": 119,
+      "Class": "chainsaw.PerformanceOptimizeZoneDetector"
+    },
+    {
+      "Ref": 120,
+      "Class": "chainsaw.TimelineInfectionController"
+    },
+    {
+      "Ref": 121,
+      "Class": "via.GameObject"
+    },
+    {
+      "Ref": 122,
+      "Class": "via.Transform"
+    },
+    {
+      "Ref": 123,
+      "Class": "via.render.VolumeOccludee"
+    },
+    {
+      "Ref": 124,
+      "Class": "chainsaw.LightOptimizer"
+    },
+    {
+      "Ref": 125,
+      "Class": "via.render.SpotLight"
+    },
+    {
+      "Ref": 127,
+      "Class": "chainsaw.SpotLightController"
+    },
+    {
+      "Ref": 128,
+      "Class": "chainsaw.PlayerLightObject"
+    },
+    {
+      "Ref": 129,
+      "Class": "via.GameObject"
+    },
+    {
+      "Ref": 130,
+      "Class": "via.Transform"
+    },
+    {
+      "Ref": 131,
+      "Class": "chainsaw.Flashlight"
+    },
+    {
+      "Ref": 132,
+      "Class": "via.GameObject"
+    },
+    {
+      "Ref": 133,
+      "Class": "via.Transform"
+    },
+    {
+      "Ref": 134,
+      "Class": "via.render.DepthOcclusion"
+    },
+    {
+      "Ref": 137,
+      "Class": "chainsaw.DepthOcclusionController"
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "via.GameObject",
+      "Userdata": null,
+      "Fields": {
+        "Name": "ch0a0z0_body",
+        "Tag": "Player|EventStop|GmPause",
+        "UpdateSelf": true,
+        "DrawSelf": true,
+        "Timescale": -1
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "via.Transform",
+      "Userdata": null,
+      "Fields": {
+        "Position": "<0, 0, 0>",
+        "Rotation": "{X:0 Y:0 Z:0 W:1}",
+        "Scale": "<1, 1, 1>",
+        "ParentJoint": "",
+        "SameJointsContraint": false,
+        "AbsoluteScaling": false,
+        "JointSegmentScale": false,
+        "JointFastLockScene": false
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "via.motion.ActorLayer",
+      "Userdata": null,
+      "Fields": {
+        "TargetLayerNo": 0,
+        "BlendMode": 0,
+        "BlendRate": 1,
+        "Resource": "",
+        "MotionBankID": 0,
+        "MotionID": 4294967295,
+        "Frame": 0,
+        "StartFrame": 0,
+        "Speed": 1,
+        "InterpolationMode": 1,
+        "InterpolationCurve": 0,
+        "InterpolationFrame": 0
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "via.motion.ActorMotion",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": false,
+        "DebugDraw": false,
+        "UpdateTiming": 3,
+        "Priority": 0,
+        "MotionStartFrameMode": 1,
+        "AutoPlayMotionState": false,
+        "Layer": [
+          {
+            "Ref": 3,
+            "Class": "via.motion.ActorLayer"
+          }
+        ],
+        "MotionBank": ""
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "via.motion.TreeLayer",
+      "Userdata": null,
+      "Fields": {
+        "EnableInertiaFade": true,
+        "AdditionalInterpolationNum": 3,
+        "BlendMode": 0,
+        "BlendRate": 1,
+        "WorldRotationBlend": false,
+        "Resource (.mot)": "",
+        "MotionBankID": 0,
+        "MotionID": 4294967295,
+        "JointMaskID": 0,
+        "JointMaskIDMode": 0,
+        "BaseLayerNo": 0,
+        "WrapMode": 0,
+        "MirrorSymmetry": false,
+        "ShowIntFrame": false,
+        "EnableDevelopNode": true,
+        "Frame": 0,
+        "Speed": 1,
+        "StopUpdate": false,
+        "AutoStopUpdate": false,
+        "AutoPrevMotRefClear": false,
+        "ContinueSnapshotFromTransorm": false,
+        "InterpolationMode": 1,
+        "InterpolationCurve": 0,
+        "InterpolationFrame": 0,
+        "unknown1": 0,
+        "unknown2": 0
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "via.motion.TreeLayer",
+      "Userdata": null,
+      "Fields": {
+        "EnableInertiaFade": true,
+        "AdditionalInterpolationNum": 3,
+        "BlendMode": 0,
+        "BlendRate": 1,
+        "WorldRotationBlend": false,
+        "Resource (.mot)": "",
+        "MotionBankID": 0,
+        "MotionID": 4294967295,
+        "JointMaskID": 3,
+        "JointMaskIDMode": 0,
+        "BaseLayerNo": 0,
+        "WrapMode": 0,
+        "MirrorSymmetry": false,
+        "ShowIntFrame": false,
+        "EnableDevelopNode": true,
+        "Frame": 0,
+        "Speed": 1,
+        "StopUpdate": false,
+        "AutoStopUpdate": false,
+        "AutoPrevMotRefClear": false,
+        "ContinueSnapshotFromTransorm": false,
+        "InterpolationMode": 1,
+        "InterpolationCurve": 0,
+        "InterpolationFrame": 0,
+        "unknown1": 0,
+        "unknown2": 0
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "via.motion.TreeLayer",
+      "Userdata": null,
+      "Fields": {
+        "EnableInertiaFade": true,
+        "AdditionalInterpolationNum": 3,
+        "BlendMode": 0,
+        "BlendRate": 1,
+        "WorldRotationBlend": false,
+        "Resource (.mot)": "",
+        "MotionBankID": 0,
+        "MotionID": 4294967295,
+        "JointMaskID": 8,
+        "JointMaskIDMode": 0,
+        "BaseLayerNo": 0,
+        "WrapMode": 0,
+        "MirrorSymmetry": false,
+        "ShowIntFrame": false,
+        "EnableDevelopNode": true,
+        "Frame": 0,
+        "Speed": 1,
+        "StopUpdate": false,
+        "AutoStopUpdate": false,
+        "AutoPrevMotRefClear": false,
+        "ContinueSnapshotFromTransorm": false,
+        "InterpolationMode": 1,
+        "InterpolationCurve": 0,
+        "InterpolationFrame": 0,
+        "unknown1": 0,
+        "unknown2": 0
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "via.motion.TreeLayer",
+      "Userdata": null,
+      "Fields": {
+        "EnableInertiaFade": true,
+        "AdditionalInterpolationNum": 3,
+        "BlendMode": 1,
+        "BlendRate": 1,
+        "WorldRotationBlend": false,
+        "Resource (.mot)": "",
+        "MotionBankID": 0,
+        "MotionID": 4294967295,
+        "JointMaskID": 4,
+        "JointMaskIDMode": 0,
+        "BaseLayerNo": 0,
+        "WrapMode": 0,
+        "MirrorSymmetry": false,
+        "ShowIntFrame": false,
+        "EnableDevelopNode": false,
+        "Frame": 0,
+        "Speed": 1,
+        "StopUpdate": false,
+        "AutoStopUpdate": false,
+        "AutoPrevMotRefClear": false,
+        "ContinueSnapshotFromTransorm": false,
+        "InterpolationMode": 1,
+        "InterpolationCurve": 0,
+        "InterpolationFrame": 0,
+        "unknown1": 0,
+        "unknown2": 0
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "via.motion.TreeLayer",
+      "Userdata": null,
+      "Fields": {
+        "EnableInertiaFade": true,
+        "AdditionalInterpolationNum": 3,
+        "BlendMode": 0,
+        "BlendRate": 1,
+        "WorldRotationBlend": false,
+        "Resource (.mot)": "",
+        "MotionBankID": 0,
+        "MotionID": 4294967295,
+        "JointMaskID": 3,
+        "JointMaskIDMode": 0,
+        "BaseLayerNo": 0,
+        "WrapMode": 0,
+        "MirrorSymmetry": false,
+        "ShowIntFrame": false,
+        "EnableDevelopNode": true,
+        "Frame": 0,
+        "Speed": 1,
+        "StopUpdate": false,
+        "AutoStopUpdate": false,
+        "AutoPrevMotRefClear": false,
+        "ContinueSnapshotFromTransorm": false,
+        "InterpolationMode": 1,
+        "InterpolationCurve": 0,
+        "InterpolationFrame": 0,
+        "unknown1": 0,
+        "unknown2": 0
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "via.motion.TreeLayer",
+      "Userdata": null,
+      "Fields": {
+        "EnableInertiaFade": true,
+        "AdditionalInterpolationNum": 3,
+        "BlendMode": 1,
+        "BlendRate": 1,
+        "WorldRotationBlend": false,
+        "Resource (.mot)": "",
+        "MotionBankID": 0,
+        "MotionID": 4294967295,
+        "JointMaskID": 0,
+        "JointMaskIDMode": 0,
+        "BaseLayerNo": 0,
+        "WrapMode": 0,
+        "MirrorSymmetry": false,
+        "ShowIntFrame": false,
+        "EnableDevelopNode": true,
+        "Frame": 0,
+        "Speed": 1,
+        "StopUpdate": false,
+        "AutoStopUpdate": false,
+        "AutoPrevMotRefClear": false,
+        "ContinueSnapshotFromTransorm": false,
+        "InterpolationMode": 1,
+        "InterpolationCurve": 0,
+        "InterpolationFrame": 0,
+        "unknown1": 0,
+        "unknown2": 0
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "via.motion.TreeLayer",
+      "Userdata": null,
+      "Fields": {
+        "EnableInertiaFade": true,
+        "AdditionalInterpolationNum": 3,
+        "BlendMode": 0,
+        "BlendRate": 1,
+        "WorldRotationBlend": false,
+        "Resource (.mot)": "",
+        "MotionBankID": 0,
+        "MotionID": 4294967295,
+        "JointMaskID": 12,
+        "JointMaskIDMode": 0,
+        "BaseLayerNo": 0,
+        "WrapMode": 0,
+        "MirrorSymmetry": false,
+        "ShowIntFrame": false,
+        "EnableDevelopNode": true,
+        "Frame": 0,
+        "Speed": 1,
+        "StopUpdate": false,
+        "AutoStopUpdate": false,
+        "AutoPrevMotRefClear": false,
+        "ContinueSnapshotFromTransorm": false,
+        "InterpolationMode": 1,
+        "InterpolationCurve": 0,
+        "InterpolationFrame": 0,
+        "unknown1": 0,
+        "unknown2": 0
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "via.motion.TreeLayer",
+      "Userdata": null,
+      "Fields": {
+        "EnableInertiaFade": true,
+        "AdditionalInterpolationNum": 3,
+        "BlendMode": 1,
+        "BlendRate": 1,
+        "WorldRotationBlend": false,
+        "Resource (.mot)": "",
+        "MotionBankID": 0,
+        "MotionID": 4294967295,
+        "JointMaskID": 0,
+        "JointMaskIDMode": 0,
+        "BaseLayerNo": 0,
+        "WrapMode": 0,
+        "MirrorSymmetry": false,
+        "ShowIntFrame": false,
+        "EnableDevelopNode": false,
+        "Frame": 0,
+        "Speed": 1,
+        "StopUpdate": false,
+        "AutoStopUpdate": false,
+        "AutoPrevMotRefClear": false,
+        "ContinueSnapshotFromTransorm": false,
+        "InterpolationMode": 1,
+        "InterpolationCurve": 0,
+        "InterpolationFrame": 0,
+        "unknown1": 0,
+        "unknown2": 0
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "via.motion.DynamicMotionBank",
+      "Userdata": null,
+      "Fields": {
+        "Priority": 99,
+        "OverwriteBankID": false,
+        "BankID": 0,
+        "OverwriteBankType": false,
+        "BankType": 0,
+        "OverwriteBankTypeMaskBit": false,
+        "BankTypeMaskBit": 0,
+        "v7_MotionBank": "_Chainsaw/Animation/ch/cha0/motbank/cha0.motbank",
+        "v8_MotionList": ""
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "via.motion.Motion",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "PlayState": 0,
+        "PlaySpeed": 1,
+        "PlayReset": false,
+        "ExecutePriority": 0,
+        "AfterParentAnimation": false,
+        "AfterParentAnimationOrder": 0,
+        "ParallelAfterParent": false,
+        "RootMotion": 2,
+        "RootScaleDisabled": false,
+        "StopAtMotionEnd": false,
+        "MotionBankAsset": "_Chainsaw/AppSystem/Character/ch0Common/Motion/ch0CommonBank.motbank",
+        "UserVariables": "_Chainsaw/AppSystem/Character/ch0Common/UserVariables/ch0CommonMFsmUserVariables.uvar",
+        "JointMap": "_Chainsaw/AppSystem/Character/ch0Common/JointMap/ch0CommonJointMap.jmap",
+        "JointLODGroup": "",
+        "TargetBankType": 0,
+        "EnableLayerUpdateOrder": false,
+        "Layer": [
+          {
+            "Ref": 5,
+            "Class": "via.motion.TreeLayer"
+          },
+          {
+            "Ref": 6,
+            "Class": "via.motion.TreeLayer"
+          },
+          {
+            "Ref": 7,
+            "Class": "via.motion.TreeLayer"
+          },
+          {
+            "Ref": 8,
+            "Class": "via.motion.TreeLayer"
+          },
+          {
+            "Ref": 9,
+            "Class": "via.motion.TreeLayer"
+          },
+          {
+            "Ref": 10,
+            "Class": "via.motion.TreeLayer"
+          },
+          {
+            "Ref": 11,
+            "Class": "via.motion.TreeLayer"
+          },
+          {
+            "Ref": 12,
+            "Class": "via.motion.TreeLayer"
+          }
+        ],
+        "MotionBank": [],
+        "DynamicMotionBank": [
+          {
+            "Ref": 13,
+            "Class": "via.motion.DynamicMotionBank"
+          }
+        ],
+        "JointMapExpressionEnabled": true,
+        "ExpressionLOD": 0,
+        "IntervalUpdateOption": 0,
+        "EnabledSkeletonMask": true,
+        "JointLODGroupLevel": 0,
+        "JointLODGroupForceSkips": 0,
+        "BoneColor(?)": "00000000",
+        "GridSize(?)": 0,
+        "DebugDrawJointSize(?)": 0
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "chainsaw.EPVExpertDamageEffect",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_StampDatas": []
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "via.Prefab",
+      "Userdata": null,
+      "Fields": {
+        "Standby": true,
+        "Path": "_Chainsaw/VFX/Provider/EPV_Character/EPV_cha0/epvc_0015_cha0_0000.pfb"
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "via.effect.script.ObjectEffectManager",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_DisableRequestEffect": false,
+        "DataContainer": {
+          "Ref": 16,
+          "Class": "via.Prefab"
+        },
+        "ExternalDataContainers": [],
+        "TargetGameObject": "Ref<00000000-0000-0000-0000-000000000000 => >",
+        "ExternalPropertys": [],
+        "disableVFXTriggerTrack": false,
+        "disableVFXRangeTrack": false,
+        "disableMotionJackCheck": false,
+        "_VFXTriggerTrackUseHighestWeight": false,
+        "_VFXRangeTrackUseHighestWeight": false,
+        "_StaticDataContainer": false,
+        "_DisableByEmptyDataContainer": true
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "chainsaw.ParentRTTContainer.RTTContainerSetting",
+      "Userdata": null,
+      "Fields": {
+        "Name": "Head",
+        "Size": 3
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "chainsaw.ParentRTTContainer.RTTContainerSetting",
+      "Userdata": null,
+      "Fields": {
+        "Name": "Body",
+        "Size": 3
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "chainsaw.ParentRTTContainer.RTTContainerSetting",
+      "Userdata": null,
+      "Fields": {
+        "Name": "Body_S",
+        "Size": 4
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "chainsaw.ParentRTTContainer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_UseFixedTexture": false,
+        "RTTContainerSettingList": [
+          {
+            "Ref": 18,
+            "Class": "chainsaw.ParentRTTContainer.RTTContainerSetting"
+          },
+          {
+            "Ref": 19,
+            "Class": "chainsaw.ParentRTTContainer.RTTContainerSetting"
+          },
+          {
+            "Ref": 20,
+            "Class": "chainsaw.ParentRTTContainer.RTTContainerSetting"
+          }
+        ],
+        "FixedRTTContainerSettingList": []
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "chainsaw.GPUClothCharacter",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_BodyCapsuleJoint1": "R_Foot",
+        "_BodyCapsuleJoint2": "Head",
+        "_BodyCapsuleRad": 0.25,
+        "_HandCapsuleJoint1": "R_Forearm",
+        "_HandCapsuleJoint2": "R_Hand",
+        "_HandCapsuleRad": 0.15
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "chainsaw.MotionEventMediator",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "chainsaw.MotionTransitionUserData",
+      "Userdata": "_Chainsaw/Animation/ch/cha0/userdata/cha0z0MotionTransitionUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 25,
+      "Class": "chainsaw.TramUnitUserData",
+      "Userdata": "_Chainsaw/Animation/ch/cha0/userdata/tram/ch0a0z0TramUnitData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 26,
+      "Class": "chainsaw.MotionController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_UserData": {
+          "Ref": 24,
+          "Class": "chainsaw.MotionTransitionUserData"
+        },
+        "_IsNotInterpolationFromEmptyOnLayer0": true,
+        "_TramUnitUserData": {
+          "Ref": 25,
+          "Class": "chainsaw.TramUnitUserData"
+        },
+        "_InterpolationJointGroupData": {
+          "Ref": 0,
+          "Class": ""
+        }
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "chainsaw.EPVExpertAutoFootStep",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "via.Prefab",
+      "Userdata": null,
+      "Fields": {
+        "Standby": true,
+        "Path": "_Chainsaw/AppSystem/BasePrefab/WaterObstacle.pfb"
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "share.PrefabController",
+      "Userdata": null,
+      "Fields": {
+        "_Item": {
+          "Ref": 28,
+          "Class": "via.Prefab"
+        },
+        "_IsConvertVec3ToPosition": true,
+        "_LoadPriority": 32767
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "chainsaw.WaterObstacleSettingUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0a0z0/UserData/ch0a0z0ObstacleSetting.user",
+      "Fields": {}
+    },
+    {
+      "Index": 31,
+      "Class": "chainsaw.WaterObstacleController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_WaterObstaclePrefab": {
+          "Ref": 29,
+          "Class": "share.PrefabController"
+        },
+        "_WaterObstacleUserData": {
+          "Ref": 30,
+          "Class": "chainsaw.WaterObstacleSettingUserData"
+        }
+      }
+    },
+    {
+      "Index": 32,
+      "Class": "chainsaw.EPVExpertStandWave",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "EffectColor": "00000000"
+      }
+    },
+    {
+      "Index": 33,
+      "Class": "chainsaw.BoneMoveObserverUserdata",
+      "Userdata": "_Chainsaw/VFX/Provider/EPV_System/EPV_StandWaveData/epv_0015_standwaveuserdata_epve_common_0000.user",
+      "Fields": {}
+    },
+    {
+      "Index": 34,
+      "Class": "chainsaw.SkeletonObserver",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "UserDatas": [
+          {
+            "Ref": 33,
+            "Class": "chainsaw.BoneMoveObserverUserdata"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 35,
+      "Class": "chainsaw.CharacterWeatherInfoHolder.RainInfo",
+      "Userdata": null,
+      "Fields": {
+        "_PartsName": "body",
+        "_PartsKey": 971113606,
+        "_RainRate": 0,
+        "_RainScale": 0,
+        "_WetRate": 0
+      }
+    },
+    {
+      "Index": 36,
+      "Class": "chainsaw.CharacterWeatherInfoHolder.RainInfo",
+      "Userdata": null,
+      "Fields": {
+        "_PartsName": "head",
+        "_PartsKey": 737706723,
+        "_RainRate": 0,
+        "_RainScale": 0,
+        "_WetRate": 0
+      }
+    },
+    {
+      "Index": 37,
+      "Class": "chainsaw.CharacterWeatherInfoHolder.RainInfo",
+      "Userdata": null,
+      "Fields": {
+        "_PartsName": "hair",
+        "_PartsKey": 2284712971,
+        "_RainRate": 0,
+        "_RainScale": 0,
+        "_WetRate": 0
+      }
+    },
+    {
+      "Index": 38,
+      "Class": "chainsaw.CharacterWeatherInfoHolder",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_RainInfoList": [
+          {
+            "Ref": 35,
+            "Class": "chainsaw.CharacterWeatherInfoHolder.RainInfo"
+          },
+          {
+            "Ref": 36,
+            "Class": "chainsaw.CharacterWeatherInfoHolder.RainInfo"
+          },
+          {
+            "Ref": 37,
+            "Class": "chainsaw.CharacterWeatherInfoHolder.RainInfo"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 39,
+      "Class": "soundlib.SoundVibInfoByTriggerListData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0a0z0/Vibration/Ch0a0z0SoundVibInfoByTriggerListData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 40,
+      "Class": "soundlib.SoundVibInfoByWavListData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0a0z0/Vibration/Ch0a0z0SoundVibInfoByWavListData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 41,
+      "Class": "soundlib.SoundVibrationBehavior",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_AssetList": [
+          {
+            "Ref": 39,
+            "Class": "soundlib.SoundVibInfoByTriggerListData"
+          },
+          {
+            "Ref": 40,
+            "Class": "soundlib.SoundVibInfoByWavListData"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 42,
+      "Class": "soundlib.SoundVibrationDefineInfoListData",
+      "Userdata": "_Chainsaw/Test/Personal/Programmer/masatoshi-fukazawa/Haptics/SoundVibrationDefineInfoListData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 43,
+      "Class": "soundlib.SoundVibrationDefineInfoListData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0a0z0/Vibration/Ch0a0z0SoundVibrationDefineInfoListData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 44,
+      "Class": "soundlib.SoundVibrationDefineInfoListDataHolder",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_Data": [
+          {
+            "Ref": 42,
+            "Class": "soundlib.SoundVibrationDefineInfoListData"
+          },
+          {
+            "Ref": 43,
+            "Class": "soundlib.SoundVibrationDefineInfoListData"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 45,
+      "Class": "via.physics.SphereShape",
+      "Userdata": null,
+      "Fields": {
+        "UserData": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "Sphere": "<0, 0, 0, 1>"
+      }
+    },
+    {
+      "Index": 46,
+      "Class": "via.physics.FilterInfo",
+      "Userdata": null,
+      "Fields": {
+        "Layer": 0,
+        "Group": 18103,
+        "SubGroup": 0,
+        "IgnoreSubGroup": 0,
+        "MaskBits": 4294967295
+      }
+    },
+    {
+      "Index": 47,
+      "Class": "via.physics.UserData",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 48,
+      "Class": "via.physics.Collider",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "DevelopDraw": true,
+        "Shape": {
+          "Ref": 45,
+          "Class": "via.physics.SphereShape"
+        },
+        "FilterInfo": {
+          "Ref": 46,
+          "Class": "via.physics.FilterInfo"
+        },
+        "Userdata": {
+          "Ref": 47,
+          "Class": "via.physics.UserData"
+        },
+        "CollisionFilter": "_Chainsaw/Config/Physics/Filter/TargetWeather.cfil",
+        "CollisionMaterialResource": "",
+        "JointNameA": "",
+        "JointNameB": ""
+      }
+    },
+    {
+      "Index": 49,
+      "Class": "via.physics.Colliders",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "DeveloperDraw": true,
+        "DevelopDrawFillMode": 1,
+        "DependencyResources": [],
+        "Static": false,
+        "Colliders": [
+          {
+            "Ref": 48,
+            "Class": "via.physics.Collider"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 50,
+      "Class": "via.motion.DummySkeleton",
+      "Userdata": null,
+      "Fields": {
+        "SkeletonResourceHandle": "_Chainsaw/Character/ch/cha0/cha000.skeleton"
+      }
+    },
+    {
+      "Index": 51,
+      "Class": "via.physics.RequestSetCollider.RequestSetGroup",
+      "Userdata": null,
+      "Fields": {
+        "File": "_Chainsaw/AppSystem/Character/ch0a0z0/Collider/ch0a0z0.rcol"
+      }
+    },
+    {
+      "Index": 52,
+      "Class": "via.physics.RequestSetCollider",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "DeveloperDraw": true,
+        "DevelopDrawFillMode": 1,
+        "DependencyResources": [],
+        "Verbose": false,
+        "RequestSetGroups": [
+          {
+            "Ref": 51,
+            "Class": "via.physics.RequestSetCollider.RequestSetGroup"
+          }
+        ],
+        "BankResource": "",
+        "NumExecuteWorkers": 4,
+        "SkipIdsMask": 0
+      }
+    },
+    {
+      "Index": 53,
+      "Class": "via.dynamics.RigidBodySet",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": false,
+        "WorldNameHash": 0,
+        "DevelopDraw": false,
+        "Static": false,
+        "CalculateTypes": 1,
+        "OverwritePosture": true,
+        "StateName": "KeyFramedStates",
+        "StateNameHash": 1725923311,
+        "Resource": "_Chainsaw/AppSystem/Character/ch0Common/Dynamics/chCommonRigidBodySet.rbs",
+        "LinearDamping": 0,
+        "AngularDamping": 0,
+        "State": -1,
+        "BlendWeight": 1,
+        "DisableScale": false
+      }
+    },
+    {
+      "Index": 54,
+      "Class": "chainsaw.TimelineEventResetSimulation",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_OverWriteStabilizeNum": 50,
+        "_UseStabilizeNumFromClip": false,
+        "_StabliizeNumFromClip": 50,
+        "_StrandWindDamping": 0.1,
+        "_ChainSubReduceDistance": 0
+      }
+    },
+    {
+      "Index": 55,
+      "Class": "chainsaw.SoundMotionSequenceApp",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_UseAutoTrigger": true,
+        "_TriggerParent": false,
+        "_TriggerMyself": false,
+        "_LimitDistance": 0,
+        "_UpdateInvisible": false
+      }
+    },
+    {
+      "Index": 56,
+      "Class": "chainsaw.PlayerHapticsController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 57,
+      "Class": "chainsaw.TimelineEventMeshChanger",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_IndexList": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Index": 58,
+      "Class": "chainsaw.SoundFsmStateHistory",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 59,
+      "Class": "chainsaw.TargetMarker",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_TargetJointNames": [],
+        "_UseTargetJoint": false,
+        "_TargetOffset": "<0, 1, 0>"
+      }
+    },
+    {
+      "Index": 60,
+      "Class": "chainsaw.Ch0a0z0BodyUpdater",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "NormalCollision": "_Chainsaw/Config/Physics/Filter/CharacterDefault.cfil",
+        "FlyCollision": "_Chainsaw/Config/Physics/Filter/CharacterCliffWallPass.cfil",
+        "WalkChangeFrame": 8
+      }
+    },
+    {
+      "Index": 61,
+      "Class": "via.physics.CharacterController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "DeveloperDraw": true,
+        "DevelopDrawFillMode": 1,
+        "DependencyResources": [],
+        "GravityDirection": "<0, -1, 0>",
+        "GroupId": 31,
+        "LocalMode": false,
+        "IgnoreRotation": false,
+        "IgnoreParentRotation": false,
+        "AdsorbMode": false,
+        "HistoryOffset(?)": 0,
+        "LoopCount": 100,
+        "OverwritePosition": true,
+        "LocalOffsetPosition": "<0, 0, 0>",
+        "Height": 1.8,
+        "Radius": 0.4,
+        "SlopeLimit": 60,
+        "VolumeGrowth": 0.2,
+        "MovementThreshold": 0.001,
+        "SlideMovementLimit": 1000,
+        "Jump": false,
+        "IgnoreVerticalRiseAdjust": false,
+        "IgnoreBackfaceTriangle": false,
+        "FilterResource": "_Chainsaw/Config/Physics/Filter/CharacterDefault.cfil"
+      }
+    },
+    {
+      "Index": 62,
+      "Class": "chainsaw.AutoWalkCharacter",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_LayerIdx": 7,
+        "_AnimationAngleThreshold": 0.7853982
+      }
+    },
+    {
+      "Index": 63,
+      "Class": "chainsaw.PlayerActorZoneSensor",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 64,
+      "Class": "chainsaw.PlayerGunDamageController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 65,
+      "Class": "chainsaw.StageIdentifier",
+      "Userdata": null,
+      "Fields": {
+        "_Location": -1,
+        "_Stage": -1,
+        "_Area": 0
+      }
+    },
+    {
+      "Index": 66,
+      "Class": "chainsaw.StageIdentifier",
+      "Userdata": null,
+      "Fields": {
+        "_Location": -1,
+        "_Stage": 46,
+        "_Area": 0
+      }
+    },
+    {
+      "Index": 67,
+      "Class": "chainsaw.StageIdentifier",
+      "Userdata": null,
+      "Fields": {
+        "_Location": -1,
+        "_Stage": 46,
+        "_Area": 0
+      }
+    },
+    {
+      "Index": 68,
+      "Class": "chainsaw.StageIdentifier",
+      "Userdata": null,
+      "Fields": {
+        "_Location": -1,
+        "_Stage": 46,
+        "_Area": 0
+      }
+    },
+    {
+      "Index": 69,
+      "Class": "chainsaw.StageIdentifier",
+      "Userdata": null,
+      "Fields": {
+        "_Location": -1,
+        "_Stage": 46,
+        "_Area": 0
+      }
+    },
+    {
+      "Index": 70,
+      "Class": "chainsaw.StayAreaController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_CurrentInfo": {
+          "Ref": 65,
+          "Class": "chainsaw.StageIdentifier"
+        },
+        "_LastAvailableInfo": {
+          "Ref": 66,
+          "Class": "chainsaw.StageIdentifier"
+        },
+        "_SpaceInfo": {
+          "Ref": 67,
+          "Class": "chainsaw.StageIdentifier"
+        },
+        "_LastAvailableSpaceInfo": {
+          "Ref": 68,
+          "Class": "chainsaw.StageIdentifier"
+        },
+        "_AssignInfo": {
+          "Ref": 69,
+          "Class": "chainsaw.StageIdentifier"
+        },
+        "_UpdateFrequency": 2,
+        "_ConsiderLastResult": false,
+        "_AutoDynamicSpaceUpdate": false,
+        "_RayAxisYOffset": 0,
+        "_RayStartOffset": 1,
+        "_RayEndOffset": 3,
+        "_AutoUpdateThreshold": 0.01
+      }
+    },
+    {
+      "Index": 71,
+      "Class": "chainsaw.MessageSpeakerRegister.AdditionalSettingData",
+      "Userdata": null,
+      "Fields": {
+        "_HasVariation": false
+      }
+    },
+    {
+      "Index": 72,
+      "Class": "chainsaw.MessageSpeakerRegister",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_SpeakerResourceId": "cha000",
+        "_AdditionalData": {
+          "Ref": 71,
+          "Class": "chainsaw.MessageSpeakerRegister.AdditionalSettingData"
+        },
+        "_Priority": 0
+      }
+    },
+    {
+      "Index": 73,
+      "Class": "chainsaw.GroundAdsorber",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_GravitationalAcceleration": 24,
+        "_RecoveryTime": 15,
+        "_GroundSearchRadius": 0.0001,
+        "_GroundSearchDistance": 1,
+        "_FallLimitHeight": 0.7,
+        "_TakeOffLimitSpeed": 7,
+        "_SpeedMeasurementType": 1,
+        "_LimitFreeFallSpeedXZ": 1,
+        "_EnabledCharacterControllerControl": true,
+        "_EnabledCharacterController": true,
+        "_EnabledOverridePosition": true
+      }
+    },
+    {
+      "Index": 74,
+      "Class": "chainsaw.PlayerCameraSettingUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ch0a0z0CameraSetting.user",
+      "Fields": {}
+    },
+    {
+      "Index": 75,
+      "Class": "chainsaw.PlayerCameraOverrideConditionUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ch0a0zOverrideCameraSetting.user",
+      "Fields": {}
+    },
+    {
+      "Index": 76,
+      "Class": "chainsaw.PlayerCameraForceTwirlerUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ch0a0z0CameraForceTwirlerSetting.user",
+      "Fields": {}
+    },
+    {
+      "Index": 77,
+      "Class": "chainsaw.PlayerCameraShakeUserData",
+      "Userdata": "_Chainsaw/AppSystem/Camera/PlayerCameraController/ch0a0z0/ch0a0z0CameraShakeSetting.user",
+      "Fields": {}
+    },
+    {
+      "Index": 78,
+      "Class": "chainsaw.PlayerCameraPositionSetting",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_UserData": {
+          "Ref": 74,
+          "Class": "chainsaw.PlayerCameraSettingUserData"
+        },
+        "_OverrideUserData": {
+          "Ref": 75,
+          "Class": "chainsaw.PlayerCameraOverrideConditionUserData"
+        },
+        "_ForceTwirlerUserData": {
+          "Ref": 76,
+          "Class": "chainsaw.PlayerCameraForceTwirlerUserData"
+        },
+        "_ShakeUserData": {
+          "Ref": 77,
+          "Class": "chainsaw.PlayerCameraShakeUserData"
+        }
+      }
+    },
+    {
+      "Index": 79,
+      "Class": "chainsaw.MotionCameraContainer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_BankAsset": "_Chainsaw/Animation/ch/cha0/cambank/cha0.mcambank"
+      }
+    },
+    {
+      "Index": 80,
+      "Class": "chainsaw.collision.HitControllerUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonHitControllerData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 81,
+      "Class": "chainsaw.HitController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_UserData": {
+          "Ref": 80,
+          "Class": "chainsaw.collision.HitControllerUserData"
+        }
+      }
+    },
+    {
+      "Index": 82,
+      "Class": "via.motion.MotionFsm2Layer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Resource": "",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0,
+        "MotionFsm2Resource": "_Chainsaw/AppSystem/Character/ch0Common/Motion/Fsm/ch0Common.motfsm2",
+        "TargetMotionLayerNo": -1,
+        "ExecuteMotionLayerNo": 0,
+        "OverwriteJointMaskID": false,
+        "LocalBankType": 0,
+        "OverwriteLocalBankType": false,
+        "BlendMode": 0,
+        "OverwriteBlendMode": false,
+        "BlendRate": 1,
+        "OverwriteBlendRate": false
+      }
+    },
+    {
+      "Index": 83,
+      "Class": "via.motion.MotionFsm2Layer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Resource": "",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0,
+        "MotionFsm2Resource": "_Chainsaw/AppSystem/Character/ch0Common/Motion/Fsm/ch0CommonArm.motfsm2",
+        "TargetMotionLayerNo": -1,
+        "ExecuteMotionLayerNo": 0,
+        "OverwriteJointMaskID": false,
+        "LocalBankType": 0,
+        "OverwriteLocalBankType": false,
+        "BlendMode": 0,
+        "OverwriteBlendMode": false,
+        "BlendRate": 1,
+        "OverwriteBlendRate": false
+      }
+    },
+    {
+      "Index": 84,
+      "Class": "via.motion.MotionFsm2Layer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": false,
+        "Resource": "",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0,
+        "MotionFsm2Resource": "",
+        "TargetMotionLayerNo": -1,
+        "ExecuteMotionLayerNo": 0,
+        "OverwriteJointMaskID": false,
+        "LocalBankType": 0,
+        "OverwriteLocalBankType": false,
+        "BlendMode": 0,
+        "OverwriteBlendMode": false,
+        "BlendRate": 1,
+        "OverwriteBlendRate": false
+      }
+    },
+    {
+      "Index": 85,
+      "Class": "via.motion.MotionFsm2Layer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Resource": "",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0,
+        "MotionFsm2Resource": "",
+        "TargetMotionLayerNo": -1,
+        "ExecuteMotionLayerNo": 0,
+        "OverwriteJointMaskID": false,
+        "LocalBankType": 0,
+        "OverwriteLocalBankType": false,
+        "BlendMode": 0,
+        "OverwriteBlendMode": false,
+        "BlendRate": 1,
+        "OverwriteBlendRate": false
+      }
+    },
+    {
+      "Index": 86,
+      "Class": "via.motion.MotionFsm2Layer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Resource": "",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0,
+        "MotionFsm2Resource": "_Chainsaw/AppSystem/Character/ch0Common/Motion/Fsm/ch0CommonUpperBody.motfsm2",
+        "TargetMotionLayerNo": -1,
+        "ExecuteMotionLayerNo": 0,
+        "OverwriteJointMaskID": false,
+        "LocalBankType": 0,
+        "OverwriteLocalBankType": false,
+        "BlendMode": 0,
+        "OverwriteBlendMode": false,
+        "BlendRate": 1,
+        "OverwriteBlendRate": false
+      }
+    },
+    {
+      "Index": 87,
+      "Class": "via.motion.MotionFsm2Layer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Resource": "",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0,
+        "MotionFsm2Resource": "_Chainsaw/AppSystem/Character/ch0Common/Motion/Fsm/ch0CommonUpperBodyAdd.motfsm2",
+        "TargetMotionLayerNo": -1,
+        "ExecuteMotionLayerNo": 0,
+        "OverwriteJointMaskID": false,
+        "LocalBankType": 0,
+        "OverwriteLocalBankType": false,
+        "BlendMode": 0,
+        "OverwriteBlendMode": false,
+        "BlendRate": 1,
+        "OverwriteBlendRate": false
+      }
+    },
+    {
+      "Index": 88,
+      "Class": "via.motion.MotionFsm2",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Trees": [],
+        "UserVariables": "",
+        "ExecLine": 2,
+        "ExecGroup": 0,
+        "PuppetMode": false,
+        "PuppetKeepActivation": false,
+        "ToolPuppetMode(?)": false,
+        "DevelopOwnerGameObject": 0,
+        "v9_AutoCreateMotionLayer": false,
+        "v10_StopExeWithMotStopAtEnd": false,
+        "v11_Layer": [
+          {
+            "Ref": 82,
+            "Class": "via.motion.MotionFsm2Layer"
+          },
+          {
+            "Ref": 83,
+            "Class": "via.motion.MotionFsm2Layer"
+          },
+          {
+            "Ref": 84,
+            "Class": "via.motion.MotionFsm2Layer"
+          },
+          {
+            "Ref": 85,
+            "Class": "via.motion.MotionFsm2Layer"
+          },
+          {
+            "Ref": 86,
+            "Class": "via.motion.MotionFsm2Layer"
+          },
+          {
+            "Ref": 87,
+            "Class": "via.motion.MotionFsm2Layer"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 89,
+      "Class": "chainsaw.SequenceTrackUpdater",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 90,
+      "Class": "chainsaw.Timer",
+      "Userdata": null,
+      "Fields": {
+        "_Mode": 0,
+        "_TimeLimit": 10,
+        "_Type": 0
+      }
+    },
+    {
+      "Index": 91,
+      "Class": "chainsaw.EmoteVoiceController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "HoldEmoteTimer": {
+          "Ref": 90,
+          "Class": "chainsaw.Timer"
+        }
+      }
+    },
+    {
+      "Index": 92,
+      "Class": "chainsaw.CharacterControllerSupporterUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0Common/UserData/ch0CommonCharacterControllerSupporterUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 93,
+      "Class": "chainsaw.CharacterControllerSupporterUserData.CapsuleParam",
+      "Userdata": null,
+      "Fields": {
+        "_UseStairOffset": false,
+        "_StairOffsetDisableRate": 0.8,
+        "_StairOffsetDisableTime": 1,
+        "_ConstJointName": "Neck_0",
+        "_ConstJointHash": 3276980779,
+        "_Radius": 0.4,
+        "_OffsetType": 0,
+        "_IsZeroY": true,
+        "_Offset": "<0, 0, 0>",
+        "_StairOffset": "<0, 0, 0>",
+        "_Height": 1.8
+      }
+    },
+    {
+      "Index": 94,
+      "Class": "chainsaw.CharacterControllerSupporterUserData.SphereParam",
+      "Userdata": null,
+      "Fields": {
+        "_UseStairOffset": false,
+        "_StairOffsetDisableRate": 0.8,
+        "_StairOffsetDisableTime": 1,
+        "_ConstJointName": "Neck_0",
+        "_ConstJointHash": 3276980779,
+        "_Radius": 0.1,
+        "_OffsetType": 0,
+        "_IsZeroY": true,
+        "_Offset": "<0, 0, 0>",
+        "_StairOffset": "<0, 0, 0>"
+      }
+    },
+    {
+      "Index": 95,
+      "Class": "chainsaw.DampingFloat",
+      "Userdata": null,
+      "Fields": {
+        "_DampingRate": 0.9,
+        "_DampingTime": 0.2
+      }
+    },
+    {
+      "Index": 96,
+      "Class": "chainsaw.CharacterControllerSupporter",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_UserData": {
+          "Ref": 92,
+          "Class": "chainsaw.CharacterControllerSupporterUserData"
+        },
+        "_OffsetEdgeWidth": 0.05,
+        "_EnableNormalAngle": "Range(0.7853982, 1.570796)",
+        "_DefaultShape": {
+          "Ref": 93,
+          "Class": "chainsaw.CharacterControllerSupporterUserData.CapsuleParam"
+        },
+        "_DefaultAdjustShape": {
+          "Ref": 94,
+          "Class": "chainsaw.CharacterControllerSupporterUserData.SphereParam"
+        },
+        "_AdjustSpeed": {
+          "Ref": 95,
+          "Class": "chainsaw.DampingFloat"
+        }
+      }
+    },
+    {
+      "Index": 97,
+      "Class": "soundlib.SoundContainerListData",
+      "Userdata": "_Chainsaw/Sound/Resource/Container/Character/snd_cont_cha0.user",
+      "Fields": {}
+    },
+    {
+      "Index": 98,
+      "Class": "chainsaw.SoundPlayerContainer.SoundBreathInfo",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 99,
+      "Class": "chainsaw.SoundPlayerContainer.SoundGrassInfo",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 100,
+      "Class": "chainsaw.SoundCh0a0z0Container",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_UserDataList": [
+          {
+            "Ref": 97,
+            "Class": "soundlib.SoundContainerListData"
+          }
+        ],
+        "_DynamicLoadData": false,
+        "_BreathInfo": {
+          "Ref": 98,
+          "Class": "chainsaw.SoundPlayerContainer.SoundBreathInfo"
+        },
+        "_GrassInfo": {
+          "Ref": 99,
+          "Class": "chainsaw.SoundPlayerContainer.SoundGrassInfo"
+        },
+        "_CalcSpeed": true
+      }
+    },
+    {
+      "Index": 101,
+      "Class": "chainsaw.GrassZoneDetector",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 102,
+      "Class": "chainsaw.SoundZoneWatcher",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_Category": 0
+      }
+    },
+    {
+      "Index": 103,
+      "Class": "chainsaw.TimelineEventActorPlayer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 104,
+      "Class": "chainsaw.PartsCollector",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 105,
+      "Class": "chainsaw.InertiaMoveUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0a0z0/UserData/InertiaMoveRun.user",
+      "Fields": {}
+    },
+    {
+      "Index": 106,
+      "Class": "chainsaw.InertiaMoveController.UserDataSetting",
+      "Userdata": null,
+      "Fields": {
+        "_KeyName": "Run",
+        "_KeyHash": 847302998,
+        "UserData": {
+          "Ref": 105,
+          "Class": "chainsaw.InertiaMoveUserData"
+        }
+      }
+    },
+    {
+      "Index": 107,
+      "Class": "chainsaw.InertiaMoveUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0a0z0/UserData/InertiaMoveDash.user",
+      "Fields": {}
+    },
+    {
+      "Index": 108,
+      "Class": "chainsaw.InertiaMoveController.UserDataSetting",
+      "Userdata": null,
+      "Fields": {
+        "_KeyName": "Dash",
+        "_KeyHash": 2490904261,
+        "UserData": {
+          "Ref": 107,
+          "Class": "chainsaw.InertiaMoveUserData"
+        }
+      }
+    },
+    {
+      "Index": 109,
+      "Class": "chainsaw.InertiaMoveUserData",
+      "Userdata": "_Chainsaw/AppSystem/Character/ch0a0z0/UserData/InertiaMoveWalk.user",
+      "Fields": {}
+    },
+    {
+      "Index": 110,
+      "Class": "chainsaw.InertiaMoveController.UserDataSetting",
+      "Userdata": null,
+      "Fields": {
+        "_KeyName": "Walk",
+        "_KeyHash": 2111799194,
+        "UserData": {
+          "Ref": 109,
+          "Class": "chainsaw.InertiaMoveUserData"
+        }
+      }
+    },
+    {
+      "Index": 111,
+      "Class": "chainsaw.InertiaMoveController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_UserData": [
+          {
+            "Ref": 106,
+            "Class": "chainsaw.InertiaMoveController.UserDataSetting"
+          },
+          {
+            "Ref": 108,
+            "Class": "chainsaw.InertiaMoveController.UserDataSetting"
+          },
+          {
+            "Ref": 110,
+            "Class": "chainsaw.InertiaMoveController.UserDataSetting"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 112,
+      "Class": "chainsaw.SimulationPointOfSync",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_SimulationPoint": "Ref<00000000-0000-0000-0000-000000000000 => >",
+        "_Priority": 0
+      }
+    },
+    {
+      "Index": 113,
+      "Class": "chainsaw.AssistLightController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_PosOffSetFromCamera": "<0, 0.5, 0>",
+        "_RotOffSetFromCamera": "{X:-0.1721626 Y:0.1285432 Z:0.02266564 W:0.9763826}"
+      }
+    },
+    {
+      "Index": 114,
+      "Class": "via.dynamics.Ragdoll",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": false,
+        "WorldNameHash": 0,
+        "DevelopDraw": false,
+        "Static": false,
+        "CalculateTypes": 1,
+        "OverwritePosture": false,
+        "StateName": "DisableStates",
+        "StateNameHash": 37040880,
+        "Resource": "_Chainsaw/AppSystem/Character/ch0a0z0/Physics/ch0a0z0.rdd",
+        "LinearDamping": 0,
+        "AngularDamping": 0,
+        "State": -1,
+        "BlendWeight": 0,
+        "DisableScale": false,
+        "UpdatePosture": false,
+        "RootTransferMotion": false,
+        "BlendAmountRootTransferMotion": 0,
+        "RootRigidBodyName": "",
+        "RootRigidBodyNameHash": 0,
+        "ControllerResource": "",
+        "RagdollStateName": "KickRigidBodies",
+        "RagdollStateNameHash": 4115390940,
+        "LimitStateName": "Default",
+        "LimitStateNameHash": 1106175613,
+        "KeyFrameControl": false,
+        "KeyFrameControlStrength": 1,
+        "MotorControl": false,
+        "MotorStrength": 1
+      }
+    },
+    {
+      "Index": 115,
+      "Class": "via.motion.MotionFsm2Layer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": false,
+        "Resource": "",
+        "DynamicReference": false,
+        "ReferenceTreeReleaseTime": 0,
+        "DebugGuid": "00000000-0000-0000-0000-000000000000",
+        "AttachedTool": false,
+        "OwnerExecLine": 0,
+        "MotionFsm2Resource": "_Chainsaw/AppSystem/Character/ch0a0z0/Motion/Fsm/ch0a0z0Jack.motfsm2",
+        "TargetMotionLayerNo": -1,
+        "ExecuteMotionLayerNo": 0,
+        "OverwriteJointMaskID": false,
+        "LocalBankType": 0,
+        "OverwriteLocalBankType": false,
+        "BlendMode": 0,
+        "OverwriteBlendMode": false,
+        "BlendRate": 1,
+        "OverwriteBlendRate": false
+      }
+    },
+    {
+      "Index": 116,
+      "Class": "via.motion.MotionJackFsm2",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Trees": [],
+        "UserVariables1": "",
+        "ExecLine": 2,
+        "ExecGroup": 1,
+        "PuppetMode": false,
+        "PuppetKeepActivation": false,
+        "ToolPuppetMode(?)": false,
+        "DevelopOwnerGameObject": 0,
+        "v9_AutoCreateMotionLayer": false,
+        "v10_StopExeWithMotStopAtEnd": false,
+        "v11_Layer": [
+          {
+            "Ref": 115,
+            "Class": "via.motion.MotionFsm2Layer"
+          }
+        ],
+        "TargetGameObject": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "TargetGameObjectRef": "Ref<00000000-0000-0000-0000-000000000000 => >",
+        "UserVariables2": "",
+        "MotionBankAsset": "_Chainsaw/Animation/ch/cha0/motbank/cha0_jack.motbank",
+        "MotionVariablesHub": "",
+        "TargetBankType": 0,
+        "MotionBank": []
+      }
+    },
+    {
+      "Index": 117,
+      "Class": "chainsaw.WindPushApplier.PushWindParameter",
+      "Userdata": null,
+      "Fields": {
+        "WindAmplification": 1.5,
+        "WindFrequency": 0,
+        "WindPhase": 0,
+        "PointAttenuation": 1.25,
+        "FollowGameObject": {
+          "Ref": 0,
+          "Class": ""
+        },
+        "FollowJoint": {
+          "Ref": 0,
+          "Class": ""
+        }
+      }
+    },
+    {
+      "Index": 118,
+      "Class": "chainsaw.WindPushRegistrar",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_Param": {
+          "Ref": 117,
+          "Class": "chainsaw.WindPushApplier.PushWindParameter"
+        },
+        "_FollowJointName": ""
+      }
+    },
+    {
+      "Index": 119,
+      "Class": "chainsaw.PerformanceOptimizeZoneDetector",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 120,
+      "Class": "chainsaw.TimelineInfectionController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_FaceInfectionRate": 1,
+        "_FadeRange": 1,
+        "_ColorOverride": 1,
+        "_EyeInfectionRate": "<0, 0, 0, 0>",
+        "_ArmsInfectionRate": "<0, 0, 0, 0>"
+      }
+    },
+    {
+      "Index": 121,
+      "Class": "via.GameObject",
+      "Userdata": null,
+      "Fields": {
+        "Name": "assist_Light",
+        "Tag": "Environment",
+        "UpdateSelf": true,
+        "DrawSelf": true,
+        "Timescale": -1
+      }
+    },
+    {
+      "Index": 122,
+      "Class": "via.Transform",
+      "Userdata": null,
+      "Fields": {
+        "Position": "<0, 0, 0>",
+        "Rotation": "{X:-1.665335E-16 Y:-7.851483E-25 Z:-4.714658E-09 W:1}",
+        "Scale": "<1, 1, 1>",
+        "ParentJoint": "",
+        "SameJointsContraint": false,
+        "AbsoluteScaling": false,
+        "JointSegmentScale": false,
+        "JointFastLockScene": false
+      }
+    },
+    {
+      "Index": 123,
+      "Class": "via.render.VolumeOccludee",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": false,
+        "SecondVolumeEnabled": false,
+        "TransformInherited": false,
+        "OBB": "[Pos: 0 0 0, Extent: <1, 1, 1>]",
+        "SecondOBB": "[Pos: 0 0 0, Extent: <1, 1, 1>]",
+        "DebugVolume": false
+      }
+    },
+    {
+      "Index": 124,
+      "Class": "chainsaw.LightOptimizer",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": false,
+        "_ShadowEnableDistance": 50,
+        "_BackGroundShadowDistance": 30,
+        "_LightEnableOFFDistance": 0,
+        "_IsGCNArchitectureContactShadowDisable": false,
+        "_IsGCNArchitectureBackGroundShadowEnable": false,
+        "_IsGCNArchitectureDetailShadowDisable": false,
+        "_IsGCNArchitectureForceDisable": false
+      }
+    },
+    {
+      "Index": 125,
+      "Class": "via.render.SpotLight",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Intensity": 6,
+        "RenderOutputID": 31,
+        "Color": "<1, 1, 1>",
+        "BlackBodyRadiation": false,
+        "Temperature": 6400,
+        "BounceIntensity": 1,
+        "SpecularScale": 1,
+        "MinRoughness": 0.1,
+        "AOEfficiency": 0.7,
+        "ImportantLevel": 2,
+        "LightingTarget": 3,
+        "LightBakeOption": 3,
+        "UsingSameIntensity": false,
+        "VolumetricScatteringIntensity": 0,
+        "Unit": 1,
+        "Radius": 0.03,
+        "ReferenceEffectiveRange": 8,
+        "UseCustomAttenuation": false,
+        "AttenuationCurve": "Default",
+        "AttenuationStartDistance": 0,
+        "IlluminanceThreshold": 0.03703704,
+        "Cone": 90,
+        "Spread": 30,
+        "Falloff": 1,
+        "ShadowEnable": false,
+        "BackGroundShadowEnable": false,
+        "ForceShadowCacheEnable": false,
+        "ShadowCastFlag": 3,
+        "AllowTranslucentShadows": false,
+        "ShadowLodBias": 0.4,
+        "UniformShadowEnable": false,
+        "ShadowNearPlane": 0.01,
+        "ShadowVariance": 0.002,
+        "ShadowBias": 0.0001,
+        "ShadowDepthBias": 0.004,
+        "ShadowSlopeBias": 0.04,
+        "ShadowOccluderMaxSlopeBias": 100,
+        "DetailShadow": 1,
+        "DetailFocusTarget": "Ref<00000000-0000-0000-0000-000000000000 => >",
+        "UseRenderClip": false,
+        "RenderClipPlane": "<0, 0>",
+        "RayTracingShadowEnable": false
+      }
+    },
+    {
+      "Index": 126,
+      "Class": "chainsaw.SpotLightParam",
+      "Userdata": null,
+      "Fields": {
+        "_TimelineOverwrite": false,
+        "_TimelineBlendRate": 0,
+        "Enabled": true,
+        "Intensity": 1,
+        "Color": "<1, 1, 1>",
+        "BlackBodyRadiation": false,
+        "BounceIntensity": 1,
+        "MinRoughness": 0,
+        "AOEfficiency": 0,
+        "ImportantLevel": 2,
+        "UsingSameIntensity": true,
+        "VolumetricScatteringIntensity": 1,
+        "Unit": 0,
+        "ReferenceEffectiveRange": 1,
+        "UseCustomAttenuation": false,
+        "AttenuationStartDistance": 1,
+        "Cone": 30,
+        "Spread": 10,
+        "Falloff": 1,
+        "ShadowEnable": false,
+        "BackGroundShadowEnable": false,
+        "ForceShadowCacheEnable": false,
+        "ShadowLodBias": 0,
+        "ShadowCastFlag": 3,
+        "UniformShadowEnbale": false,
+        "ShadowNearPlane": 0.001,
+        "ShadowVariance": 0.004,
+        "ShadowBias": 1e-06,
+        "ShadowDepthBias": 0,
+        "ShadowSlopeBias": 0,
+        "DetailShadow": 1,
+        "DetailFocusTarget": "Ref<00000000-0000-0000-0000-000000000000 => >",
+        "UseRenderClip": false,
+        "RenderClipPlane": "<0, 0>",
+        "EnableControlShadow": true,
+        "EnableControlColor": true,
+        "EnableControlAOEfficiency": true,
+        "EnableShadowOffForGCNArchitecture": false,
+        "EnableIntensityForGCNArchitecture": false,
+        "IntensityForGCNArchitecture": 1,
+        "EnableRaduisForGCNArchitecture": false,
+        "RadiusForGCNArchitecture": 1
+      }
+    },
+    {
+      "Index": 127,
+      "Class": "chainsaw.SpotLightController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": false,
+        "TimelineSpotLightParam": {
+          "Ref": 126,
+          "Class": "chainsaw.SpotLightParam"
+        }
+      }
+    },
+    {
+      "Index": 128,
+      "Class": "chainsaw.PlayerLightObject",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_IsAdditionalLight": false
+      }
+    },
+    {
+      "Index": 129,
+      "Class": "via.GameObject",
+      "Userdata": null,
+      "Fields": {
+        "Name": "FlashLight",
+        "Tag": "",
+        "UpdateSelf": true,
+        "DrawSelf": false,
+        "Timescale": -1
+      }
+    },
+    {
+      "Index": 130,
+      "Class": "via.Transform",
+      "Userdata": null,
+      "Fields": {
+        "Position": "<0, 0, 0>",
+        "Rotation": "{X:0 Y:1 Z:0 W:-4.371139E-08}",
+        "Scale": "<1, 1, 1>",
+        "ParentJoint": "LightPoint",
+        "SameJointsContraint": false,
+        "AbsoluteScaling": false,
+        "JointSegmentScale": false,
+        "JointFastLockScene": false
+      }
+    },
+    {
+      "Index": 131,
+      "Class": "chainsaw.Flashlight",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true
+      }
+    },
+    {
+      "Index": 132,
+      "Class": "via.GameObject",
+      "Userdata": null,
+      "Fields": {
+        "Name": "DepthOcclusion",
+        "Tag": "",
+        "UpdateSelf": true,
+        "DrawSelf": true,
+        "Timescale": -1
+      }
+    },
+    {
+      "Index": 133,
+      "Class": "via.Transform",
+      "Userdata": null,
+      "Fields": {
+        "Position": "<0, 18, 0>",
+        "Rotation": "{X:-0.7071068 Y:0 Z:0 W:0.7071068}",
+        "Scale": "<1, 1, 1>",
+        "ParentJoint": "",
+        "SameJointsContraint": false,
+        "AbsoluteScaling": false,
+        "JointSegmentScale": false,
+        "JointFastLockScene": false
+      }
+    },
+    {
+      "Index": 134,
+      "Class": "via.render.DepthOcclusion",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "Range": 30,
+        "Cone": 40,
+        "OcclusionEnable": true,
+        "DepthOcclusionGroupID": 0,
+        "BackgroundOcclusionEnable": false,
+        "ForceOcclusionCacheEnable": false,
+        "OrthogonalOcclusion": true,
+        "NearPlane": 0.1
+      }
+    },
+    {
+      "Index": 135,
+      "Class": "chainsaw.DepthOcclusionController.DepthOcclusionParameter",
+      "Userdata": null,
+      "Fields": {
+        "Range": 30,
+        "Cone": 40,
+        "BackgroundOcclusionEnable": false,
+        "ForceOcclusionCacheEnable": false,
+        "OrthogonalOcclusion": true
+      }
+    },
+    {
+      "Index": 136,
+      "Class": "chainsaw.DepthOcclusionController.DepthOcclusionParameter",
+      "Userdata": null,
+      "Fields": {
+        "Range": 20,
+        "Cone": 40,
+        "BackgroundOcclusionEnable": false,
+        "ForceOcclusionCacheEnable": false,
+        "OrthogonalOcclusion": true
+      }
+    },
+    {
+      "Index": 137,
+      "Class": "chainsaw.DepthOcclusionController",
+      "Userdata": null,
+      "Fields": {
+        "Enabled": true,
+        "_DefaultParameter": {
+          "Ref": 135,
+          "Class": "chainsaw.DepthOcclusionController.DepthOcclusionParameter"
+        },
+        "_LightParameter": {
+          "Ref": 136,
+          "Class": "chainsaw.DepthOcclusionController.DepthOcclusionParameter"
+        }
+      }
+    }
+  ]
+}

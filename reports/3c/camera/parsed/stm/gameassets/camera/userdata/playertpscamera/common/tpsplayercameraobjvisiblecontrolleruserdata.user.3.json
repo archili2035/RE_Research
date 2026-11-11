@@ -1,0 +1,48 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/common/tpsplayercameraobjvisiblecontrolleruserdata.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\common\\tpsplayercameraobjvisiblecontrolleruserdata.user.3",
+  "Objects": [
+    {
+      "Index": 1,
+      "Class": "app.CameraObjVisibleControllerUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_RequestDrawLabel": "PlayerTPSCameraObjVisibleController",
+        "_DrawSwitchDelayTime": 0.1,
+        "_EffectAllCollisionRadius": 0.1,
+        "_IsEnemyTag": false,
+        "_IsNPCTag": false,
+        "_IsCameraObstacleCollisionUserData": true,
+        "_DamageCheckPlayerPassCollisionRadius": 0.1,
+        "_IsDProp": true,
+        "_IsWorkDataRegistered": true
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CameraObjVisibleControllerUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_RequestDrawLabel": "PlayerTPSCameraObjVisibleController",
+        "_DrawSwitchDelayTime": 0.1,
+        "_EffectAllCollisionRadius": 0.1,
+        "_IsEnemyTag": false,
+        "_IsNPCTag": false,
+        "_IsCameraObstacleCollisionUserData": true,
+        "_DamageCheckPlayerPassCollisionRadius": 0.1,
+        "_IsDProp": true,
+        "_IsWorkDataRegistered": true
+      }
+    }
+  ]
+}

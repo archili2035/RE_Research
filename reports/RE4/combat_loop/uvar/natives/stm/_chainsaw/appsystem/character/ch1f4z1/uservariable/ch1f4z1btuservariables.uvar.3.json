@@ -1,0 +1,121 @@
+{
+  "Name": "ch1f4z1BtUserVariables",
+  "Variables": [
+    {
+      "Name": "IsDamage",
+      "guid": "97e472aa-7898-4eff-b291-210e1b70939e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonBtUserVariables",
+      "Variables": [
+        {
+          "Name": "LoseTarget",
+          "guid": "90724e54-e6d9-4dce-81f4-eefdec7145e5",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "Attention",
+          "guid": "4e700c95-03f9-4a1f-9011-4ad6205a38ed",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "Searching",
+          "guid": "bca1d6cf-ab03-4fb9-8372-6a1aa61f1587",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "FindTarget",
+          "guid": "e87f35bc-5e03-460b-a630-bb6d91cb10fa",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "AttackEnable",
+          "guid": "eebc147e-6b26-494d-a3bd-b32256ab4275",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "ForceMove",
+          "guid": "d20cf43b-0522-43ef-a65f-add495f17538",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "ThinkEnable",
+          "guid": "65963163-f909-4a3d-8981-39a07dbbf894",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsLive",
+          "guid": "c9a9ea37-30da-461f-9654-3e6e7c54ff09",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsRoleMode",
+          "guid": "18bff4ef-4176-4044-9568-93ec4179c123",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsForceMoveHomecoming",
+          "guid": "ae3b8979-adac-49b2-a01a-007203ce5988",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "IsForceMoveUnreachable",
+          "guid": "b3d48ba6-4e72-4299-ae32-c748332fd978",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

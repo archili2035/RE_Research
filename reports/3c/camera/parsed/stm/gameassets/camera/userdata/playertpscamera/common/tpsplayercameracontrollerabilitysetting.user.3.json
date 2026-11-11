@@ -1,0 +1,122 @@
+{
+  "Path": "stm/gameassets/camera/userdata/playertpscamera/common/tpsplayercameracontrollerabilitysetting.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\userdata\\playertpscamera\\common\\tpsplayercameracontrollerabilitysetting.user.3",
+  "Objects": [
+    {
+      "Index": 7,
+      "Class": "app.CameraControllerAbilitySettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsAimAssistController": true,
+        "_IsPlayerCameraShakeInterpolation": false,
+        "_IsPlayerCameraStateOverride": true,
+        "_UserData": [
+          {
+            "Ref": 1,
+            "Class": "app.CameraNearDoorUserData"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.CameraCharacterFilledCorrectionUserData"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.CameraCharacterContactUserData"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.IgnoreCameraCollisionUserData"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.CameraDontAimUserData"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.CameraObjVisibleControllerUserData"
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.CameraNearDoorUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Common/TPSCameraNearDoorUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 2,
+      "Class": "app.CameraCharacterFilledCorrectionUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Common/TPSCameraCharacterFilledCorrectionUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 3,
+      "Class": "app.CameraCharacterContactUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Common/TPSCameraCharacterContactUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "app.IgnoreCameraCollisionUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Common/IgnoreCameraCollisionUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 5,
+      "Class": "app.CameraDontAimUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Common/PlayerTPSCameraDontAimUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 6,
+      "Class": "app.CameraObjVisibleControllerUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Common/TPSPlayerCameraObjVisibleControllerUserData.user",
+      "Fields": {}
+    },
+    {
+      "Index": 7,
+      "Class": "app.CameraControllerAbilitySettingUserData",
+      "Userdata": null,
+      "Fields": {
+        "_IsAimAssistController": true,
+        "_IsPlayerCameraShakeInterpolation": false,
+        "_IsPlayerCameraStateOverride": true,
+        "_UserData": [
+          {
+            "Ref": 1,
+            "Class": "app.CameraNearDoorUserData"
+          },
+          {
+            "Ref": 2,
+            "Class": "app.CameraCharacterFilledCorrectionUserData"
+          },
+          {
+            "Ref": 3,
+            "Class": "app.CameraCharacterContactUserData"
+          },
+          {
+            "Ref": 4,
+            "Class": "app.IgnoreCameraCollisionUserData"
+          },
+          {
+            "Ref": 5,
+            "Class": "app.CameraDontAimUserData"
+          },
+          {
+            "Ref": 6,
+            "Class": "app.CameraObjVisibleControllerUserData"
+          }
+        ]
+      }
+    }
+  ]
+}

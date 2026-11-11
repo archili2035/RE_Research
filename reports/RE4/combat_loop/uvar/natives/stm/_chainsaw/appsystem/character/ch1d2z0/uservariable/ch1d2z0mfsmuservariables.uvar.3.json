@@ -1,0 +1,274 @@
+{
+  "Name": "ch1d2z0MFsmUserVariables",
+  "Variables": [
+    {
+      "Name": "MoveDirection",
+      "guid": "86f8049d-b2d3-472d-b5d7-ab66ebedb16b",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "WatchDirection",
+      "guid": "e273fa79-544f-4009-9336-cabcd19d869d",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ActionDirection",
+      "guid": "e5f73c19-c66e-4ccd-b343-727f4cdc8e06",
+      "type": 11,
+      "Default": "0.5",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "hasKnifeEscaped",
+      "guid": "a5bd2e19-4132-40fd-ad77-1b2d5a9e6344",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "hasButtonEscaped",
+      "guid": "97ee5962-3f7a-4803-970b-ab1c4fa84312",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsRunning",
+      "guid": "4cb7ba71-9e3a-4644-be2e-512690a857e8",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsJumping",
+      "guid": "7cc09025-52e2-4cb2-b9ec-1fa4526f1599",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsDown",
+      "guid": "3de72e66-9d1d-4e82-9a7c-a2a8015dcecd",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "LatestDownLeft",
+      "guid": "177132f1-a7f4-4153-8f41-f1bf7bc1547a",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "BurstRandomParam",
+      "guid": "202c144f-bacd-43c8-816d-73c0643bfd99",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasAttackPermit_Ch2a1z0",
+      "guid": "907fb63d-10ed-40a9-b545-3abb1a94e302",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsTentacleActivated",
+      "guid": "01604d07-c60c-487e-bc14-cb765bca91e7",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasAttackHit",
+      "guid": "ba9d3b4a-2b05-4b64-ad87-9baf258a014c",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "IsNavigationFailed",
+      "guid": "7441f53d-a9cf-49ce-b106-76911e8da272",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasNavigatePosition",
+      "guid": "ffaadcf3-ae0a-4371-bb5e-1c4b14545bcf",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ShouldCancelGrapple",
+      "guid": "1d99530a-a182-417d-b920-9b3440a6b8c7",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "KillTarget",
+      "guid": "2cbeb43d-471d-43f8-85f4-9d8df6e8bd5e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "ReadyHedgeJump",
+      "guid": "e6f3fb0a-4d7e-4d6c-aa60-333f0189dc08",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "MotionFBLR",
+      "guid": "ca2bec28-314c-4c0e-98d2-5817b90b76ad",
+      "type": 8,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "TentacleLengthRate",
+      "guid": "810982d2-e0ad-4888-a51a-674205a7eabe",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasHitObstacleL",
+      "guid": "3157dad7-4787-40d9-bd1e-ad7e4d0d9c1e",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasHitObstacleR",
+      "guid": "5a4e24b1-2563-4050-a914-f1e220d49a60",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasHitObstacleL_Long",
+      "guid": "cedee670-7426-4fbf-8a51-c744e9c33ba9",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "HasHitObstacleR_Long",
+      "guid": "046d8ac1-f8b4-4b34-a927-de88f16053df",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DeadByFlash",
+      "guid": "78ef3351-e021-4e7d-84ed-e5ade68bedf2",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "CanRegisterDeadBody",
+      "guid": "d04e2171-7ceb-4154-bd9a-8418a5357a9d",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": [
+    {
+      "Name": "EmCommonMFsmUserVariables",
+      "Variables": [
+        {
+          "Name": "TargetKill",
+          "guid": "00416c9c-c2e7-4216-b4b3-21493b87addd",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "NextLadderEnd",
+          "guid": "c75f8fd0-e58e-4a8d-aa0b-6f07f169e17d",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        },
+        {
+          "Name": "LadderTopFlat",
+          "guid": "a1c65c95-7752-4f1a-bc42-111d652c4145",
+          "type": 2,
+          "Default": "False",
+          "Expression": null,
+          "OutputNode": null,
+          "Connections": null
+        }
+      ],
+      "Embedded": []
+    }
+  ]
+}

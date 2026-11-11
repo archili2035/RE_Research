@@ -1,0 +1,565 @@
+{
+  "totals": {
+    "Lists": 310,
+    "Packs": 6,
+    "Slots": 23717,
+    "Local": 6406,
+    "Inherited": 15397,
+    "External": 1808,
+    "Unresolved": 106,
+    "PhysicalMOT": 6185,
+    "Trees": 122,
+    "UniqueNames": 5947,
+    "BodyBoneNames": 710,
+    "AddPhysical": 146,
+    "FPSPhysical": 1026
+  },
+  "categories": [
+    {
+      "Category": "手枪 / Handgun",
+      "Lists": 60,
+      "Packs": 2,
+      "Slots": 4566,
+      "Local": 1137,
+      "Inherited": 2819,
+      "External": 604,
+      "Unresolved": 6,
+      "PhysicalMOT": 1182,
+      "Trees": 0
+    },
+    {
+      "Category": "自动枪械 / Machinegun",
+      "Lists": 51,
+      "Packs": 0,
+      "Slots": 4723,
+      "Local": 1174,
+      "Inherited": 3549,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 1088,
+      "Trees": 0
+    },
+    {
+      "Category": "霰弹枪 / Shotgun",
+      "Lists": 49,
+      "Packs": 1,
+      "Slots": 3723,
+      "Local": 1086,
+      "Inherited": 2359,
+      "External": 234,
+      "Unresolved": 44,
+      "PhysicalMOT": 1080,
+      "Trees": 0
+    },
+    {
+      "Category": "步枪 / Rifle",
+      "Lists": 34,
+      "Packs": 0,
+      "Slots": 3190,
+      "Local": 687,
+      "Inherited": 2497,
+      "External": 0,
+      "Unresolved": 6,
+      "PhysicalMOT": 639,
+      "Trees": 0
+    },
+    {
+      "Category": "通用 / General",
+      "Lists": 10,
+      "Packs": 0,
+      "Slots": 844,
+      "Local": 565,
+      "Inherited": 276,
+      "External": 0,
+      "Unresolved": 3,
+      "PhysicalMOT": 447,
+      "Trees": 0
+    },
+    {
+      "Category": "左轮 / Revolver",
+      "Lists": 44,
+      "Packs": 3,
+      "Slots": 3423,
+      "Local": 83,
+      "Inherited": 2351,
+      "External": 970,
+      "Unresolved": 19,
+      "PhysicalMOT": 304,
+      "Trees": 0
+    },
+    {
+      "Category": "火箭筒 / RocketLauncher",
+      "Lists": 7,
+      "Packs": 0,
+      "Slots": 527,
+      "Local": 341,
+      "Inherited": 186,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 298,
+      "Trees": 0
+    },
+    {
+      "Category": "其他 / Other",
+      "Lists": 8,
+      "Packs": 0,
+      "Slots": 911,
+      "Local": 253,
+      "Inherited": 630,
+      "External": 0,
+      "Unresolved": 28,
+      "PhysicalMOT": 227,
+      "Trees": 0
+    },
+    {
+      "Category": "受击 / Damage",
+      "Lists": 6,
+      "Packs": 0,
+      "Slots": 349,
+      "Local": 215,
+      "Inherited": 134,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 211,
+      "Trees": 0
+    },
+    {
+      "Category": "摩托 / Bike",
+      "Lists": 2,
+      "Packs": 0,
+      "Slots": 157,
+      "Local": 157,
+      "Inherited": 0,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 154,
+      "Trees": 0
+    },
+    {
+      "Category": "斧 / Axe",
+      "Lists": 4,
+      "Packs": 0,
+      "Slots": 254,
+      "Local": 146,
+      "Inherited": 108,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 138,
+      "Trees": 0
+    },
+    {
+      "Category": "机关交互 / Gimmick",
+      "Lists": 3,
+      "Packs": 0,
+      "Slots": 122,
+      "Local": 122,
+      "Inherited": 0,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 110,
+      "Trees": 0
+    },
+    {
+      "Category": "面部 / Face",
+      "Lists": 8,
+      "Packs": 0,
+      "Slots": 82,
+      "Local": 82,
+      "Inherited": 0,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 77,
+      "Trees": 5
+    },
+    {
+      "Category": "攻击 / Attack",
+      "Lists": 4,
+      "Packs": 0,
+      "Slots": 165,
+      "Local": 66,
+      "Inherited": 99,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 66,
+      "Trees": 0
+    },
+    {
+      "Category": "电锯 / Chainsaw",
+      "Lists": 8,
+      "Packs": 0,
+      "Slots": 394,
+      "Local": 60,
+      "Inherited": 334,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 50,
+      "Trees": 0
+    },
+    {
+      "Category": "投掷物 / Grenade",
+      "Lists": 4,
+      "Packs": 0,
+      "Slots": 81,
+      "Local": 49,
+      "Inherited": 32,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 48,
+      "Trees": 0
+    },
+    {
+      "Category": "情绪动作 / Emote",
+      "Lists": 3,
+      "Packs": 0,
+      "Slots": 56,
+      "Local": 33,
+      "Inherited": 23,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 33,
+      "Trees": 0
+    },
+    {
+      "Category": "拍照手势 / Photo",
+      "Lists": 1,
+      "Packs": 0,
+      "Slots": 26,
+      "Local": 26,
+      "Inherited": 0,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 26,
+      "Trees": 0
+    },
+    {
+      "Category": "死亡 / Dead",
+      "Lists": 2,
+      "Packs": 0,
+      "Slots": 7,
+      "Local": 7,
+      "Inherited": 0,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 7,
+      "Trees": 0
+    },
+    {
+      "Category": "动作树 / MotionTree",
+      "Lists": 2,
+      "Packs": 0,
+      "Slots": 117,
+      "Local": 117,
+      "Inherited": 0,
+      "External": 0,
+      "Unresolved": 0,
+      "PhysicalMOT": 0,
+      "Trees": 117
+    }
+  ],
+  "semantics": [
+    {
+      "Type": "移动 / 转向 / 基础姿态",
+      "Count": 2556
+    },
+    {
+      "Type": "持枪 / 瞄准",
+      "Count": 1211
+    },
+    {
+      "Type": "射击 / 开火",
+      "Count": 842
+    },
+    {
+      "Type": "其他 / 名称不足以判定",
+      "Count": 513
+    },
+    {
+      "Type": "换弹",
+      "Count": 299
+    },
+    {
+      "Type": "交互 / 越障",
+      "Count": 225
+    },
+    {
+      "Type": "受击 / 反应",
+      "Count": 198
+    },
+    {
+      "Type": "装备 / 切换",
+      "Count": 138
+    },
+    {
+      "Type": "攻击 / 防御",
+      "Count": 96
+    },
+    {
+      "Type": "面部表情 / 口型",
+      "Count": 77
+    },
+    {
+      "Type": "情绪 / 拍照",
+      "Count": 23
+    },
+    {
+      "Type": "死亡",
+      "Count": 7
+    }
+  ],
+  "handsem": [
+    {
+      "Type": "持枪 / 瞄准",
+      "Count": 38
+    },
+    {
+      "Type": "移动 / 转向 / 基础姿态",
+      "Count": 20
+    },
+    {
+      "Type": "射击 / 开火",
+      "Count": 18
+    },
+    {
+      "Type": "换弹",
+      "Count": 10
+    },
+    {
+      "Type": "其他 / 名称不足以判定",
+      "Count": 9
+    },
+    {
+      "Type": "装备 / 切换",
+      "Count": 4
+    }
+  ],
+  "bonehist": [
+    {
+      "Type": 76,
+      "Count": 3518
+    },
+    {
+      "Type": 69,
+      "Count": 946
+    },
+    {
+      "Type": 73,
+      "Count": 796
+    },
+    {
+      "Type": 70,
+      "Count": 206
+    },
+    {
+      "Type": 75,
+      "Count": 181
+    },
+    {
+      "Type": 78,
+      "Count": 162
+    },
+    {
+      "Type": 77,
+      "Count": 126
+    },
+    {
+      "Type": 591,
+      "Count": 54
+    },
+    {
+      "Type": 67,
+      "Count": 42
+    },
+    {
+      "Type": 85,
+      "Count": 34
+    },
+    {
+      "Type": 72,
+      "Count": 32
+    },
+    {
+      "Type": 79,
+      "Count": 26
+    },
+    {
+      "Type": 463,
+      "Count": 23
+    },
+    {
+      "Type": 63,
+      "Count": 16
+    },
+    {
+      "Type": 71,
+      "Count": 16
+    },
+    {
+      "Type": 65,
+      "Count": 3
+    },
+    {
+      "Type": 82,
+      "Count": 3
+    },
+    {
+      "Type": 74,
+      "Count": 1
+    }
+  ],
+  "trackhist": [
+    {
+      "Type": 67,
+      "Count": 5400
+    },
+    {
+      "Type": 70,
+      "Count": 209
+    },
+    {
+      "Type": 69,
+      "Count": 171
+    },
+    {
+      "Type": 75,
+      "Count": 145
+    },
+    {
+      "Type": 68,
+      "Count": 91
+    },
+    {
+      "Type": 357,
+      "Count": 54
+    },
+    {
+      "Type": 72,
+      "Count": 31
+    },
+    {
+      "Type": 66,
+      "Count": 27
+    },
+    {
+      "Type": 229,
+      "Count": 22
+    },
+    {
+      "Type": 63,
+      "Count": 17
+    },
+    {
+      "Type": 74,
+      "Count": 8
+    },
+    {
+      "Type": 71,
+      "Count": 2
+    },
+    {
+      "Type": 49,
+      "Count": 2
+    },
+    {
+      "Type": 3,
+      "Count": 2
+    },
+    {
+      "Type": 463,
+      "Count": 1
+    },
+    {
+      "Type": 79,
+      "Count": 1
+    },
+    {
+      "Type": 16,
+      "Count": 1
+    },
+    {
+      "Type": 65,
+      "Count": 1
+    }
+  ],
+  "fpshist": [
+    {
+      "Type": 60,
+      "Count": 6185
+    }
+  ],
+  "bodyBones": [
+    {
+      "Type": "手指 / 手掌",
+      "Count": 32
+    },
+    {
+      "Type": "目标 / 武器挂点 / 相机 / IK辅助",
+      "Count": 11
+    },
+    {
+      "Type": "腿 / 足",
+      "Count": 10
+    },
+    {
+      "Type": "手臂 / 锁骨",
+      "Count": 8
+    },
+    {
+      "Type": "髋 / 脊柱 / 颈 / 头",
+      "Count": 7
+    },
+    {
+      "Type": "根节点",
+      "Count": 1
+    }
+  ],
+  "partStats": [
+    {
+      "Part": "右臂 / 手套",
+      "File": "ch0100_01_00.mesh.250925211",
+      "Bones": 125,
+      "DeformBones": 60,
+      "WeightedBones": 60,
+      "MatchedAnimatedBones": 28
+    },
+    {
+      "Part": "左臂 / 手套",
+      "File": "ch0100_02_00.mesh.250925211",
+      "Bones": 129,
+      "DeformBones": 60,
+      "WeightedBones": 60,
+      "MatchedAnimatedBones": 28
+    },
+    {
+      "Part": "头部 / 面部",
+      "File": "ch0100_10_00.mesh.250925211",
+      "Bones": 285,
+      "DeformBones": 252,
+      "WeightedBones": 251,
+      "MatchedAnimatedBones": 12
+    },
+    {
+      "Part": "头发",
+      "File": "ch0100_21_00.mesh.250925211",
+      "Bones": 69,
+      "DeformBones": 52,
+      "WeightedBones": 52,
+      "MatchedAnimatedBones": 8
+    },
+    {
+      "Part": "上衣",
+      "File": "ch0100_40_00.mesh.250925211",
+      "Bones": 157,
+      "DeformBones": 64,
+      "WeightedBones": 64,
+      "MatchedAnimatedBones": 15
+    },
+    {
+      "Part": "裤鞋 / 腰部附件",
+      "File": "ch0100_50_00.mesh.250925211",
+      "Bones": 105,
+      "DeformBones": 50,
+      "WeightedBones": 50,
+      "MatchedAnimatedBones": 13
+    }
+  ]
+}

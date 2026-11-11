@@ -4,7 +4,7 @@
 
 # 里昂手枪动画播放器 v1
 
-打开仓库根的 `docs/player_index.html` 即可离线使用，无需安装依赖；也可在本目录运行 `node server.cjs`，访问 http://127.0.0.1:8765 。服务器仅监听本机、只提供 `docs/` 下的静态文件。
+打开仓库根的 `docs/player_index.html` 即可离线使用，无需安装依赖；也可在本目录运行 `node server.cjs`，访问 http://127.0.0.1:8765/player_index.html 。根路径为研究主题首页。服务器仅监听本机、只提供 `docs/` 下的静态文件。
 
 ## 内容与操作
 

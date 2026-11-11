@@ -1,0 +1,47 @@
+{
+  "blender": "5.0.1",
+  "route": "existing RE Mesh Editor -> Blender FBX (fallback; no ReExtractor full build)",
+  "imports": [
+    {
+      "path": "natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00.mesh.221108797",
+      "result": [
+        [],
+        []
+      ]
+    },
+    {
+      "path": "natives/stm/_chainsaw/character/ch/cha0/cha000/10/cha000_10.mesh.221108797",
+      "result": [
+        [],
+        []
+      ]
+    },
+    {
+      "path": "natives/stm/_chainsaw/character/ch/cha0/cha000/20/cha000_20.mesh.221108797",
+      "result": [
+        [],
+        []
+      ]
+    }
+  ],
+  "mesh_vertices": 178993,
+  "mesh_polygons": 247459,
+  "bones": 415,
+  "root_bones": [
+    "root"
+  ],
+  "bounds_min": [
+    -0.507027268409729,
+    -0.48616883158683777,
+    -0.01606115885078907
+  ],
+  "bounds_max": [
+    0.5080327391624451,
+    0.20629683136940002,
+    1.8307969570159912
+  ],
+  "max_influences": 7,
+  "unweighted_vertices": 0,
+  "fbx": "E:\\CodexPepo\\RE_Research\\runtime\\ue5_asset_probe\\re4_wp4000\\fbx\\SK_RE4_Leon_Gray.fbx",
+  "ue_verified": false
+}

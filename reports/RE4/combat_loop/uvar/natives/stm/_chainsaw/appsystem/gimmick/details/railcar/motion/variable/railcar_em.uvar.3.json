@@ -1,0 +1,69 @@
+{
+  "Name": "RailCar_Em",
+  "Variables": [
+    {
+      "Name": "ShootSpeedRate",
+      "guid": "7cb98002-3510-4d95-9fd1-337c237fd2d2",
+      "type": 11,
+      "Default": "1",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Weapon",
+      "guid": "8d878d59-419a-42fd-8652-7cc4cc8bcb25",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Attack",
+      "guid": "45fec6b5-d27d-4761-b0be-c954f11235a6",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "Pattern",
+      "guid": "7a8aee38-4318-478e-b282-479af43c0090",
+      "type": 7,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "BackDamage",
+      "guid": "aabc6d4b-3747-4919-a2f0-a9004fb71f43",
+      "type": 2,
+      "Default": "False",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageDir",
+      "guid": "1e69f502-d4b0-4d9f-8508-4eebe8ae4484",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    },
+    {
+      "Name": "DamageRot",
+      "guid": "59101e26-590d-4de6-a5d4-682611cb18a2",
+      "type": 11,
+      "Default": "0",
+      "Expression": null,
+      "OutputNode": null,
+      "Connections": null
+    }
+  ],
+  "Embedded": []
+}

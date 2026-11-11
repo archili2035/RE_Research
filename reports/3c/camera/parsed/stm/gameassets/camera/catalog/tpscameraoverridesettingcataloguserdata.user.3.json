@@ -1,0 +1,398 @@
+{
+  "Path": "stm/gameassets/camera/catalog/tpscameraoverridesettingcataloguserdata.user.3",
+  "File": "reports/3c/camera/samples\\re_chunk_000.pak\\natives\\stm\\gameassets\\camera\\catalog\\tpscameraoverridesettingcataloguserdata.user.3",
+  "Objects": [
+    {
+      "Index": 31,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData",
+      "Userdata": null,
+      "Fields": {
+        "_CatalogDatas": [
+          {
+            "Ref": 5,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          }
+        ]
+      }
+    }
+  ],
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.TPSCameraOverrideTemplateID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "InDoor"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_A000"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.TPSCameraOverrideSettingUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Override/cp_A000InDoor.user",
+      "Fields": {}
+    },
+    {
+      "Index": 4,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_TPSCameraOverrideUserData": {
+          "Ref": 3,
+          "Class": "app.TPSCameraOverrideSettingUserData"
+        }
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData",
+      "Userdata": null,
+      "Fields": {
+        "_TemplateID": {
+          "Ref": 1,
+          "Class": "app.TPSCameraOverrideTemplateID"
+        },
+        "_IsOverrideCharacter": true,
+        "_CharacterKindID": {
+          "Ref": 2,
+          "Class": "app.CharacterKindID"
+        },
+        "_Data": {
+          "Ref": 4,
+          "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data"
+        }
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.TPSCameraOverrideTemplateID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "InDoor"
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_A100"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.TPSCameraOverrideSettingUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Override/cp_A100InDoor.user",
+      "Fields": {}
+    },
+    {
+      "Index": 9,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_TPSCameraOverrideUserData": {
+          "Ref": 8,
+          "Class": "app.TPSCameraOverrideSettingUserData"
+        }
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData",
+      "Userdata": null,
+      "Fields": {
+        "_TemplateID": {
+          "Ref": 6,
+          "Class": "app.TPSCameraOverrideTemplateID"
+        },
+        "_IsOverrideCharacter": true,
+        "_CharacterKindID": {
+          "Ref": 7,
+          "Class": "app.CharacterKindID"
+        },
+        "_Data": {
+          "Ref": 9,
+          "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data"
+        }
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "app.TPSCameraOverrideTemplateID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "CrouchHole"
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.TPSCameraOverrideSettingUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Override/CrouchHole.user",
+      "Fields": {}
+    },
+    {
+      "Index": 14,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_TPSCameraOverrideUserData": {
+          "Ref": 13,
+          "Class": "app.TPSCameraOverrideSettingUserData"
+        }
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData",
+      "Userdata": null,
+      "Fields": {
+        "_TemplateID": {
+          "Ref": 11,
+          "Class": "app.TPSCameraOverrideTemplateID"
+        },
+        "_IsOverrideCharacter": false,
+        "_CharacterKindID": {
+          "Ref": 12,
+          "Class": "app.CharacterKindID"
+        },
+        "_Data": {
+          "Ref": 14,
+          "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data"
+        }
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "app.TPSCameraOverrideTemplateID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "CharacterFocus"
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.TPSCameraOverrideSettingUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Override/CharacterFocus.user",
+      "Fields": {}
+    },
+    {
+      "Index": 19,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_TPSCameraOverrideUserData": {
+          "Ref": 18,
+          "Class": "app.TPSCameraOverrideSettingUserData"
+        }
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData",
+      "Userdata": null,
+      "Fields": {
+        "_TemplateID": {
+          "Ref": 16,
+          "Class": "app.TPSCameraOverrideTemplateID"
+        },
+        "_IsOverrideCharacter": false,
+        "_CharacterKindID": {
+          "Ref": 17,
+          "Class": "app.CharacterKindID"
+        },
+        "_Data": {
+          "Ref": 19,
+          "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data"
+        }
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.TPSCameraOverrideTemplateID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "EnvironmentFocus"
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "Invalid"
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.TPSCameraOverrideSettingUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Override/EnvironmentFocus.user",
+      "Fields": {}
+    },
+    {
+      "Index": 24,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_TPSCameraOverrideUserData": {
+          "Ref": 23,
+          "Class": "app.TPSCameraOverrideSettingUserData"
+        }
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData",
+      "Userdata": null,
+      "Fields": {
+        "_TemplateID": {
+          "Ref": 21,
+          "Class": "app.TPSCameraOverrideTemplateID"
+        },
+        "_IsOverrideCharacter": false,
+        "_CharacterKindID": {
+          "Ref": 22,
+          "Class": "app.CharacterKindID"
+        },
+        "_Data": {
+          "Ref": 24,
+          "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data"
+        }
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.TPSCameraOverrideTemplateID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "CrouchHole"
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.CharacterKindID",
+      "Userdata": null,
+      "Fields": {
+        "_Name": "cp_A200"
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.TPSCameraOverrideSettingUserData",
+      "Userdata": "GameAssets/Camera/UserData/PlayerTPSCamera/Override/cp_A200CrouchHole.user",
+      "Fields": {}
+    },
+    {
+      "Index": 29,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data",
+      "Userdata": null,
+      "Fields": {
+        "_TPSCameraOverrideUserData": {
+          "Ref": 28,
+          "Class": "app.TPSCameraOverrideSettingUserData"
+        }
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData",
+      "Userdata": null,
+      "Fields": {
+        "_TemplateID": {
+          "Ref": 26,
+          "Class": "app.TPSCameraOverrideTemplateID"
+        },
+        "_IsOverrideCharacter": true,
+        "_CharacterKindID": {
+          "Ref": 27,
+          "Class": "app.CharacterKindID"
+        },
+        "_Data": {
+          "Ref": 29,
+          "Class": "app.TPSCameraOverrideSettingCatalogUserData.Data"
+        }
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.TPSCameraOverrideSettingCatalogUserData",
+      "Userdata": null,
+      "Fields": {
+        "_CatalogDatas": [
+          {
+            "Ref": 5,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 10,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 15,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 20,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 25,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          },
+          {
+            "Ref": 30,
+            "Class": "app.TPSCameraOverrideSettingCatalogUserData.CatalogData"
+          }
+        ]
+      }
+    }
+  ]
+}
