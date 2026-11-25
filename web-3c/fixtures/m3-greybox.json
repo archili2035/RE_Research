@@ -1,0 +1,25 @@
+{
+  "id": "m3-movement-greybox",
+  "version": 1,
+  "spawn": { "position": { "x": 0, "y": 0.025, "z": 3 }, "yawRad": 0 },
+  "render": [
+    { "id": "floor", "kind": "box", "position": { "x": 0, "y": -0.15, "z": -1 }, "size": { "x": 12, "y": 0.3, "z": 18 }, "yawRad": 0, "color": "#44555b" },
+    { "id": "west-wall", "kind": "box", "position": { "x": -2.5, "y": 1.25, "z": -1 }, "size": { "x": 0.24, "y": 2.5, "z": 12 }, "yawRad": 0, "color": "#607a85" },
+    { "id": "door-jamb-left", "kind": "box", "position": { "x": -1.55, "y": 1.2, "z": 0 }, "size": { "x": 1.9, "y": 2.4, "z": 0.32 }, "yawRad": 0, "color": "#de9060" },
+    { "id": "door-jamb-right", "kind": "box", "position": { "x": 1.55, "y": 1.2, "z": 0 }, "size": { "x": 1.9, "y": 2.4, "z": 0.32 }, "yawRad": 0, "color": "#de9060" },
+    { "id": "door-lintel", "kind": "box", "position": { "x": 0, "y": 2.25, "z": 0 }, "size": { "x": 1.2, "y": 0.3, "z": 0.32 }, "yawRad": 0, "color": "#de9060" },
+    { "id": "low-step", "kind": "box", "position": { "x": 0, "y": 0.09, "z": -2.7 }, "size": { "x": 1.6, "y": 0.18, "z": 1.2 }, "yawRad": 0, "color": "#9ae4d3" },
+    { "id": "high-step", "kind": "box", "position": { "x": 1.65, "y": 0.275, "z": -2.7 }, "size": { "x": 1.4, "y": 0.55, "z": 1.2 }, "yawRad": 0, "color": "#c27571" }
+  ],
+  "colliders": [
+    { "id": "floor", "center": { "x": 0, "y": -0.15, "z": -1 }, "size": { "x": 12, "y": 0.3, "z": 18 }, "yawRad": 0 },
+    { "id": "west-wall", "center": { "x": -2.5, "y": 1.25, "z": -1 }, "size": { "x": 0.24, "y": 2.5, "z": 12 }, "yawRad": 0 },
+    { "id": "door-jamb-left", "center": { "x": -1.55, "y": 1.2, "z": 0 }, "size": { "x": 1.9, "y": 2.4, "z": 0.32 }, "yawRad": 0 },
+    { "id": "door-jamb-right", "center": { "x": 1.55, "y": 1.2, "z": 0 }, "size": { "x": 1.9, "y": 2.4, "z": 0.32 }, "yawRad": 0 },
+    { "id": "door-lintel", "center": { "x": 0, "y": 2.25, "z": 0 }, "size": { "x": 1.2, "y": 0.3, "z": 0.32 }, "yawRad": 0 },
+    { "id": "low-step", "center": { "x": 0, "y": 0.09, "z": -2.7 }, "size": { "x": 1.6, "y": 0.18, "z": 1.2 }, "yawRad": 0 },
+    { "id": "high-step", "center": { "x": 1.65, "y": 0.275, "z": -2.7 }, "size": { "x": 1.4, "y": 0.55, "z": 1.2 }, "yawRad": 0 }
+  ],
+  "doors": [],
+  "targets": []
+}

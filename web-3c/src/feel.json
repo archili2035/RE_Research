@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "movement": {
+    "walkSpeedMps": {
+      "value": 2.55,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "60 Hz，灰盒移动占位值"
+    },
+    "sprintSpeedMps": {
+      "value": 4.3,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "60 Hz，灰盒移动占位值"
+    },
+    "aimSpeedMps": {
+      "value": 1.55,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "60 Hz，灰盒移动占位值"
+    }
+  },
+  "camera": {
+    "lookRadPerPx": {
+      "value": 0.0022,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "M0 灰盒越肩镜头占位值"
+    },
+    "moveDistanceM": {
+      "value": 3.65,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "M0 灰盒越肩镜头占位值"
+    },
+    "aimDistanceM": {
+      "value": 2.35,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "M0 灰盒越肩镜头占位值"
+    },
+    "moveShoulderM": {
+      "value": 0.8,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "M0 灰盒越肩镜头占位值"
+    },
+    "aimShoulderM": {
+      "value": 0.55,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "M0 灰盒越肩镜头占位值"
+    },
+    "moveVerticalFovRad": {
+      "value": 1.0122909661567112,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "M0 灰盒越肩镜头占位值"
+    },
+    "aimVerticalFovRad": {
+      "value": 0.7853981633974483,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "M0 灰盒越肩镜头占位值"
+    }
+  },
+  "actions": {
+    "magazineCapacity": {
+      "value": 8,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "M0 灰盒即时动作与弹量占位值"
+    },
+    "initialReserve": {
+      "value": 16,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "M0 灰盒即时动作与弹量占位值"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M7 路线回放与调参</title>
+</head>
+<body>
+  <main class="layout">
+    <header>
+      <h1>路线回放与调参</h1>
+      <p>M7 网页灰盒 · 固定 60 Hz · 占位路线</p>
+    </header>
+    <section class="replay" aria-label="固定路线">
+      <div class="toolbar">
+        <button id="play" type="button" disabled>播放</button>
+        <button id="step" type="button" disabled>单步</button>
+        <button id="reset" type="button" disabled>重置</button>
+        <progress id="progress" aria-label="回放进度" value="0"></progress>
+        <output id="status" role="status">正在加载物理场景…</output>
+      </div>
+      <div class="route-grid">
+        <div>
+          <canvas id="route-map" width="680" height="420" aria-label="角色轨迹和相机位置俯视图"></canvas>
+          <p class="legend">青色为角色及其轨迹，黄色为当前镜头。</p>
+        </div>
+        <div class="telemetry">
+          <h2>当前模拟步</h2>
+          <pre id="snapshot"></pre>
+          <h2>事件 <small>按模拟步排序</small></h2>
+          <pre id="events">等待回放</pre>
+          <button id="download-trace" type="button" disabled>下载已回放轨迹</button>
+        </div>
+      </div>
+    </section>
+    <section class="parameters" aria-label="手感参数">
+      <h2>手感参数</h2>
+      <p>应用后从起点重放。当前参数均来自网页灰盒调试。</p>
+      <form id="feel">
+        <div id="parameter-groups"></div>
+        <div class="toolbar">
+          <button type="submit" disabled>应用参数</button>
+          <button id="download-feel" type="button" disabled>下载当前参数</button>
+          <output id="feel-version"></output>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="/src/m7-panel.ts"></script>
+</body>
+</html>

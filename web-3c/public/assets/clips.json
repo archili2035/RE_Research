@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "clips": [
+    {
+      "id": "hold-idle",
+      "glb": "m2-rehearsal.glb",
+      "track": "HoldIdle",
+      "durationS": 0.8,
+      "blend": "normal"
+    },
+    {
+      "id": "raise",
+      "glb": "m2-rehearsal.glb",
+      "track": "Raise",
+      "durationS": 0.44,
+      "blend": "normal"
+    },
+    {
+      "id": "fire",
+      "glb": "m2-rehearsal.glb",
+      "track": "Fire",
+      "durationS": 0.24,
+      "blend": "additive",
+      "referencePose": {
+        "glb": "m2-rehearsal.glb",
+        "track": "Raise",
+        "timeS": 0.44
+      },
+      "boneMask": [
+        "R_UpperArm",
+        "R_Forearm",
+        "R_Hand",
+        "L_UpperArm",
+        "L_Forearm",
+        "L_Hand"
+      ]
+    },
+    {
+      "id": "reload",
+      "glb": "m2-rehearsal.glb",
+      "track": "Reload",
+      "durationS": 1.4,
+      "blend": "baked"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "test-room",
+  "version": 1,
+  "spawn": {"position": {"x": -2.8, "y": 0.025, "z": 5}, "yawRad": -1.5707963267948966},
+  "render": [
+    {"id": "floor-r07", "kind": "box", "position": {"x": -2, "y": -0.12, "z": 4}, "yawRad": 0, "size": {"x": 4, "y": 0.24, "z": 4}, "color": "#37474c"},
+    {"id": "floor-c04-long", "kind": "box", "position": {"x": 5, "y": -0.12, "z": 5}, "yawRad": 0, "size": {"x": 10, "y": 0.24, "z": 2}, "color": "#475c63"},
+    {"id": "floor-c04-short", "kind": "box", "position": {"x": 9, "y": -0.12, "z": 2}, "yawRad": 0, "size": {"x": 2, "y": 0.24, "z": 4}, "color": "#475c63"},
+    {"id": "floor-r14", "kind": "box", "position": {"x": 10, "y": -0.12, "z": -2}, "yawRad": 0, "size": {"x": 4, "y": 0.24, "z": 4}, "color": "#334d48"},
+    {"id": "wall-r07-west", "kind": "box", "position": {"x": -4, "y": 1.35, "z": 4}, "yawRad": 0, "size": {"x": 0.14, "y": 2.7, "z": 4}, "color": "#667e88"},
+    {"id": "wall-r07-north", "kind": "box", "position": {"x": -2, "y": 1.35, "z": 2}, "yawRad": 0, "size": {"x": 4, "y": 2.7, "z": 0.14}, "color": "#667e88"},
+    {"id": "wall-r07-south", "kind": "box", "position": {"x": -2, "y": 1.35, "z": 6}, "yawRad": 0, "size": {"x": 4, "y": 2.7, "z": 0.14}, "color": "#667e88"},
+    {"id": "wall-r07-east", "kind": "box", "position": {"x": 0, "y": 1.35, "z": 3}, "yawRad": 0, "size": {"x": 0.14, "y": 2.7, "z": 2}, "color": "#667e88"},
+    {"id": "wall-c04-north", "kind": "box", "position": {"x": 4, "y": 1.35, "z": 4}, "yawRad": 0, "size": {"x": 8, "y": 2.7, "z": 0.14}, "color": "#667e88"},
+    {"id": "wall-c04-south", "kind": "box", "position": {"x": 5, "y": 1.35, "z": 6}, "yawRad": 0, "size": {"x": 10, "y": 2.7, "z": 0.14}, "color": "#667e88"},
+    {"id": "wall-c04-inner", "kind": "box", "position": {"x": 8, "y": 1.35, "z": 2}, "yawRad": 0, "size": {"x": 0.14, "y": 2.7, "z": 4}, "color": "#667e88"},
+    {"id": "wall-c04-east", "kind": "box", "position": {"x": 10, "y": 1.35, "z": 3}, "yawRad": 0, "size": {"x": 0.14, "y": 2.7, "z": 6}, "color": "#667e88"},
+    {"id": "wall-r14-west", "kind": "box", "position": {"x": 8, "y": 1.35, "z": -2}, "yawRad": 0, "size": {"x": 0.14, "y": 2.7, "z": 4}, "color": "#667e88"},
+    {"id": "wall-r14-north", "kind": "box", "position": {"x": 10, "y": 1.35, "z": -4}, "yawRad": 0, "size": {"x": 4, "y": 2.7, "z": 0.14}, "color": "#667e88"},
+    {"id": "wall-r14-east", "kind": "box", "position": {"x": 12, "y": 1.35, "z": -2}, "yawRad": 0, "size": {"x": 0.14, "y": 2.7, "z": 4}, "color": "#667e88"},
+    {"id": "wall-r14-south", "kind": "box", "position": {"x": 11, "y": 1.35, "z": 0}, "yawRad": 0, "size": {"x": 2, "y": 2.7, "z": 0.14}, "color": "#667e88"},
+    {"id": "arch-entry-header", "kind": "box", "position": {"x": 0, "y": 2.45, "z": 5}, "yawRad": 0, "size": {"x": 0.18, "y": 0.5, "z": 2}, "color": "#354b54"},
+    {"id": "door-exit-header", "kind": "box", "position": {"x": 9, "y": 2.45, "z": 0}, "yawRad": 0, "size": {"x": 2, "y": 0.5, "z": 0.18}, "color": "#35847c"},
+    {"id": "door-exit-panel", "kind": "box", "position": {"x": 9, "y": 1.1, "z": 0}, "yawRad": 0, "size": {"x": 2, "y": 2.2, "z": 0.18}, "color": "#396d67"},
+    {"id": "target-practice-face", "kind": "box", "position": {"x": 9.86, "y": 1.44, "z": 1.4}, "yawRad": 0, "size": {"x": 0.14, "y": 0.75, "z": 0.65}, "color": "#ff955d"}
+  ],
+  "colliders": [
+    {"id": "floor-r07", "center": {"x": -2, "y": -0.12, "z": 4}, "size": {"x": 4, "y": 0.24, "z": 4}, "yawRad": 0},
+    {"id": "floor-c04-long", "center": {"x": 5, "y": -0.12, "z": 5}, "size": {"x": 10, "y": 0.24, "z": 2}, "yawRad": 0},
+    {"id": "floor-c04-short", "center": {"x": 9, "y": -0.12, "z": 2}, "size": {"x": 2, "y": 0.24, "z": 4}, "yawRad": 0},
+    {"id": "floor-r14", "center": {"x": 10, "y": -0.12, "z": -2}, "size": {"x": 4, "y": 0.24, "z": 4}, "yawRad": 0},
+    {"id": "wall-r07-west", "center": {"x": -4, "y": 1.35, "z": 4}, "size": {"x": 0.14, "y": 2.7, "z": 4}, "yawRad": 0},
+    {"id": "wall-r07-north", "center": {"x": -2, "y": 1.35, "z": 2}, "size": {"x": 4, "y": 2.7, "z": 0.14}, "yawRad": 0},
+    {"id": "wall-r07-south", "center": {"x": -2, "y": 1.35, "z": 6}, "size": {"x": 4, "y": 2.7, "z": 0.14}, "yawRad": 0},
+    {"id": "wall-r07-east", "center": {"x": 0, "y": 1.35, "z": 3}, "size": {"x": 0.14, "y": 2.7, "z": 2}, "yawRad": 0},
+    {"id": "wall-c04-north", "center": {"x": 4, "y": 1.35, "z": 4}, "size": {"x": 8, "y": 2.7, "z": 0.14}, "yawRad": 0},
+    {"id": "wall-c04-south", "center": {"x": 5, "y": 1.35, "z": 6}, "size": {"x": 10, "y": 2.7, "z": 0.14}, "yawRad": 0},
+    {"id": "wall-c04-inner", "center": {"x": 8, "y": 1.35, "z": 2}, "size": {"x": 0.14, "y": 2.7, "z": 4}, "yawRad": 0},
+    {"id": "wall-c04-east", "center": {"x": 10, "y": 1.35, "z": 3}, "size": {"x": 0.14, "y": 2.7, "z": 6}, "yawRad": 0},
+    {"id": "wall-r14-west", "center": {"x": 8, "y": 1.35, "z": -2}, "size": {"x": 0.14, "y": 2.7, "z": 4}, "yawRad": 0},
+    {"id": "wall-r14-north", "center": {"x": 10, "y": 1.35, "z": -4}, "size": {"x": 4, "y": 2.7, "z": 0.14}, "yawRad": 0},
+    {"id": "wall-r14-east", "center": {"x": 12, "y": 1.35, "z": -2}, "size": {"x": 0.14, "y": 2.7, "z": 4}, "yawRad": 0},
+    {"id": "wall-r14-south", "center": {"x": 11, "y": 1.35, "z": 0}, "size": {"x": 2, "y": 2.7, "z": 0.14}, "yawRad": 0},
+    {"id": "arch-entry-header", "center": {"x": 0, "y": 2.45, "z": 5}, "size": {"x": 0.18, "y": 0.5, "z": 2}, "yawRad": 0},
+    {"id": "door-exit-header", "center": {"x": 9, "y": 2.45, "z": 0}, "size": {"x": 2, "y": 0.5, "z": 0.18}, "yawRad": 0},
+    {"id": "door-exit-panel", "center": {"x": 9, "y": 1.1, "z": 0}, "size": {"x": 2, "y": 2.2, "z": 0.18}, "yawRad": 0},
+    {"id": "target-practice-face", "center": {"x": 9.86, "y": 1.44, "z": 1.4}, "size": {"x": 0.14, "y": 0.75, "z": 0.65}, "yawRad": 0}
+  ],
+  "doors": [
+    {"id": "door-exit", "colliderId": "door-exit-panel", "interactionRangeM": 1.55}
+  ],
+  "targets": [
+    {"id": "target-practice", "colliderId": "target-practice-face", "interactionRangeM": 14}
+  ]
+}

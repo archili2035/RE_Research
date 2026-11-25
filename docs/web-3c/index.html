@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>3C 灰盒</title>
+    <script type="module" crossorigin src="./assets/main-BFjJX_dl.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/contracts-DlTiMpu2.js">
+    <link rel="modulepreload" crossorigin href="./assets/style-DRVSpTgc.js">
+    <link rel="modulepreload" crossorigin href="./assets/simulation-B1qbj3-r.js">
+    <link rel="stylesheet" crossorigin href="./assets/style-B9HroxkI.css">
+  </head>
+  <body>
+    <main class="layout comparison-layout">
+      <header>
+        <h1>3C 灰盒</h1>
+        <p>固定步模拟 · 60 Hz</p>
+        <a href="?level=m3">碰撞测试场</a>
+        <a href="./m2.html">动作姿态回读</a>
+        <a href="./m7.html">路线回放与调参</a>
+      </header>
+      <div class="comparison-panels">
+        <section aria-labelledby="scene-heading">
+          <div class="comparison-header">
+            <h2 id="scene-heading">测试场</h2>
+            <label>角色外观
+              <select id="player-appearance">
+                <option value="graybox" selected>灰盒</option>
+                <option value="leon" disabled>里昂灰模</option>
+              </select>
+            </label>
+            <output id="appearance-status" role="status"></output>
+          </div>
+          <section id="viewport" aria-label="灰盒测试场">
+            <div class="crosshair" aria-hidden="true"></div>
+            <p id="scene-feedback" class="hud" role="status"></p>
+            <p id="door-hint" class="hud"></p>
+            <output id="ammo" class="hud" aria-label="弹匣 / 备用" aria-live="off"></output>
+            <button id="enter" type="button" disabled>进入测试场</button>
+            <p id="status" role="status">正在加载物理场景…</p>
+          </section>
+          <p class="route">从储藏室进入走廊，沿路左转。走廊右墙有练习靶，尽头可开门进入杂物间。</p>
+          <p class="controls">WASD 移动 · Shift 奔跑 · 鼠标转向 · 右键瞄准 · 左键开火 · R 换弹 · E 交互 · Esc 释放鼠标</p>
+        </section>
+        <section aria-labelledby="reference-heading">
+          <div class="comparison-header">
+            <h2 id="reference-heading">安魂曲里昂参考</h2>
+            <select id="reference-clip" aria-label="参考片段" disabled></select>
+            <label><input id="reference-follow" type="checkbox" checked disabled /> 随网页动作定位</label>
+          </div>
+          <p id="reference-status" role="status">正在读取本地参考播放器…</p>
+          <iframe id="reference-view" title="里昂灰模和参考动画时间轴" hidden></iframe>
+          <section class="reference-events" aria-labelledby="reference-events-heading">
+            <h3 id="reference-events-heading">网页事件 · 模拟时间</h3>
+            <div id="reference-events"></div>
+          </section>
+        </section>
+      </div>
+      <section class="telemetry" aria-label="模拟快照">
+        <div>
+          <h2>当前固定步</h2>
+          <output id="snapshot" aria-live="off"></output>
+        </div>
+        <div>
+          <h2>最近事件</h2>
+          <pre id="events">等待输入</pre>
+        </div>
+        <div>
+          <h2>移动碰撞</h2>
+          <output id="collision" aria-live="off"></output>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

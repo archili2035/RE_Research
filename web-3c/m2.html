@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>动作姿态回读</title>
+    <style>
+      .pose-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+      .pose-controls label { display: inline-flex; align-items: center; gap: 6px; }
+      .pose-controls select, .pose-controls button { font: inherit; }
+    </style>
+  </head>
+  <body>
+    <main class="layout">
+      <header>
+        <h1>动作姿态回读</h1>
+        <a href="./">返回 3C 灰盒</a>
+      </header>
+      <section id="viewport" aria-label="原创动作预览">
+        <p id="status" role="status">正在读取 GLB…</p>
+      </section>
+      <div class="controls pose-controls">
+        <label>动作 <select id="clip" disabled></select></label>
+        <button id="play" type="button" disabled>播放</button>
+        <label>时间（秒） <input id="time" type="range" min="0" max="0" step="0.001" disabled /></label>
+        <output id="time-value" for="time"></output>
+      </div>
+      <section class="telemetry" aria-label="姿态测量">
+        <div>
+          <h2>绑定与姿态</h2>
+          <output id="measurements"></output>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/m2-pose.ts"></script>
+  </body>
+</html>
