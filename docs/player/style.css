@@ -489,3 +489,59 @@ label {
     font-size: 20px;
   }
 }
+
+body.web-3c-reference {
+  color-scheme: dark;
+  background: #11171b;
+  color: #e3eaec;
+}
+.web-3c-reference header,
+.web-3c-reference aside,
+.web-3c-reference .options,
+.web-3c-reference .details,
+.web-3c-reference .overlay h2,
+.web-3c-reference .overlay div,
+.web-3c-reference .playrow label {
+  display: none;
+}
+.web-3c-reference main {
+  display: block;
+  min-height: 0;
+}
+.web-3c-reference .workspace {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  height: 100vh;
+  padding: 0;
+}
+.web-3c-reference .viewport {
+  height: auto;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+}
+.web-3c-reference .overlay { left: 12px; top: 8px; }
+.web-3c-reference .viewtools { top: 8px; right: 8px; bottom: auto; }
+.web-3c-reference .viewtools button {
+  padding: 2px 7px;
+  font-size: .75rem;
+}
+.web-3c-reference .hint { left: 12px; bottom: 8px; }
+.web-3c-reference .transport { padding: 8px 10px; }
+.web-3c-reference .playrow { gap: 5px; }
+.web-3c-reference .playrow button {
+  min-width: 0;
+  padding: 4px 7px;
+  color: #e3eaec;
+  border-color: #56707c;
+  background: #202d34;
+}
+.web-3c-reference .playrow button:hover { background: #344852; }
+.web-3c-reference .playrow .primary { color: #152522; background: #a1d9cd; }
+.web-3c-reference #time {
+  min-width: 0;
+  color: #b5d2d5;
+  font-size: .8rem;
+  white-space: nowrap;
+}
+.web-3c-reference #timeline { display: block; margin: 8px 0 0; }
