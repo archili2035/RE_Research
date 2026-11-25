@@ -83,13 +83,24 @@ export function bindReferenceView() {
   }
 
   async function connect(): Promise<LeonAssets | undefined> {
-    const url = new URL('./__re9-reference/player_index.html?embed=web-3c', document.baseURI);
-    try {
-      const response = await fetch(url, { method: 'HEAD' });
-      if (!response.ok || response.headers.get('X-RE9-Reference') !== '1') {
-        unavailable('本地参考素材未提供。可在仓库内通过 Vite 启动对照。');
+    const local = ['127.0.0.1', 'localhost', '::1'].includes(window.location.hostname);
+    // 本地开发走 Vite 中间件；线上部署引用门户上已有的里昂播放器
+    const url = local
+      ? new URL('./__re9-reference/player_index.html?embed=web-3c', document.baseURI)
+      : new URL('../player_index.html?embed=web-3c', document.baseURI);
+    if (local) {
+      try {
+        const response = await fetch(url, { method: 'HEAD' });
+        if (!response.ok || response.headers.get('X-RE9-Reference') !== '1') {
+          unavailable('本地参考素材未提供。可在仓库内通过 Vite 启动对照。');
+          return;
+        }
+      } catch {
+        unavailable('无法连接本地参考播放器。');
         return;
       }
+    }
+    try {
       return await new Promise<LeonAssets | undefined>((resolve) => {
         frame.addEventListener('load', () => {
           const embedded = frame.contentWindow as (Window & Partial<LeonAssets> & { player?: Player; ModelView?: unknown }) | null;
@@ -111,7 +122,7 @@ export function bindReferenceView() {
         frame.hidden = false;
       });
     } catch {
-      unavailable('无法连接本地参考播放器。');
+      unavailable('无法连接参考播放器。');
     }
   }
 
