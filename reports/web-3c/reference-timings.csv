@@ -9,12 +9,18 @@ T07,换弹中切枪或受击,分别记录干预原因及弹量结果,,pending,,,
 T08,空枪点射,DryShot、ReserveReloadAction 及自动换弹,,pending,,,,,,,,,,,,,,待提供 RE9 对应录像及同步输入，内部状态需另采集
 T09,瞄准时靠墙与转向,碰撞收缩、持枪姿势和镜头覆盖状态,,pending,,,,,,,,,,,,,,待提供 RE9 对应录像及同步输入，内部状态需另采集
 T10,正常与持枪镜头切换,状态、覆盖项及最终 FOV、距离、位置曲线,,pending,,,,,,,,,,,,,,待提供 RE9 对应录像及同步输入，内部状态需另采集
-P01,急停,水平速度降至 0.002 m/s 内,tuned,preview,web-3c/fixtures/route.replay.json,,,,,,,,,137,,2.283333333333333,web_sim_60hz,M0 网页灰盒与 FeelConfig v1
-P02,L 形转向,CameraPose.obstructed 变为 true,tuned,preview,web-3c/fixtures/route.replay.json,,,,,,,,,159,,2.65,web_sim_60hz,M0 网页灰盒与 FeelConfig v1
-P03,沿走廊前移,CameraPose.obstructed 变为 false,tuned,preview,web-3c/fixtures/route.replay.json,,,,,,,,,197,,3.283333333333333,web_sim_60hz,M0 网页灰盒与 FeelConfig v1
-P04,移动中举枪,action.accepted: raise,tuned,preview,web-3c/fixtures/route.replay.json,,,,,,,,,198,1,3.3,web_sim_60hz,M0 网页灰盒与 FeelConfig v1
-P05,移动中单发,weapon.fired,tuned,preview,web-3c/fixtures/route.replay.json,,,,,,,,,207,2,3.4499999999999997,web_sim_60hz,M0 网页灰盒与 FeelConfig v1
-P06,单发扣弹,ammo.committed: 7 / 16,tuned,preview,web-3c/fixtures/route.replay.json,,,,,,,,,207,3,3.4499999999999997,web_sim_60hz,M0 网页灰盒与 FeelConfig v1
-P07,停步换弹,ammo.committed: 8 / 15,tuned,preview,web-3c/fixtures/route.replay.json,,,,,,,,,235,2,3.9166666666666665,web_sim_60hz,M0 网页灰盒与 FeelConfig v1
-P08,收枪,action.recovered: lower,tuned,preview,web-3c/fixtures/route.replay.json,,,,,,,,,249,2,4.15,web_sim_60hz,M0 网页灰盒与 FeelConfig v1
-P09,交互键,input.request: interact,tuned,preview,web-3c/fixtures/route.replay.json,,,,,,,,,278,0,4.633333333333333,web_sim_60hz,M0 网页灰盒与 FeelConfig v1
+P01,转角前松开移动,水平速度降至 0.002 m/s 内,tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,279,,4.65,web_sim_60hz,test-room@1 / FeelConfig v3
+P02,练习靶前举枪,action.accepted (raise),tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,344,2,5.733333333333333,web_sim_60hz,test-room@1 / FeelConfig v3
+P03,瞄准镜头解除遮挡,CameraPose.obstructed 为 false,tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,371,,6.183333333333334,web_sim_60hz,test-room@1 / FeelConfig v3
+P04,单发开火,weapon.fired,tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,375,0,6.25,web_sim_60hz,test-room@1 / FeelConfig v3
+P05,单发扣弹,ammo.committed (7 / 16),tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,375,1,6.25,web_sim_60hz,test-room@1 / FeelConfig v3
+P06,练习靶命中,target.hit (target-practice),tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,375,2,6.25,web_sim_60hz,test-room@1 / FeelConfig v3
+P07,换弹补弹,ammo.committed (8 / 15),tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,431,0,7.183333333333334,web_sim_60hz,test-room@1 / FeelConfig v3
+P08,关门阻挡进门,接触 door-exit-panel 且停在 C04 一侧,tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,532,,8.866666666666667,web_sim_60hz,test-room@1 / FeelConfig v3
+P09,开门,door.changed (open),tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,533,2,8.883333333333333,web_sim_60hz,test-room@1 / FeelConfig v3
+P10,门槛上请求关门,input.request (interact) 且门保持打开,tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,544,0,9.066666666666666,web_sim_60hz,test-room@1 / FeelConfig v3
+P11,通过开门进入 R14,角色位置 z < -0.75 m,tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,564,,9.4,web_sim_60hz,test-room@1 / FeelConfig v3
+P12,关门,door.changed (closed),tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,565,2,9.416666666666666,web_sim_60hz,test-room@1 / FeelConfig v3
+P13,关门阻挡返回,接触 door-exit-panel 且停在 R14 一侧,tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,590,,9.833333333333334,web_sim_60hz,test-room@1 / FeelConfig v3
+P14,再次开门,door.changed (open),tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,591,2,9.85,web_sim_60hz,test-room@1 / FeelConfig v3
+P15,返回 C04,角色位置 z > 0.5 m 且最终弹量 8 / 15,tuned,verified,web-3c/fixtures/route.replay.json,,,,,,,,,616,,10.266666666666666,web_sim_60hz,test-room@1 / FeelConfig v3

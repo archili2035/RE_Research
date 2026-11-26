@@ -104,7 +104,7 @@ export function bindReferenceView() {
       return await new Promise<LeonAssets | undefined>((resolve) => {
         frame.addEventListener('load', () => {
           const embedded = frame.contentWindow as (Window & Partial<LeonAssets> & { player?: Player; ModelView?: unknown }) | null;
-          const ready = embedded?.MOTION_DATA && embedded.MODEL_DATA &&
+          const ready = embedded?.MOTION_DATA && embedded.MODEL_DATA && Array.isArray(embedded.MASK_DATA) &&
             typeof embedded.LeonSkinning?.create === 'function' && typeof embedded.MotionMath?.sample === 'function';
           resolve(ready ? embedded as Window & LeonAssets : undefined);
           if (!embedded?.ModelView || typeof embedded.player?.selectClip !== 'function') {

@@ -155,6 +155,7 @@ export async function createBoxScene(
 
   return {
     scene, avatar, queries, meshes, readMovementDebug,
+    resetMovementDebug() { lastMove = undefined; },
     setColliderEnabled(id: string, enabled: boolean) {
       const collider = colliders.get(id);
       if (!collider) throw new Error(`Unknown collider: ${id}`);

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { writeFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { PerspectiveCamera, Vector3 } from 'three';
-import defaults from '../src/camera-defaults.json' with { type: 'json' };
+import feel from '../src/feel.json' with { type: 'json' };
 import { castCrosshair } from '../src/camera.ts';
 import type { InputSnapshot, SceneHit, SceneQueries, Vec3 } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
@@ -10,6 +10,7 @@ import { createTestRoom, testRoom } from '../src/level.ts';
 import { createFixedLoop, createSimulation } from '../src/simulation.ts';
 import type { SimulationState } from '../src/simulation.ts';
 
+const defaults = feel.camera;
 const neutral = createInputBuffer().sample(0);
 const distance = (a: Vec3, b: Vec3) => Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z);
 
@@ -78,12 +79,17 @@ const m4Trace: Samples = [];
 const at = (samples: Samples, tick: number) => samples[tick - 1];
 
 function assertSmoothRecovery(samples: Samples, start: number, end: number, maxStepM: number) {
+  let reverseTravelM = 0;
   for (let tick = start + 1; tick <= end; tick += 1) {
     const before = at(samples, tick - 1);
     const after = at(samples, tick);
-    assert.ok(after.boomM >= before.boomM - 1e-5, `boom shrank at tick ${tick}`);
-    assert.ok(after.boomM - before.boomM < maxStepM, `boom jumped at tick ${tick}`);
+    const delta = after.boomM - before.boomM;
+    // Catching up with the live sweep anchor can slightly shorten a recovering boom.
+    assert.ok(delta >= -0.004, `boom reversed by ${delta} m at tick ${tick}`);
+    assert.ok(delta < maxStepM, `boom jumped at tick ${tick}`);
+    reverseTravelM += Math.max(0, -delta);
   }
+  assert.ok(reverseTravelM < 0.025, `boom repeatedly reversed for ${reverseTravelM} m`);
 }
 
 test('M4 aims beside a wall, then recovers as M3 walks away', async () => {

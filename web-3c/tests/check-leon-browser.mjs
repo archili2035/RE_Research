@@ -48,19 +48,30 @@ async function check(browser, url) {
   await appearance.selectOption('leon');
   await page.locator('#enter').click();
   await page.waitForFunction(() => document.pointerLockElement?.id === 'viewport');
+  await page.locator('#viewport').screenshot({ path: path.join(out, 'leon-standing.png') });
   await page.keyboard.down('KeyW');
   await page.waitForFunction((x) => Number(document.querySelector('#snapshot').value.match(/坐标 (-?\d+\.\d+),/)[1]) > x + 3, startX);
   await page.keyboard.up('KeyW');
   await page.waitForFunction(() => window.playfieldIndexCount > 10000);
   const leonIndexCount = await indexCount();
   const walkedX = await positionX();
+  const stopTick = await page.locator('#snapshot').evaluate((element) => Number(element.value.match(/步号 (\d+)/)[1]));
+  await page.waitForFunction((tick) => Number(document.querySelector('#snapshot').value.match(/步号 (\d+)/)[1]) >= tick + 10, stopTick);
+  assert.ok(Math.abs(await positionX() - walkedX) <= 0.01);
+  await page.locator('#viewport').screenshot({ path: path.join(out, 'leon-stopped.png') });
 
   await page.mouse.down({ button: 'right' });
+  await page.keyboard.down('KeyW');
   await page.waitForFunction(() => document.querySelector('#events').textContent.includes('action.recovered raise'));
+  await page.waitForFunction((x) => Number(document.querySelector('#snapshot').value.match(/坐标 (-?\d+\.\d+),/)[1]) > x + 0.5, walkedX);
   await page.locator('#viewport').screenshot({ path: path.join(out, 'leon-aim.png') });
+  const fireStartX = await positionX();
   await page.mouse.down({ button: 'left' });
   await page.mouse.up({ button: 'left' });
   await page.waitForFunction(() => document.querySelector('#events').textContent.includes('action.recovered fire'));
+  await page.keyboard.up('KeyW');
+  const fireEndX = await positionX();
+  assert.ok(fireEndX > fireStartX + 0.25);
   await page.keyboard.press('KeyR');
   await page.waitForFunction(() => document.querySelector('#events').textContent.includes('action.recovered reload'));
   const ammo = (await page.locator('#ammo').textContent()).trim();
@@ -90,7 +101,7 @@ async function check(browser, url) {
     assert.equal(files.filter((url) => url.endsWith('/' + file)).length, 1, file);
   }
   assert.deepEqual(errors, []);
-  return { startX, walkedX, stoppedX, ammo, leonIndexCount, grayboxIndexCount, events, files, errors };
+  return { startX, walkedX, fireStartX, fireEndX, stoppedX, ammo, leonIndexCount, grayboxIndexCount, events, files, errors };
 }
 
 await mkdir(out, { recursive: true });

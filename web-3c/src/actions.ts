@@ -10,11 +10,15 @@ export interface ActionPose {
   readonly lift: number;
   readonly gaitPhaseRad: number;
   readonly gaitWeight: number;
+  readonly forwardDistanceM: number;
+  readonly forwardBlend: number;
 }
 
 const fixedTicks = (seconds: number) => Math.max(1, Math.ceil(seconds / STEP_S - 1e-9));
 const FIRE_BUFFER_TICKS = fixedTicks(0.50);
 const MOVING_THRESHOLD_MPS = 0.1;
+const WALK_BLEND_IN_S = 0.10;
+const WALK_BLEND_OUT_S = 0.13;
 
 export function createActions(parameters: FeelConfig['actions'], manifest?: ClipManifest) {
   const capacity = parameters.magazineCapacity.value;
@@ -38,7 +42,9 @@ export function createActions(parameters: FeelConfig['actions'], manifest?: Clip
   let fireUntil = -1;
   let lift = 0;
   let gaitPhaseRad = 0;
-  let pose: ActionPose = { clip: null, progress: 0, lift, gaitPhaseRad, gaitWeight: 0 };
+  let forwardDistanceM = 0;
+  let forwardBlend = 0;
+  let pose: ActionPose = { clip: null, progress: 0, lift, gaitPhaseRad, gaitWeight: 0, forwardDistanceM, forwardBlend };
 
   const act: SimulationStages['act'] = (input, character, previous, emit) => {
     const { tick, aimHeld } = input;
@@ -108,7 +114,19 @@ export function createActions(parameters: FeelConfig['actions'], manifest?: Clip
     const aiming = clip === 'fire' || (aimHeld && (clip === 'raise' || lift === 1));
     const gaitWeight = character.grounded && speed > MOVING_THRESHOLD_MPS ? Math.min(1, speed / 2.55) : 0;
     if (gaitWeight) gaitPhaseRad = (gaitPhaseRad + speed * STEP_S * Math.PI * 2 / 1.2) % (2 * Math.PI);
-    pose = { clip, progress: active ? (tick - active.started) / active.length : 0, lift, gaitPhaseRad, gaitWeight };
+
+    const { yawRad, velocity } = character;
+    const forwardMps = -Math.sin(yawRad) * velocity.x - Math.cos(yawRad) * velocity.z;
+    if (character.grounded && forwardMps > MOVING_THRESHOLD_MPS && forwardMps >= 0.9 * speed) {
+      forwardDistanceM += forwardMps * STEP_S;
+      forwardBlend = Math.min(1, forwardBlend + STEP_S / WALK_BLEND_IN_S);
+    } else {
+      forwardBlend = Math.max(0, forwardBlend - STEP_S / WALK_BLEND_OUT_S);
+    }
+    pose = {
+      clip, progress: active ? (tick - active.started) / active.length : 0, lift, gaitPhaseRad, gaitWeight,
+      forwardDistanceM, forwardBlend,
+    };
     return { id: subject, phase, aiming, magazine, reserve };
   };
 

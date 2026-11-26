@@ -1,13 +1,14 @@
-import type { FeelConfig, GameEvent, InputSnapshot, ReplayTrace, SceneQueries, Vec3 } from './contracts.ts';
+import { loadClipManifest } from './clip-manifest.ts';
+import type { FeelConfig, GameEvent, InputSnapshot, ReplayTrace, Vec3 } from './contracts.ts';
 import reference from '../fixtures/route.replay.json' with { type: 'json' };
-import defaultFeel from './feel.json' with { type: 'json' };
+import { createTestRoom, defaultFeel, testRoom } from './level.ts';
 import { createRoutePlayback, matchesReferenceEvents } from './m7-replay.ts';
-import { createPreviewScene, previewBoxes } from './preview-scene.ts';
+import { CHARACTER_BODY } from './movement.ts';
 import { createFixedLoop } from './simulation.ts';
 import './m7.css';
 
 const route = reference as ReplayTrace;
-let feel = defaultFeel as FeelConfig;
+let feel = defaultFeel;
 const play = document.querySelector<HTMLButtonElement>('#play')!;
 const step = document.querySelector<HTMLButtonElement>('#step')!;
 const status = document.querySelector<HTMLOutputElement>('#status')!;
@@ -20,25 +21,40 @@ const ctx = canvas.getContext('2d')!;
 const versionOutput = document.querySelector<HTMLOutputElement>('#feel-version')!;
 
 const trail: Vec3[] = [];
-let scene: SceneQueries;
+let room: Awaited<ReturnType<typeof createTestRoom>>;
 let latestInput: InputSnapshot | undefined;
 let playback: ReturnType<typeof createRoutePlayback>;
 let animation: number | undefined;
 
+const boxes = testRoom.render.filter((item) => item.kind === 'box')
+  .filter(({ position, size }) => position.y - size.y / 2 < CHARACTER_BODY.heightM);
+const corners = boxes.flatMap(({ position, size, yawRad }) => {
+  const cos = Math.abs(Math.cos(yawRad));
+  const sin = Math.abs(Math.sin(yawRad));
+  const x = (size.x * cos + size.z * sin) / 2;
+  const z = (size.x * sin + size.z * cos) / 2;
+  return [
+    { x: position.x - x, z: position.z - z },
+    { x: position.x + x, z: position.z + z },
+  ];
+});
+
 const fmt = (value: number) => value.toFixed(3);
 function eventLine(event: GameEvent) {
-  const detail = 'action' in event ? event.action :
-    event.type === 'ammo.committed' ? `${event.magazine} / ${event.reserve}` : '';
+  let detail = 'action' in event ? event.action : '';
+  if (event.type === 'ammo.committed') detail = `${event.magazine} / ${event.reserve}`;
+  if (event.type === 'door.changed') detail = `${event.subjectId} ${event.open ? 'open' : 'closed'}`;
+  if (event.type === 'target.hit') detail = event.subjectId;
   return `${event.tick}.${event.order}  ${event.type} ${detail}`.trimEnd();
 }
 
 function drawMap(character: Vec3, camera: Vec3) {
   const { width, height } = canvas;
-  const positions = [...trail, character, camera];
-  const minX = Math.min(-5, ...positions.map(({ x }) => Math.floor(x) - 1));
-  const maxX = Math.max(7, ...positions.map(({ x }) => Math.ceil(x) + 1));
-  const minZ = Math.min(-3, ...positions.map(({ z }) => Math.floor(z) - 1));
-  const maxZ = Math.max(8, ...positions.map(({ z }) => Math.ceil(z) + 1));
+  const positions = [...corners, ...trail, character, camera];
+  const minX = Math.floor(Math.min(...positions.map(({ x }) => x)));
+  const maxX = Math.ceil(Math.max(...positions.map(({ x }) => x)));
+  const minZ = Math.floor(Math.min(...positions.map(({ z }) => z)));
+  const maxZ = Math.ceil(Math.max(...positions.map(({ z }) => z)));
   const scale = Math.min((width - 32) / (maxX - minX), (height - 32) / (maxZ - minZ));
   const toX = (x: number) => width / 2 + (x - (minX + maxX) / 2) * scale;
   const toY = (z: number) => height / 2 + (z - (minZ + maxZ) / 2) * scale;
@@ -57,10 +73,14 @@ function drawMap(character: Vec3, camera: Vec3) {
   }
   ctx.stroke();
 
-  for (const { id, x, z, w, d } of previewBoxes) {
-    if (id === 'floor') continue;
-    ctx.fillStyle = id === 'practice-block' ? '#a9694d' : '#607a85';
-    ctx.fillRect(toX(x - w / 2), toY(z - d / 2), w * scale, d * scale);
+  for (const { id, position, size, yawRad, color } of boxes) {
+    if (!room.scene.getObjectByName(id)?.visible) continue;
+    ctx.save();
+    ctx.translate(toX(position.x), toY(position.z));
+    ctx.rotate(-yawRad);
+    ctx.fillStyle = color ?? '#607a85';
+    ctx.fillRect(-size.x * scale / 2, -size.z * scale / 2, size.x * scale, size.z * scale);
+    ctx.restore();
   }
 
   const points = trail.length ? trail : [character];
@@ -96,6 +116,7 @@ function render() {
     `角色 ${position(character.position)} m`,
     `速度 ${fmt(Math.hypot(character.velocity.x, character.velocity.z))} m/s`,
     `动作 ${action.phase}   弹匣/备用 ${action.magazine}/${action.reserve}`,
+    `门 ${room.doorPrompt(character.position) || '—'}`,
     `镜头 ${position(camera.position)} m`,
     `垂直 FOV ${fmt(camera.verticalFovRad)} rad   遮挡 ${camera.obstructed ? '是' : '否'}`,
   ].join('\n');
@@ -126,20 +147,22 @@ function frame(nowMs: number) {
   else animation = requestAnimationFrame(frame);
 }
 
+function publish(state: typeof playback.state, input: InputSnapshot, events: readonly GameEvent[]) {
+  latestInput = input;
+  trail.push(state.character.position);
+  if (events.length) {
+    if (eventLog.textContent === '等待回放') eventLog.textContent = '';
+    eventLog.append(events.map(eventLine).join('\n') + '\n');
+    eventLog.scrollTop = eventLog.scrollHeight;
+  }
+}
+
 function reset() {
-  if (playback) pause();
-  trail.length = 0;
+  pause();
+  playback.reset(feel);
   latestInput = undefined;
   eventLog.textContent = '等待回放';
-  playback = createRoutePlayback(route, feel, scene, (state, input, events) => {
-    latestInput = input;
-    trail.push(state.character.position);
-    if (events.length) {
-      if (eventLog.textContent === '等待回放') eventLog.textContent = '';
-      eventLog.append(events.map(eventLine).join('\n') + '\n');
-      eventLog.scrollTop = eventLog.scrollHeight;
-    }
-  });
+  trail.length = 0;
   trail.push(playback.state.character.position);
   progress.max = route.inputs.length;
   step.disabled = false;
@@ -188,7 +211,11 @@ const labels = {
   camera: {
     lookRadPerPx: '鼠标灵敏度（rad/px）', moveDistanceM: '移动镜头距离（m）', aimDistanceM: '瞄准镜头距离（m）',
     moveShoulderM: '移动横向偏移（m）', aimShoulderM: '瞄准横向偏移（m）',
+    moveHeightM: '移动锚点高度（m）', aimHeightM: '瞄准锚点高度（m）',
     moveVerticalFovRad: '移动垂直 FOV（rad）', aimVerticalFovRad: '瞄准垂直 FOV（rad）',
+    followPositionS: '水平跟随时间常数（s）', followHeightS: '高度跟随时间常数（s）',
+    aimTransitionS: '瞄准过渡时间常数（s）', moveTransitionS: '普通构图过渡时间常数（s）',
+    recoveryS: '离墙恢复时间常数（s）', recoveryDeadbandM: '贴墙防回弹余量（m）',
   },
   actions: { magazineCapacity: '弹匣容量', initialReserve: '初始备用弹' },
 };
@@ -205,9 +232,10 @@ for (const group of Object.keys(groups) as Group[]) {
     input.required = true;
     input.step = group === 'actions' ? '1' : 'any';
     input.min = key === 'magazineCapacity' ? '1' : key === 'lookRadPerPx' ? '0.0001' :
-      key.endsWith('FovRad') ? '0.1' : '0';
+      key.endsWith('FovRad') || key.endsWith('HeightM') ? '0.1' : '0';
     input.max = group === 'actions' ? '999' : key === 'lookRadPerPx' ? '0.02' :
-      key.endsWith('FovRad') ? '2.9' : '12';
+      key.endsWith('FovRad') ? '2.9' : key.endsWith('HeightM') ? '2' :
+      key.endsWith('S') ? '1' : key === 'recoveryDeadbandM' ? '0.1' : '12';
     input.value = String(feel[group][key].value);
     const label = document.createElement('label');
     label.append(title, input);
@@ -231,11 +259,18 @@ document.querySelector<HTMLFormElement>('#feel')!.addEventListener('submit', (ev
   feel = { ...next, version: feel.version + 1 };
   reset();
 });
-void createPreviewScene().then(({ queries }) => {
-  scene = queries;
+async function boot() {
+  const manifest = await loadClipManifest(new URL('./assets/clips.json', document.baseURI)).catch((error: unknown) => {
+    console.warn('动作清单加载失败，使用默认时序', error);
+    return undefined;
+  });
+  room = await createTestRoom(testRoom, manifest);
+  playback = createRoutePlayback(route, room, feel, publish);
   document.querySelectorAll<HTMLButtonElement>('button').forEach((button) => { button.disabled = false; });
   reset();
-}).catch((error: unknown) => {
-  status.value = '灰盒物理场景启动失败';
+}
+
+void boot().catch((error: unknown) => {
+  status.value = '回放场景启动失败';
   console.error(error);
 });

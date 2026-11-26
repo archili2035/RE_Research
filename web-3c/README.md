@@ -15,7 +15,7 @@ npm run preview -- --host 127.0.0.1 --port 4173
 - 从储藏室直走进入 L 形走廊，到拐角左转。走到右墙的橙色练习靶前，按住右键，把准星移到靶面后按左键。靶面闪亮，HUD 显示命中，弹量从 8/16 降为 7/16。按 R 换弹后变为 8/15。
 - 走到尽头按 E 开门，穿过门槛后可按 E 关门。按住移动键时释放鼠标锁定，下一步的移动轴应归零。切换窗口也会清除输入。
 - 点击「碰撞测试场」检查急停、贴墙、门框和台阶。逐步位移、接触法线和复现命令见 [M3 交接](../reports/web-3c/m3-handoff.md)。
-- 靠墙按住右键，观察「当前固定步」中的镜头位置、垂直 FOV 和遮挡。沿走廊转过 L 角并开门，观察镜头收近和恢复。验收轨道见 [M4 交接](../reports/web-3c/m4-handoff.md)。
+- 靠墙按住右键，观察「当前固定步」中的镜头位置、垂直 FOV 和遮挡。沿走廊转过 L 角并开门，观察镜头收近和恢复。录像和逐步轨道见 [镜头改前改后](../reports/web-3c/camera-tune-comparison.md)。
 - `npm test` 覆盖固定步、Rapier 查询、移动、镜头、动作分层与事件顺序、M6 路线和 M7 回放。M5 时序与当前主测试场的验证见 [M5 动作规则](../reports/web-3c/action-rules.md)。
 
 生产预览已通过无头 Chromium 147.0.7727.15 的 WebGL、锁定、移动、瞄准、单发、换弹和输入清空检查。生产构建有 Vite 大包警告，浏览器帧时间留待 M8 测量。
@@ -40,10 +40,10 @@ Vite 的本机开发与生产预览直接读取现有 `docs/player` 资产，静
 | --- | --- |
 | M1–M2 | M1 的 `asset-audit.json` 为 M2 提供样本定位。M2 按 `ClipManifest` 提供 `public/assets/clips.json`、GLB 和姿态检查。 |
 | M3 | 主入口使用 `src/input.ts` 与 `src/movement.ts`，继续生成 `InputSnapshot` 并通过 `SceneQueries.moveCapsule` 得到 `CharacterState`。 |
-| M4 | `src/level.ts` 已接入 `src/camera.ts`。镜头默认值见 `src/camera-defaults.json`，沿用 `CameraPose`、球扫和射线查询。 |
+| M4 | `src/level.ts` 已接入 `src/camera.ts`。镜头默认值见 `src/feel.json` 的 `camera` 组，沿用 `CameraPose`、球扫和射线查询。 |
 | M5 | 主测试场使用 `src/actions.ts` 的举枪、单发及换弹时序，`src/action-view.ts` 读取 M2 轨道。规则、证据与复现见 [M5 动作规则](../reports/web-3c/action-rules.md)。 |
 | M6 | 主入口加载 `src/levels/test-room.json`。`src/level.ts` 发布门和靶事件，`src/hud.ts` 消费状态与事件。 |
-| M7 | 通过输入采样和发布入口接入 `ReplayTrace` 和版本化 `FeelConfig`。仓库已有灰盒回放和调参占位值，实机对照待补。 |
+| M7 | 通过输入采样和发布入口接入 `ReplayTrace` 和版本化 `FeelConfig`。试玩与回放共用 `test-room@1`、动作清单和 `FeelConfig` v3。回放基线为 616 步、31 条事件。实机对照待采集。 |
 | M8 | 生产构建输出为本地 `dist/`。在 M2–M7 汇合后验收路线、性能并接研究站导航。 |
 
 这些类型是新接口。接入时在主入口替换预览实现即可，现有研究站、播放器和地图工程无需迁移。

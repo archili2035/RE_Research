@@ -1,4 +1,4 @@
-import defaults from './camera-defaults.json' with { type: 'json' };
+import feel from './feel.json' with { type: 'json' };
 import { STEP_S } from './contracts.ts';
 import type { ActionState, CameraPose, CharacterState, FeelConfig, SceneQueries, Vec3, ViewAngles } from './contracts.ts';
 import type { SimulationStages } from './simulation.ts';
@@ -35,17 +35,21 @@ function damping(timeS: number) {
 
 export function createCamera(
   character: CharacterState, action: ActionState, scene: SceneQueries,
-  parameters: FeelConfig['camera'] = defaults as FeelConfig['camera'],
+  parameters: FeelConfig['camera'] = feel.camera as FeelConfig['camera'],
 ) {
   const {
     lookRadPerPx, moveDistanceM, aimDistanceM, moveShoulderM, aimShoulderM, moveHeightM, aimHeightM,
     moveVerticalFovRad, aimVerticalFovRad, aimTransitionS, moveTransitionS, recoveryS, sphereRadiusM,
-    wallClearanceM, collisionRetractMps,
+    wallClearanceM, collisionRetractMps, followPositionS, followHeightS, recoveryDeadbandM,
   } = parameters;
   const aimDamping = damping(aimTransitionS.value);
   const moveDamping = damping(moveTransitionS.value);
   const recoveryDamping = damping(recoveryS.value);
+  const positionDamping = damping(followPositionS?.value ?? 0);
+  const heightDamping = damping(followHeightS?.value ?? 0);
+  const recoveryDeadband = recoveryDeadbandM?.value ?? 0;
   const retractStepM = collisionRetractMps.value * STEP_S;
+  let followedFeet = character.position;
   let aimBlend = Number(action.aiming);
   let boomLengthM = Infinity;
   let retracting = false;
@@ -61,20 +65,24 @@ export function createCamera(
     const { yawRad } = view;
     const mix = (move: number, aim: number) => move + (aim - move) * aimBlend;
     const direction = crosshairDirection(view);
-    const anchor = { ...feet, y: feet.y + mix(moveHeightM.value, aimHeightM.value) };
+    const height = mix(moveHeightM.value, aimHeightM.value);
+    // Sweep from the live character, even while the framing origin is catching up.
+    const anchor = { ...feet, y: feet.y + height };
     const back = mix(moveDistanceM.value, aimDistanceM.value);
     const shoulder = mix(moveShoulderM.value, aimShoulderM.value);
     const desired = {
-      x: anchor.x - direction.x * back + Math.cos(yawRad) * shoulder,
-      y: anchor.y - direction.y * back,
-      z: anchor.z - direction.z * back - Math.sin(yawRad) * shoulder,
+      x: followedFeet.x - direction.x * back + Math.cos(yawRad) * shoulder,
+      y: followedFeet.y + height - direction.y * back,
+      z: followedFeet.z - direction.z * back - Math.sin(yawRad) * shoulder,
     };
     const { lengthM, allowedM, hit } = sweep(anchor, desired, queries);
     const sharpRetraction = hit !== null && boomLengthM - allowedM > retractStepM;
 
-    // Ease outward along the boom as space opens.
-    if (allowedM - boomLengthM <= SETTLE_DISTANCE_M) boomLengthM = allowedM;
-    else boomLengthM += (allowedM - boomLengthM) * recoveryDamping;
+    // Ignore small outward changes while grazing a wall and honor tighter limits immediately.
+    const recoveryTargetM = hit && allowedM > boomLengthM
+      ? Math.max(boomLengthM, allowedM - recoveryDeadband) : allowedM;
+    if (recoveryTargetM - boomLengthM <= SETTLE_DISTANCE_M) boomLengthM = recoveryTargetM;
+    else boomLengthM += (recoveryTargetM - boomLengthM) * recoveryDamping;
     const goal = interpolate(anchor, desired, lengthM > 0 ? boomLengthM / lengthM : 0);
     let position = goal;
     let obstructed = hit !== null;
@@ -106,8 +114,11 @@ export function createCamera(
     const pitch = previous.pitchRad - input.lookDeltaY * lookRadPerPx.value;
     const yawRad = Math.atan2(Math.sin(yaw), Math.cos(yaw));
     const pitchRad = Math.max(MIN_PITCH_RAD, Math.min(MAX_PITCH_RAD, pitch));
+    const feet = nextCharacter.position;
+    const followedHeight = followedFeet.y + (feet.y - followedFeet.y) * heightDamping;
+    followedFeet = { ...interpolate(followedFeet, feet, positionDamping), y: followedHeight };
     aimBlend += (Number(nextAction.aiming) - aimBlend) * (nextAction.aiming ? aimDamping : moveDamping);
-    return solve(nextCharacter.position, { yawRad, pitchRad }, queries, previous);
+    return solve(feet, { yawRad, pitchRad }, queries, previous);
   };
 
   return { initial, update };

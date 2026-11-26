@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import greyboxJson from '../fixtures/m3-greybox.json' with { type: 'json' };
 import { createActionView } from './action-view.ts';
 import { loadClipAssets } from './clip-assets.ts';
-import { CONTRACT_VERSION } from './contracts.ts';
+import { loadClipManifest } from './clip-manifest.ts';
 import type { GameEvent, LevelDefinition, Vec3 } from './contracts.ts';
 import { createHud } from './hud.ts';
 import { bindInput } from './input.ts';
@@ -12,6 +12,9 @@ import { bindPlayerAppearance, createPlayerView } from './player-view.ts';
 import { bindReferenceView } from './re9-reference.ts';
 import { createFixedLoop, createSimulation } from './simulation.ts';
 import './style.css';
+
+const researchHome = document.querySelector<HTMLAnchorElement>('#research-home')!;
+researchHome.hidden = new URL('./', document.baseURI).pathname === '/';
 
 const viewport = document.querySelector<HTMLElement>('#viewport')!;
 const enter = document.querySelector<HTMLButtonElement>('#enter')!;
@@ -41,11 +44,15 @@ async function boot() {
   const reference = bindReferenceView();
   const useCollisionCourse = new URLSearchParams(window.location.search).get('level') === 'm3';
   const level = useCollisionCourse ? greyboxJson as LevelDefinition : undefined;
-  const clips = await loadClipAssets(new URL('./assets/clips.json', document.baseURI)).catch((error: unknown) => {
+  const manifestUrl = new URL('./assets/clips.json', document.baseURI);
+  const manifest = await loadClipManifest(manifestUrl).catch((error: unknown) => {
+    console.warn('动作清单加载失败，使用默认时序', error);
+    return undefined;
+  });
+  const clips = manifest && await loadClipAssets(manifestUrl, manifest).catch((error: unknown) => {
     console.warn('动作素材加载失败，使用胶囊占位', error);
     return undefined;
   });
-  const manifest = clips && { version: CONTRACT_VERSION, clips: Array.from(clips.values(), ({ entry }) => entry) };
   const { scene, avatar, queries, initial, stages, doorPrompt, readMovementDebug, readActionPose } =
     await createTestRoom(level, manifest);
   const actionView = clips && createActionView(clips);
@@ -89,6 +96,8 @@ async function boot() {
 
   let previous = initial;
   let current = initial;
+  let previousActionPose = readActionPose();
+  let currentActionPose = previousActionPose;
   const recent: string[] = [];
   const step = createSimulation(initial, queries, {
     ...stages,
@@ -96,6 +105,8 @@ async function boot() {
     publish(state, frame, emitted) {
       previous = current;
       current = state;
+      previousActionPose = currentActionPose;
+      currentActionPose = readActionPose();
       reference.record(previous.action, emitted);
       const { position, velocity, grounded } = state.character;
       hud.update(state.tick, state.action, emitted, doorPrompt(position));
@@ -128,12 +139,18 @@ async function boot() {
     const lerp = (from: number, to: number) => THREE.MathUtils.lerp(from, to, alpha);
     const a = previous.character.position;
     const b = current.character.position;
+    const forwardPose = previousActionPose.forwardDistanceM === currentActionPose.forwardDistanceM &&
+      previousActionPose.forwardBlend === currentActionPose.forwardBlend ? currentActionPose : {
+        ...currentActionPose,
+        forwardDistanceM: lerp(previousActionPose.forwardDistanceM, currentActionPose.forwardDistanceM),
+        forwardBlend: lerp(previousActionPose.forwardBlend, currentActionPose.forwardBlend),
+      };
     // Use the swept fixed-step pose, so the view matches the crosshair ray.
     const pose = current.camera;
     actor.draw(
       { x: lerp(a.x, b.x), y: lerp(a.y, b.y), z: lerp(a.z, b.z) },
       lerpAngle(previous.character.yawRad, current.character.yawRad, alpha),
-      readActionPose(),
+      forwardPose,
       pose.position,
     );
     camera.position.set(pose.position.x, pose.position.y, pose.position.z);

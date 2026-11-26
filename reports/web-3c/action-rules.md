@@ -21,7 +21,7 @@
 
 - `web-3c/src/actions.ts` 读取现有 `InputSnapshot`、`CharacterState` 和 `ClipManifest`，输出 `ActionState`，由模拟入口给 `GameEvent` 编号。`web-3c/src/action-view.ts` 读取模块内固定步姿态。持枪站姿和举枪为普通轨，缺收枪轨时倒放举枪。步态由碰撞后的水平速度和位移相位驱动，单发在 M2 指定的 `Raise` 0.44 s 基准和双臂遮罩上叠加，保留下肢步态。已烘焙的换弹轨用普通混合，包含弹匣和固定腿姿。换弹轨占用下肢姿态时，角色位移仍由 M3 控制。
 - `web-3c/src/level.ts` 将动作接入主关卡，并向 `web-3c/src/main.ts` 提供角色显示所需的姿态读取。M3 继续读上一步瞄准，M4 读本步瞄准，M6 HUD 读提交弹量和确认开火事件。`contracts.ts`、`ClipManifest`、`ActionState`、`GameEvent` 与 `ReplayTrace` 沿用既有数据结构和版本。
-- M7 的 v1 回放使用其即时预览阶段复现原基线。M7/M8 切到主关卡时，最小改动是换接该关卡的 `move`、`act`、`camera`、`resolveSceneEvents`，更新关卡与参数引用，并按新事件步号重录基线。`web-3c/README.md` 已指向本规则。
+- M7 回放使用 `test-room@1` 的 `move`、`act`、`camera`、`resolveSceneEvents`。出弹、扣弹、补弹与命中步号见 [M7 交接](m7-handoff.md)。
 
 ## 验证与复现
 

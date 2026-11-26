@@ -168,7 +168,10 @@ test('M5 draws additive fire over moving legs and plays M2 baked reload as an ab
   const magazine = view.root.getObjectByName('Magazine')!;
   const position = (node: typeof well) => node.getWorldPosition(new Vector3());
   const sample = (overrides: Partial<ActionPose>) => {
-    view.draw({ clip: null, progress: 0, lift: 1, gaitPhaseRad: Math.PI / 2, gaitWeight: 1, ...overrides });
+    view.draw({
+      clip: null, progress: 0, lift: 1, gaitPhaseRad: Math.PI / 2, gaitWeight: 1,
+      forwardDistanceM: 0, forwardBlend: 0, ...overrides,
+    });
     view.root.updateMatrixWorld(true);
     const direction = new Vector3(0, 0, 1).applyQuaternion(socket.getWorldQuaternion(socket.quaternion.clone()));
     return {

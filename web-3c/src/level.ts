@@ -8,7 +8,7 @@ import { createBoxScene } from './preview-scene.ts';
 import type { SimulationStages } from './simulation.ts';
 
 export const testRoom = testRoomJson as LevelDefinition;
-const feel = feelJson as FeelConfig;
+export const defaultFeel = feelJson as FeelConfig;
 
 const TARGET_FLASH_TICKS = 24;
 const DOOR_CLEARANCE_M = CHARACTER_BODY.radiusM + 0.025;
@@ -31,7 +31,8 @@ export async function createTestRoom(level = testRoom, manifest?: ClipManifest) 
     if (item.kind !== 'box') throw new Error(`Test-room geometry must be a box: ${item.id}`);
     return item;
   });
-  const { scene, avatar, queries, meshes, readMovementDebug, setColliderEnabled } = await createBoxScene(render, level.colliders);
+  const { scene, avatar, queries, meshes, readMovementDebug, resetMovementDebug, setColliderEnabled } =
+    await createBoxScene(render, level.colliders);
 
   const doors = level.doors.map((door) => {
     const panel = level.colliders.find((collider) => collider.id === door.colliderId);
@@ -71,22 +72,44 @@ export async function createTestRoom(level = testRoom, manifest?: ClipManifest) 
     return overlapsDoor(feet, door.panel) ? '离开门槛后可关门' : 'E 关门';
   }
 
-  const actions = createActions(feel.actions, manifest);
-  const character: CharacterState = { ...level.spawn, velocity: { x: 0, y: 0, z: 0 }, grounded: true };
-  const camera = createCamera(character, actions.initial, queries);
-  const initial = { tick: 0, character, action: actions.initial, camera: camera.initial };
+  function start(feel: FeelConfig) {
+    const actions = createActions(feel.actions, manifest);
+    const character: CharacterState = { ...level.spawn, velocity: { x: 0, y: 0, z: 0 }, grounded: true };
+    const camera = createCamera(character, actions.initial, queries, feel.camera);
+    const initial = { tick: 0, character, action: actions.initial, camera: camera.initial };
+    return { initial, actions, camera, move: createMovement(feel) };
+  }
+
+  let runtime = start(defaultFeel);
+
+  function setDoorOpen(door: (typeof doors)[number], open: boolean) {
+    door.open = open;
+    setColliderEnabled(door.colliderId, !open);
+    door.mesh.visible = !open;
+  }
+
+  function reset(feel = defaultFeel) {
+    for (const door of doors) {
+      if (door.open) setDoorOpen(door, false);
+    }
+    for (const target of targets.values()) {
+      target.flashUntil = 0;
+      target.mesh.material.emissiveIntensity = 0;
+    }
+    resetMovementDebug();
+    runtime = start(feel);
+    return runtime.initial;
+  }
 
   const act: SimulationStages['act'] = (input, character, previous, emit) => {
-    const next = actions.act(input, character, previous, emit);
+    const next = runtime.actions.act(input, character, previous, emit);
     if (!input.interactPressed) return next;
 
     const door = nearestDoor(character.position);
     if (!door || (door.open && overlapsDoor(character.position, door.panel))) return next;
 
     emit(previous.id, { type: 'action.accepted', action: 'interact' });
-    door.open = !door.open;
-    setColliderEnabled(door.colliderId, !door.open);
-    door.mesh.visible = !door.open;
+    setDoorOpen(door, !door.open);
     emit(door.id, { type: 'door.changed', open: door.open });
     emit(previous.id, { type: 'action.recovered', action: 'interact' });
     return next;
@@ -109,7 +132,14 @@ export async function createTestRoom(level = testRoom, manifest?: ClipManifest) 
   };
 
   return {
-    scene, avatar, queries, initial, doorPrompt, readMovementDebug, readActionPose: actions.readPose,
-    stages: { move: createMovement(feel), act, camera: camera.update, resolveSceneEvents },
+    level, scene, avatar, queries, doorPrompt, readMovementDebug, reset,
+    get initial() { return runtime.initial; },
+    readActionPose: () => runtime.actions.readPose(),
+    stages: {
+      move: (...args) => runtime.move(...args),
+      act,
+      camera: (...args) => runtime.camera.update(...args),
+      resolveSceneEvents,
+    } satisfies Omit<SimulationStages, 'sampleInput' | 'publish'>,
   };
 }

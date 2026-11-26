@@ -1,23 +1,23 @@
 {
-  "version": 1,
+  "version": 3,
   "movement": {
     "walkSpeedMps": {
       "value": 2.55,
       "source": "web-3c/src/preview-stages.ts",
       "evidence": "tuned",
-      "conditions": "60 Hz，灰盒移动占位值"
+      "conditions": "test-room@1，60 Hz，碰撞前的水平目标速度"
     },
     "sprintSpeedMps": {
       "value": 4.3,
       "source": "web-3c/src/preview-stages.ts",
       "evidence": "tuned",
-      "conditions": "60 Hz，灰盒移动占位值"
+      "conditions": "test-room@1，60 Hz，碰撞前的水平目标速度"
     },
     "aimSpeedMps": {
       "value": 1.55,
       "source": "web-3c/src/preview-stages.ts",
       "evidence": "tuned",
-      "conditions": "60 Hz，灰盒移动占位值"
+      "conditions": "test-room@1，60 Hz，碰撞前的水平目标速度"
     }
   },
   "camera": {
@@ -25,43 +25,109 @@
       "value": 0.0022,
       "source": "web-3c/src/preview-stages.ts",
       "evidence": "tuned",
-      "conditions": "M0 灰盒越肩镜头占位值"
+      "conditions": "沿用灰盒鼠标灵敏度，单位为弧度/像素"
     },
     "moveDistanceM": {
-      "value": 3.65,
-      "source": "web-3c/src/preview-stages.ts",
+      "value": 3.3,
+      "source": "web-3c/tests/camera-tune-route.mjs",
       "evidence": "tuned",
-      "conditions": "M0 灰盒越肩镜头占位值"
+      "conditions": "移动取景，缩短扫掠前的镜头臂以适应走廊"
     },
     "aimDistanceM": {
-      "value": 2.35,
-      "source": "web-3c/src/preview-stages.ts",
+      "value": 2.1,
+      "source": "web-3c/tests/camera-tune-route.mjs",
       "evidence": "tuned",
-      "conditions": "M0 灰盒越肩镜头占位值"
+      "conditions": "瞄准取景，扫掠前沿视线反向的距离"
     },
     "moveShoulderM": {
-      "value": 0.8,
-      "source": "web-3c/src/preview-stages.ts",
+      "value": 0.72,
+      "source": "web-3c/tests/camera-tune-route.mjs",
       "evidence": "tuned",
-      "conditions": "M0 灰盒越肩镜头占位值"
+      "conditions": "移动取景，视角右向偏移"
     },
     "aimShoulderM": {
-      "value": 0.55,
-      "source": "web-3c/src/preview-stages.ts",
+      "value": 0.6,
+      "source": "web-3c/tests/camera-tune-route.mjs",
       "evidence": "tuned",
-      "conditions": "M0 灰盒越肩镜头占位值"
+      "conditions": "瞄准取景，给准星右侧的视线留空间"
+    },
+    "moveHeightM": {
+      "value": 1.47,
+      "source": "reports/3c/parameters.csv:8",
+      "evidence": "tuned",
+      "conditions": "以 Normal _Offset.y 为起点调成灰盒脚底到球扫起点的高度"
+    },
+    "aimHeightM": {
+      "value": 1.53,
+      "source": "reports/3c/parameters.csv:11",
+      "evidence": "tuned",
+      "conditions": "以 Hold _Offset.y 为起点，抬高灰盒瞄准构图"
     },
     "moveVerticalFovRad": {
       "value": 1.0122909661567112,
       "source": "web-3c/src/preview-stages.ts",
       "evidence": "tuned",
-      "conditions": "M0 灰盒越肩镜头占位值"
+      "conditions": "沿用灰盒移动垂直 FOV（58°）"
     },
     "aimVerticalFovRad": {
-      "value": 0.7853981633974483,
+      "value": 0.8028514559173915,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "瞄准垂直 FOV 为 46°，与更近的镜头臂配合"
+    },
+    "aimTransitionS": {
+      "value": 0.11,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，举枪取景向瞄准参数过渡的指数时间常数"
+    },
+    "moveTransitionS": {
+      "value": 0.15,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，收枪取景向移动参数过渡的指数时间常数"
+    },
+    "recoveryS": {
+      "value": 0.22,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，空间打开后镜头向允许距离外移的指数时间常数"
+    },
+    "collisionRetractMps": {
+      "value": 8.4,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，障碍触发急剧收近时的过渡速度，由额外球扫保证净空"
+    },
+    "sphereRadiusM": {
+      "value": 0.16,
       "source": "web-3c/src/preview-stages.ts",
       "evidence": "tuned",
-      "conditions": "M0 灰盒越肩镜头占位值"
+      "conditions": "沿用灰盒球扫半径，为近裁面留空间"
+    },
+    "wallClearanceM": {
+      "value": 0.05,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "沿用灰盒球扫命中后沿镜头臂缩回的余量"
+    },
+    "followPositionS": {
+      "value": 0.09,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，角色水平位置跟随的指数时间常数"
+    },
+    "followHeightS": {
+      "value": 0.16,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，角色脚底高度跟随的指数时间常数"
+    },
+    "recoveryDeadbandM": {
+      "value": 0.018,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "贴擦墙面时抑制小幅回弹，清空后恢复完整距离"
     }
   },
   "actions": {
@@ -69,13 +135,13 @@
       "value": 8,
       "source": "web-3c/src/preview-stages.ts",
       "evidence": "tuned",
-      "conditions": "M0 灰盒即时动作与弹量占位值"
+      "conditions": "test-room@1，60 Hz，动作系统的初始弹量配置"
     },
     "initialReserve": {
       "value": 16,
       "source": "web-3c/src/preview-stages.ts",
       "evidence": "tuned",
-      "conditions": "M0 灰盒即时动作与弹量占位值"
+      "conditions": "test-room@1，60 Hz，动作系统的初始弹量配置"
     }
   }
 }

@@ -2,7 +2,7 @@ import { AnimationUtils, PropertyBinding } from 'three';
 import type { AnimationClip, Group } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import type { GLTF } from 'three/addons/loaders/GLTFLoader.js';
-import { CONTRACT_VERSION } from './contracts.ts';
+import { loadClipManifest } from './clip-manifest.ts';
 import type { ClipManifest } from './contracts.ts';
 
 type ClipEntry = ClipManifest['clips'][number];
@@ -41,15 +41,8 @@ function prepareAdditive(animation: AnimationClip, reference: AnimationClip, tim
   return AnimationUtils.makeClipAdditive(additive, timeS, reference, 1);
 }
 
-export async function loadClipAssets(manifestUrl: URL): Promise<ReadonlyMap<string, LoadedClip>> {
-  const response = await fetch(manifestUrl);
-  if (!response.ok) throw new Error(`无法读取 ClipManifest（HTTP ${response.status}）`);
-  const manifest = await response.json() as ClipManifest;
-  if (!manifest || manifest.version !== CONTRACT_VERSION ||
-      !Array.isArray(manifest.clips) || manifest.clips.length === 0) {
-    throw new Error('ClipManifest 版本或内容无效');
-  }
-
+export async function loadClipAssets(manifestUrl: URL, manifest?: ClipManifest): Promise<ReadonlyMap<string, LoadedClip>> {
+  const { clips } = manifest ?? await loadClipManifest(manifestUrl);
   const loader = new GLTFLoader();
   const files = new Map<string, Promise<GLTF>>();
   const load = (path: string) => {
@@ -61,14 +54,7 @@ export async function loadClipAssets(manifestUrl: URL): Promise<ReadonlyMap<stri
     return pending;
   };
 
-  const ids = new Set<string>();
-  const entries = await Promise.all(manifest.clips.map(async (entry: ClipEntry) => {
-    if (!entry || typeof entry.id !== 'string' || !entry.id || ids.has(entry.id) ||
-        typeof entry.glb !== 'string' || !entry.glb || !Number.isFinite(entry.durationS) ||
-        entry.durationS <= 0 || !['normal', 'additive', 'baked'].includes(entry.blend)) {
-      throw new Error(`ClipManifest 的动作条目无效：${entry?.id}`);
-    }
-    ids.add(entry.id);
+  const entries = await Promise.all(clips.map(async (entry) => {
     const gltf = await load(entry.glb);
     const animation = findAnimation(gltf, entry.track);
     if (Math.abs(entry.durationS - animation.duration) > timeToleranceS) {

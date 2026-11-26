@@ -4,7 +4,7 @@
 
 | 变更路径 | 交付 |
 | --- | --- |
-| [camera.ts](../../web-3c/src/camera.ts)、[camera-defaults.json](../../web-3c/src/camera-defaults.json) | 镜头阶段、碰撞收近与恢复、准星中心射线及默认参数的来源与证据等级。移动和瞄准垂直 FOV 分别为 58°、45°。 |
+| [camera.ts](../../web-3c/src/camera.ts)、[feel.json 的镜头参数](../../web-3c/src/feel.json) | 镜头阶段、碰撞收近与恢复、准星中心射线及默认参数的来源与证据等级。移动和瞄准垂直 FOV 分别为 58°、45°。 |
 | [level.ts](../../web-3c/src/level.ts)、[main.ts](../../web-3c/src/main.ts) | 接入 M3 角色位姿、M5 瞄准状态和 M6 场景查询。M6 用镜头射线处理已确认的开火。视图使用同一固定步位姿，保留角色插值，镜头靠得过近时淡出角色以保持准星可见。 |
 | [m4.test.ts](../../web-3c/tests/m4.test.ts)、[m4-camera-trace.csv](m4-camera-trace.csv)、[入口说明](../../web-3c/README.md) | 三段验收、逐步轨道及浏览器复现。 |
 
