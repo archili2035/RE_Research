@@ -18,10 +18,12 @@ const files = new Set([
   '/player/vendor/three.min.js',
 ]);
 const localAddresses = new Set(['127.0.0.1', '::1', '::ffff:127.0.0.1']);
+const weaponRoute = '/wp0100.glb';
 
 const serveReference: Connect.NextHandleFunction = async (request, response) => {
   const pathname = request.url?.split('?')[0] ?? '';
-  if (!files.has(pathname) || !localAddresses.has(request.socket.remoteAddress ?? '')) {
+  const weapon = pathname === weaponRoute;
+  if ((!weapon && !files.has(pathname)) || !localAddresses.has(request.socket.remoteAddress ?? '')) {
     response.writeHead(404).end();
     return;
   }
@@ -29,18 +31,18 @@ const serveReference: Connect.NextHandleFunction = async (request, response) => 
     response.writeHead(405, { Allow: 'GET, HEAD' }).end();
     return;
   }
-  const file = new URL(`../docs${pathname}`, import.meta.url);
+  const file = new URL(weapon ? '../runtime/web-3c-weapon.tmp/wp0100.glb' : `../docs${pathname}`, import.meta.url);
   let size: number;
   try {
     size = (await stat(file)).size;
   } catch {
-    response.writeHead(404).end();
+    response.writeHead(weapon ? 204 : 404).end();
     return;
   }
-  const type = pathname.endsWith('.js') ? 'text/javascript'
-    : pathname.endsWith('.css') ? 'text/css' : 'text/html';
+  const type = pathname.endsWith('.js') ? 'text/javascript; charset=utf-8'
+    : pathname.endsWith('.css') ? 'text/css; charset=utf-8' : weapon ? 'model/gltf-binary' : 'text/html; charset=utf-8';
   response.writeHead(200, {
-    'Content-Type': `${type}; charset=utf-8`,
+    'Content-Type': type,
     'Content-Length': size,
     'Cache-Control': 'no-store',
     'Cross-Origin-Resource-Policy': 'same-origin',

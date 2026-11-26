@@ -3,6 +3,7 @@ import type { ActionPose } from './actions.ts';
 import type { Vec3 } from './contracts.ts';
 import { createLeonView } from './leon-view.ts';
 import type { LeonAssets } from './leon-view.ts';
+import { loadLocalLeonWeapon } from './leon-weapon.ts';
 
 interface Appearance {
   readonly root: THREE.Object3D;
@@ -70,25 +71,37 @@ export function bindPlayerAppearance(view: ReturnType<typeof createPlayerView>, 
   const option = select.querySelector<HTMLOptionElement>('option[value="leon"]')!;
   const status = document.querySelector<HTMLOutputElement>('#appearance-status')!;
   let source: LeonAssets | undefined;
+  let weapon: THREE.Object3D | undefined;
   let leon: ReturnType<typeof createLeonView> | undefined;
-  void assets.then((loaded) => {
-    source = loaded;
-    option.disabled = !loaded;
-    status.value = loaded ? '' : '里昂灰模需从本机仓库加载';
-  });
-  select.addEventListener('change', () => {
+  function applyAppearance() {
     if (select.value === 'leon' && source) {
       try {
-        leon ??= createLeonView(source);
+        leon ??= createLeonView(source, weapon);
         view.useAppearance(leon);
         return;
       } catch (error) {
         option.disabled = true;
+        source = undefined;
         status.value = '里昂灰模加载失败';
         console.warn('里昂灰模加载失败', error);
       }
     }
     select.value = 'graybox';
     view.useGraybox();
+  }
+
+  select.addEventListener('change', applyAppearance);
+  void assets.then(async (loaded) => {
+    if (loaded) {
+      weapon = await loadLocalLeonWeapon().catch((error: unknown) => {
+        console.warn('本机武器灰模加载失败', error);
+        return undefined;
+      });
+    }
+    source = loaded;
+    option.disabled = !loaded;
+    status.value = loaded ? '' : '里昂灰模需从本机仓库加载';
+    select.value = loaded ? 'leon' : 'graybox';
+    applyAppearance();
   });
 }

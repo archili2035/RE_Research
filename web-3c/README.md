@@ -1,5 +1,7 @@
 # 3C 灰盒
 
+当前实现、数据流和模块验收入口见 [Web 3C 技术文档](TECHNICAL.md)。
+
 使用 Node.js 22.18 或更新版本。在仓库根目录运行：
 
 ```powershell
@@ -18,7 +20,13 @@ npm run preview -- --host 127.0.0.1 --port 4173
 - 靠墙按住右键，观察「当前固定步」中的镜头位置、垂直 FOV 和遮挡。沿走廊转过 L 角并开门，观察镜头收近和恢复。录像和逐步轨道见 [镜头改前改后](../reports/web-3c/camera-tune-comparison.md)。
 - `npm test` 覆盖固定步、Rapier 查询、移动、镜头、动作分层与事件顺序、M6 路线和 M7 回放。M5 时序与当前主测试场的验证见 [M5 动作规则](../reports/web-3c/action-rules.md)。
 
-生产预览已通过无头 Chromium 147.0.7727.15 的 WebGL、锁定、移动、瞄准、单发、换弹和输入清空检查。生产构建有 Vite 大包警告，浏览器帧时间留待 M8 测量。
+生产预览已通过 Chromium 147.0.7727.15 的操作和路线验收。构建体积、Vite 大包提示以及可见窗口帧时间见 [M8 集成与性能验收](../reports/web-3c/integration-check.md)。
+
+## 核对本地与发布版本
+
+在仓库根目录执行 `npm.cmd --prefix web-3c run build:portal` 生成本地预览并同步 `docs/web-3c/`。研究首页的试玩链接读取这份静态产物。双击 `start-web-3c.cmd` 后，可对照本地预览和个人站页头的「版本」编号，或打开页面同目录的 `build-info.json` 比较完整的 `sha256`。发布后若页头仍显示旧编号，先强制刷新再核对。
+
+编号由生产构建的 HTML、脚本、样式和随包素材生成。相同产物重复构建时编号相同。通过 `npm run dev` 打开的页面显示「开发预览」。独立提供的 `docs/player/` 参考资源有自己的发布路径，需另行核对。
 
 ## 里昂动作对照
 

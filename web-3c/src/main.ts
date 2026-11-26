@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import greyboxJson from '../fixtures/m3-greybox.json' with { type: 'json' };
 import { createActionView } from './action-view.ts';
+import type { WalkFoot } from './actions.ts';
 import { loadClipAssets } from './clip-assets.ts';
 import { loadClipManifest } from './clip-manifest.ts';
 import type { GameEvent, LevelDefinition, Vec3 } from './contracts.ts';
@@ -109,6 +110,7 @@ async function boot() {
       currentActionPose = readActionPose();
       reference.record(previous.action, emitted);
       const { position, velocity, grounded } = state.character;
+      const gait = currentActionPose.walk;
       hud.update(state.tick, state.action, emitted, doorPrompt(position));
       snapshot.value = [
         `步号 ${state.tick}  移动 [${frame.moveX}, ${frame.moveY}]`,
@@ -116,6 +118,7 @@ async function boot() {
         `坐标 ${position.x.toFixed(2)}, ${position.y.toFixed(2)}, ${position.z.toFixed(2)} m`,
         `速度 [${formatVector(velocity)}] m/s`,
         `着地 ${grounded ? '是' : '否'}  动作 ${state.action.phase}  弹量 ${state.action.magazine} / ${state.action.reserve}`,
+        `步态 ${gait.cycles.toFixed(4)} 周期  权重 ${gait.blend.toFixed(3)}`,
         `镜头 [${formatVector(state.camera.position)}] m`,
         `垂直 FOV ${THREE.MathUtils.radToDeg(state.camera.verticalFovRad).toFixed(1)}°  遮挡 ${state.camera.obstructed ? '是' : '否'}`,
       ].join('\n');
@@ -139,18 +142,28 @@ async function boot() {
     const lerp = (from: number, to: number) => THREE.MathUtils.lerp(from, to, alpha);
     const a = previous.character.position;
     const b = current.character.position;
-    const forwardPose = previousActionPose.forwardDistanceM === currentActionPose.forwardDistanceM &&
-      previousActionPose.forwardBlend === currentActionPose.forwardBlend ? currentActionPose : {
-        ...currentActionPose,
-        forwardDistanceM: lerp(previousActionPose.forwardDistanceM, currentActionPose.forwardDistanceM),
-        forwardBlend: lerp(previousActionPose.forwardBlend, currentActionPose.forwardBlend),
-      };
+    const from = previousActionPose.walk;
+    const to = currentActionPose.walk;
+    const footPose = (before: WalkFoot, after: WalkFoot): WalkFoot => ({
+      rightM: lerp(before.rightM, after.rightM), forwardM: lerp(before.forwardM, after.forwardM),
+      liftM: lerp(before.liftM, after.liftM), yawRad: lerpAngle(before.yawRad, after.yawRad, alpha),
+      planted: after.planted,
+    });
+    const renderPose = {
+      ...currentActionPose,
+      walk: {
+        cycles: lerp(from.cycles, to.cycles), blend: lerp(from.blend, to.blend),
+        directional: lerp(from.directional, to.directional), pace: lerp(from.pace, to.pace),
+        right: lerp(from.right, to.right), forward: lerp(from.forward, to.forward),
+        feet: [footPose(from.feet[0], to.feet[0]), footPose(from.feet[1], to.feet[1])] as const,
+      },
+    };
     // Use the swept fixed-step pose, so the view matches the crosshair ray.
     const pose = current.camera;
     actor.draw(
       { x: lerp(a.x, b.x), y: lerp(a.y, b.y), z: lerp(a.z, b.z) },
       lerpAngle(previous.character.yawRad, current.character.yawRad, alpha),
-      forwardPose,
+      renderPose,
       pose.position,
     );
     camera.position.set(pose.position.x, pose.position.y, pose.position.z);

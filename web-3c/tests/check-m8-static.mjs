@@ -3,9 +3,13 @@ import { spawn } from 'node:child_process';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createServer } from 'node:net';
 import { fileURLToPath } from 'node:url';
+import { checkDirections } from './leon-browser-directions.mjs';
 import { checkRoute, chromium, evidenceDirectory, formatRouteEvent, project, readFixedRoute, viewport } from './m8-browser-route.mjs';
 
 const fixed = await readFixedRoute();
+const buildInfo = async (file) => JSON.parse(await readFile(new URL(file, project), 'utf8'));
+const dist = await buildInfo('dist/build-info.json');
+assert.deepEqual(await buildInfo('../docs/web-3c/build-info.json'), dist, 'Run npm run build:portal to sync the portal build');
 const expected = JSON.parse(await readFile(new URL('fixtures/route.replay.json', project), 'utf8'));
 const finalTick = expected.inputs.length;
 assert.equal(expected.level.id, 'test-room', 'M8 requires the formal M7 route');
@@ -113,14 +117,19 @@ try {
     await portal.getByRole('link', { name: /打开 3C 灰盒试玩/ }).click();
     await portal.waitForFunction(() => !document.querySelector('#player-appearance').options[1].disabled &&
       !document.querySelector('#reference-follow').disabled);
+    assert.equal(await portal.locator('#player-appearance').inputValue(), 'leon');
     assert.equal(await portal.locator('#reference-view').getAttribute('src'), remote + 'player_index.html?embed=web-3c');
     assert.deepEqual(remoteRequests.filter(([p, status]) => !p.startsWith('/docs/') || status >= 400), []);
     assert.deepEqual(remoteErrors, []);
     await portal.getByRole('link', { name: '返回研究首页' }).click();
     assert.equal(portal.url(), remote + 'index.html');
     out.portalStyleHost = { remoteRequests, remoteErrors, returnUrl: portal.url() };
+    out.leonDirections = await checkDirections(browser, remote, { fromHome: true });
+    assert.equal(out.leonDirections.buildId, dist.buildId);
+    out.leonReadyDirections = await checkDirections(browser, remote, { fromHome: true, aimed: false });
+    assert.equal(out.leonReadyDirections.buildId, dist.buildId);
     await writeFile(new URL('static.json', evidenceDirectory), JSON.stringify(out, null, 2));
-    console.log('Static Chromium checks passed for portal links, M2, M7, degraded M2 dependencies, and two full routes.');
+    console.log('Static Chromium checks passed for portal links, Leon direction gait, M2, M7, and both full routes.');
   } finally { await browser.close(); }
 } finally { server.kill(); }
 

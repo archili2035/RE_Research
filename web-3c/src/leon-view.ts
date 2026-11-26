@@ -1,7 +1,9 @@
 import * as THREE from 'three';
+import { leftStepPhase, SUPPORT_FRACTION } from './actions.ts';
 import type { ActionPose } from './actions.ts';
-import { plantToe } from './leon-foot-plant.ts';
+import { placeToe, plantToe, toePosition } from './leon-foot-plant.ts';
 import type { LocalPose } from './leon-foot-plant.ts';
+import { attachLeonWeapon } from './leon-weapon.ts';
 
 type Values = readonly number[];
 type Channel = Readonly<{ times: readonly number[]; values: readonly Values[] }>;
@@ -13,6 +15,18 @@ type Motion = Readonly<{
   bones: readonly Readonly<{ name: string; position: Values; rotation: Values }>[];
   tracks: readonly Readonly<{ bone: number } & Partial<Record<keyof LocalPose, Channel>>>[];
 }>;
+
+// Left plant, right lift, right plant, left lift, next left plant in normalized loop time.
+const stepLandmarks = [0, SUPPORT_FRACTION - 0.5, 0.5, SUPPORT_FRACTION, 1];
+const leftLandmarks = [0.40, 0.43, 0.88, 0.94, 1.40];
+const rightLandmarks = [0.46, 0.49, 0.96, 1.00, 1.46];
+
+function strafeSampleTime(cycles: number, landmarks: readonly number[], duration: number) {
+  const phase = leftStepPhase(cycles);
+  const next = stepLandmarks.findIndex((marker) => marker > phase);
+  const weight = (phase - stepLandmarks[next - 1]) / (stepLandmarks[next] - stepLandmarks[next - 1]);
+  return (THREE.MathUtils.lerp(landmarks[next - 1], landmarks[next], weight) % 1) * duration;
+}
 
 export interface LeonAssets {
   readonly MOTION_DATA: Readonly<{ clips: readonly Motion[] }>;
@@ -36,7 +50,7 @@ export interface LeonAssets {
   }>;
 }
 
-export function createLeonView(assets: LeonAssets) {
+export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D) {
   const { MotionMath, MOTION_DATA, LeonSkinning, MODEL_DATA, MASK_DATA } = assets;
   const find = (id: number) => {
     const clip = MOTION_DATA.clips.find((item) => item.bank === 100 && item.id === id);
@@ -54,9 +68,10 @@ export function createLeonView(assets: LeonAssets) {
   const reload = index(find(1200));
   const walkSource = find(120);
   const walk = index(walkSource);
-  const travel = walk.tracks.get('root')?.position?.values;
-  const strideM = (travel?.at(-1)?.[2] ?? 0) - (travel?.[0]?.[2] ?? 0);
-  if (strideM <= 0) throw new Error('里昂前移轨缺少有效的步幅');
+  const strafeClips = [122, 126].map((id) => {
+    const motion = MOTION_DATA.clips.find((item) => item.bank === 100 && item.id === id);
+    return motion && index(motion);
+  });
   const mask = (id: number) => {
     const source = MASK_DATA.find((value) => value.ID === id);
     if (!source) throw new Error(`缺少里昂动作遮罩 ${id}`);
@@ -73,11 +88,15 @@ export function createLeonView(assets: LeonAssets) {
       return bone;
     });
   });
+  const legJoints = new Set(legChains.flatMap((chain) => chain.slice(1).map(({ name }) => name)));
   const rig = LeonSkinning.create(THREE, MODEL_DATA);
   const root = new THREE.Group();
   root.name = 'avatar-leon';
   rig.group.rotation.y = Math.PI; // Source motion faces +Z, the game faces -Z at yaw zero.
   root.add(rig.group);
+  const weaponJoint = rig.parts.flatMap(({ bones }) => bones).find(({ name }) => name === 'R_Wep');
+  const weapon = weaponModel && weaponJoint && attachLeonWeapon(weaponModel, weaponJoint.world);
+  if (weapon) rig.group.add(weapon.root);
 
   const sample = (clip: ReturnType<typeof index>, timeS: number, bone: BonePose): LocalPose => {
     const track = clip.tracks.get(bone.name);
@@ -93,30 +112,97 @@ export function createLeonView(assets: LeonAssets) {
     scale: from.scale.map((value, i) => THREE.MathUtils.lerp(value, to.scale[i], weight)),
   });
 
+  const up = new THREE.Vector3(0, 1, 0);
+  const hip = legChains[0][0];
+  const neutralToes = legChains.map((chain, index) => {
+    const y = toePosition(chain.map((bone) => sample(raise, 0, bone))).y;
+    return new THREE.Vector3(index === 0 ? 0.20 : -0.20, y, index === 0 ? 0.13 : 0.02);
+  });
+
   let last: ActionPose | undefined;
   function draw(pose: ActionPose) {
+    const gait = pose.walk;
     if (last?.clip === pose.clip && last.progress === pose.progress && last.lift === pose.lift &&
-        last.forwardBlend === pose.forwardBlend && last.forwardDistanceM === pose.forwardDistanceM) return;
+        last.walk.cycles === gait.cycles && last.walk.blend === gait.blend && last.walk.directional === gait.directional &&
+        (!gait.directional || (last.walk.pace === gait.pace && last.walk.right === gait.right &&
+          last.walk.forward === gait.forward && last.walk.feet.every((foot, index) => {
+          const next = gait.feet[index];
+          return foot.yawRad === next.yawRad && foot.rightM === next.rightM && foot.forwardM === next.forwardM &&
+            foot.liftM === next.liftM && foot.planted === next.planted;
+        })))) return;
 
-    const walkWeight = THREE.MathUtils.smoothstep(pose.forwardBlend, 0, 1);
+    const directional = THREE.MathUtils.smoothstep(gait.directional, 0, 1);
+    const walkWeight = THREE.MathUtils.smoothstep(gait.blend, 0, 1);
+    const authoredWeight = walkWeight * (1 - directional);
+    const directionalWeight = walkWeight * directional;
     // Start near left support. Distance follows the authored linear root track, with Rapier owning translation.
-    const walkTimeS = (0.70 + walk.duration * pose.forwardDistanceM / strideM) % walk.duration;
+    const walkTimeS = (0.70 + walk.duration * gait.cycles) % walk.duration;
     const aim = pose.lift === 1 ? hold : raise;
     const aimTimeS = aim === hold ? 0 : raise.duration * pose.lift;
-    const aimWeight = pose.lift > 0 ? 1 - walkWeight * (1 - THREE.MathUtils.smoothstep(pose.lift, 0.4, 1)) : 0;
+    const aimWeight = pose.lift > 0 ? 1 - authoredWeight * (1 - THREE.MathUtils.smoothstep(pose.lift, 0.4, 1)) : 0;
+    const strafe = strafeClips[gait.right < 0 ? 0 : 1];
+    const strafeWeight = strafe ? directionalWeight * THREE.MathUtils.smoothstep(pose.lift, 0.70, 1) *
+      THREE.MathUtils.smoothstep(Math.abs(gait.right), 0.76, 0.97) : 0;
+    const strafeTimeS = strafeWeight > 0 && strafe ? strafeSampleTime(gait.cycles,
+      gait.right < 0 ? leftLandmarks : rightLandmarks, strafe.duration) : 0;
     const action = pose.clip === 'fire' ? fire : pose.clip === 'reload' ? reload : undefined;
     const actionTimeS = action ? action.duration * pose.progress : 0;
     const actionWeight = action === reload ? Math.min(1, 10 * pose.progress, 10 * (1 - pose.progress)) : 1;
     const actionMask = action === reload ? reloadMask : holdMask;
 
-    const locomotion = (bone: BonePose) => {
-      if (!walkWeight || !walk.tracks.has(bone.name)) return sample(raise, 0, bone);
+    const basePose = (bone: BonePose) => {
+      if (!authoredWeight || !walk.tracks.has(bone.name)) return sample(raise, 0, bone);
       const stride = sample(walk, walkTimeS, bone);
-      return walkWeight === 1 ? stride : blend(sample(raise, 0, bone), stride, walkWeight);
+      return authoredWeight === 1 ? stride : blend(sample(raise, 0, bone), stride, authoredWeight);
+    };
+    const hipBase = basePose(hip);
+    const sway = Math.sin(gait.cycles * Math.PI * 2);
+    const directionYaw = -0.15 * gait.right;
+    const weightShift = new THREE.Vector2();
+    const shiftLimitM = 0.15 + 0.045 * gait.pace;
+    let standSupportDipM = 0;
+    let reachDipM = 0;
+    for (const foot of gait.feet) {
+      const reach = Math.hypot(foot.rightM, foot.forwardM) * (foot.planted ? 1 : walkWeight);
+      const support = 1 - THREE.MathUtils.smoothstep(foot.liftM, 0, 0.08);
+      if (reach > 0.25) {
+        const transfer = Math.min(shiftLimitM, reach - 0.25) * support / Math.hypot(foot.rightM, foot.forwardM);
+        weightShift.x -= foot.rightM * transfer;
+        weightShift.y += foot.forwardM * transfer;
+      }
+      if (foot.planted) standSupportDipM = Math.max(standSupportDipM, Math.min(0.075, (reach - 0.30) * 0.38));
+      reachDipM = Math.max(reachDipM, Math.min(0.03, (reach - 0.32) * 0.15) * support);
+    }
+    weightShift.clampLength(0, shiftLimitM);
+    const supportBalance = directionalWeight + directional * (1 - walkWeight) * gait.pace;
+    const proceduralHip: LocalPose = directional > 0 ? {
+      ...hipBase,
+      position: [hipBase.position[0] + supportBalance * weightShift.x + directionalWeight * (0.018 * sway - 0.014 * gait.right),
+        hipBase.position[1] - directionalWeight * (0.075 + (reachDipM - 0.010) * gait.pace + 0.012 * sway * sway) -
+          directional * (1 - walkWeight) * gait.pace * standSupportDipM,
+        hipBase.position[2] + supportBalance * weightShift.y + directionalWeight * 0.024 * gait.forward],
+      rotation: new THREE.Quaternion().setFromAxisAngle(up, directionalWeight * directionYaw)
+        .multiply(new THREE.Quaternion().fromArray(hipBase.rotation)).toArray(),
+    } : hipBase;
+    let hipPose = proceduralHip;
+    if (strafe && strafeWeight > 0) {
+      const authored = sample(strafe, strafeTimeS, hip);
+      // Lower the clip pelvis slightly so the knees stay soft at the procedural support targets.
+      hipPose = blend(proceduralHip, { ...authored, position: [
+        authored.position[0] + supportBalance * weightShift.x,
+        authored.position[1] - reachDipM - 0.035,
+        authored.position[2] + supportBalance * weightShift.y,
+      ] }, strafeWeight);
+    }
+    const locomotion = (bone: BonePose) => {
+      if (bone.name === 'Hip') return hipPose;
+      const base = basePose(bone);
+      return strafe && strafeWeight > 0 && legJoints.has(bone.name) ?
+        blend(base, sample(strafe, strafeTimeS, bone), strafeWeight) : base;
     };
     // During the stance blend, maintain the source support toe's horizontal position. Release across toe-off.
     const plantRotations = new Map<string, Values>();
-    if (walkWeight < 1) {
+    if (walkWeight < 1 && directional < 1) {
       const smooth = THREE.MathUtils.smoothstep;
       const phase = walkTimeS / walk.duration;
       const toeWeights = [
@@ -130,8 +216,39 @@ export function createLeonView(assets: LeonAssets) {
       });
     }
 
-    const hip = legChains[0][0];
-    const compensateHip = new THREE.Quaternion().fromArray(locomotion(hip).rotation).invert()
+    if (directional > 0) {
+      const targets = gait.feet.map((foot, index) => {
+        const reachWeight = foot.planted ? 1 : walkWeight;
+        const target = neutralToes[index].clone().applyAxisAngle(up, foot.yawRad * reachWeight);
+        target.x -= foot.rightM * reachWeight;
+        target.z += foot.forwardM * reachWeight;
+        target.y += foot.liftM * walkWeight;
+        return target;
+      });
+      legChains.forEach((chain, index) => {
+        const foot = gait.feet[index];
+        const target = targets[index];
+        if (strafe && strafeWeight > 0 && !foot.planted) {
+          const authoredToe = toePosition(chain.map((bone) => sample(strafe, strafeTimeS, bone)));
+          // Blend in the clip's swing arc; weight goes to zero at liftoff and the world-space landing anchor.
+          const flight = THREE.MathUtils.smoothstep(foot.liftM, 0.015, 0.09);
+          target.lerp(authoredToe, 0.70 * strafeWeight * flight);
+          const otherX = targets[1 - index].x;
+          target.x = index === 0 ? Math.max(target.x, otherX + 0.09) : Math.min(target.x, otherX - 0.09);
+        }
+        const base = chain.map((bone) => {
+          const value = locomotion(bone);
+          const rotation = plantRotations.get(bone.name);
+          return rotation ? { ...value, rotation } : value;
+        });
+        const rotations = placeToe(base, target, directional);
+        rotations?.forEach((rotation, joint) => plantRotations.set(chain[joint + 1].name, rotation));
+      });
+    }
+
+    const inverseHip = new THREE.Quaternion().fromArray(hipPose.rotation).invert();
+    const keepReadyTorso = inverseHip.clone().multiply(new THREE.Quaternion().fromArray(hipBase.rotation));
+    const compensateHip = inverseHip.clone()
       .multiply(new THREE.Quaternion().fromArray(sample(aim, aimTimeS, hip).rotation));
     const spineRotation = new THREE.Quaternion();
     const stabilize = (name: string, value: LocalPose): LocalPose => name === 'Spine_0' ? {
@@ -144,6 +261,9 @@ export function createLeonView(assets: LeonAssets) {
       const actionJointWeight = action ? actionWeight * (actionMask.get(bone.name) ?? 0) : 0;
       if (!raise.tracks.has(bone.name) && !(walkWeight && walk.tracks.has(bone.name)) && !aimJointWeight && !actionJointWeight) return;
       let value = locomotion(bone);
+      if (bone.name === 'Spine_0' && directionalWeight > 0) {
+        value = { ...value, rotation: spineRotation.fromArray(value.rotation).premultiply(keepReadyTorso).normalize().toArray() };
+      }
       const planted = plantRotations.get(bone.name);
       if (planted) value = { ...value, rotation: planted };
       if (aimJointWeight > 0 && aim.tracks.has(bone.name)) {
@@ -157,6 +277,7 @@ export function createLeonView(assets: LeonAssets) {
       return value;
     });
     if (rig.stats.bounds) rig.group.position.y = -rig.stats.bounds.min[1];
+    weapon?.draw();
     last = pose;
   }
 

@@ -26,8 +26,7 @@ $env:CHROMIUM_EXECUTABLE = 'C:/Users/archili/AppData/Local/ms-playwright/chromiu
 $env:LEON_ROUTE_EVIDENCE = Join-Path (Get-Location).Path 'runtime/web-3c-m8.tmp/fixed-route.json'
 node web-3c/tests/record-m7-route.ts
 npm.cmd --prefix web-3c test
-npm.cmd --prefix web-3c run build
-node -e "require('node:fs').cpSync('web-3c/dist', 'docs/web-3c', { recursive: true })"
+npm.cmd --prefix web-3c run build:portal
 node web-3c/tests/check-m8-static.mjs
 node web-3c/tests/check-m2-browser.mjs
 node web-3c/tests/check-m5-browser.mjs

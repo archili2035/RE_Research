@@ -170,7 +170,7 @@ test('M5 draws additive fire over moving legs and plays M2 baked reload as an ab
   const sample = (overrides: Partial<ActionPose>) => {
     view.draw({
       clip: null, progress: 0, lift: 1, gaitPhaseRad: Math.PI / 2, gaitWeight: 1,
-      forwardDistanceM: 0, forwardBlend: 0, ...overrides,
+      walk: createActions(feel.actions).readPose().walk, ...overrides,
     });
     view.root.updateMatrixWorld(true);
     const direction = new Vector3(0, 0, 1).applyQuaternion(socket.getWorldQuaternion(socket.quaternion.clone()));

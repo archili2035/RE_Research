@@ -4,11 +4,14 @@ import { createRequire } from 'node:module';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { preview } from 'vite';
+import { checkDirections } from './leon-browser-directions.mjs';
 
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const project = fileURLToPath(new URL('../', import.meta.url));
 const out = path.resolve(project, '../runtime/web-3c-leon.tmp');
+const directionOut = path.resolve(project, '../runtime/web-3c-leon-direction.tmp');
+const readyOut = path.resolve(project, '../runtime/web-3c-leon-ready.tmp');
 
 async function check(browser, url) {
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
@@ -40,12 +43,12 @@ async function check(browser, url) {
   const aimReleased = () => document.querySelector('#snapshot').value.includes('瞄准 否');
   const indexCount = () => page.evaluate(() => window.playfieldIndexCount);
   const resetIndexCount = () => page.evaluate(() => { window.playfieldIndexCount = 0; });
-  assert.equal(await appearance.inputValue(), 'graybox');
+  assert.equal(await appearance.inputValue(), 'leon');
+  await page.waitForFunction(() => window.playfieldIndexCount > 10000);
 
   const positionX = () => page.locator('#snapshot').evaluate((element) =>
     Number(element.value.match(/坐标 (-?\d+\.\d+),/)[1]));
   const startX = await positionX();
-  await appearance.selectOption('leon');
   await page.locator('#enter').click();
   await page.waitForFunction(() => document.pointerLockElement?.id === 'viewport');
   await page.locator('#viewport').screenshot({ path: path.join(out, 'leon-standing.png') });
@@ -105,6 +108,8 @@ async function check(browser, url) {
 }
 
 await mkdir(out, { recursive: true });
+await mkdir(directionOut, { recursive: true });
+await mkdir(readyOut, { recursive: true });
 const server = await preview({ root: project, preview: { host: '127.0.0.1', port: 0 } });
 try {
   const { port } = server.httpServer.address();
@@ -113,11 +118,16 @@ try {
     args: ['--enable-unsafe-swiftshader'],
   });
   try {
-    const result = await check(browser, `http://127.0.0.1:${port}/`);
+    const url = `http://127.0.0.1:${port}/`;
+    const result = await check(browser, url);
     await writeFile(path.join(out, 'browser-check.json'), JSON.stringify({
       chromium: browser.version(), ...result,
     }, null, 2) + '\n');
-    console.log(`Chromium ${browser.version()}: Leon draws in the playfield and switching preserves position and ammo`);
+    const directions = await checkDirections(browser, url);
+    await writeFile(path.join(directionOut, 'browser-check.json'), JSON.stringify({ chromium: browser.version(), ...directions }, null, 2) + '\n');
+    const ready = await checkDirections(browser, url, { aimed: false });
+    await writeFile(path.join(readyOut, 'browser-check.json'), JSON.stringify({ chromium: browser.version(), ...ready }, null, 2) + '\n');
+    console.log(`Chromium ${browser.version()}: Leon aimed and ready direction gait, moving aim transitions, wall stop, and weapon regression verified`);
   } finally {
     await browser.close();
   }

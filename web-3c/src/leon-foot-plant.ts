@@ -19,16 +19,16 @@ function worldChain(poses: readonly LocalPose[]) {
   });
 }
 
+const position = (matrix: Matrix4) => new Vector3().setFromMatrixPosition(matrix);
+export const toePosition = (poses: readonly LocalPose[]) => position(worldChain(poses)[5]);
+
 // Chain order is hip, thigh, shin, ankle, foot, toe. Keep the animated ankle's orientation.
-export function plantToe(base: readonly LocalPose[], walk: readonly LocalPose[], weight: number) {
-  const [hip, upper, lower, ankle, , toe] = worldChain(base);
-  const position = (matrix: Matrix4) => new Vector3().setFromMatrixPosition(matrix);
+function solveToe([hip, upper, lower, ankle, , toe]: Matrix4[], target: Vector3, weight: number) {
   const rotation = (matrix: Matrix4) => new Quaternion().setFromRotationMatrix(matrix).normalize();
   const start = position(upper);
   const knee = position(lower);
   const end = position(ankle);
-  const offset = position(worldChain(walk)[5]).sub(position(toe));
-  offset.y = 0;
+  const offset = target.clone().sub(position(toe));
   const goal = end.clone().addScaledVector(offset, weight);
   const upperLength = start.distanceTo(knee);
   const lowerLength = knee.distanceTo(end);
@@ -55,4 +55,15 @@ export function plantToe(base: readonly LocalPose[], walk: readonly LocalPose[],
     worldUpper.clone().invert().multiply(worldLower).toArray(),
     worldLower.clone().invert().multiply(rotation(ankle)).toArray(),
   ];
+}
+
+export function plantToe(base: readonly LocalPose[], walk: readonly LocalPose[], weight: number) {
+  const chain = worldChain(base);
+  const target = toePosition(walk);
+  target.y = position(chain[5]).y;
+  return solveToe(chain, target, weight);
+}
+
+export function placeToe(base: readonly LocalPose[], target: Vector3, weight: number) {
+  return solveToe(worldChain(base), target, weight);
 }

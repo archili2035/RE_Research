@@ -119,11 +119,11 @@ function observe({ mode, route }) {
   function frame(now) {
     const appearance = document.querySelector('#player-appearance');
     const ref = document.querySelector('#reference-view');
+    if (mode === 'leon' && ref && ref.style.visibility !== 'hidden') {
+      ref.style.visibility = 'hidden';
+      document.querySelector('#reference-follow').checked = false;
+    }
     if (mode !== 'original' && appearance && !appearance.options[1].disabled && appearance.value !== 'leon') {
-      if (mode === 'leon') {
-        ref.style.visibility = 'hidden';
-        document.querySelector('#reference-follow').checked = false;
-      }
       appearance.value = 'leon';
       appearance.dispatchEvent(new Event('change'));
     }
