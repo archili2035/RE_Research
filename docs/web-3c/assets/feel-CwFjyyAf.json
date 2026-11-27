@@ -1,0 +1,153 @@
+{
+  "version": 4,
+  "movement": {
+    "walkSpeedMps": {
+      "value": 2.55,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "test-room@1，60 Hz，碰撞前的水平目标速度"
+    },
+    "sprintSpeedMps": {
+      "value": 4.3,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "test-room@1，60 Hz，碰撞前的水平目标速度"
+    },
+    "aimSpeedMps": {
+      "value": 1.55,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "test-room@1，60 Hz，碰撞前的水平目标速度"
+    }
+  },
+  "camera": {
+    "lookRadPerPx": {
+      "value": 0.0022,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "沿用灰盒鼠标灵敏度，单位为弧度/像素"
+    },
+    "moveDistanceM": {
+      "value": 1.95,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:05.10，1280×720 无遮挡，移动距离"
+    },
+    "aimDistanceM": {
+      "value": 1.6,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:40.50，1280×720 无遮挡，瞄准距离"
+    },
+    "moveShoulderM": {
+      "value": 0.46,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:05.10，1280×720 无遮挡，右肩偏移，Normal X=0.5 为候选起点"
+    },
+    "aimShoulderM": {
+      "value": 0.44,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:40.50，1280×720 无遮挡，右肩偏移，Hold X=0.4 为候选起点"
+    },
+    "moveHeightM": {
+      "value": 1.47,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:05.10，1280×720 无遮挡，锚点高度，Normal Y=1.47 为候选起点"
+    },
+    "aimHeightM": {
+      "value": 1.538,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:40.50，1280×720 无遮挡，锚点高度，Hold Y=1.50 为候选起点"
+    },
+    "moveVerticalFovRad": {
+      "value": 0.5585053606381855,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:05.10，1280×720 无遮挡，垂直 FOV 32°"
+    },
+    "aimVerticalFovRad": {
+      "value": 0.40142572795869574,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:40.50，1280×720 无遮挡，垂直 FOV 23°"
+    },
+    "aimTransitionS": {
+      "value": 0.11,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，举枪取景向瞄准参数过渡的指数时间常数"
+    },
+    "moveTransitionS": {
+      "value": 0.13,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:41.20–13:41.60，无障碍时镜头臂和 FOV 同步恢复"
+    },
+    "recoveryS": {
+      "value": 0.22,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，空间打开后镜头向允许距离外移的指数时间常数"
+    },
+    "collisionRetractMps": {
+      "value": 8.4,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，障碍触发急剧收近时的过渡速度，由额外球扫保证净空"
+    },
+    "sphereRadiusM": {
+      "value": 0.16,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "沿用灰盒球扫半径，为近裁面留空间"
+    },
+    "wallClearanceM": {
+      "value": 0.05,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "沿用灰盒球扫命中后沿镜头臂缩回的余量"
+    },
+    "followPositionS": {
+      "value": 0.09,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，角色水平位置跟随的指数时间常数"
+    },
+    "followHeightS": {
+      "value": 0.16,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "60 Hz，角色脚底高度跟随的指数时间常数"
+    },
+    "recoveryDeadbandM": {
+      "value": 0.018,
+      "source": "web-3c/tests/camera-tune-route.mjs",
+      "evidence": "tuned",
+      "conditions": "贴擦墙面时抑制小幅回弹，清空后恢复完整距离"
+    },
+    "initialPitchRad": {
+      "value": -0.06,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:40.50 / 13:05.10，1280×720 无遮挡，两种模式共用的初始俯仰，后续仍由鼠标输入控制"
+    }
+  },
+  "actions": {
+    "magazineCapacity": {
+      "value": 8,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "test-room@1，60 Hz，动作系统的初始弹量配置"
+    },
+    "initialReserve": {
+      "value": 16,
+      "source": "web-3c/src/preview-stages.ts",
+      "evidence": "tuned",
+      "conditions": "test-room@1，60 Hz，动作系统的初始弹量配置"
+    }
+  }
+}

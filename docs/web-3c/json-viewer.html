@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>研究 JSON 浏览器</title>
+    <script type="module" crossorigin src="./assets/jsonViewer-B03PNAWH.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="./assets/jsonViewer-BQWx09Lk.css">
+  </head>
+  <body>
+    <main>
+      <header class="masthead">
+        <a class="back-link" href="./index.html">返回 3C 灰盒</a>
+        <h1>研究 JSON 浏览器</h1>
+        <p>浏览站内样本，或导入自己的 JSON。</p>
+      </header>
+      <section class="import-panel" aria-label="导入 JSON">
+        <div class="sample-picker">
+          <label for="sample-select">站内样本</label>
+          <select id="sample-select">
+            <option value="" disabled selected>选择一个站内 JSON</option>
+          </select>
+          <p id="sample-status" role="status"></p>
+        </div>
+        <div id="drop-zone" class="drop-zone">
+          <label class="file-picker" for="file-input">选择 JSON 文件</label>
+          <input id="file-input" type="file" accept=".json,application/json,text/plain" />
+          <span>或将文件拖到这里</span>
+        </div>
+        <form id="paste-form">
+          <label for="paste-input">粘贴 JSON</label>
+          <textarea id="paste-input" rows="3" spellcheck="false" placeholder='{"字段": "值"}'></textarea>
+          <button type="submit">解析文本</button>
+        </form>
+        <p id="import-error" class="error" role="alert" hidden></p>
+      </section>
+      <section id="document-view" class="document-panel" aria-labelledby="document-title" hidden>
+        <header class="document-header">
+          <h2 id="document-title"></h2>
+          <div class="view-switch" aria-label="文档视图">
+            <button id="table-view" type="button" aria-pressed="false" hidden></button>
+            <button id="tree-view" type="button" aria-pressed="true">JSON 树</button>
+          </div>
+        </header>
+        <div class="search-bar">
+          <div>
+            <label for="search-query">搜索 JSON</label>
+            <input id="search-query" type="search" placeholder="输入字段名或值" />
+          </div>
+          <div>
+            <label for="search-scope">搜索范围</label>
+            <select id="search-scope">
+              <option value="both">字段名和值</option>
+              <option value="key">字段名</option>
+              <option value="value">值</option>
+            </select>
+          </div>
+        </div>
+        <section id="search-results" aria-label="搜索结果" hidden></section>
+        <div id="viewer"></div>
+      </section>
+      <p id="copy-status" class="copy-status" role="status"></p>
+    </main>
+  </body>
+</html>

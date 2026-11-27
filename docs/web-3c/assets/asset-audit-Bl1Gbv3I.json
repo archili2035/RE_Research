@@ -1,0 +1,2401 @@
+{
+  "schemaVersion": 1,
+  "scope": "Local research references for M2. Original or licensed runtime assets are required.",
+  "pathBase": "repository root; sourcePaths are virtual archive paths indexing the same game's sources",
+  "patchPolicy": "Last matching archive by sorted filename, following existing static inventory convention.",
+  "timePolicy": "Milliseconds. Source times cover extraction and local hash checks. Index times exclude extraction. Motion decode times are validation of decoded data. Null means unmeasured.",
+  "statusValues": {
+    "verified": "Recorded scope passed",
+    "partial": "Evidence exists and a downstream check is outstanding",
+    "pending": "Required input or check is missing",
+    "failed": "Attempt failed",
+    "not_applicable": "Stage does not apply to this sample"
+  },
+  "upstream": [
+    "reports/RE4/research_summary.json",
+    "reports/ue5/re4_wp4000_clip_selection.json",
+    "reports/phase2/summary.json",
+    "reports/phase2/all_resolved.csv"
+  ],
+  "selectionForM2": {
+    "preferred": {
+      "game": "RE9",
+      "rigPurpose": "character-rig",
+      "motionPurposes": [
+        "hold-idle",
+        "raise",
+        "reload"
+      ]
+    },
+    "comparison": {
+      "game": "RE4",
+      "rigPurpose": "character-rig",
+      "motionPurposes": [
+        "hold-idle",
+        "raise",
+        "reload"
+      ]
+    },
+    "motionFilter": "Use role=primary for first readback. Raw layer data and companion tracks require composition evidence before conversion.",
+    "sharedInterfaceImpact": "M2 consumes schemaVersion 1, game, purpose, role, sourcePaths and resultFiles with selectors. M0 ClipManifest and runtime interfaces require no change.",
+    "placeholder": {
+      "status": "pending",
+      "glb": null,
+      "provenance": "M2 needs an original or licensed rig and authored tracks for browser integration."
+    }
+  },
+  "games": [
+    {
+      "game": "RE4",
+      "version": {
+        "platform": "Steam",
+        "appId": 2050650,
+        "buildId": "22377325"
+      },
+      "character": "Leon cha000 / ch0a0z0",
+      "weapon": "wp4000",
+      "packages": [
+        {
+          "name": "re_chunk_000.pak",
+          "sizeBytes": 57777147068,
+          "kpkaVersion": "4.0",
+          "feature": 8,
+          "indexElapsedMs": 676.084
+        },
+        {
+          "name": "re_chunk_000.pak.patch_001.pak",
+          "sizeBytes": 1521620228,
+          "kpkaVersion": "4.0",
+          "feature": 8,
+          "indexElapsedMs": 40.922
+        },
+        {
+          "name": "re_chunk_000.pak.patch_002.pak",
+          "sizeBytes": 59595907,
+          "kpkaVersion": "4.0",
+          "feature": 8,
+          "indexElapsedMs": 4.743
+        },
+        {
+          "name": "re_chunk_000.pak.patch_003.pak",
+          "sizeBytes": 1911375913,
+          "kpkaVersion": "4.0",
+          "feature": 8,
+          "indexElapsedMs": 92.605
+        },
+        {
+          "name": "re_chunk_000.pak.patch_004.pak",
+          "sizeBytes": 1845114,
+          "kpkaVersion": "4.0",
+          "feature": 8,
+          "indexElapsedMs": 3.962
+        },
+        {
+          "name": "re_chunk_000.pak.patch_005.pak",
+          "sizeBytes": 141269765,
+          "kpkaVersion": "4.0",
+          "feature": 8,
+          "indexElapsedMs": 10.645
+        },
+        {
+          "name": "re_chunk_000.pak.patch_006.pak",
+          "sizeBytes": 1844553,
+          "kpkaVersion": "4.0",
+          "feature": 8,
+          "indexElapsedMs": 3.402
+        }
+      ],
+      "sources": {
+        "natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00.mesh.221108797": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "a60a7da2a4ccb88e",
+          "offset": 46069394138,
+          "compressedBytes": 5509265,
+          "sizeBytes": 12449552,
+          "attributes": 2,
+          "archiveChecksum": "8c2d304c93e470b6",
+          "status": "verified",
+          "sha256": "f0ce513bf9d2661fd0fc308c6c342fdfcd2522b66db09cf611865f92e2fbdba1",
+          "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00.mesh.221108797",
+          "extractedBytes": 12449552,
+          "packedTexture": false,
+          "elapsedMs": 28.521
+        },
+        "natives/stm/_chainsaw/character/ch/cha0/cha000/10/cha000_10.mesh.221108797": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "72169561c8a76768",
+          "offset": 46004669344,
+          "compressedBytes": 4466520,
+          "sizeBytes": 12338096,
+          "attributes": 2,
+          "archiveChecksum": "6dcb0149094d3b63",
+          "status": "verified",
+          "sha256": "997ffb8a380789ad5be0ae9ea3bb22297727d4e7d955c837e62716dbf0eb233b",
+          "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/character/ch/cha0/cha000/10/cha000_10.mesh.221108797",
+          "extractedBytes": 12338096,
+          "packedTexture": false,
+          "elapsedMs": 27.281
+        },
+        "natives/stm/_chainsaw/character/ch/cha0/cha000/20/cha000_20.mesh.221108797": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "103940fe548599cf",
+          "offset": 46015300129,
+          "compressedBytes": 1448985,
+          "sizeBytes": 3333184,
+          "attributes": 2,
+          "archiveChecksum": "3d38c1fa50b1afd3",
+          "status": "verified",
+          "sha256": "396a49809e87354d11435e5fdf1b1e61fe1d682b5c6b4d73a1943acad56bd44a",
+          "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/character/ch/cha0/cha000/20/cha000_20.mesh.221108797",
+          "extractedBytes": 3333184,
+          "packedTexture": false,
+          "elapsedMs": 8.014
+        },
+        "natives/stm/_chainsaw/character/wp/wp40/wp4000/00/wp4000_00.mesh.221108797": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "663ad210a4e9ab76",
+          "offset": 55053800947,
+          "compressedBytes": 582570,
+          "sizeBytes": 1986224,
+          "attributes": 2,
+          "archiveChecksum": "7e768f6d42f6bb92",
+          "status": "verified",
+          "sha256": "37c712ca8596b92e339237dbf86c3b87c6400e734dbbbc9bd1dc4c7ac7694645",
+          "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/character/wp/wp40/wp4000/00/wp4000_00.mesh.221108797",
+          "extractedBytes": 1986224,
+          "packedTexture": false,
+          "elapsedMs": 4.489
+        },
+        "natives/stm/_chainsaw/appsystem/camera/playercameracontroller/ch0a0z0/chholdhandgun.user.2": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "e171c6942ce1d1a0",
+          "offset": 45849313132,
+          "compressedBytes": 544,
+          "sizeBytes": 1556,
+          "attributes": 1,
+          "archiveChecksum": "7a4ce0c8612d73b4",
+          "status": "verified",
+          "sha256": "e2dcc7f87dcb7775c21a463510c2b643f96f9ed5f9c1eddc902cf30af9b945ba",
+          "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/appsystem/camera/playercameracontroller/ch0a0z0/chholdhandgun.user.2",
+          "extractedBytes": 1556,
+          "packedTexture": false,
+          "elapsedMs": 0.561
+        },
+        "natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_albd.tex.143221013": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "a8ff2a07b70389c8",
+          "offset": 45988960999,
+          "compressedBytes": 1212840,
+          "sizeBytes": 1310792,
+          "attributes": 2,
+          "archiveChecksum": "127021d9fa8961bf",
+          "status": "verified",
+          "sha256": "016d53f2a204479df877ab32ef31ce5f55ffd82b38e049afeda3482e54d1f037",
+          "file": "runtime/web-3c-m1.tmp/re4/natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_albd.tex.143221013",
+          "extractedBytes": 1310792,
+          "packedTexture": false,
+          "elapsedMs": 4.357
+        },
+        "natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_nrmr.tex.143221013": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "f456da632282d5f2",
+          "offset": 45990173839,
+          "compressedBytes": 1234667,
+          "sizeBytes": 1392744,
+          "attributes": 2,
+          "archiveChecksum": "17ff44b201b1f0ea",
+          "status": "verified",
+          "sha256": "387911382258a9558fd59bfa45d97d393647b8b866958e65ff51caeaddcd9484",
+          "file": "runtime/web-3c-m1.tmp/re4/natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_nrmr.tex.143221013",
+          "extractedBytes": 1392744,
+          "packedTexture": false,
+          "elapsedMs": 4.778
+        },
+        "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663": {
+          "package": "re_chunk_000.pak.patch_003.pak",
+          "patch": 3,
+          "matchingPackages": [
+            "re_chunk_000.pak",
+            "re_chunk_000.pak.patch_003.pak"
+          ],
+          "pathHash": "bd80fde7f9463073",
+          "offset": 1393244829,
+          "compressedBytes": 576467,
+          "sizeBytes": 1165072,
+          "attributes": 2,
+          "archiveChecksum": "a6a00ab9136184d7",
+          "status": "verified",
+          "sha256": "9d681c820355f827424c1fbbaf87655772902d16b6acf6f761503d2bd78a042b",
+          "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663",
+          "extractedBytes": 1165072,
+          "packedTexture": false,
+          "elapsedMs": 2.93
+        }
+      },
+      "samples": [
+        {
+          "purpose": "character-rig",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00.mesh.221108797",
+            "natives/stm/_chainsaw/character/ch/cha0/cha000/10/cha000_10.mesh.221108797",
+            "natives/stm/_chainsaw/character/ch/cha0/cha000/20/cha000_20.mesh.221108797"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00.mesh.221108797"
+            },
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/character/ch/cha0/cha000/10/cha000_10.mesh.221108797"
+            },
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/character/ch/cha0/cha000/20/cha000_20.mesh.221108797"
+            },
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/fbx/SK_RE4_Leon_Gray.fbx"
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "reports/ue5/re4_gray_model_roundtrip.json",
+              "detail": "Existing Blender FBX round-trip checked against matching source bytes.",
+              "bones": 415,
+              "maxJointError": 5.962326831740902e-07
+            },
+            "binding": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "reports/ue5/re4_gray_model_roundtrip.json",
+              "detail": "Existing Blender FBX round-trip checked against matching source bytes.",
+              "bones": 415,
+              "maxJointError": 5.962326831740902e-07
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "reports/ue5/re4_gray_model_roundtrip.json",
+              "detail": "Standard GLB coordinate and skin readback pending."
+            }
+          }
+        },
+        {
+          "purpose": "hold-idle",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0160.json",
+              "selector": {
+                "id": 160,
+                "slot": 8,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 0.12,
+              "evidence": "reports/ue5/re4_motion_decode_validation.json",
+              "detail": "reports/ue5/re4_wp4000_clip_selection.json",
+              "frames": 432,
+              "fps": 60,
+              "durationS": 7.2,
+              "trackCount": 60,
+              "lastKeyTimeS": 0
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0160.json",
+              "detail": "Source hierarchy checked. Target skin binding and layer composition pending.",
+              "roots": [
+                "root"
+              ],
+              "unmappedBoneHashes": [
+                2749258283
+              ],
+              "modelNamedTrackHashes": []
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0160.json",
+              "detail": "Decoded JSON reopened and checked. Composed pose and standard GLB readback pending."
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 160,
+            "slot": 8,
+            "switch": 0
+          },
+          "sourceName": "cha0_wp4000H_0160_hold_loop",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "hold-walk-forward",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0403.json",
+              "selector": {
+                "id": 403,
+                "slot": 17,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 2.107,
+              "evidence": "reports/ue5/re4_motion_decode_validation.json",
+              "detail": "reports/ue5/re4_wp4000_clip_selection.json",
+              "frames": 210,
+              "fps": 60,
+              "durationS": 3.5,
+              "trackCount": 59,
+              "lastKeyTimeS": 3.5
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0403.json",
+              "detail": "Source hierarchy checked. Target skin binding and layer composition pending.",
+              "roots": [
+                "root"
+              ],
+              "unmappedBoneHashes": [],
+              "modelNamedTrackHashes": []
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0403.json",
+              "detail": "Decoded JSON reopened and checked. Composed pose and standard GLB readback pending."
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 403,
+            "slot": 17,
+            "switch": 0
+          },
+          "sourceName": "cha0_wp4000H_0403_walk_F_loop",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "raise",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0140.json",
+              "selector": {
+                "id": 140,
+                "slot": 2,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 0.383,
+              "evidence": "reports/ue5/re4_motion_decode_validation.json",
+              "detail": "reports/ue5/re4_wp4000_clip_selection.json",
+              "frames": 20,
+              "fps": 60,
+              "durationS": 0.3333333333333333,
+              "trackCount": 59,
+              "lastKeyTimeS": 0.33333334
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0140.json",
+              "detail": "Source hierarchy checked. Target skin binding and layer composition pending.",
+              "roots": [
+                "root"
+              ],
+              "unmappedBoneHashes": [],
+              "modelNamedTrackHashes": []
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0140.json",
+              "detail": "Decoded JSON reopened and checked. Composed pose and standard GLB readback pending."
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 140,
+            "slot": 2,
+            "switch": 0
+          },
+          "sourceName": "cha0_wp4000H_0140_hold_start",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "raise",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0141.json",
+              "selector": {
+                "id": 141,
+                "slot": 3,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 0.398,
+              "evidence": "reports/ue5/re4_motion_decode_validation.json",
+              "detail": "reports/ue5/re4_wp4000_clip_selection.json",
+              "frames": 20,
+              "fps": 60,
+              "durationS": 0.3333333333333333,
+              "trackCount": 61,
+              "lastKeyTimeS": 0.33333334
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0141.json",
+              "detail": "Source hierarchy checked. Target skin binding and layer composition pending.",
+              "roots": [
+                "root"
+              ],
+              "unmappedBoneHashes": [
+                2540998253,
+                1595776407
+              ],
+              "modelNamedTrackHashes": []
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0141.json",
+              "detail": "Decoded JSON reopened and checked. Composed pose and standard GLB readback pending."
+            }
+          },
+          "role": "companion",
+          "motion": {
+            "id": 141,
+            "slot": 3,
+            "switch": 0
+          },
+          "sourceName": "cha0_wp4000H_0141_hold_start_add",
+          "sourceMode": "additive-candidate"
+        },
+        {
+          "purpose": "fire",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0500.json",
+              "selector": {
+                "id": 500,
+                "slot": 40,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 0.353,
+              "evidence": "reports/ue5/re4_motion_decode_validation.json",
+              "detail": "reports/ue5/re4_wp4000_clip_selection.json",
+              "frames": 50,
+              "fps": 60,
+              "durationS": 0.8333333333333334,
+              "trackCount": 60,
+              "lastKeyTimeS": 0.8333333
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0500.json",
+              "detail": "Source hierarchy checked. Target skin binding and layer composition pending.",
+              "roots": [
+                "root"
+              ],
+              "unmappedBoneHashes": [
+                2749258283
+              ],
+              "modelNamedTrackHashes": []
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0500.json",
+              "detail": "Decoded JSON reopened and checked. Composed pose and standard GLB readback pending."
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 500,
+            "slot": 40,
+            "switch": 0
+          },
+          "sourceName": "cha0_wp4000H_0500_shoot",
+          "sourceMode": "additive-candidate"
+        },
+        {
+          "purpose": "reload",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/web-3c-m1.tmp/re4-reload/RE4_wp4000H_0810.json",
+              "selector": {
+                "id": 810,
+                "slot": 52,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 2.855,
+              "evidence": "runtime/web-3c-m1.tmp/re4-reload/validation.json",
+              "detail": "reports/RE4/motions_animation.csv",
+              "frames": 195,
+              "fps": 60,
+              "durationS": 3.25,
+              "trackCount": 59,
+              "lastKeyTimeS": 3.25
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re4-reload/RE4_wp4000H_0810.json",
+              "detail": "Source hierarchy checked. Target skin binding and layer composition pending.",
+              "roots": [
+                "root"
+              ],
+              "unmappedBoneHashes": [],
+              "modelNamedTrackHashes": []
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re4-reload/RE4_wp4000H_0810.json",
+              "detail": "Decoded JSON reopened and checked. Composed pose and standard GLB readback pending."
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 810,
+            "slot": 52,
+            "switch": 0
+          },
+          "sourceName": "cha0_wp4000H_0810_reload",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "reload",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/web-3c-m1.tmp/re4-reload/RE4_wp4000H_0811.json",
+              "selector": {
+                "id": 811,
+                "slot": 53,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 2.866,
+              "evidence": "runtime/web-3c-m1.tmp/re4-reload/validation.json",
+              "detail": "reports/RE4/motions_animation.csv",
+              "frames": 195,
+              "fps": 60,
+              "durationS": 3.25,
+              "trackCount": 59,
+              "lastKeyTimeS": 3.25
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re4-reload/RE4_wp4000H_0811.json",
+              "detail": "Source hierarchy checked. Target skin binding and layer composition pending.",
+              "roots": [
+                "root"
+              ],
+              "unmappedBoneHashes": [],
+              "modelNamedTrackHashes": []
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re4-reload/RE4_wp4000H_0811.json",
+              "detail": "Decoded JSON reopened and checked. Composed pose and standard GLB readback pending."
+            }
+          },
+          "role": "companion",
+          "motion": {
+            "id": 811,
+            "slot": 53,
+            "switch": 0
+          },
+          "sourceName": "cha0_wp4000H_0811_reload_add",
+          "sourceMode": "additive-candidate"
+        },
+        {
+          "purpose": "lower",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0158.json",
+              "selector": {
+                "id": 158,
+                "slot": 6,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 0.44,
+              "evidence": "reports/ue5/re4_motion_decode_validation.json",
+              "detail": "reports/ue5/re4_wp4000_clip_selection.json",
+              "frames": 50,
+              "fps": 60,
+              "durationS": 0.8333333333333334,
+              "trackCount": 59,
+              "lastKeyTimeS": 0.8333333
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0158.json",
+              "detail": "Source hierarchy checked. Target skin binding and layer composition pending.",
+              "roots": [
+                "root"
+              ],
+              "unmappedBoneHashes": [],
+              "modelNamedTrackHashes": []
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0158.json",
+              "detail": "Decoded JSON reopened and checked. Composed pose and standard GLB readback pending."
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 158,
+            "slot": 6,
+            "switch": 0
+          },
+          "sourceName": "cha0_wp4000H_0158_hold_end",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "lower",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/animation/ch/cha0/motlist/cha0_wp4000h.motlist.663"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0159.json",
+              "selector": {
+                "id": 159,
+                "slot": 7,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 0.436,
+              "evidence": "reports/ue5/re4_motion_decode_validation.json",
+              "detail": "reports/ue5/re4_wp4000_clip_selection.json",
+              "frames": 50,
+              "fps": 60,
+              "durationS": 0.8333333333333334,
+              "trackCount": 58,
+              "lastKeyTimeS": 0.8333333
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0159.json",
+              "detail": "Source hierarchy checked. Target skin binding and layer composition pending.",
+              "roots": [
+                "root"
+              ],
+              "unmappedBoneHashes": [
+                2540998253,
+                1595776407
+              ],
+              "modelNamedTrackHashes": []
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0159.json",
+              "detail": "Decoded JSON reopened and checked. Composed pose and standard GLB readback pending."
+            }
+          },
+          "role": "companion",
+          "motion": {
+            "id": 159,
+            "slot": 7,
+            "switch": 0
+          },
+          "sourceName": "cha0_wp4000H_0159_hold_end_add",
+          "sourceMode": "additive-candidate"
+        },
+        {
+          "purpose": "handgun-mesh",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/character/wp/wp40/wp4000/00/wp4000_00.mesh.221108797"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/character/wp/wp40/wp4000/00/wp4000_00.mesh.221108797"
+            },
+            {
+              "file": "runtime/web-3c-m1.tmp/re4-weapon.json"
+            },
+            {
+              "file": "reports/RE4/combat_loop/weapon_resource_chain.json",
+              "selector": {
+                "weaponId": 4000
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 302.866,
+              "evidence": "runtime/web-3c-m1.tmp/re4-weapon.json",
+              "detail": "Weapon mesh and its source skeleton parsed.",
+              "lodCount": 4,
+              "boneCount": 16
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re4-weapon.json",
+              "detail": "Named candidates found. Runtime mapping and local transform need confirmation.",
+              "characterAttachmentCandidates": [
+                "R_Wep",
+                "L_Wep"
+              ],
+              "weaponAttachmentCandidates": [],
+              "weaponRoots": [
+                "root"
+              ],
+              "characterEvidence": {
+                "file": "runtime/ue5_asset_probe/re4_wp4000/decoded/RE4_wp4000H_0160.json",
+                "selector": {
+                  "id": 160,
+                  "slot": 8,
+                  "switch": 0
+                }
+              }
+            },
+            "readback": {
+              "status": "pending",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "Attached mesh readback pending."
+            }
+          }
+        },
+        {
+          "purpose": "hold-camera",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/appsystem/camera/playercameracontroller/ch0a0z0/chholdhandgun.user.2"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/ue5_asset_probe/re4_wp4000/source/natives/stm/_chainsaw/appsystem/camera/playercameracontroller/ch0a0z0/chholdhandgun.user.2"
+            },
+            {
+              "file": "reports/RE4/parsed/natives/stm/_chainsaw/appsystem/camera/playercameracontroller/ch0a0z0/chholdhandgun.user.2.json",
+              "selector": {
+                "index": 11,
+                "class": "chainsaw.PlayerCameraParam"
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "verified",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "reports/RE4/parsed/natives/stm/_chainsaw/appsystem/camera/playercameracontroller/ch0a0z0/chholdhandgun.user.2.json",
+              "detail": "Static aiming position configuration.",
+              "selector": {
+                "index": 11,
+                "class": "chainsaw.PlayerCameraParam"
+              }
+            },
+            "binding": {
+              "status": "not_applicable",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": null
+            },
+            "readback": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "reports/RE4/camera_parameters.csv",
+              "detail": "Parsed configuration. Final runtime camera requires synchronized observations."
+            }
+          }
+        },
+        {
+          "purpose": "base-color",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_albd.tex.143221013"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/web-3c-m1.tmp/re4/natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_albd.tex.143221013"
+            },
+            {
+              "file": "runtime/web-3c-m1.tmp/textures/cha000_00_upperbody_albd.tex.143221013.dds"
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "pending",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 4.052,
+              "evidence": "runtime/web-3c-m1.tmp/re4/natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_albd.tex.143221013",
+              "detail": "TEX decoded by local RE Mesh Editor.",
+              "texVersion": 143221013,
+              "width": 1024,
+              "height": 1024,
+              "mips": 2,
+              "images": 1,
+              "format": "BC7_UNORM_SRGB"
+            },
+            "binding": {
+              "status": "pending",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "Material channel and streaming binding pending."
+            },
+            "readback": {
+              "status": "verified",
+              "elapsedMs": 0.49,
+              "evidence": "runtime/web-3c-m1.tmp/textures/cha000_00_upperbody_albd.tex.143221013.dds",
+              "detail": "DDS dimensions, format and all mip payload lengths verified.",
+              "sha256": "c7f06e645d38f546ae63bfba5ef113342bc159fd4f7694bb800a4117991e6ab0"
+            }
+          }
+        },
+        {
+          "purpose": "normal-map",
+          "sourcePaths": [
+            "natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_nrmr.tex.143221013"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/web-3c-m1.tmp/re4/natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_nrmr.tex.143221013"
+            },
+            {
+              "file": "runtime/web-3c-m1.tmp/textures/cha000_00_upperbody_nrmr.tex.143221013.dds"
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "pending",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 4.091,
+              "evidence": "runtime/web-3c-m1.tmp/re4/natives/stm/_chainsaw/character/ch/cha0/cha000/00/cha000_00_upperbody_nrmr.tex.143221013",
+              "detail": "TEX decoded by local RE Mesh Editor.",
+              "texVersion": 143221013,
+              "width": 1024,
+              "height": 1024,
+              "mips": 4,
+              "images": 1,
+              "format": "BC7_UNORM"
+            },
+            "binding": {
+              "status": "pending",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "Material channel and streaming binding pending."
+            },
+            "readback": {
+              "status": "verified",
+              "elapsedMs": 0.452,
+              "evidence": "runtime/web-3c-m1.tmp/textures/cha000_00_upperbody_nrmr.tex.143221013.dds",
+              "detail": "DDS dimensions, format and all mip payload lengths verified.",
+              "sha256": "b717e79919a51359f40cb30f36cb8b447cde3e03a0b9f9dacc0b3bd8ba1c83d7"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "game": "RE9",
+      "version": {
+        "platform": "Steam",
+        "appId": 3764200,
+        "buildId": "23634047"
+      },
+      "character": "Leon ch0100 / cp_a000",
+      "weapon": "wp0111 (candidate for stock Handgun00H clips)",
+      "packages": [
+        {
+          "name": "re_chunk_000.pak",
+          "sizeBytes": 20226942065,
+          "kpkaVersion": "4.2",
+          "feature": 40,
+          "indexElapsedMs": 651.391
+        },
+        {
+          "name": "re_chunk_000.pak.patch_001.pak",
+          "sizeBytes": 1430866083,
+          "kpkaVersion": "4.2",
+          "feature": 40,
+          "indexElapsedMs": 16.269
+        },
+        {
+          "name": "re_chunk_000.pak.patch_002.pak",
+          "sizeBytes": 20119710,
+          "kpkaVersion": "4.2",
+          "feature": 40,
+          "indexElapsedMs": 1.32
+        },
+        {
+          "name": "re_chunk_000.pak.patch_003.pak",
+          "sizeBytes": 1223415628,
+          "kpkaVersion": "4.2",
+          "feature": 40,
+          "indexElapsedMs": 13.737
+        },
+        {
+          "name": "re_chunk_000.pak.patch_004.pak",
+          "sizeBytes": 86184252,
+          "kpkaVersion": "4.2",
+          "feature": 40,
+          "indexElapsedMs": 22.445
+        },
+        {
+          "name": "re_chunk_000.pak.patch_005.pak",
+          "sizeBytes": 26537782,
+          "kpkaVersion": "4.2",
+          "feature": 40,
+          "indexElapsedMs": 1.501
+        },
+        {
+          "name": "re_chunk_000.pak.sub_000.pak",
+          "sizeBytes": 57548985620,
+          "kpkaVersion": "4.2",
+          "feature": 8,
+          "indexElapsedMs": 228.091
+        },
+        {
+          "name": "re_chunk_000.pak.sub_000.pak.patch_001.pak",
+          "sizeBytes": 144,
+          "kpkaVersion": "4.2",
+          "feature": 8,
+          "indexElapsedMs": 1.633
+        },
+        {
+          "name": "re_chunk_000.pak.sub_000.pak.patch_002.pak",
+          "sizeBytes": 8568,
+          "kpkaVersion": "4.2",
+          "feature": 8,
+          "indexElapsedMs": 0.14
+        },
+        {
+          "name": "re_chunk_000.pak.sub_000.pak.patch_003.pak",
+          "sizeBytes": 38545212,
+          "kpkaVersion": "4.2",
+          "feature": 8,
+          "indexElapsedMs": 0.266
+        },
+        {
+          "name": "re_chunk_000.pak.sub_000.pak.patch_004.pak",
+          "sizeBytes": 74915116,
+          "kpkaVersion": "4.2",
+          "feature": 8,
+          "indexElapsedMs": 0.691
+        },
+        {
+          "name": "re_chunk_000.pak.sub_000.pak.patch_005.pak",
+          "sizeBytes": 144,
+          "kpkaVersion": "4.2",
+          "feature": 8,
+          "indexElapsedMs": 0.116
+        }
+      ],
+      "sources": {
+        "natives/stm/character/ch/ch01/0100/01/00/ch0100_01_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "ff7e68178da90282",
+          "offset": 13499246456,
+          "compressedBytes": 261376,
+          "sizeBytes": 475984,
+          "attributes": 2,
+          "archiveChecksum": "86ac7218ea640f9b",
+          "status": "verified",
+          "sha256": "77c6372b24be2c1ea3d9078f83151a3a8e25d63584ac23370436fc72b38487a1",
+          "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/01/00/ch0100_01_00.mesh.250925211",
+          "extractedBytes": 475984,
+          "packedTexture": false,
+          "elapsedMs": 1.361
+        },
+        "natives/stm/character/ch/ch01/0100/02/00/ch0100_02_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "e6650f55e08f14c9",
+          "offset": 13499515785,
+          "compressedBytes": 261121,
+          "sizeBytes": 477056,
+          "attributes": 2,
+          "archiveChecksum": "a4446740ff21abf7",
+          "status": "verified",
+          "sha256": "736f9a8483a31a454600dbd801569817818dd97e6d1be70adb6fe30ea1078f9a",
+          "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/02/00/ch0100_02_00.mesh.250925211",
+          "extractedBytes": 477056,
+          "packedTexture": false,
+          "elapsedMs": 1.331
+        },
+        "natives/stm/character/ch/ch01/0100/10/00/ch0100_10_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "9b9fff466617d1b8",
+          "offset": 13481703527,
+          "compressedBytes": 1966760,
+          "sizeBytes": 5114768,
+          "attributes": 2,
+          "archiveChecksum": "21e8776b89e3d962",
+          "status": "verified",
+          "sha256": "47a948fc8cb6660e0d9916a62eef272768c7b1c85a09c51d223e3e429dadabf6",
+          "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/10/00/ch0100_10_00.mesh.250925211",
+          "extractedBytes": 5114768,
+          "packedTexture": false,
+          "elapsedMs": 11.342
+        },
+        "natives/stm/character/ch/ch01/0100/21/00/ch0100_21_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "232cf54ac67d294f",
+          "offset": 13896221459,
+          "compressedBytes": 1331729,
+          "sizeBytes": 2735184,
+          "attributes": 2,
+          "archiveChecksum": "52d2d3692d3aa088",
+          "status": "verified",
+          "sha256": "933f49da16be36bae2a6e31eef9fd931fc690df8bd98bdf73e819c39d7ce5954",
+          "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/21/00/ch0100_21_00.mesh.250925211",
+          "extractedBytes": 2735184,
+          "packedTexture": false,
+          "elapsedMs": 6.759
+        },
+        "natives/stm/character/ch/ch01/0100/40/00/ch0100_40_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "7d8ca6d3446728eb",
+          "offset": 13499797063,
+          "compressedBytes": 419072,
+          "sizeBytes": 749216,
+          "attributes": 2,
+          "archiveChecksum": "3ad7da2a0b9f9399",
+          "status": "verified",
+          "sha256": "0da8c058763559f8821829e14470abb5eee919076dbc342d985fcd4fefcd57c3",
+          "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/40/00/ch0100_40_00.mesh.250925211",
+          "extractedBytes": 749216,
+          "packedTexture": false,
+          "elapsedMs": 2.516
+        },
+        "natives/stm/character/ch/ch01/0100/50/00/ch0100_50_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "4d4010d4263e03f6",
+          "offset": 13501378297,
+          "compressedBytes": 1043924,
+          "sizeBytes": 2594416,
+          "attributes": 2,
+          "archiveChecksum": "a0340e476eff1be2",
+          "status": "verified",
+          "sha256": "ad350e8ff6165d133110e4868b68ab67fc02e0937529478dcd5a22373a27d8ac",
+          "file": "reports/model_extra/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/50/00/ch0100_50_00.mesh.250925211",
+          "extractedBytes": 2594416,
+          "packedTexture": false,
+          "elapsedMs": 6.12
+        },
+        "natives/stm/streaming/character/ch/ch01/0100/01/00/ch0100_01_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "eea59511c44978ee",
+          "offset": 1700489652,
+          "compressedBytes": 793534,
+          "sizeBytes": 1342128,
+          "attributes": 1026,
+          "archiveChecksum": "86ac721876ec3f72",
+          "status": "verified",
+          "sha256": "35f1df148b14121da156c99c9331b75aad8d2d455a1fb03286221269be07d862",
+          "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/01/00/ch0100_01_00.mesh.250925211",
+          "extractedBytes": 1342128,
+          "packedTexture": false,
+          "elapsedMs": 4.161
+        },
+        "natives/stm/streaming/character/ch/ch01/0100/02/00/ch0100_02_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "3386181ed0485099",
+          "offset": 1701283186,
+          "compressedBytes": 790876,
+          "sizeBytes": 1341168,
+          "attributes": 1026,
+          "archiveChecksum": "a44467403a50b6e4",
+          "status": "verified",
+          "sha256": "4ec3b6e85dc3fbb9f007bf7de6d463e20d32fabf44a3d49ab3021ce65487e385",
+          "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/02/00/ch0100_02_00.mesh.250925211",
+          "extractedBytes": 1341168,
+          "packedTexture": false,
+          "elapsedMs": 3.907
+        },
+        "natives/stm/streaming/character/ch/ch01/0100/10/00/ch0100_10_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "f44e4a44d5dfb15a",
+          "offset": 1686379806,
+          "compressedBytes": 5692959,
+          "sizeBytes": 15490608,
+          "attributes": 1026,
+          "archiveChecksum": "21e8776b81fe5b57",
+          "status": "verified",
+          "sha256": "9881508d41e6052d313bbf8f4d106820f21c16c106a405fb73d07268bb6739d8",
+          "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/10/00/ch0100_10_00.mesh.250925211",
+          "extractedBytes": 15490608,
+          "packedTexture": false,
+          "elapsedMs": 33.483
+        },
+        "natives/stm/streaming/character/ch/ch01/0100/21/00/ch0100_21_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "78d4ac058432b134",
+          "offset": 2282768521,
+          "compressedBytes": 3679433,
+          "sizeBytes": 7151504,
+          "attributes": 1026,
+          "archiveChecksum": "52d2d369ea169d31",
+          "status": "verified",
+          "sha256": "44f6a5c5787a23575bcf9ec9ce407ea3a2b224dcf61f0bc4efa142186f37a7d2",
+          "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/21/00/ch0100_21_00.mesh.250925211",
+          "extractedBytes": 7151504,
+          "packedTexture": false,
+          "elapsedMs": 18.422
+        },
+        "natives/stm/streaming/character/ch/ch01/0100/40/00/ch0100_40_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "4e5374b2999772d5",
+          "offset": 1702074062,
+          "compressedBytes": 956508,
+          "sizeBytes": 1804352,
+          "attributes": 1026,
+          "archiveChecksum": "3ad7da2a9c17ffe9",
+          "status": "verified",
+          "sha256": "1a1160d58a2bec5f5e809808b25d9e19db183a696c8d23857b74b1efd35189b5",
+          "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/40/00/ch0100_40_00.mesh.250925211",
+          "extractedBytes": 1804352,
+          "packedTexture": false,
+          "elapsedMs": 4.7
+        },
+        "natives/stm/streaming/character/ch/ch01/0100/50/00/ch0100_50_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "8e54c14ce5c836e1",
+          "offset": 1705536238,
+          "compressedBytes": 2651869,
+          "sizeBytes": 6131488,
+          "attributes": 1026,
+          "archiveChecksum": "a0340e47d79f35dd",
+          "status": "verified",
+          "sha256": "352df6516c859295c887405d8f26a1c796a081e6d3c6fb93638ab1fd1d2eecb2",
+          "file": "reports/model_extra/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/50/00/ch0100_50_00.mesh.250925211",
+          "extractedBytes": 6131488,
+          "packedTexture": false,
+          "elapsedMs": 14.38
+        },
+        "natives/stm/character/wp/wp01/0111/00/wp0111_00.mesh.250925211": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "a49f856d69c7e651",
+          "offset": 12044331121,
+          "compressedBytes": 1081998,
+          "sizeBytes": 4649744,
+          "attributes": 2,
+          "archiveChecksum": "aab124a94e9c2c87",
+          "status": "verified",
+          "sha256": "4db7a04b8620f8c3e1c120ed01c44664db5d06496d21a6776d37d8341c4e10e4",
+          "file": "runtime/web-3c-m1.tmp/re9/natives/stm/character/wp/wp01/0111/00/wp0111_00.mesh.250925211",
+          "extractedBytes": 4649744,
+          "packedTexture": false,
+          "elapsedMs": 11.88
+        },
+        "natives/stm/gameassets/camera/userdata/playertpscamera/common/action/position/hold.user.3": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "d34191e20cd72b97",
+          "offset": 12051357940,
+          "compressedBytes": 349,
+          "sizeBytes": 848,
+          "attributes": 2,
+          "archiveChecksum": "b6431cf8c8512b01",
+          "status": "verified",
+          "sha256": "66a07b6d8073dcaec8589a7c3f5af00c59ef768f3000a77c97ef4e913e1d4572",
+          "file": "reports/3c/camera/samples/re_chunk_000.pak/natives/stm/gameassets/camera/userdata/playertpscamera/common/action/position/hold.user.3",
+          "extractedBytes": 848,
+          "packedTexture": false,
+          "elapsedMs": 0.459
+        },
+        "natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h.motlist.1047": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "4c9ed5310282d6d9",
+          "offset": 14792781894,
+          "compressedBytes": 1805008,
+          "sizeBytes": 3258740,
+          "attributes": 2,
+          "archiveChecksum": "76bc186d7284322f",
+          "status": "verified",
+          "sha256": "f5ad0d574a8a21548f73e74a0fdd47cab3bba0bbea7682da827c34505639039a",
+          "file": "reports/samples/re_chunk_000.pak/natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h.motlist.1047",
+          "extractedBytes": 3258740,
+          "packedTexture": false,
+          "elapsedMs": 6.288
+        },
+        "natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h_add.motlist.1047": {
+          "package": "re_chunk_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak"
+          ],
+          "pathHash": "950f8c7c15a4822c",
+          "offset": 14794586902,
+          "compressedBytes": 264425,
+          "sizeBytes": 494680,
+          "attributes": 2,
+          "archiveChecksum": "dd6a075aca55b2e7",
+          "status": "verified",
+          "sha256": "ffdcf90472be40cee08a1683bb901399de18a8117931bbb4d229bdd8de0bd24a",
+          "file": "reports/samples/re_chunk_000.pak/natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h_add.motlist.1047",
+          "extractedBytes": 494680,
+          "packedTexture": false,
+          "elapsedMs": 1.166
+        },
+        "natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_albd.tex.250813143": {
+          "package": "re_chunk_000.pak.sub_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak.sub_000.pak"
+          ],
+          "pathHash": "4f01ba854c150d9d",
+          "offset": 53319419024,
+          "compressedBytes": 852132,
+          "sizeBytes": 1048640,
+          "attributes": 0,
+          "archiveChecksum": "6b493b5e0743bfd6",
+          "status": "verified",
+          "sha256": "7b1839c9ec4a3a05268da617bc25727c0425929d4be91bbcf41becec23dfaea4",
+          "file": "runtime/web-3c-m1.tmp/re9/natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_albd.tex.250813143",
+          "extractedBytes": 852132,
+          "packedTexture": true,
+          "elapsedMs": 2.526
+        },
+        "natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_nrmr.tex.250813143": {
+          "package": "re_chunk_000.pak.sub_000.pak",
+          "patch": null,
+          "matchingPackages": [
+            "re_chunk_000.pak.sub_000.pak"
+          ],
+          "pathHash": "c8058c2cb26c9f7c",
+          "offset": 53320271156,
+          "compressedBytes": 1195476,
+          "sizeBytes": 1376368,
+          "attributes": 0,
+          "archiveChecksum": "e3031ba9a970f685",
+          "status": "verified",
+          "sha256": "ea18fb48958f1a86381010e84a01f428f69d0c36550b89e5e9c68d9f785f1e59",
+          "file": "runtime/web-3c-m1.tmp/re9/natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_nrmr.tex.250813143",
+          "extractedBytes": 1195476,
+          "packedTexture": true,
+          "elapsedMs": 2.611
+        }
+      },
+      "samples": [
+        {
+          "purpose": "character-rig",
+          "sourcePaths": [
+            "natives/stm/character/ch/ch01/0100/01/00/ch0100_01_00.mesh.250925211",
+            "natives/stm/character/ch/ch01/0100/02/00/ch0100_02_00.mesh.250925211",
+            "natives/stm/character/ch/ch01/0100/10/00/ch0100_10_00.mesh.250925211",
+            "natives/stm/character/ch/ch01/0100/21/00/ch0100_21_00.mesh.250925211",
+            "natives/stm/character/ch/ch01/0100/40/00/ch0100_40_00.mesh.250925211",
+            "natives/stm/character/ch/ch01/0100/50/00/ch0100_50_00.mesh.250925211",
+            "natives/stm/streaming/character/ch/ch01/0100/01/00/ch0100_01_00.mesh.250925211",
+            "natives/stm/streaming/character/ch/ch01/0100/02/00/ch0100_02_00.mesh.250925211",
+            "natives/stm/streaming/character/ch/ch01/0100/10/00/ch0100_10_00.mesh.250925211",
+            "natives/stm/streaming/character/ch/ch01/0100/21/00/ch0100_21_00.mesh.250925211",
+            "natives/stm/streaming/character/ch/ch01/0100/40/00/ch0100_40_00.mesh.250925211",
+            "natives/stm/streaming/character/ch/ch01/0100/50/00/ch0100_50_00.mesh.250925211"
+          ],
+          "resultFiles": [
+            {
+              "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/01/00/ch0100_01_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/02/00/ch0100_02_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/10/00/ch0100_10_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/21/00/ch0100_21_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/40/00/ch0100_40_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model_extra/samples/re_chunk_000.pak/natives/stm/character/ch/ch01/0100/50/00/ch0100_50_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/01/00/ch0100_01_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/02/00/ch0100_02_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/10/00/ch0100_10_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/21/00/ch0100_21_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model_streaming/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/40/00/ch0100_40_00.mesh.250925211"
+            },
+            {
+              "file": "reports/model_extra/samples/re_chunk_000.pak/natives/stm/streaming/character/ch/ch01/0100/50/00/ch0100_50_00.mesh.250925211"
+            },
+            {
+              "file": "docs/player/model.js"
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Six CPU-skinned graybox parts read back in Chromium.",
+              "parts": 6,
+              "vertices": 72346
+            },
+            "binding": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Six CPU-skinned graybox parts read back in Chromium.",
+              "parts": 6,
+              "vertices": 72346
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Standard GLB coordinate and skin readback pending."
+            }
+          }
+        },
+        {
+          "purpose": "hold-idle",
+          "sourcePaths": [
+            "natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h.motlist.1047"
+          ],
+          "resultFiles": [
+            {
+              "file": "docs/player/motions.json",
+              "selector": {
+                "id": 160,
+                "bank": 100,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 3.894,
+              "evidence": "player/verify.cjs",
+              "detail": "reports/phase2/all_resolved.csv",
+              "frames": 307,
+              "fps": 60,
+              "durationS": 5.116666666666666,
+              "trackCount": 67,
+              "lastKeyTimeS": 5.116667
+            },
+            "binding": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Same-name character joint positions checked in the CPU-skinned player.",
+              "roots": [
+                "root"
+              ],
+              "poseCount": 5,
+              "maxJointError": 2.1989281018285485e-07
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": 48.00450000000001,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Research player readback passed. Standard GLB and composed pose pending.",
+              "browser": "147.0.7727.15",
+              "selector": {
+                "bank": 100,
+                "id": 160
+              },
+              "sampledTimesS": [
+                0,
+                1.279,
+                2.558,
+                3.838,
+                5.116
+              ]
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 160,
+            "bank": 100,
+            "switch": 0
+          },
+          "sourceName": "ch0100_Handgun00H_0160_Hold_Loop",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "hold-walk-forward",
+          "sourcePaths": [
+            "natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h.motlist.1047"
+          ],
+          "resultFiles": [
+            {
+              "file": "docs/player/motions.json",
+              "selector": {
+                "id": 120,
+                "bank": 100,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 1.733,
+              "evidence": "player/verify.cjs",
+              "detail": "reports/phase2/all_resolved.csv",
+              "frames": 96,
+              "fps": 60,
+              "durationS": 1.6,
+              "trackCount": 67,
+              "lastKeyTimeS": 1.6
+            },
+            "binding": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Same-name character joint positions checked in the CPU-skinned player.",
+              "roots": [
+                "root"
+              ],
+              "poseCount": 5,
+              "maxJointError": 1.230677036060839e-07
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": 44.289400000000114,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Research player readback passed. Standard GLB and composed pose pending.",
+              "browser": "147.0.7727.15",
+              "selector": {
+                "bank": 100,
+                "id": 120
+              },
+              "sampledTimesS": [
+                0,
+                0.4,
+                0.8,
+                1.2,
+                1.6
+              ]
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 120,
+            "bank": 100,
+            "switch": 0
+          },
+          "sourceName": "ch0100_Handgun00H_0120_Strafe_F_Loop",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "raise",
+          "sourcePaths": [
+            "natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h.motlist.1047"
+          ],
+          "resultFiles": [
+            {
+              "file": "docs/player/motions.json",
+              "selector": {
+                "id": 140,
+                "bank": 100,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 0.908,
+              "evidence": "player/verify.cjs",
+              "detail": "reports/phase2/all_resolved.csv",
+              "frames": 30,
+              "fps": 60,
+              "durationS": 0.5,
+              "trackCount": 67,
+              "lastKeyTimeS": 0.5
+            },
+            "binding": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Same-name character joint positions checked in the CPU-skinned player.",
+              "roots": [
+                "root"
+              ],
+              "poseCount": 5,
+              "maxJointError": 4.541811654900252e-07
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": 38.683899999999994,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Research player readback passed. Standard GLB and composed pose pending.",
+              "browser": "147.0.7727.15",
+              "selector": {
+                "bank": 100,
+                "id": 140
+              },
+              "sampledTimesS": [
+                0,
+                0.125,
+                0.25,
+                0.375,
+                0.5
+              ]
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 140,
+            "bank": 100,
+            "switch": 0
+          },
+          "sourceName": "ch0100_Handgun00H_0140_Hold_Start_L0",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "fire",
+          "sourcePaths": [
+            "natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h.motlist.1047"
+          ],
+          "resultFiles": [
+            {
+              "file": "docs/player/motions.json",
+              "selector": {
+                "id": 1100,
+                "bank": 100,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 0.679,
+              "evidence": "player/verify.cjs",
+              "detail": "reports/phase2/all_resolved.csv",
+              "frames": 30,
+              "fps": 60,
+              "durationS": 0.5,
+              "trackCount": 67,
+              "lastKeyTimeS": 0.5
+            },
+            "binding": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Same-name character joint positions checked in the CPU-skinned player.",
+              "roots": [
+                "root"
+              ],
+              "poseCount": 5,
+              "maxJointError": 1.8809547954010241e-07
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": 41.68809999999985,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Research player readback passed. Standard GLB and composed pose pending.",
+              "browser": "147.0.7727.15",
+              "selector": {
+                "bank": 100,
+                "id": 1100
+              },
+              "sampledTimesS": [
+                0,
+                0.125,
+                0.25,
+                0.375,
+                0.5
+              ]
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 1100,
+            "bank": 100,
+            "switch": 0
+          },
+          "sourceName": "ch0100_Handgun00H_1100_Shoot",
+          "sourceMode": "raw-tpsadd-layer"
+        },
+        {
+          "purpose": "reload",
+          "sourcePaths": [
+            "natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h.motlist.1047"
+          ],
+          "resultFiles": [
+            {
+              "file": "docs/player/motions.json",
+              "selector": {
+                "id": 1200,
+                "bank": 100,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 7.372,
+              "evidence": "player/verify.cjs",
+              "detail": "reports/phase2/all_resolved.csv",
+              "frames": 312,
+              "fps": 60,
+              "durationS": 5.2,
+              "trackCount": 67,
+              "lastKeyTimeS": 5.2
+            },
+            "binding": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Same-name character joint positions checked in the CPU-skinned player.",
+              "roots": [
+                "root"
+              ],
+              "poseCount": 5,
+              "maxJointError": 3.961141782731884e-07
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": 40.093099999999595,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Research player readback passed. Standard GLB and composed pose pending.",
+              "browser": "147.0.7727.15",
+              "selector": {
+                "bank": 100,
+                "id": 1200
+              },
+              "sampledTimesS": [
+                0,
+                1.3,
+                2.6,
+                3.9,
+                5.2
+              ]
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 1200,
+            "bank": 100,
+            "switch": 0
+          },
+          "sourceName": "ch0100_Handgun00H_1200_Reload",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "reload",
+          "sourcePaths": [
+            "natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h_add.motlist.1047"
+          ],
+          "resultFiles": [
+            {
+              "file": "docs/player/motions.json",
+              "selector": {
+                "id": 1200,
+                "bank": 2100,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 3.533,
+              "evidence": "player/verify.cjs",
+              "detail": "reports/phase2/all_resolved.csv",
+              "frames": 312,
+              "fps": 60,
+              "durationS": 5.2,
+              "trackCount": 67,
+              "lastKeyTimeS": 5.2
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Add layer sampled on its skeleton. Composition pending.",
+              "roots": [
+                "root"
+              ],
+              "poseCount": 5,
+              "maxJointError": null
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": 9.560699999999997,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Research player readback passed. Standard GLB and composed pose pending.",
+              "browser": "147.0.7727.15",
+              "selector": {
+                "bank": 2100,
+                "id": 1200
+              },
+              "sampledTimesS": [
+                0,
+                1.3,
+                2.6,
+                3.9,
+                5.2
+              ]
+            }
+          },
+          "role": "companion",
+          "motion": {
+            "id": 1200,
+            "bank": 2100,
+            "switch": 0
+          },
+          "sourceName": "ch0100_Handgun00H_1200_Reload_Add",
+          "sourceMode": "additive"
+        },
+        {
+          "purpose": "lower",
+          "sourcePaths": [
+            "natives/stm/animation/ch/ch01/ch0100/motlist/ch0100_handgun00h.motlist.1047"
+          ],
+          "resultFiles": [
+            {
+              "file": "docs/player/motions.json",
+              "selector": {
+                "id": 161,
+                "bank": 100,
+                "switch": 0
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 2.242,
+              "evidence": "player/verify.cjs",
+              "detail": "reports/phase2/all_resolved.csv",
+              "frames": 109,
+              "fps": 60,
+              "durationS": 1.8166666666666667,
+              "trackCount": 67,
+              "lastKeyTimeS": 1.8166667
+            },
+            "binding": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Same-name character joint positions checked in the CPU-skinned player.",
+              "roots": [
+                "root"
+              ],
+              "poseCount": 5,
+              "maxJointError": 2.616735656615421e-07
+            },
+            "readback": {
+              "status": "partial",
+              "elapsedMs": 36.38670000000002,
+              "evidence": "runtime/web-3c-m1.tmp/re9-browser.json",
+              "detail": "Research player readback passed. Standard GLB and composed pose pending.",
+              "browser": "147.0.7727.15",
+              "selector": {
+                "bank": 100,
+                "id": 161
+              },
+              "sampledTimesS": [
+                0,
+                0.454,
+                0.908,
+                1.363,
+                1.816
+              ]
+            }
+          },
+          "role": "primary",
+          "motion": {
+            "id": 161,
+            "bank": 100,
+            "switch": 0
+          },
+          "sourceName": "ch0100_Handgun00H_0161_Hold_End",
+          "sourceMode": "raw"
+        },
+        {
+          "purpose": "handgun-mesh",
+          "sourcePaths": [
+            "natives/stm/character/wp/wp01/0111/00/wp0111_00.mesh.250925211"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/web-3c-m1.tmp/re9/natives/stm/character/wp/wp01/0111/00/wp0111_00.mesh.250925211"
+            },
+            {
+              "file": "runtime/web-3c-m1.tmp/re9-weapon.json"
+            },
+            {
+              "file": "references/RE9_STM_Release.list",
+              "selector": {
+                "prefix": "natives/stm/animation/wp/wp01/wp0111/"
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "partial",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 215.52,
+              "evidence": "runtime/web-3c-m1.tmp/re9-weapon.json",
+              "detail": "Weapon mesh and its source skeleton parsed.",
+              "lodCount": 5,
+              "boneCount": 22
+            },
+            "binding": {
+              "status": "partial",
+              "elapsedMs": null,
+              "evidence": "runtime/web-3c-m1.tmp/re9-weapon.json",
+              "detail": "Named candidates found. Runtime mapping and local transform need confirmation.",
+              "characterAttachmentCandidates": [
+                "R_Wep",
+                "L_Wep"
+              ],
+              "weaponAttachmentCandidates": [
+                "C_Attach_Hand_A"
+              ],
+              "weaponRoots": [
+                "root"
+              ],
+              "characterEvidence": {
+                "file": "docs/player/motions.json",
+                "selector": {
+                  "id": 160,
+                  "bank": 100,
+                  "switch": 0
+                }
+              }
+            },
+            "readback": {
+              "status": "pending",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "Attached mesh readback pending."
+            }
+          }
+        },
+        {
+          "purpose": "hold-camera",
+          "sourcePaths": [
+            "natives/stm/gameassets/camera/userdata/playertpscamera/common/action/position/hold.user.3"
+          ],
+          "resultFiles": [
+            {
+              "file": "reports/3c/camera/samples/re_chunk_000.pak/natives/stm/gameassets/camera/userdata/playertpscamera/common/action/position/hold.user.3"
+            },
+            {
+              "file": "reports/3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/position/hold.user.3.json",
+              "selector": {
+                "parameters": [
+                  "_Offset",
+                  "_GazeDistance",
+                  "_IsHipLocalPosDiff"
+                ]
+              }
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "verified",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "reports/3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/position/hold.user.3.json",
+              "detail": "Static aiming position configuration.",
+              "selector": {
+                "parameters": [
+                  "_Offset",
+                  "_GazeDistance",
+                  "_IsHipLocalPosDiff"
+                ]
+              }
+            },
+            "binding": {
+              "status": "not_applicable",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": null
+            },
+            "readback": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": "reports/3c/parameters.csv",
+              "detail": "Parsed configuration. Final runtime camera requires synchronized observations."
+            }
+          }
+        },
+        {
+          "purpose": "base-color",
+          "sourcePaths": [
+            "natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_albd.tex.250813143"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/web-3c-m1.tmp/re9/natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_albd.tex.250813143"
+            },
+            {
+              "file": "runtime/web-3c-m1.tmp/textures/ch0100_40_00_shirt_albd.tex.250813143.dds"
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "pending",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 112.36399999999999,
+              "evidence": "runtime/web-3c-m1.tmp/re9/natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_albd.tex.250813143",
+              "detail": "TEX decoded by local RE Mesh Editor.",
+              "texVersion": 250813143,
+              "width": 1024,
+              "height": 1024,
+              "mips": 1,
+              "images": 1,
+              "format": "BC7_UNORM_SRGB"
+            },
+            "binding": {
+              "status": "pending",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "Material channel and streaming binding pending."
+            },
+            "readback": {
+              "status": "verified",
+              "elapsedMs": 0.468,
+              "evidence": "runtime/web-3c-m1.tmp/textures/ch0100_40_00_shirt_albd.tex.250813143.dds",
+              "detail": "DDS dimensions, format and all mip payload lengths verified.",
+              "sha256": "41c1d2d59823d07059334256001ad6d54ece9267a54f594d62ac6dfd94bfd3df"
+            }
+          }
+        },
+        {
+          "purpose": "normal-map",
+          "sourcePaths": [
+            "natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_nrmr.tex.250813143"
+          ],
+          "resultFiles": [
+            {
+              "file": "runtime/web-3c-m1.tmp/re9/natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_nrmr.tex.250813143"
+            },
+            {
+              "file": "runtime/web-3c-m1.tmp/textures/ch0100_40_00_shirt_nrmr.tex.250813143.dds"
+            }
+          ],
+          "failureStages": [],
+          "verificationStatus": "pending",
+          "stages": {
+            "extraction": {
+              "status": "verified",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "See sources for actual package, hashes and measured times.",
+              "failedSources": []
+            },
+            "decode": {
+              "status": "verified",
+              "elapsedMs": 151.731,
+              "evidence": "runtime/web-3c-m1.tmp/re9/natives/stm/character/ch/ch01/0100/textures/ch0100_40_00_shirt_nrmr.tex.250813143",
+              "detail": "TEX decoded by local RE Mesh Editor.",
+              "texVersion": 250813143,
+              "width": 1024,
+              "height": 1024,
+              "mips": 3,
+              "images": 1,
+              "format": "BC7_UNORM"
+            },
+            "binding": {
+              "status": "pending",
+              "elapsedMs": null,
+              "evidence": null,
+              "detail": "Material channel and streaming binding pending."
+            },
+            "readback": {
+              "status": "verified",
+              "elapsedMs": 0.502,
+              "evidence": "runtime/web-3c-m1.tmp/textures/ch0100_40_00_shirt_nrmr.tex.250813143.dds",
+              "detail": "DDS dimensions, format and all mip payload lengths verified.",
+              "sha256": "cb79a85fc9257bc84ec7e830fc266082f5af1be38325db7eb5016a51b22a8bcc"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
