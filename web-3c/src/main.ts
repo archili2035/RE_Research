@@ -1,16 +1,15 @@
 import * as THREE from 'three';
 import greyboxJson from '../fixtures/m3-greybox.json' with { type: 'json' };
 import { createActionView } from './action-view.ts';
-import type { WalkFoot } from './actions.ts';
 import { loadClipAssets } from './clip-assets.ts';
 import { loadClipManifest } from './clip-manifest.ts';
 import type { GameEvent, LevelDefinition, Vec3 } from './contracts.ts';
 import { createHud } from './hud.ts';
 import { bindInput } from './input.ts';
 import { createTestRoom } from './level.ts';
+import { loadLeonAssets } from './leon-assets.ts';
 import { CHARACTER_BODY } from './movement.ts';
 import { bindPlayerAppearance, createPlayerView } from './player-view.ts';
-import { bindReferenceView } from './re9-reference.ts';
 import { createFixedLoop, createSimulation } from './simulation.ts';
 import './style.css';
 
@@ -42,7 +41,7 @@ function eventLine(event: GameEvent) {
 
 async function boot() {
   enter.disabled = true;
-  const reference = bindReferenceView();
+  const leonAssets = loadLeonAssets();
   const useCollisionCourse = new URLSearchParams(window.location.search).get('level') === 'm3';
   const level = useCollisionCourse ? greyboxJson as LevelDefinition : undefined;
   const manifestUrl = new URL('./assets/clips.json', document.baseURI);
@@ -61,18 +60,19 @@ async function boot() {
   else avatar.position.y = CHARACTER_BODY.heightM / 2;
   const actor = createPlayerView(actionView ?? { root: avatar });
   scene.add(actor.root);
-  bindPlayerAppearance(actor, reference.assets);
+  bindPlayerAppearance(actor, leonAssets);
   if (useCollisionCourse) {
     document.querySelector('.route')!.textContent = '沿中线穿过门框，直行上低台阶。偏离中线可测试门柱阻挡，穿门后右移可测试高台阶。';
   }
   const hud = createHud(viewport);
   hud.update(initial.tick, initial.action, [], doorPrompt(initial.character.position));
   const renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setPixelRatio(Math.min(2, window.devicePixelRatio));
+  renderer.setPixelRatio(1);
   viewport.prepend(renderer.domElement);
   const camera = new THREE.PerspectiveCamera(THREE.MathUtils.radToDeg(initial.camera.verticalFovRad), 1, 0.045, 45);
   const resize = () => {
     const { clientWidth, clientHeight } = viewport;
+    if (!clientWidth || !clientHeight) return;
     renderer.setSize(clientWidth, clientHeight, false);
     camera.aspect = clientWidth / clientHeight;
     camera.updateProjectionMatrix();
@@ -108,7 +108,6 @@ async function boot() {
       current = state;
       previousActionPose = currentActionPose;
       currentActionPose = readActionPose();
-      reference.record(previous.action, emitted);
       const { position, velocity, grounded } = state.character;
       const gait = currentActionPose.walk;
       hud.update(state.tick, state.action, emitted, doorPrompt(position));
@@ -144,18 +143,20 @@ async function boot() {
     const b = current.character.position;
     const from = previousActionPose.walk;
     const to = currentActionPose.walk;
-    const footPose = (before: WalkFoot, after: WalkFoot): WalkFoot => ({
-      rightM: lerp(before.rightM, after.rightM), forwardM: lerp(before.forwardM, after.forwardM),
-      liftM: lerp(before.liftM, after.liftM), yawRad: lerpAngle(before.yawRad, after.yawRad, alpha),
-      planted: after.planted,
-    });
+    const aimFrom = previousActionPose.aim;
+    const aimTo = currentActionPose.aim;
     const renderPose = {
       ...currentActionPose,
+      aim: {
+        idleTimeS: lerp(aimFrom.idleTimeS, aimTo.idleTimeS),
+        stationaryBlend: lerp(aimFrom.stationaryBlend, aimTo.stationaryBlend),
+        turn: lerp(aimFrom.turn, aimTo.turn),
+        turnTimeS: lerp(aimFrom.turnTimeS, aimTo.turnTimeS),
+      },
       walk: {
         cycles: lerp(from.cycles, to.cycles), blend: lerp(from.blend, to.blend),
-        directional: lerp(from.directional, to.directional), pace: lerp(from.pace, to.pace),
-        right: lerp(from.right, to.right), forward: lerp(from.forward, to.forward),
-        feet: [footPose(from.feet[0], to.feet[0]), footPose(from.feet[1], to.feet[1])] as const,
+        weights: [lerp(from.weights[0], to.weights[0]), lerp(from.weights[1], to.weights[1]),
+          lerp(from.weights[2], to.weights[2]), lerp(from.weights[3], to.weights[3])] as const,
       },
     };
     // Use the swept fixed-step pose, so the view matches the crosshair ray.

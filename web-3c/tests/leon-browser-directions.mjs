@@ -10,12 +10,9 @@ export async function checkDirections(browser, url, { fromHome = false, aimed = 
     if (message.type() === 'error' && !missingHomeFavicon) errors.push(message.text());
   });
   try {
-    // Hook the reference frame before the default Leon appearance creates its first skin.
+    // Observe toe positions on the shared skin before the playable appearance creates it.
     await page.addInitScript(() => {
-      if (window === window.top) {
-        window.leonToeFrames = [];
-        return;
-      }
+      window.leonToeFrames = [];
       Object.defineProperty(window, 'LeonSkinning', {
         configurable: true,
         set(skinning) {
@@ -27,7 +24,7 @@ export async function checkDirections(browser, url, { fromHome = false, aimed = 
             const update = skin.update;
             skin.update = (...pose) => {
               update(...pose);
-              window.parent.leonToeFrames.push(toes.map(({ world }) => world.elements.slice(12, 15)));
+              window.leonToeFrames.push(toes.map(({ world }) => world.elements.slice(12, 15)));
             };
             return skin;
           };

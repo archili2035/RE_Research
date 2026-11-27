@@ -4,18 +4,11 @@ import { pipeline } from 'node:stream/promises';
 import type { Connect, Plugin } from 'vite';
 
 const files = new Set([
-  '/player_index.html',
-  '/assets/theme/tokens.css',
-  '/assets/theme/base.css',
-  '/player/style.css',
   '/player/motions.js',
   '/player/masks.js',
   '/player/math.js',
   '/player/model.js',
   '/player/skinning.js',
-  '/player/model-view.js',
-  '/player/app.js',
-  '/player/vendor/three.min.js',
 ]);
 const localAddresses = new Set(['127.0.0.1', '::1', '::ffff:127.0.0.1']);
 const weaponRoute = '/wp0100.glb';
@@ -39,8 +32,7 @@ const serveReference: Connect.NextHandleFunction = async (request, response) => 
     response.writeHead(weapon ? 204 : 404).end();
     return;
   }
-  const type = pathname.endsWith('.js') ? 'text/javascript; charset=utf-8'
-    : pathname.endsWith('.css') ? 'text/css; charset=utf-8' : weapon ? 'model/gltf-binary' : 'text/html; charset=utf-8';
+  const type = weapon ? 'model/gltf-binary' : 'text/javascript; charset=utf-8';
   response.writeHead(200, {
     'Content-Type': type,
     'Content-Length': size,

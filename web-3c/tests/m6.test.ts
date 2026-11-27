@@ -5,6 +5,7 @@ import type { GameEvent, InputSnapshot } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom, testRoom } from '../src/level.ts';
 import { createSimulation } from '../src/simulation.ts';
+import { targetLook } from './test-room-route.mjs';
 
 test('M6 fixed route hits the target, reloads and crosses a repeatable collision door', async () => {
   const room = await createTestRoom();
@@ -41,7 +42,7 @@ test('M6 fixed route hits the target, reloads and crosses a repeatable collision
   const stop = advance({ moveY: 1 }, 64);
   assert.ok(stop.character.position.z > 2.2 && stop.character.position.z < 2.4);
 
-  const raise = advance({ aimHeld: true, firePressed: true, lookDeltaX: 0.27 / 0.0022, lookDeltaY: -0.16 / 0.0022 });
+  const raise = advance({ aimHeld: true, firePressed: true, ...targetLook });
   assert.equal(raise.action.phase, 'raising');
   assert.deepEqual([raise.action.magazine, raise.action.reserve], [8, 16]);
   advance({ aimHeld: true }, 27);
@@ -63,7 +64,7 @@ test('M6 fixed route hits the target, reloads and crosses a repeatable collision
   advance({ aimHeld: true }, 40);
   assert.deepEqual(events.map(({ type }) => type), ['action.recovered']);
 
-  advance({ lookDeltaX: -0.27 / 0.0022 });
+  advance({ lookDeltaX: -targetLook.lookDeltaX });
   const blocked = advance({ moveY: 1 }, 60);
   assert.ok(blocked.character.position.z > 0.39 && blocked.character.position.z < 0.5);
   assert.equal(room.doorPrompt(blocked.character.position), 'E 开门');

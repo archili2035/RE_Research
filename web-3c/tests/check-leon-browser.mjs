@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -12,30 +12,41 @@ const project = fileURLToPath(new URL('../', import.meta.url));
 const out = path.resolve(project, '../runtime/web-3c-leon.tmp');
 const directionOut = path.resolve(project, '../runtime/web-3c-leon-direction.tmp');
 const readyOut = path.resolve(project, '../runtime/web-3c-leon-ready.tmp');
+const weaponFile = process.env.LEON_WEAPON_GLB;
+let weaponIndexCount = 0;
+if (weaponFile) {
+  const glb = await readFile(weaponFile);
+  const gltf = JSON.parse(glb.subarray(20, 20 + glb.readUInt32LE(12)).toString('utf8'));
+  weaponIndexCount = gltf.accessors[gltf.meshes[0].primitives[0].indices].count;
+}
 
 async function check(browser, url) {
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
   const errors = [];
   const files = [];
+  const weaponResponses = [];
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });
   page.on('response', (response) => {
     if (response.url().includes('/__re9-reference/player/')) files.push(new URL(response.url()).pathname);
+    if (response.url().endsWith('/__re9-reference/wp0100.glb')) weaponResponses.push(response.status());
   });
-  // Observe only the WebGL context in the playable viewport, excluding the reference iframe.
-  await page.addInitScript(() => {
+  // Observe the WebGL context in the playable viewport.
+  await page.addInitScript((weaponCount) => {
     window.playfieldIndexCount = 0;
+    window.weaponPlayfieldDraws = 0;
     for (const Context of [window.WebGLRenderingContext, window.WebGL2RenderingContext]) {
       if (!Context) continue;
       const draw = Context.prototype.drawElements;
       Context.prototype.drawElements = function (mode, count, ...rest) {
         if (this.canvas.parentElement?.id === 'viewport') {
           window.playfieldIndexCount = Math.max(window.playfieldIndexCount, count);
+          if (count === weaponCount) window.weaponPlayfieldDraws++;
         }
         return draw.call(this, mode, count, ...rest);
       };
     }
-  });
+  }, weaponIndexCount);
   await page.goto(url);
   await page.waitForFunction(() => !document.querySelector('#enter').disabled &&
     !document.querySelector('#player-appearance [value=leon]').disabled);
@@ -103,8 +114,13 @@ async function check(browser, url) {
   for (const file of ['model.js', 'motions.js', 'skinning.js']) {
     assert.equal(files.filter((url) => url.endsWith('/' + file)).length, 1, file);
   }
+  const weaponDraws = await page.evaluate(() => window.weaponPlayfieldDraws);
+  if (weaponFile) {
+    assert.deepEqual(weaponResponses, [200]);
+    assert.ok(weaponDraws > 0, 'weapon geometry is drawn in the playable viewport');
+  }
   assert.deepEqual(errors, []);
-  return { startX, walkedX, fireStartX, fireEndX, stoppedX, ammo, leonIndexCount, grayboxIndexCount, events, files, errors };
+  return { startX, walkedX, fireStartX, fireEndX, stoppedX, ammo, leonIndexCount, grayboxIndexCount, events, files, weaponResponses, weaponIndexCount, weaponDraws, errors };
 }
 
 await mkdir(out, { recursive: true });

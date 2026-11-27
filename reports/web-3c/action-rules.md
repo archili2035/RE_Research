@@ -23,6 +23,40 @@
 - `web-3c/src/level.ts` 将动作接入主关卡，并向 `web-3c/src/main.ts` 提供角色显示所需的姿态读取。M3 继续读上一步瞄准，M4 读本步瞄准，M6 HUD 读提交弹量和确认开火事件。`contracts.ts`、`ClipManifest`、`ActionState`、`GameEvent` 与 `ReplayTrace` 沿用既有数据结构和版本。
 - M7 回放使用 `test-room@1` 的 `move`、`act`、`camera`、`resolveSceneEvents`。出弹、扣弹、补弹与命中步号见 [M7 交接](m7-handoff.md)。
 
+## 里昂站立瞄准与转向
+
+用仓库播放器的逐帧按钮读取 60 Hz 源轨。下表是各关节相对本轨首帧的最大局部旋转，左右配对列以左／右排列。脊柱、锁骨、上臂和双手的变化来自旋转轨，局部平移维持绑定值。 [播放器逐帧数据](../../runtime/web-3c-leon-aim.tmp/source-frames.json)
+
+| 源轨 | 采样点 | 脊柱 `0/1/2` | 锁骨 | 上臂 | 双手 | 根骨骼偏航 |
+| --- | ---: | --- | --- | --- | --- | --- |
+| `100/160` 持枪 | 308 | 1.37°／1.06°／1.53° | 1.06°／1.73° | 2.52°／2.80° | 3.20°／2.66° | 固定 |
+| `100/165` 左转 | 78 | 1.76°／1.66°／1.56° | 0.33°／1.11° | 1.20°／1.06° | 0.91°／1.75° | 源轨中帧 +91.17°，左转 |
+| `100/167` 右转 | 78 | 1.07°／0.65°／0.88° | 0.33°／1.11° | 1.20°／1.06° | 0.91°／1.75° | 源轨中帧 −91.17°，右转 |
+
+`160` 的上身首尾闭合。`165` 和 `167` 的上身首尾也回到持枪底姿，所查关节首尾最大差约 0.003°。两条转向轨的手臂幅度相近，方向差主要表现在根骨骼和躯干。试玩的角色朝向跟随镜头，所取的转向动作通过 Mask 4 驱动上身。
+
+每个固定步在镜头提交后计算有符号偏航差，跨 ±π 取最短角。用 75 ms 低通滤波，再把约 6.3–24.6°/s 映射到平滑混合权重。微小反复抖动保持 `160` 循环。转动时按符号混入 `165` 或 `167`，停下后权重随滤波衰减，原持枪相位连续推进。实际移动时随步态权重淡回 `160` 首帧。`ActionPose.aim` 是渲染状态，由 `level.ts` 在镜头阶段更新、`main.ts` 插值、`leon-view.ts` 消费。角色移动、相机、动作事件和回放契约沿用既有接口。
+
+单发 `1100` 继续使用原增量，在当前持枪姿态上做局部平移相加和四元数右乘。源轨首尾回零，开火开始和结束可以沿用当前持枪相位。将持枪限定在 `160` 首帧时，回归用原 `previewOnBasePose` 合成进行逐骨对照。换弹沿用 Mask 2 与原提交点。
+
+固定步路线以每步 2 px 慢转，左右的转向混合峰值均约 47%，停转 4 步后退回 `160` 循环。相对同一持枪相位，左／右转带来的躯干变化约 0.48°／0.50°，右锁骨变化约 0.75°／1.18°。单发之外，两手相对位姿的最大偏移约 0.066 mm／0.010°。单发接受当步相对当步持枪姿态的右手角差约 0.0003°，从最后一帧后坐到恢复帧的角差约 1.45°。 [固定步骨骼和事件读回](../../runtime/web-3c-leon-aim.tmp/fixed-aim.json)
+
+本轮全量 28/28 通过，包含本机武器挂点、移动瞄准、固定单发基准和完整路线。正式路线的 616 步、31 条事件一致。第 375 步按顺序开火、扣至 `7/16`、命中练习靶，第 431 步补至 `8/15`。Chromium 生产页键鼠复测通过。 [全量日志](../../runtime/web-3c-leon-aim.tmp/tests.log) · [正式路线事件](../../runtime/web-3c-leon-aim.tmp/fixed-route.json) · [浏览器验收](../../runtime/web-3c-leon-aim.tmp/browser-test.log)
+
+```powershell
+$out = Join-Path $PWD 'runtime/web-3c-leon-aim.tmp'
+$env:LEON_AIM_EVIDENCE = Join-Path $out 'fixed-aim.json'
+$env:LEON_ROUTE_EVIDENCE = Join-Path $out 'fixed-route.json'
+$env:LEON_WEAPON_GLB = Join-Path $PWD 'runtime/web-3c-weapon.tmp/wp0100.glb'
+npm.cmd --prefix web-3c test
+npm.cmd --prefix web-3c run build
+node web-3c/tests/record-leon-aim.mjs audit
+node web-3c/tests/record-leon-aim.mjs before
+node web-3c/tests/record-leon-aim.mjs after
+```
+
+录像用相同的逐步鼠标输入。改前 `21f1545a525f` 和改后 `48fc8641aabf` 的 138 帧试玩状态和事件一致。片段从稳定瞄准开始，0.60 s 左转，1.60 s 停住，2.30 s 右转，3.30 s 停住，4.00 s 单发。改前模式读取本轮冻结的 `runtime/web-3c-leon-aim.tmp/before-dist`，改后模式读取 `web-3c/dist`。`CAMERA_FFMPEG` 指向支持 MJPEG 输入和 VP8 输出的 ffmpeg。Chromium 环境变量沿用下节设置。 [改前](../../runtime/web-3c-leon-aim.tmp/before.webm) · [改后](../../runtime/web-3c-leon-aim.tmp/after.webm) · [同帧对照](../../runtime/web-3c-leon-aim.tmp/comparison.png)
+
 ## 验证与复现
 
 `web-3c/tests/m5.test.ts` 和更新后的 `web-3c/tests/m6.test.ts` 覆盖精确事件顺序和实际关卡命中、补弹、门交互。全量测试 18/18 通过。同一组输入在模拟的 60 Hz 和 120 Hz 渲染节奏产生完全一致的状态、姿态采样与事件。M2 GLB 回读验证单发峰值约 +13°，步态相位改变时大腿摆幅翻转而单发峰值保持，换弹时弹匣从约 0.154 m 脱离到接触误差小于 1e-5 m。TypeScript 和 Vite 生产构建通过，Vite 提示共享包体积超过 500 kB。

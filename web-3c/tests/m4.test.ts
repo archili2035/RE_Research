@@ -3,7 +3,7 @@ import { writeFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { PerspectiveCamera, Vector3 } from 'three';
 import feel from '../src/feel.json' with { type: 'json' };
-import { castCrosshair } from '../src/camera.ts';
+import { castCrosshair, createCamera } from '../src/camera.ts';
 import type { InputSnapshot, SceneHit, SceneQueries, Vec3 } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom, testRoom } from '../src/level.ts';
@@ -113,8 +113,39 @@ test('M4 aims beside a wall, then recovers as M3 walks away', async () => {
   assert.ok(at(samples, 135).state.character.position.x > spawn.position.x + 2);
   assert.equal(recovered.state.camera.obstructed, false);
   assert.ok(Math.abs(recovered.boomM - recovered.desiredM) < 0.001);
-  assertSmoothRecovery(samples, 45, 225, 0.05);
+  assertSmoothRecovery(samples, 45, 135, 0.05);
+  // After stopping, the filtered framing origin catches up with the live sweep anchor.
+  for (let tick = 136; tick <= 225; tick += 1) {
+    const before = at(samples, tick - 1).state.camera.position;
+    const after = at(samples, tick).state.camera.position;
+    assert.ok(distance(before, after) < 0.03 && after.x >= before.x - 0.001);
+  }
   m4Trace.push(...samples);
+});
+
+test('M4 exits aim with the optical field and unobstructed boom easing together', () => {
+  const scene: SceneQueries = {
+    moveCapsule: ({ displacement }) => ({ displacement, grounded: true }),
+    sweepSphere: () => null,
+    raycast: () => null,
+  };
+  const character = { ...testRoom.spawn, velocity: { x: 0, y: 0, z: 0 }, grounded: true };
+  const ready = { id: 'player', phase: 'ready', aiming: false, magazine: 8, reserve: 16 } as const;
+  const camera = createCamera(character, { ...ready, phase: 'aiming', aiming: true }, scene);
+  const move = createCamera(character, ready, scene).initial;
+  const aim = camera.initial;
+  let pose = aim;
+  let previousProgress = 0;
+  for (let tick = 1; tick <= 24; tick++) {
+    pose = camera.update({ ...neutral, tick }, character, ready, pose, scene);
+    const fovProgress = (pose.verticalFovRad - aim.verticalFovRad) / (move.verticalFovRad - aim.verticalFovRad);
+    const boomProgress = (pose.position.x - aim.position.x) / (move.position.x - aim.position.x);
+    assert.ok(fovProgress > previousProgress && Math.abs(fovProgress - boomProgress) < 1e-8);
+    assert.equal(pose.obstructed, false);
+    assert.equal(pose.pitchRad, aim.pitchRad);
+    previousProgress = fovProgress;
+  }
+  assert.ok(previousProgress > 0.95);
 });
 
 test('M4 sweeps around the L corner at 60/120 Hz and casts through the screen centre', async () => {

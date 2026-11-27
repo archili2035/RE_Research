@@ -113,29 +113,12 @@ function observe({ mode, route }) {
       return draw.call(this, drawMode, count, ...rest);
     };
   }
-  let reference;
-  let previousReferenceTime;
   let last;
   function frame(now) {
     const appearance = document.querySelector('#player-appearance');
-    const ref = document.querySelector('#reference-view');
-    if (mode === 'leon' && ref && ref.style.visibility !== 'hidden') {
-      ref.style.visibility = 'hidden';
-      document.querySelector('#reference-follow').checked = false;
-    }
-    if (mode !== 'original' && appearance && !appearance.options[1].disabled && appearance.value !== 'leon') {
+    if (mode === 'leon' && appearance && !appearance.options[1].disabled && appearance.value !== 'leon') {
       appearance.value = 'leon';
       appearance.dispatchEvent(new Event('change'));
-    }
-    if (mode === 'both' && !reference && !document.querySelector('#reference-follow')?.disabled &&
-        ref?.contentWindow?.player) {
-      reference = ref.contentWindow.player;
-      const play = ref.contentDocument.querySelector('#play');
-      document.querySelector('#reference-follow').checked = false;
-      if (!reference.selectClip(100, 1200)) throw new Error('Reload clip unavailable');
-      ref.contentDocument.querySelector('#loop').checked = true;
-      if (!reference.playing) play.click();
-      m.referenceStart = performance.now();
     }
     if (m.started && !m.finished) {
       if (last !== undefined && now > last) {
@@ -144,13 +127,6 @@ function observe({ mode, route }) {
       }
       last = now;
       if (m.done) m.finished = performance.now();
-    }
-    if (reference && m.started && !m.finished) {
-      m.referenceFrames = (m.referenceFrames || 0) + Number(reference.playing);
-      if (previousReferenceTime !== undefined && reference.time !== previousReferenceTime) {
-        m.referenceAdvances = (m.referenceAdvances ?? 0) + 1;
-      }
-      previousReferenceTime = reference.time;
     }
     requestAnimationFrame(frame);
   }
@@ -184,12 +160,11 @@ function details(m, fixed) {
   assert.ok(Math.abs(positionZ(blocked) + 0.44) < 0.06, blocked);
   assert.ok(positionZ(returned) > 0.5, returned);
   return {
-    loadMs: Math.round(Math.max(m.firstOriginal || m.firstLeon, m.referenceStart || 0)),
+    loadMs: Math.round(m.firstOriginal || m.firstLeon),
     renderer: m.mainRenderer, samples: ordered.length, routeMs: Math.round(m.finished - m.start),
     p50: percentile(0.5), p95: percentile(0.95), max: ordered.at(-1),
     over50: ordered.filter((delta) => delta > 50).length,
     over100: ordered.filter((delta) => delta > 100).length,
-    referenceFrames: m.referenceFrames || 0, referenceAdvances: m.referenceAdvances || 0,
     indices: m.indices, unfocusedFrames: m.unfocusedFrames,
     events, points: m.points, frameMs: m.frames,
   };
@@ -217,15 +192,12 @@ export async function checkRoute(browser, url, mode, fixed, { intercept = false,
     await page.waitForFunction(mode => {
       const m = window.m8;
       return !document.querySelector('#enter').disabled &&
-        (mode === 'original' ? m.firstOriginal : m.firstLeon) &&
-        (mode !== 'both' || m.referenceStart);
+        (mode === 'original' ? m.firstOriginal : m.firstLeon);
     }, mode);
     await page.bringToFront();
     if (warmup) await page.waitForTimeout(warmup);
     const cfg = await page.evaluate(() => {
       const canvas = document.querySelector('#viewport canvas');
-      const r = document.querySelector('#reference-view');
-      const canvas2 = r.contentDocument?.querySelector('#view');
       return {
         dpr: devicePixelRatio,
         viewport: [innerWidth, innerHeight],
@@ -233,10 +205,7 @@ export async function checkRoute(browser, url, mode, fixed, { intercept = false,
         screen: [screen.width, screen.height],
         visibility: document.visibilityState,
         canvas: [canvas.width, canvas.height],
-        referenceCanvas: canvas2 && [canvas2.width, canvas2.height],
-        referenceAvailable: !r.hidden,
-        referenceVisible: !r.hidden && getComputedStyle(r).visibility !== 'hidden',
-        referenceText: document.querySelector('#reference-status').textContent,
+        appearanceText: document.querySelector('#appearance-status').value,
         leonEnabled: !document.querySelector('#player-appearance').options[1].disabled,
       };
     });
@@ -246,13 +215,9 @@ export async function checkRoute(browser, url, mode, fixed, { intercept = false,
     const observed = await page.evaluate(() => window.m8);
     assert.deepEqual(errors, []);
     const probeMissing = network.some(([pathname, status]) =>
-      pathname.endsWith('/__re9-reference/player_index.html') && status === 404);
+      pathname.endsWith('/__re9-reference/player/masks.js') && status === 404);
     assert.deepEqual(consoleErrors.filter(error => !(probeMissing && /404 \(File not found\)/.test(error))), []);
     const result = details(observed, fixed);
-    if (mode === 'both') {
-      assert.ok(result.referenceFrames >= result.samples - 2, 'The reference player paused during the route');
-      assert.ok(result.referenceAdvances > 0, 'The reference animation time did not advance');
-    }
     return { mode, cfg, ...result, network, errors, consoleErrors, warnings };
   } finally { await context.close(); }
 }

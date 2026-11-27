@@ -138,7 +138,11 @@ export async function createTestRoom(level = testRoom, manifest?: ClipManifest) 
     stages: {
       move: (...args) => runtime.move(...args),
       act,
-      camera: (...args) => runtime.camera.update(...args),
+      camera(input, character, action, previous, scene) {
+        const view = runtime.camera.update(input, character, action, previous, scene);
+        runtime.actions.updateAimPose(character, view.yawRad - previous.yawRad);
+        return view;
+      },
       resolveSceneEvents,
     } satisfies Omit<SimulationStages, 'sampleInput' | 'publish'>,
   };

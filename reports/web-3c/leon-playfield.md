@@ -4,7 +4,7 @@
 
 ## 数据与接入
 
-[共享蒙皮](../../docs/player/skinning.js) 读取 `docs/player/model.js` 的六分件、72,346 顶点和原有蒙皮权重。[独立播放器](../../docs/player/model-view.js) 和试玩场共用蒙皮实现，各自在自己的 Three.js 场景绘制。试玩场复用同页参考窗口已读取的原始数据，本机 Vite 资源入口见 [reference-assets.ts](../../web-3c/reference-assets.ts)。
+[共享蒙皮](../../docs/player/skinning.js) 读取 `docs/player/model.js` 的六分件、72,346 顶点和原有蒙皮权重。[独立播放器](../../docs/player/model-view.js) 和试玩场共用蒙皮实现，各自在自己的 Three.js 场景绘制。试玩场现在直接读取灰模数据。[灰模加载](../../web-3c/src/leon-assets.ts) · [本机 Vite 资源入口](../../web-3c/reference-assets.ts)
 
 [玩家外观控制](../../web-3c/src/player-view.ts) 在同一渲染根节点切换模型，根节点使用[主入口](../../web-3c/src/main.ts)插值后的世界脚底坐标和偏航，复用近镜头淡出。[里昂动作视图](../../web-3c/src/leon-view.ts) 将源 +Z 前向转到世界 −Z，在模型子节点校准脚底，把源根位移留在蒙皮之外。M5 的 `ActionPose` 按下表驱动姿态，Rapier、准星射线、弹量和事件发布沿用试玩场的固定步。
 
@@ -42,6 +42,27 @@ node web-3c/tests/check-leon-browser.mjs
 ```
 
 ## 验收与复现
+
+### 四向解码轨接入
+
+构建 `34abcc3ef8e2`。里昂前、左、后、右移动分别采样 `100/120`、`100/122`、`100/124`、`100/126`。举枪和低枪共用髋与腿轨，举枪／收枪移动时延续同一相位。斜移按 Rapier 提交的局部前后与横向速度混合相邻轨，将左右脚落地对齐到同一循环相位。移动时忽略低于水平速度 2% 的副轴分量，以过滤碰撞求解的细小扰动。急停或顶墙时冻结相位，约 0.13 s 淡回站姿。四向采样取代了旧的程序摆脚、髋偏移与脚部 IK。
+
+`WalkPose` 现在传递循环相位、淡化权重和四向源轨权重，由 `actions.ts` 提交、`main.ts` 插值，`leon-view.ts` 采样。`CharacterState`、`ActionState`、`GameEvent` 及枪械时间轴沿用原接口。低枪的上身、举枪和单发的 Mask 4、换弹的 Mask 2 继续按原层级合成。 [轨道及相位](../../web-3c/src/leon-locomotion.ts) · [技术说明](../../web-3c/TECHNICAL.md)
+
+Web 3C 全量测试 25/25 通过。举枪 602 步和低枪 616 步测试都逐骨比对了四个纯方向及四组斜向。髋和腿的局部位置误差小于 0.001 mm，旋转误差小于 0.001°。Chromium 键鼠与研究首页静态包验收通过。正式 616 步路线的 31 条事件保持一致，第 375 步依次开火、扣至 `7/16`、命中，第 431 步补至 `8/15`。 [举枪轨迹](../../runtime/web-3c-leon-authored.tmp/final/aimed-steps.json) · [低枪轨迹](../../runtime/web-3c-leon-authored.tmp/final/ready-steps.json) · [事件轨迹](../../runtime/web-3c-leon-authored.tmp/final/route.json) · [全量日志](../../runtime/web-3c-leon-authored.tmp/final/tests.log) · [门户日志](../../runtime/web-3c-leon-authored.tmp/final/portal.log)
+
+固定步举枪 A→D 期间，相邻步的脚尖位移峰值为 12.6 cm。持续顶墙从第 509 步冻结相位，第 516 步淡回站姿。急停和顶墙回站姿时，脚尖从首个停止样本开始的最大三维位移分别约 31 cm 和 55 cm，包含抬脚和收脚，当前版本可看到这段收脚。 [最终试玩短片](../../runtime/web-3c-leon-authored.tmp/final/authored.webm) · [录像逐帧状态](../../runtime/web-3c-leon-authored.tmp/final/authored-browser.json)
+
+```powershell
+$out = Join-Path $PWD 'runtime/web-3c-leon-authored.tmp/final'
+$env:LEON_DIRECTION_EVIDENCE = Join-Path $out 'aimed-steps.json'
+$env:LEON_READY_EVIDENCE = Join-Path $out 'ready-steps.json'
+$env:LEON_ROUTE_EVIDENCE = Join-Path $out 'route.json'
+npm.cmd --prefix web-3c test
+npm.cmd --prefix web-3c run build:portal
+node web-3c/tests/check-leon-browser.mjs
+node web-3c/tests/check-m8-static.mjs
+```
 
 ### 举枪方向步态一期
 
@@ -129,7 +150,7 @@ npm --prefix web-3c run build
 $env:LEON_ROUTE_EVIDENCE = Join-Path (Get-Location).Path 'runtime/web-3c-leon.tmp/route-comparison.json'
 node --test web-3c/tests/leon-route.test.ts
 node web-3c/tests/check-leon-browser.mjs
-node web-3c/tests/check-re9-reference.mjs
+node web-3c/tests/check-playfield-layout.mjs
 npm --prefix web-3c test
 ```
 

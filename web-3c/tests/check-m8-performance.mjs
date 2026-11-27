@@ -17,7 +17,7 @@ try {
     const { gpu } = await session.send('SystemInfo.getInfo');
     const out = { chromium: browser.version(), headless: false, gpu, viewport, routeTicks: fixed.tickCount, results: [] };
     const url = 'http://127.0.0.1:' + server.httpServer.address().port + '/';
-    const modes = ['original', 'leon', 'both', 'both', 'leon', 'original'];
+    const modes = ['original', 'leon', 'leon', 'original'];
     for (const mode of modes) {
       const result = await checkRoute(browser, url, mode, fixed, { intercept: true });
       assert.equal(result.cfg.visibility, 'visible');

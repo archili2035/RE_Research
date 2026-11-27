@@ -95,10 +95,9 @@ try {
     for (const suffix of ['web-3c/index.html', 'web-3c/']) {
       const result = await checkRoute(browser, root + suffix, 'original', fixed, { warmup: 0 });
       assert.equal(result.cfg.leonEnabled, false);
-      assert.equal(result.cfg.referenceAvailable, false);
-      assert.match(result.cfg.referenceText, /本地参考素材未提供/);
+      assert.match(result.cfg.appearanceText, /里昂灰模需从本机仓库加载/);
       assert.deepEqual(result.network.filter(([p, code]) => code >= 400 || !p.startsWith('/docs/web-3c/')),
-        [['/docs/web-3c/__re9-reference/player_index.html', 404]]);
+        [['/docs/web-3c/__re9-reference/player/masks.js', 404]]);
       out.route.push(result);
       console.log('Static route: ' + suffix + ' -> ' + JSON.stringify(result.points.at(-1)));
     }
@@ -115,10 +114,10 @@ try {
     portal.on('response', r => remoteRequests.push([new URL(r.url()).pathname, r.status()]));
     await portal.goto(remote + 'index.html');
     await portal.getByRole('link', { name: /打开 3C 灰盒试玩/ }).click();
-    await portal.waitForFunction(() => !document.querySelector('#player-appearance').options[1].disabled &&
-      !document.querySelector('#reference-follow').disabled);
+    await portal.waitForFunction(() => !document.querySelector('#player-appearance').options[1].disabled);
     assert.equal(await portal.locator('#player-appearance').inputValue(), 'leon');
-    assert.equal(await portal.locator('#reference-view').getAttribute('src'), remote + 'player_index.html?embed=web-3c');
+    assert.equal(await portal.locator('iframe').count(), 0);
+    assert.ok(remoteRequests.some(([p]) => p === '/docs/player/model.js'));
     assert.deepEqual(remoteRequests.filter(([p, status]) => !p.startsWith('/docs/') || status >= 400), []);
     assert.deepEqual(remoteErrors, []);
     await portal.getByRole('link', { name: '返回研究首页' }).click();

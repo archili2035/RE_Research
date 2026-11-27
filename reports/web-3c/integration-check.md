@@ -2,6 +2,8 @@
 
 2026-11-26 收尾。正式试玩、工作区内静态发布和本机 Vite 预览均复验。复验期间收到 M7 正式基线，已按新构建复跑。外部托管未验证。
 
+2026-11-27 起，试玩首页使用单窗 16:9 布局，以下并排画面和双窗性能数字为旧版记录。当前画幅及灰模载入使用 [试玩画幅验收](../../web-3c/tests/check-playfield-layout.mjs)。
+
 ## 上游与版本
 
 | 项目 | 本次核查 |
@@ -31,7 +33,7 @@ node web-3c/tests/check-m8-static.mjs
 node web-3c/tests/check-m2-browser.mjs
 node web-3c/tests/check-m5-browser.mjs
 node web-3c/tests/check-leon-browser.mjs
-node web-3c/tests/check-re9-reference.mjs
+node web-3c/tests/check-playfield-layout.mjs
 node web-3c/tests/check-m8-performance.mjs
 ```
 

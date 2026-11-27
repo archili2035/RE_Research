@@ -210,6 +210,7 @@ const labels = {
   },
   camera: {
     lookRadPerPx: '鼠标灵敏度（rad/px）', moveDistanceM: '移动镜头距离（m）', aimDistanceM: '瞄准镜头距离（m）',
+    initialPitchRad: '初始俯仰（rad）',
     moveShoulderM: '移动横向偏移（m）', aimShoulderM: '瞄准横向偏移（m）',
     moveHeightM: '移动锚点高度（m）', aimHeightM: '瞄准锚点高度（m）',
     moveVerticalFovRad: '移动垂直 FOV（rad）', aimVerticalFovRad: '瞄准垂直 FOV（rad）',
@@ -231,9 +232,9 @@ for (const group of Object.keys(groups) as Group[]) {
     input.type = 'number';
     input.required = true;
     input.step = group === 'actions' ? '1' : 'any';
-    input.min = key === 'magazineCapacity' ? '1' : key === 'lookRadPerPx' ? '0.0001' :
+    input.min = key === 'initialPitchRad' ? '-0.85' : key === 'magazineCapacity' ? '1' : key === 'lookRadPerPx' ? '0.0001' :
       key.endsWith('FovRad') || key.endsWith('HeightM') ? '0.1' : '0';
-    input.max = group === 'actions' ? '999' : key === 'lookRadPerPx' ? '0.02' :
+    input.max = key === 'initialPitchRad' ? '0.65' : group === 'actions' ? '999' : key === 'lookRadPerPx' ? '0.02' :
       key.endsWith('FovRad') ? '2.9' : key.endsWith('HeightM') ? '2' :
       key.endsWith('S') ? '1' : key === 'recoveryDeadbandM' ? '0.1' : '12';
     input.value = String(feel[group][key].value);

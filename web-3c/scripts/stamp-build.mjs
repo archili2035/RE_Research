@@ -43,7 +43,7 @@ console.log(`Web 3C build ID: ${buildId}`);
 if (process.argv.includes('--portal')) {
   const portal = fileURLToPath(new URL('../../docs/web-3c/', import.meta.url));
   const assets = join(portal, 'assets');
-  // Publish chunks before the HTML that references them. Remove only superseded Vite chunks.
+  // Publish assets before the HTML that references them.
   const htmlFiles = files.filter((file) => file.endsWith('.html'));
   for (const file of [...files.filter((file) => !file.endsWith('.html')), ...htmlFiles, infoPath]) {
     const destination = join(portal, file);
@@ -52,7 +52,9 @@ if (process.argv.includes('--portal')) {
   }
   const live = new Set(files);
   for (const entry of await readdir(assets, { withFileTypes: true })) {
-    if (entry.isFile() && /-[a-zA-Z0-9_-]{8}\.(js|css)$/.test(entry.name) && !live.has(`assets/${entry.name}`)) {
+    const chunk = /-[a-zA-Z0-9_-]{8}\.(js|css)$/.test(entry.name);
+    const jsonSample = /^(feel|asset-audit|route\.replay|motions)-[a-zA-Z0-9_-]{8}\.json$/.test(entry.name);
+    if (entry.isFile() && (chunk || jsonSample) && !live.has(`assets/${entry.name}`)) {
       await unlink(join(assets, entry.name));
     }
   }

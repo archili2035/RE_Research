@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "movement": {
     "walkSpeedMps": {
       "value": 2.55,
@@ -28,52 +28,52 @@
       "conditions": "沿用灰盒鼠标灵敏度，单位为弧度/像素"
     },
     "moveDistanceM": {
-      "value": 3.3,
-      "source": "web-3c/tests/camera-tune-route.mjs",
+      "value": 1.95,
+      "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
-      "conditions": "移动取景，缩短扫掠前的镜头臂以适应走廊"
+      "conditions": "视频视觉拟合，13:05.10，1280×720 无遮挡，移动距离"
     },
     "aimDistanceM": {
-      "value": 2.1,
-      "source": "web-3c/tests/camera-tune-route.mjs",
+      "value": 1.6,
+      "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
-      "conditions": "瞄准取景，扫掠前沿视线反向的距离"
+      "conditions": "视频视觉拟合，13:40.50，1280×720 无遮挡，瞄准距离"
     },
     "moveShoulderM": {
-      "value": 0.72,
-      "source": "web-3c/tests/camera-tune-route.mjs",
+      "value": 0.46,
+      "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
-      "conditions": "移动取景，视角右向偏移"
+      "conditions": "视频视觉拟合，13:05.10，1280×720 无遮挡，右肩偏移，Normal X=0.5 为候选起点"
     },
     "aimShoulderM": {
-      "value": 0.6,
-      "source": "web-3c/tests/camera-tune-route.mjs",
+      "value": 0.44,
+      "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
-      "conditions": "瞄准取景，给准星右侧的视线留空间"
+      "conditions": "视频视觉拟合，13:40.50，1280×720 无遮挡，右肩偏移，Hold X=0.4 为候选起点"
     },
     "moveHeightM": {
       "value": 1.47,
-      "source": "reports/3c/parameters.csv:8",
+      "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
-      "conditions": "以 Normal _Offset.y 为起点调成灰盒脚底到球扫起点的高度"
+      "conditions": "视频视觉拟合，13:05.10，1280×720 无遮挡，锚点高度，Normal Y=1.47 为候选起点"
     },
     "aimHeightM": {
-      "value": 1.53,
-      "source": "reports/3c/parameters.csv:11",
+      "value": 1.538,
+      "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
-      "conditions": "以 Hold _Offset.y 为起点，抬高灰盒瞄准构图"
+      "conditions": "视频视觉拟合，13:40.50，1280×720 无遮挡，锚点高度，Hold Y=1.50 为候选起点"
     },
     "moveVerticalFovRad": {
-      "value": 1.0122909661567112,
-      "source": "web-3c/src/preview-stages.ts",
+      "value": 0.5585053606381855,
+      "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
-      "conditions": "沿用灰盒移动垂直 FOV（58°）"
+      "conditions": "视频视觉拟合，13:05.10，1280×720 无遮挡，垂直 FOV 32°"
     },
     "aimVerticalFovRad": {
-      "value": 0.8028514559173915,
-      "source": "web-3c/tests/camera-tune-route.mjs",
+      "value": 0.40142572795869574,
+      "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
-      "conditions": "瞄准垂直 FOV 为 46°，与更近的镜头臂配合"
+      "conditions": "视频视觉拟合，13:40.50，1280×720 无遮挡，垂直 FOV 23°"
     },
     "aimTransitionS": {
       "value": 0.11,
@@ -82,10 +82,10 @@
       "conditions": "60 Hz，举枪取景向瞄准参数过渡的指数时间常数"
     },
     "moveTransitionS": {
-      "value": 0.15,
-      "source": "web-3c/tests/camera-tune-route.mjs",
+      "value": 0.13,
+      "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
-      "conditions": "60 Hz，收枪取景向移动参数过渡的指数时间常数"
+      "conditions": "视频视觉拟合，13:41.20–13:41.60，无障碍时镜头臂和 FOV 同步恢复"
     },
     "recoveryS": {
       "value": 0.22,
@@ -128,6 +128,12 @@
       "source": "web-3c/tests/camera-tune-route.mjs",
       "evidence": "tuned",
       "conditions": "贴擦墙面时抑制小幅回弹，清空后恢复完整距离"
+    },
+    "initialPitchRad": {
+      "value": -0.06,
+      "source": "reports/web-3c/m4-video-calibration.md",
+      "evidence": "tuned",
+      "conditions": "视频视觉拟合，13:40.50 / 13:05.10，1280×720 无遮挡，两种模式共用的初始俯仰，后续仍由鼠标输入控制"
     }
   },
   "actions": {

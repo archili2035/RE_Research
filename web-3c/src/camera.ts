@@ -33,6 +33,10 @@ function damping(timeS: number) {
   return timeS > 0 ? -Math.expm1(-STEP_S / timeS) : 1;
 }
 
+function clampPitch(pitchRad: number) {
+  return Math.max(MIN_PITCH_RAD, Math.min(MAX_PITCH_RAD, pitchRad));
+}
+
 export function createCamera(
   character: CharacterState, action: ActionState, scene: SceneQueries,
   parameters: FeelConfig['camera'] = feel.camera as FeelConfig['camera'],
@@ -40,7 +44,7 @@ export function createCamera(
   const {
     lookRadPerPx, moveDistanceM, aimDistanceM, moveShoulderM, aimShoulderM, moveHeightM, aimHeightM,
     moveVerticalFovRad, aimVerticalFovRad, aimTransitionS, moveTransitionS, recoveryS, sphereRadiusM,
-    wallClearanceM, collisionRetractMps, followPositionS, followHeightS, recoveryDeadbandM,
+    wallClearanceM, collisionRetractMps, followPositionS, followHeightS, recoveryDeadbandM, initialPitchRad,
   } = parameters;
   const aimDamping = damping(aimTransitionS.value);
   const moveDamping = damping(moveTransitionS.value);
@@ -51,7 +55,7 @@ export function createCamera(
   const retractStepM = collisionRetractMps.value * STEP_S;
   let followedFeet = character.position;
   let aimBlend = Number(action.aiming);
-  let boomLengthM = Infinity;
+  let compressionM: number | undefined;
   let retracting = false;
 
   function sweep(from: Vec3, to: Vec3, queries: SceneQueries) {
@@ -76,13 +80,18 @@ export function createCamera(
       z: followedFeet.z - direction.z * back - Math.sin(yawRad) * shoulder,
     };
     const { lengthM, allowedM, hit } = sweep(anchor, desired, queries);
-    const sharpRetraction = hit !== null && boomLengthM - allowedM > retractStepM;
+    const requiredCompressionM = lengthM - allowedM;
+    const sharpRetraction = compressionM !== undefined && requiredCompressionM - compressionM > retractStepM;
 
-    // Ignore small outward changes while grazing a wall and honor tighter limits immediately.
-    const recoveryTargetM = hit && allowedM > boomLengthM
-      ? Math.max(boomLengthM, allowedM - recoveryDeadband) : allowedM;
-    if (recoveryTargetM - boomLengthM <= SETTLE_DISTANCE_M) boomLengthM = recoveryTargetM;
-    else boomLengthM += (recoveryTargetM - boomLengthM) * recoveryDamping;
+    // Damp only the wall correction. In clear space the profile already eases the boom and FOV together.
+    if (compressionM === undefined || requiredCompressionM >= compressionM) {
+      compressionM = requiredCompressionM;
+    } else {
+      const targetM = hit ? Math.min(compressionM, requiredCompressionM + recoveryDeadband) : 0;
+      if (compressionM - targetM <= SETTLE_DISTANCE_M) compressionM = targetM;
+      else compressionM += (targetM - compressionM) * recoveryDamping;
+    }
+    const boomLengthM = Math.max(0, lengthM - compressionM);
     const goal = interpolate(anchor, desired, lengthM > 0 ? boomLengthM / lengthM : 0);
     let position = goal;
     let obstructed = hit !== null;
@@ -108,12 +117,13 @@ export function createCamera(
     };
   }
 
-  const initial = solve(character.position, { yawRad: character.yawRad, pitchRad: INITIAL_PITCH_RAD }, scene);
+  const pitchRad = clampPitch(initialPitchRad?.value ?? INITIAL_PITCH_RAD);
+  const initial = solve(character.position, { yawRad: character.yawRad, pitchRad }, scene);
   const update: SimulationStages['camera'] = (input, nextCharacter, nextAction, previous, queries) => {
     const yaw = previous.yawRad - input.lookDeltaX * lookRadPerPx.value;
     const pitch = previous.pitchRad - input.lookDeltaY * lookRadPerPx.value;
     const yawRad = Math.atan2(Math.sin(yaw), Math.cos(yaw));
-    const pitchRad = Math.max(MIN_PITCH_RAD, Math.min(MAX_PITCH_RAD, pitch));
+    const pitchRad = clampPitch(pitch);
     const feet = nextCharacter.position;
     const followedHeight = followedFeet.y + (feet.y - followedFeet.y) * heightDamping;
     followedFeet = { ...interpolate(followedFeet, feet, positionDamping), y: followedHeight };

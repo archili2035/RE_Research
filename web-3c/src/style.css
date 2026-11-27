@@ -52,14 +52,15 @@ output, pre { font: .83rem/1.5 ui-monospace, monospace; white-space: pre-wrap; c
 
 header a { color: #a1d9cd; font-size: .88rem; }
 
-.comparison-layout { max-width: 1440px; }
-.comparison-panels {
-  --comparison-height: clamp(400px, 62vh, 690px);
-  display: grid;
-  grid-template-columns: minmax(0, 1.24fr) minmax(0, 1fr);
-  gap: 16px;
+.playfield-layout { max-width: 1280px; }
+.playfield-layout #viewport {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  outline: 1px solid #344852;
 }
-.comparison-header {
+.playfield-layout #viewport > canvas { position: absolute; inset: 0; }
+.playfield-header {
   min-height: 36px;
   margin-bottom: 8px;
   display: flex;
@@ -67,34 +68,6 @@ header a { color: #a1d9cd; font-size: .88rem; }
   flex-wrap: wrap;
   gap: 4px 10px;
 }
-.comparison-header h2 { margin: 0; }
-.comparison-header label { display: inline-flex; align-items: center; gap: 4px; font-size: .8rem; }
-.comparison-header select, .reference-events button { font: inherit; }
-.comparison-panels #viewport, #reference-view { height: var(--comparison-height); }
-#reference-view {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #344852;
-  background: #14212a;
-}
-#reference-view:not([hidden]) { display: block; }
-#reference-status { padding: 9px 12px; border: 1px solid #344852; color: #b5d2d5; font-size: .88rem; }
-.reference-events { padding: 10px 0 16px; }
-.reference-events h3 { margin: 0 0 6px; font-size: .85rem; }
-#reference-events { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
-.reference-events button {
-  padding: 5px 7px;
-  text-align: left;
-  border: 1px solid #344852;
-  border-radius: 4px;
-  background: #202d34;
-  color: #e3eaec;
-  font-size: .8rem;
-  font-variant-numeric: tabular-nums;
-}
-.reference-events button:enabled { cursor: pointer; }
-.reference-events button:enabled:hover { border-color: #a1d9cd; }
-.reference-events button:disabled:not([data-time-s]) { color: #a9bac1; }
-@media (max-width: 900px) {
-  .comparison-panels { grid-template-columns: minmax(0, 1fr); gap: 0; }
-}
+.playfield-header h2 { margin: 0; }
+.playfield-header label { display: inline-flex; align-items: center; gap: 4px; font-size: .8rem; }
+.playfield-header select { font: inherit; }
