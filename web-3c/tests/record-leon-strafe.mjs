@@ -10,7 +10,7 @@ const variant = process.argv[2];
 assert.ok(variant === 'before' || variant === 'after', 'Expected before or after');
 assert.ok(process.env.CAMERA_FFMPEG, 'Set CAMERA_FFMPEG to ffmpeg with MJPEG and VP8 support');
 const require = createRequire(import.meta.url);
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright-core');
 const project = new URL('../', import.meta.url);
 const evidence = new URL('../../runtime/web-3c-leon-strafe.tmp/', import.meta.url);
 await mkdir(evidence, { recursive: true });

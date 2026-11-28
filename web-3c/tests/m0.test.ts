@@ -2,9 +2,9 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { STEP_S } from '../src/contracts.ts';
 import type { GameEvent, InputSnapshot } from '../src/contracts.ts';
-import { createInputBuffer } from '../src/preview-input.ts';
-import { createPreviewScene } from '../src/preview-scene.ts';
-import { actPreview, cameraPreview, movePreview, previewInitialState } from '../src/preview-stages.ts';
+import { createInputBuffer } from '../src/input.ts';
+import { createPreviewScene } from './legacy-fixtures.ts';
+import { actPreview, cameraPreview, movePreview, previewInitialState } from './legacy-fixtures.ts';
 import { createFixedLoop, createSimulation } from '../src/simulation.ts';
 
 test('snapshot consumes deltas and edges once, preserves holds, and clears on reset', () => {

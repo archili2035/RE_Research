@@ -147,7 +147,7 @@ test('M7 applies the tuned movement, camera, and ammo values on reset and stamps
   assert.equal(trace.feelVersion, tuned.version);
   assert.ok(!matchesReferenceEvents(trace, route));
   assert.ok(samples[29].state.character.position.x < -2.25);
-  assert.ok(Math.abs(samples[T['fire-start'] + 10].state.camera.verticalFovRad - 0.7) < 0.001);
+  assert.ok(Math.abs(samples[T['shot-recovered']].state.camera.verticalFovRad - 0.7) < 0.001);
   assert.deepEqual(ammo(samples.at(-1)!.state), [7, 0]);
   assert.equal(trace.events.filter((event) => event.type === 'ammo.committed').length, 1);
   for (const group of [feel.movement, feel.camera, feel.actions]) {

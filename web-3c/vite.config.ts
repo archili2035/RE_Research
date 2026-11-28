@@ -22,6 +22,14 @@ export default defineConfig({
         m7: fileURLToPath(new URL('./m7.html', import.meta.url)),
         jsonViewer: fileURLToPath(new URL('./json-viewer.html', import.meta.url)),
       },
+      output: {
+        // Physics (Rapier with its inlined wasm) and rendering (Three.js) change rarely; keep them in their own chunks.
+        manualChunks(id) {
+          if (id.includes('@dimforge/rapier3d')) return 'vendor-rapier';
+          if (id.includes('node_modules/three/')) return 'vendor-three';
+        },
+      },
     },
+    chunkSizeWarningLimit: 2600, // vendor-rapier carries the inlined wasm (~2.2 MB) by design
   },
 });

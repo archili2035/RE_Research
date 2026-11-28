@@ -28,6 +28,45 @@ export const LEON_ROOT_SPEED = {
   run: LEON_MOVE_RUN.distanceM / LEON_MOVE_RUN.durationS,
 } as const;
 
+// Carry-gun starts and stops (Handgun00M strafeF family), indexed [leg][direction] with leg 0 = left, 1 = right and
+// direction forward, left, back, right. Root travel per clip from the 60 Hz source; the view reads the exact curves.
+export const LEON_START_CLIPS = [[2002, 2003, 2000, 2001], [2022, 2023, 2020, 2021]] as const;
+export const LEON_END_CLIPS = [[2502, 2503, 2500, 2501], [2522, 2523, 2520, 2521]] as const;
+export const LEON_START_TRAVEL_M = [[2.64624, 2.26167, 1.86503, 2.79254], [3.24563, 2.76836, 2.08099, 2.71033]] as const;
+export const LEON_END_TRAVEL_M = { distanceM: 0.4, durationS: 3.7 } as const;
+
+/** PlayerLocomotionSetting._StrafeLeftLegStartDeg = Range(-45, 190), read as start −45° and length 190°. */
+export function startLeg(angleDeg: number): 0 | 1 {
+  return angleDeg >= -45 && angleDeg <= 145 ? 0 : 1;
+}
+
+// In-place turns (Handgun00M, tree ch0100_QuickTrun). Root yaw +90/−90/−180/+180 for L90/R90/L180/R180.
+export const LEON_TURN_CLIPS = [
+  { id: 314, deg: 90, left: true, durationS: 209 / 60 },
+  { id: 315, deg: 90, left: false, durationS: 313 / 60 },
+  { id: 310, deg: 180, left: true, durationS: 221 / 60 },
+  { id: 311, deg: 180, left: false, durationS: 261 / 60 },
+] as const;
+
+// Raise clips of tree ch0100_Hold_Start by the heading change they turn through (deg, positive = left).
+export const LEON_RAISE_CLIPS = [
+  { id: 159, deg: -180 }, { id: 158, deg: -90 }, { id: 140, deg: 0 }, { id: 141, deg: 90 }, { id: 145, deg: 180 },
+] as const;
+
+/** Linear weights over the raise clips for a signed heading change. */
+export function raiseWeights(turnRad: number) {
+  const deg = Math.max(-180, Math.min(180, turnRad * 180 / Math.PI));
+  const weights = LEON_RAISE_CLIPS.map(() => 0);
+  const upper = LEON_RAISE_CLIPS.findIndex((clip) => clip.deg >= deg);
+  if (upper <= 0) { weights[Math.max(0, upper)] = 1; return weights; }
+  const low = LEON_RAISE_CLIPS[upper - 1];
+  const high = LEON_RAISE_CLIPS[upper];
+  const t = (deg - low.deg) / (high.deg - low.deg);
+  weights[upper - 1] = 1 - t;
+  weights[upper] = t;
+  return weights;
+}
+
 export type LeonWalkWeights = readonly [forward: number, left: number, back: number, right: number];
 type StrideSet = readonly Readonly<{ distanceM: number }>[];
 

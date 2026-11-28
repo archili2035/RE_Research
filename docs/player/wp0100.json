@@ -1,0 +1,176 @@
+{
+  "source": "wp0100_00.mesh.250925211",
+  "sourceSha256": "1ec5f4fee356fc19fe779845e67f33b9e197b2664ddf655eb45260ba1af92ab9",
+  "lod": 3,
+  "meshes": [
+    {
+      "vertices": 2977,
+      "triangles": 2525,
+      "bones": [
+        "Body",
+        "MagazineCatch",
+        "Slide",
+        "SlideCatch",
+        "Trigger"
+      ]
+    },
+    {
+      "vertices": 70,
+      "triangles": 38,
+      "bones": [
+        "Slide"
+      ]
+    },
+    {
+      "vertices": 426,
+      "triangles": 184,
+      "bones": [
+        "Magazine_full"
+      ]
+    },
+    {
+      "vertices": 183,
+      "triangles": 129,
+      "bones": [
+        "MagInBullet",
+        "Magazine_full"
+      ]
+    },
+    {
+      "vertices": 204,
+      "triangles": 156,
+      "bones": [
+        "Body"
+      ]
+    }
+  ],
+  "markers": {
+    "C_Attach_Hand_A": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.009999999776482582,
+      0.0,
+      1.0
+    ],
+    "vfx_muzzle1": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.07807828485965729,
+      0.18010707199573517,
+      1.0
+    ]
+  },
+  "skeleton": [
+    {
+      "name": "root",
+      "parent": -1
+    },
+    {
+      "name": "Body",
+      "parent": 0
+    },
+    {
+      "name": "Slide",
+      "parent": 1
+    },
+    {
+      "name": "Scope_Pos_00",
+      "parent": 2
+    },
+    {
+      "name": "Trigger",
+      "parent": 1
+    },
+    {
+      "name": "Magazine_empty",
+      "parent": 1
+    },
+    {
+      "name": "vfx_muzzle1",
+      "parent": 1
+    },
+    {
+      "name": "vfx_muzzle2",
+      "parent": 1
+    },
+    {
+      "name": "Magazine_onlyone",
+      "parent": 1
+    },
+    {
+      "name": "Magazine_full",
+      "parent": 1
+    },
+    {
+      "name": "MagInBullet",
+      "parent": 9
+    },
+    {
+      "name": "SlideCatch",
+      "parent": 1
+    },
+    {
+      "name": "MagazineCatch",
+      "parent": 1
+    },
+    {
+      "name": "vfx_muzzle3",
+      "parent": 1
+    },
+    {
+      "name": "Bullet",
+      "parent": 1
+    },
+    {
+      "name": "C_Attach_Hand_A",
+      "parent": 1
+    },
+    {
+      "name": "MuzzleAttach_Pos_00",
+      "parent": 1
+    },
+    {
+      "name": "Stock_Pos_00",
+      "parent": 1
+    },
+    {
+      "name": "Bullet00",
+      "parent": 1
+    },
+    {
+      "name": "Gunlight_pos",
+      "parent": 1
+    },
+    {
+      "name": "EmptyCartridge",
+      "parent": 1
+    },
+    {
+      "name": "Charm_pos",
+      "parent": 1
+    }
+  ],
+  "glbSha256": "38cf8646d57f944fbd1ff13f3ba2d54b2baced783ca6f2f59d07f74504262570"
+}

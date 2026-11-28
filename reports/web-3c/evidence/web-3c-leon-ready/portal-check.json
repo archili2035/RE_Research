@@ -1,0 +1,189 @@
+{
+  "entry": "http://m8.test:8907/docs/web-3c/index.html",
+  "buildId": "258cd4cb0bb5",
+  "aimed": false,
+  "passes": [
+    {
+      "label": "W",
+      "before": {
+        "x": -2.8,
+        "z": 5,
+        "cycles": 0,
+        "blend": 0,
+        "aiming": false
+      },
+      "after": {
+        "x": -2.55,
+        "z": 5,
+        "cycles": 0.1449,
+        "blend": 1,
+        "aiming": false
+      },
+      "toeTravelM": 0.17911174394167143
+    },
+    {
+      "label": "A",
+      "before": {
+        "x": -2.55,
+        "z": 5,
+        "cycles": 0.1449,
+        "blend": 0.872,
+        "aiming": false
+      },
+      "after": {
+        "x": -2.55,
+        "z": 4.75,
+        "cycles": 0.3236,
+        "blend": 1,
+        "aiming": false
+      },
+      "toeTravelM": 0.225836810269838
+    },
+    {
+      "label": "S",
+      "before": {
+        "x": -2.55,
+        "z": 4.75,
+        "cycles": 0.3236,
+        "blend": 1,
+        "aiming": false
+      },
+      "after": {
+        "x": -2.76,
+        "z": 4.75,
+        "cycles": 0.5106,
+        "blend": 1,
+        "aiming": false
+      },
+      "toeTravelM": 0.18107476597506836
+    },
+    {
+      "label": "D",
+      "before": {
+        "x": -2.76,
+        "z": 4.75,
+        "cycles": 0.5106,
+        "blend": 1,
+        "aiming": false
+      },
+      "after": {
+        "x": -2.76,
+        "z": 5,
+        "cycles": 0.7393,
+        "blend": 1,
+        "aiming": false
+      },
+      "toeTravelM": 0.24171074750162455
+    },
+    {
+      "label": "W+D",
+      "before": {
+        "x": -2.76,
+        "z": 5,
+        "cycles": 0.7393,
+        "blend": 1,
+        "aiming": false
+      },
+      "after": {
+        "x": -2.58,
+        "z": 5.18,
+        "cycles": 1.0291,
+        "blend": 1,
+        "aiming": false
+      },
+      "toeTravelM": 0.18995029388697743
+    },
+    {
+      "label": "S+A",
+      "before": {
+        "x": -2.58,
+        "z": 5.18,
+        "cycles": 1.0291,
+        "blend": 1,
+        "aiming": false
+      },
+      "after": {
+        "x": -2.76,
+        "z": 5,
+        "cycles": 1.4613,
+        "blend": 1,
+        "aiming": false
+      },
+      "toeTravelM": 0.4128649490927838
+    },
+    {
+      "label": "reverse-A",
+      "before": {
+        "x": -2.76,
+        "z": 5,
+        "cycles": 1.4613,
+        "blend": 1,
+        "aiming": false
+      },
+      "after": {
+        "x": -2.76,
+        "z": 4.75,
+        "cycles": 1.7204,
+        "blend": 1,
+        "aiming": false
+      },
+      "toeTravelM": 0.21241972883466725
+    },
+    {
+      "label": "reverse-D",
+      "before": {
+        "x": -2.76,
+        "z": 4.75,
+        "cycles": 1.7204,
+        "blend": 1,
+        "aiming": false
+      },
+      "after": {
+        "x": -2.76,
+        "z": 5,
+        "cycles": 2.1526,
+        "blend": 1,
+        "aiming": false
+      },
+      "toeTravelM": 0.18457667217640034
+    }
+  ],
+  "blocked": {
+    "x": -2.76,
+    "z": 5.58,
+    "cycles": 2.7843,
+    "blend": 0,
+    "aiming": false
+  },
+  "later": {
+    "x": -2.76,
+    "z": 5.58,
+    "cycles": 2.7843,
+    "blend": 0,
+    "aiming": false
+  },
+  "transitions": [
+    {
+      "x": -2.76,
+      "z": 5.33,
+      "cycles": 3.2209,
+      "blend": 1,
+      "aiming": false
+    },
+    {
+      "x": -2.76,
+      "z": 4.55,
+      "cycles": 4.1302,
+      "blend": 1,
+      "aiming": true
+    },
+    {
+      "x": -2.76,
+      "z": 3.76,
+      "cycles": 4.8643,
+      "blend": 1,
+      "aiming": false
+    }
+  ],
+  "errors": []
+}

@@ -16,7 +16,7 @@
 | L 形拐角 | `corner-turn` 第 278–307 步转 90°，镜头臂从转前的 3.546 m 缩至 0.733 m，镜头位置单步最大位移 0.180 m。整段轨道在 60/120 Hz 渲染时的固定步结果一致。第 372 步准星射线命中靶面，命中点投影在屏幕中心。 |
 | 开门与出门 | `door-closed` 第 45 步镜头臂 0.366 m，门扇为球扫命中物。第 46 步开门后先恢复到 0.569 m，第 47–100 步过门槛，第 190 步恢复到 2.414 m。 |
 
-轨道的 `clearance_m` 为镜头中心到最近启用碰撞体的距离，三段各步均达到球扫半径。无头 Chromium 147.0.7727.15 生产预览通过鼠标锁定、58°/45° 切换、转角准星可见、单发命中及开门穿越。浏览器记录和截图保存在本地 [smoke.json](../../runtime/web-3c-m4.tmp/smoke.json)、[贴墙 45 步](../../runtime/web-3c-m4.tmp/wall-aim.png)、[转角 403 步](../../runtime/web-3c-m4.tmp/l-corner.png)、[命中 499 步](../../runtime/web-3c-m4.tmp/target-hit.png)、[出门 653 步](../../runtime/web-3c-m4.tmp/door-exit.png)。页面错误为 0。全量 18 项测试通过，生产构建通过，Vite 报告大于 500 KB 的代码块。
+轨道的 `clearance_m` 为镜头中心到最近启用碰撞体的距离，三段各步均达到球扫半径。无头 Chromium 147.0.7727.15 生产预览通过鼠标锁定、58°/45° 切换、转角准星可见、单发命中及开门穿越。浏览器记录和截图保存在本地 [smoke.json](evidence/web-3c-m4/smoke.json)、贴墙 45 步（本机 `runtime/web-3c-m4.tmp/wall-aim.png`，20 KB，未入库）、转角 403 步（本机 `runtime/web-3c-m4.tmp/l-corner.png`，10 KB，未入库）、命中 499 步（本机 `runtime/web-3c-m4.tmp/target-hit.png`，11 KB，未入库）、出门 653 步（本机 `runtime/web-3c-m4.tmp/door-exit.png`，11 KB，未入库）。页面错误为 0。全量 18 项测试通过，生产构建通过，Vite 报告大于 500 KB 的代码块。
 
 在仓库根目录运行以下命令。浏览器打开 `http://127.0.0.1:4173/` 后锁定鼠标，在出生点按右键验证 FOV 与遮挡，沿走廊左转、瞄准右墙练习靶并单发，最后按 E 开门穿过门槛。
 

@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "movement": {
     "walkSpeedMps": {
       "value": 1.8,
@@ -30,12 +30,36 @@
       "source": "reports/web-3c/source-data/leon-3c-source.json",
       "evidence": "observed",
       "conditions": "持枪时角色相对镜头的偏航偏移 −9°：PlayerRotateConfiguration._TPSHoldOffsetForWeapons arm0000（wp0100）；正值向左，符号按枪口投影核对"
+    },
+    "accelS": {
+      "value": 0.25,
+      "source": "cp_a000configuration PlayerFPSMovementConfiguration._AccelSec",
+      "evidence": "observed",
+      "conditions": "第一人称移动配置的加速时间，第三人称沿用作初值；按当前模式速度线性加速，未经实机测速"
+    },
+    "decelS": {
+      "value": 0.25,
+      "source": "cp_a000configuration PlayerFPSMovementConfiguration._DeccelSec",
+      "evidence": "observed",
+      "conditions": "第一人称移动配置的减速时间，第三人称沿用作初值；同时用于预测停步片段的剩余位移"
+    },
+    "aimChaseS": {
+      "value": 0.5,
+      "source": "cp_a000configuration PlayerRotateCorrectorBySpeed._DelayChaseTime",
+      "evidence": "tuned",
+      "conditions": "举枪站定时身体追随镜头的指数时间常数；差值由上身扭转和原地转向步覆盖，字段语义未验证"
+    },
+    "walkFacesCamera": {
+      "value": 0,
+      "source": "runtime/leon-re9-video-review.tmp 截帧",
+      "evidence": "observed",
+      "conditions": "0：低枪行走转向移动方向（截帧所见）；1：低枪行走面向镜头、用侧移轨并原地转身（Handgun00M strafe 片段命名所示）"
     }
   },
   "camera": {
     "lookRadPerPx": {
       "value": 0.0022,
-      "source": "web-3c/src/preview-stages.ts",
+      "source": "FeelConfig v1 灰盒初值（原 web-3c/src/preview-stages.ts）",
       "evidence": "tuned",
       "conditions": "沿用灰盒鼠标灵敏度，单位为弧度/像素"
     },
@@ -113,13 +137,13 @@
     },
     "sphereRadiusM": {
       "value": 0.16,
-      "source": "web-3c/src/preview-stages.ts",
+      "source": "FeelConfig v1 灰盒初值（原 web-3c/src/preview-stages.ts）",
       "evidence": "tuned",
       "conditions": "沿用灰盒球扫半径，为近裁面留空间"
     },
     "wallClearanceM": {
       "value": 0.05,
-      "source": "web-3c/src/preview-stages.ts",
+      "source": "FeelConfig v1 灰盒初值（原 web-3c/src/preview-stages.ts）",
       "evidence": "tuned",
       "conditions": "沿用灰盒球扫命中后沿镜头臂缩回的余量"
     },
@@ -158,20 +182,98 @@
       "source": "reports/web-3c/source-data/leon-3c-source.json",
       "evidence": "observed",
       "conditions": "arm0000 CameraRecoilParam._CurveTime=2.8，曲线峰值在 4% 处，22% 时回落一半；开火下一步开始，只抬镜头不改玩家俯仰"
+    },
+    "cameraProfile": {
+      "value": 0,
+      "source": "web-3c/src/camera-source.json",
+      "evidence": "tuned",
+      "conditions": "0：v4 视频单帧拟合构图（默认）；1：原作结构档，按 camera-source.json 的 Normal/Hold 位置、俯仰曲线、成对阻尼、持枪计时曲线、两层碰撞与 FOV/近裁面避让求解"
+    },
+    "sourceFovHorizontal": {
+      "value": 1,
+      "source": "web-3c/src/camera-source.json",
+      "evidence": "tuned",
+      "conditions": "原作结构档的 FOV 63 按水平角解读（1）或垂直角（0）；水平 63° 在 16:9 下约为垂直 38.6°，待录像确认"
+    },
+    "sourceAspect": {
+      "value": 1.7777777777777777,
+      "source": "web-3c/tests/check-playfield-layout.mjs",
+      "evidence": "tuned",
+      "conditions": "水平 FOV 换算垂直 FOV 用的画幅，试玩画布为 16:9"
+    },
+    "sourcePitchSign": {
+      "value": -1,
+      "source": "web-3c/src/camera-source.json",
+      "evidence": "tuned",
+      "conditions": "原作俯仰 = 符号 × 网页俯仰；−1 表示原作正值为低头（低头时镜头抬高 0.1 m、距离缩到 0.6 倍），待录像确认"
+    },
+    "aimSwayDeg": {
+      "value": 0.25,
+      "source": "reports/web-3c/source-data/leon-3c-source.json",
+      "evidence": "observed",
+      "conditions": "arm0000 AimCameraShakeParam：俯仰 Range(-0.25, 0.5) 与第二波偏航 Range(-0.25, 0.5) 按起点与长度读作 ±0.25°，周期取 4／5 s（区间 2–6 s 内）；按举枪比例生效"
+    },
+    "shotShakeM": {
+      "value": 0.1,
+      "source": "reports/web-3c/source-data/leon-3c-source.json",
+      "evidence": "observed",
+      "conditions": "arm0000 CameraShakeParam：开火后 0.2 s 沿视线前后振动，TranslationZ Range(-0.1, 0.2) 读作 ±0.1 m，周期 0.1 s，末 0.1 s 衰减；受阻时不施加"
     }
   },
   "actions": {
     "magazineCapacity": {
       "value": 8,
-      "source": "web-3c/src/preview-stages.ts",
+      "source": "FeelConfig v1 灰盒初值（原 web-3c/src/preview-stages.ts）",
       "evidence": "tuned",
       "conditions": "test-room@1，60 Hz，动作系统的初始弹量配置"
     },
     "initialReserve": {
       "value": 16,
-      "source": "web-3c/src/preview-stages.ts",
+      "source": "FeelConfig v1 灰盒初值（原 web-3c/src/preview-stages.ts）",
       "evidence": "tuned",
       "conditions": "test-room@1，60 Hz，动作系统的初始弹量配置"
+    },
+    "fireBufferS": {
+      "value": 0.5,
+      "source": "web-3c/src/actions.ts 旧常量",
+      "evidence": "tuned",
+      "conditions": "举枪未完成时缓存开火请求的时长"
+    },
+    "walkBlendInS": {
+      "value": 0.1,
+      "source": "web-3c/src/actions.ts 旧常量",
+      "evidence": "tuned",
+      "conditions": "起步时循环步态的淡入时间"
+    },
+    "walkBlendOutS": {
+      "value": 0.13,
+      "source": "web-3c/src/actions.ts 旧常量",
+      "evidence": "tuned",
+      "conditions": "停步或受阻时循环步态的淡出时间"
+    },
+    "holdStartShootS": {
+      "value": 0.25,
+      "source": "cp_a000configuration PlayerInputConfiguration._ContinueHoldStartTime",
+      "evidence": "observed",
+      "conditions": "举枪开始后满此时长即可走 HoldStartShoot 分支提前开火（播放 100/1040）；字段语义与起算点未验证"
+    },
+    "muzzleRightM": {
+      "value": 0.166,
+      "source": "reports/web-3c/evidence/muzzle-offset.json",
+      "evidence": "observed",
+      "conditions": "wp0100 vfx_muzzle1 在举枪站定姿态下相对脚底的角色坐标（右），两段射线的第二段起点"
+    },
+    "muzzleUpM": {
+      "value": 1.466,
+      "source": "reports/web-3c/evidence/muzzle-offset.json",
+      "evidence": "observed",
+      "conditions": "同上（上）"
+    },
+    "muzzleForwardM": {
+      "value": 0.78,
+      "source": "reports/web-3c/evidence/muzzle-offset.json",
+      "evidence": "observed",
+      "conditions": "同上（前）"
     }
   }
 }

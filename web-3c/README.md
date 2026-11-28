@@ -18,7 +18,7 @@ npm run preview -- --host 127.0.0.1 --port 4173
 - 走到尽头按 E 开门，穿过门槛后可按 E 关门。按住移动键时释放鼠标锁定，下一步的移动轴应归零。切换窗口也会清除输入。
 - 在测试场上方的「地图」下拉框选择「碰撞测试场」，可检查急停、贴墙、门框和台阶。逐步位移、接触法线和复现命令见 [M3 交接](../reports/web-3c/m3-handoff.md)。
 - 靠墙按住右键，观察「当前固定步」中的镜头位置、垂直 FOV 和遮挡。沿走廊转过 L 角并开门，观察镜头收近和恢复。构图截图、参数和回归轨道见 [M4 视频校准](../reports/web-3c/m4-video-calibration.md)。
-- `npm test` 覆盖固定步、Rapier 查询、移动、镜头、动作分层与事件顺序、M6 路线和 M7 回放。M5 时序与当前主测试场的验证见 [M5 动作规则](../reports/web-3c/action-rules.md)。
+- `npm test` 覆盖固定步、Rapier 查询、移动、镜头、动作分层与事件顺序、M6 路线和 M7 回放。`npm run test:browser` 构建后跑布局、里昂和 v6 浏览器走查，Playwright 为项目开发依赖（首次运行 `npx playwright-core install chromium`）。网址加 `?camera=source` 切换到原作结构镜头档。M5 时序与当前主测试场的验证见 [M5 动作规则](../reports/web-3c/action-rules.md)。
 
 生产预览已通过 Chromium 147.0.7727.15 的操作和路线验收。构建体积、Vite 大包提示以及可见窗口帧时间见 [M8 集成与性能验收](../reports/web-3c/integration-check.md)。
 
@@ -67,7 +67,7 @@ Vite 本机预览及同源门户直接读取现有 `docs/player` 灰模资源，
 | M4 | `src/level.ts` 已接入 `src/camera.ts`。镜头默认值见 `src/feel.json` 的 `camera` 组，沿用 `CameraPose`、球扫和射线查询。 |
 | M5 | 主测试场使用 `src/actions.ts` 的举枪、单发及换弹时序，`src/action-view.ts` 读取 M2 轨道。规则、证据与复现见 [M5 动作规则](../reports/web-3c/action-rules.md)。 |
 | M6 | 主入口加载 `src/levels/test-room.json`。`src/level.ts` 发布门和靶事件，`src/hud.ts` 消费状态与事件。 |
-| M7 | 通过输入采样和发布入口接入 `ReplayTrace` 和版本化 `FeelConfig`。试玩与回放共用 `test-room@1`、动作清单和 `FeelConfig` v5。回放基线为 815 步、31 条事件。实机对照待采集。 |
+| M7 | 通过输入采样和发布入口接入 `ReplayTrace` 和版本化 `FeelConfig`。试玩与回放共用 `test-room@1`、动作清单和 `FeelConfig` v6。回放基线为 854 步、31 条事件。实机对照待采集。 |
 | M8 | 生产构建输出为本地 `dist/`。在 M2–M7 汇合后验收路线、性能并接研究站导航。 |
 
 这些类型是新接口。接入时在主入口替换预览实现即可，现有研究站、播放器和地图工程无需迁移。

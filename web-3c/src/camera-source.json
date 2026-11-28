@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "source": "reports/3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/",
+  "note": "Static values. Pitch curves are keyed by RE camera pitch in degrees; damping pairs are [time, rate].",
+  "pitchRangeDeg": [
+    -60,
+    60
+  ],
+  "syncJoint": "C_Prop_Cam_A",
+  "normal": {
+    "offset": [
+      0.5,
+      1.47,
+      0
+    ],
+    "gazeDistanceM": 1.7,
+    "zMoveByPitch": [
+      [
+        -90,
+        0.25
+      ],
+      [
+        -60,
+        0.25
+      ],
+      [
+        -5,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        62.38,
+        -0.1
+      ],
+      [
+        90,
+        -0.1
+      ]
+    ],
+    "yMoveByPitch": [
+      [
+        -90,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        60,
+        0.1
+      ],
+      [
+        90,
+        0.1
+      ]
+    ],
+    "gazeScaleByPitch": [
+      [
+        -90,
+        0.7
+      ],
+      [
+        -80,
+        0.7
+      ],
+      [
+        -5,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        80,
+        0.6
+      ],
+      [
+        90,
+        0.6
+      ]
+    ],
+    "followOffset": [
+      0.1,
+      0.9
+    ],
+    "followGaze": [
+      0.1,
+      0.9
+    ],
+    "fov": {
+      "deg": 63,
+      "templateType": 0,
+      "nearClipM": 0.1,
+      "avoid": true,
+      "avoidDeg": 5.5,
+      "avoidSpeed": [
+        0.4,
+        0.75
+      ],
+      "avoidNear": true,
+      "avoidNearM": -0.08,
+      "avoidNearSpeed": [
+        0.2,
+        0.8
+      ]
+    },
+    "collision": {
+      "originByPitch": [
+        [
+          [
+            -90,
+            0.2
+          ],
+          [
+            0,
+            0.2
+          ],
+          [
+            90,
+            0.2
+          ]
+        ],
+        [
+          [
+            -90,
+            1.9
+          ],
+          [
+            0,
+            1.72
+          ],
+          [
+            90,
+            1.72
+          ]
+        ],
+        [
+          [
+            -90,
+            0
+          ],
+          [
+            0,
+            0.2
+          ],
+          [
+            60,
+            0.2
+          ],
+          [
+            90,
+            0.2
+          ]
+        ]
+      ],
+      "radiusM": 0.1,
+      "avoidSpeed": [
+        0.1,
+        0.95
+      ],
+      "returnSpeed": [
+        0.2,
+        0.3
+      ],
+      "preliminary": {
+        "radiusM": 0.35,
+        "avoidSpeed": [
+          0.1,
+          0.7
+        ],
+        "returnSpeed": [
+          0.2,
+          0.3
+        ]
+      },
+      "startLengthM": 0.25
+    },
+    "input": {
+      "type": 0,
+      "damping": [
+        0.2,
+        0.3
+      ],
+      "timerS": 0,
+      "curve": null
+    },
+    "overrides": []
+  },
+  "hold": {
+    "offset": [
+      0.4,
+      1.5,
+      0.1
+    ],
+    "gazeDistanceM": 1.1,
+    "zMoveByPitch": [
+      [
+        -90,
+        0.5
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        90,
+        -0.25
+      ]
+    ],
+    "yMoveByPitch": [
+      [
+        -90,
+        -0.25
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        90,
+        0
+      ]
+    ],
+    "gazeScaleByPitch": [
+      [
+        -90,
+        1.3569765
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        90,
+        1.4175448
+      ]
+    ],
+    "followOffset": [
+      0.05,
+      0.95
+    ],
+    "followGaze": [
+      0.05,
+      0.95
+    ],
+    "fov": {
+      "deg": 63,
+      "templateType": 1,
+      "nearClipM": 0.1,
+      "avoid": false,
+      "avoidDeg": 0,
+      "avoidSpeed": [
+        0.2,
+        0.8
+      ],
+      "avoidNear": false,
+      "avoidNearM": 0,
+      "avoidNearSpeed": [
+        0.2,
+        0.8
+      ]
+    },
+    "collision": {
+      "originByPitch": [
+        [
+          [
+            -90,
+            0.29
+          ],
+          [
+            0,
+            0.29
+          ],
+          [
+            90,
+            0.29
+          ]
+        ],
+        [
+          [
+            -90,
+            2.2
+          ],
+          [
+            0,
+            1.5
+          ],
+          [
+            90,
+            1.8
+          ]
+        ],
+        [
+          [
+            -90,
+            -0.05
+          ],
+          [
+            0,
+            0.15
+          ],
+          [
+            90,
+            0.15
+          ]
+        ]
+      ],
+      "radiusM": 0.1,
+      "avoidSpeed": [
+        0.1,
+        0.95
+      ],
+      "returnSpeed": [
+        0.3,
+        0.7
+      ],
+      "preliminary": null,
+      "startLengthM": 0
+    },
+    "input": {
+      "type": 1,
+      "damping": [
+        0.3,
+        0.8
+      ],
+      "timerS": 0.5,
+      "curve": [
+        [
+          0,
+          0
+        ],
+        [
+          0.6055,
+          0.3868922
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "overrides": [
+      {
+        "state": {
+          "_IsSubState": true,
+          "_SubState": 1,
+          "_IsMentalState": false,
+          "_MentalState": 4
+        },
+        "offset": "<0.4, 0.85, 0.1>"
+      },
+      {
+        "state": {
+          "_IsSubState": true,
+          "_SubState": 2,
+          "_IsMentalState": false,
+          "_MentalState": 0
+        },
+        "offset": "<0.47, 1.5, 0.1>"
+      },
+      {
+        "state": {
+          "_IsSubState": true,
+          "_SubState": 4,
+          "_IsMentalState": false,
+          "_MentalState": 0
+        },
+        "offset": "<0.4, 1.5, 0.1>"
+      },
+      {
+        "state": {
+          "_IsSubState": true,
+          "_SubState": 3,
+          "_IsMentalState": false,
+          "_MentalState": 0
+        },
+        "offset": "<0.45, 0.88, 0.1>"
+      },
+      {
+        "state": {
+          "_IsSubState": true,
+          "_SubState": 5,
+          "_IsMentalState": false,
+          "_MentalState": 4
+        },
+        "offset": "<0.4, 0.85, 0.1>"
+      }
+    ]
+  }
+}

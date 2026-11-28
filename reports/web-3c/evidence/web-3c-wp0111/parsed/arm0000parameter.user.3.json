@@ -1,0 +1,545 @@
+{
+  "path": "E:\\CodexPepo\\RE_Research\\runtime\\web-3c-wp0111.tmp\\source\\re9\\natives\\stm\\gameassets\\weapon\\userdata\\parameter\\arm0000parameter.user.3",
+  "Instances": [
+    {
+      "Index": 0,
+      "Class": "",
+      "Userdata": null,
+      "Fields": {}
+    },
+    {
+      "Index": 1,
+      "Class": "app.WeaponEquipParam.ConstJointParametar",
+      "Userdata": null,
+      "Fields": {
+        "ParentJointName": "R_Wep",
+        "LocalPosition": "\u003C0, 0, 0\u003E",
+        "LocalRotation": "{X:0 Y:0 Z:0 W:1}",
+        "LocalScale": "\u003C1, 1, 1\u003E"
+      }
+    },
+    {
+      "Index": 2,
+      "Class": "app.WeaponEquipParam.ConstJointParametar",
+      "Userdata": null,
+      "Fields": {
+        "ParentJointName": "R_Prop_Hip_A",
+        "LocalPosition": "\u003C-0.063, 0.055, -0.045\u003E",
+        "LocalRotation": "{X:0.7301019 Y:0.10260927 Z:-0.094024174 W:0.6690157}",
+        "LocalScale": "\u003C1, 1, 1\u003E"
+      }
+    },
+    {
+      "Index": 3,
+      "Class": "app.WeaponEquipParam",
+      "Userdata": null,
+      "Fields": {
+        "_equipConstParam": {
+          "Ref": 1,
+          "Class": "app.WeaponEquipParam.ConstJointParametar"
+        },
+        "_UnequipConstParamSameAsEquipConstParam": false,
+        "_UnequipConstParam": {
+          "Ref": 2,
+          "Class": "app.WeaponEquipParam.ConstJointParametar"
+        }
+      }
+    },
+    {
+      "Index": 4,
+      "Class": "app.ShellWeaponStructureParam.ShootData",
+      "Userdata": null,
+      "Fields": {
+        "TypeOfShoot": 0,
+        "ShotInterval": 0.6,
+        "BurstShotInterval": 5,
+        "BurstNum": 3
+      }
+    },
+    {
+      "Index": 5,
+      "Class": "app.ShellWeaponStructureParam",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponCategory": 1,
+        "TypeOfReload": 0,
+        "HasChamber": true,
+        "TypeOfShootData": [
+          {
+            "Ref": 4,
+            "Class": "app.ShellWeaponStructureParam.ShootData"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 6,
+      "Class": "app.WeaponResourceParam.ResourceParam",
+      "Userdata": null,
+      "Fields": {
+        "LoadingType": 1,
+        "_WeaponItemIDStrArray": [
+          "it10_00_000",
+          "it11_00_000",
+          "it12_00_000",
+          "it13_00_000"
+        ],
+        "TotalPartsCost": -1,
+        "_AmmoItemIDStr": "it40_00_000",
+        "MaxAmmo": 15,
+        "_MainAmmo": false
+      }
+    },
+    {
+      "Index": 7,
+      "Class": "app.WeaponResourceParam.InfiniteCategoryParam",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponItemIDStr": "it10_00_000",
+        "_InfiniteItemCategory": "None"
+      }
+    },
+    {
+      "Index": 8,
+      "Class": "app.WeaponResourceParam",
+      "Userdata": null,
+      "Fields": {
+        "ResourceData": [
+          {
+            "Ref": 6,
+            "Class": "app.WeaponResourceParam.ResourceParam"
+          }
+        ],
+        "InfiniteCategoryData": {
+          "Ref": 7,
+          "Class": "app.WeaponResourceParam.InfiniteCategoryParam"
+        }
+      }
+    },
+    {
+      "Index": 9,
+      "Class": "app.WeaponReticleFitParam",
+      "Userdata": null,
+      "Fields": {
+        "_PointRange": "Range(50, 50)",
+        "_HoldAddPoint": 50,
+        "_ShotAfterAddPoint": 0,
+        "_MoveSubPoint": 230,
+        "_CameraSubPoint": 150,
+        "_KeepFitLimitPoint": 90,
+        "_ShootSubPoint": 20
+      }
+    },
+    {
+      "Index": 10,
+      "Class": "app.WeaponReticleFitParamTable",
+      "Userdata": null,
+      "Fields": {
+        "_ReticleFitEnable": true,
+        "_DefaultParam": {
+          "Ref": 9,
+          "Class": "app.WeaponReticleFitParam"
+        },
+        "_FixedFitRangeMax": 0
+      }
+    },
+    {
+      "Index": 11,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "0.01996: 0",
+          "0.03998: 1",
+          "0.141: 0.8946566",
+          "0.22: 0.5",
+          "1: 0"
+        ],
+        "MinValue": -1,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 12,
+      "Class": "app.CameraRecoilParam",
+      "Userdata": null,
+      "Fields": {
+        "_Rate": 1,
+        "_YawRangeDeg": "Range(-0.2, 0.4)",
+        "_PitchRangeDeg": "Range(1.2, 0.29999995)",
+        "_Curve": {
+          "Ref": 11,
+          "Class": "via.AnimationCurve"
+        },
+        "_CurveTime": 2.8,
+        "_InvalidCancelTime": 0.7
+      }
+    },
+    {
+      "Index": 13,
+      "Class": "app.AimCameraShakeParam_Interval",
+      "Userdata": null,
+      "Fields": {
+        "_ShekeOnTimeRange": "Range(0.65, 0.1)",
+        "_ShekeOffTimeRange": "Range(0.65, 0.1)",
+        "_PeriodRange": "Range(0.65, 0.1)",
+        "_PitchRange": "Range(-1, 1)",
+        "_YawRange": "Range(-1, 1)",
+        "_Easing": 0
+      }
+    },
+    {
+      "Index": 14,
+      "Class": "app.AimCameraShakeParam",
+      "Userdata": null,
+      "Fields": {
+        "_EnableAimCameraShake": true,
+        "_Rate": 1,
+        "_AimCameraShakeStyle": 2,
+        "_PeriodRange": "Range(2, 4)",
+        "_PitchRange": "Range(-0.25, 0.5)",
+        "_YawRange": "Range(0, 0)",
+        "_InverseAmplitude": 1,
+        "_InitialCycleOffset": "Range(0, 0)",
+        "_IsSecondWavePeriodRelativeToFirstWave": false,
+        "_SecondWavwPeriodFactor": 1,
+        "_SecondWavePeriodRange": "Range(2, 4)",
+        "_SecondWavePitchRange": "Range(0, 0)",
+        "_SecondWaveYawRange": "Range(-0.25, 0.5)",
+        "_SecondWaveInverseAmplitude": 1,
+        "_SecondWaveInitialCycleOffset": "Range(0, 0)",
+        "_MinFitRate": 1,
+        "_Easing": 0,
+        "_IsShakeAddEnable": false,
+        "_ShakeAddType": 0,
+        "_ShakeParam_Interval": {
+          "Ref": 13,
+          "Class": "app.AimCameraShakeParam_Interval"
+        }
+      }
+    },
+    {
+      "Index": 15,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 16,
+      "Class": "via.AnimationCurve",
+      "Userdata": null,
+      "Fields": {
+        "Keys": [
+          "0: 0",
+          "1: 1"
+        ],
+        "MinValue": 0,
+        "MaxValue": 1,
+        "LoopStartTime": 0,
+        "LoopEndTime": 1,
+        "LoopCount": 0,
+        "LoopWrapNo": 2
+      }
+    },
+    {
+      "Index": 17,
+      "Class": "app.CameraShakeParam.LifeParam",
+      "Userdata": null,
+      "Fields": {
+        "_NoTimeLimit": false,
+        "_LifeTime": 0.2,
+        "_UseAmplification": false,
+        "_AmplificationTime": 1,
+        "_AmplificationCurve": {
+          "Ref": 15,
+          "Class": "via.AnimationCurve"
+        },
+        "_UseAttenuation": true,
+        "_AttenuationTime": 0.1,
+        "_AttenuationCurve": {
+          "Ref": 16,
+          "Class": "via.AnimationCurve"
+        }
+      }
+    },
+    {
+      "Index": 18,
+      "Class": "app.CameraShakeParam.MoveParam",
+      "Userdata": null,
+      "Fields": {
+        "_Period": "Range(0.1, 0)",
+        "_TranslationXRange": "Range(0, 0)",
+        "_TranslationYRange": "Range(0, 0)",
+        "_TranslationZRange": "Range(-0.1, 0.2)",
+        "_RotationXRange": "Range(0, 0)",
+        "_RotationYRange": "Range(0, 0)",
+        "_RotationZRange": "Range(0, 0)",
+        "_UseDistanceAttenuation": false,
+        "_DistanceAttenuationStart": 0,
+        "_DistanceAttenuationEnd": 0,
+        "_UseAngleAttenuation": false,
+        "_AngleAttenuationConeOffset": 0,
+        "_AngleAttenuationSpread": 0
+      }
+    },
+    {
+      "Index": 19,
+      "Class": "app.CameraShakeParam",
+      "Userdata": null,
+      "Fields": {
+        "_Type": 0,
+        "_ShakeTag": 0,
+        "_Life": {
+          "Ref": 17,
+          "Class": "app.CameraShakeParam.LifeParam"
+        },
+        "_Move": {
+          "Ref": 18,
+          "Class": "app.CameraShakeParam.MoveParam"
+        }
+      }
+    },
+    {
+      "Index": 20,
+      "Class": "app.HitControllerConfiguration",
+      "Userdata": null,
+      "Fields": {
+        "_IsEnable": true,
+        "_ColliderResource": [],
+        "_IsDamageToParent": false,
+        "_DamagePoolSizePerThread": 8,
+        "_IsCheckParentSequence": false,
+        "_IsEnablePress": true,
+        "_PressWeight": 4
+      }
+    },
+    {
+      "Index": 21,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 2596034869
+      }
+    },
+    {
+      "Index": 22,
+      "Class": "app.WeaponAccessoryParamBase.Data",
+      "Userdata": null,
+      "Fields": {
+        "_ID": "acc0000",
+        "_Enable": true,
+        "_GenerateJoint": {
+          "Ref": 21,
+          "Class": "app.NameHash"
+        },
+        "_IsGenerateFixFrame": true,
+        "_GenerateOffsetPos": "\u003C0, 0, 0.01\u003E",
+        "_CalcBaseJointDir": false,
+        "_GenerateAddVec": "\u003C-2, 1.6, -0.2\u003E",
+        "STRUCT__GenerateAddVecRandomRange__HasValue": true,
+        "STRUCT__GenerateAddVecRandomRange__Value": "\u003C-1.8, 1.5, -0.3\u003E",
+        "STRUCT__CAR_GenerateAddVec__HasValue": true,
+        "STRUCT__CAR_GenerateAddVec__Value": "\u003C-2.1, 1.2, 0\u003E",
+        "STRUCT__CAR_GenerateAddVecRandomRange__HasValue": true,
+        "STRUCT__CAR_GenerateAddVecRandomRange__Value": "\u003C-1.9, 0.8, -0.1\u003E",
+        "STRUCT__FPS_CAR_GenerateAddVec__HasValue": false,
+        "STRUCT__FPS_CAR_GenerateAddVec__Value": "\u003C0, 0, 0\u003E",
+        "STRUCT__FPS_CAR_GenerateAddVecRandomRange__HasValue": false,
+        "STRUCT__FPS_CAR_GenerateAddVecRandomRange__Value": "\u003C0, 0, 0\u003E",
+        "_GenerateAddRotDeg": "\u003C-600, -1000, 200\u003E",
+        "STRUCT__GenerateAddRotDegRandomRange__HasValue": true,
+        "STRUCT__GenerateAddRotDegRandomRange__Value": "\u003C-200, -900, 200\u003E",
+        "_FPV_AddVecRate": 0.7,
+        "_Move_AddRate": 1
+      }
+    },
+    {
+      "Index": 23,
+      "Class": "app.NameHash",
+      "Userdata": null,
+      "Fields": {
+        "_Hash": 1902533413
+      }
+    },
+    {
+      "Index": 24,
+      "Class": "app.WeaponAccessoryParamBase.Data",
+      "Userdata": null,
+      "Fields": {
+        "_ID": "acc0010",
+        "_Enable": true,
+        "_GenerateJoint": {
+          "Ref": 23,
+          "Class": "app.NameHash"
+        },
+        "_IsGenerateFixFrame": true,
+        "_GenerateOffsetPos": "\u003C0, 0, 0\u003E",
+        "_CalcBaseJointDir": true,
+        "_GenerateAddVec": "\u003C0, -1.5, 0\u003E",
+        "STRUCT__GenerateAddVecRandomRange__HasValue": false,
+        "STRUCT__GenerateAddVecRandomRange__Value": "\u003C0, 0, 0\u003E",
+        "STRUCT__CAR_GenerateAddVec__HasValue": false,
+        "STRUCT__CAR_GenerateAddVec__Value": "\u003C0, 0, 0\u003E",
+        "STRUCT__CAR_GenerateAddVecRandomRange__HasValue": false,
+        "STRUCT__CAR_GenerateAddVecRandomRange__Value": "\u003C0, 0, 0\u003E",
+        "STRUCT__FPS_CAR_GenerateAddVec__HasValue": false,
+        "STRUCT__FPS_CAR_GenerateAddVec__Value": "\u003C0, 0, 0\u003E",
+        "STRUCT__FPS_CAR_GenerateAddVecRandomRange__HasValue": false,
+        "STRUCT__FPS_CAR_GenerateAddVecRandomRange__Value": "\u003C0, 0, 0\u003E",
+        "_GenerateAddRotDeg": "\u003C0, 0, 0\u003E",
+        "STRUCT__GenerateAddRotDegRandomRange__HasValue": false,
+        "STRUCT__GenerateAddRotDegRandomRange__Value": "\u003C0, 0, 0\u003E",
+        "_FPV_AddVecRate": 0.5,
+        "_Move_AddRate": 0.2
+      }
+    },
+    {
+      "Index": 25,
+      "Class": "app.WeaponAccessoryGunParam",
+      "Userdata": null,
+      "Fields": {
+        "_CartridgeArray": [
+          {
+            "Ref": 22,
+            "Class": "app.WeaponAccessoryParamBase.Data"
+          }
+        ],
+        "_MagazineArray": [
+          {
+            "Ref": 24,
+            "Class": "app.WeaponAccessoryParamBase.Data"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 26,
+      "Class": "app.PlayerWeaponParameterUIValue",
+      "Userdata": null,
+      "Fields": {
+        "_PowerValue": 25,
+        "_RapidValue": 55,
+        "_ReloadSpeedValue": 60,
+        "_AccuracyValue": 40,
+        "_StabilityValue": 35,
+        "_AmmoCapacityValue": 15,
+        "_isCustomDrawForMelee": true
+      }
+    },
+    {
+      "Index": 27,
+      "Class": "app.ChainGroupLengthSolver.Data",
+      "Userdata": null,
+      "Fields": {
+        "_LengthRate": 1
+      }
+    },
+    {
+      "Index": 28,
+      "Class": "app.ChainGroupLengthSolver.Data",
+      "Userdata": null,
+      "Fields": {
+        "_LengthRate": 1
+      }
+    },
+    {
+      "Index": 29,
+      "Class": "app.ChainGroupLengthSolver.Data",
+      "Userdata": null,
+      "Fields": {
+        "_LengthRate": 1
+      }
+    },
+    {
+      "Index": 30,
+      "Class": "app.WeaponSlingParam",
+      "Userdata": null,
+      "Fields": {
+        "_SlingChainUpLength": {
+          "Ref": 27,
+          "Class": "app.ChainGroupLengthSolver.Data"
+        },
+        "_SlingChainDownLength": {
+          "Ref": 28,
+          "Class": "app.ChainGroupLengthSolver.Data"
+        },
+        "_SlingChainCenterLength": {
+          "Ref": 29,
+          "Class": "app.ChainGroupLengthSolver.Data"
+        },
+        "_SlingChainDownOffset": "\u003C0, 0, 0\u003E",
+        "STRUCT__SlingUpJointLocalRotation__HasValue": false,
+        "STRUCT__SlingUpJointLocalRotation__Value": "{X:0 Y:0 Z:0 W:1}",
+        "STRUCT__SlingDownJointLocalRotation__HasValue": false,
+        "STRUCT__SlingDownJointLocalRotation__Value": "{X:0 Y:0 Z:0 W:1}"
+      }
+    },
+    {
+      "Index": 31,
+      "Class": "app.PlayerWeaponParameterUserData",
+      "Userdata": null,
+      "Fields": {
+        "_WeaponEquipParam": {
+          "Ref": 3,
+          "Class": "app.WeaponEquipParam"
+        },
+        "_WeaponStructureParam": {
+          "Ref": 5,
+          "Class": "app.ShellWeaponStructureParam"
+        },
+        "_WeaponResourceParam": {
+          "Ref": 8,
+          "Class": "app.WeaponResourceParam"
+        },
+        "_ReticleFitParamTable": {
+          "Ref": 10,
+          "Class": "app.WeaponReticleFitParamTable"
+        },
+        "_CameraRecoilParam": {
+          "Ref": 12,
+          "Class": "app.CameraRecoilParam"
+        },
+        "_AimCameraShakeParam": {
+          "Ref": 14,
+          "Class": "app.AimCameraShakeParam"
+        },
+        "_ShotCameraShakeParam": {
+          "Ref": 19,
+          "Class": "app.CameraShakeParam"
+        },
+        "_HitConfiguration": {
+          "Ref": 20,
+          "Class": "app.HitControllerConfiguration"
+        },
+        "_WeaponAccessoryGunParam": {
+          "Ref": 25,
+          "Class": "app.WeaponAccessoryGunParam"
+        },
+        "_UIValue": {
+          "Ref": 26,
+          "Class": "app.PlayerWeaponParameterUIValue"
+        },
+        "_SlingParam": {
+          "Ref": 30,
+          "Class": "app.WeaponSlingParam"
+        }
+      }
+    }
+  ]
+}

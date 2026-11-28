@@ -7,7 +7,7 @@ import { preview } from 'vite';
 import { checkDirections } from './leon-browser-directions.mjs';
 
 const require = createRequire(import.meta.url);
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright-core');
 const project = fileURLToPath(new URL('../', import.meta.url));
 const out = path.resolve(project, '../runtime/web-3c-leon.tmp');
 const directionOut = path.resolve(project, '../runtime/web-3c-leon-direction.tmp');
@@ -29,7 +29,7 @@ async function check(browser, url) {
   page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });
   page.on('response', (response) => {
     if (response.url().includes('/__re9-reference/player/')) files.push(new URL(response.url()).pathname);
-    if (response.url().endsWith('/__re9-reference/wp0100.glb')) weaponResponses.push(response.status());
+    if (response.url().endsWith('/__re9-reference/player/wp0100.glb')) weaponResponses.push(response.status());
   });
   // Observe the WebGL context in the playable viewport.
   await page.addInitScript((weaponCount) => {

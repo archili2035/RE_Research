@@ -1,6 +1,6 @@
 # M4 越肩镜头第一轮视频校准
 
-参考原片为 `E:/WorkBuddyRepo/RE_Research/downloads/生化危机9安魂曲_第二集_720P.mp4`。原尺寸解码确认瞄准帧 PTS 为 820.500 s，移动帧为 785.100 s，两帧均为 1280×720。网页用现有单栏试玩、里昂灰模和本机 `wp0100`，画布及缓冲均为 1280×720。固定步输入为 W 175 步、松 W 按住右键 90 步、松右键 24 步。第 175 步为平地前行（约 2.55 m/s），第 265 步为站定瞄准。两版的移动状态、步态相位、站定姿态和取样位置相同。第 175–289 步逐步核对遮挡均为「否」。 [抽帧时间](../../runtime/web-3c-camera-calibration.tmp/reference.json) · [改前采样](../../runtime/web-3c-camera-calibration.tmp/before-capture.json) · [改后采样](../../runtime/web-3c-camera-calibration.tmp/after-capture.json)
+参考原片为 `E:/WorkBuddyRepo/RE_Research/downloads/生化危机9安魂曲_第二集_720P.mp4`。原尺寸解码确认瞄准帧 PTS 为 820.500 s，移动帧为 785.100 s，两帧均为 1280×720。网页用现有单栏试玩、里昂灰模和本机 `wp0100`，画布及缓冲均为 1280×720。固定步输入为 W 175 步、松 W 按住右键 90 步、松右键 24 步。第 175 步为平地前行（约 2.55 m/s），第 265 步为站定瞄准。两版的移动状态、步态相位、站定姿态和取样位置相同。第 175–289 步逐步核对遮挡均为「否」。 [抽帧时间](evidence/web-3c-camera-calibration/reference.json) · [改前采样](evidence/web-3c-camera-calibration/before-capture.json) · [改后采样](evidence/web-3c-camera-calibration/after-capture.json)
 
 ## 构图
 
@@ -8,14 +8,14 @@
 
 | 画面 | 头部横向 | 头顶距上缘 | 肩部占幅 | 截图 |
 | --- | ---: | ---: | ---: | --- |
-| 原片瞄准 13:40.50 | 约 20.9% W | 约 20.3% H | 约 39.5% W | [参考](../../runtime/web-3c-camera-calibration.tmp/reference-aim.png) |
-| 网页瞄准改前 | 34.7% W | 38.0% H | 14.7% W | [第 265 步](../../runtime/web-3c-camera-calibration.tmp/before-aim.png) |
-| 网页瞄准改后 | 21.7% W | 20.2% H | 36.6% W | [第 265 步](../../runtime/web-3c-camera-calibration.tmp/after-aim.png) |
-| 原片移动 13:05.10 | 约 33.5% W | 约 29.9% H | 约 22% W | [参考](../../runtime/web-3c-camera-calibration.tmp/reference-move.png) |
-| 网页移动改前 | 41.0% W | 42.9% H | 6.8% W | [第 175 步](../../runtime/web-3c-camera-calibration.tmp/before-move.png) |
-| 网页移动改后 | 33.5% W | 30.1% H | 21.0% W | [第 175 步](../../runtime/web-3c-camera-calibration.tmp/after-move.png) |
+| 原片瞄准 13:40.50 | 约 20.9% W | 约 20.3% H | 约 39.5% W | 参考（本机 `runtime/web-3c-camera-calibration.tmp/reference-aim.png`，837 KB，未入库） |
+| 网页瞄准改前 | 34.7% W | 38.0% H | 14.7% W | 第 265 步（本机 `runtime/web-3c-camera-calibration.tmp/before-aim.png`，93 KB，未入库） |
+| 网页瞄准改后 | 21.7% W | 20.2% H | 36.6% W | 第 265 步（本机 `runtime/web-3c-camera-calibration.tmp/after-aim.png`，147 KB，未入库） |
+| 原片移动 13:05.10 | 约 33.5% W | 约 29.9% H | 约 22% W | 参考（本机 `runtime/web-3c-camera-calibration.tmp/reference-move.png`，575 KB，未入库） |
+| 网页移动改前 | 41.0% W | 42.9% H | 6.8% W | 第 175 步（本机 `runtime/web-3c-camera-calibration.tmp/before-move.png`，45 KB，未入库） |
+| 网页移动改后 | 33.5% W | 30.1% H | 21.0% W | 第 175 步（本机 `runtime/web-3c-camera-calibration.tmp/after-move.png`，114 KB，未入库） |
 
-原片瞄准时，枪管前端在中心准星左约 9–10% W、下约 4–5% H。网页以 `vfx_muzzle1` 投影，改前枪口在准星左 10.5% W、上 4.2% H，改后在左 17.0% W、上 2.0% H。改后枪口纵向更接近画面中心，横向仍比原片偏左。移动参考帧的持枪手腕也比当前网页前进样本更直立。这两处差异留待实机姿态与枪口读数确认。 [武器挂点](weapon-attachment.md) · [瞄准原片](../../runtime/web-3c-camera-calibration.tmp/reference-aim.png) · [瞄准改后](../../runtime/web-3c-camera-calibration.tmp/after-aim.png)
+原片瞄准时，枪管前端在中心准星左约 9–10% W、下约 4–5% H。网页以 `vfx_muzzle1` 投影，改前枪口在准星左 10.5% W、上 4.2% H，改后在左 17.0% W、上 2.0% H。改后枪口纵向更接近画面中心，横向仍比原片偏左。移动参考帧的持枪手腕也比当前网页前进样本更直立。这两处差异留待实机姿态与枪口读数确认。 [武器挂点](weapon-attachment.md) · 瞄准原片（本机 `runtime/web-3c-camera-calibration.tmp/reference-aim.png`，837 KB，未入库） · 瞄准改后（本机 `runtime/web-3c-camera-calibration.tmp/after-aim.png`，147 KB，未入库）
 
 ## 参数
 
@@ -32,10 +32,10 @@ Normal 的 `_Offset=(0.5, 1.47, 0)`、Hold 的 `_Offset=(0.4, 1.50, 0.1)` 提供
 
 ## 退出瞄准与回归
 
-原片 13:41.20–13:41.60 用于对照人物占幅随镜头拉开的过程。该段同时有收枪、起步和取景转向，实际松键时刻待输入记录确认。网页在无遮挡时让机位与 FOV 走同一条过渡曲线，墙体压缩单独以 0.22 s 恢复。松右键后 0.133／0.250／0.400 s，改后垂直 FOV 为 28.8°／30.7°／31.6°。至 0.400 s，沿视线后移 0.334 m，约完成稳定距离变化的 95%，改前约 66%。 [原片窗口首帧](../../runtime/web-3c-camera-calibration.tmp/reference-release-00.png) · [原片窗口末帧](../../runtime/web-3c-camera-calibration.tmp/reference-release-24.png) · [改前末帧](../../runtime/web-3c-camera-calibration.tmp/before-release-24.png) · [改后末帧](../../runtime/web-3c-camera-calibration.tmp/after-release-24.png)
+原片 13:41.20–13:41.60 用于对照人物占幅随镜头拉开的过程。该段同时有收枪、起步和取景转向，实际松键时刻待输入记录确认。网页在无遮挡时让机位与 FOV 走同一条过渡曲线，墙体压缩单独以 0.22 s 恢复。松右键后 0.133／0.250／0.400 s，改后垂直 FOV 为 28.8°／30.7°／31.6°。至 0.400 s，沿视线后移 0.334 m，约完成稳定距离变化的 95%，改前约 66%。 原片窗口首帧（本机 `runtime/web-3c-camera-calibration.tmp/reference-release-00.png`，654 KB，未入库） · 原片窗口末帧（本机 `runtime/web-3c-camera-calibration.tmp/reference-release-24.png`，728 KB，未入库） · 改前末帧（本机 `runtime/web-3c-camera-calibration.tmp/before-release-24.png`，66 KB，未入库） · 改后末帧（本机 `runtime/web-3c-camera-calibration.tmp/after-release-24.png`，151 KB，未入库）
 
-- M4 靠墙举枪、L 角与穿门的轨道中，最小机位净空为 0.171 m，球扫半径为 0.160 m，L 角最大单步位移为 0.140 m。角色停步后的跟随以世界机位连续性检查。 [碰撞轨道](../../runtime/web-3c-camera-calibration.tmp/after-collision.csv)
-- 独立穿门路线在第 645 步带鼠标微调开火，实际命中点 `(9.790, 1.721, 1.467) m` 投影到准星中心，归一化误差小于 `10⁻⁶`。渲染与射线继续读取同一固定步镜头位姿。 [开火轨道](../../runtime/web-3c-camera-calibration.tmp/after-shot-route.json)
+- M4 靠墙举枪、L 角与穿门的轨道中，最小机位净空为 0.171 m，球扫半径为 0.160 m，L 角最大单步位移为 0.140 m。角色停步后的跟随以世界机位连续性检查。 [碰撞轨道](evidence/web-3c-camera-calibration/after-collision.csv)
+- 独立穿门路线在第 645 步带鼠标微调开火，实际命中点 `(9.790, 1.721, 1.467) m` 投影到准星中心，归一化误差小于 `10⁻⁶`。渲染与射线继续读取同一固定步镜头位姿。 开火轨道（本机 `runtime/web-3c-camera-calibration.tmp/after-shot-route.json`，339 KB，未入库）
 - M6／M7 共用固定路线的靶前瞄准输入按新镜头标定。M7 回放 v4 为 616 步、31 条事件，第 375 步顺序保持开火、扣弹、命中，60／120 Hz 固定步结果一致。 [固定输入](../../web-3c/tests/test-room-route.mjs) · [回放](../../web-3c/fixtures/route.replay.json)
 - M4、命中路线与 M7 定向回归 11 项通过。Web 3C 全量 26 项通过，默认跳过的本地枪模用例指定 GLB 后单独通过。生产构建和 Chromium 单栏布局检查通过。Vite 保留大代码块警告。
 

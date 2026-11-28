@@ -35,8 +35,8 @@ node web-3c/tests/check-re9-reference.mjs
 
 ## 验收记录
 
-生产构建通过。Chromium 147.0.7727.15 对四段各执行两轮切换和步进，均回读六分件、72,346 顶点的灰模。换弹末帧可回退至第 311 帧。四类事件跳转、桌面并排和窄窗口堆叠通过，页面无浏览器错误。M2 姿态页的 12 个采样和 Web 3C 的 18 项测试均通过。[测试日志](../../runtime/web-3c-reference.tmp/web-3c-tests.log)
+生产构建通过。Chromium 147.0.7727.15 对四段各执行两轮切换和步进，均回读六分件、72,346 顶点的灰模。换弹末帧可回退至第 311 帧。四类事件跳转、桌面并排和窄窗口堆叠通过，页面无浏览器错误。M2 姿态页的 12 个采样和 Web 3C 的 18 项测试均通过。[测试日志](evidence/web-3c-reference/web-3c-tests.log)
 
 记录中的网页开火与扣弹均在 2.617 s，分别位于步号 157 的第 0、1 个事件。扣弹后为 7/16。补弹在 3.550 s，步号 213 的第 0 个事件，补弹后为 8/15。把参考单发跳至第 6 帧时，源时间显示 0.100 s，上述模拟时间保持原值。
 
-本机证据保存在 [reference-check.json](../../runtime/web-3c-reference.tmp/reference-check.json) 的 `samples`、`shotPose` 和 `events`。并排截图为 [comparison.png](../../runtime/web-3c-reference.tmp/comparison.png)，取自单发第 6 帧，含开火、扣弹与补弹的模拟时间。
+本机证据保存在 [reference-check.json](evidence/web-3c-reference/reference-check.json) 的 `samples`、`shotPose` 和 `events`。并排截图为 comparison.png（本机 `runtime/web-3c-reference.tmp/comparison.png`，138 KB，未入库），取自单发第 6 帧，含开火、扣弹与补弹的模拟时间。

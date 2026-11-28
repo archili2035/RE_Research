@@ -1,0 +1,26 @@
+{
+  "chromium": "147.0.7727.15",
+  "startX": -2.8,
+  "walkedX": 0.26,
+  "fireStartX": 1.26,
+  "fireEndX": 1.67,
+  "stoppedX": 1.67,
+  "ammo": "8 / 15",
+  "leonIndexCount": 38493,
+  "grayboxIndexCount": 288,
+  "events": "161.0  action.recovered raise\n172.0  input.request fire\n172.1  action.accepted fire\n176.0  weapon.fired\n176.1  ammo.committed 7/16\n187.0  action.recovered fire\n188.0  input.request reload\n188.1  action.accepted reload\n232.0  ammo.committed 8/15\n272.0  action.recovered reload",
+  "files": [
+    "/__re9-reference/player/masks.js",
+    "/__re9-reference/player/masks.js",
+    "/__re9-reference/player/math.js",
+    "/__re9-reference/player/skinning.js",
+    "/__re9-reference/player/motions.js",
+    "/__re9-reference/player/model.js"
+  ],
+  "weaponResponses": [
+    200
+  ],
+  "weaponIndexCount": 7575,
+  "weaponDraws": 139,
+  "errors": []
+}

@@ -54,6 +54,7 @@ export interface CameraPose extends ViewAngles {
   readonly position: Vec3;
   readonly verticalFovRad: number;
   readonly obstructed: boolean;
+  readonly nearClipM?: number; // Source camera profile: near clip with wall avoidance.
 }
 
 export interface SceneHit {

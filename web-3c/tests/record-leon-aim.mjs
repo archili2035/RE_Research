@@ -9,7 +9,7 @@ import { preview } from 'vite';
 const mode = process.argv[2];
 assert.ok(['audit', 'before', 'after'].includes(mode));
 const require = createRequire(import.meta.url);
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright-core');
 const project = new URL('../', import.meta.url);
 const out = new URL('../../runtime/web-3c-leon-aim.tmp/', import.meta.url);
 await mkdir(out, { recursive: true });

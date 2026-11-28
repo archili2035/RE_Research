@@ -50,7 +50,7 @@ export async function checkDirections(browser, url, { fromHome = false, aimed = 
       const value = element.value;
       const [, x, , z] = value.match(/坐标 (-?[\d.]+), (-?[\d.]+), (-?[\d.]+)/);
       const [, cycles, blend] = value.match(/步态 ([\d.]+) 周期  权重 ([\d.]+)/);
-      return { x: Number(x), z: Number(z), cycles: Number(cycles), blend: Number(blend), aiming: value.includes('瞄准 是') };
+      return { tick: Number(value.match(/步号 (\d+)/)[1]), x: Number(x), z: Number(z), cycles: Number(cycles), blend: Number(blend), aiming: value.includes('瞄准 是') };
     });
     const drive = async (label, keys, x, z, release = true) => {
       const before = await read();
@@ -98,20 +98,34 @@ export async function checkDirections(browser, url, { fromHome = false, aimed = 
     if (aimed) {
       await page.mouse.up({ button: 'right' });
     } else {
-      await drive('leave-wall', ['A'], 0, -0.23, false);
+      // The corridor south of wall-r07-south is about 3 m long and slow headless frames add up to a second of travel
+      // per transition. Raise while walking away from the wall, then turn back and lower while walking toward it.
+      const moved = (z, sign) => page.waitForFunction(({ z, sign }) => {
+        const value = document.querySelector('#snapshot').value;
+        const [, , , currentZ] = value.match(/坐标 (-?[\d.]+), (-?[\d.]+), (-?[\d.]+)/);
+        return (Number(currentZ) - z) * sign > 0.1 && value.includes('权重 1.000');
+      }, { z, sign }, { polling: 16 });
+      const fromWall = await read();
+      await page.keyboard.down('KeyA');
+      await moved(fromWall.z, -1);
       const before = await read();
       await page.mouse.down({ button: 'right' });
       await waitPhase('aiming');
       const raised = await read();
+      await page.keyboard.up('KeyA');
+      await page.keyboard.down('KeyD');
+      await moved(raised.z, 1);
+      const aimedBack = await read();
       await page.mouse.up({ button: 'right' });
       await waitPhase('ready');
       const lowered = await read();
-      await page.keyboard.up('KeyA');
-      assert.ok(raised.aiming && !lowered.aiming);
-      for (const [from, to] of [[before, raised], [raised, lowered]]) {
-        assert.ok(to.z < from.z - 0.35 && to.cycles > from.cycles && to.blend > 0.99);
+      await page.keyboard.up('KeyD');
+      assert.ok(raised.aiming && aimedBack.aiming && !lowered.aiming);
+      for (const [from, to, sign] of [[before, raised, -1], [aimedBack, lowered, 1]]) {
+        assert.ok((to.z - from.z) * sign > 0.35 && to.cycles > from.cycles && to.blend > 0.99,
+          JSON.stringify({ from, to, blocked }));
       }
-      transitions.push(before, raised, lowered);
+      transitions.push(before, raised, aimedBack, lowered);
     }
     assert.deepEqual(errors, []);
     return { entry, buildId, aimed, passes, blocked, later, transitions, errors };

@@ -1,6 +1,8 @@
 import type { InputSnapshot } from './contracts.ts';
 
 const controls = new Set(['KeyW', 'KeyA', 'KeyS', 'KeyD', 'ShiftLeft', 'ShiftRight', 'KeyR', 'KeyE']);
+// Pointer-lock movement occasionally reports a single huge jump (window refocus, OS cursor warp). Drop such events.
+export const MAX_LOOK_EVENT_PX = 400;
 
 export function createInputBuffer() {
   const keys = new Set<string>();
@@ -30,6 +32,7 @@ export function createInputBuffer() {
       }
     },
     look(dx: number, dy: number) {
+      if (Math.abs(dx) > MAX_LOOK_EVENT_PX || Math.abs(dy) > MAX_LOOK_EVENT_PX) return;
       lookDeltaX += dx;
       lookDeltaY += dy;
     },

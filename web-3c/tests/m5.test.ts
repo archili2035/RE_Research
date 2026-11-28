@@ -26,9 +26,12 @@ const trace: string[] = [];
 
 function run(
   count: number, inputs: (tick: number) => Partial<InputSnapshot>,
-  options: { renderHz?: number; magazine?: number; reserve?: number; manifest?: ClipManifest; traceName?: string } = {},
+  options: {
+    renderHz?: number; magazine?: number; reserve?: number; manifest?: ClipManifest; traceName?: string;
+    parameters?: typeof feel.actions;
+  } = {},
 ) {
-  const actions = createActions(feel.actions, options.manifest ?? clips);
+  const actions = createActions(options.parameters ?? feel.actions, options.manifest ?? clips);
   const initial: SimulationState = {
     tick: 0,
     character: { position: origin, velocity: origin, yawRad: 0, grounded: true },
@@ -75,7 +78,7 @@ function eventLog(events: readonly GameEvent[]) {
     event.type === 'ammo.committed' ? [event.magazine, event.reserve] : [])]);
 }
 
-test('M5 buffers fire during raise, fires once while moving, and ignores fire during reload at 60/120 Hz', () => {
+test('M5 takes a buffered fire through HoldStartShoot, fires once while moving, and ignores fire during reload at 60/120 Hz', () => {
   const inputs = (tick: number) => ({
     aimHeld: tick <= 130, moveY: tick <= 42 ? 1 : 0,
     firePressed: [1, 50, 96].includes(tick), reloadPressed: tick === 45,
@@ -84,16 +87,18 @@ test('M5 buffers fire during raise, fires once while moving, and ignores fire du
   assert.deepEqual(result, run(150, inputs, { renderHz: 120 }));
   assert.deepEqual(eventLog(result.events), [
     [1, 'input.request', 'raise'], [1, 'input.request', 'fire'], [1, 'action.accepted', 'raise'],
-    [28, 'action.recovered', 'raise'], [28, 'action.accepted', 'fire'],
-    [32, 'weapon.fired'], [32, 'ammo.committed', 7, 16], [43, 'action.recovered', 'fire'],
+    // holdStartShootS 0.25 s: the raise ends 15 steps in and the buffered shot is accepted on the same step.
+    [16, 'action.recovered', 'raise'], [16, 'action.accepted', 'fire'],
+    [20, 'weapon.fired'], [20, 'ammo.committed', 7, 16], [31, 'action.recovered', 'fire'],
     [45, 'input.request', 'reload'], [45, 'action.accepted', 'reload'], [50, 'input.request', 'fire'],
     [89, 'ammo.committed', 8, 15], [96, 'input.request', 'fire'], [129, 'action.recovered', 'reload'],
     [131, 'input.request', 'lower'], [131, 'action.accepted', 'lower'], [149, 'action.recovered', 'lower'],
   ]);
-  assert.equal(result.states[30].action.magazine, 8);
-  assert.equal(result.poses[31].clip, 'fire');
-  assert.ok(result.poses[31].gaitWeight > 0);
-  assert.notEqual(result.poses[31].gaitPhaseRad, result.poses[30].gaitPhaseRad);
+  assert.equal(result.states[18].action.magazine, 8);
+  assert.equal(result.poses[19].clip, 'fire');
+  assert.ok(result.poses[19].holdStartShoot);
+  assert.ok(result.poses[19].gaitWeight > 0);
+  assert.notEqual(result.poses[19].gaitPhaseRad, result.poses[18].gaitPhaseRad);
   assert.equal(result.states[88].action.phase, 'reloading');
   assert.equal(result.poses[88].gaitWeight, 0);
 });
@@ -115,7 +120,9 @@ test('M5 drops expired buffered fire and resolves simultaneous fire and reload b
   const slowRaise: ClipManifest = {
     ...clips, clips: clips.clips.map((clip) => clip.id === 'raise' ? { ...clip, durationS: 1 } : clip),
   };
-  const expired = run(65, (tick) => ({ aimHeld: true, firePressed: tick === 1 }), { manifest: slowRaise });
+  // A buffer shorter than holdStartShootS expires before the HoldStartShoot branch can take it.
+  const shortBuffer = { ...feel.actions, fireBufferS: { ...feel.actions.fireBufferS, value: 0.2 } };
+  const expired = run(65, (tick) => ({ aimHeld: true, firePressed: tick === 1 }), { manifest: slowRaise, parameters: shortBuffer });
   assert.equal(expired.states.at(-1)?.action.phase, 'aiming');
   assert.ok(!expired.events.some(({ type }) => type === 'weapon.fired'));
 

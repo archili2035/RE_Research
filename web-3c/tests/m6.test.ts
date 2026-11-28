@@ -4,7 +4,7 @@ import { STEP_S } from '../src/contracts.ts';
 import type { GameEvent, InputSnapshot } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
-import { withLegacyMovement } from '../src/preview-stages.ts';
+import { withLegacyMovement } from './legacy-fixtures.ts';
 import { createSimulation } from '../src/simulation.ts';
 import { targetLook } from './test-room-route.mjs';
 
@@ -23,7 +23,7 @@ test('M6 fixed route hits the target, reloads and crosses a repeatable collision
   const step = createSimulation(room.initial, room.queries, {
     ...room.stages,
     sampleInput: (tick) => ({ ...neutral, ...controls, tick }),
-    publish: (_state, _input, batch) => { events = batch; },
+    publish: (state, _input, batch) => { events = batch; room.syncView(state.tick); },
   });
   const advance = (input: Partial<InputSnapshot> = {}, count = 1) => {
     controls = input;
@@ -47,7 +47,8 @@ test('M6 fixed route hits the target, reloads and crosses a repeatable collision
   const raise = advance({ aimHeld: true, firePressed: true, ...targetLook });
   assert.equal(raise.action.phase, 'raising');
   assert.deepEqual([raise.action.magazine, raise.action.reserve], [8, 16]);
-  advance({ aimHeld: true }, 27);
+  // HoldStartShoot: the buffered shot ends the raise once it has run holdStartShootS (0.25 s, 15 steps).
+  advance({ aimHeld: true }, 15);
   assert.deepEqual(events.map(({ type }) => type), ['action.recovered', 'action.accepted']);
   const fire = advance({ aimHeld: true }, 4);
   assert.deepEqual([fire.action.magazine, fire.action.reserve], [7, 16]);

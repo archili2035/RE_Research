@@ -4,6 +4,8 @@
 
 同日 16:00 按工作区更新复核。期间新增方向步态（[actions.ts](../../web-3c/src/actions.ts) `createWalk`）、本机武器挂载（[leon-weapon.ts](../../web-3c/src/leon-weapon.ts)）、`build:portal` 发布脚本，并更新了 [里昂试玩记录](leon-playfield.md)。`movement.ts`、`camera.ts`、`level.ts`、`input.ts`、`feel.json` 未改。复核时本地 `npm test` 25/25 通过（Node 22.23.4）。下文各项已按复核结果更新。
 
+2026-11-28 第三轮：完成全部不依赖实机录像的项（`FeelConfig` v6），下表第 4、6–12、14–19 项已处理，详见 [动作与镜头对齐原作 · 第 4 节](character-camera-fidelity.md#4-第三轮已落地feelconfig-v6)。
+
 2026-11-28 第二轮：动作与镜头按解包数据落地 `FeelConfig` v5，详见 [动作与镜头对齐原作](character-camera-fidelity.md#3-第二轮已落地feelconfig-v5)。第 1、9 项相应更新，全量测试 38 项通过、2 项为需本机资源的可选用例（指定资源后通过）。
 
 ## 结论
@@ -69,3 +71,26 @@
 3. 采实机录像时先确认第 1 项的操控模式，再决定是否加转身；然后做第 2 项，`FeelConfig` 升到 v4，重录回放基线。
 4. 用同一批录像补第 3 项，把参数从 `tuned` 换成 `measured`。
 5. 最后做 6–8 和 17–19 的结构与工程整理。
+
+## 第三轮处理结果（2026-11-28）
+
+| # | 结果 |
+| --- | --- |
+| 2 | 已加：`accelS`／`decelS` = 0.25 s（第一人称配置值），作用于意图速度；停步片段据此预测剩余位移。数值是否适用第三人称待录像。 |
+| 3 | 未处理，需要实机录像。 |
+| 4 | 已由「M4 角色与镜头渲染时序」处理：角色、步态和镜头同一时刻取样（[m4-render-timing.md](m4-render-timing.md)）。 |
+| 5 | 未处理，需要实体高刷显示器复测。 |
+| 6 | 已改为两段射线，枪口取 `wp0100` 举枪姿态的 `vfx_muzzle1`。 |
+| 7 | 已分离：模拟只改碰撞和状态，`syncView(tick)` 同步门板与靶面。 |
+| 8 | 已处理：动作、镜头、朝向、门和靶的内部状态可 `snapshot()`／`restore()`，回放每 60 步存关键帧，`seek(N)` 跳步并与线性回放逐项一致。 |
+| 9 | 已并入 `feel.json` v6：`fireBufferS`、`walkBlendInS`／`walkBlendOutS`、`holdStartShootS`；原创外观腿摆改读步行速度。俯仰上下限改由原作 ±60° 决定。 |
+| 10 | 已处理：门只在低枪 `ready` 阶段响应 E。 |
+| 11 | 已清理：`createBoxScene` 移到 `src/box-scene.ts`，M0 预览与 v4 回归参数移到 `tests/legacy-fixtures.ts`，`feel.json` 的来源字段已更正。 |
+| 12 | 已拆包：`vendor-rapier`（含内联 wasm，2.2 MB）与 `vendor-three` 单独成块。 |
+| 13 | 未处理，目前只比对事件，无需切换。 |
+| 14 | 已处理：`playwright-core` 1.65.0 为开发依赖，新增 `npm run test:browser`；首次需 `npx playwright-core install chromium`。旧报告里的 `PLAYWRIGHT_MODULE`／`CHROMIUM_EXECUTABLE` 不再需要。 |
+| 15 | 已处理：鼠标锁定请求 `unadjustedMovement`（不支持时退回普通锁定），单次超过 400 px 的位移丢弃。 |
+| 16 | 已提交。 |
+| 17 | 已处理：武器改为蒙皮导出，与元数据（源文件 SHA-256、骨骼表）一同发布到 `docs/player/`，生成步骤见 [weapon-attachment.md](weapon-attachment.md)。 |
+| 18 | 已处理：65 个小于 300 kB 的证据文件复制到 `reports/web-3c/evidence/` 并改写链接，其余大文件标注为本机路径（[归档脚本](../../scripts/web-3c/archive_evidence.mjs)）。 |
+| 19 | 已合并为 `src/local-host.ts` 的 `isLocalHost()`。默认切到里昂外观保留（有意为之）。 |

@@ -1,36 +1,12 @@
+// Box-based Rapier scene used by every playfield (render meshes plus static colliders, a capsule controller and queries).
 import RAPIER from '@dimforge/rapier3d-compat';
 import * as THREE from 'three';
 import type { LevelDefinition, SceneQueries, Vec3 } from './contracts.ts';
 import { CHARACTER_BODY } from './movement.ts';
 
-export const previewBoxes = [
-  { id: 'floor', x: 0, y: -0.15, z: -3.5, w: 20, h: 0.3, d: 20, color: 0x44555b },
-  { id: 'west-wall', x: -2.5, y: 1.25, z: -2, w: 0.24, h: 2.5, d: 13, color: 0x607a85 },
-  { id: 'inside-wall', x: 2.5, y: 1.25, z: 0, w: 0.24, h: 2.5, d: 9, color: 0x526b75 },
-  { id: 'north-wall', x: 2.5, y: 1.25, z: -8.5, w: 10, h: 2.5, d: 0.24, color: 0x607a85 },
-  { id: 'east-wall', x: 7.5, y: 1.25, z: -6.5, w: 0.24, h: 2.5, d: 4, color: 0x607a85 },
-  { id: 'south-wall', x: 5, y: 1.25, z: -4.5, w: 5, h: 2.5, d: 0.24, color: 0x526b75 },
-  { id: 'rear-wall', x: 0, y: 1.25, z: 7.6, w: 5, h: 2.5, d: 0.24, color: 0x607a85 },
-  { id: 'practice-block', x: 6.8, y: 0.8, z: -6.5, w: 0.5, h: 1.6, d: 0.75, color: 0xde9060 },
-];
-
 type RenderBox = Extract<LevelDefinition['render'][number], { kind: 'box' }>;
 type CapsuleQuery = Parameters<SceneQueries['moveCapsule']>[0];
 type CapsuleResult = ReturnType<SceneQueries['moveCapsule']>;
-
-export async function createPreviewScene() {
-  const boxes = previewBoxes.map(({ id, x, y, z, w, h, d, color }): RenderBox => ({
-    id, kind: 'box', position: { x, y, z }, size: { x: w, y: h, z: d },
-    yawRad: 0, color: `#${color.toString(16).padStart(6, '0')}`,
-  }));
-  const result = await createBoxScene(boxes, boxes.map(({ id, position, size, yawRad }) => ({
-    id, center: position, size, yawRad,
-  })), false); // Preserve the M7 v1 route's collision settings.
-  const grid = new THREE.GridHelper(20, 20, 0x8ea5aa, 0x62787f);
-  grid.position.set(0, 0.003, -3.5);
-  result.scene.add(grid);
-  return result;
-}
 
 export async function createBoxScene(
   render: readonly RenderBox[], definitions: LevelDefinition['colliders'], enableSteps = true,

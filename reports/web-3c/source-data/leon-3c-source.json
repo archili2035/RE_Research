@@ -5604,7 +5604,7 @@
       "rootTravel": [
         0,
         0,
-        2.6945662
+        2.69457
       ],
       "horizontalMps": 2.099662075926559
     },
@@ -5616,7 +5616,7 @@
       "rootTravel": [
         0,
         0,
-        2.3536782
+        2.35368
       ],
       "horizontalMps": 1.8340350150113514
     },
@@ -5628,7 +5628,7 @@
       "rootTravel": [
         0,
         0,
-        2.6535563
+        2.65356
       ],
       "horizontalMps": 2.067706302276011
     },
@@ -5640,7 +5640,7 @@
       "rootTravel": [
         0,
         0,
-        2.796578
+        2.79658
       ],
       "horizontalMps": 2.179151669573769
     },
@@ -5652,7 +5652,7 @@
       "rootTravel": [
         0,
         0,
-        2.6486864
+        2.64869
       ],
       "horizontalMps": 2.0639115317329453
     },
@@ -5754,13 +5754,205 @@
     },
     {
       "bank": 200,
+      "id": 2000,
+      "name": "ch0100_Handgun00M_2000_walk_strafeF_Lleg_B_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        0,
+        0,
+        -1.86503
+      ],
+      "horizontalMps": 1.017288707078705
+    },
+    {
+      "bank": 200,
+      "id": 2001,
+      "name": "ch0100_Handgun00M_2001_walk_strafeF_Lleg_R_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        -2.79254,
+        0,
+        0
+      ],
+      "horizontalMps": 1.5232058494796097
+    },
+    {
+      "bank": 200,
+      "id": 2002,
+      "name": "ch0100_Handgun00M_2002_walk_strafeF_Lleg_F_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        0,
+        0,
+        2.64624
+      ],
+      "horizontalMps": 1.4434060856806301
+    },
+    {
+      "bank": 200,
+      "id": 2003,
+      "name": "ch0100_Handgun00M_2003_walk_strafeF_Lleg_L_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        2.26167,
+        0,
+        0
+      ],
+      "horizontalMps": 1.2336362836706332
+    },
+    {
+      "bank": 200,
+      "id": 2004,
+      "name": "ch0100_Handgun00M_2004_walk_strafeB_Lleg_B_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        0,
+        0,
+        -2.07185
+      ],
+      "horizontalMps": 1.1301018039779593
+    },
+    {
+      "bank": 200,
+      "id": 2005,
+      "name": "ch0100_Handgun00M_2005_walk_strafeB_Lleg_R_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        -2.1322,
+        0,
+        -0.00773
+      ],
+      "horizontalMps": 1.1630277586423938
+    },
+    {
+      "bank": 200,
+      "id": 2006,
+      "name": "ch0100_Handgun00M_2006_walk_strafeB_Lleg_F_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        0,
+        0,
+        2.27311
+      ],
+      "horizontalMps": 1.2398763040235543
+    },
+    {
+      "bank": 200,
+      "id": 2007,
+      "name": "ch0100_Handgun00M_2007_walk_strafeB_Lleg_L_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        2.02922,
+        0,
+        0
+      ],
+      "horizontalMps": 1.106846243100114
+    },
+    {
+      "bank": 200,
+      "id": 2020,
+      "name": "ch0100_Handgun00M_2020_walk_strafeF_Rleg_B_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        0,
+        0,
+        -2.08099
+      ],
+      "horizontalMps": 1.135086906079136
+    },
+    {
+      "bank": 200,
+      "id": 2021,
+      "name": "ch0100_Handgun00M_2021_walk_strafeF_Rleg_R_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        -2.71033,
+        0,
+        0
+      ],
+      "horizontalMps": 1.478361680692138
+    },
+    {
+      "bank": 200,
+      "id": 2022,
+      "name": "ch0100_Handgun00M_2022_walk_strafeF_Rleg_F_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        0,
+        0,
+        3.24563
+      ],
+      "horizontalMps": 1.770345663644625
+    },
+    {
+      "bank": 200,
+      "id": 2023,
+      "name": "ch0100_Handgun00M_2023_walk_strafeF_Rleg_L_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        2.76836,
+        0,
+        0
+      ],
+      "horizontalMps": 1.5100144499147692
+    },
+    {
+      "bank": 200,
+      "id": 2024,
+      "name": "ch0100_Handgun00M_2024_walk_strafeB_Rleg_B_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        0,
+        0,
+        -2.38719
+      ],
+      "horizontalMps": 1.3021026290680062
+    },
+    {
+      "bank": 200,
+      "id": 2025,
+      "name": "ch0100_Handgun00M_2025_walk_strafeB_Rleg_R_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        -2.27824,
+        0,
+        0
+      ],
+      "horizontalMps": 1.242676419479719
+    },
+    {
+      "bank": 200,
+      "id": 2026,
+      "name": "ch0100_Handgun00M_2026_walk_strafeB_Rleg_F_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        0,
+        0,
+        2.64673
+      ],
+      "horizontalMps": 1.4436707007516139
+    },
+    {
+      "bank": 200,
+      "id": 2027,
+      "name": "ch0100_Handgun00M_2027_walk_strafeB_Rleg_L_Start",
+      "duration": 1.8333334,
+      "rootTravel": [
+        2.14538,
+        0,
+        0
+      ],
+      "horizontalMps": 1.1702074982684034
+    },
+    {
+      "bank": 200,
       "id": 2200,
       "name": "ch0100_Handgun00M_2200_walk_strafeF_B_Loop",
       "duration": 1.2,
       "rootTravel": [
         0,
         0,
-        -1.6200235
+        -1.62002
       ],
       "horizontalMps": 1.3500195435332023
     },
@@ -5770,7 +5962,7 @@
       "name": "ch0100_Handgun00M_2201_walk_strafeF_R_Loop",
       "duration": 1.2,
       "rootTravel": [
-        -1.740046,
+        -1.74005,
         0,
         0
       ],
@@ -5794,7 +5986,7 @@
       "name": "ch0100_Handgun00M_2203_walk_strafeF_L_Loop",
       "duration": 1.2,
       "rootTravel": [
-        1.7399459,
+        1.73995,
         0,
         0
       ],
@@ -5811,6 +6003,198 @@
         0
       ],
       "horizontalMps": 0
+    },
+    {
+      "bank": 200,
+      "id": 2500,
+      "name": "ch0100_Handgun00M_2500_walk_strafeF_Lleg_B_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0,
+        0,
+        -0.4
+      ],
+      "horizontalMps": 0.10810924322446894
+    },
+    {
+      "bank": 200,
+      "id": 2501,
+      "name": "ch0100_Handgun00M_2501_walk_strafeF_Lleg_R_End",
+      "duration": 3.7,
+      "rootTravel": [
+        -0.4,
+        0,
+        0
+      ],
+      "horizontalMps": 0.10810842265929085
+    },
+    {
+      "bank": 200,
+      "id": 2502,
+      "name": "ch0100_Handgun00M_2502_walk_strafeF_Lleg_F_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0,
+        0,
+        0.4
+      ],
+      "horizontalMps": 0.10810938921394002
+    },
+    {
+      "bank": 200,
+      "id": 2503,
+      "name": "ch0100_Handgun00M_2503_walk_strafeF_Lleg_L_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0.4,
+        0,
+        0
+      ],
+      "horizontalMps": 0.10810889083527819
+    },
+    {
+      "bank": 200,
+      "id": 2504,
+      "name": "ch0100_Handgun00M_2504_walk_strafeB_Lleg_B_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0,
+        0,
+        -0.4
+      ],
+      "horizontalMps": 0.10810771284021702
+    },
+    {
+      "bank": 200,
+      "id": 2505,
+      "name": "ch0100_Handgun00M_2505_walk_strafeB_Lleg_R_End",
+      "duration": 3.7,
+      "rootTravel": [
+        -0.4,
+        0,
+        0
+      ],
+      "horizontalMps": 0.10810810047248745
+    },
+    {
+      "bank": 200,
+      "id": 2506,
+      "name": "ch0100_Handgun00M_2506_walk_strafeB_Lleg_F_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0,
+        0,
+        0.4
+      ],
+      "horizontalMps": 0.10810718424851744
+    },
+    {
+      "bank": 200,
+      "id": 2507,
+      "name": "ch0100_Handgun00M_2507_walk_strafeB_Lleg_L_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0.4,
+        0,
+        0
+      ],
+      "horizontalMps": 0.10810916267846946
+    },
+    {
+      "bank": 200,
+      "id": 2520,
+      "name": "ch0100_Handgun00M_2520_walk_strafeF_Rleg_B_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0,
+        0,
+        -0.4
+      ],
+      "horizontalMps": 0.10810871464025207
+    },
+    {
+      "bank": 200,
+      "id": 2521,
+      "name": "ch0100_Handgun00M_2521_walk_strafeF_Rleg_R_End",
+      "duration": 3.7,
+      "rootTravel": [
+        -0.39998,
+        0,
+        0
+      ],
+      "horizontalMps": 0.10810323734879587
+    },
+    {
+      "bank": 200,
+      "id": 2522,
+      "name": "ch0100_Handgun00M_2522_walk_strafeF_Rleg_F_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0,
+        0,
+        0.4
+      ],
+      "horizontalMps": 0.10810837231766612
+    },
+    {
+      "bank": 200,
+      "id": 2523,
+      "name": "ch0100_Handgun00M_2523_walk_strafeF_Rleg_L_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0.4,
+        0,
+        0
+      ],
+      "horizontalMps": 0.10810694763996691
+    },
+    {
+      "bank": 200,
+      "id": 2524,
+      "name": "ch0100_Handgun00M_2524_walk_strafeB_Rleg_B_End",
+      "duration": 3.6166666,
+      "rootTravel": [
+        0,
+        0,
+        -0.39994
+      ],
+      "horizontalMps": 0.11058226392017004
+    },
+    {
+      "bank": 200,
+      "id": 2525,
+      "name": "ch0100_Handgun00M_2525_walk_strafeB_Rleg_R_End",
+      "duration": 3.7,
+      "rootTravel": [
+        -0.4,
+        0,
+        0
+      ],
+      "horizontalMps": 0.10810835721517413
+    },
+    {
+      "bank": 200,
+      "id": 2526,
+      "name": "ch0100_Handgun00M_2526_walk_strafeB_Rleg_F_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0,
+        0,
+        0.39999
+      ],
+      "horizontalMps": 0.10810620760562571
+    },
+    {
+      "bank": 200,
+      "id": 2527,
+      "name": "ch0100_Handgun00M_2527_walk_strafeB_Rleg_L_End",
+      "duration": 3.7,
+      "rootTravel": [
+        0.39999,
+        0,
+        0
+      ],
+      "horizontalMps": 0.10810644925004924
     },
     {
       "bank": 200,
@@ -5842,9 +6226,9 @@
       "name": "ch0100_Handgun00M_5102_run_F_Loop",
       "duration": 1.6666666,
       "rootTravel": [
-        5.699694E-07,
         0,
-        5.9855757
+        0,
+        5.98558
       ],
       "horizontalMps": 3.591345578774777
     },
@@ -5856,7 +6240,7 @@
       "rootTravel": [
         0,
         0,
-        5.999999
+        6
       ],
       "horizontalMps": 3.5999995136260416
     },
@@ -5890,7 +6274,7 @@
       "name": "ch0100_Handgun00H_0122_Strafe_L_Loop",
       "duration": 1.4,
       "rootTravel": [
-        1.5399948,
+        1.53999,
         0,
         0
       ],
@@ -5904,7 +6288,7 @@
       "rootTravel": [
         0,
         0,
-        -1.3932706
+        -1.39327
       ],
       "horizontalMps": 1.0999504969316867
     },
@@ -5914,7 +6298,7 @@
       "name": "ch0100_Handgun00H_0126_Strafe_R_Loop",
       "duration": 1.3833333,
       "rootTravel": [
-        -1.5216193,
+        -1.52162,
         0,
         0
       ],

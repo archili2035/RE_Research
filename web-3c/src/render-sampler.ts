@@ -1,4 +1,4 @@
-import type { ActionPose, FootPlant } from './actions.ts';
+import type { ActionPose, FootPlant, LocoTransition } from './actions.ts';
 import { interpolatePosition } from './camera.ts';
 import type { CameraPose, CharacterState, SceneQueries, Vec3 } from './contracts.ts';
 
@@ -24,6 +24,12 @@ function blendPlant(from: FootPlant | null, to: FootPlant | null, fraction: numb
   if (!plant) return null;
   const start = from?.weight ?? 0;
   return { anchor: plant.anchor, weight: start + ((to?.weight ?? 0) - start) * fraction };
+}
+
+function blendTransition(from: LocoTransition | null, to: LocoTransition | null, fraction: number): LocoTransition | null {
+  if (!to || !from || from.kind !== to.kind || from.dir !== to.dir || from.leg !== to.leg) return to;
+  const lerp = (a: number, b: number) => a + (b - a) * fraction;
+  return { ...to, distanceM: lerp(from.distanceM, to.distanceM), stillS: lerp(from.stillS, to.stillS), elapsedS: lerp(from.elapsedS, to.elapsedS) };
 }
 
 export function createRenderSampler(
@@ -79,6 +85,7 @@ export function createRenderSampler(
           yawRad: blendAngle(previous.camera.yawRad, current.camera.yawRad, fraction),
           pitchRad: lerp(previous.camera.pitchRad, current.camera.pitchRad),
           verticalFovRad: lerp(previous.camera.verticalFovRad, current.camera.verticalFovRad),
+          ...(current.camera.nearClipM !== undefined ? { nearClipM: lerp(previous.camera.nearClipM ?? current.camera.nearClipM, current.camera.nearClipM) } : {}),
           obstructed: previous.camera.obstructed || current.camera.obstructed,
         },
         cameraAnchor,
@@ -90,7 +97,10 @@ export function createRenderSampler(
             turn: lerp(from.aim.turn, to.aim.turn),
             turnTimeS: lerp(from.aim.turnTimeS, to.aim.turnTimeS),
             pitchRad: lerp(from.aim.pitchRad, to.aim.pitchRad),
+            yawTwistRad: lerp(from.aim.yawTwistRad, to.aim.yawTwistRad),
+            turnSpeed: to.aim.turnSpeed,
           },
+          lowerS: to.lowerS >= 0 && from.lowerS >= 0 ? lerp(from.lowerS, to.lowerS) : to.lowerS,
           clockS: lerp(from.clockS, to.clockS),
           walk: {
             cycles: lerp(from.walk.cycles, to.walk.cycles),
@@ -104,6 +114,11 @@ export function createRenderSampler(
             run: lerp(from.walk.run, to.walk.run),
             plants: [blendPlant(from.walk.plants[0], to.walk.plants[0], fraction),
               blendPlant(from.walk.plants[1], to.walk.plants[1], fraction)],
+            transition: blendTransition(from.walk.transition, to.walk.transition, fraction),
+            turn: to.walk.turn && from.walk.turn?.clip === to.walk.turn.clip ? {
+              ...to.walk.turn, doneRad: lerp(from.walk.turn.doneRad, to.walk.turn.doneRad),
+              elapsedS: lerp(from.walk.turn.elapsedS, to.walk.turn.elapsedS),
+            } : to.walk.turn,
           },
         },
       });

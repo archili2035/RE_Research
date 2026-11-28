@@ -7,7 +7,7 @@ import type { FeelConfig, InputSnapshot, LevelDefinition, Vec3 } from '../src/co
 import feelJson from '../src/feel.json' with { type: 'json' };
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom } from '../src/level.ts';
-import { withLegacyMovement } from '../src/preview-stages.ts';
+import { withLegacyMovement } from './legacy-fixtures.ts';
 import { createSimulation } from '../src/simulation.ts';
 
 const greybox = greyboxJson as LevelDefinition;

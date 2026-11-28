@@ -22,17 +22,39 @@ export function createRoutePlayback(
     sampleInput: (tick) => route.inputs[tick - 1],
     publish: (snapshot, input, batch) => {
       events.push(...batch);
+      room.syncView(snapshot.tick);
       publish(snapshot, input, batch);
     },
   };
   let state = room.reset(feel);
   let step = createSimulation(state, room.queries, stages);
+  // Keyframes every SNAPSHOT_TICKS steps let seek() jump without replaying from the spawn.
+  const SNAPSHOT_TICKS = 60;
+  let keyframes = new Map([[0, { state, room: room.snapshot(), events: 0 }]]);
 
   return {
     get state() { return state; },
     get done() { return state.tick === route.inputs.length; },
     step() {
-      if (state.tick < route.inputs.length) state = step();
+      if (state.tick < route.inputs.length) {
+        state = step();
+        if (state.tick % SNAPSHOT_TICKS === 0 && !keyframes.has(state.tick)) {
+          keyframes.set(state.tick, { state, room: room.snapshot(), events: events.length });
+        }
+      }
+      return state;
+    },
+    /** Restores the nearest earlier keyframe and steps forward to the requested tick. Publishes the replayed steps. */
+    seek(tick: number) {
+      const target = Math.max(0, Math.min(route.inputs.length, Math.floor(tick)));
+      const from = Math.max(...[...keyframes.keys()].filter((key) => key <= target));
+      const frame = keyframes.get(from)!;
+      room.restore(frame.room);
+      state = frame.state;
+      events.length = frame.events;
+      step = createSimulation(state, room.queries, stages);
+      room.syncView(state.tick);
+      while (state.tick < target) this.step();
       return state;
     },
     reset(config = feel) {
@@ -40,6 +62,7 @@ export function createRoutePlayback(
       state = room.reset(feel);
       step = createSimulation(state, room.queries, stages);
       events.length = 0;
+      keyframes = new Map([[0, { state, room: room.snapshot(), events: 0 }]]);
     },
     trace(): ReplayTrace {
       return { ...route, feelVersion: feel.version, inputs: route.inputs.slice(0, state.tick), events: [...events] };

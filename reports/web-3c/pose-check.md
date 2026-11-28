@@ -6,7 +6,7 @@
 
 - M0 已提供 [共享接口](../../web-3c/src/contracts.ts) 和 [固定步入口](../../web-3c/src/main.ts)。M0 使用米、+Y 向上、脚底原点、偏航零点 −Z。GLB 按标准使用 +Z 前向，回读时由外层节点绕 +Y 旋转 π，再接入 M0 的角色朝向。[glTF 2.0 坐标约定](https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#coordinate-system-and-units)
 - M1 [资产审计](asset-audit.json) 第 1 版的目标文件均可定位。优先样本为 RE9 Steam build 23634047 的 `docs/player/model.js` 骨架和 `docs/player/motions.json`。站立、举枪、换弹对应 `bank/id/switch` 为 `100/160/0`、`100/140/0`、`100/1200/0`，射击参照为 `100/1100/0`。附加换弹轨 `2100/1200/0` 的 M1 证据覆盖骨架显示。
-- [播放器说明](../../player/MODEL_README.md) 和 [既有姿态记录](../model/playback_validation.json) 分别说明专用 CPU 蒙皮和站立、举枪、换弹各五个采样点。M1 的 [RE9 浏览器记录](../../runtime/web-3c-m1.tmp/re9-browser.json) 中，这三个片段的最大同名关节差分别约为 2.20e-7、4.54e-7、3.96e-7 m。记录中的四个输入哈希均与当前本地文件相符。
+- [播放器说明](../../player/MODEL_README.md) 和 [既有姿态记录](../model/playback_validation.json) 分别说明专用 CPU 蒙皮和站立、举枪、换弹各五个采样点。M1 的 [RE9 浏览器记录](evidence/web-3c-m1/re9-browser.json) 中，这三个片段的最大同名关节差分别约为 2.20e-7、4.54e-7、3.96e-7 m。记录中的四个输入哈希均与当前本地文件相符。
 - RE4 Steam build 22377325 的对照骨架是 `runtime/ue5_asset_probe/re4_wp4000/fbx/SK_RE4_Leon_Gray.fbx`。站立、举枪和射击在同目录 `decoded/` 的 `RE4_wp4000H_0160.json`、`RE4_wp4000H_0140.json`、`RE4_wp4000H_0500.json`，换弹在 `runtime/web-3c-m1.tmp/re4-reload/RE4_wp4000H_0810.json`。M1 已记录 160、500 的未映射骨哈希 `2749258283`。
 
 ## 动作与接口
@@ -36,7 +36,7 @@
 | 单发增量 | 0.06 s 峰值为 +13°，起点和结束恢复瞄准的挂点与左右手姿态。 |
 | 换弹接触 | 0.30 s 弹匣离弹匣口约 0.154 m。0.72 s 左手到弹匣口约 3.43e-8 m、弹匣到弹匣口约 1.05e-8 m。1.40 s 回到瞄准。 |
 
-数值证据保存在 [pose-readback.json](../../runtime/web-3c-m2.tmp/pose-readback.json) 的 `poses`，含构建素材 SHA-256。截图按帧保存为 [hold.png](../../runtime/web-3c-m2.tmp/hold.png)、[raise-mid.png](../../runtime/web-3c-m2.tmp/raise-mid.png)、[fire-peak.png](../../runtime/web-3c-m2.tmp/fire-peak.png) 和 [reload-contact.png](../../runtime/web-3c-m2.tmp/reload-contact.png)。最终 Web 3C 测试 10/10 通过，[测试日志](../../runtime/web-3c-m2.tmp/web-3c-tests.log) 保存在本地。生成两次得到相同的文件哈希。生产构建通过，Vite 提示部分共享包超过 500 kB。
+数值证据保存在 [pose-readback.json](evidence/web-3c-m2/pose-readback.json) 的 `poses`，含构建素材 SHA-256。截图按帧保存为 hold.png（本机 `runtime/web-3c-m2.tmp/hold.png`，37 KB，未入库）、raise-mid.png（本机 `runtime/web-3c-m2.tmp/raise-mid.png`，36 KB，未入库）、fire-peak.png（本机 `runtime/web-3c-m2.tmp/fire-peak.png`，36 KB，未入库） 和 reload-contact.png（本机 `runtime/web-3c-m2.tmp/reload-contact.png`，36 KB，未入库）。最终 Web 3C 测试 10/10 通过，[测试日志](evidence/web-3c-m2/web-3c-tests.log) 保存在本地。生成两次得到相同的文件哈希。生产构建通过，Vite 提示部分共享包超过 500 kB。
 
 ## 复现
 

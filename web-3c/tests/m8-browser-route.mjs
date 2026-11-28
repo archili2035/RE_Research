@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { testRoomRoute } from './test-room-route.mjs';
 
 const require = createRequire(import.meta.url);
-export const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+export const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright-core');
 export const project = new URL('../', import.meta.url);
 export const evidenceDirectory = new URL('../../runtime/web-3c-m8.tmp/', import.meta.url);
 export const viewport = { width: 1440, height: 1000 };

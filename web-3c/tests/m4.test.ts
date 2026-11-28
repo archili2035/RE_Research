@@ -7,7 +7,7 @@ import { castCrosshair, createCamera } from '../src/camera.ts';
 import type { InputSnapshot, SceneHit, SceneQueries, Vec3 } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
-import { withLegacyMovement } from '../src/preview-stages.ts';
+import { withLegacyMovement } from './legacy-fixtures.ts';
 import { createFixedLoop, createSimulation } from '../src/simulation.ts';
 import type { SimulationState } from '../src/simulation.ts';
 
@@ -53,6 +53,7 @@ async function run(spawn: typeof testRoom.spawn, segments: Segment[], renderHz =
       return { ...neutral, ...course[tick - 1].input, tick };
     },
     publish(state) {
+      room.syncView(state.tick);
       const { position } = state.camera;
       const clearanceM = Math.min(...testRoom.colliders.filter(({ id }) => id !== panel.name || panel.visible)
         .map(({ center, size }) => Math.hypot(
@@ -132,8 +133,10 @@ test('M4 exits aim with the optical field and unobstructed boom easing together'
   };
   const character = { ...testRoom.spawn, velocity: { x: 0, y: 0, z: 0 }, grounded: true };
   const ready = { id: 'player', phase: 'ready', aiming: false, magazine: 8, reserve: 16 } as const;
-  const camera = createCamera(character, { ...ready, phase: 'aiming', aiming: true }, scene);
-  const move = createCamera(character, ready, scene).initial;
+  // v4 camera without aim sway, so pitch stays exactly on the input.
+  const params = withLegacyMovement(defaultFeel).camera;
+  const camera = createCamera(character, { ...ready, phase: 'aiming', aiming: true }, scene, params);
+  const move = createCamera(character, ready, scene, params).initial;
   const aim = camera.initial;
   let pose = aim;
   let previousProgress = 0;
@@ -186,21 +189,23 @@ test('M4 shortens behind the closed door and eases outward while crossing the th
   const spawn = { position: { x: 9.25, y: 0.025, z: 0.65 }, yawRad: Math.PI };
   const { samples } = await run(spawn, [
     { name: 'door-closed', count: 45, input: { aimHeld: true } },
-    { name: 'door-opened', count: 1, input: { aimHeld: true, interactPressed: true } },
+    // Doors only open from the lowered stance, so the camera lowers for 20 steps before E.
+    { name: 'door-lower', count: 20, input: {} },
+    { name: 'door-opened', count: 1, input: { interactPressed: true } },
     { name: 'door-cross', count: 54, input: { aimHeld: true, moveY: -1 } },
     { name: 'door-recovered', count: 90, input: { aimHeld: true } },
   ]);
   const closed = at(samples, 45);
-  const opened = at(samples, 46);
-  const entered = at(samples, 100);
-  const recovered = at(samples, 190);
+  const opened = at(samples, 66);
+  const entered = at(samples, 120);
+  const recovered = at(samples, 210);
   assert.equal(closed.collider, testRoom.doors[0].colliderId);
   assert.ok(closed.boomM < 0.4);
   assert.equal(opened.state.camera.obstructed, false);
   assert.ok(opened.boomM < opened.desiredM / 2);
   assert.ok(entered.state.character.position.z < -0.65);
   assert.ok(Math.abs(recovered.boomM - recovered.desiredM) < 0.001);
-  assertSmoothRecovery(samples, 45, 190, 0.22);
+  assertSmoothRecovery(samples, 66, 210, 0.22);
   m4Trace.push(...samples);
 });
 

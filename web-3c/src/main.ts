@@ -60,6 +60,10 @@ async function boot() {
   const level = playfield !== defaultPlayfield && spawnParam?.length === 4 && spawnParam.every(Number.isFinite)
     ? { ...baseLevel, spawn: { position: { x: spawnParam[0], y: spawnParam[1], z: spawnParam[2] }, yawRad: spawnParam[3] * Math.PI / 180 } }
     : baseLevel;
+  // ?camera=source selects the source camera profile (camera-source.json) instead of the v4 video fit.
+  const feel = url.searchParams.get('camera') === 'source'
+    ? { ...defaultFeel, camera: { ...defaultFeel.camera, cameraProfile: { ...defaultFeel.camera.cameraProfile, value: 1, source: 'URL ?camera=source' } } }
+    : defaultFeel;
   const manifestUrl = new URL('./assets/clips.json', document.baseURI);
   const manifest = await loadClipManifest(manifestUrl).catch((error: unknown) => {
     console.warn('动作清单加载失败，使用默认时序', error);
@@ -69,8 +73,8 @@ async function boot() {
     console.warn('动作素材加载失败，使用胶囊占位', error);
     return undefined;
   });
-  const { scene, avatar, queries, initial, stages, doorPrompt, readMovementDebug, readActionPose, readCameraAnchor } =
-    await createTestRoom(level, manifest);
+  const { scene, avatar, queries, initial, stages, doorPrompt, readMovementDebug, readActionPose, readCameraAnchor, syncView } =
+    await createTestRoom(level, manifest, feel);
   const actionView = clips && createActionView(clips);
   if (actionView) scene.remove(avatar);
   else avatar.position.y = CHARACTER_BODY.heightM / 2;
@@ -99,7 +103,9 @@ async function boot() {
   });
   enter.addEventListener('click', async () => {
     try {
-      await viewport.requestPointerLock();
+      // Raw mouse deltas without OS acceleration, so lookRadPerPx means the same on every machine.
+      await (viewport.requestPointerLock as (options?: { unadjustedMovement?: boolean }) => Promise<void>)({ unadjustedMovement: true })
+        .catch(() => viewport.requestPointerLock());
     } catch {
       status.textContent = '鼠标锁定失败，请重新点击进入';
     }
@@ -120,6 +126,7 @@ async function boot() {
       const actionPose = readActionPose();
       const fired = emitted.some(({ type, subjectId }) => type === 'weapon.fired' && subjectId === state.action.id);
       render.commit({ ...state, actionPose, cameraAnchor: readCameraAnchor() }, fired);
+      syncView(state.tick);
       const { position, velocity, grounded } = state.character;
       const gait = actionPose.walk;
       hud.update(state.tick, state.action, emitted, doorPrompt(position));
@@ -155,8 +162,10 @@ async function boot() {
     camera.position.set(pose.position.x, pose.position.y, pose.position.z);
     camera.rotation.set(pose.pitchRad, pose.yawRad, 0, 'YXZ');
     const fov = THREE.MathUtils.radToDeg(pose.verticalFovRad);
-    if (camera.fov !== fov) {
+    const near = pose.nearClipM ?? 0.045;
+    if (camera.fov !== fov || camera.near !== near) {
       camera.fov = fov;
+      camera.near = near;
       camera.updateProjectionMatrix();
     }
     renderer.render(scene, camera);

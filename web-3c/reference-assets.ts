@@ -9,17 +9,17 @@ const files = new Set([
   '/player/math.js',
   '/player/model.js',
   '/player/skinning.js',
+  '/player/motions-extra.js',
+  '/player/wp0100.glb',
 ]);
 const localAddresses = new Set(['127.0.0.1', '::1', '::ffff:127.0.0.1']);
-const weaponRoute = '/wp0100.glb';
-// Local-only clips from scripts/web-3c/Leon3CExport. Never copied into dist or docs.
-const extraRoute = '/player/motions-extra.js';
+
 
 const serveReference: Connect.NextHandleFunction = async (request, response) => {
   const pathname = request.url?.split('?')[0] ?? '';
-  const weapon = pathname === weaponRoute;
-  const extra = pathname === extraRoute;
-  if ((!weapon && !extra && !files.has(pathname)) || !localAddresses.has(request.socket.remoteAddress ?? '')) {
+  const weapon = pathname.endsWith('.glb');
+  const optional = weapon || pathname.endsWith('motions-extra.js');
+  if (!files.has(pathname) || !localAddresses.has(request.socket.remoteAddress ?? '')) {
     response.writeHead(404).end();
     return;
   }
@@ -27,13 +27,12 @@ const serveReference: Connect.NextHandleFunction = async (request, response) => 
     response.writeHead(405, { Allow: 'GET, HEAD' }).end();
     return;
   }
-  const file = new URL(weapon ? '../runtime/web-3c-weapon.tmp/wp0100.glb'
-    : extra ? '../runtime/web-3c-leon-extra.tmp/motions-extra.js' : `../docs${pathname}`, import.meta.url);
+  const file = new URL(`../docs${pathname}`, import.meta.url);
   let size: number;
   try {
     size = (await stat(file)).size;
   } catch {
-    response.writeHead(weapon || extra ? 204 : 404).end();
+    response.writeHead(optional ? 204 : 404).end();
     return;
   }
   const type = weapon ? 'model/gltf-binary' : 'text/javascript; charset=utf-8';

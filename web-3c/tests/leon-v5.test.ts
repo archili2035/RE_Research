@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { createContext, runInContext } from 'node:vm';
 import { Quaternion } from 'three';
@@ -13,6 +13,7 @@ import type { LeonAssets } from '../src/leon-view.ts';
 import { createSimulation } from '../src/simulation.ts';
 
 const neutral = createInputBuffer().sample(0);
+const extraMotions = new URL('../../docs/player/motions-extra.js', import.meta.url);
 const near = (actual: number, expected: number, tolerance: number, label = '') =>
   assert.ok(Math.abs(actual - expected) <= tolerance, `${label} ${actual} vs ${expected}`);
 const floor = { id: 'floor', size: { x: 40, y: 0.2, z: 40 }, position: { x: 0, y: -0.1, z: 0 } };
@@ -22,8 +23,8 @@ const flat: LevelDefinition = {
   doors: [], targets: [],
 };
 
-async function drive(course: Partial<InputSnapshot>[]) {
-  const room = await createTestRoom(flat);
+async function drive(course: Partial<InputSnapshot>[], feel = defaultFeel) {
+  const room = await createTestRoom(flat, undefined, feel);
   const step = createSimulation(room.initial, room.queries, {
     ...room.stages, sampleInput: (tick) => ({ ...neutral, ...course[tick - 1], tick }), publish() {},
   });
@@ -56,7 +57,7 @@ test('heading turns toward travel while lowered and to camera yaw plus the hold 
   const course: Partial<InputSnapshot>[] = [
     ...Array.from({ length: 40 }, () => ({ moveX: 1 })),        // walk right relative to the camera
     ...Array.from({ length: 20 }, () => ({})),                  // stop keeps the heading
-    ...Array.from({ length: 40 }, () => ({ aimHeld: true })),   // raise turns back to the camera
+    ...Array.from({ length: 240 }, () => ({ aimHeld: true })),  // raise turns back to the camera (aimChaseS lag)
   ];
   const run = await drive(course);
   const yaw = (i: number) => run[i].state.character.yawRad;
@@ -66,7 +67,11 @@ test('heading turns toward travel while lowered and to camera yaw plus the hold 
   }
   near(yaw(39), -Math.PI / 2, 1e-6, 'faces right');
   near(yaw(59), -Math.PI / 2, 1e-6, 'keeps heading when idle');
-  near(yaw(99), run[99].state.camera.yawRad + offset, 1e-6, 'aim heading');
+  // The camera yaw carries the ±0.25° aim sway, so allow that much.
+  near(yaw(299), run[299].state.camera.yawRad + offset, 0.006, 'aim heading');
+  // While the body lags, the remaining difference is reported for the upper-body twist and the wheel blend.
+  near(run[299].pose.aim.yawTwistRad, 0, 0.006, 'settled twist');
+  assert.ok(Math.abs(run[95].pose.aim.yawTwistRad) > 0.1, 'twist covers the lag once the raise has finished');
   assert.ok(run.slice(0, 40).some(({ state }) => Math.abs(state.character.velocity.x - LEON_ROOT_SPEED.walk) < 0.02));
 });
 
@@ -81,7 +86,8 @@ test('lowered travel uses the carry-gun phase, aimed travel the strafe phase, an
   for (let i = 1; i < walking.length; i++) {
     const advance = walking[i].pose.walk.carryCycles - walking[i - 1].pose.walk.carryCycles;
     const { x, z } = walking[i].state.character.velocity;
-    near(advance, Math.hypot(x, z) / 60 / LEON_MOVE_WALK[0].distanceM, 1e-6, 'carry phase');
+    // Collision rounding and the direction crossfade allow about 1% between the step speed and the stride.
+    near(advance, Math.hypot(x, z) / 60 / LEON_MOVE_WALK[0].distanceM, 0.01 * Math.hypot(x, z) / 60 / LEON_MOVE_WALK[0].distanceM, 'carry phase');
     assert.equal(walking[i].pose.walk.hold, 0);
   }
   assert.ok(run[119].pose.walk.run > 0.95, 'sprint reaches the run loop');
@@ -103,7 +109,10 @@ test('camera kick follows the arm0000 recoil curve after the shot and never move
     { aimHeld: true, firePressed: true },
     ...Array.from({ length: 200 }, () => ({ aimHeld: true })),
   ];
-  const run = await drive(course);
+  // Without the aim sway, the only pitch offset after the shot is the recoil kick.
+  const { aimSwayDeg: _sway, ...camera } = defaultFeel.camera;
+  void _sway;
+  const run = await drive(course, { ...defaultFeel, camera });
   const base = run[39].state.camera.pitchRad;
   const fired = run.findIndex(({ state }) => state.action.magazine < 8);
   assert.ok(fired > 0);
@@ -116,12 +125,12 @@ test('camera kick follows the arm0000 recoil curve after the shot and never move
   assert.ok(peakIndex > 0 && peakIndex <= Math.ceil(0.04 * 2.8 * 60) + 1);
 });
 
-test('optional carry-gun clips and the spine pitch layer drive the Leon view when present', { skip: !process.env.LEON_EXTRA_MOTIONS }, async () => {
+test('optional carry-gun clips and the spine pitch layer drive the Leon view when present', { skip: !existsSync(extraMotions) }, async () => {
   const context = createContext({ window: {} }) as unknown as Record<string, unknown> & { window: Record<string, unknown> };
   for (const file of ['model.js', 'motions.js', 'masks.js', 'math.js', 'skinning.js']) {
     runInContext(readFileSync(new URL(`../../docs/player/${file}`, import.meta.url), 'utf8'), context, { filename: file });
   }
-  runInContext(readFileSync(process.env.LEON_EXTRA_MOTIONS!, 'utf8'), context, { filename: 'motions-extra.js' });
+  runInContext(readFileSync(extraMotions, 'utf8'), context, { filename: 'motions-extra.js' });
   const assets = { ...context.window, MotionMath: context.MotionMath, LeonSkinning: context.LeonSkinning } as unknown as LeonAssets;
   const leon = createLeonView(assets);
   const run = await drive([...Array.from({ length: 60 }, () => ({ aimHeld: true, lookDeltaY: -3 })), ...Array.from({ length: 40 }, () => ({ moveY: 1 }))]);

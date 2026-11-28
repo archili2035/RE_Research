@@ -7,7 +7,7 @@ import { castCrosshair, createCamera } from '../src/camera.ts';
 import type { SceneQueries, Vec3 } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
-import { withLegacyMovement } from '../src/preview-stages.ts';
+import { withLegacyMovement } from './legacy-fixtures.ts';
 import { createSimulation } from '../src/simulation.ts';
 import { cameraTuneSteps } from './camera-tune-route.mjs';
 
@@ -53,6 +53,7 @@ test('camera tune route stays clear and the shot after the doorway projects to t
     ...room.stages,
     sampleInput: (tick) => ({ ...neutral, ...cameraTuneSteps[tick - 1].input, tick }),
     publish(state, input, events) {
+      room.syncView(state.tick);
       const { tick, camera, character } = state;
       const { position, yawRad, pitchRad } = camera;
       const sensitivity = defaultFeel.camera.lookRadPerPx.value;

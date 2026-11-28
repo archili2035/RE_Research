@@ -1,0 +1,148 @@
+{
+  "samples": 393,
+  "gameplayEqual": true,
+  "eventsEqual": true,
+  "toeWorldEqual": true,
+  "upperRotationDifferenceAtTick78Deg": {
+    "Spine_0": 6.8551976633839535,
+    "Spine_1": 3.12768144446063,
+    "Spine_2": 3.8247849146602086,
+    "L_Arm_Clavicle": 1.1929687587965268,
+    "R_Arm_Clavicle": 0.8818169055498958,
+    "L_Arm_Upper": 2.5092475774064877,
+    "R_Arm_Upper": 1.4908157447668349,
+    "L_Arm_Hand": 2.0780535968910923,
+    "R_Arm_Hand": 1.3554886445297751,
+    "R_Wep": 0.000018390847172211968
+  },
+  "before": {
+    "stable": [
+      {
+        "label": "left",
+        "ticks": [
+          43,
+          92
+        ],
+        "shoulderStepDeg": 0.032197089220715354,
+        "muzzleStepDeg": 0.06481474749402553,
+        "supportToeTravelMm": 31.690809721208495,
+        "gripTravelMm": 0.01667285745933676
+      },
+      {
+        "label": "right",
+        "ticks": [
+          93,
+          142
+        ],
+        "shoulderStepDeg": 0.029173487859068106,
+        "muzzleStepDeg": 0.04511698663120264,
+        "supportToeTravelMm": 20.685883118935838,
+        "gripTravelMm": 0.01371923658341545
+      },
+      {
+        "label": "diagonal",
+        "ticks": [
+          143,
+          192
+        ],
+        "shoulderStepDeg": 0.02760909527336828,
+        "muzzleStepDeg": 0.08305045906372485,
+        "supportToeTravelMm": 47.04631472889393,
+        "gripTravelMm": 0.016874170055114372
+      }
+    ],
+    "stop": {
+      "shoulderStepDeg": 0.02314999568387176,
+      "muzzleStepDeg": 0.0683870220492462
+    },
+    "recovered": [
+      {
+        "action": "raise",
+        "tick": 272,
+        "shoulderStepDeg": 0.36811332536567953,
+        "muzzleStepDeg": 0.16197931444426758
+      },
+      {
+        "action": "fire",
+        "tick": 298,
+        "shoulderStepDeg": 0.2521027758402081,
+        "muzzleStepDeg": 1.5324122845288166
+      },
+      {
+        "action": "reload",
+        "tick": 386,
+        "shoulderStepDeg": 0.014405306023591274,
+        "muzzleStepDeg": 8.427345201295724
+      }
+    ],
+    "maxMountMatrixError": 4.440892098500626e-16,
+    "rigOffsetSpanMm": 0,
+    "stopToeTravelMm": 347.5488554338729,
+    "fireGripTravelMm": 0.8737702807144706
+  },
+  "after": {
+    "stable": [
+      {
+        "label": "left",
+        "ticks": [
+          43,
+          92
+        ],
+        "shoulderStepDeg": 1.5247883559269937,
+        "muzzleStepDeg": 1.7016751693193413,
+        "supportToeTravelMm": 31.690809721208495,
+        "gripTravelMm": 0.23389079112016112
+      },
+      {
+        "label": "right",
+        "ticks": [
+          93,
+          142
+        ],
+        "shoulderStepDeg": 0.46904452985185796,
+        "muzzleStepDeg": 0.23455241041094768,
+        "supportToeTravelMm": 20.685883118935838,
+        "gripTravelMm": 0.21430498652086344
+      },
+      {
+        "label": "diagonal",
+        "ticks": [
+          143,
+          192
+        ],
+        "shoulderStepDeg": 0.3454796686414761,
+        "muzzleStepDeg": 0.09871448178835124,
+        "supportToeTravelMm": 47.04631472889393,
+        "gripTravelMm": 0.18783561206889593
+      }
+    ],
+    "stop": {
+      "shoulderStepDeg": 1.2674619763487565,
+      "muzzleStepDeg": 1.1669366580054477
+    },
+    "recovered": [
+      {
+        "action": "raise",
+        "tick": 272,
+        "shoulderStepDeg": 0.14886242733679556,
+        "muzzleStepDeg": 0.055483950492989376
+      },
+      {
+        "action": "fire",
+        "tick": 298,
+        "shoulderStepDeg": 0.2345484501324214,
+        "muzzleStepDeg": 1.5514886771356926
+      },
+      {
+        "action": "reload",
+        "tick": 386,
+        "shoulderStepDeg": 0.09034557776336988,
+        "muzzleStepDeg": 8.497935048802214
+      }
+    ],
+    "maxMountMatrixError": 4.440892098500626e-16,
+    "rigOffsetSpanMm": 0,
+    "stopToeTravelMm": 347.5488554338729,
+    "fireGripTravelMm": 5.996253298900332
+  }
+}

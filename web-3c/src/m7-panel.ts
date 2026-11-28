@@ -208,6 +208,7 @@ const labels = {
   movement: {
     walkSpeedMps: '步行速度（m/s）', sprintSpeedMps: '奔跑速度（m/s）', aimSpeedMps: '瞄准移速（m/s）',
     turnSpeedRadPerS: '朝向追随速度（rad/s）', holdYawOffsetRad: '持枪偏航偏移（rad）',
+    accelS: '加速时间（s）', decelS: '减速时间（s）', aimChaseS: '举枪身体追随时间常数（s）', walkFacesCamera: '低枪行走面向镜头（0/1）',
   },
   camera: {
     lookRadPerPx: '鼠标灵敏度（rad/px）', moveDistanceM: '移动镜头距离（m）', aimDistanceM: '瞄准镜头距离（m）',
@@ -219,8 +220,13 @@ const labels = {
     aimTransitionS: '瞄准过渡时间常数（s）', moveTransitionS: '普通构图过渡时间常数（s）',
     recoveryS: '离墙恢复时间常数（s）', recoveryDeadbandM: '贴墙防回弹余量（m）',
     recoilPitchRad: '开火镜头上抬（rad）', recoilCurveS: '后坐曲线时长（s）',
+    aimSwayDeg: '瞄准晃动幅度（°）', shotShakeM: '开枪抖动幅度（m）',
+    cameraProfile: '镜头档（0 拟合／1 原作结构）', sourceFovHorizontal: '原作 FOV 为水平角（0/1）', sourcePitchSign: '原作俯仰符号（±1）',
   },
-  actions: { magazineCapacity: '弹匣容量', initialReserve: '初始备用弹' },
+  actions: {
+    magazineCapacity: '弹匣容量', initialReserve: '初始备用弹', fireBufferS: '开火缓存（s）',
+    walkBlendInS: '步态淡入（s）', walkBlendOutS: '步态淡出（s）', holdStartShootS: '举枪中开火门槛（s）',
+  },
 };
 const groups: Record<Group, string> = { movement: '运动', camera: '镜头', actions: '动作' };
 const fields: { group: Group; key: string; input: HTMLInputElement }[] = [];
@@ -233,8 +239,8 @@ for (const group of Object.keys(groups) as Group[]) {
     const input = document.createElement('input');
     input.type = 'number';
     input.required = true;
-    input.step = group === 'actions' ? '1' : 'any';
-    input.min = key === 'initialPitchRad' ? '-1.0472' : key === 'holdYawOffsetRad' ? '-1' : key === 'magazineCapacity' ? '1' : key === 'lookRadPerPx' ? '0.0001' :
+    input.step = key === 'magazineCapacity' || key === 'initialReserve' ? '1' : 'any';
+    input.min = key === 'initialPitchRad' ? '-1.0472' : key === 'holdYawOffsetRad' || key === 'sourcePitchSign' ? '-1' : key === 'magazineCapacity' ? '1' : key === 'lookRadPerPx' ? '0.0001' :
       key.endsWith('FovRad') || key.endsWith('HeightM') ? '0.1' : '0';
     input.max = key === 'initialPitchRad' ? '1.0472' : key === 'holdYawOffsetRad' ? '1' : key === 'recoilCurveS' ? '10' : group === 'actions' ? '999' : key === 'lookRadPerPx' ? '0.02' :
       key.endsWith('FovRad') ? '2.9' : key.endsWith('HeightM') ? '2' :

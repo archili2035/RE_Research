@@ -8,7 +8,7 @@ import { castCrosshair, interpolatePosition } from '../src/camera.ts';
 import type { CameraPose, InputSnapshot, LevelDefinition, SceneHit, Vec3 } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
-import { withLegacyMovement } from '../src/preview-stages.ts';
+import { withLegacyMovement } from './legacy-fixtures.ts';
 
 const legacy = withLegacyMovement(defaultFeel);
 import { createPlayerView } from '../src/player-view.ts';
@@ -169,6 +169,7 @@ test('M4 clears the live scene and shows the exact firing frame at 60/120 Hz, in
       ...room.stages,
       sampleInput: (tick) => ({ ...neutral, ...inputs[tick - 1] as Partial<InputSnapshot>, tick }),
       publish(state, _input, events) {
+        room.syncView(state.tick);
         previous = current;
         current = state;
         const fired = events.some(({ type }) => type === 'weapon.fired');

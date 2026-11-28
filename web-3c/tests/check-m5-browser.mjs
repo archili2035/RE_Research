@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { preview } from 'vite';
 
 const require = createRequire(import.meta.url);
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright-core');
 const project = fileURLToPath(new URL('../', import.meta.url));
 const out = new URL('../../runtime/web-3c-m5.tmp/', import.meta.url);
 

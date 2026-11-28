@@ -1,0 +1,334 @@
+{
+  "before": "6cd24d8003df",
+  "after": "2b7d5a1d693c",
+  "count": 558,
+  "collisionAndActionEqual": true,
+  "eventsEqual": true,
+  "stages": [
+    {
+      "label": "hold",
+      "ticks": [
+        1,
+        42
+      ],
+      "shoulderDeg": [
+        7.329,
+        7.329
+      ],
+      "muzzleDeg": [
+        11.239,
+        11.239
+      ],
+      "supportMm": [
+        0,
+        0
+      ],
+      "kneeDeg": [
+        0,
+        0
+      ],
+      "gripTravelMm": [
+        53.114,
+        53.114
+      ]
+    },
+    {
+      "label": "back",
+      "ticks": [
+        43,
+        137
+      ],
+      "shoulderDeg": [
+        0.807,
+        0.297
+      ],
+      "muzzleDeg": [
+        0.669,
+        0.266
+      ],
+      "supportMm": [
+        50.321,
+        1.816
+      ],
+      "kneeDeg": [
+        10.423,
+        10.423
+      ],
+      "gripTravelMm": [
+        0.056,
+        0.092
+      ]
+    },
+    {
+      "label": "left",
+      "ticks": [
+        138,
+        217
+      ],
+      "shoulderDeg": [
+        0.21,
+        0.089
+      ],
+      "muzzleDeg": [
+        0.18,
+        0.053
+      ],
+      "supportMm": [
+        41.63,
+        2.289
+      ],
+      "kneeDeg": [
+        10.857,
+        10.857
+      ],
+      "gripTravelMm": [
+        0.242,
+        0.336
+      ]
+    },
+    {
+      "label": "right",
+      "ticks": [
+        218,
+        297
+      ],
+      "shoulderDeg": [
+        0.513,
+        0.197
+      ],
+      "muzzleDeg": [
+        0.303,
+        0.119
+      ],
+      "supportMm": [
+        366.281,
+        99.732
+      ],
+      "kneeDeg": [
+        10.584,
+        11.65
+      ],
+      "gripTravelMm": [
+        0.338,
+        0.615
+      ]
+    },
+    {
+      "label": "diagonal",
+      "ticks": [
+        298,
+        349
+      ],
+      "shoulderDeg": [
+        0.61,
+        0.13
+      ],
+      "muzzleDeg": [
+        0.114,
+        0.087
+      ],
+      "supportMm": [
+        45.332,
+        1.102
+      ],
+      "kneeDeg": [
+        8.767,
+        8.709
+      ],
+      "gripTravelMm": [
+        0.202,
+        0.147
+      ]
+    },
+    {
+      "label": "stop",
+      "ticks": [
+        350,
+        375
+      ],
+      "shoulderDeg": [
+        0.644,
+        0.461
+      ],
+      "muzzleDeg": [
+        0.545,
+        0.449
+      ],
+      "supportMm": [
+        0,
+        0
+      ],
+      "kneeDeg": [
+        7.641,
+        5.583
+      ],
+      "gripTravelMm": [
+        0.039,
+        0.089
+      ]
+    },
+    {
+      "label": "lower",
+      "ticks": [
+        376,
+        395
+      ],
+      "shoulderDeg": [
+        11.034,
+        11.034
+      ],
+      "muzzleDeg": [
+        16.706,
+        16.706
+      ],
+      "supportMm": [
+        0,
+        0
+      ],
+      "kneeDeg": [
+        0,
+        8.202
+      ],
+      "gripTravelMm": [
+        43.208,
+        43.208
+      ]
+    },
+    {
+      "label": "ready-left",
+      "ticks": [
+        396,
+        409
+      ],
+      "shoulderDeg": [
+        0,
+        0
+      ],
+      "muzzleDeg": [
+        0,
+        0
+      ],
+      "supportMm": [
+        6.981,
+        17.303
+      ],
+      "kneeDeg": [
+        12.91,
+        9.083
+      ],
+      "gripTravelMm": [
+        0,
+        0
+      ]
+    },
+    {
+      "label": "raise-left",
+      "ticks": [
+        410,
+        447
+      ],
+      "shoulderDeg": [
+        7.329,
+        7.329
+      ],
+      "muzzleDeg": [
+        11.239,
+        11.239
+      ],
+      "supportMm": [
+        38.761,
+        13.601
+      ],
+      "kneeDeg": [
+        10.922,
+        10.904
+      ],
+      "gripTravelMm": [
+        53.114,
+        53.114
+      ]
+    },
+    {
+      "label": "fire-left",
+      "ticks": [
+        448,
+        466
+      ],
+      "shoulderDeg": [
+        2.03,
+        1.808
+      ],
+      "muzzleDeg": [
+        21.917,
+        21.809
+      ],
+      "supportMm": [
+        5.768,
+        0.269
+      ],
+      "kneeDeg": [
+        8.345,
+        5.865
+      ],
+      "gripTravelMm": [
+        2.584,
+        2.545
+      ]
+    },
+    {
+      "label": "reload-left",
+      "ticks": [
+        467,
+        558
+      ],
+      "shoulderDeg": [
+        0.21,
+        0.077
+      ],
+      "muzzleDeg": [
+        14.313,
+        14.267
+      ],
+      "supportMm": [
+        40.624,
+        0.7
+      ],
+      "kneeDeg": [
+        10.859,
+        10.973
+      ],
+      "gripTravelMm": [
+        524.411,
+        524.28
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "label": "right",
+      "foot": "L",
+      "ticks": [
+        218,
+        225
+      ],
+      "driftMm": [
+        453.227,
+        99.732
+      ]
+    },
+    {
+      "label": "stop",
+      "foot": "R",
+      "ticks": [
+        350,
+        375
+      ],
+      "driftMm": [
+        385.096,
+        0
+      ]
+    }
+  ],
+  "maxMountError": 4.440892098500626e-16,
+  "modelOffsetSpanMm": 0
+}

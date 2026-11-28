@@ -110,4 +110,4 @@ Windows 11 Pro 22621，i9-12900K、RTX 3080（驱动 32.0.15.8129）。同一个
 - xavierstudio-site-kit 仓库检查完成，仍报告 9 个存量页面未引用共享 theme，以及 5 个存量页面有写死色值。生成的首页保留共享 theme 引用。
 - 本机静态验收通过，包括使用本地映射域名验证同源参考播放器。外部托管状态未验证。本地映射没有经过外部托管的网络、部署和缓存链路。
 
-本机原始证据和[构建文件大小记录](../../runtime/web-3c-m8.tmp/build.json)保存在 Git 忽略的 `runtime/web-3c-m8.tmp/`，含[固定步 JSON](../../runtime/web-3c-m8.tmp/fixed-route.json)、[静态检查 JSON](../../runtime/web-3c-m8.tmp/static.json)、[可见窗口逐帧 JSON](../../runtime/web-3c-m8.tmp/performance-headed.json)和[上一轮无头逐帧 JSON](../../runtime/web-3c-m8.tmp/performance.json)。
+本机原始证据和[构建文件大小记录](evidence/web-3c-m8/build.json)保存在 Git 忽略的 `runtime/web-3c-m8.tmp/`，含固定步 JSON（本机 `runtime/web-3c-m8.tmp/fixed-route.json`，1162 KB，未入库）、[静态检查 JSON](evidence/web-3c-m8/static.json)、[可见窗口逐帧 JSON](evidence/web-3c-m8/performance-headed.json)和[上一轮无头逐帧 JSON](evidence/web-3c-m8/performance.json)。

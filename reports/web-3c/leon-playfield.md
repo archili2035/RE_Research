@@ -28,9 +28,9 @@
 | 举枪前移，第 152–240 步 | 第 179 步举枪恢复。稳态支撑脚趾水平最大偏移 1.68 cm。右手坐标系中的左手位置变化小于 0.01 mm，两手朝向变化均小于 0.001°。 |
 | 单发及换弹，第 241–314 步 | 第 241 步接受单发，第 245 步顺序 0 开火、顺序 1 扣至 `7/16`，第 256 步恢复。第 314 步补至 `8/15`。相同前移相位下，两个遮罩均保留髋姿态和脚趾水平位置。 |
 
-[逐步骨骼与事件记录](../../runtime/web-3c-leon-forward.tmp/forward-trace.json) 的 `samples` 包含世界脚趾、髋、脊柱、肩、双手和握姿读回。支撑脚数字取水平位移，稳态样本使用 `100/120` 的左脚第 42–70 帧和右脚第 3–31 帧。Chromium 生产页用实际键鼠验证急停、举枪前移和移动单发，后续换弹及外观往返切换保留最终弹量。 [浏览器事件和位移](../../runtime/web-3c-leon.tmp/browser-check.json) · [站立](../../runtime/web-3c-leon.tmp/leon-standing.png) · [急停](../../runtime/web-3c-leon.tmp/leon-stopped.png) · [举枪前移](../../runtime/web-3c-leon.tmp/leon-aim.png)
+逐步骨骼与事件记录（本机 `runtime/web-3c-leon-forward.tmp/forward-trace.json`，693 KB，未入库） 的 `samples` 包含世界脚趾、髋、脊柱、肩、双手和握姿读回。支撑脚数字取水平位移，稳态样本使用 `100/120` 的左脚第 42–70 帧和右脚第 3–31 帧。Chromium 生产页用实际键鼠验证急停、举枪前移和移动单发，后续换弹及外观往返切换保留最终弹量。 [浏览器事件和位移](evidence/web-3c-leon/browser-check.json) · 站立（本机 `runtime/web-3c-leon.tmp/leon-standing.png`，235 KB，未入库） · 急停（本机 `runtime/web-3c-leon.tmp/leon-stopped.png`，147 KB，未入库） · 举枪前移（本机 `runtime/web-3c-leon.tmp/leon-aim.png`，136 KB，未入库）
 
-全量测试 23/23 通过，TypeScript 和生产构建通过，Vite 报告两个共享包超过 500 kB。 [测试日志](../../runtime/web-3c-leon-forward.tmp/tests.log) · [构建日志](../../runtime/web-3c-leon-forward.tmp/build.log)
+全量测试 23/23 通过，TypeScript 和生产构建通过，Vite 报告两个共享包超过 500 kB。 [测试日志](evidence/web-3c-leon-forward/tests.log) · [构建日志](evidence/web-3c-leon-forward/build.log)
 
 从仓库根目录运行。浏览器复用下文的 Playwright 配置。
 
@@ -49,9 +49,9 @@ node web-3c/tests/check-leon-browser.mjs
 
 `WalkPose` 现在传递循环相位、淡化权重和四向源轨权重，由 `actions.ts` 提交、`main.ts` 插值，`leon-view.ts` 采样。`CharacterState`、`ActionState`、`GameEvent` 及枪械时间轴沿用原接口。低枪的上身、举枪和单发的 Mask 4、换弹的 Mask 2 继续按原层级合成。 [轨道及相位](../../web-3c/src/leon-locomotion.ts) · [技术说明](../../web-3c/TECHNICAL.md)
 
-Web 3C 全量测试 25/25 通过。举枪 602 步和低枪 616 步测试都逐骨比对了四个纯方向及四组斜向。髋和腿的局部位置误差小于 0.001 mm，旋转误差小于 0.001°。Chromium 键鼠与研究首页静态包验收通过。正式 616 步路线的 31 条事件保持一致，第 375 步依次开火、扣至 `7/16`、命中，第 431 步补至 `8/15`。 [举枪轨迹](../../runtime/web-3c-leon-authored.tmp/final/aimed-steps.json) · [低枪轨迹](../../runtime/web-3c-leon-authored.tmp/final/ready-steps.json) · [事件轨迹](../../runtime/web-3c-leon-authored.tmp/final/route.json) · [全量日志](../../runtime/web-3c-leon-authored.tmp/final/tests.log) · [门户日志](../../runtime/web-3c-leon-authored.tmp/final/portal.log)
+Web 3C 全量测试 25/25 通过。举枪 602 步和低枪 616 步测试都逐骨比对了四个纯方向及四组斜向。髋和腿的局部位置误差小于 0.001 mm，旋转误差小于 0.001°。Chromium 键鼠与研究首页静态包验收通过。正式 616 步路线的 31 条事件保持一致，第 375 步依次开火、扣至 `7/16`、命中，第 431 步补至 `8/15`。 举枪轨迹（本机 `runtime/web-3c-leon-authored.tmp/final/aimed-steps.json`，3611 KB，未入库） · 低枪轨迹（本机 `runtime/web-3c-leon-authored.tmp/final/ready-steps.json`，3709 KB，未入库） · 事件轨迹（本机 `runtime/web-3c-leon-authored.tmp/final/route.json`，1151 KB，未入库） · [全量日志](evidence/web-3c-leon-authored/final/tests.log) · [门户日志](evidence/web-3c-leon-authored/final/portal.log)
 
-固定步举枪 A→D 期间，相邻步的脚尖位移峰值为 12.6 cm。持续顶墙从第 509 步冻结相位，第 516 步淡回站姿。急停和顶墙回站姿时，脚尖从首个停止样本开始的最大三维位移分别约 31 cm 和 55 cm，包含抬脚和收脚，当前版本可看到这段收脚。 [最终试玩短片](../../runtime/web-3c-leon-authored.tmp/final/authored.webm) · [录像逐帧状态](../../runtime/web-3c-leon-authored.tmp/final/authored-browser.json)
+固定步举枪 A→D 期间，相邻步的脚尖位移峰值为 12.6 cm。持续顶墙从第 509 步冻结相位，第 516 步淡回站姿。急停和顶墙回站姿时，脚尖从首个停止样本开始的最大三维位移分别约 31 cm 和 55 cm，包含抬脚和收脚，当前版本可看到这段收脚。 最终试玩短片（本机 `runtime/web-3c-leon-authored.tmp/final/authored.webm`，595 KB，未入库） · [录像逐帧状态](evidence/web-3c-leon-authored/final/authored-browser.json)
 
 ```powershell
 $out = Join-Path $PWD 'runtime/web-3c-leon-authored.tmp/final'
@@ -70,9 +70,9 @@ node web-3c/tests/check-m8-static.mjs
 
 Steam 官方商店的第 4 段短预览约 0.9–1.8 s，以及 PlayStation 的公开举枪画面可用于核对上身姿态。现有片段没有足够长的全身镜头与同步键位。侧移领步脚、横移时是否交叉、后退脚尖离地高度、斜向骨盆偏角、A→D 换重心和顶墙收步的时刻仍需实机录像校准。 [Steam 官方预览](https://store.steampowered.com/app/3764200/Resident_Evil_Requiem/) · [PlayStation 举枪画面](https://www.playstation.com/en-us/games/resident-evil-requiem/)
 
-固定步路线逐帧记录碰撞位移、角色局部两条腿的四个关节、世界脚趾位置、髋旋转、肩线和双手握姿。Chromium 生产页在鼠标锁定后按住右键，用实际 W、A、S、D、W+D、S+A、A→D 输入走过同类路径，保持 D 顶墙时检查相位和步态权重。原 W、急停、开火与换弹回归仍在同一测试套件中。 [固定步轨迹](../../runtime/web-3c-leon-direction.tmp/fixed-steps.json) · [浏览器记录](../../runtime/web-3c-leon-direction.tmp/browser-check.json) · [W 和弹量回归](../../runtime/web-3c-leon-direction.tmp/forward-regression.json)
+固定步路线逐帧记录碰撞位移、角色局部两条腿的四个关节、世界脚趾位置、髋旋转、肩线和双手握姿。Chromium 生产页在鼠标锁定后按住右键，用实际 W、A、S、D、W+D、S+A、A→D 输入走过同类路径，保持 D 顶墙时检查相位和步态权重。原 W、急停、开火与换弹回归仍在同一测试套件中。 固定步轨迹（本机 `runtime/web-3c-leon-direction.tmp/fixed-steps.json`，2709 KB，未入库） · [浏览器记录](evidence/web-3c-leon-direction/browser-check.json) · W 和弹量回归（本机 `runtime/web-3c-leon-direction.tmp/forward-regression.json`，903 KB，未入库）
 
-458 步路线中，程序化步态的连续支撑区间内，脚趾水平最大偏移约 0.52 mm，两脚趾最小横向间距约 9 cm。第 319 步 A→D 时相位继续推进，原支撑脚水平位移低于 1 mm。第 423–430 步顶墙淡出期间相位恒定，支撑脚水平偏移低于 1 mm。持枪肩线与两手朝向变化均低于 0.001°。这些数值来自项目灰盒路线，用来检查是否滑脚、交叉或将骨盆旋转传给上身。 [测试日志](../../runtime/web-3c-leon-direction.tmp/tests.log) · [构建日志](../../runtime/web-3c-leon-direction.tmp/build.log)
+458 步路线中，程序化步态的连续支撑区间内，脚趾水平最大偏移约 0.52 mm，两脚趾最小横向间距约 9 cm。第 319 步 A→D 时相位继续推进，原支撑脚水平位移低于 1 mm。第 423–430 步顶墙淡出期间相位恒定，支撑脚水平偏移低于 1 mm。持枪肩线与两手朝向变化均低于 0.001°。这些数值来自项目灰盒路线，用来检查是否滑脚、交叉或将骨盆旋转传给上身。 [测试日志](evidence/web-3c-leon-direction/tests.log) · [构建日志](evidence/web-3c-leon-direction/build.log)
 
 ```powershell
 $env:LEON_DIRECTION_EVIDENCE = Join-Path $PWD 'runtime/web-3c-leon-direction.tmp/fixed-steps.json'
@@ -85,7 +85,7 @@ node web-3c/tests/check-leon-browser.mjs
 
 举枪持续左移使用 `100/122`，持续右移使用 `100/126`。按两轨的落脚和离地时刻映射到现有步态相位。髋、腿和摆脚采用解码姿态，Rapier 的实际位移继续驱动相位，支撑脚沿用世界空间锚点。方向翻转和急停时淡出解码轨，延续当前相位及支撑脚。髋部转动由现有脊柱补偿抵消，持枪、开火和换弹沿用现有遮罩。
 
-改前构建 `83d3168276c1` 使用程序步态，改后本地试玩包和门户静态包均为 `20fd13abbf44`。短片同为 5.1 秒、960×540、30 fps，153 帧的试玩状态读数逐帧一致。持续左移从 0.27 秒开始，1.50 秒换向右移，2.47 秒松键急停，2.90 秒再向左移动直至贴墙。 [改前](../../runtime/web-3c-leon-strafe.tmp/before.webm) · [改后](../../runtime/web-3c-leon-strafe.tmp/after.webm) · [同帧对照](../../runtime/web-3c-leon-strafe.tmp/comparison-samples.png) · [改前浏览器记录](../../runtime/web-3c-leon-strafe.tmp/before-browser.json) · [改后浏览器记录](../../runtime/web-3c-leon-strafe.tmp/after-browser.json)
+改前构建 `83d3168276c1` 使用程序步态，改后本地试玩包和门户静态包均为 `20fd13abbf44`。短片同为 5.1 秒、960×540、30 fps，153 帧的试玩状态读数逐帧一致。持续左移从 0.27 秒开始，1.50 秒换向右移，2.47 秒松键急停，2.90 秒再向左移动直至贴墙。 改前（本机 `runtime/web-3c-leon-strafe.tmp/before.webm`，359 KB，未入库） · 改后（本机 `runtime/web-3c-leon-strafe.tmp/after.webm`，382 KB，未入库） · 同帧对照（本机 `runtime/web-3c-leon-strafe.tmp/comparison-samples.png`，133 KB，未入库） · [改前浏览器记录](evidence/web-3c-leon-strafe/before-browser.json) · [改后浏览器记录](evidence/web-3c-leon-strafe/after-browser.json)
 
 | 固定步读数 | 改前 | 改后 |
 | --- | ---: | ---: |
@@ -95,9 +95,9 @@ node web-3c/tests/check-leon-browser.mjs
 | 稳态最小横向脚间距 | 9.0 cm | 9.0 cm |
 | 连续支撑区间最大脚趾水平偏移 | 0.63 mm | 3.30 mm |
 
-改后第 319 步 A→D 继续推进相位，原支撑脚偏移小于 1 mm。第 423–430 步贴墙淡出时相位冻结，支撑脚偏移小于 1 mm。附加急停段在第 495 步冻结相位，7 个固定步后站稳，支撑脚偏移小于 1 mm。肩线和双手角度变化小于 0.001°。换向路线中仍有个别近伸直的膝盖帧，左右转接时的膝屈曲和落脚节奏需实机同机位短片校准。 [改前 458 步](../../runtime/web-3c-leon-strafe.tmp/before-steps.json) · [改后 518 步](../../runtime/web-3c-leon-strafe.tmp/after-steps.json) · [普通持枪回归](../../runtime/web-3c-leon-strafe.tmp/ready-regression.json)
+改后第 319 步 A→D 继续推进相位，原支撑脚偏移小于 1 mm。第 423–430 步贴墙淡出时相位冻结，支撑脚偏移小于 1 mm。附加急停段在第 495 步冻结相位，7 个固定步后站稳，支撑脚偏移小于 1 mm。肩线和双手角度变化小于 0.001°。换向路线中仍有个别近伸直的膝盖帧，左右转接时的膝屈曲和落脚节奏需实机同机位短片校准。 改前 458 步（本机 `runtime/web-3c-leon-strafe.tmp/before-steps.json`，2796 KB，未入库） · 改后 518 步（本机 `runtime/web-3c-leon-strafe.tmp/after-steps.json`，3740 KB，未入库） · 普通持枪回归（本机 `runtime/web-3c-leon-strafe.tmp/ready-regression.json`，3847 KB，未入库）
 
-全量 25 项测试、Chromium 键鼠回归和研究首页静态包验收通过。正式 616 步路线的 31 条有序事件一致。第 375 步按顺序开火、扣至 `7/16`、命中练习靶，第 431 步补至 `8/15`。 [全量日志](../../runtime/web-3c-leon-strafe.tmp/tests.log) · [正式路线](../../runtime/web-3c-leon-strafe.tmp/route-regression.json) · [键鼠测试](../../runtime/web-3c-leon-strafe.tmp/browser-test.log) · [门户测试](../../runtime/web-3c-leon-strafe.tmp/portal-test.log) · [构建日志](../../runtime/web-3c-leon-strafe.tmp/build.log)
+全量 25 项测试、Chromium 键鼠回归和研究首页静态包验收通过。正式 616 步路线的 31 条有序事件一致。第 375 步按顺序开火、扣至 `7/16`、命中练习靶，第 431 步补至 `8/15`。 [全量日志](evidence/web-3c-leon-strafe/tests.log) · 正式路线（本机 `runtime/web-3c-leon-strafe.tmp/route-regression.json`，1162 KB，未入库） · [键鼠测试](evidence/web-3c-leon-strafe/browser-test.log) · [门户测试](evidence/web-3c-leon-strafe/portal-test.log) · [构建日志](evidence/web-3c-leon-strafe/build.log)
 
 ```powershell
 $out = Join-Path $PWD 'runtime/web-3c-leon-strafe.tmp'
@@ -118,11 +118,11 @@ node web-3c/tests/record-leon-strafe.mjs after
 
 `leon-view.ts` 在普通方向步态中补偿骨盆旋转，保持普通持枪上身。移动中举枪和收枪继续使用既有 Mask 4，换弹沿用 Mask 2。`main.ts` 将速度相关的步态参数与相位、脚目标一起插值。`CharacterState`、`ActionState`、`GameEvent` 及关卡移动参数沿用现有接口，`WalkPose` 的 `pace` 仅供角色渲染。`100/122`、`100/124`、`100/126` 保留在研究播放器作为参照，本轮方向动画继续由程序生成。
 
-构建 `258cd4cb0bb5` 已同步到 `web-3c/dist/` 和 `docs/web-3c/`，14 个文件逐字节一致。Chromium 在生产预览和研究首页入口均用真实键鼠验证两种持枪状态下的方向移动。普通持枪路线在不按右键时检查了 W、A、S、D、W+D、S+A、A→D 和顶墙，离墙侧移后继续按下、松开右键。浏览器直接读回渲染使用的脚趾矩阵，原有前移与弹量回归通过。 [本地试玩记录](../../runtime/web-3c-leon-ready.tmp/browser-check.json) · [静态入口记录](../../runtime/web-3c-leon-ready.tmp/portal-check.json)
+构建 `258cd4cb0bb5` 已同步到 `web-3c/dist/` 和 `docs/web-3c/`，14 个文件逐字节一致。Chromium 在生产预览和研究首页入口均用真实键鼠验证两种持枪状态下的方向移动。普通持枪路线在不按右键时检查了 W、A、S、D、W+D、S+A、A→D 和顶墙，离墙侧移后继续按下、松开右键。浏览器直接读回渲染使用的脚趾矩阵，原有前移与弹量回归通过。 [本地试玩记录](evidence/web-3c-leon-ready/browser-check.json) · [静态入口记录](evidence/web-3c-leon-ready/portal-check.json)
 
-532 步固定路线记录了实际碰撞位移、局部腿骨、世界脚趾和上身姿态。连续支撑区间中，脚趾水平最大偏移 4.10 cm。第 319 步 A→D 时原支撑脚水平偏移小于 1 mm。第 396–403 步顶墙淡出时，相位恒定，支撑脚水平最大偏移 1.03 cm。第 477–532 步边走边举枪、收枪时，每步保留至少一只连续支撑脚，相邻步支撑脚水平最大偏移 1.94 cm。 [普通持枪轨迹](../../runtime/web-3c-leon-ready.tmp/fixed-steps.json) · [举枪步态回归](../../runtime/web-3c-leon-ready.tmp/aimed-regression.json) · [前移与弹量回归](../../runtime/web-3c-leon-ready.tmp/forward-regression.json)
+532 步固定路线记录了实际碰撞位移、局部腿骨、世界脚趾和上身姿态。连续支撑区间中，脚趾水平最大偏移 4.10 cm。第 319 步 A→D 时原支撑脚水平偏移小于 1 mm。第 396–403 步顶墙淡出时，相位恒定，支撑脚水平最大偏移 1.03 cm。第 477–532 步边走边举枪、收枪时，每步保留至少一只连续支撑脚，相邻步支撑脚水平最大偏移 1.94 cm。 普通持枪轨迹（本机 `runtime/web-3c-leon-ready.tmp/fixed-steps.json`，3256 KB，未入库） · 举枪步态回归（本机 `runtime/web-3c-leon-ready.tmp/aimed-regression.json`，2796 KB，未入库） · 前移与弹量回归（本机 `runtime/web-3c-leon-ready.tmp/forward-regression.json`，917 KB，未入库）
 
-Web 3C 全量测试 25/25 通过。正式路线仍为 616 步、31 条有序事件，扣弹和补弹顺序通过回归。生产构建通过，Vite 报告共享包超过 500 kB。 [测试日志](../../runtime/web-3c-leon-ready.tmp/tests.log) · [构建日志](../../runtime/web-3c-leon-ready.tmp/build.log) · [静态验收日志](../../runtime/web-3c-leon-ready.tmp/portal-test.log)
+Web 3C 全量测试 25/25 通过。正式路线仍为 616 步、31 条有序事件，扣弹和补弹顺序通过回归。生产构建通过，Vite 报告共享包超过 500 kB。 [测试日志](evidence/web-3c-leon-ready/tests.log) · [构建日志](evidence/web-3c-leon-ready/build.log) · [静态验收日志](evidence/web-3c-leon-ready/portal-test.log)
 
 复现命令从仓库根目录运行，浏览器使用下文的 Playwright 配置。
 
@@ -156,11 +156,11 @@ npm --prefix web-3c test
 
 [路线测试](../../web-3c/tests/leon-route.test.ts) 逐步比较两次模拟，覆盖绕过 L 形走廊、命中、扣弹、换弹、门板阻挡和开门穿越。[浏览器测试](../../web-3c/tests/check-leon-browser.mjs) 检查试玩视口中的里昂网格绘制、前移、切换及弹量状态。
 
-[路线记录](../../runtime/web-3c-leon.tmp/route-comparison.json) 的 `ticks`、`events` 和 `checkpoints` 保存逐步数据。[浏览器记录](../../runtime/web-3c-leon.tmp/browser-check.json) 保存绘制索引、页面错误和弹量观测。[举枪截图](../../runtime/web-3c-leon.tmp/leon-aim.png) · [试玩页截图](../../runtime/web-3c-leon.tmp/leon-playfield.png)
+路线记录（本机 `runtime/web-3c-leon.tmp/route-comparison.json`，1146 KB，未入库） 的 `ticks`、`events` 和 `checkpoints` 保存逐步数据。[浏览器记录](evidence/web-3c-leon/browser-check.json) 保存绘制索引、页面错误和弹量观测。举枪截图（本机 `runtime/web-3c-leon.tmp/leon-aim.png`，136 KB，未入库） · 试玩页截图（本机 `runtime/web-3c-leon.tmp/leon-playfield.png`，162 KB，未入库）
 
 ### 门户构建复测
 
-旧的 `docs/web-3c/` 仍引用 `main-DnO3k6dg.js`。从研究首页进入旧试玩，在鼠标锁定并按住右键后，A 键确实改变角色位置，但模型局部的两脚趾坐标保持原值。W 键改变脚趾坐标。本机 Vite 预览使用另一份较新的 `web-3c/dist/`，因此它的原验收没有覆盖旧入口。 [旧入口读回](../../runtime/web-3c-leon-direction.tmp/portal-before.json)
+旧的 `docs/web-3c/` 仍引用 `main-DnO3k6dg.js`。从研究首页进入旧试玩，在鼠标锁定并按住右键后，A 键确实改变角色位置，但模型局部的两脚趾坐标保持原值。W 键改变脚趾坐标。本机 Vite 预览使用另一份较新的 `web-3c/dist/`，因此它的原验收没有覆盖旧入口。 [旧入口读回](evidence/web-3c-leon-direction/portal-before.json)
 
 `npm.cmd --prefix web-3c run build:portal` 生成并同步门户包。当轮 `docs/web-3c/` 和 `web-3c/dist/` 的 14 个文件逐字节一致，构建号为 `4253fc6a4e54`。静态验收从研究首页点击试玩，核对页头版本并在实际渲染的里昂灰模上读取左右脚趾矩阵，覆盖 W、A、S、D、两组斜向、A→D 和顶墙停止。 [静态验收](../../web-3c/tests/check-m8-static.mjs) · [腿骨读回入口](../../web-3c/tests/leon-browser-directions.mjs)
 
@@ -185,4 +185,28 @@ node --test --test-name-pattern "optional carry-gun|local wp0100" tests/leon-v5.
 node tests/record-muzzle-offset.ts
 npm run build:portal
 node tests/check-leon-v5-browser.mjs
+```
+
+## v6：起停、原地转身与举枪细节
+
+2026-11-28。依据与逐项结果见 [动作与镜头对齐原作 · 第 4 节](character-camera-fidelity.md#4-第三轮已落地feelconfig-v6)。试玩场行为变化：
+
+- 起步和停步有 0.25 s 加减速；低枪起步播放 `Handgun00M` 起步片段（按实际位移取样），松键播放停步片段并收到待机。
+- 举枪会按身体与镜头的偏航差选带角度的举枪片段；举枪 0.25 s 后按开火立即生效（`1040` 姿态），收枪播放 `161`。
+- 举枪站定转动镜头时，脊柱先扭向镜头，身体以 0.5 s 时间常数追上，同时按原作曲线播放左右转向步。
+- 换弹时躯干叠加 `2100/1200` 增量；手枪套筒和弹匣随动作运动。
+- 门只能在低枪时开关。
+- 网址加 `?camera=source` 切到原作结构镜头档。
+
+浏览器生产预览走查两档镜头（低枪待机、右移、停步、后退、奔跑、举枪、抬头、开火、收枪），无报错。快照数值见 [v6-browser-check.json](evidence/v6-browser-check.json)，截图在本机 `runtime/web-3c-leon-v6.tmp/`。
+
+```powershell
+cd web-3c
+..\tools\dotnet\dotnet.exe run -c Release --project ..\scripts\web-3c\Leon3CExport
+node ..\scripts\web-3c\extract_camera_source.mjs
+node tests/record-m7-route.ts
+npm test
+npm run test:browser
+node tests/record-muzzle-offset.ts
+npm run build:portal
 ```

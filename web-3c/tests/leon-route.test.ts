@@ -12,7 +12,7 @@ import type { GameEvent, InputSnapshot, LevelDefinition } from '../src/contracts
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
 import { LEON_WALK, leonDirectionWeights, leonWalkBlend, leonWalkTime } from '../src/leon-locomotion.ts';
-import { withLegacyMovement } from '../src/preview-stages.ts';
+import { withLegacyMovement } from './legacy-fixtures.ts';
 import { createLeonView } from '../src/leon-view.ts';
 import type { LeonAssets } from '../src/leon-view.ts';
 import { createPlayerView } from '../src/player-view.ts';
@@ -23,7 +23,7 @@ import { testRoomRoute } from './test-room-route.mjs';
 const source = new URL('../../docs/player/', import.meta.url);
 // Source-pose comparisons isolate the authored clips: no spine pitch layer, and the v4 heading and speeds
 // that these gait cases were laid out for. The v5 heading, pitch and carry-gun cases have their own tests.
-const unpitched = { upperBodyPitch: false } as const;
+const unpitched = { upperBodyPitch: false, sourceLayers: false } as const;
 const legacy = withLegacyMovement(defaultFeel);
 
 async function rehearsalClips() {
@@ -400,7 +400,10 @@ test('Leon uses full-body forward travel, layers actions on the moving pose and 
   const model = leon.root.children[0];
   const standingOffsetM = model.position.y;
   assert.equal(standingOffsetM + leon.readSkin().bounds!.min[1], 0);
-  const room = await createTestRoom(undefined, manifest);
+  // Instant start and stop (no v6 acceleration) keep the authored start/stop tick checks below exact.
+  const { accelS: _a, decelS: _d, ...instant } = defaultFeel.movement;
+  void _a; void _d;
+  const room = await createTestRoom(undefined, manifest, { ...defaultFeel, movement: instant });
   const player = createPlayerView(leon);
   const neutral = createInputBuffer().sample(0);
   const events: GameEvent[] = [];

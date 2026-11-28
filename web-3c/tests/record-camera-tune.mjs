@@ -8,7 +8,7 @@ import { preview } from 'vite';
 import { cameraTuneSteps } from './camera-tune-route.mjs';
 
 const require = createRequire(import.meta.url);
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright-core');
 const variant = process.argv[2];
 assert.ok(variant === 'before' || variant === 'after', 'Expected before or after.');
 assert.ok(process.env.CAMERA_FFMPEG, 'Set CAMERA_FFMPEG to ffmpeg with MJPEG and VP8 support.');

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { preview } from 'vite';
 
 const require = createRequire(import.meta.url);
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright-core');
 const variant = process.argv[2];
 assert.ok(['before', 'after'].includes(variant), 'Expected before or after');
 const evidence = new URL('../../runtime/web-3c-camera-calibration.tmp/', import.meta.url);

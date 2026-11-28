@@ -1,0 +1,24 @@
+{
+  "chromium": "147.0.7727.15",
+  "glbs": [
+    200
+  ],
+  "events": [
+    "22.0  input.request raise",
+    "22.1  action.accepted raise",
+    "23.0  input.request fire",
+    "49.0  action.recovered raise",
+    "49.1  action.accepted fire",
+    "53.0  weapon.fired",
+    "53.1  ammo.committed 7/16",
+    "64.0  action.recovered fire",
+    "65.0  input.request reload",
+    "65.1  action.accepted reload",
+    "66.0  input.request fire",
+    "109.0  ammo.committed 8/15",
+    "149.0  action.recovered reload",
+    "150.0  input.request lower",
+    "150.1  action.accepted lower",
+    "168.0  action.recovered lower"
+  ]
+}
