@@ -88,6 +88,37 @@ npm.cmd --prefix web-3c run build:portal
 node web-3c/tests/check-m8-static.mjs
 ```
 
+## 移动瞄准稳枪与支撑脚
+
+改前 `6cd24d8003df`，本地改后 `2b7d5a1d693c`。移动瞄准的上身用 62% 持枪姿态混入 38% 同相位方向轨。髋仍取方向轨。单发和换弹在上身混合后叠加。固定步记录落脚时的世界根位置、朝向、步态相位和方向权重，M4 渲染采样对约束强度插值。腿部双骨骼求解只修正水平位置，保留鞋尖高度与脚踝方向。急停保留当前支撑，快速反向时以连续相位缩短接续步，抬脚、降枪、转身或跨高度时释放锚点。 [固定步](../../web-3c/src/actions.ts) · [上身和地面约束](../../web-3c/src/leon-view.ts) · [腿部求解](../../web-3c/src/leon-foot-plant.ts) · [渲染采样](../../web-3c/src/render-sampler.ts)
+
+558 步平地对照中，角色位移、朝向、动作状态和有序事件逐步一致。下表肩线及枪口为各段相邻固定步最大角差。支撑中段读数为同脚在对齐接触窗口内的最大世界水平位移。 [改前逐步数据](../../runtime/web-3c-leon-stability.tmp/before.json) · [改后逐步数据](../../runtime/web-3c-leon-stability.tmp/after.json) · [对照摘要](../../runtime/web-3c-leon-stability.tmp/comparison.json)
+
+| 路段 | 固定步 | 肩线改前 → 改后 | 枪口改前 → 改后 | 支撑脚改前 → 改后 |
+| --- | ---: | ---: | ---: | ---: |
+| S 后退 | 43–137 | 0.81° → 0.30° | 0.67° → 0.27° | 50.32 → 1.82 mm |
+| A 左移 | 138–217 | 0.21° → 0.09° | 0.18° → 0.05° | 41.63 → 2.29 mm |
+| A→D | 218–297 | 0.51° → 0.20° | 0.30° → 0.12° | 366.28 → 99.73 mm |
+| W+D | 298–349 | 0.61° → 0.13° | 0.11° → 0.09° | 45.33 → 1.10 mm |
+| 松键急停 | 350–375 | 0.64° → 0.46° | 0.55° → 0.45° | 385.10 → 小于 0.01 mm，右支撑脚 |
+
+A→D 第 218–225 步对照同一个左支撑脚，水平位移从 45.32 cm 降到 9.97 cm。腿长到限后的移位仍可见。该段膝弯最大单步变化为 11.65°，对应改前的 10.58°。后退膝弯峰值维持 10.42°，急停由 7.64° 降为 5.58°。移动各段双手相对位移最多约 0.62 mm，握把与 `R_Wep` 挂点一致，整模垂直校准偏移变化为 0 mm。
+
+两段同机位短片各 3.3 秒、99 帧，镜头位置与输入状态逐帧一致。采集视野统一加宽到 80° 以同时显示肩和鞋，生产镜头使用 M4 配置。 [改前短片](../../runtime/web-3c-leon-stability.tmp/before.webm) · [改后短片](../../runtime/web-3c-leon-stability.tmp/after.webm) · [同帧截图](../../runtime/web-3c-leon-stability.tmp/comparison.png)
+
+全量 34/34 通过，包含四项 M4 渲染回归、八方向、移动举枪、单发、换弹、顶墙及罗兹山关卡路线。Chromium 生产试玩通过。正式路线 616 步及 31 条事件一致，第 375 步依次开火、扣至 `7/16`、命中，第 431 步补至 `8/15`。 [测试日志](../../runtime/web-3c-leon-stability.tmp/tests.log) · [正式路线](../../runtime/web-3c-leon-stability.tmp/route.json) · [Chromium](../../runtime/web-3c-leon-stability.tmp/browser.log)
+
+```powershell
+$out = Join-Path $PWD 'runtime/web-3c-leon-stability.tmp'
+$env:LEON_AIM_WALK_EVIDENCE = Join-Path $out 'after.json'
+$env:LEON_ROUTE_EVIDENCE = Join-Path $out 'route.json'
+$env:LEON_WEAPON_GLB = Join-Path $PWD 'runtime/web-3c-weapon.tmp/wp0100.glb'
+npm.cmd --prefix web-3c test
+npm.cmd --prefix web-3c run build
+node web-3c/tests/check-leon-browser.mjs
+node runtime/web-3c-leon-stability.tmp/record.mjs after
+```
+
 ## 验证与复现
 
 `web-3c/tests/m5.test.ts` 和更新后的 `web-3c/tests/m6.test.ts` 覆盖精确事件顺序和实际关卡命中、补弹、门交互。全量测试 18/18 通过。同一组输入在模拟的 60 Hz 和 120 Hz 渲染节奏产生完全一致的状态、姿态采样与事件。M2 GLB 回读验证单发峰值约 +13°，步态相位改变时大腿摆幅翻转而单发峰值保持，换弹时弹匣从约 0.154 m 脱离到接触误差小于 1e-5 m。TypeScript 和 Vite 生产构建通过，Vite 提示共享包体积超过 500 kB。

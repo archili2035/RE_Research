@@ -1,4 +1,4 @@
-import type { ActionPose } from './actions.ts';
+import type { ActionPose, FootPlant } from './actions.ts';
 import { interpolatePosition } from './camera.ts';
 import type { CameraPose, CharacterState, SceneQueries, Vec3 } from './contracts.ts';
 
@@ -13,6 +13,17 @@ export interface RenderSnapshot {
 function blendAngle(from: number, to: number, fraction: number) {
   const delta = to - from;
   return from + Math.atan2(Math.sin(delta), Math.cos(delta)) * fraction;
+}
+
+function blendPlant(from: FootPlant | null, to: FootPlant | null, fraction: number): FootPlant | null {
+  if (from && to && from.anchor !== to.anchor) {
+    return fraction < 0.5 ? { ...from, weight: from.weight * (1 - 2 * fraction) }
+      : { ...to, weight: to.weight * (2 * fraction - 1) };
+  }
+  const plant = to ?? from;
+  if (!plant) return null;
+  const start = from?.weight ?? 0;
+  return { anchor: plant.anchor, weight: start + ((to?.weight ?? 0) - start) * fraction };
 }
 
 export function createRenderSampler(
@@ -86,6 +97,8 @@ export function createRenderSampler(
               lerp(from.walk.weights[0], to.walk.weights[0]), lerp(from.walk.weights[1], to.walk.weights[1]),
               lerp(from.walk.weights[2], to.walk.weights[2]), lerp(from.walk.weights[3], to.walk.weights[3]),
             ],
+            plants: [blendPlant(from.walk.plants[0], to.walk.plants[0], fraction),
+              blendPlant(from.walk.plants[1], to.walk.plants[1], fraction)],
           },
         },
       });

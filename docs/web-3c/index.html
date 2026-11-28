@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="data:," />
     <title>3C 灰盒</title>
-    <script type="module" crossorigin src="./assets/main-CC4h0q6b.js"></script>
+    <script type="module" crossorigin src="./assets/main-DPfKsUJu.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
     <link rel="modulepreload" crossorigin href="./assets/clip-manifest-CJJLpKin.js">
     <link rel="modulepreload" crossorigin href="./assets/style-Br_gLE2Y.js">
-    <link rel="modulepreload" crossorigin href="./assets/simulation-DU3MjVQc.js">
+    <link rel="modulepreload" crossorigin href="./assets/simulation-C7iZj-cs.js">
     <link rel="stylesheet" crossorigin href="./assets/style-IQlSfrZh.css">
   </head>
   <body>
@@ -17,9 +17,8 @@
       <header>
         <h1>3C 灰盒</h1>
         <p>固定步模拟 · 60 Hz</p>
-        <p>版本 <code data-build-id>19e245c6818e</code></p>
+        <p>版本 <code data-build-id>2b7d5a1d693c</code></p>
         <a href="../index.html" id="research-home" hidden>返回研究首页</a>
-        <a href="?level=m3">碰撞测试场</a>
         <a href="./m2.html">动作姿态回读</a>
         <a href="./m7.html">路线回放与调参</a>
         <a href="./json-viewer.html">研究 JSON 浏览器</a>
@@ -27,6 +26,9 @@
       <section aria-labelledby="scene-heading">
         <div class="playfield-header">
           <h2 id="scene-heading">测试场</h2>
+          <label>地图
+            <select id="level-select" disabled></select>
+          </label>
           <label>角色外观
             <select id="player-appearance">
               <option value="graybox" selected>灰盒</option>
@@ -35,7 +37,7 @@
           </label>
           <output id="appearance-status" role="status"></output>
         </div>
-        <section id="viewport" aria-label="灰盒测试场">
+        <section id="viewport" aria-labelledby="scene-heading">
           <div class="crosshair" aria-hidden="true"></div>
           <p id="scene-feedback" class="hud" role="status"></p>
           <p id="door-hint" class="hud"></p>
@@ -43,7 +45,7 @@
           <button id="enter" type="button" disabled>进入测试场</button>
           <p id="status" role="status">正在加载物理场景…</p>
         </section>
-        <p class="route">从储藏室进入走廊，沿路左转。走廊右墙有练习靶，尽头可开门进入杂物间。</p>
+        <p class="route"></p>
         <p class="controls">WASD 移动 · Shift 奔跑 · 鼠标转向 · 右键瞄准 · 左键开火 · R 换弹 · E 交互 · Esc 释放鼠标</p>
       </section>
       <section class="telemetry" aria-label="模拟快照">

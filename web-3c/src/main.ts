@@ -1,13 +1,13 @@
 import * as THREE from 'three';
-import greyboxJson from '../fixtures/m3-greybox.json' with { type: 'json' };
 import { createActionView } from './action-view.ts';
 import { loadClipAssets } from './clip-assets.ts';
 import { loadClipManifest } from './clip-manifest.ts';
-import type { GameEvent, LevelDefinition, Vec3 } from './contracts.ts';
+import type { GameEvent, Vec3 } from './contracts.ts';
 import { createHud } from './hud.ts';
 import { bindInput } from './input.ts';
 import { createTestRoom, defaultFeel } from './level.ts';
 import { loadLeonAssets } from './leon-assets.ts';
+import { defaultPlayfield, playfields } from './levels/catalog.ts';
 import { CHARACTER_BODY } from './movement.ts';
 import { bindPlayerAppearance, createPlayerView } from './player-view.ts';
 import { createRenderSampler } from './render-sampler.ts';
@@ -38,8 +38,28 @@ function eventLine(event: GameEvent) {
 async function boot() {
   enter.disabled = true;
   const leonAssets = loadLeonAssets();
-  const useCollisionCourse = new URLSearchParams(window.location.search).get('level') === 'm3';
-  const level = useCollisionCourse ? greyboxJson as LevelDefinition : undefined;
+  const url = new URL(window.location.href);
+  const playfield = playfields.find(({ id }) => id === url.searchParams.get('level')) ?? defaultPlayfield;
+  const levelSelect = document.querySelector<HTMLSelectElement>('#level-select')!;
+  levelSelect.replaceChildren(...playfields.map(({ id, name }) => new Option(name, id)));
+  levelSelect.value = playfield.id;
+  levelSelect.disabled = false;
+  levelSelect.addEventListener('change', () => {
+    const nextUrl = new URL(url);
+    if (levelSelect.value === defaultPlayfield.id) nextUrl.searchParams.delete('level');
+    else nextUrl.searchParams.set('level', levelSelect.value);
+    nextUrl.searchParams.delete('spawn');
+    window.location.assign(nextUrl);
+  });
+  window.addEventListener('pageshow', () => { levelSelect.value = playfield.id; });
+  document.querySelector('#scene-heading')!.textContent = playfield.heading ?? playfield.name;
+  document.querySelector('.route')!.textContent = playfield.route;
+  const baseLevel = await playfield.load();
+  // ?spawn=x,y,z,yawDeg places the player for camera comparisons against reference footage.
+  const spawnParam = url.searchParams.get('spawn')?.split(',').map(Number);
+  const level = playfield !== defaultPlayfield && spawnParam?.length === 4 && spawnParam.every(Number.isFinite)
+    ? { ...baseLevel, spawn: { position: { x: spawnParam[0], y: spawnParam[1], z: spawnParam[2] }, yawRad: spawnParam[3] * Math.PI / 180 } }
+    : baseLevel;
   const manifestUrl = new URL('./assets/clips.json', document.baseURI);
   const manifest = await loadClipManifest(manifestUrl).catch((error: unknown) => {
     console.warn('动作清单加载失败，使用默认时序', error);
@@ -57,9 +77,6 @@ async function boot() {
   const actor = createPlayerView(actionView ?? { root: avatar });
   scene.add(actor.root);
   bindPlayerAppearance(actor, leonAssets);
-  if (useCollisionCourse) {
-    document.querySelector('.route')!.textContent = '沿中线穿过门框，直行上低台阶。偏离中线可测试门柱阻挡，穿门后右移可测试高台阶。';
-  }
   const hud = createHud(viewport);
   hud.update(initial.tick, initial.action, [], doorPrompt(initial.character.position));
   const renderer = new THREE.WebGLRenderer({ antialias: true });

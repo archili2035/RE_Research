@@ -1,5 +1,5 @@
 import { STEP_S } from './contracts.ts';
-import type { ActionState, CharacterState, ClipManifest, FeelConfig } from './contracts.ts';
+import type { ActionState, CharacterState, ClipManifest, FeelConfig, Vec3 } from './contracts.ts';
 import { leonWalkBlend } from './leon-locomotion.ts';
 import type { LeonWalkWeights } from './leon-locomotion.ts';
 import type { SimulationStages } from './simulation.ts';
@@ -27,6 +27,12 @@ export interface WalkPose {
   readonly cycles: number;
   readonly blend: number;
   readonly weights: LeonWalkWeights;
+  readonly plants: readonly [FootPlant | null, FootPlant | null];
+}
+
+export interface FootPlant {
+  readonly anchor: Readonly<Pick<WalkPose, 'cycles' | 'blend' | 'weights'> & { position: Vec3; yawRad: number }>;
+  readonly weight: number;
 }
 
 const fixedTicks = (seconds: number) => Math.max(1, Math.ceil(seconds / STEP_S - 1e-9));
@@ -41,13 +47,22 @@ const AIM_TURN_DEAD_ZONE_RAD_S = 0.11;
 const AIM_TURN_FULL_RAD_S = 0.43;
 const aimAtRest: AimPose = { idleTimeS: 0, stationaryBlend: 0, turn: 0, turnTimeS: 0 };
 
-function createWalk() {
-  let walk: WalkPose = { cycles: 0, blend: 0, weights: [1, 0, 0, 0] };
+function smoothstep(value: number, from: number, to: number) {
+  const t = Math.min(1, Math.max(0, (value - from) / (to - from)));
+  return t * t * (3 - 2 * t);
+}
 
-  function update(character: CharacterState, speed: number) {
+function createWalk() {
+  let walk: WalkPose = { cycles: 0, blend: 0, weights: [1, 0, 0, 0], plants: [null, null] };
+  let lastDirection: { right: number; forward: number } | undefined;
+  let catchFromCycle = 0;
+  let catchThroughCycle = 0;
+
+  function gait(character: CharacterState, speed: number): Pick<WalkPose, 'cycles' | 'blend' | 'weights'> {
     if (!character.grounded || speed <= MOVING_THRESHOLD_MPS) {
-      walk = { ...walk, blend: Math.max(0, walk.blend - STEP_S / WALK_BLEND_OUT_S) };
-      return walk;
+      lastDirection = undefined;
+      catchThroughCycle = 0;
+      return { cycles: walk.cycles, weights: walk.weights, blend: Math.max(0, walk.blend - STEP_S / WALK_BLEND_OUT_S) };
     }
 
     const { velocity, yawRad } = character;
@@ -55,16 +70,54 @@ function createWalk() {
     const cos = Math.cos(yawRad);
     const localRight = cos * velocity.x - sin * velocity.z;
     const localForward = -sin * velocity.x - cos * velocity.z;
+    const direction = { right: localRight / speed, forward: localForward / speed };
+    if (lastDirection && direction.right * lastDirection.right + direction.forward * lastDirection.forward < -0.85 &&
+        walk.plants.some((plant) => plant && plant.weight >= 0.8) && walk.cycles % 0.5 < 0.34) {
+      // Shorten the catch step on a hard reversal, ending at the next authored foot contact.
+      catchFromCycle = walk.cycles;
+      catchThroughCycle = (Math.floor(walk.cycles * 2) + 1) / 2;
+    }
+    lastDirection = direction;
     const target = leonWalkBlend(localRight, localForward);
+    const advance = target.cyclesPerSecond * STEP_S;
+    const catchRate = 0.85 * smoothstep(walk.cycles - catchFromCycle, -0.02, 0.04);
+    const catchAdvance = Math.min(catchRate * advance, Math.max(0, catchThroughCycle - walk.cycles - advance));
     const largestChange = Math.max(...walk.weights.map((value, i) => Math.abs(value - target.weights[i])));
     const crossfade = walk.blend > 0 && largestChange > 0.001;
     const factor = Math.min(DIRECTION_DAMPING, MAX_DIRECTION_WEIGHT_CHANGE / Math.max(0.001, largestChange));
     const weight = (index: number) => walk.weights[index] + (target.weights[index] - walk.weights[index]) * factor;
-    walk = {
-      cycles: walk.cycles + target.cyclesPerSecond * STEP_S,
+    return {
+      cycles: walk.cycles + advance + catchAdvance,
       blend: Math.min(1, walk.blend + STEP_S / WALK_BLEND_IN_S),
       weights: crossfade ? [weight(0), weight(1), weight(2), weight(3)] : target.weights,
     };
+  }
+
+  function update(character: CharacterState, speed: number, lift: number) {
+    if (lift <= 0.65) catchThroughCycle = 0;
+    const next = gait(character, speed);
+    const moving = character.grounded && speed > MOVING_THRESHOLD_MPS;
+    const aim = smoothstep(lift, 0.65, 1);
+    const contact = (side: 0 | 1): FootPlant | null => {
+      const existing = walk.plants[side];
+      if (!character.grounded || aim === 0 || (!moving && !existing)) return null;
+      const phase = (next.cycles + side * 0.5) % 1;
+      const release = next.cycles < catchThroughCycle ? 0.30 : 0.36;
+      const support = smoothstep(phase, 0.015, 0.075) * (1 - smoothstep(phase, release, 0.48));
+      // A stopped character keeps its stance. Turning, lowering or the next swing releases the foot.
+      const settle = moving && !existing ? smoothstep(next.blend, 0.50, 0.85) : 1;
+      if (!support || !settle) return null;
+      const anchor = existing?.anchor ?? { ...next, position: character.position, yawRad: character.yawRad };
+      const yaw = character.yawRad - anchor.yawRad;
+      const turn = Math.abs(Math.atan2(Math.sin(yaw), Math.cos(yaw)));
+      const level = 1 - smoothstep(Math.abs(character.position.y - anchor.position.y), 0.03, 0.075);
+      const heading = 1 - smoothstep(turn, 0.08, 0.40);
+      const requested = support * settle * aim * level * heading;
+      // Release to swing by phase. Keep the same anchor when the velocity reverses inside a contact.
+      const weight = moving ? Math.min(requested, (existing?.weight ?? 0) + 0.30) : Math.min(requested, existing!.weight);
+      return { anchor, weight };
+    };
+    walk = { ...next, plants: [contact(0), contact(1)] };
     return walk;
   }
 
@@ -188,7 +241,7 @@ export function createActions(parameters: FeelConfig['actions'], manifest?: Clip
 
     pose = {
       clip, progress: active ? (tick - active.started) / active.length : 0, lift, gaitPhaseRad, gaitWeight,
-      walk: walk.update(character, speed), aim: pose.aim,
+      walk: walk.update(character, speed, lift), aim: pose.aim,
     };
     return { id: subject, phase, aiming, magazine, reserve };
   };

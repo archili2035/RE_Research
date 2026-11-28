@@ -60,6 +60,16 @@ function sourceJointPose(assets: LeonAssets, clip: LeonAssets['MOTION_DATA']['cl
   };
 }
 
+function stabilizedSourceJoint(assets: LeonAssets, hold: LeonAssets['MOTION_DATA']['clips'][number], name: string,
+  timeS: number, hip: Quaternion, stride: ReturnType<typeof sourceJointPose>) {
+  const held = sourceJointPose(assets, hold, name, timeS % hold.duration);
+  if (name === 'Spine_0') {
+    const referenceHip = sourceJointPose(assets, hold, 'Hip', timeS % hold.duration);
+    held.q.premultiply(hip.clone().invert().multiply(referenceHip.q));
+  }
+  return { p: held.p.lerp(stride.p, 0.38), q: held.q.slerp(stride.q, 0.38).normalize() };
+}
+
 const weaponFile = process.env.LEON_WEAPON_GLB;
 const aimedUpperPairs = [
   ['Spine_0', 'Hip'], ['Spine_1', 'Spine_0'], ['Spine_2', 'Spine_1'],
@@ -252,8 +262,8 @@ test('Leon aimed movement transitions keep the weapon attached, feet on the same
     colliders: [{ id: 'floor', center: floor, size, yawRad: 0 }], doors: [], targets: [],
   }, manifest);
   const segments = [
-    ['hold', 42, 0, 0, true], ['left', 50, -1, 0, true], ['right', 50, 1, 0, true],
-    ['diagonal', 50, 1, 1, true], ['stop', 18, 0, 0, true], ['lower', 20, 0, 0, false],
+    ['hold', 42, 0, 0, true], ['back', 95, 0, -1, true], ['left', 80, -1, 0, true], ['right', 80, 1, 0, true],
+    ['diagonal', 52, 1, 1, true], ['stop', 26, 0, 0, true], ['lower', 20, 0, 0, false],
     ['ready-left', 14, -1, 0, false], ['raise-left', 38, -1, 0, true],
     ['fire-left', 19, -1, 0, true], ['reload-left', 92, -1, 0, true],
   ] as const;
@@ -282,6 +292,10 @@ test('Leon aimed movement transitions keep the weapon attached, feet on the same
       gripPosition: new Vector3().setFromMatrixPosition(grip),
       gripRotation: new Quaternion().setFromRotationMatrix(grip).normalize(),
       toes: [point('L_Leg_Toes'), point('R_Leg_Toes')],
+      kneeBendRad: (['L', 'R'] as const).map((side) => {
+        const knee = point(`${side}_Leg_Lower`);
+        return Math.PI - point(`${side}_Leg_Upper`).sub(knee).angleTo(point(`${side}_Leg_Ankle`).sub(knee));
+      }),
     };
   };
   const samples = course.map(({ label }) => {
@@ -314,6 +328,8 @@ test('Leon aimed movement transitions keep the weapon attached, feet on the same
     }
     return { label, ticks: [first.tick, run.at(-1)!.tick], shoulderStepRad: maxStep('shoulderLine'), muzzleStepRad: maxStep('muzzle'),
       supportSamples, supportToeTravelM,
+      kneeStepRad: Math.max(...run.filter(({ tick }) => tick > 1).flatMap(({ kneeBendRad, tick }) =>
+        kneeBendRad.map((angle, side) => Math.abs(angle - samples[tick - 2].kneeBendRad[side])))),
       gripTravelM: Math.max(...run.map(({ gripPosition }) => gripPosition.distanceTo(first.gripPosition))),
       gripTravelRad: Math.max(...run.map(({ gripRotation }) => gripRotation.angleTo(first.gripRotation))) };
   });
@@ -323,17 +339,27 @@ test('Leon aimed movement transitions keep the weapon attached, feet on the same
     writeFileSync(out, JSON.stringify({ calibrationM, metrics, events, samples }, null, 2) + '\n');
   }
   assert.ok(samples.every(({ modelOffsetM }) => modelOffsetM === calibrationM));
-  const walking = metrics.filter(({ label }) => ['left', 'right', 'diagonal'].includes(label));
+  const walking = metrics.filter(({ label }) => ['back', 'left', 'right', 'diagonal'].includes(label));
   assert.ok(walking.every(({ supportSamples, gripTravelM }) => supportSamples > 10 && gripTravelM < 0.003));
   assert.ok([...walking, metrics.find(({ label }) => label === 'stop')!].every(({ shoulderStepRad, muzzleStepRad }) =>
-    shoulderStepRad < 0.05 && muzzleStepRad < 0.05));
+    shoulderStepRad < 0.025 && muzzleStepRad < 0.025));
+  for (const segment of walking) {
+    const limit = segment.label === 'right' ? 0.14 : 0.012;
+    assert.ok(segment.supportToeTravelM < limit, `${segment.label} support drift ${segment.supportToeTravelM} m`);
+    assert.ok(segment.kneeStepRad < 0.30, `${segment.label} knee step ${segment.kneeStepRad} rad`);
+  }
   const reversal = samples.find(({ label }) => label === 'right')!;
   const previous = samples[reversal.tick - 2];
-  assert.ok(reversal.pose.walk.cycles > previous.pose.walk.cycles);
+  const nominal = leonWalkBlend(reversal.character.velocity.x, -reversal.character.velocity.z).cyclesPerSecond / 60;
+  assert.ok(reversal.pose.walk.cycles - previous.pose.walk.cycles > nominal);
   assert.ok(reversal.pose.walk.weights[1] > 0 && reversal.pose.walk.weights[3] > 0);
+  assert.ok(previous.pose.walk.plants[0]);
+  assert.strictEqual(reversal.pose.walk.plants[0]?.anchor, previous.pose.walk.plants[0].anchor);
   const stop = samples.filter(({ label }) => label === 'stop');
   assert.ok(stop.every(({ pose }) => pose.walk.cycles === stop[0].pose.walk.cycles));
   assert.equal(stop.at(-1)!.pose.walk.blend, 0);
+  const side = stop[0].pose.walk.plants.findIndex((plant) => plant && plant.weight >= 0.8);
+  assert.ok(side >= 0 && stop.every((sample) => planars(sample.toes[side], stop[0].toes[side]) < 0.008));
   const fired = samples.find(({ label }) => label === 'fire-left')!.tick;
   const reloaded = samples.find(({ label }) => label === 'reload-left')!.tick;
   assert.deepEqual(events.filter(({ type }) => type === 'weapon.fired' || type === 'ammo.committed')
@@ -345,14 +371,17 @@ test('Leon aimed movement transitions keep the weapon attached, feet on the same
   assert.ok(raisedPose.shoulderLine.angleTo(previousRaisePose.shoulderLine) < 0.035);
   assert.ok(raisedPose.muzzle.angleTo(previousRaisePose.muzzle) < 0.035);
   const leftClip = assets.MOTION_DATA.clips.find(({ bank, id }) => bank === 100 && id === 122)!;
+  const holdClip = assets.MOTION_DATA.clips.find(({ bank, id }) => bank === 100 && id === 160)!;
   for (const tick of [raise.tick, fired + 15, reloaded + 84]) {
     const sample = samples[tick - 1];
     assert.equal(sample.action.phase, 'aiming');
     assert.equal(sample.pose.walk.blend, 1);
     assert.deepEqual(sample.pose.walk.weights, [0, 1, 0, 0]);
     const timeS = leonWalkTime(sample.pose.walk.cycles, 1, leftClip.duration);
+    const hip = sourceJointPose(assets, leftClip, 'Hip', timeS).q;
     for (const [name] of aimedUpperPairs) {
-      const expected = sourceJointPose(assets, leftClip, name, timeS);
+      const expected = stabilizedSourceJoint(assets, holdClip, name, sample.pose.aim.idleTimeS, hip,
+        sourceJointPose(assets, leftClip, name, timeS));
       const actual = new Matrix4().fromArray(sample.upper[name]);
       assert.ok(new Vector3().setFromMatrixPosition(actual).distanceTo(expected.p) < 1e-6);
       assert.ok(new Quaternion().setFromRotationMatrix(actual).normalize().angleTo(expected.q) < 1e-6);
@@ -574,6 +603,7 @@ async function checkDirectionalGait(aimedRun: boolean, out: string | undefined) 
   const pairs = [['Hip', 'root'], ...footNames.flatMap((side) => joints.map((name, index) =>
     [`${side}_Leg_${name}`, index ? `${side}_Leg_${joints[index - 1]}` : 'Hip']))];
   const walkingPairs = aimedRun ? [...pairs, ...aimedUpperPairs] : pairs;
+  const holdClip = assets.MOTION_DATA.clips.find(({ bank, id }) => bank === 100 && id === 160)!;
   const perDirection = [];
   for (const [label, , x, y] of directions.slice(0, 8)) {
     const run = byLabel(label);
@@ -595,7 +625,9 @@ async function checkDirectionalGait(aimedRun: boolean, out: string | undefined) 
     let rotationErrorRad = 0;
     for (const sample of steady.filter((_, i) => i % 3 === 0)) {
       const { position, yawRad } = sample.character;
-      player.draw(position, yawRad, sample.pose, { x: -10, y: 1.5, z: 5 });
+      // Source comparison isolates the authored leg base. The main samples retain their planted corrections.
+      player.draw(position, yawRad, { ...sample.pose, walk: { ...sample.walk, plants: [null, null] } }, { x: -10, y: 1.5, z: 5 });
+      const hipRotation = new Quaternion().setFromRotationMatrix(joint('root').invert().multiply(joint('Hip'))).normalize();
       for (const [name, parent] of walkingPairs) {
         const expected = clipWeights.map(({ index }) => {
           const clip = sourceTracks[index];
@@ -612,10 +644,13 @@ async function checkDirectionalGait(aimedRun: boolean, out: string | undefined) 
           first.position.lerp(second.position, weight);
           first.rotation.slerp(second.rotation, weight);
         }
+        const expectedPose = aimedRun && aimedUpperPairs.some(([joint]) => joint === name)
+          ? stabilizedSourceJoint(assets, holdClip, name, sample.pose.aim.idleTimeS, hipRotation, { p: first.position, q: first.rotation })
+          : { p: first.position, q: first.rotation.normalize() };
         const actual = joint(parent).invert().multiply(joint(name));
-        positionErrorM = Math.max(positionErrorM, new Vector3().setFromMatrixPosition(actual).distanceTo(first.position));
+        positionErrorM = Math.max(positionErrorM, new Vector3().setFromMatrixPosition(actual).distanceTo(expectedPose.p));
         rotationErrorRad = Math.max(rotationErrorRad,
-          new Quaternion().setFromRotationMatrix(actual).normalize().angleTo(first.rotation.normalize()));
+          new Quaternion().setFromRotationMatrix(actual).normalize().angleTo(expectedPose.q));
       }
     }
     perDirection.push({ label, clips: clipWeights.map(({ index, weight }) => ({ id: LEON_WALK[index].id, weight })),
@@ -624,6 +659,7 @@ async function checkDirectionalGait(aimedRun: boolean, out: string | undefined) 
 
   const toeStep = (sample: typeof samples[number], previous: typeof samples[number]) =>
     Math.max(...sample.toes.map((toe, side) => toe.distanceTo(previous.toes[side])));
+  let catchThrough = 0;
   for (const [index, sample] of samples.entries()) {
     const previous = samples[index - 1];
     if (!previous) continue;
@@ -632,8 +668,19 @@ async function checkDirectionalGait(aimedRun: boolean, out: string | undefined) 
     const advance = sample.walk.cycles - previous.walk.cycles;
     const right = Math.cos(yawRad) * velocity.x - Math.sin(yawRad) * velocity.z;
     const forward = -Math.sin(yawRad) * velocity.x - Math.cos(yawRad) * velocity.z;
-    if (!sample.character.grounded || speedMps <= 0.1) assert.equal(advance, 0);
-    else assert.ok(Math.abs(advance * 60 - leonWalkBlend(right, forward).cyclesPerSecond) < 1e-8, `phase at ${sample.tick}`);
+    if (!sample.character.grounded || speedMps <= 0.1) {
+      assert.equal(advance, 0);
+      catchThrough = 0;
+      continue;
+    }
+    const last = previous.character.velocity;
+    const reversing = velocity.x * last.x + velocity.z * last.z < -0.85 * speedMps * Math.hypot(last.x, last.z);
+    if (reversing && previous.walk.plants.some((p) => p && p.weight >= 0.8) && previous.walk.cycles % 0.5 < 0.34) {
+      catchThrough = (Math.floor(previous.walk.cycles * 2) + 1) / 2;
+    }
+    const normal = leonWalkBlend(right, forward).cyclesPerSecond / 60;
+    assert.ok(advance >= normal - 1e-10 && advance <= 1.85 * normal + 1e-10, `phase at ${sample.tick}`);
+    if (advance > normal + 1e-10) assert.ok(sample.walk.cycles <= catchThrough + 1e-10);
   }
 
   const reversal = byLabel('reverse-D')[0];

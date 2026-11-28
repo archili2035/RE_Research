@@ -1,10 +1,11 @@
 import * as THREE from 'three';
-import type { ActionPose } from './actions.ts';
+import type { ActionPose, WalkPose } from './actions.ts';
+import { plantToe, toePosition } from './leon-foot-plant.ts';
+import type { LocalPose } from './leon-foot-plant.ts';
 import { LEON_WALK, leonWalkTime } from './leon-locomotion.ts';
 import { attachLeonWeapon } from './leon-weapon.ts';
 
 type Values = readonly number[];
-type LocalPose = Readonly<{ position: Values; rotation: Values; scale: Values }>;
 type Channel = Readonly<{ times: readonly number[]; values: readonly Values[] }>;
 type BonePose = LocalPose & { name: string };
 type Motion = Readonly<{
@@ -69,6 +70,11 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
   if (!hipSource) throw new Error('里昂源动作缺少髋关节');
   const hip = { ...hipSource, scale: [1, 1, 1] };
   const lowerBody = (name: string) => name === 'Hip' || name.startsWith('L_Leg_') || name.startsWith('R_Leg_');
+  const legChains = ['L', 'R'].map((side) => [hip, ...['Upper', 'Lower', 'Ankle', 'Foot', 'Toes'].map((name) => {
+    const bone = walkSources[0].bones.find((item) => item.name === `${side}_Leg_${name}`);
+    if (!bone) throw new Error(`里昂源动作缺少 ${side}_Leg_${name}`);
+    return { ...bone, scale: [1, 1, 1] };
+  })]);
   const rig = LeonSkinning.create(THREE, MODEL_DATA);
   const root = new THREE.Group();
   root.name = 'avatar-leon';
@@ -101,15 +107,38 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
     scale: from.scale.map((value, i) => THREE.MathUtils.lerp(value, to.scale[i], weight)),
   });
 
+  const movingSamples = ({ cycles, weights }: Pick<WalkPose, 'cycles' | 'weights'>) =>
+    walkClips.flatMap((clip, i) => weights[i] > 0 ?
+      [{ clip, time: leonWalkTime(cycles, i, clip.duration), weight: weights[i] }] : []);
+  const sampleStride = (bone: BonePose, clips: ReturnType<typeof movingSamples>) => {
+    const [first, ...others] = clips;
+    let stride = sample(first.clip, first.time, bone);
+    let total = first.weight;
+    for (const { clip, time, weight } of others) {
+      total += weight;
+      stride = blend(stride, sample(clip, time, bone), weight / total);
+    }
+    return stride;
+  };
+  const sampleLeg = (bone: BonePose, weight: number, clips: ReturnType<typeof movingSamples>) => {
+    if (!weight) return sample(raise, 0, bone);
+    const stride = sampleStride(bone, clips);
+    return weight === 1 ? stride : blend(sample(raise, 0, bone), stride, weight);
+  };
+
   // Calibrate once at rest. Animated toe and clothing bounds must not move the whole actor.
   rig.update((bone) => bone.name !== 'root' && raise.tracks.has(bone.name) ? sample(raise, 0, bone) : undefined);
   if (rig.stats.bounds) rig.group.position.y = -rig.stats.bounds.min[1];
 
   let last: ActionPose | undefined;
+  const inverseModel = new THREE.Matrix4();
+  const up = new THREE.Vector3(0, 1, 0);
   function draw(pose: ActionPose) {
     const gait = pose.walk;
     const aimMotion = pose.aim;
-    if (last?.clip === pose.clip && last.progress === pose.progress && last.lift === pose.lift &&
+    const planted = gait.plants.some((support) => support && support.weight > 0);
+    if (!planted && !last?.walk.plants.some((support) => support && support.weight > 0) &&
+        last?.clip === pose.clip && last.progress === pose.progress && last.lift === pose.lift &&
         last.walk.cycles === gait.cycles && last.walk.blend === gait.blend &&
         last.walk.weights.every((weight, i) => weight === gait.weights[i]) &&
         (pose.lift !== 1 || (last.aim.idleTimeS === aimMotion.idleTimeS &&
@@ -118,12 +147,10 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
 
     const walkWeight = THREE.MathUtils.smoothstep(gait.blend, 0, 1);
     const upperWalkWeight = walkWeight * THREE.MathUtils.smoothstep(gait.weights[0], 0.85, 1);
-    // Hand off the upper body over the last part of the raise, reaching the shared gait blend at full aim.
-    const aimedWalkWeight = walkWeight * THREE.MathUtils.smoothstep(pose.lift, 0.65, 1);
-    const times = walkClips.map(({ duration }, i) => leonWalkTime(gait.cycles, i, duration));
-    const movingClips = walkClips.flatMap((clip, i) => gait.weights[i] > 0 ?
-      [{ clip, time: times[i], weight: gait.weights[i] }] : []);
-    const [first, ...others] = movingClips;
+    // Keep the stride in the upper body while biasing the coordinated chain toward the hold.
+    const aimedWalkWeight = 0.38 * walkWeight * THREE.MathUtils.smoothstep(pose.lift, 0.65, 1);
+    const walkingTime = leonWalkTime(gait.cycles, 0, walk.duration);
+    const movingClips = movingSamples(gait);
     const aim = pose.lift === 1 ? hold : raise;
     const aimTimeS = aim === hold ? aimMotion.idleTimeS % hold.duration : raise.duration * pose.lift;
     const aimWeight = pose.lift > 0 ? 1 - upperWalkWeight * (1 - THREE.MathUtils.smoothstep(pose.lift, 0.4, 1)) : 0;
@@ -139,26 +166,30 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
     const basePose = (bone: BonePose) => {
       const ready = sample(raise, 0, bone);
       if (!upperWalkWeight || !walk.tracks.has(bone.name)) return ready;
-      const stride = sample(walk, times[0], bone);
+      const stride = sample(walk, walkingTime, bone);
       return upperWalkWeight === 1 ? stride : blend(ready, stride, upperWalkWeight);
     };
-    const sampleWalk = (bone: BonePose) => {
-      let stride = sample(first.clip, first.time, bone);
-      let total = first.weight;
-      for (const { clip, time, weight } of others) {
-        total += weight;
-        stride = blend(stride, sample(clip, time, bone), weight / total);
-      }
-      return stride;
-    };
-    const locomotion = (bone: BonePose) => {
-      if (!lowerBody(bone.name)) return basePose(bone);
-      if (!walkWeight) return sample(raise, 0, bone);
-      const stride = sampleWalk(bone);
-      return walkWeight === 1 ? stride : blend(sample(raise, 0, bone), stride, walkWeight);
-    };
+    const locomotion = (bone: BonePose) => lowerBody(bone.name) ? sampleLeg(bone, walkWeight, movingClips) : basePose(bone);
     const hipPose = locomotion(hip);
     const hipBase = basePose(hip);
+    const plantedRotations = new Map<string, Values>();
+    if (planted) {
+      rig.group.updateWorldMatrix(true, false);
+      inverseModel.copy(rig.group.matrixWorld).invert();
+      gait.plants.forEach((support, side) => {
+        if (!support || !support.weight) return;
+        const { anchor, weight } = support;
+        const chain = legChains[side];
+        const clips = movingSamples(anchor);
+        const blendWeight = THREE.MathUtils.smoothstep(anchor.blend, 0, 1);
+        const target = toePosition(chain.map((bone) => sampleLeg(bone, blendWeight, clips)))
+          .applyAxisAngle(up, anchor.yawRad + Math.PI)
+          .add(new THREE.Vector3(anchor.position.x, anchor.position.y + rig.group.position.y, anchor.position.z))
+          .applyMatrix4(inverseModel);
+        const rotations = plantToe(chain.map(locomotion), target, weight);
+        rotations?.forEach((rotation, joint) => plantedRotations.set(chain[joint + 1].name, rotation));
+      });
+    }
 
     const aimSample = (bone: BonePose) => {
       const base = sample(aim, aimTimeS, bone);
@@ -192,9 +223,10 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
         value = aimJointWeight === 1 ? target : blend(value, target, aimJointWeight);
       }
       if (aimedWalkJoint) {
-        const stride = sampleWalk(bone);
-        value = aimedWalkWeight === 1 ? stride : blend(value, stride, aimedWalkWeight);
+        value = blend(value, sampleStride(bone, movingClips), aimedWalkWeight);
       }
+      const plantedRotation = plantedRotations.get(bone.name);
+      if (plantedRotation) value = { ...value, rotation: plantedRotation };
       const actionTrack = actionJointWeight > 0 && action?.tracks.get(bone.name);
       if (actionTrack && action === fire) {
         // Compose the 1100 delta over the base pose sampled for this frame.

@@ -50,6 +50,27 @@ function range(values: number[]) {
   return Math.max(...values) - Math.min(...values);
 }
 
+test('M4 keeps the fixed-step foot anchor while interpolating its contact weight', async () => {
+  const room = await createTestRoom(flat);
+  const initial: RenderSnapshot = { ...room.initial, cameraAnchor: room.readCameraAnchor(), actionPose: room.readActionPose() };
+  const render = createRenderSampler(initial, { sweepSphere: () => null }, radiusM);
+  const anchor = { cycles: 0.06, blend: 1, weights: initial.actionPose.walk.weights,
+    position: initial.character.position, yawRad: initial.character.yawRad };
+  const planted: RenderSnapshot = {
+    ...initial, tick: 1, actionPose: {
+      ...initial.actionPose, walk: { ...initial.actionPose.walk, plants: [{ anchor, weight: 0.8 }, null] },
+    },
+  };
+  render.commit(planted, false);
+  const incoming = render.sample(0.5).actionPose.walk.plants[0];
+  assert.strictEqual(incoming?.anchor, anchor);
+  assert.equal(incoming.weight, 0.4);
+  render.commit({ ...initial, tick: 2 }, false);
+  const outgoing = render.sample(0.5).actionPose.walk.plants[0];
+  assert.strictEqual(outgoing?.anchor, anchor);
+  assert.equal(outgoing.weight, 0.4);
+});
+
 test('M4 samples the camera and a rigid character marker together on flat W/A/S/D courses', async () => {
   const rows = ['hz,mode,key,frame,tick,alpha,before_x_px,before_y_px,after_x_px,after_y_px,fixed_feet_y_m,fixed_vx_mps,fixed_vz_mps'];
   const summary = [];
