@@ -116,7 +116,7 @@ export async function createTestRoom(level = testRoom, manifest?: ClipManifest) 
   };
 
   const resolveSceneEvents: NonNullable<SimulationStages['resolveSceneEvents']> = (state, events, emit) => {
-    // Resolve confirmed fire using the same fixed-step camera that drives the crosshair.
+    // Confirmed fire uses the fixed-step camera that will be presented for the shot.
     events.forEach((event) => {
       if (event.type !== 'weapon.fired' || event.subjectId !== state.action.id) return;
       const hit = castCrosshair(queries, state.camera, shotRangeM);
@@ -134,6 +134,7 @@ export async function createTestRoom(level = testRoom, manifest?: ClipManifest) 
   return {
     level, scene, avatar, queries, doorPrompt, readMovementDebug, reset,
     get initial() { return runtime.initial; },
+    readCameraAnchor: () => runtime.camera.anchor,
     readActionPose: () => runtime.actions.readPose(),
     stages: {
       move: (...args) => runtime.move(...args),

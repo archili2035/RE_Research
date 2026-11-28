@@ -12,7 +12,7 @@ function distance(from: Vec3, to: Vec3) {
   return Math.hypot(to.x - from.x, to.y - from.y, to.z - from.z);
 }
 
-function interpolate(from: Vec3, to: Vec3, fraction: number): Vec3 {
+export function interpolatePosition(from: Vec3, to: Vec3, fraction: number): Vec3 {
   return {
     x: from.x + (to.x - from.x) * fraction,
     y: from.y + (to.y - from.y) * fraction,
@@ -65,7 +65,7 @@ export function createCamera(
     return { lengthM, allowedM, hit };
   }
 
-  function solve(feet: Vec3, view: ViewAngles, queries: SceneQueries, previous?: CameraPose): CameraPose {
+  function solve(feet: Vec3, view: ViewAngles, queries: SceneQueries, previous?: CameraPose) {
     const { yawRad } = view;
     const mix = (move: number, aim: number) => move + (aim - move) * aimBlend;
     const direction = crosshairDirection(view);
@@ -92,7 +92,7 @@ export function createCamera(
       else compressionM += (targetM - compressionM) * recoveryDamping;
     }
     const boomLengthM = Math.max(0, lengthM - compressionM);
-    const goal = interpolate(anchor, desired, lengthM > 0 ? boomLengthM / lengthM : 0);
+    const goal = interpolatePosition(anchor, desired, lengthM > 0 ? boomLengthM / lengthM : 0);
     let position = goal;
     let obstructed = hit !== null;
 
@@ -101,24 +101,26 @@ export function createCamera(
     if (previous && (sharpRetraction || retracting)) {
       const travelM = distance(previous.position, goal);
       if (travelM > retractStepM) {
-        const candidate = interpolate(previous.position, goal, retractStepM / travelM);
+        const candidate = interpolatePosition(previous.position, goal, retractStepM / travelM);
         const clearance = sweep(anchor, candidate, queries);
-        position = interpolate(anchor, candidate, clearance.lengthM > 0 ? clearance.allowedM / clearance.lengthM : 0);
+        position = interpolatePosition(anchor, candidate, clearance.lengthM > 0 ? clearance.allowedM / clearance.lengthM : 0);
         obstructed ||= clearance.hit !== null;
       }
     }
     retracting = distance(position, goal) > SETTLE_DISTANCE_M;
 
-    return {
+    const pose: CameraPose = {
       ...view,
       position,
       verticalFovRad: mix(moveVerticalFovRad.value, aimVerticalFovRad.value),
       obstructed,
     };
+    return { pose, anchor };
   }
 
   const pitchRad = clampPitch(initialPitchRad?.value ?? INITIAL_PITCH_RAD);
-  const initial = solve(character.position, { yawRad: character.yawRad, pitchRad }, scene);
+  let solution = solve(character.position, { yawRad: character.yawRad, pitchRad }, scene);
+  const initial = solution.pose;
   const update: SimulationStages['camera'] = (input, nextCharacter, nextAction, previous, queries) => {
     const yaw = previous.yawRad - input.lookDeltaX * lookRadPerPx.value;
     const pitch = previous.pitchRad - input.lookDeltaY * lookRadPerPx.value;
@@ -126,10 +128,11 @@ export function createCamera(
     const pitchRad = clampPitch(pitch);
     const feet = nextCharacter.position;
     const followedHeight = followedFeet.y + (feet.y - followedFeet.y) * heightDamping;
-    followedFeet = { ...interpolate(followedFeet, feet, positionDamping), y: followedHeight };
+    followedFeet = { ...interpolatePosition(followedFeet, feet, positionDamping), y: followedHeight };
     aimBlend += (Number(nextAction.aiming) - aimBlend) * (nextAction.aiming ? aimDamping : moveDamping);
-    return solve(feet, { yawRad, pitchRad }, queries, previous);
+    solution = solve(feet, { yawRad, pitchRad }, queries, previous);
+    return solution.pose;
   };
 
-  return { initial, update };
+  return { initial, update, get anchor() { return solution.anchor; } };
 }

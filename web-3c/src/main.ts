@@ -6,10 +6,11 @@ import { loadClipManifest } from './clip-manifest.ts';
 import type { GameEvent, LevelDefinition, Vec3 } from './contracts.ts';
 import { createHud } from './hud.ts';
 import { bindInput } from './input.ts';
-import { createTestRoom } from './level.ts';
+import { createTestRoom, defaultFeel } from './level.ts';
 import { loadLeonAssets } from './leon-assets.ts';
 import { CHARACTER_BODY } from './movement.ts';
 import { bindPlayerAppearance, createPlayerView } from './player-view.ts';
+import { createRenderSampler } from './render-sampler.ts';
 import { createFixedLoop, createSimulation } from './simulation.ts';
 import './style.css';
 
@@ -24,11 +25,6 @@ const collision = document.querySelector<HTMLOutputElement>('#collision')!;
 const events = document.querySelector<HTMLPreElement>('#events')!;
 
 const formatVector = ({ x, y, z }: Vec3) => `${x.toFixed(3)}, ${y.toFixed(3)}, ${z.toFixed(3)}`;
-
-function lerpAngle(from: number, to: number, alpha: number) {
-  const difference = to - from;
-  return from + Math.atan2(Math.sin(difference), Math.cos(difference)) * alpha;
-}
 
 function eventLine(event: GameEvent) {
   let details = '';
@@ -53,7 +49,7 @@ async function boot() {
     console.warn('动作素材加载失败，使用胶囊占位', error);
     return undefined;
   });
-  const { scene, avatar, queries, initial, stages, doorPrompt, readMovementDebug, readActionPose } =
+  const { scene, avatar, queries, initial, stages, doorPrompt, readMovementDebug, readActionPose, readCameraAnchor } =
     await createTestRoom(level, manifest);
   const actionView = clips && createActionView(clips);
   if (actionView) scene.remove(avatar);
@@ -95,21 +91,20 @@ async function boot() {
     status.textContent = '鼠标锁定失败，请重新点击进入';
   });
 
-  let previous = initial;
-  let current = initial;
-  let previousActionPose = readActionPose();
-  let currentActionPose = previousActionPose;
+  const render = createRenderSampler(
+    { ...initial, actionPose: readActionPose(), cameraAnchor: readCameraAnchor() },
+    queries, defaultFeel.camera.sphereRadiusM.value,
+  );
   const recent: string[] = [];
   const step = createSimulation(initial, queries, {
     ...stages,
     sampleInput: input.sample,
     publish(state, frame, emitted) {
-      previous = current;
-      current = state;
-      previousActionPose = currentActionPose;
-      currentActionPose = readActionPose();
+      const actionPose = readActionPose();
+      const fired = emitted.some(({ type, subjectId }) => type === 'weapon.fired' && subjectId === state.action.id);
+      render.commit({ ...state, actionPose, cameraAnchor: readCameraAnchor() }, fired);
       const { position, velocity, grounded } = state.character;
-      const gait = currentActionPose.walk;
+      const gait = actionPose.walk;
       hud.update(state.tick, state.action, emitted, doorPrompt(position));
       snapshot.value = [
         `步号 ${state.tick}  移动 [${frame.moveX}, ${frame.moveY}]`,
@@ -138,35 +133,8 @@ async function boot() {
   });
 
   const loop = createFixedLoop(step, (alpha) => {
-    const lerp = (from: number, to: number) => THREE.MathUtils.lerp(from, to, alpha);
-    const a = previous.character.position;
-    const b = current.character.position;
-    const from = previousActionPose.walk;
-    const to = currentActionPose.walk;
-    const aimFrom = previousActionPose.aim;
-    const aimTo = currentActionPose.aim;
-    const renderPose = {
-      ...currentActionPose,
-      aim: {
-        idleTimeS: lerp(aimFrom.idleTimeS, aimTo.idleTimeS),
-        stationaryBlend: lerp(aimFrom.stationaryBlend, aimTo.stationaryBlend),
-        turn: lerp(aimFrom.turn, aimTo.turn),
-        turnTimeS: lerp(aimFrom.turnTimeS, aimTo.turnTimeS),
-      },
-      walk: {
-        cycles: lerp(from.cycles, to.cycles), blend: lerp(from.blend, to.blend),
-        weights: [lerp(from.weights[0], to.weights[0]), lerp(from.weights[1], to.weights[1]),
-          lerp(from.weights[2], to.weights[2]), lerp(from.weights[3], to.weights[3])] as const,
-      },
-    };
-    // Use the swept fixed-step pose, so the view matches the crosshair ray.
-    const pose = current.camera;
-    actor.draw(
-      { x: lerp(a.x, b.x), y: lerp(a.y, b.y), z: lerp(a.z, b.z) },
-      lerpAngle(previous.character.yawRad, current.character.yawRad, alpha),
-      renderPose,
-      pose.position,
-    );
+    const { character, actionPose, camera: pose } = render.sample(alpha);
+    actor.draw(character.position, character.yawRad, actionPose, pose.position);
     camera.position.set(pose.position.x, pose.position.y, pose.position.z);
     camera.rotation.set(pose.pitchRad, pose.yawRad, 0, 'YXZ');
     const fov = THREE.MathUtils.radToDeg(pose.verticalFovRad);
