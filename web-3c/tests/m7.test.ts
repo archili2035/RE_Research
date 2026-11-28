@@ -7,11 +7,14 @@ import type { FeelConfig, ReplayTrace } from '../src/contracts.ts';
 import { createTestRoom, defaultFeel as feel, testRoom } from '../src/level.ts';
 import { createRoutePlayback, matchesReferenceEvents } from '../src/m7-replay.ts';
 import { createFixedLoop } from '../src/simulation.ts';
+import { routeTick } from './test-room-route.mjs';
 import type { SimulationState } from '../src/simulation.ts';
 
 const route = routeJson as ReplayTrace;
 const door = testRoom.doors[0];
 const ammo = ({ action }: SimulationState) => [action.magazine, action.reserve];
+const T = routeTick;
+const last = route.inputs.length;
 
 async function setup(config = feel) {
   const room = await createTestRoom(testRoom, manifest);
@@ -42,9 +45,9 @@ async function setup(config = feel) {
       const frameCount = Math.ceil((route.inputs.length - playback.state.tick) * route.stepS * renderHz);
       for (let frame = 0; frame <= frameCount; frame += 1) loop.frame(frame * 1000 / renderHz);
       assert.ok(playback.done);
-      assert.equal(samples.length, 616);
+      assert.equal(samples.length, last);
       playback.step();
-      assert.equal(samples.length, 616, 'stepping after completion must not publish');
+      assert.equal(samples.length, last, 'stepping after completion must not publish');
       return { samples: [...samples], trace: playback.trace() };
     },
     reset() {
@@ -64,35 +67,35 @@ test('M7 publishes the test-room baseline at 60 and 120 Hz', async () => {
   assert.ok(matchesReferenceEvents(a.trace, route));
   assert.equal(a.trace.events.length, 31);
   const at = (tick: number) => a.samples[tick - 1];
-  const cornerVelocity = at(279).state.character.velocity;
+  const cornerVelocity = at(T.turn).state.character.velocity;
   assert.ok(Math.hypot(cornerVelocity.x, cornerVelocity.z) < 0.002);
-  assert.equal(at(371).state.camera.obstructed, false);
-  assert.deepEqual(a.trace.events.filter(({ tick }) => tick === 375).map(({ order, type, subjectId }) =>
+  assert.equal(at(T['fire-start']).state.camera.obstructed, false);
+  assert.deepEqual(a.trace.events.filter(({ tick }) => tick === T.shot).map(({ order, type, subjectId }) =>
     [order, type, subjectId]), [
     [0, 'weapon.fired', 'preview-player'],
     [1, 'ammo.committed', 'preview-player'],
     [2, 'target.hit', 'target-practice'],
   ]);
   assert.deepEqual(a.trace.events.flatMap((event) => event.type === 'ammo.committed'
-    ? [[event.tick, event.order, event.magazine, event.reserve]] : []), [[375, 1, 7, 16], [431, 0, 8, 15]]);
-  assert.deepEqual(ammo(at(374).state), [8, 16]);
-  assert.deepEqual(ammo(at(430).state), [7, 16]);
-  assert.equal(at(375).flash, 1);
-  assert.equal(at(399).flash, 0);
+    ? [[event.tick, event.order, event.magazine, event.reserve]] : []), [[T.shot, 1, 7, 16], [T['reload-commit'], 0, 8, 15]]);
+  assert.deepEqual(ammo(at(T.shot - 1).state), [8, 16]);
+  assert.deepEqual(ammo(at(T['reload-commit'] - 1).state), [7, 16]);
+  assert.equal(at(T.shot).flash, 1);
+  assert.equal(at(T.shot + 24).flash, 0);
   assert.deepEqual(a.trace.events.flatMap((event) => event.type === 'door.changed'
     ? [[event.tick, event.order, event.subjectId, event.open]] : []), [
-    [533, 2, door.id, true], [565, 2, door.id, false], [591, 2, door.id, true],
+    [T['door-opened'], 2, door.id, true], [T['door-closed'], 2, door.id, false], [T['return-opened'], 2, door.id, true],
   ]);
-  for (const tick of [532, 590]) {
+  for (const tick of [T['door-blocked'], T['return-blocked']]) {
     assert.ok(at(tick).doorClosed && at(tick).contacts.includes(door.colliderId));
     assert.ok(Math.abs(at(tick).state.character.velocity.z) < 0.01);
   }
-  assert.ok(at(532).state.character.position.z > 0.4);
-  assert.ok(at(590).state.character.position.z < -0.4);
-  assert.deepEqual(a.trace.events.filter(({ tick }) => tick === 544).map(({ type }) => type), ['input.request']);
-  assert.ok(!at(564).doorClosed && at(564).state.character.position.z < -0.75);
-  assert.ok(!at(616).doorClosed && at(616).state.character.position.z > 0.5);
-  assert.deepEqual(ammo(at(616).state), [8, 15]);
+  assert.ok(at(T['door-blocked']).state.character.position.z > 0.4);
+  assert.ok(at(T['return-blocked']).state.character.position.z < -0.4);
+  assert.deepEqual(a.trace.events.filter(({ tick }) => tick === T['threshold-denied']).map(({ type }) => type), ['input.request']);
+  assert.ok(!at(T['next-room']).doorClosed && at(T['next-room']).state.character.position.z < -0.75);
+  assert.ok(!at(last).doorClosed && at(last).state.character.position.z > 0.5);
+  assert.deepEqual(ammo(at(last).state), [8, 15]);
 });
 
 test('M7 resets the same room twice and clears live camera, action, door and target state', async () => {
@@ -122,7 +125,7 @@ test('M7 resets the same room twice and clears live camera, action, door and tar
   }
 
   session.reset();
-  while (playback.state.tick < 375) playback.step();
+  while (playback.state.tick < T.shot) playback.step();
   assert.equal(playback.state.action.phase, 'firing');
   assert.ok(playback.state.camera.verticalFovRad < spawn.camera.verticalFovRad);
   assert.equal(targetMaterial.emissiveIntensity, 1);
@@ -144,13 +147,13 @@ test('M7 applies the tuned movement, camera, and ammo values on reset and stamps
   assert.equal(trace.feelVersion, tuned.version);
   assert.ok(!matchesReferenceEvents(trace, route));
   assert.ok(samples[29].state.character.position.x < -2.25);
-  assert.ok(Math.abs(samples[385].state.camera.verticalFovRad - 0.7) < 0.001);
+  assert.ok(Math.abs(samples[T['fire-start'] + 10].state.camera.verticalFovRad - 0.7) < 0.001);
   assert.deepEqual(ammo(samples.at(-1)!.state), [7, 0]);
   assert.equal(trace.events.filter((event) => event.type === 'ammo.committed').length, 1);
   for (const group of [feel.movement, feel.camera, feel.actions]) {
     for (const value of Object.values(group)) {
       assert.ok(Number.isFinite(value.value));
-      assert.equal(value.evidence, 'tuned');
+      assert.ok(['measured', 'observed', 'tuned'].includes(value.evidence));
       assert.ok(value.source && value.conditions);
     }
   }

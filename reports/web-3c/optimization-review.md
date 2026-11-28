@@ -4,6 +4,8 @@
 
 同日 16:00 按工作区更新复核。期间新增方向步态（[actions.ts](../../web-3c/src/actions.ts) `createWalk`）、本机武器挂载（[leon-weapon.ts](../../web-3c/src/leon-weapon.ts)）、`build:portal` 发布脚本，并更新了 [里昂试玩记录](leon-playfield.md)。`movement.ts`、`camera.ts`、`level.ts`、`input.ts`、`feel.json` 未改。复核时本地 `npm test` 25/25 通过（Node 22.23.4）。下文各项已按复核结果更新。
 
+2026-11-28 第二轮：动作与镜头按解包数据落地 `FeelConfig` v5，详见 [动作与镜头对齐原作](character-camera-fidelity.md#3-第二轮已落地feelconfig-v5)。第 1、9 项相应更新，全量测试 38 项通过、2 项为需本机资源的可选用例（指定资源后通过）。
+
 ## 结论
 
 整体框架搭得对，比一般原型规整：固定步加分阶段的模拟流程、带版本号的数据接口、616 步回放基线，每个手感参数都标了来源和证据等级。
@@ -30,7 +32,7 @@
 
 | # | 问题 | 位置 | 建议 |
 | --- | --- | --- | --- |
-| 1 | 不瞄准时角色朝向锁死镜头。RE4 重制版的做法是：不瞄准时镜头自由转、角色转向按键方向，举枪后角色才与镜头对齐。**复核更新**：程序化方向步态已覆盖 A、S、D 和斜向，滑步问题已缓解；但非瞄准时仍是横移、后退，操控模式本身未变。 | [movement.ts](../../web-3c/src/movement.ts) `yawRad = previous.camera.yawRad`（未改） | 先用实机录像确认安魂曲非瞄准时是转身走还是横移。若是转身走，加转身步骤和转身速度参数，非瞄准时主要走前移轨，方向步态留给举枪状态。 |
+| 1 | ~~不瞄准时角色朝向锁死镜头。~~ **11-28 已处理**：实机截帧确认不瞄准时转身；`movement.ts` 改为不瞄准转向按键方向、举枪转向镜头偏航 −9°（`arm0000` 持枪偏移），共用 450°/s 限速。 | [movement.ts](../../web-3c/src/movement.ts) | 转向速度 450°/s 取自配置数值、语义未验证，待录像校准；起步、停步、原地转身片段见第二轮文档待办 1–2。 |
 | 2 | 没有加速和减速，目标速度直接变成位移，「急停无脚滑」验收测不出东西。方向步态的落脚和接续步都按瞬时速度算，加入加减速后需复测脚趾偏移。 | [movement.ts](../../web-3c/src/movement.ts)（未改） | 补起步加速度和急停减速度参数，改后重跑方向步态的固定步轨迹。 |
 | 3 | 手感参数全为手调值，实机样本 T01–T10 未采。 | [feel.json](../../web-3c/src/feel.json) · [reference-timings.csv](reference-timings.csv) | OBS 120／240 fps 录屏加按键显示叠加，逐帧数出举枪时长、开火响应、换弹时长、起步和急停距离、举枪镜头切换时长，先补这 5 项。录像要能看清双脚并同步 WASD 和右键状态，顺带核对第 1 项的操控模式，以及 [leon-playfield.md](leon-playfield.md) 列出的方向步态待校准项（领步脚、后退步长与抬脚高度、换向重心）。 |
 
@@ -43,7 +45,7 @@
 | 6 | 命中只做镜头射线。贴墙角射击会出现「看得见打不到」或「能打到墙后」。 | [level.ts](../../web-3c/src/level.ts) `resolveSceneEvents` · [camera.ts](../../web-3c/src/camera.ts) `castCrosshair` | 越肩标准两段式：先从镜头打射线得到瞄准点（起点推到角色前方），再从枪口向瞄准点打一条判断遮挡。 |
 | 7 | 模拟层直接改画面对象：开门改门板 `visible`，靶子改 `emissiveIntensity`。 | [level.ts](../../web-3c/src/level.ts) `setDoorOpen`、`resolveSceneEvents` | 模拟层只输出状态和事件，画面层自己响应。 |
 | 8 | 有不在 `SimulationState` 里的隐藏状态：举枪进度、开火缓冲、镜头跟随位置、镜头臂长度等存在闭包里。**复核更新**：新增的 `createWalk` 又加了步态相位、双脚世界锚点和换向计时。无法存档或直接跳到第 N 步，回放页只能从第 0 步重跑；对比两版参数在第 375 步的差异会卡住。 | [actions.ts](../../web-3c/src/actions.ts) · [camera.ts](../../web-3c/src/camera.ts) | 把这些状态并入可序列化的模拟快照，支持保存与跳步。 |
-| 9 | 手感常量写死在代码，调参面板改不了：0.5 s 开火缓冲、步态淡入淡出时间、俯仰上下限、开火和补弹时间点比例（0.06/0.24、0.72/1.40）。**复核新增**：`AIM_WALK_MPS = 1.55`、`READY_WALK_MPS = 2.55` 与 `feel.json` 的 `aimSpeedMps`、`walkSpeedMps` 重复，M7 面板改速度后步态 `pace` 不跟着变；另有步幅 0.86／1.14 m、`FORWARD_STRIDE_M`、`SUPPORT_FRACTION` 等。 | [actions.ts](../../web-3c/src/actions.ts) · [camera.ts](../../web-3c/src/camera.ts) | 时间点写进 [clips.json](../../web-3c/public/assets/clips.json) 作为动作事件标记；速度直接读 `feel.movement`；步态常量并入 `feel.json` 新分组或单独的步态配置。 |
+| 9 | 手感常量写死在代码，调参面板改不了：0.5 s 开火缓冲、步态淡入淡出时间、俯仰上下限、开火和补弹时间点比例（0.06/0.24、0.72/1.40）。~~`AIM_WALK_MPS`、`READY_WALK_MPS` 与 `feel.json` 重复~~（11-28：步态改为按实际速度和源轨根位移计算，重复常量已去掉；原创外观腿摆仍写死 `speed / 2.55`）；另有步幅 0.86／1.14 m、`FORWARD_STRIDE_M`、`SUPPORT_FRACTION` 等。 | [actions.ts](../../web-3c/src/actions.ts) · [camera.ts](../../web-3c/src/camera.ts) | 时间点写进 [clips.json](../../web-3c/public/assets/clips.json) 作为动作事件标记；速度直接读 `feel.movement`；步态常量并入 `feel.json` 新分组或单独的步态配置。 |
 | 10 | 规则漏洞：瞄准、换弹、开火过程中也能按 E 开门。 | [level.ts](../../web-3c/src/level.ts) `act` | 交互前检查动作阶段，非 `ready` 时拒绝或缓冲。 |
 
 ### P2：工程整理

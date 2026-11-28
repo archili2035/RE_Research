@@ -7,6 +7,7 @@ import { castCrosshair, createCamera } from '../src/camera.ts';
 import type { SceneQueries, Vec3 } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
+import { withLegacyMovement } from '../src/preview-stages.ts';
 import { createSimulation } from '../src/simulation.ts';
 import { cameraTuneSteps } from './camera-tune-route.mjs';
 
@@ -41,11 +42,12 @@ test('a height change is damped while mouse angles update on the input tick', ()
 });
 
 test('camera tune route stays clear and the shot after the doorway projects to the crosshair', async () => {
-  const room = await createTestRoom(testRoom, manifest);
+  const room = await createTestRoom(testRoom, manifest, withLegacyMovement(defaultFeel));
   const door = room.scene.getObjectByName(testRoom.doors[0].colliderId)!;
   const samples = [];
   const radius = defaultFeel.camera.sphereRadiusM.value;
   let previousCamera = room.initial.camera;
+  let basePitch = previousCamera.pitchRad;
   let shots = 0;
   const step = createSimulation(room.initial, room.queries, {
     ...room.stages,
@@ -56,8 +58,11 @@ test('camera tune route stays clear and the shot after the doorway projects to t
       const sensitivity = defaultFeel.camera.lookRadPerPx.value;
       const expectedYaw = previousCamera.yawRad - input.lookDeltaX * sensitivity;
       assert.ok(Math.abs(Math.sin((yawRad - expectedYaw) / 2)) < 1e-10, `yaw lag at tick ${tick}`);
-      assert.ok(Math.abs(pitchRad - previousCamera.pitchRad + input.lookDeltaY * sensitivity) < 1e-10,
-        `pitch lag at tick ${tick}`);
+      // Mouse pitch is applied without lag. After a shot the weapon kick adds a temporary, bounded offset.
+      basePitch -= input.lookDeltaY * sensitivity;
+      const kick = pitchRad - basePitch;
+      assert.ok(kick > -1e-10 && kick < (shots ? defaultFeel.camera.recoilPitchRad.value : 0) + 1e-10,
+        `pitch lag at tick ${tick}: ${kick}`);
       const clearanceM = Math.min(...testRoom.colliders.filter(({ id }) => door.visible || id !== door.name)
         .map(({ center, size }) => Math.hypot(
           Math.max(0, Math.abs(position.x - center.x) - size.x / 2),

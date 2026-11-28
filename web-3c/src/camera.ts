@@ -3,8 +3,22 @@ import { STEP_S } from './contracts.ts';
 import type { ActionState, CameraPose, CharacterState, FeelConfig, SceneQueries, Vec3, ViewAngles } from './contracts.ts';
 import type { SimulationStages } from './simulation.ts';
 
-const MIN_PITCH_RAD = -0.85;
-const MAX_PITCH_RAD = 0.65;
+// PlayerCameraRotationParam TPS_Default: _PitchRangeDeg = Range(-60, 120), read as start and length.
+const MIN_PITCH_RAD = -Math.PI / 3;
+const MAX_PITCH_RAD = Math.PI / 3;
+// arm0000 CameraRecoilParam._Curve, normalized time to normalized kick. Sampled linearly.
+const RECOIL_CURVE = [[0, 0], [0.01996, 0], [0.03998, 1], [0.141, 0.8946566], [0.22, 0.5], [1, 0]] as const;
+
+function recoilAt(fraction: number) {
+  if (fraction <= 0 || fraction >= 1) return 0;
+  for (let i = 1; i < RECOIL_CURVE.length; i += 1) {
+    const [t1, v1] = RECOIL_CURVE[i];
+    if (fraction > t1) continue;
+    const [t0, v0] = RECOIL_CURVE[i - 1];
+    return v0 + (v1 - v0) * (fraction - t0) / (t1 - t0);
+  }
+  return 0;
+}
 const INITIAL_PITCH_RAD = -0.16;
 const SETTLE_DISTANCE_M = 0.001;
 
@@ -45,7 +59,10 @@ export function createCamera(
     lookRadPerPx, moveDistanceM, aimDistanceM, moveShoulderM, aimShoulderM, moveHeightM, aimHeightM,
     moveVerticalFovRad, aimVerticalFovRad, aimTransitionS, moveTransitionS, recoveryS, sphereRadiusM,
     wallClearanceM, collisionRetractMps, followPositionS, followHeightS, recoveryDeadbandM, initialPitchRad,
+    recoilPitchRad, recoilCurveS,
   } = parameters;
+  const recoilKickRad = recoilPitchRad?.value ?? 0;
+  const recoilTicks = Math.max(1, Math.round((recoilCurveS?.value ?? 0) / STEP_S));
   const aimDamping = damping(aimTransitionS.value);
   const moveDamping = damping(moveTransitionS.value);
   const recoveryDamping = damping(recoveryS.value);
@@ -57,6 +74,8 @@ export function createCamera(
   let aimBlend = Number(action.aiming);
   let compressionM: number | undefined;
   let retracting = false;
+  let lastMagazine = action.magazine;
+  let recoilTick = -1; // Steps since the kick started; -1 when idle.
 
   function sweep(from: Vec3, to: Vec3, queries: SceneQueries) {
     const lengthM = distance(from, to);
@@ -119,13 +138,19 @@ export function createCamera(
   }
 
   const pitchRad = clampPitch(initialPitchRad?.value ?? INITIAL_PITCH_RAD);
+  let basePitchRad = pitchRad; // Player-controlled pitch without the temporary weapon kick.
   let solution = solve(character.position, { yawRad: character.yawRad, pitchRad }, scene);
   const initial = solution.pose;
   const update: SimulationStages['camera'] = (input, nextCharacter, nextAction, previous, queries) => {
     const yaw = previous.yawRad - input.lookDeltaX * lookRadPerPx.value;
-    const pitch = previous.pitchRad - input.lookDeltaY * lookRadPerPx.value;
+    basePitchRad = clampPitch(basePitchRad - input.lookDeltaY * lookRadPerPx.value);
     const yawRad = Math.atan2(Math.sin(yaw), Math.cos(yaw));
-    const pitchRad = clampPitch(pitch);
+    // The kick starts on the step after the shot, so the shot ray uses the unkicked view.
+    if (recoilTick >= 0) recoilTick = recoilTick + 1 >= recoilTicks ? -1 : recoilTick + 1;
+    if (nextAction.magazine < lastMagazine && recoilKickRad) recoilTick = 0;
+    lastMagazine = nextAction.magazine;
+    const kickRad = recoilTick > 0 ? recoilKickRad * recoilAt(recoilTick / recoilTicks) : 0;
+    const pitchRad = clampPitch(basePitchRad + kickRad);
     const feet = nextCharacter.position;
     const followedHeight = followedFeet.y + (feet.y - followedFeet.y) * heightDamping;
     followedFeet = { ...interpolatePosition(followedFeet, feet, positionDamping), y: followedHeight };

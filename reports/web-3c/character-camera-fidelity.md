@@ -1,96 +1,96 @@
 # 动作与镜头对齐原作：差距与待办
 
-2026-11-26 评估。目标是让 Web 3C 试玩场中里昂的动作和镜头，在表现上与《生化危机：安魂曲》一致。本文只覆盖角色动作与镜头，不涉及场景、材质和音效。其他工程问题见 [评审与优化清单](optimization-review.md)。
+目标是让 Web 3C 试玩场中里昂的动作和镜头，在表现上与《生化危机：安魂曲》一致。本文只覆盖角色动作与镜头，不涉及场景、材质和音效。其他工程问题见 [评审与优化清单](optimization-review.md)。
+
+- 2026-11-26 初版：差距评估。
+- 2026-11-28 第二轮：解析原作混合树和角色配置，按解包数据落地 `FeelConfig` v5（第 3 节），并更新待办。
 
 ## 结论
 
-**能做到很接近，但做法要变：动作要直接用原作片段，镜头要按原作参数的结构重写。** 只靠现在的程序化步态和手调镜头，再怎么调也做不像。
+**能做到很接近，路线已经验证可行：动作直接用原作片段和混合树，镜头按原作参数结构重写。** 第二轮之后，移动速度、角色朝向、持枪偏移、四向混合方式、上身俯仰和开火后坐都改为解包数据驱动；仍差镜头结构重写、低枪起停与转身片段，以及全部实机校准。
 
 | 层次 | 能否做到一样 | 依据 |
 | --- | --- | --- |
-| 单个动作的姿态 | 基本一样 | 原作骨架、蒙皮、动作数据都能读，14 条已在浏览器里播放。[播放器说明](../../player/MODEL_README.md) |
-| 动作衔接和镜头运动 | 肉眼接近 | 动作清单和镜头参数都有，但动作之间怎么混合、镜头参数怎么换算成位置，代码里没有写明，要靠录像去猜、去校。 |
-| 逐帧完全一致 | 要靠运行时采集 | [采集器 v0.1](../../runtime/README_zh.md) 已写好，还没在游戏里跑过。材质、头发和布料物理、表情不在本次范围内。 |
+| 单个动作的姿态 | 基本一样 | 原作骨架、蒙皮、动作数据都能读。浏览器已播放 14 条，本机另有 28 条额外轨。[播放器说明](../../player/MODEL_README.md) |
+| 动作衔接和镜头运动 | 肉眼接近 | 混合树结构、转向曲线、镜头和后坐参数都已读出，但变量单位和阻尼公式没有直接证据，要靠录像校准。 |
+| 逐帧完全一致 | 要靠运行时采集 | [采集器 v0.1](../../runtime/README_zh.md) 仍未在游戏里跑过。材质、头发和布料物理、表情不在本次范围内。 |
 
-## 1. 现有资源盘点
+## 1. 现有资源
 
 | 资源 | 状态 | 位置 |
 | --- | --- | --- |
-| 里昂模型 | 六分件 LOD2 灰模，72,346 顶点，CPU 蒙皮。无贴图、无武器、无表情、无布料。 | [docs/player/model.js](../../docs/player/model.js) · [MODEL_README](../../player/MODEL_README.md) |
-| 已解码动作 | 14 条：`100/120、122、124、126、140、160、161、165、167、1100、1200、1201`，`2100/1200、1201`。均为 69 根骨骼，包含 `C_Prop_Cam_A`、`R_Wep`、`L_Wep` 轨道。 | [docs/player/motions.json](../../docs/player/motions.json) |
-| 动作索引 | 23,717 条，已解析名称、帧数与帧率，未解码轨道。 | [all_resolved.csv](../phase2/all_resolved.csv) |
-| 状态机 | 3 套 TPS 状态机、3,836 条关系；手枪举枪、开火、换弹、收枪的调用链已串联。 | [3C 拆解](../3c/leon_tps_handgun_3c_zh.md) · [state_edges.csv](../3c/state_edges.csv) |
-| 镜头配置 | 279 份全部解析成功，含普通与持枪的位置、旋转、FOV、碰撞、过渡与 5 组覆盖项。 | [parsed/](../3c/camera/parsed/) · [parameters.csv](../3c/parameters.csv) |
-| 动作遮罩 | Mask 2、Mask 4 等已读出并接入试玩。 | [docs/player/masks.js](../../docs/player/masks.js) |
-| 实机参考 | 公开视频截帧若干，无同步按键记录。 | `runtime/leon-re9-video-review.tmp/`（git 忽略） |
-| 运行时采集 | REFramework Lua 原型，本地模拟测试通过，0 条实机记录。 | [runtime/README_zh.md](../../runtime/README_zh.md) |
-| 武器模型 | `wp0100` 代码已能挂载，本机文件不存在，来源未登记。 | [leon-weapon.ts](../../web-3c/src/leon-weapon.ts) |
+| 里昂模型 | 六分件 LOD2 灰模，72,346 顶点，CPU 蒙皮。无贴图、无表情、无布料。 | [docs/player/model.js](../../docs/player/model.js) |
+| 浏览器动作（公开） | 14 条：`100/120、122、124、126、140、160、161、165、167、1100、1200、1201`，`2100/1200、1201`。 | [docs/player/motions.js](../../docs/player/motions.js) |
+| 本机额外动作 | 28 条：`100/141、145、158、159、1040、5000–5004`；`200/0、1、310–315、2200–2203、2270、5100–5104`（bank 200 = `Handgun00M` 低枪组）。只在本机 Vite 提供。 | `runtime/web-3c-leon-extra.tmp/motions-extra.js`（git 忽略） |
+| 原作 3C 源数据 | 20 棵混合树、44 个动作变量、角色转向／行走／上身转动／看向配置、`arm0000` 手枪的镜头后坐与准星参数、各片段根速度。 | [source-data/leon-3c-source.json](source-data/leon-3c-source.json) |
+| 导出器 | 一次运行同时产出上面两项。 | [scripts/web-3c/Leon3CExport](../../scripts/web-3c/Leon3CExport/Program.cs) |
+| 镜头配置 | 279 份全部解析，含普通与持枪的位置、旋转、FOV、碰撞、过渡与 5 组覆盖项。 | [parsed/](../3c/camera/parsed/) |
+| 武器 | `wp0100`（`arm0000`）静态网格已挂到 `R_Wep`，本机文件在 `runtime/web-3c-weapon.tmp/`。 | [weapon-attachment.md](weapon-attachment.md) |
+| 实机参考 | B 站游玩视频 720p 若干帧，无同步按键、FOV 设置未知。 | [m4-video-calibration.md](m4-video-calibration.md) |
+| 运行时采集 | REFramework Lua 原型，0 条实机记录。 | [runtime/README_zh.md](../../runtime/README_zh.md) |
 
-## 2. 动作：差距主要在没用原作片段
+## 2. 原作混合树要点
 
-目前试玩只用到 14 条中的几条，其余靠程序化步态补。以下原作动作都有，但还没解码或没接入。
+均来自 `ch0100_motiontree.motlist`，完整节点和连线见 [source-data](source-data/leon-3c-source.json) 的 `motionTrees`。
 
-| 场景 | 原作做法 | 网页现状 | 需要的片段 |
+| 树 | 结构 | 网页现状 |
+| --- | --- | --- |
+| `Hold_strafe`（2） | `OctSyncBlend`，`CircledBlend` 与 `RootTransPolarBlend` 为真，四条 `100/120/122/124/126`；播放速度经 `RangeNormalize(0.2–1)` 限制 | **已对齐**：改为相邻两轨圆周混合 |
+| `Hold_Loop`（4） | `160` 与 `165/167` 由 `WheelBlendRate` 混合 | 已接入 `165/167`；权重仍用自定阈值，未用原作曲线 |
+| `Hold_Start`（6） | `140` 与 `141/145/158/159` 五向举枪 | 已解码，未接入 |
+| `Hold_RunToStart`（7） | 跑动中举枪 `5000–5004` | 已解码，未接入 |
+| `tram_strafe_front`（120） | 低枪行走 `2200–2203` 圆周混合，另含楼梯分支 | **已接入**四向循环（本机） |
+| `Run_Loop`（101） | `5100–5104` 按 `WatchDir` 混合，另含楼梯 | 已接入 `5102` 正前（本机）；转弯倾斜轨未接 |
+| `Strafe_FrontStart_L/R`、`tram_strafe_*_end_L/R`（122–143） | 按左右脚、四方向的起步和停步 | 未解码 |
+| `QuickTrun`（30）、`run_start_turn`（21）、`BattleRunEnd`（110/111） | 原地快速转身、带角度起跑、跑步收步 | 已解码 `310–315`；其余未解码，均未接入 |
+
+## 3. 第二轮已落地（FeelConfig v5）
+
+| 项 | 原作依据 | 网页实现 | 验证 |
 | --- | --- | --- | --- |
-| 不瞄准走路 | `GeneralM` 整套：起步按左右脚、四个方向分开，循环，停步也按左右脚分开 | 用持枪平移循环 `100/120` 加程序化方向步态 | 起步 `2000–2027`，循环 `2200–2207`、`2270`，停步 `2500–2527` |
-| 不瞄准跑步 | 带角度起跑、循环、跑动转身 | 同上，Shift 只改速度 | 起跑 `5000–5007`，循环 `5100–5104`，跑动转身 `5355`、`5400`、`5405` |
-| 原地转身 | 按角度播放转身动作 | 无 | `GeneralM 0310–0315` |
-| 举枪后移动 | Motion2 按方向混合 `120/122/124/126` | 侧移、后退、斜向走程序化步态 | 已解码，只需接入 |
-| 站着瞄准 | `160` 循环，按转向速度混 `165`、`167` | 静止取 `160` 首帧 | 已解码，只需接入 |
-| 带角度举枪 | 角色与镜头朝向不一致时按角度举枪 | 只有正前方 `140` | `141`、`145`、`158`、`159` |
-| 举枪途中开火 | `HoldStartShoot` 分支播放 `1040` | 缓冲到举枪完成再开火 | `1040` |
-| 收枪 | `161` | 反向插值举枪进度 | 已解码，只需接入 |
-| 换弹 | `1200` 加增量层 `2100/1200` | 只用 `1200` 绝对姿态 | 已解码，需验证增量基准 |
-| 武器 | 角色动作之外单独请求武器动画 | 无武器动画 | 武器动画 `5000`，模型 `wp0100` |
+| 移动速度 | 片段根速度：四向持枪循环均约 1.10 m/s；`Handgun00M_2202` 1.80 m/s；`5102` 3.59 m/s。FPS 配置 `_WalkSpeed 1.8`、`_SprintSpeed 3.6` 与之吻合 | 瞄准 1.10、步行 1.80、奔跑 3.60 m/s，证据等级 `observed`（原 1.55／2.55／4.30） | [leon-v5.test.ts](../../web-3c/tests/leon-v5.test.ts) 逐项比对 |
+| 角色朝向 | 实机截帧显示不瞄准时转身；`PlayerRotateConfiguration` | 不瞄准转向按键方向，举枪转向镜头；限速 450°/s | 同上，含限速与松键保持 |
+| 持枪偏移 | `_TPSHoldOffsetForWeapons`：`arm0000` = −9° | `holdYawOffsetRad` = −9° | 枪口投影：0° 时在准星左 16.3% W，−9° 时 **左 9.5% W**，原片为左 9–10% W，见 `runtime/web-3c-leon-v5.tmp/muzzle-offset.json` |
+| 四向混合 | `Hold_strafe` 圆周混合 | 相邻两轨按方向角插值，步频 = 速度 ÷ 混合根位移 | 八方向源姿态逐骨误差 < 1e-6 m |
+| 低枪行走与跑步 | `tram_strafe_front`、`Run_Loop` | 本机有额外轨时用 `200` 组，独立相位；Shift 混入跑步 | 相位推进按实际位移校验 |
+| 上身俯仰 | `UpperRotateState` 站姿扭转率 腰 0.5／腹 0.5／胸 1 | 举枪时镜头俯仰按 0.25／0.25／0.5 分到三节脊柱 | 顶节脊柱转角等于镜头俯仰（误差 < 0.01 rad） |
+| 俯仰范围 | `TPS_Default._PitchRangeDeg = Range(-60, 120)` | ±60°（原 −48.7°～+37°） | — |
+| 开火后坐 | `arm0000 CameraRecoilParam`：俯仰 `Range(1.2, 0.3)`、曲线峰值 4%、2.8 s | 开火下一步起镜头上抬，峰值 1.35° | 当步射线不受影响；峰值与时长对上曲线 |
 
-需要解码的约 30 条，加上 Motion2（移动）、Motion4（持枪站立）两棵混合树的参数定义。混合树决定方向权重和速度阈值，是脚不滑的关键。
+浏览器生产预览已走查：低枪待机、右移、后退、奔跑、举枪、抬头瞄准、开火，无报错，截图在 `runtime/web-3c-leon-v5.tmp/`。回放基线因速度改变重录为 815 步、31 条事件，事件顺序与 v4 一致。
 
-**操控模式已能确认。** 视频截帧 12:07.5–12:09 中，里昂不瞄准时朝镜头跑来、身体转向移动方向，不是背对镜头倒退。所以：
+**有意保留的旧参数。** M0–M6 的碰撞、镜头和门路线测试按 v4 速度写死了步数，改用 `withLegacyMovement` 继续跑 v4 速度和「朝向等于镜头」，以免机制回归和手感改动混在一起。里昂源姿态比对测试关闭俯仰层，只比对原片。
 
-- 不瞄准时，角色转向移动方向。转向参数可先用配置里 `PlayerRotateCorrectorBySpeed` 的 `StartAccelTime 0.08`、`StartCompleteTime 0.19`，启用条件待验证。
-- 举枪后，角色对齐镜头，并带 `_TPSHoldOffsetDeg −6` 的持枪角度偏移。
-- 当前 [movement.ts](../../web-3c/src/movement.ts) 始终让角色朝镜头方向，需要改。
+## 4. 镜头：仍按旧结构
 
-## 3. 镜头：参数结构本身就不同
+| 项 | 原作配置（静态值） | 网页现状 |
+| --- | --- | --- |
+| 位置 | 普通 `_Offset <0.5, 1.47, 0>`，`_GazeDistance 1.7`；持枪 `<0.4, 1.5, 0.1>`，`1.1` | v4 视频拟合 1.95／1.60 m、肩偏移 0.46／0.44 m |
+| 随俯仰变化 | 偏移与距离曲线，例如普通距离倍率 −90°／0°／90° 为 0.7／1／0.6 | 无 |
+| 阻尼 | 每分量一对（时间, 比率），持枪跟随 0.05／0.95 | 单一指数时间常数 |
+| 状态过渡 | 进入持枪 0.5 s 定时 + 曲线 `0 → 0.6055:0.387 → 1`；其他档 0.35／0.4／0.1 s | 指数 0.11／0.13 s |
+| FOV | 都是 63，模板类型 0／1；普通贴墙 +5.5，近裁面 0.1 调 −0.08 | 32°／23°（视频拟合） |
+| 碰撞 | 半径 0.1 + 0.35 提前检测，避让偏移带曲线 | 半径 0.16 单次球扫 |
+| 动画驱动 | 跟随 `C_Prop_Cam_A`，`1100`、`1200` 带该骨轨道 | 无 |
+| 瞄准晃动、开枪抖动 | `AimCameraShakeParam` 周期 2–4 s；`CameraShakeParam` 0.2 s、前后 −0.1–0.2 | 无 |
+| 覆盖项 | 持枪 5 组覆盖 | 无 |
 
-原作参数都已解析，网页没有按这个结构做。
+**v4 视频拟合需要重看。** 只用一帧时，距离和 FOV 可以互相抵消；视频的 FOV 设置不明；若原作 63 是水平角度，16:9 下垂直约 38°，和网页 32°／23° 差距不小。
 
-| 项 | 原作配置（静态值） | 网页现状 | 来源 |
-| --- | --- | --- | --- |
-| 位置 | 普通 `_Offset <0.5, 1.47, 0>`，`_GazeDistance 1.7`；持枪 `<0.4, 1.5, 0.1>`，`1.1`，跟随关节 `root` | 镜头距离 3.3 / 2.1 m，肩部偏移 0.72 / 0.6 m | [normal](../3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/position/normal.user.3.json) · [hold](../3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/position/hold.user.3.json) |
-| 随俯仰变化 | 偏移与距离各有曲线。例如普通距离倍率在 −90° / 0° / 90° 时为 0.7 / 1 / 0.6；持枪为 1.36 / 1 / 1.42 | 无 | 同上，`_GazeDistanceXCurve` 等 |
-| 阻尼 | 每个分量一对（时间, 比率）。普通跟随 0.1 / 0.9，持枪 0.05 / 0.95 | 单一指数衰减时间常数 | 同上，`_FollowOffset` 等 |
-| 状态过渡 | 普通与持枪之间有过渡参数，含曲线 `0 → 0.6055:0.387 → 1` | 指数过渡 0.11 / 0.15 s | [hold.user](../3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/hold.user.3.json) `_TransitionParam` |
-| FOV | 两种都是 63，模板类型 0 / 1 不同。普通状态贴墙时 FOV 增加 5.5，近裁面 0.1 调整 −0.08 | 58° / 46° | [default](../3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/fov/tps_default.user.3.json) · [hold](../3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/fov/tps_hold.user.3.json) |
-| 碰撞 | 半径 0.1，另有半径 0.35 的提前检测；避让偏移 `<0.3, 1.75, 0.2>` 带俯仰曲线；检测起点 0.25 | 半径 0.16 单次球扫 | [tps_normal](../3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/collision/tps_normal.user.3.json) · [tps_hold](../3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/collision/tps_hold.user.3.json) |
-| 俯仰范围 | `_PitchRangeDeg Range(-60, 120)`，推测为 −60° 到 +60° | −48.7° 到 +37° | [rotation](../3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/rotation/tps_default.user.3.json) |
-| 动画驱动 | 旋转同步关节 `C_Prop_Cam_A`；`1100`、`1200` 等片段带该骨骼轨道，开火、换弹时镜头会晃 | 无 | 同上，`_SyncJointName` |
-| 覆盖项 | 持枪状态另有 5 组覆盖配置 | 无 | [hold.user](../3c/camera/parsed/stm/gameassets/camera/userdata/playertpscamera/common/action/hold.user.3.json) `_OverrideParam` |
+## 5. 待办（按顺序）
 
-**换算语义需要验证。** 参数有了，但怎么换算成实际位置没有直接证据，例如：
+| # | 工作 | 依赖 |
+| --- | --- | --- |
+| 1 | 低枪起停：解码 `2000–2027`、`2500–2527`，按 `PlayerLocomotionSetting` 的左右脚角度范围选片段 | 无，可直接做 |
+| 2 | 原地转身与快速转身：接入 `310–315`；举枪时角度差大于阈值用 `141/145/158/159` | 无 |
+| 3 | `Hold_Loop` 的 `WheelBlendRate` 改用原作曲线（±20° 映射 0–1，速度 1–5 倍），替换自定阈值 | 需确认横轴是角度差还是角速度 |
+| 4 | 镜头按第 4 节结构重写，叠 `C_Prop_Cam_A`、瞄准晃动和开枪抖动 | 换算语义需录像确认 |
+| 5 | 收枪 `161`、举枪中开火 `1040`、换弹增量 `2100/1200`、武器 `wp0100` 自身动画 | 武器动画需解码 `wp0100.motlist` |
+| 6 | 停步时支撑脚只部分承重的情况：停在支撑期刚开始时，承重会停在低值（测试中观察到 0.11），应在停下后补满 | 无 |
+| 7 | 自录 120 fps 实机录像（默认 FOV、按键显示），填 T01–T10；需要逐帧一致时跑采集器 | **需要你协助** |
 
-- `_GazeDistance` 是从哪一点量到哪一点；
-- `DampingParam` 的时间和比率具体怎么算；
-- FOV 63 是水平还是垂直角度，模板类型 0 / 1 的含义；
-- 俯仰曲线的横轴是否为俯仰角（度）。
+## 6. 风险
 
-做法是按假设实现，在同一姿态下截图，与录像叠在一起对比校准。
-
-## 4. 待办（按顺序）
-
-| # | 工作 | 产出 | 验收 |
-| --- | --- | --- | --- |
-| 1 | 补解码约 30 条动作（第 2 节列表），并解析 Motion2、Motion4 混合树参数 | 扩充的动作数据，混合树参数表 | 浏览器播放器能逐帧查看；骨骼与现有 14 条一致 |
-| 2 | 重写角色动画层：不瞄准时为站立 → 带角度起步 → 循环 → 按左右脚停步，加原地转身；瞄准时为四方向混合、`160` 加 `165/167`、带角度举枪、`1040`、`161` | 新的 [leon-view.ts](../../web-3c/src/leon-view.ts) 与动作层 | 程序化步态只在缺片段时兜底；起停和换向脚趾偏移不超过现有记录 |
-| 3 | 补操控：不瞄准时角色转向移动方向；加入加减速；移动速度按片段根骨骼位移反算 | 修改 [movement.ts](../../web-3c/src/movement.ts)，`FeelConfig` 升到 v4 | 重录回放基线，事件差异符合预期 |
-| 4 | 按原作结构重写镜头：俯仰曲线、成对阻尼、状态过渡曲线、FOV 与近裁面避让、两层碰撞检测，并把 `C_Prop_Cam_A` 轨道叠到镜头上 | 新的 [camera.ts](../../web-3c/src/camera.ts)，参数直接读解析后的配置 | 靠墙举枪、L 角、出门三种场景不穿墙、不突跳 |
-| 5 | 校准：录 120 fps 录像并叠加按键显示，覆盖 T01–T10；需要逐帧一致时，在游戏里跑采集器，拿到各动画层的动作编号、帧、权重和镜头变换 | [reference-timings.csv](reference-timings.csv) 填入实测值；参数证据等级改为 `measured` | 同一姿态下网页截图与录像叠图对齐 |
-| 6 | 补武器：`wp0100` 模型加武器动画 `5000`；登记来源和生成步骤 | [asset-audit.json](asset-audit.json) 记录 | 握把对齐 `R_Wep`，开火时武器动作同步 |
-
-第 1、2 步最快见效，建议先做。
-
-## 5. 风险
-
-- **公开分发。** `497a01c` 之后，门户线上会加载 `docs/player` 里的里昂模型（10.9 MB）和动作。接入更多原作资产，等于公开分发的更多。如果门户对外公开，建议原作资产只在本机研究时使用，公开版只放原创素材。
-- **采集器未验证。** 对象链、方法名都是候选，第一次实机运行可能读不到数据，需要按 probe 结果修正。
-- **混合语义未还原。** 混合树权重、覆盖项优先级、阻尼公式都要靠录像或运行时数据确认，静态配置只能给初值。
+- **公开分发。** 门户线上会加载 `docs/player` 里的里昂模型和 14 条动作。本轮新增的 28 条动作只在本机提供，公开版不含；导出的源数据 JSON 只含数值和结构，不含网格或动画。
+- **语义未验证。** 后坐区间按「起点＋长度」解读、俯仰范围同理、450°/s 转向取自 `_MotionBlendApplyCoefficient` 的数值，都需要录像确认。
+- **采集器未验证。** 第一次实机运行可能读不到数据，需要按 probe 结果修正对象链。

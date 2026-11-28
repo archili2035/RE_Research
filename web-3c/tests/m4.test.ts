@@ -6,7 +6,8 @@ import feel from '../src/feel.json' with { type: 'json' };
 import { castCrosshair, createCamera } from '../src/camera.ts';
 import type { InputSnapshot, SceneHit, SceneQueries, Vec3 } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
-import { createTestRoom, testRoom } from '../src/level.ts';
+import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
+import { withLegacyMovement } from '../src/preview-stages.ts';
 import { createFixedLoop, createSimulation } from '../src/simulation.ts';
 import type { SimulationState } from '../src/simulation.ts';
 
@@ -21,7 +22,7 @@ interface Segment {
 }
 
 async function run(spawn: typeof testRoom.spawn, segments: Segment[], renderHz = 60) {
-  const room = await createTestRoom({ ...testRoom, spawn });
+  const room = await createTestRoom({ ...testRoom, spawn }, undefined, withLegacyMovement(defaultFeel));
   const course = segments.flatMap(({ name, count, input }) => Array.from({ length: count }, () => ({ name, input })));
   const panel = room.scene.getObjectByName(testRoom.doors[0].colliderId)!;
   let anchor = room.initial.character.position;

@@ -10,6 +10,28 @@ import route from '../fixtures/rhodes-route.json' with { type: 'json' };
 const LOOK_RAD_PER_PX = 0.0022;
 const wrap = (a: number) => Math.atan2(Math.sin(a), Math.cos(a));
 
+test('Rhodes Hill greybox boxes never share volume (overlaps z-fight and flicker)', () => {
+  const level = rhodesJson as unknown as LevelDefinition;
+  const eps = 1e-4;
+  const boxes = level.render.map((item) => {
+    assert.equal(item.kind, 'box');
+    assert.equal(item.yawRad, 0, 'axis-aligned boxes only');
+    const { size } = item as Extract<typeof item, { kind: 'box' }>;
+    const min = { x: item.position.x - size.x / 2, y: item.position.y - size.y / 2, z: item.position.z - size.z / 2 };
+    const max = { x: item.position.x + size.x / 2, y: item.position.y + size.y / 2, z: item.position.z + size.z / 2 };
+    return { id: item.id, min, max };
+  }).sort((a, b) => a.min.x - b.min.x);
+  const overlaps: string[] = [];
+  for (let i = 0; i < boxes.length; i += 1) {
+    const a = boxes[i];
+    for (let j = i + 1; j < boxes.length && boxes[j].min.x < a.max.x - eps; j += 1) {
+      const b = boxes[j];
+      if ((['y', 'z'] as const).every((k) => b.min[k] < a.max[k] - eps && a.min[k] < b.max[k] - eps)) overlaps.push(`${a.id} × ${b.id}`);
+    }
+  }
+  assert.deepEqual(overlaps, []);
+});
+
 test('Rhodes Hill greybox: 2F gallery -> stairs -> Central Hall -> guard office door -> medication room', async () => {
   const level = rhodesJson as unknown as LevelDefinition;
   const room = await createTestRoom(level);

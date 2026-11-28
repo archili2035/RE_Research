@@ -67,7 +67,7 @@ Vite 本机预览及同源门户直接读取现有 `docs/player` 灰模资源，
 | M4 | `src/level.ts` 已接入 `src/camera.ts`。镜头默认值见 `src/feel.json` 的 `camera` 组，沿用 `CameraPose`、球扫和射线查询。 |
 | M5 | 主测试场使用 `src/actions.ts` 的举枪、单发及换弹时序，`src/action-view.ts` 读取 M2 轨道。规则、证据与复现见 [M5 动作规则](../reports/web-3c/action-rules.md)。 |
 | M6 | 主入口加载 `src/levels/test-room.json`。`src/level.ts` 发布门和靶事件，`src/hud.ts` 消费状态与事件。 |
-| M7 | 通过输入采样和发布入口接入 `ReplayTrace` 和版本化 `FeelConfig`。试玩与回放共用 `test-room@1`、动作清单和 `FeelConfig` v3。回放基线为 616 步、31 条事件。实机对照待采集。 |
+| M7 | 通过输入采样和发布入口接入 `ReplayTrace` 和版本化 `FeelConfig`。试玩与回放共用 `test-room@1`、动作清单和 `FeelConfig` v5。回放基线为 815 步、31 条事件。实机对照待采集。 |
 | M8 | 生产构建输出为本地 `dist/`。在 M2–M7 汇合后验收路线、性能并接研究站导航。 |
 
 这些类型是新接口。接入时在主入口替换预览实现即可，现有研究站、播放器和地图工程无需迁移。

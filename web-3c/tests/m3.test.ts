@@ -7,17 +7,19 @@ import type { FeelConfig, InputSnapshot, LevelDefinition, Vec3 } from '../src/co
 import feelJson from '../src/feel.json' with { type: 'json' };
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom } from '../src/level.ts';
+import { withLegacyMovement } from '../src/preview-stages.ts';
 import { createSimulation } from '../src/simulation.ts';
 
 const greybox = greyboxJson as LevelDefinition;
-const feel = feelJson as FeelConfig;
+// Collision cases are laid out at the v4 speeds; the heading turns instantly without turnSpeedRadPerS.
+const feel = withLegacyMovement(feelJson as FeelConfig);
 const empty = createInputBuffer().sample(0);
 
 async function run(
   level: LevelDefinition, position: Vec3, ticks: number, controls: (tick: number) => Partial<InputSnapshot>,
 ) {
   const spawn = { ...level.spawn, position };
-  const { initial, stages, queries, readMovementDebug } = await createTestRoom({ ...level, spawn });
+  const { initial, stages, queries, readMovementDebug } = await createTestRoom({ ...level, spawn }, undefined, feel);
   const step = createSimulation(initial, queries, {
     ...stages,
     sampleInput: (tick) => ({ ...empty, ...controls(tick), tick }),

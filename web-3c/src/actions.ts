@@ -1,6 +1,6 @@
 import { STEP_S } from './contracts.ts';
 import type { ActionState, CharacterState, ClipManifest, FeelConfig, Vec3 } from './contracts.ts';
-import { leonWalkBlend } from './leon-locomotion.ts';
+import { LEON_MOVE_RUN, LEON_MOVE_WALK, LEON_ROOT_SPEED, blendedStride, leonWalkBlend } from './leon-locomotion.ts';
 import type { LeonWalkWeights } from './leon-locomotion.ts';
 import type { SimulationStages } from './simulation.ts';
 
@@ -14,6 +14,7 @@ export interface ActionPose {
   readonly gaitWeight: number;
   readonly walk: WalkPose;
   readonly aim: AimPose;
+  readonly clockS: number; // Simulation time, for idle loops in the character view.
 }
 
 export interface AimPose {
@@ -21,17 +22,21 @@ export interface AimPose {
   readonly stationaryBlend: number;
   readonly turn: number;
   readonly turnTimeS: number;
+  readonly pitchRad: number; // Committed camera pitch, shared by the upper body while aiming.
 }
 
 export interface WalkPose {
   readonly cycles: number;
   readonly blend: number;
   readonly weights: LeonWalkWeights;
+  readonly carryCycles: number; // Phase of the carry-gun walk and run loops (bank 200), advanced by their own stride.
+  readonly hold: number; // 1 for the aimed strafe set (bank 100), 0 for the carry-gun walk and run set (bank 200).
+  readonly run: number; // Run loop share inside the carry-gun set.
   readonly plants: readonly [FootPlant | null, FootPlant | null];
 }
 
 export interface FootPlant {
-  readonly anchor: Readonly<Pick<WalkPose, 'cycles' | 'blend' | 'weights'> & { position: Vec3; yawRad: number }>;
+  readonly anchor: Readonly<Pick<WalkPose, 'cycles' | 'carryCycles' | 'blend' | 'weights' | 'hold' | 'run'> & { position: Vec3; yawRad: number }>;
   readonly weight: number;
 }
 
@@ -45,7 +50,8 @@ const MAX_DIRECTION_WEIGHT_CHANGE = 7.8 * STEP_S;
 const AIM_TURN_DAMPING = 1 - Math.exp(-STEP_S / 0.075);
 const AIM_TURN_DEAD_ZONE_RAD_S = 0.11;
 const AIM_TURN_FULL_RAD_S = 0.43;
-const aimAtRest: AimPose = { idleTimeS: 0, stationaryBlend: 0, turn: 0, turnTimeS: 0 };
+const aimAtRest: AimPose = { idleTimeS: 0, stationaryBlend: 0, turn: 0, turnTimeS: 0, pitchRad: 0 };
+const RUN_DAMPING = 1 - Math.exp(-STEP_S / 0.12);
 
 function smoothstep(value: number, from: number, to: number) {
   const t = Math.min(1, Math.max(0, (value - from) / (to - from)));
@@ -53,17 +59,24 @@ function smoothstep(value: number, from: number, to: number) {
 }
 
 function createWalk() {
-  let walk: WalkPose = { cycles: 0, blend: 0, weights: [1, 0, 0, 0], plants: [null, null] };
+  let walk: WalkPose = { cycles: 0, carryCycles: 0, blend: 0, weights: [1, 0, 0, 0], hold: 0, run: 0, plants: [null, null] };
   let lastDirection: { right: number; forward: number } | undefined;
   let catchFromCycle = 0;
   let catchThroughCycle = 0;
 
-  function gait(character: CharacterState, speed: number): Pick<WalkPose, 'cycles' | 'blend' | 'weights'> {
+  function gait(character: CharacterState, speed: number, lift: number): Pick<WalkPose, 'cycles' | 'carryCycles' | 'blend' | 'weights' | 'hold' | 'run'> {
+    const hold = lift;
     if (!character.grounded || speed <= MOVING_THRESHOLD_MPS) {
       lastDirection = undefined;
       catchThroughCycle = 0;
-      return { cycles: walk.cycles, weights: walk.weights, blend: Math.max(0, walk.blend - STEP_S / WALK_BLEND_OUT_S) };
+      return { cycles: walk.cycles, carryCycles: walk.carryCycles, weights: walk.weights, hold, run: walk.run * (1 - RUN_DAMPING),
+        blend: Math.max(0, walk.blend - STEP_S / WALK_BLEND_OUT_S) };
     }
+    // A 5% band above the walk loop absorbs collision rounding so steady walking stays on the walk loops.
+    const walkBandMps = 1.05 * LEON_ROOT_SPEED.walk;
+    const runTarget = hold > 0 ? 0 : Math.max(0, Math.min(1,
+      (speed - walkBandMps) / (LEON_ROOT_SPEED.run - walkBandMps)));
+    const run = walk.run + (runTarget - walk.run) * RUN_DAMPING;
 
     const { velocity, yawRad } = character;
     const sin = Math.sin(yawRad);
@@ -79,7 +92,10 @@ function createWalk() {
     }
     lastDirection = direction;
     const target = leonWalkBlend(localRight, localForward);
+    // Each set advances by its own blended root stride, so either set matches the committed travel.
     const advance = target.cyclesPerSecond * STEP_S;
+    const carryStrideM = (1 - run) * blendedStride(target.weights, LEON_MOVE_WALK) + run * LEON_MOVE_RUN.distanceM;
+    const carryCycles = walk.carryCycles + speed / carryStrideM * STEP_S;
     const catchRate = 0.85 * smoothstep(walk.cycles - catchFromCycle, -0.02, 0.04);
     const catchAdvance = Math.min(catchRate * advance, Math.max(0, catchThroughCycle - walk.cycles - advance));
     const largestChange = Math.max(...walk.weights.map((value, i) => Math.abs(value - target.weights[i])));
@@ -90,12 +106,13 @@ function createWalk() {
       cycles: walk.cycles + advance + catchAdvance,
       blend: Math.min(1, walk.blend + STEP_S / WALK_BLEND_IN_S),
       weights: crossfade ? [weight(0), weight(1), weight(2), weight(3)] : target.weights,
+      carryCycles, hold, run,
     };
   }
 
   function update(character: CharacterState, speed: number, lift: number) {
     if (lift <= 0.65) catchThroughCycle = 0;
-    const next = gait(character, speed);
+    const next = gait(character, speed, lift);
     const moving = character.grounded && speed > MOVING_THRESHOLD_MPS;
     const aim = smoothstep(lift, 0.65, 1);
     const contact = (side: 0 | 1): FootPlant | null => {
@@ -148,12 +165,16 @@ export function createActions(parameters: FeelConfig['actions'], manifest?: Clip
   let gaitPhaseRad = 0;
   let turnRateRadS = 0;
   const walk = createWalk();
-  let pose: ActionPose = { clip: null, progress: 0, lift, gaitPhaseRad, gaitWeight: 0, walk: walk.initial, aim: aimAtRest };
+  let pose: ActionPose = {
+    clip: null, progress: 0, lift, gaitPhaseRad, gaitWeight: 0, walk: walk.initial, aim: aimAtRest, clockS: 0,
+  };
 
-  function updateAimPose(character: CharacterState, yawDeltaRad: number) {
+  function updateAimPose(character: CharacterState, yawDeltaRad: number, pitchRad = 0) {
     if (lift !== 1) {
       turnRateRadS = 0;
-      if (pose.aim !== aimAtRest) pose = { ...pose, aim: aimAtRest };
+      if (pose.aim.pitchRad !== pitchRad || pose.aim.idleTimeS !== 0 || pose.aim.turn !== 0) {
+        pose = { ...pose, aim: { ...aimAtRest, pitchRad } };
+      }
       return;
     }
     const stationary = character.grounded && Math.hypot(character.velocity.x, character.velocity.z) <= MOVING_THRESHOLD_MPS;
@@ -167,6 +188,7 @@ export function createActions(parameters: FeelConfig['actions'], manifest?: Clip
       stationaryBlend: character.grounded ? 1 - pose.walk.blend : 0,
       turn,
       turnTimeS: pose.aim.turnTimeS + (turn ? STEP_S * (0.5 + 0.75 * Math.abs(turn)) : 0),
+      pitchRad,
     } };
   }
 
@@ -241,7 +263,7 @@ export function createActions(parameters: FeelConfig['actions'], manifest?: Clip
 
     pose = {
       clip, progress: active ? (tick - active.started) / active.length : 0, lift, gaitPhaseRad, gaitWeight,
-      walk: walk.update(character, speed, lift), aim: pose.aim,
+      walk: walk.update(character, speed, lift), aim: pose.aim, clockS: tick * STEP_S,
     };
     return { id: subject, phase, aiming, magazine, reserve };
   };

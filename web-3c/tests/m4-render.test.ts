@@ -8,6 +8,9 @@ import { castCrosshair, interpolatePosition } from '../src/camera.ts';
 import type { CameraPose, InputSnapshot, LevelDefinition, SceneHit, Vec3 } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
 import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
+import { withLegacyMovement } from '../src/preview-stages.ts';
+
+const legacy = withLegacyMovement(defaultFeel);
 import { createPlayerView } from '../src/player-view.ts';
 import { createRenderSampler } from '../src/render-sampler.ts';
 import type { RenderSnapshot } from '../src/render-sampler.ts';
@@ -51,7 +54,7 @@ function range(values: number[]) {
 }
 
 test('M4 keeps the fixed-step foot anchor while interpolating its contact weight', async () => {
-  const room = await createTestRoom(flat);
+  const room = await createTestRoom(flat, undefined, legacy);
   const initial: RenderSnapshot = { ...room.initial, cameraAnchor: room.readCameraAnchor(), actionPose: room.readActionPose() };
   const render = createRenderSampler(initial, { sweepSphere: () => null }, radiusM);
   const anchor = { cycles: 0.06, blend: 1, weights: initial.actionPose.walk.weights,
@@ -75,7 +78,7 @@ test('M4 samples the camera and a rigid character marker together on flat W/A/S/
   const rows = ['hz,mode,key,frame,tick,alpha,before_x_px,before_y_px,after_x_px,after_y_px,fixed_feet_y_m,fixed_vx_mps,fixed_vz_mps'];
   const summary = [];
   for (const hz of [60, 120]) for (const aimHeld of [false, true]) for (const [key, moveX, moveY] of axes) {
-    const room = await createTestRoom(flat);
+    const room = await createTestRoom(flat, undefined, legacy);
     let current = room.initial;
     let previous = current;
     const render = createRenderSampler({
@@ -146,7 +149,7 @@ test('M4 clears the live scene and shows the exact firing frame at 60/120 Hz, in
   ];
   const evidence = [];
   for (const { label, hz, inputs, skip } of cases) {
-    const room = await createTestRoom(testRoom, manifest);
+    const room = await createTestRoom(testRoom, manifest, legacy);
     const door = room.scene.getObjectByName(testRoom.doors[0].colliderId)!;
     const actor = createPlayerView({ root: room.avatar });
     let current = room.initial;
@@ -231,7 +234,7 @@ test('M4 clears the live scene and shows the exact firing frame at 60/120 Hz, in
 });
 
 test('M4 falls back to a swept pair on a blocked interpolation and does not rewind', async () => {
-  const room = await createTestRoom(flat);
+  const room = await createTestRoom(flat, undefined, legacy);
   const initial: RenderSnapshot = { ...room.initial, cameraAnchor: room.readCameraAnchor(), actionPose: room.readActionPose() };
   const hit: SceneHit = { colliderId: 'wall', distanceM: 1, point: initial.camera.position, normal: { x: 0, y: 0, z: 1 } };
   const shifted = (tick: number): RenderSnapshot => ({

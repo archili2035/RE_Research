@@ -10,8 +10,9 @@ import { createActionView } from '../src/action-view.ts';
 import { loadClipAssets } from '../src/clip-assets.ts';
 import type { GameEvent, InputSnapshot, LevelDefinition } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
-import { createTestRoom, testRoom } from '../src/level.ts';
-import { LEON_WALK, leonWalkBlend, leonWalkTime } from '../src/leon-locomotion.ts';
+import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
+import { LEON_WALK, leonDirectionWeights, leonWalkBlend, leonWalkTime } from '../src/leon-locomotion.ts';
+import { withLegacyMovement } from '../src/preview-stages.ts';
 import { createLeonView } from '../src/leon-view.ts';
 import type { LeonAssets } from '../src/leon-view.ts';
 import { createPlayerView } from '../src/player-view.ts';
@@ -20,6 +21,10 @@ import manifest from '../public/assets/clips.json' with { type: 'json' };
 import { testRoomRoute } from './test-room-route.mjs';
 
 const source = new URL('../../docs/player/', import.meta.url);
+// Source-pose comparisons isolate the authored clips: no spine pitch layer, and the v4 heading and speeds
+// that these gait cases were laid out for. The v5 heading, pitch and carry-gun cases have their own tests.
+const unpitched = { upperBodyPitch: false } as const;
+const legacy = withLegacyMovement(defaultFeel);
 
 async function rehearsalClips() {
   const bytes = readFileSync(new URL('../public/assets/m2-rehearsal.glb', import.meta.url));
@@ -140,8 +145,8 @@ test('local wp0100 binds to R_Wep in stand, raise, strafe, fire and reload', { s
 
 test('Leon stationary aim loops, rejects jitter, turns with signed camera yaw and keeps the original shot delta', async () => {
   const assets = loadLeonAssets();
-  const leon = createLeonView(assets);
-  const room = await createTestRoom({ ...testRoom, spawn: { ...testRoom.spawn, yawRad: Math.PI - 0.03 } }, manifest);
+  const leon = createLeonView(assets, undefined, unpitched);
+  const room = await createTestRoom({ ...testRoom, spawn: { ...testRoom.spawn, yawRad: Math.PI - 0.03 } }, manifest, legacy);
   const player = createPlayerView(leon);
   const neutral = createInputBuffer().sample(0);
   const segments = [
@@ -252,7 +257,7 @@ test('Leon stationary aim loops, rejects jitter, turns with signed camera yaw an
 test('Leon aimed movement transitions keep the weapon attached, feet on the same gait and the original action events', async () => {
   const assets = loadLeonAssets();
   const weapon = await loadWeapon();
-  const leon = createLeonView(assets, weapon);
+  const leon = createLeonView(assets, weapon, unpitched);
   const player = createPlayerView(leon);
   const size = { x: 14, y: 0.2, z: 14 };
   const floor = { x: 0, y: -0.1, z: 0 };
@@ -260,10 +265,10 @@ test('Leon aimed movement transitions keep the weapon attached, feet on the same
     id: 'aimed-full-body', version: 1, spawn: { position: { x: 0, y: 0.025, z: 0 }, yawRad: 0 },
     render: [{ id: 'floor', kind: 'box', position: floor, size, yawRad: 0, color: '#718284' }],
     colliders: [{ id: 'floor', center: floor, size, yawRad: 0 }], doors: [], targets: [],
-  }, manifest);
+  }, manifest, legacy);
   const segments = [
     ['hold', 42, 0, 0, true], ['back', 95, 0, -1, true], ['left', 80, -1, 0, true], ['right', 80, 1, 0, true],
-    ['diagonal', 52, 1, 1, true], ['stop', 26, 0, 0, true], ['lower', 20, 0, 0, false],
+    ['diagonal', 46, 1, 1, true] /* stop lands inside a full contact with the circular blend */, ['stop', 26, 0, 0, true], ['lower', 20, 0, 0, false],
     ['ready-left', 14, -1, 0, false], ['raise-left', 38, -1, 0, true],
     ['fire-left', 19, -1, 0, true], ['reload-left', 92, -1, 0, true],
   ] as const;
@@ -391,7 +396,7 @@ test('Leon aimed movement transitions keep the weapon attached, feet on the same
 
 test('Leon uses full-body forward travel, layers actions on the moving pose and preserves the shot tick', async () => {
   const assets = loadLeonAssets();
-  const leon = createLeonView(assets);
+  const leon = createLeonView(assets, undefined, unpitched);
   const model = leon.root.children[0];
   const standingOffsetM = model.position.y;
   assert.equal(standingOffsetM + leon.readSkin().bounds!.min[1], 0);
@@ -544,9 +549,9 @@ async function checkDirectionalGait(aimedRun: boolean, out: string | undefined) 
     colliders: [floor, wall].map(({ id, position: center, size }) => ({ id, center, size, yawRad: 0 })),
     doors: [], targets: [],
   };
-  const room = await createTestRoom(level, manifest);
+  const room = await createTestRoom(level, manifest, legacy);
   const assets = loadLeonAssets();
-  const leon = createLeonView(assets);
+  const leon = createLeonView(assets, undefined, unpitched);
   const player = createPlayerView(leon);
   const neutral = createInputBuffer().sample(0);
   const directions = [
@@ -614,9 +619,9 @@ async function checkDirectionalGait(aimedRun: boolean, out: string | undefined) 
     assert.ok(delta.normalize().dot(new Vector3(x, 0, -y).normalize()) > 0.99, label);
     assert.ok(run.every(({ action }) => action.aiming === aimedRun));
 
-    const rawWeights = [Math.max(y, 0), Math.max(-x, 0), Math.max(-y, 0), Math.max(x, 0)]
-      .map((component, index) => component / LEON_WALK[index].distanceM);
-    const sum = rawWeights.reduce((total, weight) => total + weight, 0);
+    // Circular neighbour blend of the Hold_strafe OctSyncBlend node.
+    const rawWeights = [...leonDirectionWeights(x, y)];
+    const sum = 1;
     const clipWeights = rawWeights.flatMap((weight, index) => weight ? [{ index, weight: weight / sum }] : []);
     const steady = run.slice(22).filter(({ walk }) => walk.blend === 1 && walk.weights.every((weight, i) => rawWeights[i] > 0 ?
       Math.abs(weight - rawWeights[i] / sum) < 0.005 : weight === 0));
@@ -786,7 +791,7 @@ test('Leon ready directional gait survives diagonals, reversal, wall contact and
 test('Leon follows the full fixed route without altering collisions or ordered weapon and ammo events', async () => {
   const clips = await rehearsalClips();
   const weapon = await loadWeapon();
-  const leon = createLeonView(loadLeonAssets(), weapon);
+  const leon = createLeonView(loadLeonAssets(), weapon, unpitched);
   const standingOffsetM = leon.root.children[0].position.y;
   async function run(useLeon: boolean) {
     const room = await createTestRoom(undefined, manifest);

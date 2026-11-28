@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import type { ActionPose, WalkPose } from './actions.ts';
 import { plantToe, toePosition } from './leon-foot-plant.ts';
 import type { LocalPose } from './leon-foot-plant.ts';
-import { LEON_WALK, leonWalkTime } from './leon-locomotion.ts';
+import { LEON_MOVE_RUN, LEON_MOVE_WALK, LEON_WALK, leonWalkTime } from './leon-locomotion.ts';
 import { attachLeonWeapon } from './leon-weapon.ts';
 
 type Values = readonly number[];
@@ -18,6 +18,8 @@ type Motion = Readonly<{
 
 export interface LeonAssets {
   readonly MOTION_DATA: Readonly<{ clips: readonly Motion[] }>;
+  /** Optional local-only clips exported by scripts/web-3c/Leon3CExport (bank 100 extras and bank 200 Handgun00M). */
+  readonly MOTION_EXTRA_DATA?: Readonly<{ clips: readonly Motion[] }>;
   readonly MODEL_DATA: unknown;
   readonly MASK_DATA: readonly Readonly<{ ID: number; Joints: readonly Readonly<{ Name: string; Weight: number }>[] }>[];
   readonly MotionMath: Readonly<{
@@ -38,13 +40,20 @@ export interface LeonAssets {
   }>;
 }
 
-export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D) {
-  const { MotionMath, MOTION_DATA, LeonSkinning, MODEL_DATA, MASK_DATA } = assets;
+export interface LeonViewOptions {
+  /** Distribute the committed camera pitch over the spine while the gun is raised. */
+  readonly upperBodyPitch?: boolean;
+}
+
+export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D, options: LeonViewOptions = {}) {
+  const followPitch = options.upperBodyPitch ?? true;
+  const { MotionMath, MOTION_DATA, LeonSkinning, MODEL_DATA, MASK_DATA, MOTION_EXTRA_DATA } = assets;
   const find = (id: number) => {
     const clip = MOTION_DATA.clips.find((item) => item.bank === 100 && item.id === id);
     if (!clip) throw new Error(`缺少里昂源动作 100/${id}`);
     return clip;
   };
+  const findExtra = (bank: number, id: number) => MOTION_EXTRA_DATA?.clips.find((item) => item.bank === bank && item.id === id);
   const index = (motion: Motion) => ({
     duration: motion.duration,
     tracks: new Map(motion.tracks.map((track) => [motion.bones[track.bone].name, track])),
@@ -59,6 +68,14 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
   const walkSources = LEON_WALK.map(({ id }) => find(id));
   const walkClips = walkSources.map(index);
   const walk = walkClips[0];
+  // Carry-gun locomotion (Handgun00M) and idle, available only with the local extra clips.
+  const moveSources = LEON_MOVE_WALK.map(({ id }) => findExtra(200, id));
+  const runSource = findExtra(200, LEON_MOVE_RUN.id);
+  const idleSource = findExtra(200, 0);
+  const carry = moveSources.every(Boolean) && runSource && idleSource ? {
+    walk: (moveSources as Motion[]).map(index), run: index(runSource), idle: index(idleSource),
+  } : undefined;
+  const carryClips = new Set(carry ? [...carry.walk, carry.run] : []);
   const mask = (id: number) => {
     const source = MASK_DATA.find((value) => value.ID === id);
     if (!source) throw new Error(`缺少里昂动作遮罩 ${id}`);
@@ -107,9 +124,23 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
     scale: from.scale.map((value, i) => THREE.MathUtils.lerp(value, to.scale[i], weight)),
   });
 
-  const movingSamples = ({ cycles, weights }: Pick<WalkPose, 'cycles' | 'weights'>) =>
-    walkClips.flatMap((clip, i) => weights[i] > 0 ?
-      [{ clip, time: leonWalkTime(cycles, i, clip.duration), weight: weights[i] }] : []);
+  const movingSamples = ({ cycles, carryCycles, weights, hold: holdShare, run: runShare }:
+    Pick<WalkPose, 'cycles' | 'carryCycles' | 'weights' | 'hold' | 'run'>) => {
+    // Without the carry-gun set, every direction uses the aimed strafe loops as before.
+    const holdWeight = carry ? holdShare : 1;
+    const clips = walkClips.flatMap((clip, i) => weights[i] * holdWeight > 0 ?
+      [{ clip, time: leonWalkTime(cycles, i, clip.duration), weight: weights[i] * holdWeight }] : []);
+    if (carry && holdWeight < 1) {
+      const phase = carryCycles % 1; // The four 72-frame walk loops and the run loop share a normalized phase.
+      carry.walk.forEach((clip, i) => {
+        const weight = weights[i] * (1 - holdWeight) * (1 - runShare);
+        if (weight > 0) clips.push({ clip, time: phase * clip.duration, weight });
+      });
+      const runWeight = (1 - holdWeight) * runShare;
+      if (runWeight > 0) clips.push({ clip: carry.run, time: phase * carry.run.duration, weight: runWeight });
+    }
+    return clips;
+  };
   const sampleStride = (bone: BonePose, clips: ReturnType<typeof movingSamples>) => {
     const [first, ...others] = clips;
     let stride = sample(first.clip, first.time, bone);
@@ -120,11 +151,29 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
     }
     return stride;
   };
-  const sampleLeg = (bone: BonePose, weight: number, clips: ReturnType<typeof movingSamples>) => {
-    if (!weight) return sample(raise, 0, bone);
-    const stride = sampleStride(bone, clips);
-    return weight === 1 ? stride : blend(sample(raise, 0, bone), stride, weight);
+  // Standing base: the low-ready first frame of 140, crossfaded to the Handgun00M idle while the gun is down.
+  const rest = { idleShare: 0, idleTimeS: 0 };
+  const restPose = (bone: BonePose) => {
+    const ready = sample(raise, 0, bone);
+    if (!carry || !rest.idleShare || !carry.idle.tracks.has(bone.name)) return ready;
+    return blend(ready, sample(carry.idle, rest.idleTimeS, bone), rest.idleShare);
   };
+  const sampleLeg = (bone: BonePose, weight: number, clips: ReturnType<typeof movingSamples>) => {
+    if (!weight) return restPose(bone);
+    const stride = sampleStride(bone, clips);
+    return weight === 1 ? stride : blend(restPose(bone), stride, weight);
+  };
+
+  // UpperRotateStateUserData PostureParam "Stand": waist 0.5, stomach 0.5, chest 1, normalized to the three spine joints.
+  const PITCH_SHARE = new Map([['Spine_0', 0.25], ['Spine_1', 0.25], ['Spine_2', 0.5]]);
+  const sourceBone = (name: string): BonePose => {
+    const bone = holdSource.bones.find((item) => item.name === name);
+    if (!bone) throw new Error(`里昂源骨架缺少 ${name}`);
+    return { ...bone, scale: [1, 1, 1] };
+  };
+  const torsoChain = ['Hip', 'Spine_0', 'Spine_1'].map(sourceBone);
+  const rootRotation = new THREE.Quaternion().fromArray(holdSource.bones[0].rotation);
+  const pitchAxis = new THREE.Vector3(1, 0, 0); // Source model faces +Z, so a positive pitch turns about -X.
 
   // Calibrate once at rest. Animated toe and clothing bounds must not move the whole actor.
   rig.update((bone) => bone.name !== 'root' && raise.tracks.has(bone.name) ? sample(raise, 0, bone) : undefined);
@@ -141,19 +190,28 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
         last?.clip === pose.clip && last.progress === pose.progress && last.lift === pose.lift &&
         last.walk.cycles === gait.cycles && last.walk.blend === gait.blend &&
         last.walk.weights.every((weight, i) => weight === gait.weights[i]) &&
+        last.walk.hold === gait.hold && last.walk.run === gait.run && last.walk.carryCycles === gait.carryCycles &&
+        last.aim.pitchRad === aimMotion.pitchRad &&
+        (!carry || last.clockS === pose.clockS) &&
         (pose.lift !== 1 || (last.aim.idleTimeS === aimMotion.idleTimeS &&
           last.aim.stationaryBlend === aimMotion.stationaryBlend &&
           last.aim.turn === aimMotion.turn && last.aim.turnTimeS === aimMotion.turnTimeS))) return;
 
     const walkWeight = THREE.MathUtils.smoothstep(gait.blend, 0, 1);
-    const upperWalkWeight = walkWeight * THREE.MathUtils.smoothstep(gait.weights[0], 0.85, 1);
+    rest.idleShare = carry ? 1 - pose.lift : 0;
+    rest.idleTimeS = carry ? pose.clockS % carry.idle.duration : 0;
+    const holdShare = carry ? gait.hold : 1;
+    const moveShare = carry ? walkWeight * (1 - gait.hold) : 0;
+    const upperWalkWeight = walkWeight * holdShare * THREE.MathUtils.smoothstep(gait.weights[0], 0.85, 1);
     // Keep the stride in the upper body while biasing the coordinated chain toward the hold.
     const aimedWalkWeight = 0.38 * walkWeight * THREE.MathUtils.smoothstep(pose.lift, 0.65, 1);
     const walkingTime = leonWalkTime(gait.cycles, 0, walk.duration);
     const movingClips = movingSamples(gait);
     const aim = pose.lift === 1 ? hold : raise;
     const aimTimeS = aim === hold ? aimMotion.idleTimeS % hold.duration : raise.duration * pose.lift;
-    const aimWeight = pose.lift > 0 ? 1 - upperWalkWeight * (1 - THREE.MathUtils.smoothstep(pose.lift, 0.4, 1)) : 0;
+    // With a carry-gun base, ease the aim layer in so raising does not snap from the low carry pose.
+    const aimWeight = pose.lift > 0 ? (1 - upperWalkWeight * (1 - THREE.MathUtils.smoothstep(pose.lift, 0.4, 1))) *
+      (carry ? THREE.MathUtils.smoothstep(pose.lift, 0, 0.35) : 1) : 0;
     const stationary = aim === hold ? THREE.MathUtils.smoothstep(aimMotion.stationaryBlend, 0, 1) : 0;
     const turn = aimMotion.turn > 0 ? turnLeft : turnRight;
     const turnWeight = stationary * Math.abs(aimMotion.turn);
@@ -163,8 +221,12 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
     const actionWeight = action === reload ? Math.min(1, 10 * pose.progress, 10 * (1 - pose.progress)) : 1;
     const actionMask = action === reload ? reloadMask : holdMask;
 
+    const carryMoving = moveShare > 0 ? movingClips.filter(({ clip }) => carryClips.has(clip)) : [];
     const basePose = (bone: BonePose) => {
-      const ready = sample(raise, 0, bone);
+      let ready = restPose(bone);
+      if (carryMoving.length && carryMoving[0].clip.tracks.has(bone.name)) {
+        ready = blend(ready, sampleStride(bone, carryMoving), moveShare);
+      }
       if (!upperWalkWeight || !walk.tracks.has(bone.name)) return ready;
       const stride = sample(walk, walkingTime, bone);
       return upperWalkWeight === 1 ? stride : blend(ready, stride, upperWalkWeight);
@@ -213,7 +275,7 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
       const aimedWalkJoint = aimedWalkWeight > 0 && !lowerBody(bone.name) &&
         movingClips.some(({ clip }) => clip.tracks.has(bone.name));
       if (!raise.tracks.has(bone.name) && !(walkWeight && (walk.tracks.has(bone.name) || lowerBody(bone.name))) &&
-          !aimJointWeight && !actionJointWeight && !aimedWalkJoint) return;
+          !aimJointWeight && !actionJointWeight && !aimedWalkJoint && !(carry?.idle.tracks.has(bone.name))) return;
       let value = bone.name === 'Hip' ? hipPose : locomotion(bone);
       if (bone.name === 'Spine_0' && upperWalkWeight < walkWeight) {
         value = { ...value, rotation: spineRotation.fromArray(value.rotation).premultiply(keepReadyTorso).normalize().toArray() };
@@ -241,9 +303,34 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
       }
       return value;
     };
-    rig.update(resolvePose);
+    // Upper body follows the camera pitch while the gun is raised, distributed over the spine.
+    const pitchWeight = followPitch ? THREE.MathUtils.smoothstep(pose.lift, 0, 1) * aimMotion.pitchRad : 0;
+    const resolved = new Map<string, LocalPose | undefined>();
+    const parentWorld = new THREE.Quaternion();
+    const pitchTurn = new THREE.Quaternion();
+    const pitchedRotation = new THREE.Quaternion();
+    const finalPose = (bone: BonePose): LocalPose | undefined => {
+      if (resolved.has(bone.name)) return resolved.get(bone.name);
+      let value = resolvePose(bone);
+      const share = PITCH_SHARE.get(bone.name);
+      if (value && share && pitchWeight) {
+        parentWorld.copy(rootRotation);
+        for (const link of torsoChain) {
+          if (link.name === bone.name) break;
+          parentWorld.multiply(new THREE.Quaternion().fromArray((finalPose(link) ?? link).rotation));
+        }
+        pitchTurn.setFromAxisAngle(pitchAxis, -pitchWeight * share);
+        // local' = parent⁻¹ · turn · parent · local, a rotation about the model-space right axis.
+        pitchedRotation.copy(parentWorld).invert().multiply(pitchTurn).multiply(parentWorld)
+          .multiply(new THREE.Quaternion().fromArray(value.rotation)).normalize();
+        value = { ...value, rotation: pitchedRotation.toArray() };
+      }
+      resolved.set(bone.name, value);
+      return value;
+    };
+    rig.update(finalPose);
     if (socketBone && hand) {
-      const local = resolvePose(socketBone) ?? socketBone;
+      const local = finalPose(socketBone) ?? socketBone;
       socket.compose(socketPosition.fromArray(local.position), socketRotation.fromArray(local.rotation),
         socketScale.fromArray(local.scale)).premultiply(hand.world);
     }

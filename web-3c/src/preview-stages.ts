@@ -7,6 +7,17 @@ export { CHARACTER_BODY as PREVIEW_BODY } from './movement.ts';
 
 const previewSpawn = { position: { x: 0, y: 0.025, z: 3 }, yawRad: 0 };
 
+/**
+ * FeelConfig v4 movement, kept for the M0–M6 mechanics tests whose fixed step counts were laid out at these speeds.
+ * Without turnSpeedRadPerS the heading stays on the camera yaw, as in v4. The shipped defaults use the source root speeds (v5).
+ */
+export const LEGACY_MOVEMENT: FeelConfig['movement'] = {
+  walkSpeedMps: { value: 2.55, source: 'FeelConfig v4', evidence: 'tuned', conditions: 'M0–M6 回归路线的原步行速度' },
+  sprintSpeedMps: { value: 4.3, source: 'FeelConfig v4', evidence: 'tuned', conditions: 'M0–M6 回归路线的原奔跑速度' },
+  aimSpeedMps: { value: 1.55, source: 'FeelConfig v4', evidence: 'tuned', conditions: 'M0–M6 回归路线的原瞄准移速' },
+};
+export const withLegacyMovement = (feel: FeelConfig): FeelConfig => ({ ...feel, movement: LEGACY_MOVEMENT });
+
 export function createPreviewStages(feel: FeelConfig, spawn: LevelDefinition['spawn'] = previewSpawn) {
   const magazineCapacity = feel.actions.magazineCapacity.value;
 
@@ -35,7 +46,7 @@ export function createPreviewStages(feel: FeelConfig, spawn: LevelDefinition['sp
     action: { id: 'preview-player', phase: 'ready', aiming: false, magazine: magazineCapacity, reserve: feel.actions.initialReserve.value },
   };
 
-  const movePreview = createMovement(feel, () => -0.08); // M7 v1 replays use the M0 ground probe.
+  const movePreview = createMovement(withLegacyMovement(feel), () => -0.08); // M7 v1 replays use the M0 ground probe.
 
   function requests(input: InputSnapshot, previous: ActionState): ActionId[] {
     const actions: ActionId[] = [];

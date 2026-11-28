@@ -26,7 +26,7 @@ function overlapsDoor(feet: Vec3, panel: LevelDefinition['colliders'][number]) {
   return Math.hypot(x, z) <= DOOR_CLEARANCE_M;
 }
 
-export async function createTestRoom(level = testRoom, manifest?: ClipManifest) {
+export async function createTestRoom(level = testRoom, manifest?: ClipManifest, initialFeel: FeelConfig = defaultFeel) {
   const render = level.render.map((item) => {
     if (item.kind !== 'box') throw new Error(`Test-room geometry must be a box: ${item.id}`);
     return item;
@@ -80,7 +80,7 @@ export async function createTestRoom(level = testRoom, manifest?: ClipManifest) 
     return { initial, actions, camera, move: createMovement(feel) };
   }
 
-  let runtime = start(defaultFeel);
+  let runtime = start(initialFeel);
 
   function setDoorOpen(door: (typeof doors)[number], open: boolean) {
     door.open = open;
@@ -141,7 +141,7 @@ export async function createTestRoom(level = testRoom, manifest?: ClipManifest) 
       act,
       camera(input, character, action, previous, scene) {
         const view = runtime.camera.update(input, character, action, previous, scene);
-        runtime.actions.updateAimPose(character, view.yawRad - previous.yawRad);
+        runtime.actions.updateAimPose(character, view.yawRad - previous.yawRad, view.pitchRad);
         return view;
       },
       resolveSceneEvents,

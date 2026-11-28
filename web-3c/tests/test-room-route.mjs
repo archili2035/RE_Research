@@ -1,11 +1,13 @@
 export const targetLook = { lookDeltaX: 0.38 / 0.0022, lookDeltaY: -0.06 / 0.0022 };
 
+// FeelConfig v5 uses the source root speeds (walk 1.80 m/s, aim 1.10 m/s). Walking segments are the v4 counts
+// scaled by 2.55 / 1.80 so the route reaches the same corner, target position and door.
 /** @type {readonly [string, number, Partial<import('../src/contracts.ts').InputSnapshot>][]} */
 export const testRoomRoute = [
   ['spawn', 1, { interactPressed: true, firePressed: true }],
-  ['corner', 277, { moveY: 1 }],
+  ['corner', 392, { moveY: 1 }],
   ['turn', 1, { lookDeltaX: -Math.PI / (2 * 0.0022) }],
-  ['by-target', 64, { moveY: 1 }],
+  ['by-target', 91, { moveY: 1 }],
   ['raise-start', 1, { aimHeld: true, firePressed: true, ...targetLook }],
   ['raise-mid', 12, { aimHeld: true }],
   ['fire-start', 15, { aimHeld: true }],
@@ -15,13 +17,19 @@ export const testRoomRoute = [
   ['reload-commit', 44, { aimHeld: true }],
   ['reload-recovered', 40, { aimHeld: true }],
   ['look-door', 1, { lookDeltaX: -targetLook.lookDeltaX }],
-  ['door-blocked', 60, { moveY: 1 }],
+  ['door-blocked', 85, { moveY: 1 }],
   ['door-opened', 1, { interactPressed: true }],
-  ['threshold', 10, { moveY: 1 }],
+  ['threshold', 14, { moveY: 1 }],
   ['threshold-denied', 1, { interactPressed: true }],
-  ['next-room', 20, { moveY: 1 }],
+  ['next-room', 28, { moveY: 1 }],
   ['door-closed', 1, { interactPressed: true }],
-  ['return-blocked', 25, { moveY: -1 }],
+  ['return-blocked', 35, { moveY: -1 }],
   ['return-opened', 1, { interactPressed: true }],
-  ['return', 25, { moveY: -1 }],
+  ['return', 35, { moveY: -1 }],
 ];
+
+/** Last fixed-step tick of each named segment. */
+export const routeTick = Object.fromEntries(testRoomRoute.reduce((ticks, [name, count]) => {
+  ticks.push([name, (ticks.at(-1)?.[1] ?? 0) + count]);
+  return ticks;
+}, /** @type {[string, number][]} */ ([])));

@@ -1,23 +1,35 @@
 {
-  "version": 4,
+  "version": 5,
   "movement": {
     "walkSpeedMps": {
-      "value": 2.55,
-      "source": "web-3c/src/preview-stages.ts",
-      "evidence": "tuned",
-      "conditions": "test-room@1，60 Hz，碰撞前的水平目标速度"
+      "value": 1.8,
+      "source": "reports/web-3c/source-data/leon-3c-source.json",
+      "evidence": "observed",
+      "conditions": "解包 Handgun00M_2202 walk_strafeF_F_Loop 根位移 2.16 m / 1.2 s；与 FPS 配置 _WalkSpeed=1.8 一致；未经实机测速"
     },
     "sprintSpeedMps": {
-      "value": 4.3,
-      "source": "web-3c/src/preview-stages.ts",
-      "evidence": "tuned",
-      "conditions": "test-room@1，60 Hz，碰撞前的水平目标速度"
+      "value": 3.6,
+      "source": "reports/web-3c/source-data/leon-3c-source.json",
+      "evidence": "observed",
+      "conditions": "解包 Handgun00M_5102 run_F_Loop 根位移 5.99 m / 1.667 s；与 FPS 配置 _SprintSpeed=3.6 一致；未经实机测速"
     },
     "aimSpeedMps": {
-      "value": 1.55,
-      "source": "web-3c/src/preview-stages.ts",
+      "value": 1.1,
+      "source": "reports/web-3c/source-data/leon-3c-source.json",
+      "evidence": "observed",
+      "conditions": "解包 Handgun00H 120/122/124/126 四向持枪循环根速度均约 1.10 m/s，Hold_strafe 树 PlaySpeed 上限 1；未经实机测速"
+    },
+    "turnSpeedRadPerS": {
+      "value": 7.853981633974483,
+      "source": "reports/web-3c/source-data/leon-3c-source.json",
       "evidence": "tuned",
-      "conditions": "test-room@1，60 Hz，碰撞前的水平目标速度"
+      "conditions": "角色朝向追随速度 450°/s；以 PlayerRotateConfiguration._MotionBlendApplyCoefficient=450 为候选初值，单位与语义未验证"
+    },
+    "holdYawOffsetRad": {
+      "value": -0.15707963267948966,
+      "source": "reports/web-3c/source-data/leon-3c-source.json",
+      "evidence": "observed",
+      "conditions": "持枪时角色相对镜头的偏航偏移 −9°：PlayerRotateConfiguration._TPSHoldOffsetForWeapons arm0000（wp0100）；正值向左，符号按枪口投影核对"
     }
   },
   "camera": {
@@ -134,6 +146,18 @@
       "source": "reports/web-3c/m4-video-calibration.md",
       "evidence": "tuned",
       "conditions": "视频视觉拟合，13:40.50 / 13:05.10，1280×720 无遮挡，两种模式共用的初始俯仰，后续仍由鼠标输入控制"
+    },
+    "recoilPitchRad": {
+      "value": 0.023561944901923447,
+      "source": "reports/web-3c/source-data/leon-3c-source.json",
+      "evidence": "observed",
+      "conditions": "arm0000 CameraRecoilParam._PitchRangeDeg=Range(1.2, 0.3)，取区间 1.2–1.5° 的中值 1.35°；Range 按起点与长度解读，未经实机验证"
+    },
+    "recoilCurveS": {
+      "value": 2.8,
+      "source": "reports/web-3c/source-data/leon-3c-source.json",
+      "evidence": "observed",
+      "conditions": "arm0000 CameraRecoilParam._CurveTime=2.8，曲线峰值在 4% 处，22% 时回落一半；开火下一步开始，只抬镜头不改玩家俯仰"
     }
   },
   "actions": {

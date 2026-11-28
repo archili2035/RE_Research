@@ -163,3 +163,26 @@ npm --prefix web-3c test
 旧的 `docs/web-3c/` 仍引用 `main-DnO3k6dg.js`。从研究首页进入旧试玩，在鼠标锁定并按住右键后，A 键确实改变角色位置，但模型局部的两脚趾坐标保持原值。W 键改变脚趾坐标。本机 Vite 预览使用另一份较新的 `web-3c/dist/`，因此它的原验收没有覆盖旧入口。 [旧入口读回](../../runtime/web-3c-leon-direction.tmp/portal-before.json)
 
 `npm.cmd --prefix web-3c run build:portal` 生成并同步门户包。当轮 `docs/web-3c/` 和 `web-3c/dist/` 的 14 个文件逐字节一致，构建号为 `4253fc6a4e54`。静态验收从研究首页点击试玩，核对页头版本并在实际渲染的里昂灰模上读取左右脚趾矩阵，覆盖 W、A、S、D、两组斜向、A→D 和顶墙停止。 [静态验收](../../web-3c/tests/check-m8-static.mjs) · [腿骨读回入口](../../web-3c/tests/leon-browser-directions.mjs)
+
+## v5：按解包数据驱动的速度、朝向与混合
+
+2026-11-28。依据与逐项结果见 [动作与镜头对齐原作 · 第 3 节](character-camera-fidelity.md#3-第二轮已落地feelconfig-v5)，这里只记录试玩场行为变化。
+
+- 速度改为片段根速度：瞄准 1.10、步行 1.80、奔跑 3.60 m/s。正式路线的步行段按 2.55／1.80 拉长，基线 815 步、31 条事件，开火、扣弹、命中、补弹和三次开关门的顺序不变。
+- 不瞄准时角色转向按键方向，举枪时转向镜头偏航 −9°。按 D 时角色先转身再前行，脚下多数时候走正前轨；侧移、后退轨主要出现在举枪移动和转身过程中。
+- 四向混合改为相邻两轨圆周插值。W+D 时前、右各占 0.5，旧算法按每循环根位移加权约为 0.46／0.54。
+- 本机导出额外轨后，低枪站立混入 `200/0` 待机，低枪行走用 `200/2202` 等四向轨，Shift 混入 `200/5102` 跑步；门户线上没有这批轨，退回举枪组四向轨。
+- 举枪时上身随镜头俯仰；开火后镜头按 `arm0000` 曲线上抬最多 1.35°。
+
+```powershell
+cd web-3c
+..\tools\dotnet\dotnet.exe run -c Release --project ..\scripts\web-3c\Leon3CExport
+node tests/record-m7-route.ts
+npm test
+$env:LEON_EXTRA_MOTIONS = (Resolve-Path ..\runtime\web-3c-leon-extra.tmp\motions-extra.js).Path
+$env:LEON_WEAPON_GLB = (Resolve-Path ..\runtime\web-3c-weapon.tmp\wp0100.glb).Path
+node --test --test-name-pattern "optional carry-gun|local wp0100" tests/leon-v5.test.ts tests/leon-route.test.ts
+node tests/record-muzzle-offset.ts
+npm run build:portal
+node tests/check-leon-v5-browser.mjs
+```

@@ -3,12 +3,14 @@ import { test } from 'node:test';
 import { STEP_S } from '../src/contracts.ts';
 import type { GameEvent, InputSnapshot } from '../src/contracts.ts';
 import { createInputBuffer } from '../src/input.ts';
-import { createTestRoom, testRoom } from '../src/level.ts';
+import { createTestRoom, defaultFeel, testRoom } from '../src/level.ts';
+import { withLegacyMovement } from '../src/preview-stages.ts';
 import { createSimulation } from '../src/simulation.ts';
 import { targetLook } from './test-room-route.mjs';
 
 test('M6 fixed route hits the target, reloads and crosses a repeatable collision door', async () => {
-  const room = await createTestRoom();
+  // The hand-written route below keeps the v4 step counts; the shipped v5 route is covered by M7.
+  const room = await createTestRoom(testRoom, undefined, withLegacyMovement(defaultFeel));
   const door = testRoom.doors[0];
   const target = testRoom.targets[0];
   const panel = room.scene.getObjectByName(door.colliderId)!;

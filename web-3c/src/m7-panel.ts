@@ -207,6 +207,7 @@ type Group = 'movement' | 'camera' | 'actions';
 const labels = {
   movement: {
     walkSpeedMps: '步行速度（m/s）', sprintSpeedMps: '奔跑速度（m/s）', aimSpeedMps: '瞄准移速（m/s）',
+    turnSpeedRadPerS: '朝向追随速度（rad/s）', holdYawOffsetRad: '持枪偏航偏移（rad）',
   },
   camera: {
     lookRadPerPx: '鼠标灵敏度（rad/px）', moveDistanceM: '移动镜头距离（m）', aimDistanceM: '瞄准镜头距离（m）',
@@ -217,6 +218,7 @@ const labels = {
     followPositionS: '水平跟随时间常数（s）', followHeightS: '高度跟随时间常数（s）',
     aimTransitionS: '瞄准过渡时间常数（s）', moveTransitionS: '普通构图过渡时间常数（s）',
     recoveryS: '离墙恢复时间常数（s）', recoveryDeadbandM: '贴墙防回弹余量（m）',
+    recoilPitchRad: '开火镜头上抬（rad）', recoilCurveS: '后坐曲线时长（s）',
   },
   actions: { magazineCapacity: '弹匣容量', initialReserve: '初始备用弹' },
 };
@@ -232,9 +234,9 @@ for (const group of Object.keys(groups) as Group[]) {
     input.type = 'number';
     input.required = true;
     input.step = group === 'actions' ? '1' : 'any';
-    input.min = key === 'initialPitchRad' ? '-0.85' : key === 'magazineCapacity' ? '1' : key === 'lookRadPerPx' ? '0.0001' :
+    input.min = key === 'initialPitchRad' ? '-1.0472' : key === 'holdYawOffsetRad' ? '-1' : key === 'magazineCapacity' ? '1' : key === 'lookRadPerPx' ? '0.0001' :
       key.endsWith('FovRad') || key.endsWith('HeightM') ? '0.1' : '0';
-    input.max = key === 'initialPitchRad' ? '0.65' : group === 'actions' ? '999' : key === 'lookRadPerPx' ? '0.02' :
+    input.max = key === 'initialPitchRad' ? '1.0472' : key === 'holdYawOffsetRad' ? '1' : key === 'recoilCurveS' ? '10' : group === 'actions' ? '999' : key === 'lookRadPerPx' ? '0.02' :
       key.endsWith('FovRad') ? '2.9' : key.endsWith('HeightM') ? '2' :
       key.endsWith('S') ? '1' : key === 'recoveryDeadbandM' ? '0.1' : '12';
     input.value = String(feel[group][key].value);
