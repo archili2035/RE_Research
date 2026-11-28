@@ -101,6 +101,10 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
     scale: from.scale.map((value, i) => THREE.MathUtils.lerp(value, to.scale[i], weight)),
   });
 
+  // Calibrate once at rest. Animated toe and clothing bounds must not move the whole actor.
+  rig.update((bone) => bone.name !== 'root' && raise.tracks.has(bone.name) ? sample(raise, 0, bone) : undefined);
+  if (rig.stats.bounds) rig.group.position.y = -rig.stats.bounds.min[1];
+
   let last: ActionPose | undefined;
   function draw(pose: ActionPose) {
     const gait = pose.walk;
@@ -108,22 +112,24 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
     if (last?.clip === pose.clip && last.progress === pose.progress && last.lift === pose.lift &&
         last.walk.cycles === gait.cycles && last.walk.blend === gait.blend &&
         last.walk.weights.every((weight, i) => weight === gait.weights[i]) &&
-        last.aim.stationaryBlend === aimMotion.stationaryBlend &&
-        (!aimMotion.stationaryBlend || (last.aim.idleTimeS === aimMotion.idleTimeS &&
+        (pose.lift !== 1 || (last.aim.idleTimeS === aimMotion.idleTimeS &&
+          last.aim.stationaryBlend === aimMotion.stationaryBlend &&
           last.aim.turn === aimMotion.turn && last.aim.turnTimeS === aimMotion.turnTimeS))) return;
 
     const walkWeight = THREE.MathUtils.smoothstep(gait.blend, 0, 1);
     const upperWalkWeight = walkWeight * THREE.MathUtils.smoothstep(gait.weights[0], 0.85, 1);
+    // Hand off the upper body over the last part of the raise, reaching the shared gait blend at full aim.
+    const aimedWalkWeight = walkWeight * THREE.MathUtils.smoothstep(pose.lift, 0.65, 1);
     const times = walkClips.map(({ duration }, i) => leonWalkTime(gait.cycles, i, duration));
-    const [first, ...others] = walkClips.flatMap((clip, i) => gait.weights[i] > 0 ?
+    const movingClips = walkClips.flatMap((clip, i) => gait.weights[i] > 0 ?
       [{ clip, time: times[i], weight: gait.weights[i] }] : []);
+    const [first, ...others] = movingClips;
     const aim = pose.lift === 1 ? hold : raise;
-    const aimTimeS = aim === hold ? 0 : raise.duration * pose.lift;
+    const aimTimeS = aim === hold ? aimMotion.idleTimeS % hold.duration : raise.duration * pose.lift;
     const aimWeight = pose.lift > 0 ? 1 - upperWalkWeight * (1 - THREE.MathUtils.smoothstep(pose.lift, 0.4, 1)) : 0;
     const stationary = aim === hold ? THREE.MathUtils.smoothstep(aimMotion.stationaryBlend, 0, 1) : 0;
-    const idleTimeS = aimMotion.idleTimeS % hold.duration;
     const turn = aimMotion.turn > 0 ? turnLeft : turnRight;
-    const turnWeight = Math.abs(aimMotion.turn);
+    const turnWeight = stationary * Math.abs(aimMotion.turn);
     const turnTimeS = aimMotion.turnTimeS % turn.duration;
     const action = pose.clip === 'fire' ? fire : pose.clip === 'reload' ? reload : undefined;
     const actionTimeS = action ? action.duration * pose.progress : 0;
@@ -136,15 +142,19 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
       const stride = sample(walk, times[0], bone);
       return upperWalkWeight === 1 ? stride : blend(ready, stride, upperWalkWeight);
     };
-    const locomotion = (bone: BonePose) => {
-      if (!lowerBody(bone.name)) return basePose(bone);
-      if (!walkWeight) return sample(raise, 0, bone);
+    const sampleWalk = (bone: BonePose) => {
       let stride = sample(first.clip, first.time, bone);
       let total = first.weight;
       for (const { clip, time, weight } of others) {
         total += weight;
         stride = blend(stride, sample(clip, time, bone), weight / total);
       }
+      return stride;
+    };
+    const locomotion = (bone: BonePose) => {
+      if (!lowerBody(bone.name)) return basePose(bone);
+      if (!walkWeight) return sample(raise, 0, bone);
+      const stride = sampleWalk(bone);
       return walkWeight === 1 ? stride : blend(sample(raise, 0, bone), stride, walkWeight);
     };
     const hipPose = locomotion(hip);
@@ -152,15 +162,12 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
 
     const aimSample = (bone: BonePose) => {
       const base = sample(aim, aimTimeS, bone);
-      if (!stationary) return base;
-      const idle = sample(hold, idleTimeS, bone);
-      const held = turnWeight ? blend(idle, sample(turn, turnTimeS, bone), turnWeight) : idle;
-      return stationary === 1 ? held : blend(base, held, stationary);
+      return turnWeight ? blend(base, sample(turn, turnTimeS, bone), turnWeight) : base;
     };
     const inverseHip = new THREE.Quaternion().fromArray(hipPose.rotation).invert();
     const keepReadyTorso = inverseHip.clone().multiply(new THREE.Quaternion().fromArray(hipBase.rotation));
     const referenceHip = inverseHip.clone().multiply(new THREE.Quaternion().fromArray(sample(aim, aimTimeS, hip).rotation));
-    const aimingHip = stationary ? inverseHip.clone().multiply(new THREE.Quaternion().fromArray(aimSample(hip).rotation)) : referenceHip;
+    const aimingHip = turnWeight ? inverseHip.clone().multiply(new THREE.Quaternion().fromArray(aimSample(hip).rotation)) : referenceHip;
     const spineRotation = new THREE.Quaternion();
     const stabilize = (name: string, value: LocalPose, compensation: THREE.Quaternion): LocalPose => name === 'Spine_0' ? {
       ...value, rotation: spineRotation.fromArray(value.rotation).premultiply(compensation).normalize().toArray(),
@@ -172,8 +179,10 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
       if (bone.name === 'root') return;
       const aimJointWeight = aimWeight * (holdMask.get(bone.name) ?? 0);
       const actionJointWeight = action ? actionWeight * (actionMask.get(bone.name) ?? 0) : 0;
+      const aimedWalkJoint = aimedWalkWeight > 0 && !lowerBody(bone.name) &&
+        movingClips.some(({ clip }) => clip.tracks.has(bone.name));
       if (!raise.tracks.has(bone.name) && !(walkWeight && (walk.tracks.has(bone.name) || lowerBody(bone.name))) &&
-          !aimJointWeight && !actionJointWeight) return;
+          !aimJointWeight && !actionJointWeight && !aimedWalkJoint) return;
       let value = bone.name === 'Hip' ? hipPose : locomotion(bone);
       if (bone.name === 'Spine_0' && upperWalkWeight < walkWeight) {
         value = { ...value, rotation: spineRotation.fromArray(value.rotation).premultiply(keepReadyTorso).normalize().toArray() };
@@ -182,9 +191,13 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
         const target = stabilize(bone.name, aimSample(bone), aimingHip);
         value = aimJointWeight === 1 ? target : blend(value, target, aimJointWeight);
       }
+      if (aimedWalkJoint) {
+        const stride = sampleWalk(bone);
+        value = aimedWalkWeight === 1 ? stride : blend(value, stride, aimedWalkWeight);
+      }
       const actionTrack = actionJointWeight > 0 && action?.tracks.get(bone.name);
       if (actionTrack && action === fire) {
-        // Apply the 1100 delta over the same hold pose at both ends of the shot.
+        // Compose the 1100 delta over the base pose sampled for this frame.
         const offset = MotionMath.sample(actionTrack.position, actionTimeS, [0, 0, 0]);
         const delta = MotionMath.sample(actionTrack.rotation, actionTimeS, [0, 0, 0, 1], true);
         const target = { ...value, position: value.position.map((x, i) => x + offset[i]),
@@ -197,7 +210,6 @@ export function createLeonView(assets: LeonAssets, weaponModel?: THREE.Object3D)
       return value;
     };
     rig.update(resolvePose);
-    if (rig.stats.bounds) rig.group.position.y = -rig.stats.bounds.min[1];
     if (socketBone && hand) {
       const local = resolvePose(socketBone) ?? socketBone;
       socket.compose(socketPosition.fromArray(local.position), socketRotation.fromArray(local.rotation),

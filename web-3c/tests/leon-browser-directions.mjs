@@ -56,18 +56,19 @@ export async function checkDirections(browser, url, { fromHome = false, aimed = 
       const before = await read();
       const offset = await page.evaluate(() => window.leonToeFrames.length);
       for (const key of keys) await page.keyboard.down(`Key${key}`);
-      await page.waitForFunction(({ before, x, z }) => {
+      // The simulation can reach the distance before the view has drawn the second pose.
+      await page.waitForFunction(({ before, x, z, offset }) => {
         const [, currentX, , currentZ] = document.querySelector('#snapshot').value.match(/坐标 (-?[\d.]+), (-?[\d.]+), (-?[\d.]+)/);
-        return (!x || (Number(currentX) - before.x) * Math.sign(x) >= Math.abs(x)) &&
+        return window.leonToeFrames.length >= offset + 2 &&
+          (!x || (Number(currentX) - before.x) * Math.sign(x) >= Math.abs(x)) &&
           (!z || (Number(currentZ) - before.z) * Math.sign(z) >= Math.abs(z));
-      }, { before, x, z });
+      }, { before, x, z, offset });
       const after = await read();
       if (release) for (const key of keys) await page.keyboard.up(`Key${key}`);
       const frames = await page.evaluate((offset) => window.leonToeFrames.slice(offset), offset);
       assert.equal(before.aiming, aimed);
       assert.equal(after.aiming, aimed);
       assert.ok(after.cycles > before.cycles, `${label} advances the gait phase`);
-      assert.ok(frames.length >= 2, `${label} drew multiple poses`);
       const toeTravelM = Math.max(...frames.slice(1).flatMap((frame) => frame.map((toe, side) =>
         Math.hypot(...toe.map((value, axis) => value - frames[0][side][axis])))));
       assert.ok(toeTravelM > 0.02, `${label} animates the actual legs: ${toeTravelM} m`);

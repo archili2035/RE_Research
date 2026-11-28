@@ -35,7 +35,7 @@
 
 `160` 的上身首尾闭合。`165` 和 `167` 的上身首尾也回到持枪底姿，所查关节首尾最大差约 0.003°。两条转向轨的手臂幅度相近，方向差主要表现在根骨骼和躯干。试玩的角色朝向跟随镜头，所取的转向动作通过 Mask 4 驱动上身。
 
-每个固定步在镜头提交后计算有符号偏航差，跨 ±π 取最短角。用 75 ms 低通滤波，再把约 6.3–24.6°/s 映射到平滑混合权重。微小反复抖动保持 `160` 循环。转动时按符号混入 `165` 或 `167`，停下后权重随滤波衰减，原持枪相位连续推进。实际移动时随步态权重淡回 `160` 首帧。`ActionPose.aim` 是渲染状态，由 `level.ts` 在镜头阶段更新、`main.ts` 插值、`leon-view.ts` 消费。角色移动、相机、动作事件和回放契约沿用既有接口。
+每个固定步在镜头提交后计算有符号偏航差，跨 ±π 取最短角。用 75 ms 低通滤波，再把约 6.3–24.6°/s 映射到平滑混合权重。微小反复抖动保持 `160` 循环。转动时按符号混入 `165` 或 `167`，停下后权重随滤波衰减。持枪相位连续推进，起步和停步时由步态权重在站立循环和全身方向轨之间淡化。`ActionPose.aim` 是渲染状态，由 `level.ts` 在镜头阶段更新、`main.ts` 插值、`leon-view.ts` 消费。角色移动、相机、动作事件和回放契约沿用既有接口。
 
 单发 `1100` 继续使用原增量，在当前持枪姿态上做局部平移相加和四元数右乘。源轨首尾回零，开火开始和结束可以沿用当前持枪相位。将持枪限定在 `160` 首帧时，回归用原 `previewOnBasePose` 合成进行逐骨对照。换弹沿用 Mask 2 与原提交点。
 
@@ -56,6 +56,37 @@ node web-3c/tests/record-leon-aim.mjs after
 ```
 
 录像用相同的逐步鼠标输入。改前 `21f1545a525f` 和改后 `48fc8641aabf` 的 138 帧试玩状态和事件一致。片段从稳定瞄准开始，0.60 s 左转，1.60 s 停住，2.30 s 右转，3.30 s 停住，4.00 s 单发。改前模式读取本轮冻结的 `runtime/web-3c-leon-aim.tmp/before-dist`，改后模式读取 `web-3c/dist`。`CAMERA_FFMPEG` 指向支持 MJPEG 输入和 VP8 输出的 ffmpeg。Chromium 环境变量沿用下节设置。 [改前](../../runtime/web-3c-leon-aim.tmp/before.webm) · [改后](../../runtime/web-3c-leon-aim.tmp/after.webm) · [同帧对照](../../runtime/web-3c-leon-aim.tmp/comparison.png)
+
+## 里昂瞄准移动全身混合
+
+改前 `73ea1a3547da`，改后 `5816694f2427`。前、左、后、右 `100/120`、`122`、`124`、`126` 共同驱动髋腿、脊柱、锁骨、肩臂和双手。上下身复用 `WalkPose` 的方向权重与 `leonWalkTime` 的落地相位。站立循环和方向轨随步态权重淡化，移动举枪在 `lift` 从 `0.65` 到 `1.0` 之间交接上身。`1100` 叠到当帧方向姿态，换弹使用 Mask 2，并回到当前方向相位。普通低枪与一次性鞋底校准沿用既有实现。 [姿态合成](../../web-3c/src/leon-view.ts) · [角色回归](../../web-3c/tests/leon-route.test.ts)
+
+改前改后各采集 393 个固定步。动作、实际位移、步态相位、两脚趾世界坐标及有序事件逐步一致。纯 A 第 78 步，改后的 `Spine_0`、右锁骨、右手相对改前分别变化约 6.86°、0.88°、1.36°，改后与 `122` 的同相位局部姿态匹配。八方向逐骨对照的最大旋转误差小于 0.001°，包含 `R_Wep`。有本机枪模时，握把和挂点矩阵的最大分量误差约 `4.5e-16`，两版蒙皮组的垂直偏移变化均为 0 mm。 [改前骨骼](../../runtime/web-3c-leon-aim-walk.tmp/before.json) · [改后骨骼](../../runtime/web-3c-leon-aim-walk.tmp/after.json) · [对照摘要](../../runtime/web-3c-leon-aim-walk.tmp/comparison.json) · [八方向逐骨回归](../../runtime/web-3c-leon-aim-walk.tmp/directions.json)
+
+| 路段 | 固定步 | 改后肩线／枪口单步角差峰值 | 支撑阶段脚趾水平最大行程 |
+| --- | ---: | ---: | ---: |
+| 起步至纯 A | 43–92 | 1.52°／1.70° | 3.17 cm |
+| A → D | 93–142 | 0.47°／0.23° | 2.07 cm |
+| D → W+D | 143–192 | 0.35°／0.10° | 4.70 cm |
+| 停步 | 193–210 | 1.27°／1.17° | 脚趾最大收步距离 34.75 cm |
+| 移动中举枪完成 | 272 | 0.15°／0.06° | 与连续左移动画同相 |
+
+A、D、W+D 各段双手相对位置变化最多约 0.24 mm，单发过程中约 6.0 mm。单发恢复相邻步的枪口角差约 1.55°。换弹恢复帧和当前 `122` 匹配，退出原有 Mask 2 淡出时仍可看到约 8.5° 的单步枪口变化，改前约 8.4°。脚趾收步及斜向支撑滑移仍可见，原作混合权重和防滑 IK 待实机证据校准。
+
+全量测试 29/29，站立及移动动作恢复的补充逐骨验证 2/2，Chromium 试玩和门户静态测试均通过。本地预览与门户的 22 个构建文件逐字节一致。正式路线 616 步、31 条事件一致，第 375 步依次开火、扣至 `7/16`、命中，第 431 步补至 `8/15`。 [全量日志](../../runtime/web-3c-leon-aim-walk.tmp/tests.log) · [恢复复测](../../runtime/web-3c-leon-aim-walk.tmp/transition-recheck.log) · [正式路线](../../runtime/web-3c-leon-aim-walk.tmp/route.json) · [门户验收](../../runtime/web-3c-leon-aim-walk.tmp/portal.log)
+
+```powershell
+$out = Join-Path $PWD 'runtime/web-3c-leon-aim-walk.tmp'
+$env:LEON_AIM_WALK_EVIDENCE = Join-Path $out 'after.json'
+$env:LEON_DIRECTION_EVIDENCE = Join-Path $out 'directions.json'
+$env:LEON_ROUTE_EVIDENCE = Join-Path $out 'route.json'
+$env:LEON_WEAPON_GLB = Join-Path $PWD 'runtime/web-3c-weapon.tmp/wp0100.glb'
+npm.cmd --prefix web-3c test
+npm.cmd --prefix web-3c run build
+node web-3c/tests/check-leon-browser.mjs
+npm.cmd --prefix web-3c run build:portal
+node web-3c/tests/check-m8-static.mjs
+```
 
 ## 验证与复现
 
